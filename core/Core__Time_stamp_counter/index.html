@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 for Linux version 5.2.0" />
+<title>Core__Time_stamp_counter
+(core.Core__Time_stamp_counter)</title>
+<link rel="stylesheet" href="../../odoc.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content=
+"width=device-width,initial-scale=1.0" />
+<script src="../../highlight.pack.js">
+</script>
+<script>
+<![CDATA[
+hljs.initHighlightingOnLoad();
+]]>
+</script>
+</head>
+<body>
+<div class="content">
+<header>
+<nav><a href="../index.html">Up</a> – <a href=
+"../index.html">core</a> » Core__Time_stamp_counter</nav>
+<h1>Module <code>Core__Time_stamp_counter</code></h1>
+<p>High-performance timing.</p>
+<p>This module provides the fast function <code>now ()</code> which
+is our best effort high-performance cycle counter for a given
+platform. For x86 systems this retrieves the CPU's internal time
+stamp counter using the RDTSC instruction. For systems that do not
+have a RDTSC instruction, we fallback to using
+<code>clock_gettime(CLOCK_MONOTONIC)</code>.</p>
+<p>Here is a benchmark of execution time in nanos and allocations
+in words:</p>
+<pre>      Name                         Time/Run   mWd/Run
+     ---------------------------- ---------- ---------
+      Time.now                      27.99ns     2.00w
+      Time_ns.now                   25.21ns
+      TSC.Calibrator.calibrate      68.61ns
+      TSC.now                        6.87ns
+      TSC.to_time                    4.30ns     2.00w
+      TSC.to_time (TSC.now ())       8.75ns     2.00w
+      TSC.to_time_ns                 4.70ns
+      TSC.to_time_ns(TSC.now ())     9.56ns
+      id                             2.86ns
+      TSC.Span.of_ns                11.66ns
+      TSC.Span.to_ns                 3.84ns</pre>
+<p>Type <code>t</code> is an <code>Int63.t</code> and consequently
+has no allocation overhead (on 64-bit machines), unlike
+<code>Time.now ()</code> which returns a boxed float.</p>
+<p>Functions are also provided to estimate the relationship of CPU
+time-stamp-counter frequency to real time, thereby allowing one to
+convert from <code>t</code> to <code>Time.t</code>. There are some
+caveats to this that are worth noting:</p>
+<ul>
+<li>The conversion to <code>Time.t</code> depends on an estimate of
+the time-stamp-counter frequency. This frequency may be volatile on
+some systems, thereby reducing the utility of this conversion. See
+the <code>Calibrator</code> module below for details.</li>
+</ul>
+<ul>
+<li>The captured <code>t</code> can only be converted to a
+<code>Time.t</code> if one also has a recently calibrated
+<code>Calibrator.t</code> from the same machine.</li>
+</ul>
+<ul>
+<li>Put another way, it would not make sense to send a sexp of
+<code>t</code> from one box to another and then convert it to a
+<code>Time.t</code>, because <code>t</code> counts the number of
+cycles since reset. So the measure only makes sense in the context
+of a single machine.</li>
+</ul>
+<ul>
+<li>Note that a cursory search for information about time stamp
+counter usage may give a false impression of its unreliability.
+Early processor implementations of TSC could be skewed by clock
+frequency changes (C-states) and by small differences between the
+startup time of each processor on a multi-processor machine. Modern
+hardware can usually be assumed to have an "invariant" tsc, and
+Linux has support to synchronize the initial counters at boot time
+when multiple processors are present.</li>
+</ul>
+<p>See also: <a href=
+"http://en.wikipedia.org/wiki/Time_Stamp_Counter">http://en.wikipedia.org/wiki/Time_Stamp_Counter</a></p>
+</header>
+<dl>
+<dt class="spec type" id="type-t"><a href="#type-t" class=
+"anchor"></a><code><span class="keyword">type</span> t</code>
+<code>= <span class="keyword">private</span> <a href=
+"../../core_kernel/Core_kernel/Int63/index.html#type-t">Core__.Import.Int63.t</a></code></dt>
+</dl>
+<div>
+<div class="spec include">
+<div class="doc">
+<details open="open">
+<summary><span class="def"><code><span class=
+"keyword">include</span> <span class="keyword">sig</span> ...
+<span class="keyword">end</span></code></span></summary>
+<dl>
+<dt class="spec value" id="val-bin_t"><a href="#val-bin_t" class=
+"anchor"></a><code><span class="keyword">val</span> bin_t :
+<a href="index.html#type-t">t</a> <a href=
+"../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></code></dt>
+<dt class="spec value" id="val-bin_read_t"><a href=
+"#val-bin_read_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_read_t : <a href="index.html#type-t">t</a>
+<a href=
+"../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+<dt class="spec value" id="val-__bin_read_t__"><a href=
+"#val-__bin_read_t__" class="anchor"></a><code><span class=
+"keyword">val</span> __bin_read_t__ : (int <span>-&gt;</span>
+<a href="index.html#type-t">t</a>) <a href=
+"../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+<dt class="spec value" id="val-bin_reader_t"><a href=
+"#val-bin_reader_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_reader_t : <a href=
+"index.html#type-t">t</a> <a href=
+"../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></code></dt>
+<dt class="spec value" id="val-bin_size_t"><a href=
+"#val-bin_size_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_size_t : <a href="index.html#type-t">t</a>
+<a href=
+"../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></code></dt>
+<dt class="spec value" id="val-bin_write_t"><a href=
+"#val-bin_write_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_write_t : <a href=
+"index.html#type-t">t</a> <a href=
+"../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></code></dt>
+<dt class="spec value" id="val-bin_writer_t"><a href=
+"#val-bin_writer_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_writer_t : <a href=
+"index.html#type-t">t</a> <a href=
+"../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></code></dt>
+<dt class="spec value" id="val-bin_shape_t"><a href=
+"#val-bin_shape_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_shape_t : <a href=
+"../../bin_prot/Bin_prot/Shape/index.html#type-t">Bin_prot.Shape.t</a></code></dt>
+<dt class="spec value" id="val-compare"><a href="#val-compare"
+class="anchor"></a><code><span class="keyword">val</span> compare :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> int</code></dt>
+<dt class="spec value" id="val-t_of_sexp"><a href="#val-t_of_sexp"
+class="anchor"></a><code><span class="keyword">val</span> t_of_sexp
+: <a href=
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
+class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
+</dl>
+</details>
+</div>
+</div>
+</div>
+<div>
+<div class="spec include">
+<div class="doc">
+<details open="open">
+<summary><span class="def"><code><span class=
+"keyword">include</span> <a href=
+"../../base/Base/Comparisons/index.html#module-type-S">Core__.Import.Comparisons.S</a>
+<span class="keyword">with</span> <span class="keyword">type</span>
+<a href=
+"../../base/Base/Comparisons/module-type-S/index.html#type-t">t</a>
+:= <a href="index.html#type-t">t</a></code></span></summary>
+<div>
+<div class="spec include">
+<div class="doc">
+<details open="open">
+<summary><span class="def"><code><span class=
+"keyword">include</span> <a href=
+"../Core__/Import/Comparisons/index.html#module-type-Infix">Core__.Import.Comparisons.Infix</a></code></span></summary>
+<dl>
+<dt class="spec type" id="type-t"><a href="#type-t" class=
+"anchor"></a><code><span class="keyword">type</span> t</code></dt>
+</dl>
+<dl>
+<dt class="spec value" id="val-(&gt;=)"><a href="#val-(%3E=)"
+class="anchor"></a><code><span class="keyword">val</span> (&gt;=) :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(&lt;=)"><a href="#val-(%3C=)"
+class="anchor"></a><code><span class="keyword">val</span> (&lt;=) :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(=)"><a href="#val-(=)" class=
+"anchor"></a><code><span class="keyword">val</span> (=) : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(&gt;)"><a href="#val-(%3E)" class=
+"anchor"></a><code><span class="keyword">val</span> (&gt;) :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(&lt;)"><a href="#val-(%3C)" class=
+"anchor"></a><code><span class="keyword">val</span> (&lt;) :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(&lt;&gt;)"><a href="#val-(%3C%3E)"
+class="anchor"></a><code><span class="keyword">val</span>
+(&lt;&gt;) : <a href="index.html#type-t">t</a> <span>-&gt;</span>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+bool</code></dt>
+</dl>
+</details>
+</div>
+</div>
+</div>
+<dl>
+<dt class="spec value" id="val-equal"><a href="#val-equal" class=
+"anchor"></a><code><span class="keyword">val</span> equal :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-compare"><a href="#val-compare"
+class="anchor"></a><code><span class="keyword">val</span> compare :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> int</code></dt>
+<dd>
+<p><code>compare t1 t2</code> returns 0 if <code>t1</code> is equal
+to <code>t2</code>, a negative integer if <code>t1</code> is less
+than <code>t2</code>, and a positive integer if <code>t1</code> is
+greater than <code>t2</code>.</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec value" id="val-min"><a href="#val-min" class=
+"anchor"></a><code><span class="keyword">val</span> min : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-max"><a href="#val-max" class=
+"anchor"></a><code><span class="keyword">val</span> max : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+</dl>
+</details>
+</div>
+</div>
+</div>
+<dl>
+<dt class="spec module" id="module-Calibrator"><a href=
+"#module-Calibrator" class="anchor"></a><code><span class=
+"keyword">module</span> <a href=
+"Calibrator/index.html">Calibrator</a> : <span class=
+"keyword">sig</span> ... <span class="keyword">end</span>
+<span class="keyword">with</span> <span class="keyword">type</span>
+<a href="Calibrator/index.html#type-tsc">tsc</a> := <a href=
+"index.html#type-t">t</a></code></dt>
+<dd>
+<p>A calibrator contains a snapshot of machine-specific information
+that is used to convert between TSC values and clock time. This
+information needs to be calibrated periodically such that it stays
+updated w.r.t. changes in the CPU's time-stamp-counter frequency,
+which can vary depending on load, heat, etc. (Also see the comment
+in the <code>.ml</code> file.)</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec module" id="module-Span"><a href="#module-Span"
+class="anchor"></a><code><span class="keyword">module</span>
+<a href="Span/index.html">Span</a> : <span class=
+"keyword">sig</span> ... <span class=
+"keyword">end</span></code></dt>
+<dd>
+<p><code>Span</code> indicates some integer number of cycles.</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec external" id="val-now"><a href="#val-now" class=
+"anchor"></a><code><span class="keyword">val</span> now : unit
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+</dl>
+<dl>
+<dt class="spec value" id="val-diff"><a href="#val-diff" class=
+"anchor"></a><code><span class="keyword">val</span> diff : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"Span/index.html#type-t">Span.t</a></code></dt>
+<dt class="spec value" id="val-add"><a href="#val-add" class=
+"anchor"></a><code><span class="keyword">val</span> add : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"Span/index.html#type-t">Span.t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-to_int63"><a href="#val-to_int63"
+class="anchor"></a><code><span class="keyword">val</span> to_int63
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel/Int63/index.html#type-t">Core__.Import.Int63.t</a></code></dt>
+<dt class="spec value" id="val-to_time"><a href="#val-to_time"
+class="anchor"></a><code><span class="keyword">val</span> to_time :
+?⁠calibrator:<a href=
+"Calibrator/index.html#type-t">Calibrator.t</a> <span>-&gt;</span>
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Time_float/index.html#type-t">Core__.Import.Time.t</a></code></dt>
+<dd>
+<p>It is guaranteed that repeated calls will return nondecreasing
+<code>Time.t</code> values.</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec value" id="val-to_time_ns"><a href=
+"#val-to_time_ns" class="anchor"></a><code><span class=
+"keyword">val</span> to_time_ns : ?⁠calibrator:<a href=
+"Calibrator/index.html#type-t">Calibrator.t</a> <span>-&gt;</span>
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel/Time_ns/index.html#type-t">Core__.Import.Time_ns.t</a></code></dt>
+</dl>
+</div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 for Linux version 5.2.0" />
+<title>lift (ppxlib.Ppxlib_traverse_builtins.lift)</title>
+<link rel="stylesheet" href="../../../odoc.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content=
+"width=device-width,initial-scale=1.0" />
+<script src="../../../highlight.pack.js">
+</script>
+<script>
+<![CDATA[
+hljs.initHighlightingOnLoad();
+]]>
+</script>
+</head>
+<body>
+<div class="content">
+<header>
+<nav><a href="../index.html">Up</a> – <a href=
+"../../index.html">ppxlib</a> » <a href=
+"../index.html">Ppxlib_traverse_builtins</a> » lift</nav>
+<h1>Class <code>Ppxlib_traverse_builtins.lift</code></h1>
+</header>
+<dl>
+<dt class="spec method" id="method-other"><a href="#method-other"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> other : a. (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'res</span>)
+<a href="../T/index.html#type-lift">T.lift</a></code></dt>
+<dt class="spec method" id="method-int"><a href="#method-int"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> int : (int,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a></code></dt>
+<dt class="spec method" id="method-string"><a href="#method-string"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> string :
+(string,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a></code></dt>
+<dt class="spec method" id="method-bool"><a href="#method-bool"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> bool :
+(bool,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a></code></dt>
+<dt class="spec method" id="method-char"><a href="#method-char"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> char :
+(char,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a></code></dt>
+<dt class="spec method" id="method-array"><a href="#method-array"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> array : a. (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'res</span>)
+<a href="../T/index.html#type-lift">T.lift</a> <span>-&gt;</span>
+(<span class="type-var">'a</span> array,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a></code></dt>
+<dt class="spec method" id="method-float"><a href="#method-float"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> float :
+(float,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a></code></dt>
+<dt class="spec method" id="method-int32"><a href="#method-int32"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> int32 :
+(int32,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a></code></dt>
+<dt class="spec method" id="method-int64"><a href="#method-int64"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> int64 :
+(int64,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a></code></dt>
+<dt class="spec method" id="method-nativeint"><a href=
+"#method-nativeint" class="anchor"></a><code><span class=
+"keyword">method</span> <span class="keyword">virtual</span>
+nativeint : (nativeint,&nbsp;<span class="type-var">'res</span>)
+<a href="../T/index.html#type-lift">T.lift</a></code></dt>
+<dt class="spec method" id="method-unit"><a href="#method-unit"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> unit :
+(unit,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a></code></dt>
+<dt class="spec method" id="method-record"><a href="#method-record"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> record : (string *
+<span class="type-var">'res</span>) list <span>-&gt;</span>
+<span class="type-var">'res</span></code></dt>
+<dt class="spec method" id="method-constr"><a href="#method-constr"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> constr : string
+<span>-&gt;</span> <span class="type-var">'res</span> list
+<span>-&gt;</span> <span class="type-var">'res</span></code></dt>
+<dt class="spec method" id="method-tuple"><a href="#method-tuple"
+class="anchor"></a><code><span class="keyword">method</span>
+<span class="keyword">virtual</span> tuple : <span class=
+"type-var">'res</span> list <span>-&gt;</span> <span class=
+"type-var">'res</span></code></dt>
+<dt class="spec method" id="method-option"><a href="#method-option"
+class="anchor"></a><code><span class="keyword">method</span> option
+: &lt; array : a. (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'res</span>)
+<a href="../T/index.html#type-lift">T.lift</a> <span>-&gt;</span>
+(<span class="type-var">'a</span> array,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; bool :
+(bool,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; char :
+(char,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; constr : string
+<span>-&gt;</span> <span class="type-var">'res</span> list
+<span>-&gt;</span> <span class="type-var">'res</span>; float :
+(float,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; int :
+(int,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; int32 :
+(int32,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; int64 :
+(int64,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; list : a. (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'res</span>)
+<a href="../T/index.html#type-lift">T.lift</a> <span>-&gt;</span>
+(<span class="type-var">'a</span> list,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; nativeint :
+(nativeint,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; option : a. (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'res</span>)
+<a href="../T/index.html#type-lift">T.lift</a> <span>-&gt;</span>
+(<span class="type-var">'a</span> option,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; other : a. (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'res</span>)
+<a href="../T/index.html#type-lift">T.lift</a>; record : (string *
+<span class="type-var">'res</span>) list <span>-&gt;</span>
+<span class="type-var">'res</span>; string :
+(string,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; tuple : <span class=
+"type-var">'res</span> list <span>-&gt;</span> <span class=
+"type-var">'res</span>; unit : (unit,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; .. &gt; <span>-&gt;</span>
+a. (<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a> <span>-&gt;</span>
+(<span class="type-var">'a</span> option,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a></code></dt>
+<dt class="spec method" id="method-list"><a href="#method-list"
+class="anchor"></a><code><span class="keyword">method</span> list :
+&lt; array : a. (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'res</span>)
+<a href="../T/index.html#type-lift">T.lift</a> <span>-&gt;</span>
+(<span class="type-var">'a</span> array,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; bool :
+(bool,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; char :
+(char,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; constr : string
+<span>-&gt;</span> <span class="type-var">'res</span> list
+<span>-&gt;</span> <span class="type-var">'res</span>; float :
+(float,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; int :
+(int,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; int32 :
+(int32,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; int64 :
+(int64,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; list : a. (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'res</span>)
+<a href="../T/index.html#type-lift">T.lift</a> <span>-&gt;</span>
+(<span class="type-var">'a</span> list,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; nativeint :
+(nativeint,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; option : a. (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'res</span>)
+<a href="../T/index.html#type-lift">T.lift</a> <span>-&gt;</span>
+(<span class="type-var">'a</span> option,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; other : a. (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'res</span>)
+<a href="../T/index.html#type-lift">T.lift</a>; record : (string *
+<span class="type-var">'res</span>) list <span>-&gt;</span>
+<span class="type-var">'res</span>; string :
+(string,&nbsp;<span class="type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; tuple : <span class=
+"type-var">'res</span> list <span>-&gt;</span> <span class=
+"type-var">'res</span>; unit : (unit,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a>; .. &gt; <span>-&gt;</span>
+a. (<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a> <span>-&gt;</span>
+(<span class="type-var">'a</span> list,&nbsp;<span class=
+"type-var">'res</span>) <a href=
+"../T/index.html#type-lift">T.lift</a></code></dt>
+</dl>
+</div>
+</body>
+</html>

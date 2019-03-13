@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 for Linux version 5.2.0" />
+<title>Direct
+(core.Core__Core_unix.Resource_usage.Fields.Direct)</title>
+<link rel="stylesheet" href="../../../../../odoc.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content=
+"width=device-width,initial-scale=1.0" />
+<script src="../../../../../highlight.pack.js">
+</script>
+<script>
+<![CDATA[
+hljs.initHighlightingOnLoad();
+]]>
+</script>
+</head>
+<body>
+<div class="content">
+<header>
+<nav><a href="../index.html">Up</a> – <a href=
+"../../../../index.html">core</a> » <a href=
+"../../../index.html">Core__Core_unix</a> » <a href=
+"../../index.html">Resource_usage</a> » <a href=
+"../index.html">Fields</a> » Direct</nav>
+<h1>Module <code>Fields.Direct</code></h1>
+</header>
+<dl>
+<dt class="spec value" id="val-iter"><a href="#val-iter" class=
+"anchor"></a><code><span class="keyword">val</span> iter : <a href=
+"../../index.html#type-t">t</a> <span>-&gt;</span> utime:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;float) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> float <span>-&gt;</span> unit)
+<span>-&gt;</span> stime:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;float) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> float <span>-&gt;</span> unit)
+<span>-&gt;</span> maxrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> ixrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> idrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> isrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> minflt:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> majflt:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> nswap:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> inblock:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> oublock:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> msgsnd:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> msgrcv:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> nsignals:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> nvcsw:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> nivcsw:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> unit)
+<span>-&gt;</span> unit</code></dt>
+<dt class="spec value" id="val-fold"><a href="#val-fold" class=
+"anchor"></a><code><span class="keyword">val</span> fold : <a href=
+"../../index.html#type-t">t</a> <span>-&gt;</span>
+init:<span class="type-var">'acc__0</span> <span>-&gt;</span>
+utime:(<span class="type-var">'acc__0</span> <span>-&gt;</span>
+(<a href="../../index.html#type-t">t</a>,&nbsp;float) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> float <span>-&gt;</span> <span class=
+"type-var">'acc__1</span>) <span>-&gt;</span> stime:(<span class=
+"type-var">'acc__1</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;float) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> float <span>-&gt;</span> <span class=
+"type-var">'acc__2</span>) <span>-&gt;</span> maxrss:(<span class=
+"type-var">'acc__2</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__3</span>) <span>-&gt;</span> ixrss:(<span class=
+"type-var">'acc__3</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__4</span>) <span>-&gt;</span> idrss:(<span class=
+"type-var">'acc__4</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__5</span>) <span>-&gt;</span> isrss:(<span class=
+"type-var">'acc__5</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__6</span>) <span>-&gt;</span> minflt:(<span class=
+"type-var">'acc__6</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__7</span>) <span>-&gt;</span> majflt:(<span class=
+"type-var">'acc__7</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__8</span>) <span>-&gt;</span> nswap:(<span class=
+"type-var">'acc__8</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__9</span>) <span>-&gt;</span> inblock:(<span class=
+"type-var">'acc__9</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__10</span>) <span>-&gt;</span>
+oublock:(<span class="type-var">'acc__10</span> <span>-&gt;</span>
+(<a href="../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__11</span>) <span>-&gt;</span> msgsnd:(<span class=
+"type-var">'acc__11</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__12</span>) <span>-&gt;</span> msgrcv:(<span class=
+"type-var">'acc__12</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__13</span>) <span>-&gt;</span>
+nsignals:(<span class="type-var">'acc__13</span> <span>-&gt;</span>
+(<a href="../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__14</span>) <span>-&gt;</span> nvcsw:(<span class=
+"type-var">'acc__14</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__15</span>) <span>-&gt;</span> nivcsw:(<span class=
+"type-var">'acc__15</span> <span>-&gt;</span> (<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'acc__16</span>) <span>-&gt;</span> <span class=
+"type-var">'acc__16</span></code></dt>
+<dt class="spec value" id="val-for_all"><a href="#val-for_all"
+class="anchor"></a><code><span class="keyword">val</span> for_all :
+<a href="../../index.html#type-t">t</a> <span>-&gt;</span>
+utime:((<a href="../../index.html#type-t">t</a>,&nbsp;float)
+<a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> float <span>-&gt;</span> bool)
+<span>-&gt;</span> stime:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;float) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> float <span>-&gt;</span> bool)
+<span>-&gt;</span> maxrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> ixrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> idrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> isrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> minflt:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> majflt:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> nswap:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> inblock:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> oublock:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> msgsnd:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> msgrcv:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> nsignals:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> nvcsw:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> nivcsw:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-exists"><a href="#val-exists" class=
+"anchor"></a><code><span class="keyword">val</span> exists :
+<a href="../../index.html#type-t">t</a> <span>-&gt;</span>
+utime:((<a href="../../index.html#type-t">t</a>,&nbsp;float)
+<a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> float <span>-&gt;</span> bool)
+<span>-&gt;</span> stime:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;float) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> float <span>-&gt;</span> bool)
+<span>-&gt;</span> maxrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> ixrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> idrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> isrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> minflt:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> majflt:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> nswap:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> inblock:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> oublock:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> msgsnd:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> msgrcv:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> nsignals:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> nvcsw:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> nivcsw:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> bool)
+<span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-to_list"><a href="#val-to_list"
+class="anchor"></a><code><span class="keyword">val</span> to_list :
+<a href="../../index.html#type-t">t</a> <span>-&gt;</span>
+utime:((<a href="../../index.html#type-t">t</a>,&nbsp;float)
+<a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> float <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> stime:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;float) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> float <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> maxrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> ixrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> idrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> isrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> minflt:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> majflt:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> nswap:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> inblock:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> oublock:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> msgsnd:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> msgrcv:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> nsignals:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> nvcsw:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> nivcsw:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span class=
+"type-var">'elem__</span>) <span>-&gt;</span> <span class=
+"type-var">'elem__</span> list</code></dt>
+<dt class="spec value" id="val-map"><a href="#val-map" class=
+"anchor"></a><code><span class="keyword">val</span> map : <a href=
+"../../index.html#type-t">t</a> <span>-&gt;</span> utime:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;float) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> float <span>-&gt;</span> float)
+<span>-&gt;</span> stime:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;float) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> float <span>-&gt;</span> float)
+<span>-&gt;</span> maxrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> ixrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> idrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> isrss:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> minflt:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> majflt:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> nswap:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> inblock:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> oublock:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> msgsnd:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> msgrcv:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> nsignals:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> nvcsw:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> nivcsw:((<a href=
+"../../index.html#type-t">t</a>,&nbsp;int64) <a href=
+"../../../../../base/Base/Field/index.html#type-t">Fieldslib.Field.t</a>
+<span>-&gt;</span> <a href="../../index.html#type-t">t</a>
+<span>-&gt;</span> int64 <span>-&gt;</span> int64)
+<span>-&gt;</span> <a href=
+"../../index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-set_all_mutable_fields"><a href=
+"#val-set_all_mutable_fields" class="anchor"></a><code><span class=
+"keyword">val</span> set_all_mutable_fields : <a href=
+"../../index.html#type-t">t</a> <span>-&gt;</span> unit</code></dt>
+</dl>
+</div>
+</body>
+</html>

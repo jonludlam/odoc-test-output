@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 for Linux version 5.2.0" />
+<title>Scheduler (core.Core__Core_unix.Scheduler)</title>
+<link rel="stylesheet" href="../../../odoc.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content=
+"width=device-width,initial-scale=1.0" />
+<script src="../../../highlight.pack.js">
+</script>
+<script>
+<![CDATA[
+hljs.initHighlightingOnLoad();
+]]>
+</script>
+</head>
+<body>
+<div class="content">
+<header>
+<nav><a href="../index.html">Up</a> – <a href=
+"../../index.html">core</a> » <a href=
+"../index.html">Core__Core_unix</a> » Scheduler</nav>
+<h1>Module <code>Core__Core_unix.Scheduler</code></h1>
+</header>
+<div class="spec module" id="module-Policy"><a href=
+"#module-Policy" class="anchor"></a><code><span class=
+"keyword">module</span> <a href="Policy/index.html">Policy</a> :
+<span class="keyword">sig</span> ... <span class=
+"keyword">end</span></code></div>
+<dl>
+<dt class="spec value" id="val-set"><a href="#val-set" class=
+"anchor"></a><code><span class="keyword">val</span> set :
+pid:<a href=
+"../../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a>
+option <span>-&gt;</span> policy:<a href=
+"Policy/index.html#type-t">Policy.t</a> <span>-&gt;</span>
+priority:int <span>-&gt;</span> unit</code></dt>
+<dd>
+<p>See <code>man sched_setscheduler</code>.</p>
+<p>The <code>priority</code> supplied here is *not* the nice value
+of a process. It is the "static" priority (1 .. 99) used in
+conjunction with real-time processes. If you want to set the nice
+value of a normal process, use <code>Linux_ext.setpriority</code>
+or <code>Core_unix.nice</code>.</p>
+</dd>
+</dl>
+</div>
+</body>
+</html>

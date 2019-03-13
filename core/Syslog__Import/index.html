@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 for Linux version 5.2.0" />
+<title>Syslog__Import (core.Syslog__Import)</title>
+<link rel="stylesheet" href="../../odoc.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content=
+"width=device-width,initial-scale=1.0" />
+<script src="../../highlight.pack.js">
+</script>
+<script>
+<![CDATA[
+hljs.initHighlightingOnLoad();
+]]>
+</script>
+</head>
+<body>
+<div class="content">
+<header>
+<nav><a href="../index.html">Up</a> – <a href=
+"../index.html">core</a> » Syslog__Import</nav>
+<h1>Module <code>Syslog__Import</code></h1>
+</header>
+<div>
+<div class="spec include">
+<div class="doc">
+<details open="open">
+<summary><span class="def"><code><span class=
+"keyword">include</span> <a href=
+"../Core/index.html">Core</a></code></span></summary>
+<div class="spec module" id="module-Bigstring"><a href=
+"#module-Bigstring" class="anchor"></a><code><span class=
+"keyword">module</span> Bigstring = <a href=
+"../Core/index.html#module-Bigstring">Core.Bigstring</a></code></div>
+<div class="spec module" id="module-Caml"><a href="#module-Caml"
+class="anchor"></a><code><span class="keyword">module</span> Caml =
+<a href="../Core/index.html#module-Caml">Core.Caml</a></code></div>
+<div class="spec module" id="module-Command"><a href=
+"#module-Command" class="anchor"></a><code><span class=
+"keyword">module</span> Command = <a href=
+"../Core/index.html#module-Command">Core.Command</a></code></div>
+<div class="spec module" id="module-Condition"><a href=
+"#module-Condition" class="anchor"></a><code><span class=
+"keyword">module</span> Condition = <a href=
+"../Core__/index.html#module-Core_condition">Core__.Core_condition</a></code></div>
+<div class="spec module" id="module-Core_stable"><a href=
+"#module-Core_stable" class="anchor"></a><code><span class=
+"keyword">module</span> Core_stable = <a href=
+"../Core__/index.html#module-Stable">Core__.Stable</a></code></div>
+<div class="spec module" id="module-Date"><a href="#module-Date"
+class="anchor"></a><code><span class="keyword">module</span> Date =
+<a href=
+"../Core__/index.html#module-Core_date">Core__.Core_date</a></code></div>
+<div class="spec module" id="module-Filename"><a href=
+"#module-Filename" class="anchor"></a><code><span class=
+"keyword">module</span> Filename = <a href=
+"../Core__/index.html#module-Core_filename">Core__.Core_filename</a></code></div>
+<div class="spec module" id="module-Interval"><a href=
+"#module-Interval" class="anchor"></a><code><span class=
+"keyword">module</span> Interval = <a href=
+"../Core/index.html#module-Interval">Core.Interval</a></code></div>
+<div class="spec module" id="module-Interval_intf"><a href=
+"#module-Interval_intf" class="anchor"></a><code><span class=
+"keyword">module</span> Interval_intf = <a href=
+"../Core/index.html#module-Interval_intf">Core.Interval_intf</a></code></div>
+<div class="spec module" id="module-Iobuf"><a href="#module-Iobuf"
+class="anchor"></a><code><span class="keyword">module</span> Iobuf
+= <a href=
+"../Core/index.html#module-Iobuf">Core.Iobuf</a></code></div>
+<div class="spec module" id="module-Iobuf_debug"><a href=
+"#module-Iobuf_debug" class="anchor"></a><code><span class=
+"keyword">module</span> Iobuf_debug = <a href=
+"../Core/index.html#module-Iobuf_debug">Core.Iobuf_debug</a></code></div>
+<div class="spec module" id="module-Iobuf_intf"><a href=
+"#module-Iobuf_intf" class="anchor"></a><code><span class=
+"keyword">module</span> Iobuf_intf = <a href=
+"../Core/index.html#module-Iobuf_intf">Core.Iobuf_intf</a></code></div>
+<div class="spec module" id="module-Linux_ext"><a href=
+"#module-Linux_ext" class="anchor"></a><code><span class=
+"keyword">module</span> Linux_ext = <a href=
+"../Core/index.html#module-Linux_ext">Core.Linux_ext</a></code></div>
+<div class="spec module" id="module-Digest"><a href=
+"#module-Digest" class="anchor"></a><code><span class=
+"keyword">module</span> Digest = <a href=
+"index.html#module-Md5">Md5</a></code></div>
+<div class="spec module" id="module-Mutex"><a href="#module-Mutex"
+class="anchor"></a><code><span class="keyword">module</span> Mutex
+= <a href=
+"../Core__/index.html#module-Core_mutex">Core__.Core_mutex</a></code></div>
+<div class="spec module" id="module-Nano_mutex"><a href=
+"#module-Nano_mutex" class="anchor"></a><code><span class=
+"keyword">module</span> Nano_mutex = <a href=
+"../Core/index.html#module-Nano_mutex">Core.Nano_mutex</a></code></div>
+<div class="spec module" id="module-Process_env"><a href=
+"#module-Process_env" class="anchor"></a><code><span class=
+"keyword">module</span> Process_env = <a href=
+"../Core/index.html#module-Process_env">Core.Process_env</a></code></div>
+<div class="spec module" id="module-Signal"><a href=
+"#module-Signal" class="anchor"></a><code><span class=
+"keyword">module</span> Signal = <a href=
+"../Core/index.html#module-Signal">Core.Signal</a></code></div>
+<div class="spec module" id="module-Squeue"><a href=
+"#module-Squeue" class="anchor"></a><code><span class=
+"keyword">module</span> Squeue = <a href=
+"../Core/index.html#module-Squeue">Core.Squeue</a></code></div>
+<div class="spec module" id="module-Sys"><a href="#module-Sys"
+class="anchor"></a><code><span class="keyword">module</span> Sys =
+<a href=
+"../Core__/index.html#module-Core_sys">Core__.Core_sys</a></code></div>
+<div class="spec module" id="module-Thread"><a href=
+"#module-Thread" class="anchor"></a><code><span class=
+"keyword">module</span> Thread = <a href=
+"../Core__/index.html#module-Core_thread">Core__.Core_thread</a></code></div>
+<div class="spec module" id="module-Time"><a href="#module-Time"
+class="anchor"></a><code><span class="keyword">module</span> Time =
+<a href=
+"../Core__/index.html#module-Core_time_float">Core__.Core_time_float</a></code></div>
+<div class="spec module" id="module-Time_common"><a href=
+"#module-Time_common" class="anchor"></a><code><span class=
+"keyword">module</span> Time_common = <a href=
+"../Core/index.html#module-Time_common">Core.Time_common</a></code></div>
+<div class="spec module" id="module-Time_ns"><a href=
+"#module-Time_ns" class="anchor"></a><code><span class=
+"keyword">module</span> Time_ns = <a href=
+"../Core__/index.html#module-Core_time_ns">Core__.Core_time_ns</a></code></div>
+<div class="spec module" id="module-Time_stamp_counter"><a href=
+"#module-Time_stamp_counter" class="anchor"></a><code><span class=
+"keyword">module</span> Time_stamp_counter = <a href=
+"../Core/index.html#module-Time_stamp_counter">Core.Time_stamp_counter</a></code></div>
+<div class="spec module" id="module-Unix"><a href="#module-Unix"
+class="anchor"></a><code><span class="keyword">module</span> Unix =
+<a href=
+"../Core__/index.html#module-Core_unix">Core__.Core_unix</a></code></div>
+<div class="spec module" id="module-User_and_group"><a href=
+"#module-User_and_group" class="anchor"></a><code><span class=
+"keyword">module</span> User_and_group = <a href=
+"../Core/index.html#module-User_and_group">Core.User_and_group</a></code></div>
+<div class="spec module" id="module-Version_util"><a href=
+"#module-Version_util" class="anchor"></a><code><span class=
+"keyword">module</span> Version_util = <a href=
+"../Core/index.html#module-Version_util">Core.Version_util</a></code></div>
+<dl>
+<dt class="spec value" id="val-sec"><a href="#val-sec" class=
+"anchor"></a><code><span class="keyword">val</span> sec : <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-float">Core_kernel__.Import.float</a>
+<span>-&gt;</span> <a href=
+"../Core__Core_time_float/Span/index.html#type-t">Time.Span.t</a></code></dt>
+<dt class="spec value" id="val-(^/)"><a href="#val-(^/)" class=
+"anchor"></a><code><span class="keyword">val</span> (^/) : <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
+<span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
+<span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a></code></dt>
+</dl>
+<div class="spec module" id="module-Core_private"><a href=
+"#module-Core_private" class="anchor"></a><code><span class=
+"keyword">module</span> Core_private = <a href=
+"../Core/index.html#module-Core_private">Core.Core_private</a></code></div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

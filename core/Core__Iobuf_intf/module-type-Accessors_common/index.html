@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 for Linux version 5.2.0" />
+<title>Accessors_common
+(core.Core__Iobuf_intf.Accessors_common)</title>
+<link rel="stylesheet" href="../../../odoc.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content=
+"width=device-width,initial-scale=1.0" />
+<script src="../../../highlight.pack.js">
+</script>
+<script>
+<![CDATA[
+hljs.initHighlightingOnLoad();
+]]>
+</script>
+</head>
+<body>
+<div class="content">
+<header>
+<nav><a href="../index.html">Up</a> – <a href=
+"../../index.html">core</a> » <a href=
+"../index.html">Core__Iobuf_intf</a> » Accessors_common</nav>
+<h1>Module type <code>Core__Iobuf_intf.Accessors_common</code></h1>
+<p>Collections of access functions. These abstract over
+<code>Iobuf.Consume</code>, <code>Iobuf.Fill</code>,
+<code>Iobuf.Peek</code>, and <code>Iobuf.Poke</code>.</p>
+<p>Make all labeled arguments mandatory in <code>string</code> and
+<code>bigstring</code> to avoid accidental allocation in, e.g.,
+<code>Iobuf.Poke.string</code>. For convenience,
+<code>stringo</code> and <code>bigstringo</code> are available by
+analogy between <code>blit</code> and <code>blito</code>.</p>
+<p><code>_trunc</code> functions silently truncate values that
+don't fit. For example, <code>Iobuf.Unsafe.Poke.int8 128</code>
+effectively writes -128.</p>
+</header>
+<dl>
+<dt class="spec type" id="type-t"><a href="#type-t" class=
+"anchor"></a><code><span class="keyword">type</span> ('a, 'd, 'w)
+t</code> <code><span class="keyword">constraint</span> <span class=
+"type-var">'d</span> = [&gt; Core__.Import.read ]</code></dt>
+<dd>
+<p><code>('d, 'w) Iobuf.t</code> accessor function manipulating
+<code>'a</code>, either writing it to the iobuf or reading it from
+the iobuf.</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec type" id="type-bin_prot"><a href="#type-bin_prot"
+class="anchor"></a><code><span class="keyword">type</span> 'a
+bin_prot</code></dt>
+</dl>
+<dl>
+<dt class="spec value" id="val-char"><a href="#val-char" class=
+"anchor"></a><code><span class="keyword">val</span> char :
+(char,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class=
+"type-var">'w</span>) <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-int64_t_be"><a href=
+"#val-int64_t_be" class="anchor"></a><code><span class=
+"keyword">val</span> int64_t_be : (<a href=
+"../../../core_kernel/Core_kernel/Int64/index.html#type-t">Core__.Import.Int64.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
+<a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-int64_t_le"><a href=
+"#val-int64_t_le" class="anchor"></a><code><span class=
+"keyword">val</span> int64_t_le : (<a href=
+"../../../core_kernel/Core_kernel/Int64/index.html#type-t">Core__.Import.Int64.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
+<a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-head_padded_fixed_string"><a href=
+"#val-head_padded_fixed_string" class=
+"anchor"></a><code><span class="keyword">val</span>
+head_padded_fixed_string : padding:char <span>-&gt;</span> len:int
+<span>-&gt;</span> (string,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
+<a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-tail_padded_fixed_string"><a href=
+"#val-tail_padded_fixed_string" class=
+"anchor"></a><code><span class="keyword">val</span>
+tail_padded_fixed_string : padding:char <span>-&gt;</span> len:int
+<span>-&gt;</span> (string,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
+<a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-string"><a href="#val-string" class=
+"anchor"></a><code><span class="keyword">val</span> string :
+str_pos:int <span>-&gt;</span> len:int <span>-&gt;</span>
+(string,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class=
+"type-var">'w</span>) <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-bytes"><a href="#val-bytes" class=
+"anchor"></a><code><span class="keyword">val</span> bytes :
+str_pos:int <span>-&gt;</span> len:int <span>-&gt;</span> (<a href=
+"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
+<a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-bigstring"><a href="#val-bigstring"
+class="anchor"></a><code><span class="keyword">val</span> bigstring
+: str_pos:int <span>-&gt;</span> len:int <span>-&gt;</span>
+(<a href=
+"../../../core_kernel/Core_kernel/Bigstring/index.html#type-t">Core__.Import.Bigstring.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
+<a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-stringo"><a href="#val-stringo"
+class="anchor"></a><code><span class="keyword">val</span> stringo :
+?⁠str_pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span>
+(string,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class=
+"type-var">'w</span>) <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-byteso"><a href="#val-byteso" class=
+"anchor"></a><code><span class="keyword">val</span> byteso :
+?⁠str_pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span>
+(<a href=
+"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
+<a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-bigstringo"><a href=
+"#val-bigstringo" class="anchor"></a><code><span class=
+"keyword">val</span> bigstringo : ?⁠str_pos:int <span>-&gt;</span>
+?⁠len:int <span>-&gt;</span> (<a href=
+"../../../core_kernel/Core_kernel/Bigstring/index.html#type-t">Core__.Import.Bigstring.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
+<a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-bin_prot"><a href="#val-bin_prot"
+class="anchor"></a><code><span class="keyword">val</span> bin_prot
+: <span class="type-var">'a</span> <a href=
+"index.html#type-bin_prot">bin_prot</a> <span>-&gt;</span>
+(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
+<a href="index.html#type-t">t</a></code></dt>
+</dl>
+</div>
+</body>
+</html>

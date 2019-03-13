@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 for Linux version 5.2.0" />
+<title>Register (base.Base.Pretty_printer.Register)</title>
+<link rel="stylesheet" href="../../../../odoc.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content=
+"width=device-width,initial-scale=1.0" />
+<script src="../../../../highlight.pack.js">
+</script>
+<script>
+<![CDATA[
+hljs.initHighlightingOnLoad();
+]]>
+</script>
+</head>
+<body>
+<div class="content">
+<header>
+<nav><a href="../index.html">Up</a> – <a href=
+"../../../index.html">base</a> » <a href=
+"../../index.html">Base</a> » <a href=
+"../index.html">Pretty_printer</a> » Register</nav>
+<h1>Module <code>Pretty_printer.Register</code></h1>
+<p><code>Register</code> builds a <code>pp</code> function from a
+<code>to_string</code> function, and adds the <code>module_name ^
+".pp"</code> to the list of pretty printers. The idea is to
+statically guarantee that one has the desired <code>pp</code>
+function at the same point where the <code>name</code> is
+added.</p>
+</header>
+<h3 class="heading">Parameters</h3>
+<ul>
+<li><code><a href="argument-1-M/index.html">M</a> : <span class=
+"keyword">sig</span> ... <span class=
+"keyword">end</span></code></li>
+</ul>
+<h3 class="heading">Signature</h3>
+<dl>
+<dt class="spec type" id="type-t"><a href="#type-t" class=
+"anchor"></a><code><span class="keyword">type</span> t</code></dt>
+</dl>
+<dl>
+<dt class="spec value" id="val-pp"><a href="#val-pp" class=
+"anchor"></a><code><span class="keyword">val</span> pp : <a href=
+"../../Formatter/index.html#type-t">Formatter.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a>
+<span>-&gt;</span> unit</code></dt>
+</dl>
+</div>
+</body>
+</html>
