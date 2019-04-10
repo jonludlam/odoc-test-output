@@ -84,15 +84,9 @@ create_options</a> := (<span class=
 <a href=
 "../Hash_set_intf/index.html#type-create_options">Core_kernel__.Hash_set_intf.create_options</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
 <dt class="spec type" id="type-elt"><a href="#type-elt" class=
 "anchor"></a><code><span class="keyword">type</span> 'a elt</code>
 <code>= <span class="type-var">'a</span></code></dt>
-<dt class="spec type" id="type-create_options"><a href=
-"#type-create_options" class="anchor"></a><code><span class=
-"keyword">type</span> ('a, 'z) create_options</code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
@@ -100,14 +94,14 @@ t</code></dt>
 (<span class="type-var">'a</span>,&nbsp;unit <span>-&gt;</span>
 <span class="type-var">'a</span> <a href="index.html#type-t">t</a>)
 <a href=
-"index.html#type-create_options">create_options</a></code></dt>
+"../Hash_set_intf/index.html#type-create_options">Core_kernel__.Hash_set_intf.create_options</a></code></dt>
 <dt class="spec value" id="val-of_list"><a href="#val-of_list"
 class="anchor"></a><code><span class="keyword">val</span> of_list :
 (<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'a</span> <a href="index.html#type-elt">elt</a> list
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "index.html#type-t">t</a>) <a href=
-"index.html#type-create_options">create_options</a></code></dt>
+"../Hash_set_intf/index.html#type-create_options">Core_kernel__.Hash_set_intf.create_options</a></code></dt>
 </dl>
 </details>
 </div>
@@ -136,14 +130,6 @@ class="anchor"></a><code><span class="keyword">val</span> of_list :
 <summary><span class="def"><code><span class=
 "keyword">include</span> <a href=
 "../../../base/Base/Container/index.html#module-type-Generic">Base.Container.Generic</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
-<dt class="spec type" id="type-elt"><a href="#type-elt" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-elt</code></dt>
-</dl>
 <dl>
 <dt class="spec value" id="val-length"><a href="#val-length" class=
 "anchor"></a><code><span class="keyword">val</span> length :
@@ -422,8 +408,8 @@ class="anchor"></a><code><span class="keyword">val</span> hashable
 </dl>
 <div class="spec module-type" id="module-type-Elt_plain"><a href=
 "#module-type-Elt_plain" class="anchor"></a><code><span class=
-"keyword">module</span> <span class="keyword">type</span> Elt_plain
-= <a href=
+"keyword">module</span> <span class="keyword">type</span> <a href=
+"module-type-Elt_plain/index.html">Elt_plain</a> = <a href=
 "../../Core_kernel/Hashtbl/index.html#module-type-Key_plain">Core_kernel.Hashtbl.Key_plain</a></code></div>
 <div class="spec module-type" id="module-type-Elt"><a href=
 "#module-type-Elt" class="anchor"></a><code><span class=
@@ -485,7 +471,7 @@ class="anchor"></a><code><span class="keyword">module</span>
 "keyword">module</span> <a href=
 "Make_plain/index.html">Make_plain</a> : <span class=
 "keyword">functor</span> (<a href=
-"Make_plain/index.html#argument-1-Elt">Elt</a> : <a href=
+"Make_plain/argument-1-Elt/index.html">Elt</a> : <a href=
 "index.html#module-type-Elt_plain">Elt_plain</a>)
 <span>-&gt;</span> <a href=
 "index.html#module-type-S_plain">S_plain</a> <span class=

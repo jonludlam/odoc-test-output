@@ -130,27 +130,13 @@ bound_</code> <code>= <a href=
 <div class="spec include">
 <div class="doc">
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
-<dt class="spec type" id="type-bound"><a href="#type-bound" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-bound</code></dt>
-<dd>
-<p><code>bound</code> is the type of points in the interval (and
-therefore of the bounds). <code>bound</code> is instantiated in two
-different ways below: in <code>module type S</code> as a monotype
-and in <code>module type S1</code> as <code>'a</code>.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
 <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a>
+"index.html#type-bound_">bound_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-t_">t_</a></code></dt>
 <dd>
 <p><code>create l u</code> returns the interval with lower bound
 <code>l</code> and upper bound <code>u</code>, unless <code>l &gt;
@@ -161,65 +147,67 @@ u</code>, in which case it returns the empty interval.</p>
 <dt class="spec value" id="val-empty"><a href="#val-empty" class=
 "anchor"></a><code><span class="keyword">val</span> empty :
 <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-t_">t_</a></code></dt>
 <dt class="spec value" id="val-intersect"><a href="#val-intersect"
 class="anchor"></a><code><span class="keyword">val</span> intersect
 : <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-t_">t_</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-t_">t_</a></code></dt>
 <dt class="spec value" id="val-is_empty"><a href="#val-is_empty"
 class="anchor"></a><code><span class="keyword">val</span> is_empty
 : <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+"index.html#type-t_">t_</a> <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-is_empty_or_singleton"><a href=
 "#val-is_empty_or_singleton" class="anchor"></a><code><span class=
 "keyword">val</span> is_empty_or_singleton : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"type-var">'a</span> <a href="index.html#type-t_">t_</a>
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-bounds"><a href="#val-bounds" class=
 "anchor"></a><code><span class="keyword">val</span> bounds :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> * <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a>)
-option</code></dt>
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a> <span>-&gt;</span> (<span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a> *
+<span class="type-var">'a</span> <a href=
+"index.html#type-bound_">bound_</a>) option</code></dt>
 <dt class="spec value" id="val-lbound"><a href="#val-lbound" class=
 "anchor"></a><code><span class="keyword">val</span> lbound :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> option</code></dt>
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a>
+option</code></dt>
 <dt class="spec value" id="val-ubound"><a href="#val-ubound" class=
 "anchor"></a><code><span class="keyword">val</span> ubound :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> option</code></dt>
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a>
+option</code></dt>
 <dt class="spec value" id="val-bounds_exn"><a href=
 "#val-bounds_exn" class="anchor"></a><code><span class=
 "keyword">val</span> bounds_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a> *
+<a href="index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a> *
 <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a></code></dt>
+"index.html#type-bound_">bound_</a></code></dt>
 <dt class="spec value" id="val-lbound_exn"><a href=
 "#val-lbound_exn" class="anchor"></a><code><span class=
 "keyword">val</span> lbound_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
+<a href="index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> <a href=
-"index.html#type-bound">bound</a></code></dt>
+"index.html#type-bound_">bound_</a></code></dt>
 <dt class="spec value" id="val-ubound_exn"><a href=
 "#val-ubound_exn" class="anchor"></a><code><span class=
 "keyword">val</span> ubound_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
+<a href="index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> <a href=
-"index.html#type-bound">bound</a></code></dt>
+"index.html#type-bound_">bound_</a></code></dt>
 <dt class="spec value" id="val-convex_hull"><a href=
 "#val-convex_hull" class="anchor"></a><code><span class=
 "keyword">val</span> convex_hull : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> list <span>-&gt;</span>
+<a href="index.html#type-t_">t_</a> list <span>-&gt;</span>
 <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-t_">t_</a></code></dt>
 <dd>
 <p><code>convex_hull ts</code> returns an interval whose upper
 bound is the greatest upper bound of the intervals in the list, and
@@ -239,23 +227,23 @@ and <code>c</code>:</p>
 <dt class="spec value" id="val-contains"><a href="#val-contains"
 class="anchor"></a><code><span class="keyword">val</span> contains
 : <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a>
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a>
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-compare_value"><a href=
 "#val-compare_value" class="anchor"></a><code><span class=
 "keyword">val</span> compare_value : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"type-var">'a</span> <a href="index.html#type-t_">t_</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> <span>-&gt;</span> [ `Below |
+"index.html#type-bound_">bound_</a> <span>-&gt;</span> [ `Below |
 `Within | `Above | `Interval_is_empty ]</code></dt>
 <dt class="spec value" id="val-bound"><a href="#val-bound" class=
 "anchor"></a><code><span class="keyword">val</span> bound :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a>
-option</code></dt>
+"index.html#type-bound_">bound_</a> option</code></dt>
 <dd>
 <p><code>bound t x</code> returns <code>None</code> iff
 <code>is_empty t</code>. If <code>bounds t = Some (a, b)</code>,
@@ -270,9 +258,9 @@ then <code>bound</code> returns <code>Some y</code> where
 <dt class="spec value" id="val-is_superset"><a href=
 "#val-is_superset" class="anchor"></a><code><span class=
 "keyword">val</span> is_superset : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<a href="index.html#type-t_">t_</a> <span>-&gt;</span>
 of_:<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+"index.html#type-t_">t_</a> <span>-&gt;</span> bool</code></dt>
 <dd>
 <p><code>is_superset i1 of_:i2</code> is whether i1 contains i2.
 The empty interval is contained in every interval.</p>
@@ -282,17 +270,18 @@ The empty interval is contained in every interval.</p>
 <dt class="spec value" id="val-is_subset"><a href="#val-is_subset"
 class="anchor"></a><code><span class="keyword">val</span> is_subset
 : <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> of_:<span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"index.html#type-t_">t_</a> <span>-&gt;</span> of_:<span class=
+"type-var">'a</span> <a href="index.html#type-t_">t_</a>
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-map"><a href="#val-map" class=
 "anchor"></a><code><span class="keyword">val</span> map :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-bound">bound</a>)
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a> <span>-&gt;</span> f:(<span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a>
 <span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-bound_">bound_</a>) <span>-&gt;</span>
+<span class="type-var">'b</span> <a href=
+"index.html#type-t_">t_</a></code></dt>
 <dd>
 <p><code>map t ~f</code> returns <code>create (f l) (f u)</code> if
 <code>bounds t = Some (l, u)</code>, and <code>empty</code> if
@@ -311,7 +300,7 @@ interval <code>[-1,1]</code> to <code>[1,1]</code>, not to
 <dt class="spec value" id="val-are_disjoint"><a href=
 "#val-are_disjoint" class="anchor"></a><code><span class=
 "keyword">val</span> are_disjoint : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a> list
+"type-var">'a</span> <a href="index.html#type-t_">t_</a> list
 <span>-&gt;</span> bool</code></dt>
 <dd>
 <p><code>are_disjoint ts</code> returns <code>true</code> iff the
@@ -323,7 +312,7 @@ intervals in <code>ts</code> are pairwise disjoint.</p>
 <a href="#val-are_disjoint_as_open_intervals" class=
 "anchor"></a><code><span class="keyword">val</span>
 are_disjoint_as_open_intervals : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> list <span>-&gt;</span>
+<a href="index.html#type-t_">t_</a> list <span>-&gt;</span>
 bool</code></dt>
 <dd>
 <p>Returns true iff a given set of intervals would be disjoint if
@@ -336,10 +325,10 @@ function.</p>
 <dt class="spec value" id="val-list_intersect"><a href=
 "#val-list_intersect" class="anchor"></a><code><span class=
 "keyword">val</span> list_intersect : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a> list
+"type-var">'a</span> <a href="index.html#type-t_">t_</a> list
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> list <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"index.html#type-t_">t_</a> list <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-t_">t_</a>
 list</code></dt>
 <dd>
 <p>Assuming that <code>ilist1</code> and <code>ilist2</code> are
@@ -362,7 +351,7 @@ list_intersect [i 4 7; i 9 15] [i 2 4; i 5 10; i 14 20];;
 "#val-half_open_intervals_are_a_partition" class=
 "anchor"></a><code><span class="keyword">val</span>
 half_open_intervals_are_a_partition : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a> list
+"type-var">'a</span> <a href="index.html#type-t_">t_</a> list
 <span>-&gt;</span> bool</code></dt>
 <dd>
 <p>Returns true if the intervals, when considered as half-open
@@ -389,21 +378,11 @@ nongeneralizable type variables.</p>
 </dd>
 </dl>
 <dl>
-<dt class="spec type" id="type-poly_t"><a href="#type-poly_t"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-poly_t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-to_poly"><a href="#val-to_poly"
 class="anchor"></a><code><span class="keyword">val</span> to_poly :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "index.html#type-bound">bound</a> <a href=
-"index.html#type-poly_t">poly_t</a></code></dt>
-</dl>
-<dl>
-<dt class="spec type" id="type-poly_set"><a href="#type-poly_set"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-poly_set</code></dt>
+"../index.html#type-t">t</a></code></dt>
 </dl>
 <div class="spec module" id="module-Set"><a href="#module-Set"
 class="anchor"></a><code><span class="keyword">module</span>
@@ -433,17 +412,11 @@ t</a> := <a href="index.html#type-t">t</a> <span class=
 elt</a> := <a href=
 "index.html#type-bound">bound</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-<dt class="spec type" id="type-elt"><a href="#type-elt" class=
-"anchor"></a><code><span class="keyword">type</span>
-elt</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-mem"><a href="#val-mem" class=
 "anchor"></a><code><span class="keyword">val</span> mem : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool</code></dt>
+"index.html#type-bound">bound</a> <span>-&gt;</span>
+bool</code></dt>
 <dd>
 <p>Checks whether the provided element is there, using equality on
 <code>elt</code>s.</p>
@@ -461,7 +434,7 @@ bool</code></dt>
 <dt class="spec value" id="val-iter"><a href="#val-iter" class=
 "anchor"></a><code><span class="keyword">val</span> iter : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> unit)
+"index.html#type-bound">bound</a> <span>-&gt;</span> unit)
 <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>iter</code> must allow exceptions raised in <code>f</code>
@@ -475,7 +448,7 @@ all functions below taking an <code>f</code>.</p>
 "index.html#type-t">t</a> <span>-&gt;</span> init:<span class=
 "type-var">'accum</span> <span>-&gt;</span> f:(<span class=
 "type-var">'accum</span> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
+"index.html#type-bound">bound</a> <span>-&gt;</span> <span class=
 "type-var">'accum</span>) <span>-&gt;</span> <span class=
 "type-var">'accum</span></code></dt>
 <dd>
@@ -491,7 +464,7 @@ elements of <code>t</code>.</p>
 "index.html#type-t">t</a> <span>-&gt;</span> init:<span class=
 "type-var">'accum</span> <span>-&gt;</span> f:(<span class=
 "type-var">'accum</span> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> (<span class=
+"index.html#type-bound">bound</a> <span>-&gt;</span> (<span class=
 "type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)
 <a href=
 "../../../base/Base/Result/index.html#type-t">Base.Result.t</a>)
@@ -513,7 +486,7 @@ value is returned without any additional invocations of
 "keyword">val</span> fold_until : <a href="index.html#type-t">t</a>
 <span>-&gt;</span> init:<span class="type-var">'accum</span>
 <span>-&gt;</span> f:(<span class="type-var">'accum</span>
-<span>-&gt;</span> <a href="index.html#type-elt">elt</a>
+<span>-&gt;</span> <a href="index.html#type-bound">bound</a>
 <span>-&gt;</span> (<span class=
 "type-var">'accum</span>,&nbsp;<span class=
 "type-var">'final</span>) <a href=
@@ -535,7 +508,7 @@ final result is computed by <code>finish</code>.</p>
 <dt class="spec value" id="val-exists"><a href="#val-exists" class=
 "anchor"></a><code><span class="keyword">val</span> exists :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool)
+"index.html#type-bound">bound</a> <span>-&gt;</span> bool)
 <span>-&gt;</span> bool</code></dt>
 <dd>
 <p>Returns <code>true</code> if and only if there exists an element
@@ -547,7 +520,7 @@ This is a short-circuiting operation.</p>
 <dt class="spec value" id="val-for_all"><a href="#val-for_all"
 class="anchor"></a><code><span class="keyword">val</span> for_all :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool)
+"index.html#type-bound">bound</a> <span>-&gt;</span> bool)
 <span>-&gt;</span> bool</code></dt>
 <dd>
 <p>Returns <code>true</code> if and only if the provided function
@@ -559,7 +532,7 @@ short-circuiting operation.</p>
 <dt class="spec value" id="val-count"><a href="#val-count" class=
 "anchor"></a><code><span class="keyword">val</span> count :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool)
+"index.html#type-bound">bound</a> <span>-&gt;</span> bool)
 <span>-&gt;</span> int</code></dt>
 <dd>
 <p>Returns the number of elements for which the provided function
@@ -576,7 +549,7 @@ Base__.Container_intf.Summable</a> <span class=
 "../../../base/Base__/Container_intf/module-type-Summable/index.html#type-t">
 t</a> = <span class="type-var">'sum</span>) <span>-&gt;</span>
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
+"index.html#type-bound">bound</a> <span>-&gt;</span> <span class=
 "type-var">'sum</span>) <span>-&gt;</span> <span class=
 "type-var">'sum</span></code></dt>
 <dd>
@@ -588,8 +561,8 @@ the container.</p>
 <dt class="spec value" id="val-find"><a href="#val-find" class=
 "anchor"></a><code><span class="keyword">val</span> find : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> <a href="index.html#type-elt">elt</a>
+"index.html#type-bound">bound</a> <span>-&gt;</span> bool)
+<span>-&gt;</span> <a href="index.html#type-bound">bound</a>
 option</code></dt>
 <dd>
 <p>Returns as an <code>option</code> the first element for which
@@ -600,7 +573,7 @@ option</code></dt>
 <dt class="spec value" id="val-find_map"><a href="#val-find_map"
 class="anchor"></a><code><span class="keyword">val</span> find_map
 : <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
+"index.html#type-bound">bound</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> option) <span>-&gt;</span> <span class=
 "type-var">'a</span> option</code></dt>
 <dd>
@@ -613,18 +586,18 @@ such element.</p>
 <dt class="spec value" id="val-to_list"><a href="#val-to_list"
 class="anchor"></a><code><span class="keyword">val</span> to_list :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> list</code></dt>
+"index.html#type-bound">bound</a> list</code></dt>
 <dt class="spec value" id="val-to_array"><a href="#val-to_array"
 class="anchor"></a><code><span class="keyword">val</span> to_array
 : <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> array</code></dt>
+"index.html#type-bound">bound</a> array</code></dt>
 <dt class="spec value" id="val-min_elt"><a href="#val-min_elt"
 class="anchor"></a><code><span class="keyword">val</span> min_elt :
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
-compare:(<a href="index.html#type-elt">elt</a> <span>-&gt;</span>
-<a href="index.html#type-elt">elt</a> <span>-&gt;</span> int)
-<span>-&gt;</span> <a href="index.html#type-elt">elt</a>
-option</code></dt>
+compare:(<a href="index.html#type-bound">bound</a>
+<span>-&gt;</span> <a href="index.html#type-bound">bound</a>
+<span>-&gt;</span> int) <span>-&gt;</span> <a href=
+"index.html#type-bound">bound</a> option</code></dt>
 <dd>
 <p>Returns a min (resp. max) element from the collection using the
 provided <code>compare</code> function. In case of a tie, the first
@@ -638,10 +611,10 @@ collection is empty.</p>
 <dt class="spec value" id="val-max_elt"><a href="#val-max_elt"
 class="anchor"></a><code><span class="keyword">val</span> max_elt :
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
-compare:(<a href="index.html#type-elt">elt</a> <span>-&gt;</span>
-<a href="index.html#type-elt">elt</a> <span>-&gt;</span> int)
-<span>-&gt;</span> <a href="index.html#type-elt">elt</a>
-option</code></dt>
+compare:(<a href="index.html#type-bound">bound</a>
+<span>-&gt;</span> <a href="index.html#type-bound">bound</a>
+<span>-&gt;</span> int) <span>-&gt;</span> <a href=
+"index.html#type-bound">bound</a> option</code></dt>
 </dl>
 </details>
 </div>
@@ -663,18 +636,11 @@ t</a> := <a href="index.html#type-t">t</a> <span class=
 elt</a> := <a href=
 "index.html#type-bound">bound</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-elt"><a href="#type-elt" class=
-"anchor"></a><code><span class="keyword">type</span>
-elt</code></dt>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-binary_search"><a href=
 "#val-binary_search" class="anchor"></a><code><span class=
 "keyword">val</span> binary_search : (<a href=
 "index.html#type-t">t</a>,&nbsp;<a href=
-"index.html#type-elt">elt</a>,&nbsp;<span class=
+"index.html#type-bound">bound</a>,&nbsp;<span class=
 "type-var">'key</span>) <a href=
 "../../../base/Base__/Binary_searchable_intf/index.html#type-binary_search">
 Base__.Binary_searchable_intf.binary_search</a></code></dt>
@@ -689,7 +655,7 @@ binary_search.ml</p>
 "anchor"></a><code><span class="keyword">val</span>
 binary_search_segmented : (<a href=
 "index.html#type-t">t</a>,&nbsp;<a href=
-"index.html#type-elt">elt</a>) <a href=
+"index.html#type-bound">bound</a>) <a href=
 "../../../base/Base__/Binary_searchable_intf/index.html#type-binary_search_segmented">
 Base__.Binary_searchable_intf.binary_search_segmented</a></code></dt>
 <dd>

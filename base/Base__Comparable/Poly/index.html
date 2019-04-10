@@ -116,8 +116,9 @@ greater than <code>t2</code>.</p>
 <dl>
 <dt class="spec value" id="val-ascending"><a href="#val-ascending"
 class="anchor"></a><code><span class="keyword">val</span> ascending
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> int</code></dt>
+: <a href="argument-1-T/index.html#type-t">T.t</a>
+<span>-&gt;</span> <a href="argument-1-T/index.html#type-t">T.t</a>
+<span>-&gt;</span> int</code></dt>
 <dd>
 <p><code>ascending</code> is identical to <code>compare</code>.
 <code>descending x y = ascending y x</code>. These are intended to
@@ -130,14 +131,17 @@ ascending or descending order, respectively.</p>
 <dl>
 <dt class="spec value" id="val-descending"><a href=
 "#val-descending" class="anchor"></a><code><span class=
-"keyword">val</span> descending : <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> int</code></dt>
+"keyword">val</span> descending : <a href=
+"argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+<a href="argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+int</code></dt>
 <dt class="spec value" id="val-between"><a href="#val-between"
 class="anchor"></a><code><span class="keyword">val</span> between :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> low:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> high:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<a href="argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+low:<a href="argument-1-T/index.html#type-t">T.t</a>
+<span>-&gt;</span> high:<a href=
+"argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+bool</code></dt>
 <dd>
 <p><code>between t ~low ~high</code> means <code>low &lt;= t &lt;=
 high</code></p>
@@ -146,10 +150,12 @@ high</code></p>
 <dl>
 <dt class="spec value" id="val-clamp_exn"><a href="#val-clamp_exn"
 class="anchor"></a><code><span class="keyword">val</span> clamp_exn
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> min:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> max:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+: <a href="argument-1-T/index.html#type-t">T.t</a>
+<span>-&gt;</span> min:<a href=
+"argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+max:<a href="argument-1-T/index.html#type-t">T.t</a>
+<span>-&gt;</span> <a href=
+"argument-1-T/index.html#type-t">T.t</a></code></dt>
 <dd>
 <p><code>clamp_exn t ~min ~max</code> returns <code>t'</code>, the
 closest value to <code>t</code> such that <code>between t' ~low:min
@@ -160,10 +166,11 @@ closest value to <code>t</code> such that <code>between t' ~low:min
 <dl>
 <dt class="spec value" id="val-clamp"><a href="#val-clamp" class=
 "anchor"></a><code><span class="keyword">val</span> clamp :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> min:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> max:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-t">t</a> <a href=
+<a href="argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+min:<a href="argument-1-T/index.html#type-t">T.t</a>
+<span>-&gt;</span> max:<a href=
+"argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+<a href="argument-1-T/index.html#type-t">T.t</a> <a href=
 "../../Base/Or_error/index.html#type-t">Base.Or_error.t</a></code></dt>
 </dl>
 <div>
@@ -176,10 +183,9 @@ closest value to <code>t</code> such that <code>between t' ~low:min
 <span class="keyword">with</span> <span class="keyword">type</span>
 <a href=
 "../../Base/Comparator/module-type-S/index.html#type-t">t</a> :=
-<a href="index.html#type-t">t</a></code></span></summary>
+<a href=
+"argument-1-T/index.html#type-t">T.t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
 <dt class="spec type" id="type-comparator_witness"><a href=
 "#type-comparator_witness" class="anchor"></a><code><span class=
 "keyword">type</span> comparator_witness</code></dt>
@@ -188,7 +194,7 @@ closest value to <code>t</code> such that <code>between t' ~low:min
 <dt class="spec value" id="val-comparator"><a href=
 "#val-comparator" class="anchor"></a><code><span class=
 "keyword">val</span> comparator : (<a href=
-"index.html#type-t">t</a>,&nbsp;<a href=
+"argument-1-T/index.html#type-t">T.t</a>,&nbsp;<a href=
 "index.html#type-comparator_witness">comparator_witness</a>)
 <a href=
 "../../Base/Comparator/index.html#type-comparator">Base.Comparator.comparator</a></code></dt>
@@ -207,34 +213,35 @@ closest value to <code>t</code> such that <code>between t' ~low:min
 <span class="keyword">with</span> <span class="keyword">type</span>
 <a href=
 "../../Base__/Comparable_intf/module-type-Validate/index.html#type-t">
-t</a> := <a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
+t</a> := <a href=
+"argument-1-T/index.html#type-t">T.t</a></code></span></summary>
 <dl>
 <dt class="spec value" id="val-validate_lbound"><a href=
 "#val-validate_lbound" class="anchor"></a><code><span class=
 "keyword">val</span> validate_lbound : min:<a href=
-"index.html#type-t">t</a> <a href=
+"argument-1-T/index.html#type-t">T.t</a> <a href=
 "../../Base/Maybe_bound/index.html#type-t">Base.Maybe_bound.t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
+<span>-&gt;</span> <a href="argument-1-T/index.html#type-t">T.t</a>
+<a href=
 "../../Base/Validate/index.html#type-check">Base.Validate.check</a></code></dt>
 <dt class="spec value" id="val-validate_ubound"><a href=
 "#val-validate_ubound" class="anchor"></a><code><span class=
 "keyword">val</span> validate_ubound : max:<a href=
-"index.html#type-t">t</a> <a href=
+"argument-1-T/index.html#type-t">T.t</a> <a href=
 "../../Base/Maybe_bound/index.html#type-t">Base.Maybe_bound.t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
+<span>-&gt;</span> <a href="argument-1-T/index.html#type-t">T.t</a>
+<a href=
 "../../Base/Validate/index.html#type-check">Base.Validate.check</a></code></dt>
 <dt class="spec value" id="val-validate_bound"><a href=
 "#val-validate_bound" class="anchor"></a><code><span class=
 "keyword">val</span> validate_bound : min:<a href=
-"index.html#type-t">t</a> <a href=
+"argument-1-T/index.html#type-t">T.t</a> <a href=
 "../../Base/Maybe_bound/index.html#type-t">Base.Maybe_bound.t</a>
-<span>-&gt;</span> max:<a href="index.html#type-t">t</a> <a href=
+<span>-&gt;</span> max:<a href=
+"argument-1-T/index.html#type-t">T.t</a> <a href=
 "../../Base/Maybe_bound/index.html#type-t">Base.Maybe_bound.t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
+<span>-&gt;</span> <a href="argument-1-T/index.html#type-t">T.t</a>
+<a href=
 "../../Base/Validate/index.html#type-check">Base.Validate.check</a></code></dt>
 </dl>
 </details>

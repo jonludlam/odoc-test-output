@@ -23,30 +23,22 @@ hljs.initHighlightingOnLoad();
 "../../index.html">core_kernel</a> » <a href=
 "../index.html">Core_kernel__Date</a> » Days</nav>
 <h1>Module <code>Core_kernel__Date.Days</code></h1>
-<p><code>Days</code> provides a linear representation of dates that
-is optimized for arithmetic on the number of days between dates,
-rather than for representing year/month/day components. This module
-is intended for use only in performance-sensitive contexts where
-dates are manipulated more often than they are constructed or
-deconstructed; most clients should use the ordinary
-<code>t</code>.</p>
 </header>
 <dl>
-<dt class="spec type" id="type-date"><a href="#type-date" class=
-"anchor"></a><code><span class="keyword">type</span> date</code>
-<code>= <a href="../index.html#type-t">t</a></code></dt>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> t</code>
+<code>= <a href=
+"../../Core_kernel__Date0/Days/index.html#type-t">Core_kernel__Date0.Days.t</a></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-of_date"><a href="#val-of_date"
 class="anchor"></a><code><span class="keyword">val</span> of_date :
-<a href="index.html#type-date">date</a> <span>-&gt;</span> <a href=
+<a href="../index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-to_date"><a href="#val-to_date"
 class="anchor"></a><code><span class="keyword">val</span> to_date :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-date">date</a></code></dt>
+"../index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-diff"><a href="#val-diff" class=
 "anchor"></a><code><span class="keyword">val</span> diff : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
@@ -61,9 +53,6 @@ class="anchor"></a><code><span class="keyword">val</span> add_days
 "#val-unix_epoch" class="anchor"></a><code><span class=
 "keyword">val</span> unix_epoch : <a href=
 "index.html#type-t">t</a></code></dt>
-<dd>
-<p>The starting date of the UNIX epoch: 1970-01-01</p>
-</dd>
 </dl>
 </div>
 </body>

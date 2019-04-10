@@ -26,29 +26,65 @@ hljs.initHighlightingOnLoad();
 "../../index.html">Time_ns_intf</a> » <a href=
 "../index.html">Ofday</a> » Span</nav>
 <h1>Module <code>Ofday.Span</code></h1>
-<nav class="toc">
-<ul>
-<li><a href="#values">values</a></li>
-<li><a href="#converters">converters</a></li>
-<li><a href="#basic-operations-on-spans">Basic operations on
-spans</a></li>
-</ul>
-</nav>
 </header>
-<dl>
-<dt class="spec type" id="type-underlying"><a href=
-"#type-underlying" class="anchor"></a><code><span class=
-"keyword">type</span> underlying</code></dt>
-<dd>
-<p>Span.t represents a span of time (e.g. 7 minutes, 3 hours, 12.8
-days). The span may be positive or negative.</p>
-</dd>
-</dl>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> t</code>
 <code>= <span class="keyword">private</span> <a href=
-"index.html#type-underlying">underlying</a></code></dt>
+"../../../../Core_kernel/Int63/index.html#type-t">Core_kernel.Int63.t</a></code></dt>
+<dd>
+<p><code>t</code> is immediate on 64bit boxes and so plays nicely
+with the GC write barrier.</p>
+</dd>
+</dl>
+<div>
+<div class="spec include">
+<div class="doc">
+<details open="open">
+<summary><span class="def"><code><span class=
+"keyword">include</span> <span class="keyword">sig</span> ...
+<span class="keyword">end</span></code></span></summary>
+<dl>
+<dt class="spec value" id="val-hash_fold_t"><a href=
+"#val-hash_fold_t" class="anchor"></a><code><span class=
+"keyword">val</span> hash_fold_t : <a href=
+"../../../../../base/Base/Hash/index.html#type-state">Base.Hash.state</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a>
+<span>-&gt;</span> <a href=
+"../../../../../base/Base/Hash/index.html#type-state">Base.Hash.state</a></code></dt>
+<dt class="spec value" id="val-hash"><a href="#val-hash" class=
+"anchor"></a><code><span class="keyword">val</span> hash : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../../base/Base/Hash/index.html#type-hash_value">Base.Hash.hash_value</a></code></dt>
+</dl>
+</details>
+</div>
+</div>
+</div>
+<div>
+<div class="spec include">
+<div class="doc">
+<details open="open">
+<summary><span class="def"><code><span class=
+"keyword">include</span> <a href=
+"../../../Span_intf/index.html#module-type-S">Core_kernel__.Span_intf.S</a>
+<span class="keyword">with</span> <span class="keyword">type</span>
+<a href=
+"../../../Span_intf/module-type-S/index.html#type-underlying">underlying</a>
+= <a href=
+"../../../../Core_kernel/Int63/index.html#type-t">Core_kernel.Int63.t</a>
+<span class="keyword">and</span> <span class="keyword">type</span>
+<a href="../../../Span_intf/module-type-S/index.html#type-t">t</a>
+:= <a href="index.html#type-t">t</a></code></span></summary>
+<dl>
+<dt class="spec type" id="type-underlying"><a href=
+"#type-underlying" class="anchor"></a><code><span class=
+"keyword">type</span> underlying</code> <code>= <a href=
+"../../../../Core_kernel/Int63/index.html#type-t">Core_kernel.Int63.t</a></code></dt>
+<dd>
+<p>Span.t represents a span of time (e.g. 7 minutes, 3 hours, 12.8
+days). The span may be positive or negative.</p>
+</dd>
 </dl>
 <div>
 <div class="spec include">
@@ -180,10 +216,6 @@ Base__.Comparable_intf.Polymorphic_compare</a></code></span></summary>
 "../../../../../base/Base/Comparisons/index.html#module-type-Infix">
 Base.Comparisons.Infix</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-(&gt;=)"><a href="#val-(%3E=)"
 class="anchor"></a><code><span class="keyword">val</span> (&gt;=) :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
@@ -311,8 +343,6 @@ closest value to <code>t</code> such that <code>between t' ~low:min
 "../../../../../base/Base/Comparator/module-type-S/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
 <dt class="spec type" id="type-comparator_witness"><a href=
 "#type-comparator_witness" class="anchor"></a><code><span class=
 "keyword">type</span> comparator_witness</code></dt>
@@ -341,10 +371,6 @@ Base__.Comparable_intf.Validate</a> <span class=
 "keyword">with</span> <span class="keyword">type</span> <a href=
 "../../../../../base/Base__/Comparable_intf/module-type-Validate/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <dl>
 <dt class="spec value" id="val-validate_lbound"><a href=
 "#val-validate_lbound" class="anchor"></a><code><span class=
@@ -407,10 +433,6 @@ t</a> := <a href="index.html#type-t">t</a> <span class=
 "../../../Comparable_intf/module-type-Map_and_set_binable/index.html#type-comparator_witness">
 comparator_witness</a> := <a href=
 "index.html#type-comparator_witness">comparator_witness</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -423,8 +445,6 @@ comparator_witness</a> := <a href=
 "../../../../Core_kernel/Comparator/module-type-S/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
 <dt class="spec type" id="type-comparator_witness"><a href=
 "#type-comparator_witness" class="anchor"></a><code><span class=
 "keyword">type</span> comparator_witness</code></dt>
@@ -486,10 +506,6 @@ Core_kernel.Comparable.With_zero</a> <span class=
 "../../../../Core_kernel/Comparable/module-type-With_zero/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-validate_positive"><a href=
 "#val-validate_positive" class="anchor"></a><code><span class=
 "keyword">val</span> validate_positive : <a href=
@@ -550,10 +566,6 @@ in a way consistent with the above functions.</p>
 <a href=
 "../../../Std_internal/module-type-Hashable_binable/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -626,10 +638,6 @@ Key.t</a> = <a href="index.html#type-t">t</a></code></div>
 "../../../../../base/Base/Pretty_printer/module-type-S/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-pp"><a href="#val-pp" class=
 "anchor"></a><code><span class="keyword">val</span> pp : <a href=
 "../../../../../base/Base/Formatter/index.html#type-t">Base.Formatter.t</a>
@@ -651,10 +659,6 @@ t</a> := <a href="index.html#type-t">t</a></code></span></summary>
 <a href=
 "../../../Std_internal/module-type-Robustly_comparable/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <dl>
 <dt class="spec value" id="val-(&gt;=.)"><a href="#val-(%3E=.)"
 class="anchor"></a><code><span class="keyword">val</span> (&gt;=.)
@@ -1068,6 +1072,181 @@ must be positive.</p>
 </dd>
 </dl>
 </section>
+</details>
+</div>
+</div>
+</div>
+<dl>
+<dt class="spec value" id="val-of_sec_with_microsecond_precision">
+<a href="#val-of_sec_with_microsecond_precision" class=
+"anchor"></a><code><span class="keyword">val</span>
+of_sec_with_microsecond_precision : <a href=
+"../../../Import/index.html#type-float">Core_kernel__.Import.float</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-of_int_us"><a href="#val-of_int_us"
+class="anchor"></a><code><span class="keyword">val</span> of_int_us
+: <a href=
+"../../../Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-of_int_ms"><a href="#val-of_int_ms"
+class="anchor"></a><code><span class="keyword">val</span> of_int_ms
+: <a href=
+"../../../Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-to_int_us"><a href="#val-to_int_us"
+class="anchor"></a><code><span class="keyword">val</span> to_int_us
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
+<dt class="spec value" id="val-to_int_ms"><a href="#val-to_int_ms"
+class="anchor"></a><code><span class="keyword">val</span> to_int_ms
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
+<dt class="spec value" id="val-to_int_sec"><a href=
+"#val-to_int_sec" class="anchor"></a><code><span class=
+"keyword">val</span> to_int_sec : <a href="index.html#type-t">t</a>
+<span>-&gt;</span> <a href=
+"../../../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
+<dt class="spec value" id="val-min_value"><a href="#val-min_value"
+class="anchor"></a><code><span class="keyword">val</span> min_value
+: <a href="index.html#type-t">t</a></code></dt>
+<dd>
+<p>Contrary to the names, one can easily construct a <code>t</code>
+that is less than <code>min_value</code> or greater than
+<code>max_value</code>.</p>
+<p>For <code>t</code>s that happen to be within these bounds,
+conversion to and from <code>Time.Span</code> rounds to the nearest
+microsecond. This property supports <code>Timing_wheel_float</code>
+in particular.</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec value" id="val-max_value"><a href="#val-max_value"
+class="anchor"></a><code><span class="keyword">val</span> max_value
+: <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-scale_int"><a href="#val-scale_int"
+class="anchor"></a><code><span class="keyword">val</span> scale_int
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dd>
+<p>overflows silently</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec value" id="val-scale_int63"><a href=
+"#val-scale_int63" class="anchor"></a><code><span class=
+"keyword">val</span> scale_int63 : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../Core_kernel/Int63/index.html#type-t">Core_kernel.Int63.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dd>
+<p>overflows silently</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec value" id="val-div"><a href="#val-div" class=
+"anchor"></a><code><span class="keyword">val</span> div : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../Core_kernel/Int63/index.html#type-t">Core_kernel.Int63.t</a></code></dt>
+<dd>
+<p>Rounds down, and raises unless denominator is positive.</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec value" id="val-to_int63_ns"><a href=
+"#val-to_int63_ns" class="anchor"></a><code><span class=
+"keyword">val</span> to_int63_ns : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../Core_kernel/Int63/index.html#type-t">Core_kernel.Int63.t</a></code></dt>
+<dd>
+<p>Fast, implemented as the identity function.</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec value" id="val-of_int63_ns"><a href=
+"#val-of_int63_ns" class="anchor"></a><code><span class=
+"keyword">val</span> of_int63_ns : <a href=
+"../../../../Core_kernel/Int63/index.html#type-t">Core_kernel.Int63.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dd>
+<p>Fast, implemented as the identity function.</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec value" id="val-to_int_ns"><a href="#val-to_int_ns"
+class="anchor"></a><code><span class="keyword">val</span> to_int_ns
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
+<dd>
+<p>Will raise on 32-bit platforms. Consider
+<code>to_int63_ns</code> instead.</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec value" id="val-of_int_ns"><a href="#val-of_int_ns"
+class="anchor"></a><code><span class="keyword">val</span> of_int_ns
+: <a href=
+"../../../Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-since_unix_epoch"><a href=
+"#val-since_unix_epoch" class="anchor"></a><code><span class=
+"keyword">val</span> since_unix_epoch : <a href=
+"../../../Import/index.html#type-unit">Core_kernel__.Import.unit</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-random"><a href="#val-random" class=
+"anchor"></a><code><span class="keyword">val</span> random :
+?⁠state:<a href=
+"../../../../../base/Base__Random/State/index.html#type-t">Core_kernel__.Import.Random.State.t</a>
+<span>-&gt;</span> <a href=
+"../../../Import/index.html#type-unit">Core_kernel__.Import.unit</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-to_span"><a href="#val-to_span"
+class="anchor"></a><code><span class="keyword">val</span> to_span :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../Span_float/index.html#type-t">Core_kernel__.Span_float.t</a></code></dt>
+<dd>
+<p><span class="xref-unresolved" title=
+"unresolved reference to &quot;Time.t&quot;"><a href=
+"../../../index.html#module-Time"><code>Time</code></a>.t</span> is
+precise to approximately 0.24us in 2014. If <code>to_span</code>
+converts to the closest <code>Time.Span.t</code>, we have stability
+problems: converting back yields a different <code>t</code>,
+sometimes different enough to have a different external
+representation, because the conversion back and forth crosses a
+rounding boundary.</p>
+<p>To stabilize conversion, we treat <code>Time.t</code> as having
+1us precision: <code>to_span</code> and <code>of_span</code> both
+round to the nearest 1us.</p>
+<p>Around 135y magnitudes, <code>Time.Span.t</code> no longer has
+1us resolution. At that point, <code>to_span</code> and
+<code>of_span</code> raise.</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec value" id="val-of_span"><a href="#val-of_span"
+class="anchor"></a><code><span class="keyword">val</span> of_span :
+<a href=
+"../../../Span_float/index.html#type-t">Core_kernel__.Span_float.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+</dl>
+<dl>
+<dt class="spec module" id="module-Alternate_sexp"><a href=
+"#module-Alternate_sexp" class="anchor"></a><code><span class=
+"keyword">module</span> <a href=
+"Alternate_sexp/index.html">Alternate_sexp</a> : <span class=
+"keyword">sig</span> ... <span class=
+"keyword">end</span></code></dt>
+<dd>
+<p>Note that we expose a sexp format that is not the one exposed in
+<code>Core</code>.</p>
+</dd>
+</dl>
+<div class="spec module" id="module-Private"><a href=
+"#module-Private" class="anchor"></a><code><span class=
+"keyword">module</span> <a href="Private/index.html">Private</a> :
+<span class="keyword">sig</span> ... <span class=
+"keyword">end</span></code></div>
 </div>
 </body>
 </html>

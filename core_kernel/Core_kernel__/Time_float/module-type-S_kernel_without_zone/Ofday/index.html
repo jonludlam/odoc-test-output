@@ -28,38 +28,10 @@ hljs.initHighlightingOnLoad();
 <h1>Module <code>S_kernel_without_zone.Ofday</code></h1>
 </header>
 <dl>
-<dt class="spec type" id="type-underlying"><a href=
-"#type-underlying" class="anchor"></a><code><span class=
-"keyword">type</span> underlying</code></dt>
-<dd>
-<p>Time of day.</p>
-<p><code>t</code> represents a clock-face time of day. Usually this
-is equivalent to a time-offset from midnight, and each
-<code>t</code> occurs exactly once in each calendar day. However,
-when daylight saving time begins or ends, some clock face times
-(and therefore <code>t</code>'s) can occur more than once per day
-or not at all, and e.g. 04:00 can occur three or five hours after
-midnight, so knowing your current offset from midnight is *not* in
-general equivalent to knowing the current <code>t</code>.</p>
-<p>(See <a href="../../../Zone/index.html"><code>Zone</code></a>
-for tools to help you cope with DST.)</p>
-<p>There is one nonstandard representable value,
-<code>start_of_next_day</code>, which can be thought of as
-"24:00:00" in 24-hour time. It is essentially "00:00:00" on the
-next day. By having this value, we allow comparisons against a
-strict upper bound on <code>t</code> values. However, it has some
-odd properties; for example, <code>Time.of_date_ofday ~zone date
-start_of_next_day |&gt; Time.to_date ~zone</code> yields a
-different date.</p>
-<p>Any <code>ofday</code> will satisfy <code>start_of_day &lt;=
-ofday &lt;= start_of_next_day</code>.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> t</code>
 <code>= <span class="keyword">private</span> <a href=
-"index.html#type-underlying">underlying</a></code></dt>
+"../index.html#type-underlying">underlying</a></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -175,10 +147,6 @@ Base__.Comparable_intf.Polymorphic_compare</a></code></span></summary>
 "keyword">include</span> <a href=
 "../../../../../base/Base/Comparisons/index.html#module-type-Infix">
 Base.Comparisons.Infix</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <dl>
 <dt class="spec value" id="val-(&gt;=)"><a href="#val-(%3E=)"
 class="anchor"></a><code><span class="keyword">val</span> (&gt;=) :
@@ -307,8 +275,6 @@ closest value to <code>t</code> such that <code>between t' ~low:min
 "../../../../../base/Base/Comparator/module-type-S/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
 <dt class="spec type" id="type-comparator_witness"><a href=
 "#type-comparator_witness" class="anchor"></a><code><span class=
 "keyword">type</span> comparator_witness</code></dt>
@@ -337,10 +303,6 @@ Base__.Comparable_intf.Validate</a> <span class=
 "keyword">with</span> <span class="keyword">type</span> <a href=
 "../../../../../base/Base__/Comparable_intf/module-type-Validate/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <dl>
 <dt class="spec value" id="val-validate_lbound"><a href=
 "#val-validate_lbound" class="anchor"></a><code><span class=
@@ -403,10 +365,6 @@ t</a> := <a href="index.html#type-t">t</a> <span class=
 "../../../Comparable_intf/module-type-Map_and_set_binable/index.html#type-comparator_witness">
 comparator_witness</a> := <a href=
 "index.html#type-comparator_witness">comparator_witness</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -419,8 +377,6 @@ comparator_witness</a> := <a href=
 "../../../../Core_kernel/Comparator/module-type-S/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
 <dt class="spec type" id="type-comparator_witness"><a href=
 "#type-comparator_witness" class="anchor"></a><code><span class=
 "keyword">type</span> comparator_witness</code></dt>
@@ -481,10 +437,6 @@ Elt.comparator_witness</a> = <a href=
 <a href=
 "../../../Std_internal/module-type-Hashable_binable/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -557,10 +509,6 @@ Key.t</a> = <a href="index.html#type-t">t</a></code></div>
 "../../../../../base/Base/Pretty_printer/module-type-S/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-pp"><a href="#val-pp" class=
 "anchor"></a><code><span class="keyword">val</span> pp : <a href=
 "../../../../../base/Base/Formatter/index.html#type-t">Base.Formatter.t</a>
@@ -582,10 +530,6 @@ t</a> := <a href="index.html#type-t">t</a></code></span></summary>
 <a href=
 "../../../Std_internal/module-type-Robustly_comparable/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <dl>
 <dt class="spec value" id="val-(&gt;=.)"><a href="#val-(%3E=.)"
 class="anchor"></a><code><span class="keyword">val</span> (&gt;=.)
@@ -622,10 +566,6 @@ class="anchor"></a><code><span class="keyword">val</span> (&lt;.) :
 </div>
 </div>
 </div>
-<div class="spec module" id="module-Span"><a href="#module-Span"
-class="anchor"></a><code><span class="keyword">module</span>
-<a href="Span/index.html">Span</a> : <a href=
-"../../../Span_intf/index.html#module-type-S">Core_kernel__.Span_intf.S</a></code></div>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -646,10 +586,6 @@ times.</p>
 <a href=
 "../../../Std_internal/module-type-Stringable/index.html#type-t">t</a>
 := <a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <dl>
 <dt class="spec value" id="val-of_string"><a href="#val-of_string"
 class="anchor"></a><code><span class="keyword">val</span> of_string
@@ -729,7 +665,7 @@ and ofday representations, depending on their precision.</p>
 "anchor"></a><code><span class="keyword">val</span>
 to_span_since_start_of_day : <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <a href=
-"Span/index.html#type-t">Span.t</a></code></dt>
+"../Span/index.html#type-t">Span.t</a></code></dt>
 <dd>
 <p>Note that these names are only really accurate on days without
 DST transitions. When clocks move forward or back,
@@ -742,18 +678,18 @@ occur <code>s</code> after that day's midnight.</p>
 <a href="#val-of_span_since_start_of_day_exn" class=
 "anchor"></a><code><span class="keyword">val</span>
 of_span_since_start_of_day_exn : <a href=
-"Span/index.html#type-t">Span.t</a> <span>-&gt;</span> <a href=
+"../Span/index.html#type-t">Span.t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_span_since_start_of_day"><a href=
 "#val-of_span_since_start_of_day" class=
 "anchor"></a><code><span class="keyword">val</span>
 of_span_since_start_of_day : <a href=
-"Span/index.html#type-t">Span.t</a> <span>-&gt;</span> <a href=
+"../Span/index.html#type-t">Span.t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-add"><a href="#val-add" class=
 "anchor"></a><code><span class="keyword">val</span> add : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Span/index.html#type-t">Span.t</a> <span>-&gt;</span> <a href=
+"../Span/index.html#type-t">Span.t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a> <a href=
 "../../../Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
 <dd>
@@ -766,7 +702,7 @@ is not in the same 24-hour day.</p>
 <dt class="spec value" id="val-sub"><a href="#val-sub" class=
 "anchor"></a><code><span class="keyword">val</span> sub : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Span/index.html#type-t">Span.t</a> <span>-&gt;</span> <a href=
+"../Span/index.html#type-t">Span.t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a> <a href=
 "../../../Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
 <dt class="spec value" id="val-next"><a href="#val-next" class=
@@ -795,7 +731,7 @@ t) or None if <code>t</code> = end of day.</p>
 "anchor"></a><code><span class="keyword">val</span> diff : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Span/index.html#type-t">Span.t</a></code></dt>
+"../Span/index.html#type-t">Span.t</a></code></dt>
 <dd>
 <p><code>diff t1 t2</code> returns the difference in time between
 two ofdays, as if they occurred on the same 24-hour day.</p>
@@ -807,7 +743,7 @@ two ofdays, as if they occurred on the same 24-hour day.</p>
 "keyword">val</span> small_diff : <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <a href=
-"Span/index.html#type-t">Span.t</a></code></dt>
+"../Span/index.html#type-t">Span.t</a></code></dt>
 <dd>
 <p>Returns the time-span separating the two of-days, ignoring the
 hour information, and assuming that the of-days represent times

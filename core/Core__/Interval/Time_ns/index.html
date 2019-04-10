@@ -25,11 +25,6 @@ hljs.initHighlightingOnLoad();
 "../index.html">Interval</a> » Time_ns</nav>
 <h1>Module <code>Interval.Time_ns</code></h1>
 </header>
-<div class="spec module" id="module-Time"><a href="#module-Time"
-class="anchor"></a><code><span class="keyword">module</span>
-<a href="Time/index.html">Time</a> : <span class=
-"keyword">sig</span> ... <span class=
-"keyword">end</span></code></div>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -41,7 +36,7 @@ class="anchor"></a><code><span class="keyword">module</span>
 <a href=
 "../../../Core/Interval_intf/module-type-S/index.html#type-bound">bound</a>
 = <a href=
-"Time/index.html#type-t">Time.t</a></code></span></summary>
+"../../../Core/Interval_intf/Time_ns/index.html#type-t">Core.Interval_intf.Time_ns.t</a></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> t</code></dt>
@@ -124,7 +119,8 @@ class="anchor"></a><code><span class="keyword">val</span> compare :
 <dl>
 <dt class="spec type" id="type-bound"><a href="#type-bound" class=
 "anchor"></a><code><span class="keyword">type</span> bound</code>
-<code>= <a href="Time/index.html#type-t">Time.t</a></code></dt>
+<code>= <a href=
+"../../../Core/Interval_intf/Time_ns/index.html#type-t">Core.Interval_intf.Time_ns.t</a></code></dt>
 <dt class="spec type" id="type-t_"><a href="#type-t_" class=
 "anchor"></a><code><span class="keyword">type</span> 'a t_</code>
 <code>= <a href="index.html#type-t">t</a></code></dt>
@@ -137,27 +133,13 @@ bound_</code> <code>= <a href=
 <div class="spec include">
 <div class="doc">
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
-<dt class="spec type" id="type-bound"><a href="#type-bound" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-bound</code></dt>
-<dd>
-<p><code>bound</code> is the type of points in the interval (and
-therefore of the bounds). <code>bound</code> is instantiated in two
-different ways below: in <code>module type S</code> as a monotype
-and in <code>module type S1</code> as <code>'a</code>.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
 <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a>
+"index.html#type-bound_">bound_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-t_">t_</a></code></dt>
 <dd>
 <p><code>create l u</code> returns the interval with lower bound
 <code>l</code> and upper bound <code>u</code>, unless <code>l &gt;
@@ -168,65 +150,67 @@ u</code>, in which case it returns the empty interval.</p>
 <dt class="spec value" id="val-empty"><a href="#val-empty" class=
 "anchor"></a><code><span class="keyword">val</span> empty :
 <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-t_">t_</a></code></dt>
 <dt class="spec value" id="val-intersect"><a href="#val-intersect"
 class="anchor"></a><code><span class="keyword">val</span> intersect
 : <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-t_">t_</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-t_">t_</a></code></dt>
 <dt class="spec value" id="val-is_empty"><a href="#val-is_empty"
 class="anchor"></a><code><span class="keyword">val</span> is_empty
 : <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+"index.html#type-t_">t_</a> <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-is_empty_or_singleton"><a href=
 "#val-is_empty_or_singleton" class="anchor"></a><code><span class=
 "keyword">val</span> is_empty_or_singleton : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"type-var">'a</span> <a href="index.html#type-t_">t_</a>
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-bounds"><a href="#val-bounds" class=
 "anchor"></a><code><span class="keyword">val</span> bounds :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> * <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a>)
-option</code></dt>
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a> <span>-&gt;</span> (<span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a> *
+<span class="type-var">'a</span> <a href=
+"index.html#type-bound_">bound_</a>) option</code></dt>
 <dt class="spec value" id="val-lbound"><a href="#val-lbound" class=
 "anchor"></a><code><span class="keyword">val</span> lbound :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> option</code></dt>
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a>
+option</code></dt>
 <dt class="spec value" id="val-ubound"><a href="#val-ubound" class=
 "anchor"></a><code><span class="keyword">val</span> ubound :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> option</code></dt>
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a>
+option</code></dt>
 <dt class="spec value" id="val-bounds_exn"><a href=
 "#val-bounds_exn" class="anchor"></a><code><span class=
 "keyword">val</span> bounds_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a> *
+<a href="index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a> *
 <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a></code></dt>
+"index.html#type-bound_">bound_</a></code></dt>
 <dt class="spec value" id="val-lbound_exn"><a href=
 "#val-lbound_exn" class="anchor"></a><code><span class=
 "keyword">val</span> lbound_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
+<a href="index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> <a href=
-"index.html#type-bound">bound</a></code></dt>
+"index.html#type-bound_">bound_</a></code></dt>
 <dt class="spec value" id="val-ubound_exn"><a href=
 "#val-ubound_exn" class="anchor"></a><code><span class=
 "keyword">val</span> ubound_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
+<a href="index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> <a href=
-"index.html#type-bound">bound</a></code></dt>
+"index.html#type-bound_">bound_</a></code></dt>
 <dt class="spec value" id="val-convex_hull"><a href=
 "#val-convex_hull" class="anchor"></a><code><span class=
 "keyword">val</span> convex_hull : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> list <span>-&gt;</span>
+<a href="index.html#type-t_">t_</a> list <span>-&gt;</span>
 <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-t_">t_</a></code></dt>
 <dd>
 <p><code>convex_hull ts</code> returns an interval whose upper
 bound is the greatest upper bound of the intervals in the list, and
@@ -246,23 +230,23 @@ and <code>c</code>:</p>
 <dt class="spec value" id="val-contains"><a href="#val-contains"
 class="anchor"></a><code><span class="keyword">val</span> contains
 : <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a>
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a>
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-compare_value"><a href=
 "#val-compare_value" class="anchor"></a><code><span class=
 "keyword">val</span> compare_value : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"type-var">'a</span> <a href="index.html#type-t_">t_</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> <span>-&gt;</span> [ `Below |
+"index.html#type-bound_">bound_</a> <span>-&gt;</span> [ `Below |
 `Within | `Above | `Interval_is_empty ]</code></dt>
 <dt class="spec value" id="val-bound"><a href="#val-bound" class=
 "anchor"></a><code><span class="keyword">val</span> bound :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a>
-option</code></dt>
+"index.html#type-bound_">bound_</a> option</code></dt>
 <dd>
 <p><code>bound t x</code> returns <code>None</code> iff
 <code>is_empty t</code>. If <code>bounds t = Some (a, b)</code>,
@@ -277,9 +261,9 @@ then <code>bound</code> returns <code>Some y</code> where
 <dt class="spec value" id="val-is_superset"><a href=
 "#val-is_superset" class="anchor"></a><code><span class=
 "keyword">val</span> is_superset : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<a href="index.html#type-t_">t_</a> <span>-&gt;</span>
 of_:<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+"index.html#type-t_">t_</a> <span>-&gt;</span> bool</code></dt>
 <dd>
 <p><code>is_superset i1 of_:i2</code> is whether i1 contains i2.
 The empty interval is contained in every interval.</p>
@@ -289,17 +273,18 @@ The empty interval is contained in every interval.</p>
 <dt class="spec value" id="val-is_subset"><a href="#val-is_subset"
 class="anchor"></a><code><span class="keyword">val</span> is_subset
 : <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> of_:<span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"index.html#type-t_">t_</a> <span>-&gt;</span> of_:<span class=
+"type-var">'a</span> <a href="index.html#type-t_">t_</a>
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-map"><a href="#val-map" class=
 "anchor"></a><code><span class="keyword">val</span> map :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-bound">bound</a>)
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a> <span>-&gt;</span> f:(<span class=
+"type-var">'a</span> <a href="index.html#type-bound_">bound_</a>
 <span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-bound_">bound_</a>) <span>-&gt;</span>
+<span class="type-var">'b</span> <a href=
+"index.html#type-t_">t_</a></code></dt>
 <dd>
 <p><code>map t ~f</code> returns <code>create (f l) (f u)</code> if
 <code>bounds t = Some (l, u)</code>, and <code>empty</code> if
@@ -318,7 +303,7 @@ interval <code>[-1,1]</code> to <code>[1,1]</code>, not to
 <dt class="spec value" id="val-are_disjoint"><a href=
 "#val-are_disjoint" class="anchor"></a><code><span class=
 "keyword">val</span> are_disjoint : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a> list
+"type-var">'a</span> <a href="index.html#type-t_">t_</a> list
 <span>-&gt;</span> bool</code></dt>
 <dd>
 <p><code>are_disjoint ts</code> returns <code>true</code> iff the
@@ -330,7 +315,7 @@ intervals in <code>ts</code> are pairwise disjoint.</p>
 <a href="#val-are_disjoint_as_open_intervals" class=
 "anchor"></a><code><span class="keyword">val</span>
 are_disjoint_as_open_intervals : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> list <span>-&gt;</span>
+<a href="index.html#type-t_">t_</a> list <span>-&gt;</span>
 bool</code></dt>
 <dd>
 <p>Returns true iff a given set of intervals would be disjoint if
@@ -343,10 +328,10 @@ function.</p>
 <dt class="spec value" id="val-list_intersect"><a href=
 "#val-list_intersect" class="anchor"></a><code><span class=
 "keyword">val</span> list_intersect : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a> list
+"type-var">'a</span> <a href="index.html#type-t_">t_</a> list
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> list <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"index.html#type-t_">t_</a> list <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-t_">t_</a>
 list</code></dt>
 <dd>
 <p>Assuming that <code>ilist1</code> and <code>ilist2</code> are
@@ -369,7 +354,7 @@ list_intersect [i 4 7; i 9 15] [i 2 4; i 5 10; i 14 20];;
 "#val-half_open_intervals_are_a_partition" class=
 "anchor"></a><code><span class="keyword">val</span>
 half_open_intervals_are_a_partition : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a> list
+"type-var">'a</span> <a href="index.html#type-t_">t_</a> list
 <span>-&gt;</span> bool</code></dt>
 <dd>
 <p>Returns true if the intervals, when considered as half-open
@@ -396,21 +381,11 @@ nongeneralizable type variables.</p>
 </dd>
 </dl>
 <dl>
-<dt class="spec type" id="type-poly_t"><a href="#type-poly_t"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-poly_t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-to_poly"><a href="#val-to_poly"
 class="anchor"></a><code><span class="keyword">val</span> to_poly :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "index.html#type-bound">bound</a> <a href=
-"index.html#type-poly_t">poly_t</a></code></dt>
-</dl>
-<dl>
-<dt class="spec type" id="type-poly_set"><a href="#type-poly_set"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-poly_set</code></dt>
+"../index.html#type-t">t</a></code></dt>
 </dl>
 <div class="spec module" id="module-Set"><a href="#module-Set"
 class="anchor"></a><code><span class="keyword">module</span>
@@ -432,8 +407,9 @@ class="anchor"></a><code><span class="keyword">module</span>
 <span>-&gt;</span> (<a href=
 "Time/Ofday/index.html#type-t">Time.Ofday.t</a> * <a href=
 "Time/Ofday/index.html#type-t">Time.Ofday.t</a>) <span>-&gt;</span>
-now:<a href="Time/index.html#type-t">Time.t</a> <span>-&gt;</span>
-<a href="index.html#type-t">t</a></code></dt>
+now:<a href=
+"../../../Core/Interval_intf/Time_ns/index.html#type-t">Core.Interval_intf.Time_ns.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>create_ending_after ?zone (od1, od2) ~now</code> returns
 the smallest interval <code>(t1 t2)</code> with minimum
@@ -462,7 +438,8 @@ instance of the meeting, relative to now.</p>
 <span>-&gt;</span> (<a href=
 "Time/Ofday/index.html#type-t">Time.Ofday.t</a> * <a href=
 "Time/Ofday/index.html#type-t">Time.Ofday.t</a>) <span>-&gt;</span>
-ubound:<a href="Time/index.html#type-t">Time.t</a>
+ubound:<a href=
+"../../../Core/Interval_intf/Time_ns/index.html#type-t">Core.Interval_intf.Time_ns.t</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>create_ending_before ?zone (od1, od2) ~ubound</code>

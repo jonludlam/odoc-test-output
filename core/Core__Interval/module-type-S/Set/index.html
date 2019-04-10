@@ -98,12 +98,6 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 <div class="spec include">
 <div class="doc">
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
-<dt class="spec type" id="type-bound"><a href="#type-bound" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-bound</code></dt>
 <dt class="spec type" id="type-interval"><a href="#type-interval"
 class="anchor"></a><code><span class="keyword">type</span> 'a
 interval</code></dt>
@@ -115,10 +109,11 @@ interval</code></dt>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
 (<span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> * <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a>)
-list <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"../index.html#type-bound_">bound_</a> * <span class=
+"type-var">'a</span> <a href=
+"../index.html#type-bound_">bound_</a>) list <span>-&gt;</span>
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a></code></dt>
 <dd>
 <p><code>create</code> creates an interval set containing intervals
 whose lower and upper bounds are given by the pairs passed to the
@@ -132,7 +127,7 @@ function. It is an error if the pairs overlap.</p>
 "type-var">'a</span> <a href=
 "index.html#type-interval">interval</a> list <span>-&gt;</span>
 <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-t_">t_</a></code></dt>
 <dd>
 <p><code>create_from_intervals</code> creates an interval set.
 Empty intervals are dropped. It is an error if the nonempty
@@ -143,15 +138,15 @@ intervals are not disjoint.</p>
 <dt class="spec value" id="val-contains"><a href="#val-contains"
 class="anchor"></a><code><span class="keyword">val</span> contains
 : <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a>
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="../index.html#type-bound_">bound_</a>
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-contains_set"><a href=
 "#val-contains_set" class="anchor"></a><code><span class=
 "keyword">val</span> contains_set : container:<span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"type-var">'a</span> <a href="index.html#type-t_">t_</a>
 <span>-&gt;</span> contained:<span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<a href="index.html#type-t_">t_</a> <span>-&gt;</span>
 bool</code></dt>
 <dd>
 <p><code>contains_set</code> returns true iff for every interval in
@@ -163,9 +158,9 @@ that is its superset.</p>
 <dt class="spec value" id="val-ubound_exn"><a href=
 "#val-ubound_exn" class="anchor"></a><code><span class=
 "keyword">val</span> ubound_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
+<a href="index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> <a href=
-"index.html#type-bound">bound</a></code></dt>
+"../index.html#type-bound_">bound_</a></code></dt>
 <dd>
 <p>The largest and smallest element of the interval set,
 respectively. Raises Invalid_argument on empty sets.</p>
@@ -175,19 +170,21 @@ respectively. Raises Invalid_argument on empty sets.</p>
 <dt class="spec value" id="val-lbound_exn"><a href=
 "#val-lbound_exn" class="anchor"></a><code><span class=
 "keyword">val</span> lbound_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
+<a href="index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> <a href=
-"index.html#type-bound">bound</a></code></dt>
+"../index.html#type-bound_">bound_</a></code></dt>
 <dt class="spec value" id="val-ubound"><a href="#val-ubound" class=
 "anchor"></a><code><span class="keyword">val</span> ubound :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> option</code></dt>
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="../index.html#type-bound_">bound_</a>
+option</code></dt>
 <dt class="spec value" id="val-lbound"><a href="#val-lbound" class=
 "anchor"></a><code><span class="keyword">val</span> lbound :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> option</code></dt>
+<span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="../index.html#type-bound_">bound_</a>
+option</code></dt>
 </dl>
 </div>
 </div>
@@ -197,7 +194,7 @@ respectively. Raises Invalid_argument on empty sets.</p>
 class="anchor"></a><code><span class="keyword">val</span> to_poly :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "../index.html#type-bound">bound</a> <a href=
-"../index.html#type-poly_set">poly_set</a></code></dt>
+"../../Set/index.html#type-t">Set.t</a></code></dt>
 </dl>
 </div>
 </body>

@@ -62,11 +62,11 @@ class="anchor"></a><code><span class="keyword">val</span> of_alist
 "../index.html#type-key">key</a>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;(<span class="type-var">'a</span>
 <a href="../index.html#type-key">key</a> * <span class=
-"type-var">'b</span>) list <span>-&gt;</span> [ `Duplicate_key of
-<span class="type-var">'a</span> <a href=
-"../index.html#type-key">key</a> | `Ok of (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="../index.html#type-t">t</a> ]) <a href=
+"type-var">'b</span>) list <span>-&gt;</span> [ `Ok of
+(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>) <a href="../index.html#type-t">t</a> |
+`Duplicate_key of <span class="type-var">'a</span> <a href=
+"../index.html#type-key">key</a> ]) <a href=
 "../../index.html#type-create_options_with_hashable">create_options_with_hashable</a></code></dt>
 <dt class="spec value" id="val-of_alist_report_all_dups"><a href=
 "#val-of_alist_report_all_dups" class=
@@ -75,11 +75,11 @@ of_alist_report_all_dups : (<span class="type-var">'a</span>
 <a href="../index.html#type-key">key</a>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;(<span class="type-var">'a</span>
 <a href="../index.html#type-key">key</a> * <span class=
-"type-var">'b</span>) list <span>-&gt;</span> [ `Duplicate_keys of
-<span class="type-var">'a</span> <a href=
-"../index.html#type-key">key</a> list | `Ok of (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="../index.html#type-t">t</a> ]) <a href=
+"type-var">'b</span>) list <span>-&gt;</span> [ `Ok of
+(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>) <a href="../index.html#type-t">t</a> |
+`Duplicate_keys of <span class="type-var">'a</span> <a href=
+"../index.html#type-key">key</a> list ]) <a href=
 "../../index.html#type-create_options_with_hashable">create_options_with_hashable</a></code></dt>
 <dt class="spec value" id="val-of_alist_or_error"><a href=
 "#val-of_alist_or_error" class="anchor"></a><code><span class=
@@ -127,12 +127,17 @@ of_alist_report_all_dups : (<span class="type-var">'a</span>
 <span>-&gt;</span> get_data:(<span class="type-var">'r</span>
 <span>-&gt;</span> <span class="type-var">'b</span>)
 <span>-&gt;</span> <span class="type-var">'r</span> list
-<span>-&gt;</span> [ `Duplicate_keys of <span class=
-"type-var">'a</span> <a href="../index.html#type-key">key</a> list
-| `Ok of (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="../index.html#type-t">t</a> ])
-<a href=
+<span>-&gt;</span> [ `Ok of (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
+<a href="../index.html#type-t">t</a> | `Duplicate_keys of
+<span class="type-var">'a</span> <a href=
+"../index.html#type-key">key</a> list ]) <a href=
 "../../index.html#type-create_options_with_hashable">create_options_with_hashable</a></code></dt>
+<dd>
+<pre><code class="ml">create_mapped get_key get_data [x1,...,xn]
+        = of_alist [get_key x1, get_data x1; ...; get_key xn, get_data xn]</code></pre></dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-create_with_key"><a href=
 "#val-create_with_key" class="anchor"></a><code><span class=
 "keyword">val</span> create_with_key : (<span class=
@@ -142,12 +147,17 @@ of_alist_report_all_dups : (<span class="type-var">'a</span>
 "type-var">'r</span> <span>-&gt;</span> <span class=
 "type-var">'a</span> <a href="../index.html#type-key">key</a>)
 <span>-&gt;</span> <span class="type-var">'r</span> list
-<span>-&gt;</span> [ `Duplicate_keys of <span class=
-"type-var">'a</span> <a href="../index.html#type-key">key</a> list
-| `Ok of (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'r</span>) <a href="../index.html#type-t">t</a> ])
-<a href=
+<span>-&gt;</span> [ `Ok of (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'r</span>)
+<a href="../index.html#type-t">t</a> | `Duplicate_keys of
+<span class="type-var">'a</span> <a href=
+"../index.html#type-key">key</a> list ]) <a href=
 "../../index.html#type-create_options_with_hashable">create_options_with_hashable</a></code></dt>
+<dd>
+<pre><code class="ml">create_with_key ~get_key [x1,...,xn]
+        = of_alist [get_key x1, x1; ...; get_key xn, xn] </code></pre></dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-create_with_key_or_error"><a href=
 "#val-create_with_key_or_error" class=
 "anchor"></a><code><span class="keyword">val</span>

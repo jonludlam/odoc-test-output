@@ -26,10 +26,6 @@ hljs.initHighlightingOnLoad();
 Zone</nav>
 <h1>Module <code>Make.Zone</code></h1>
 </header>
-<div class="spec module" id="module-Time"><a href="#module-Time"
-class="anchor"></a><code><span class="keyword">module</span>
-<a href="Time/index.html">Time</a> : <a href=
-"../../../Time0_intf/index.html#module-type-S">Core_kernel__.Time0_intf.S</a></code></div>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -44,7 +40,7 @@ class="anchor"></a><code><span class="keyword">module</span>
 "keyword">module</span> <a href=
 "../../../Zone/module-type-S/Time_in_seconds/index.html">Time_in_seconds</a>
 := <a href=
-"index.html#module-Time">Time</a></code></span></summary>
+"../index.html#module-Time">Time</a></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> t</code>
@@ -160,11 +156,6 @@ static UTC offset (given in hours).</p>
 was created from (if any)</p>
 </dd>
 </dl>
-<div class="spec module" id="module-Time_in_seconds"><a href=
-"#module-Time_in_seconds" class="anchor"></a><code><span class=
-"keyword">module</span> <a href=
-"Time_in_seconds/index.html">Time_in_seconds</a> : <a href=
-"../../../Zone_intf/index.html#module-type-Time_in_seconds">Core_kernel__.Zone_intf.Time_in_seconds</a></code></div>
 <dl>
 <dt class="spec value" id="val-reset_transition_cache"><a href=
 "#val-reset_transition_cache" class="anchor"></a><code><span class=
@@ -194,8 +185,7 @@ range for which they are the lower bound.</p>
 <dt class="spec value" id="val-index"><a href="#val-index" class=
 "anchor"></a><code><span class="keyword">val</span> index :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Time_in_seconds/index.html#type-t">Time_in_seconds.t</a>
-<span>-&gt;</span> <a href=
+"../Time/index.html#type-t">Time.t</a> <span>-&gt;</span> <a href=
 "Index/index.html#type-t">Index.t</a></code></dt>
 <dd>
 <p>Gets the index of a time.</p>
@@ -266,7 +256,7 @@ shifts in either direction.</p>
 index_prev_clock_shift_time_exn : <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <a href="Index/index.html#type-t">Index.t</a>
 <span>-&gt;</span> <a href=
-"Time_in_seconds/index.html#type-t">Time_in_seconds.t</a></code></dt>
+"../Time/index.html#type-t">Time.t</a></code></dt>
 <dt class="spec value" id="val-index_prev_clock_shift_amount_exn">
 <a href="#val-index_prev_clock_shift_amount_exn" class=
 "anchor"></a><code><span class="keyword">val</span>
@@ -287,7 +277,7 @@ index_has_next_clock_shift : <a href="index.html#type-t">t</a>
 index_next_clock_shift_time_exn : <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <a href="Index/index.html#type-t">Index.t</a>
 <span>-&gt;</span> <a href=
-"Time_in_seconds/index.html#type-t">Time_in_seconds.t</a></code></dt>
+"../Time/index.html#type-t">Time.t</a></code></dt>
 <dt class="spec value" id="val-index_next_clock_shift_amount_exn">
 <a href="#val-index_next_clock_shift_amount_exn" class=
 "anchor"></a><code><span class="keyword">val</span>
@@ -305,7 +295,7 @@ index_next_clock_shift_amount_exn : <a href=
 "#val-abbreviation" class="anchor"></a><code><span class=
 "keyword">val</span> abbreviation : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Time/index.html#type-t">Time.t</a> <span>-&gt;</span> <a href=
+"../Time/index.html#type-t">Time.t</a> <span>-&gt;</span> <a href=
 "../../../Import/index.html#type-string">Core_kernel__.Import.string</a></code></dt>
 <dd>
 <p><code>abbreviation t time</code> returns the abbreviation name
@@ -323,7 +313,7 @@ absolute_time_of_date_and_ofday : <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <a href=
 "Time/Date_and_ofday/index.html#type-t">Time.Date_and_ofday.t</a>
 <span>-&gt;</span> <a href=
-"Time/index.html#type-t">Time.t</a></code></dt>
+"../Time/index.html#type-t">Time.t</a></code></dt>
 <dd>
 <p><code>absolute_time_of_date_and_ofday</code> and
 <code>date_and_ofday_of_absolute_time</code> convert between
@@ -337,16 +327,16 @@ write the zone's cached index.</p>
 <a href="#val-date_and_ofday_of_absolute_time" class=
 "anchor"></a><code><span class="keyword">val</span>
 date_and_ofday_of_absolute_time : <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href="Time/index.html#type-t">Time.t</a>
+<span>-&gt;</span> <a href="../Time/index.html#type-t">Time.t</a>
 <span>-&gt;</span> <a href=
 "Time/Date_and_ofday/index.html#type-t">Time.Date_and_ofday.t</a></code></dt>
 <dt class="spec value" id="val-next_clock_shift"><a href=
 "#val-next_clock_shift" class="anchor"></a><code><span class=
 "keyword">val</span> next_clock_shift : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span>
-strictly_after:<a href="Time/index.html#type-t">Time.t</a>
-<span>-&gt;</span> (<a href="Time/index.html#type-t">Time.t</a> *
-<a href="Time/Span/index.html#type-t">Time.Span.t</a>) <a href=
+strictly_after:<a href="../Time/index.html#type-t">Time.t</a>
+<span>-&gt;</span> (<a href="../Time/index.html#type-t">Time.t</a>
+* <a href="Time/Span/index.html#type-t">Time.Span.t</a>) <a href=
 "../../../Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
 <dd>
 <p>Takes a <code>Time.t</code> and returns the next
@@ -359,8 +349,8 @@ UTC offset changes, and by how much it does so.</p>
 "#val-prev_clock_shift" class="anchor"></a><code><span class=
 "keyword">val</span> prev_clock_shift : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> at_or_before:<a href=
-"Time/index.html#type-t">Time.t</a> <span>-&gt;</span> (<a href=
-"Time/index.html#type-t">Time.t</a> * <a href=
+"../Time/index.html#type-t">Time.t</a> <span>-&gt;</span> (<a href=
+"../Time/index.html#type-t">Time.t</a> * <a href=
 "Time/Span/index.html#type-t">Time.Span.t</a>) <a href=
 "../../../Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
 <dd>

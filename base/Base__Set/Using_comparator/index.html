@@ -340,11 +340,6 @@ class="anchor"></a><code><span class="keyword">val</span> max_elt :
 </div>
 </div>
 <dl>
-<dt class="spec type" id="type-tree"><a href="#type-tree" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'cmp)
-tree</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-invariants"><a href=
 "#val-invariants" class="anchor"></a><code><span class=
 "keyword">val</span> invariants : (<span class=
@@ -434,11 +429,6 @@ class="anchor"></a><code><span class="keyword">val</span> is_subset
 "type-var">'a</span>,&nbsp;<span class="type-var">'cmp</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 bool</code></dt>
-</dl>
-<dl>
-<dt class="spec type" id="type-named"><a href="#type-named" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'cmp)
-named</code></dt>
 </dl>
 <div class="spec module" id="module-Named"><a href="#module-Named"
 class="anchor"></a><code><span class="keyword">module</span>
@@ -590,7 +580,7 @@ class="anchor"></a><code><span class="keyword">val</span> to_tree :
 "type-var">'cmp</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-tree">tree</a></code></dt>
+<a href="Tree/index.html#type-t">Tree.t</a></code></dt>
 <dt class="spec value" id="val-to_sequence"><a href=
 "#val-to_sequence" class="anchor"></a><code><span class=
 "keyword">val</span> to_sequence : ?⁠order:[ `Increasing |
@@ -647,17 +637,6 @@ tree</a> := (<span class="type-var">'a</span>,&nbsp;<span class=
 set</a> := (<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>) <a href=
 "index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-set"><a href="#type-set" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'cmp)
-set</code></dt>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'cmp)
-t</code></dt>
-<dt class="spec type" id="type-tree"><a href="#type-tree" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'cmp)
-tree</code></dt>
-</dl>
 <dl>
 <dt class="spec value" id="val-empty"><a href="#val-empty" class=
 "anchor"></a><code><span class="keyword">val</span> empty :
@@ -756,7 +735,7 @@ comparator:(<span class="type-var">'b</span>,&nbsp;<span class=
 "../../Base/Comparator/index.html#type-t">Base.Comparator.t</a>
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
-<a href="index.html#type-set">set</a> <span>-&gt;</span>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
 f:(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span>) <span>-&gt;</span> (<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
@@ -769,7 +748,7 @@ f:(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "../../Base/Comparator/index.html#type-t">Base.Comparator.t</a>
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
-<a href="index.html#type-set">set</a> <span>-&gt;</span>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
 f:(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span> option) <span>-&gt;</span> (<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
@@ -781,7 +760,7 @@ comparator:(<span class="type-var">'a</span>,&nbsp;<span class=
 "../../Base/Comparator/index.html#type-t">Base.Comparator.t</a>
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-tree">tree</a> <span>-&gt;</span>
+<a href="Tree/index.html#type-t">Tree.t</a> <span>-&gt;</span>
 (<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'cmp</span>) <a href=
 "index.html#type-t">t</a></code></dt>

@@ -78,11 +78,6 @@ Base__.Applicative_intf.Applicative_infix</a> <span class=
 t</a> := <span class="type-var">'a</span> <a href=
 "index.html#type-t">t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-(&lt;*&gt;)"><a href=
 "#val-(%3C*%3E)" class="anchor"></a><code><span class=
 "keyword">val</span> (&lt;*&gt;) : (<span class=
@@ -128,45 +123,53 @@ unit <a href="index.html#type-t">t</a> <span>-&gt;</span>
 <dt class="spec value" id="val-apply"><a href="#val-apply" class=
 "anchor"></a><code><span class="keyword">val</span> apply :
 (<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a></code></dt>
+"type-var">'b</span>) <a href=
+"argument-1-X/index.html#type-t">X.t</a> <span>-&gt;</span>
+<span class="type-var">'a</span> <a href=
+"argument-1-X/index.html#type-t">X.t</a> <span>-&gt;</span>
+<span class="type-var">'b</span> <a href=
+"argument-1-X/index.html#type-t">X.t</a></code></dt>
 <dt class="spec value" id="val-map2"><a href="#val-map2" class=
 "anchor"></a><code><span class="keyword">val</span> map2 :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> f:(<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
+<span class="type-var">'a</span> <a href=
+"argument-1-X/index.html#type-t">X.t</a> <span>-&gt;</span>
+<span class="type-var">'b</span> <a href=
+"argument-1-X/index.html#type-t">X.t</a> <span>-&gt;</span>
+f:(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span> <span>-&gt;</span> <span class=
 "type-var">'c</span>) <span>-&gt;</span> <span class=
-"type-var">'c</span> <a href="index.html#type-t">t</a></code></dt>
+"type-var">'c</span> <a href=
+"argument-1-X/index.html#type-t">X.t</a></code></dt>
 <dt class="spec value" id="val-map3"><a href="#val-map3" class=
 "anchor"></a><code><span class="keyword">val</span> map3 :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'c</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'b</span>
-<span>-&gt;</span> <span class="type-var">'c</span>
-<span>-&gt;</span> <span class="type-var">'d</span>)
-<span>-&gt;</span> <span class="type-var">'d</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span class="type-var">'a</span> <a href=
+"argument-1-X/index.html#type-t">X.t</a> <span>-&gt;</span>
+<span class="type-var">'b</span> <a href=
+"argument-1-X/index.html#type-t">X.t</a> <span>-&gt;</span>
+<span class="type-var">'c</span> <a href=
+"argument-1-X/index.html#type-t">X.t</a> <span>-&gt;</span>
+f:(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
+"type-var">'b</span> <span>-&gt;</span> <span class=
+"type-var">'c</span> <span>-&gt;</span> <span class=
+"type-var">'d</span>) <span>-&gt;</span> <span class=
+"type-var">'d</span> <a href=
+"argument-1-X/index.html#type-t">X.t</a></code></dt>
 <dt class="spec value" id="val-all"><a href="#val-all" class=
 "anchor"></a><code><span class="keyword">val</span> all :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-list <span>-&gt;</span> <span class="type-var">'a</span> list
-<a href="index.html#type-t">t</a></code></dt>
+<span class="type-var">'a</span> <a href=
+"argument-1-X/index.html#type-t">X.t</a> list <span>-&gt;</span>
+<span class="type-var">'a</span> list <a href=
+"argument-1-X/index.html#type-t">X.t</a></code></dt>
 <dt class="spec value" id="val-all_unit"><a href="#val-all_unit"
 class="anchor"></a><code><span class="keyword">val</span> all_unit
-: unit <a href="index.html#type-t">t</a> list <span>-&gt;</span>
-unit <a href="index.html#type-t">t</a></code></dt>
+: unit <a href="argument-1-X/index.html#type-t">X.t</a> list
+<span>-&gt;</span> unit <a href=
+"argument-1-X/index.html#type-t">X.t</a></code></dt>
 <dt class="spec value" id="val-all_ignore"><a href=
 "#val-all_ignore" class="anchor"></a><code><span class=
 "keyword">val</span> all_ignore : unit <a href=
-"index.html#type-t">t</a> list <span>-&gt;</span> unit <a href=
-"index.html#type-t">t</a></code></dt>
+"argument-1-X/index.html#type-t">X.t</a> list <span>-&gt;</span>
+unit <a href="argument-1-X/index.html#type-t">X.t</a></code></dt>
 </dl>
 <div class="spec module" id="module-Applicative_infix"><a href=
 "#module-Applicative_infix" class="anchor"></a><code><span class=
@@ -177,7 +180,7 @@ Base__.Applicative_intf.Applicative_infix</a> <span class=
 "keyword">with</span> <span class="keyword">type</span> 'a <a href=
 "../../../Base__/Applicative_intf/module-type-Applicative_infix/index.html#type-t">
 t</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></div>
+"argument-1-X/index.html#type-t">X.t</a></code></div>
 </div>
 </body>
 </html>

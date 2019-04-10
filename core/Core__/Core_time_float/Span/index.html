@@ -25,9 +25,589 @@ hljs.initHighlightingOnLoad();
 "../index.html">Core_time_float</a> » Span</nav>
 <h1>Module <code>Core_time_float.Span</code></h1>
 </header>
+<div>
+<div class="spec include">
+<div class="doc">
+<details open="open">
+<summary><span class="def"><code><span class=
+"keyword">include</span> <span class="keyword">module</span>
+<span class="keyword">type</span> <span class="keyword">of</span>
+<a href=
+"../Time/index.html#module-Span">Time.Span</a></code></span></summary>
 <dl>
+<dt class="spec type" id="type-underlying"><a href=
+"#type-underlying" class="anchor"></a><code><span class=
+"keyword">type</span> underlying</code> <code>= <a href=
+"../../Import/Time/index.html#type-underlying">Core__.Import.Time.underlying</a></code></dt>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> t</code>
+<code>= <a href=
+"../Time0/Span/index.html#type-t">Time0.Span.t</a></code></dt>
+</dl>
+<dl>
+<dt class="spec value" id="val-bin_t"><a href="#val-bin_t" class=
+"anchor"></a><code><span class="keyword">val</span> bin_t :
+<a href="index.html#type-t">t</a> <a href=
+"../../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></code></dt>
+<dt class="spec value" id="val-bin_read_t"><a href=
+"#val-bin_read_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_read_t : <a href="index.html#type-t">t</a>
+<a href=
+"../../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+<dt class="spec value" id="val-__bin_read_t__"><a href=
+"#val-__bin_read_t__" class="anchor"></a><code><span class=
+"keyword">val</span> __bin_read_t__ : (<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a>) <a href=
+"../../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+<dt class="spec value" id="val-bin_reader_t"><a href=
+"#val-bin_reader_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_reader_t : <a href=
+"index.html#type-t">t</a> <a href=
+"../../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></code></dt>
+<dt class="spec value" id="val-bin_size_t"><a href=
+"#val-bin_size_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_size_t : <a href="index.html#type-t">t</a>
+<a href=
+"../../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></code></dt>
+<dt class="spec value" id="val-bin_write_t"><a href=
+"#val-bin_write_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_write_t : <a href=
+"index.html#type-t">t</a> <a href=
+"../../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></code></dt>
+<dt class="spec value" id="val-bin_writer_t"><a href=
+"#val-bin_writer_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_writer_t : <a href=
+"index.html#type-t">t</a> <a href=
+"../../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></code></dt>
+<dt class="spec value" id="val-bin_shape_t"><a href=
+"#val-bin_shape_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_shape_t : <a href=
+"../../../../bin_prot/Bin_prot/Shape/index.html#type-t">Bin_prot.Shape.t</a></code></dt>
+<dt class="spec value" id="val-t_of_sexp"><a href="#val-t_of_sexp"
+class="anchor"></a><code><span class="keyword">val</span> t_of_sexp
+: <a href=
+"../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
+class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
+<dt class="spec value" id="val-typerep_of_t"><a href=
+"#val-typerep_of_t" class="anchor"></a><code><span class=
+"keyword">val</span> typerep_of_t : <a href=
+"index.html#type-t">t</a> <a href=
+"../../../../typerep/Typerep_lib/Std/Typerep/index.html#type-t">Typerep_lib.Std.Typerep.t</a></code></dt>
+<dt class="spec value" id="val-typename_of_t"><a href=
+"#val-typename_of_t" class="anchor"></a><code><span class=
+"keyword">val</span> typename_of_t : <a href=
+"index.html#type-t">t</a> <a href=
+"../../../../typerep/Typerep_lib/Typename/index.html#type-t">Typerep_lib.Std.Typename.t</a></code></dt>
+</dl>
+<div class="spec module" id="module-Parts"><a href="#module-Parts"
+class="anchor"></a><code><span class="keyword">module</span>
+<a href="Parts/index.html">Parts</a> : <span class=
+"keyword">sig</span> ... <span class=
+"keyword">end</span></code></div>
+<dl>
+<dt class="spec value" id="val-(&gt;=)"><a href="#val-(%3E=)"
+class="anchor"></a><code><span class="keyword">val</span> (&gt;=) :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(&lt;=)"><a href="#val-(%3C=)"
+class="anchor"></a><code><span class="keyword">val</span> (&lt;=) :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(=)"><a href="#val-(=)" class=
+"anchor"></a><code><span class="keyword">val</span> (=) : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(&gt;)"><a href="#val-(%3E)" class=
+"anchor"></a><code><span class="keyword">val</span> (&gt;) :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(&lt;)"><a href="#val-(%3C)" class=
+"anchor"></a><code><span class="keyword">val</span> (&lt;) :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(&lt;&gt;)"><a href="#val-(%3C%3E)"
+class="anchor"></a><code><span class="keyword">val</span>
+(&lt;&gt;) : <a href="index.html#type-t">t</a> <span>-&gt;</span>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+bool</code></dt>
+<dt class="spec value" id="val-equal"><a href="#val-equal" class=
+"anchor"></a><code><span class="keyword">val</span> equal :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-compare"><a href="#val-compare"
+class="anchor"></a><code><span class="keyword">val</span> compare :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> int</code></dt>
+<dt class="spec value" id="val-min"><a href="#val-min" class=
+"anchor"></a><code><span class="keyword">val</span> min : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-max"><a href="#val-max" class=
+"anchor"></a><code><span class="keyword">val</span> max : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-ascending"><a href="#val-ascending"
+class="anchor"></a><code><span class="keyword">val</span> ascending
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> int</code></dt>
+<dt class="spec value" id="val-descending"><a href=
+"#val-descending" class="anchor"></a><code><span class=
+"keyword">val</span> descending : <a href="index.html#type-t">t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a>
+<span>-&gt;</span> int</code></dt>
+<dt class="spec value" id="val-between"><a href="#val-between"
+class="anchor"></a><code><span class="keyword">val</span> between :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> low:<a href=
+"index.html#type-t">t</a> <span>-&gt;</span> high:<a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-clamp_exn"><a href="#val-clamp_exn"
+class="anchor"></a><code><span class="keyword">val</span> clamp_exn
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> min:<a href=
+"index.html#type-t">t</a> <span>-&gt;</span> max:<a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-clamp"><a href="#val-clamp" class=
+"anchor"></a><code><span class="keyword">val</span> clamp :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> min:<a href=
+"index.html#type-t">t</a> <span>-&gt;</span> max:<a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <a href=
+"../../../../base/Base/Or_error/index.html#type-t">Base.Or_error.t</a></code></dt>
+</dl>
+<dl>
+<dt class="spec type" id="type-comparator_witness"><a href=
+"#type-comparator_witness" class="anchor"></a><code><span class=
+"keyword">type</span> comparator_witness</code> <code>= <a href=
+"../Time0/Span/index.html#type-comparator_witness">Time0.Span.comparator_witness</a></code></dt>
+</dl>
+<dl>
+<dt class="spec value" id="val-validate_lbound"><a href=
+"#val-validate_lbound" class="anchor"></a><code><span class=
+"keyword">val</span> validate_lbound : min:<a href=
+"index.html#type-t">t</a> <a href=
+"../../../../base/Base/Maybe_bound/index.html#type-t">Base.Maybe_bound.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
+"../../../../base/Base/Validate/index.html#type-check">Base.Validate.check</a></code></dt>
+<dt class="spec value" id="val-validate_ubound"><a href=
+"#val-validate_ubound" class="anchor"></a><code><span class=
+"keyword">val</span> validate_ubound : max:<a href=
+"index.html#type-t">t</a> <a href=
+"../../../../base/Base/Maybe_bound/index.html#type-t">Base.Maybe_bound.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
+"../../../../base/Base/Validate/index.html#type-check">Base.Validate.check</a></code></dt>
+<dt class="spec value" id="val-validate_bound"><a href=
+"#val-validate_bound" class="anchor"></a><code><span class=
+"keyword">val</span> validate_bound : min:<a href=
+"index.html#type-t">t</a> <a href=
+"../../../../base/Base/Maybe_bound/index.html#type-t">Base.Maybe_bound.t</a>
+<span>-&gt;</span> max:<a href="index.html#type-t">t</a> <a href=
+"../../../../base/Base/Maybe_bound/index.html#type-t">Base.Maybe_bound.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
+"../../../../base/Base/Validate/index.html#type-check">Base.Validate.check</a></code></dt>
+</dl>
+<div class="spec module" id="module-Replace_polymorphic_compare">
+<a href="#module-Replace_polymorphic_compare" class=
+"anchor"></a><code><span class="keyword">module</span> <a href=
+"Replace_polymorphic_compare/index.html">Replace_polymorphic_compare</a>
+: <span class="keyword">sig</span> ... <span class=
+"keyword">end</span></code></div>
+<dl>
+<dt class="spec value" id="val-comparator"><a href=
+"#val-comparator" class="anchor"></a><code><span class=
+"keyword">val</span> comparator : (<a href=
+"index.html#type-t">t</a>,&nbsp;<a href=
+"index.html#type-comparator_witness">comparator_witness</a>)
+<a href=
+"../../../../core_kernel/Core_kernel/Comparator/index.html#type-comparator">
+Core_kernel.Comparator.comparator</a></code></dt>
+</dl>
+<div class="spec module" id="module-Map"><a href="#module-Map"
+class="anchor"></a><code><span class="keyword">module</span>
+<a href="Map/index.html">Map</a> : <span class="keyword">sig</span>
+... <span class="keyword">end</span></code></div>
+<div class="spec module" id="module-Set"><a href="#module-Set"
+class="anchor"></a><code><span class="keyword">module</span>
+<a href="Set/index.html">Set</a> : <span class="keyword">sig</span>
+... <span class="keyword">end</span></code></div>
+<dl>
+<dt class="spec value" id="val-validate_positive"><a href=
+"#val-validate_positive" class="anchor"></a><code><span class=
+"keyword">val</span> validate_positive : <a href=
+"index.html#type-t">t</a> <a href=
+"../../../../base/Base/Validate/index.html#type-check">Base.Validate.check</a></code></dt>
+<dt class="spec value" id="val-validate_non_negative"><a href=
+"#val-validate_non_negative" class="anchor"></a><code><span class=
+"keyword">val</span> validate_non_negative : <a href=
+"index.html#type-t">t</a> <a href=
+"../../../../base/Base/Validate/index.html#type-check">Base.Validate.check</a></code></dt>
+<dt class="spec value" id="val-validate_negative"><a href=
+"#val-validate_negative" class="anchor"></a><code><span class=
+"keyword">val</span> validate_negative : <a href=
+"index.html#type-t">t</a> <a href=
+"../../../../base/Base/Validate/index.html#type-check">Base.Validate.check</a></code></dt>
+<dt class="spec value" id="val-validate_non_positive"><a href=
+"#val-validate_non_positive" class="anchor"></a><code><span class=
+"keyword">val</span> validate_non_positive : <a href=
+"index.html#type-t">t</a> <a href=
+"../../../../base/Base/Validate/index.html#type-check">Base.Validate.check</a></code></dt>
+<dt class="spec value" id="val-is_positive"><a href=
+"#val-is_positive" class="anchor"></a><code><span class=
+"keyword">val</span> is_positive : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-is_non_negative"><a href=
+"#val-is_non_negative" class="anchor"></a><code><span class=
+"keyword">val</span> is_non_negative : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-is_negative"><a href=
+"#val-is_negative" class="anchor"></a><code><span class=
+"keyword">val</span> is_negative : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-is_non_positive"><a href=
+"#val-is_non_positive" class="anchor"></a><code><span class=
+"keyword">val</span> is_non_positive : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-sign"><a href="#val-sign" class=
+"anchor"></a><code><span class="keyword">val</span> sign : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../base/Base__/Sign0/index.html#type-t">Base__.Sign0.t</a></code></dt>
+<dt class="spec value" id="val-hash_fold_t"><a href=
+"#val-hash_fold_t" class="anchor"></a><code><span class=
+"keyword">val</span> hash_fold_t : <a href=
+"../../../../base/Base/Hash/index.html#type-state">Base.Hash.state</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a>
+<span>-&gt;</span> <a href=
+"../../../../base/Base/Hash/index.html#type-state">Base.Hash.state</a></code></dt>
+<dt class="spec value" id="val-hash"><a href="#val-hash" class=
+"anchor"></a><code><span class="keyword">val</span> hash : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../base/Base/Hash/index.html#type-hash_value">Base.Hash.hash_value</a></code></dt>
+<dt class="spec value" id="val-hashable"><a href="#val-hashable"
+class="anchor"></a><code><span class="keyword">val</span> hashable
+: <a href="index.html#type-t">t</a> <a href=
+"../../../../base/Base/Hashable/index.html#type-t">Core_kernel.Hashtbl.Hashable.t</a></code></dt>
+</dl>
+<div class="spec module" id="module-Table"><a href="#module-Table"
+class="anchor"></a><code><span class="keyword">module</span>
+<a href="Table/index.html">Table</a> : <span class=
+"keyword">sig</span> ... <span class=
+"keyword">end</span></code></div>
+<div class="spec module" id="module-Hash_set"><a href=
+"#module-Hash_set" class="anchor"></a><code><span class=
+"keyword">module</span> <a href="Hash_set/index.html">Hash_set</a>
+: <span class="keyword">sig</span> ... <span class=
+"keyword">end</span></code></div>
+<div class="spec module" id="module-Hash_queue"><a href=
+"#module-Hash_queue" class="anchor"></a><code><span class=
+"keyword">module</span> <a href=
+"Hash_queue/index.html">Hash_queue</a> : <span class=
+"keyword">sig</span> ... <span class=
+"keyword">end</span></code></div>
+<dl>
+<dt class="spec value" id="val-pp"><a href="#val-pp" class=
+"anchor"></a><code><span class="keyword">val</span> pp : <a href=
+"../../../../base/Base/Formatter/index.html#type-t">Base.Formatter.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a>
+<span>-&gt;</span> unit</code></dt>
+<dt class="spec value" id="val-(&gt;=.)"><a href="#val-(%3E=.)"
+class="anchor"></a><code><span class="keyword">val</span> (&gt;=.)
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(&lt;=.)"><a href="#val-(%3C=.)"
+class="anchor"></a><code><span class="keyword">val</span> (&lt;=.)
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(=.)"><a href="#val-(=.)" class=
+"anchor"></a><code><span class="keyword">val</span> (=.) : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(&gt;.)"><a href="#val-(%3E.)"
+class="anchor"></a><code><span class="keyword">val</span> (&gt;.) :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(&lt;.)"><a href="#val-(%3C.)"
+class="anchor"></a><code><span class="keyword">val</span> (&lt;.) :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-(&lt;&gt;.)"><a href=
+"#val-(%3C%3E.)" class="anchor"></a><code><span class=
+"keyword">val</span> (&lt;&gt;.) : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<dt class="spec value" id="val-robustly_compare"><a href=
+"#val-robustly_compare" class="anchor"></a><code><span class=
+"keyword">val</span> robustly_compare : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> int</code></dt>
+<dt class="spec value" id="val-to_string"><a href="#val-to_string"
+class="anchor"></a><code><span class="keyword">val</span> to_string
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-string">
+Core_kernel__.Import.string</a></code></dt>
+<dt class="spec value" id="val-of_string"><a href="#val-of_string"
+class="anchor"></a><code><span class="keyword">val</span> of_string
+: <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-string">
+Core_kernel__.Import.string</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-nanosecond"><a href=
+"#val-nanosecond" class="anchor"></a><code><span class=
+"keyword">val</span> nanosecond : <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-microsecond"><a href=
+"#val-microsecond" class="anchor"></a><code><span class=
+"keyword">val</span> microsecond : <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-millisecond"><a href=
+"#val-millisecond" class="anchor"></a><code><span class=
+"keyword">val</span> millisecond : <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-second"><a href="#val-second" class=
+"anchor"></a><code><span class="keyword">val</span> second :
+<a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-minute"><a href="#val-minute" class=
+"anchor"></a><code><span class="keyword">val</span> minute :
+<a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-hour"><a href="#val-hour" class=
+"anchor"></a><code><span class="keyword">val</span> hour : <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-day"><a href="#val-day" class=
+"anchor"></a><code><span class="keyword">val</span> day : <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-robust_comparison_tolerance">
+<a href="#val-robust_comparison_tolerance" class=
+"anchor"></a><code><span class="keyword">val</span>
+robust_comparison_tolerance : <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-zero"><a href="#val-zero" class=
+"anchor"></a><code><span class="keyword">val</span> zero : <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-create"><a href="#val-create" class=
+"anchor"></a><code><span class="keyword">val</span> create :
+?⁠sign:<a href=
+"../../../../core_kernel/Core_kernel/Sign/index.html#type-t">Core_kernel.Sign.t</a>
+<span>-&gt;</span> ?⁠day:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> ?⁠hr:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> ?⁠min:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> ?⁠sec:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> ?⁠ms:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> ?⁠us:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> ?⁠ns:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-unit">
+Core_kernel__.Import.unit</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-to_parts"><a href="#val-to_parts"
+class="anchor"></a><code><span class="keyword">val</span> to_parts
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__Time_intf/module-type-Basic/Time/Span/Parts/index.html#type-t">
+Parts.t</a></code></dt>
+<dt class="spec value" id="val-of_ns"><a href="#val-of_ns" class=
+"anchor"></a><code><span class="keyword">val</span> of_ns :
+<a href="../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-of_us"><a href="#val-of_us" class=
+"anchor"></a><code><span class="keyword">val</span> of_us :
+<a href="../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-of_ms"><a href="#val-of_ms" class=
+"anchor"></a><code><span class="keyword">val</span> of_ms :
+<a href="../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-of_sec"><a href="#val-of_sec" class=
+"anchor"></a><code><span class="keyword">val</span> of_sec :
+<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-of_int_sec"><a href=
+"#val-of_int_sec" class="anchor"></a><code><span class=
+"keyword">val</span> of_int_sec : <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-of_int32_seconds"><a href=
+"#val-of_int32_seconds" class="anchor"></a><code><span class=
+"keyword">val</span> of_int32_seconds : <a href=
+"../../../../core_kernel/Core_kernel/Int32/index.html#type-t">Core_kernel.Int32.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-of_int63_seconds"><a href=
+"#val-of_int63_seconds" class="anchor"></a><code><span class=
+"keyword">val</span> of_int63_seconds : <a href=
+"../../../../core_kernel/Core_kernel/Int63/index.html#type-t">Core_kernel.Int63.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-of_min"><a href="#val-of_min" class=
+"anchor"></a><code><span class="keyword">val</span> of_min :
+<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-of_hr"><a href="#val-of_hr" class=
+"anchor"></a><code><span class="keyword">val</span> of_hr :
+<a href="../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-of_day"><a href="#val-of_day" class=
+"anchor"></a><code><span class="keyword">val</span> of_day :
+<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-to_ns"><a href="#val-to_ns" class=
+"anchor"></a><code><span class="keyword">val</span> to_ns :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a></code></dt>
+<dt class="spec value" id="val-to_us"><a href="#val-to_us" class=
+"anchor"></a><code><span class="keyword">val</span> to_us :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a></code></dt>
+<dt class="spec value" id="val-to_ms"><a href="#val-to_ms" class=
+"anchor"></a><code><span class="keyword">val</span> to_ms :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a></code></dt>
+<dt class="spec value" id="val-to_sec"><a href="#val-to_sec" class=
+"anchor"></a><code><span class="keyword">val</span> to_sec :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a></code></dt>
+<dt class="spec value" id="val-to_min"><a href="#val-to_min" class=
+"anchor"></a><code><span class="keyword">val</span> to_min :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a></code></dt>
+<dt class="spec value" id="val-to_hr"><a href="#val-to_hr" class=
+"anchor"></a><code><span class="keyword">val</span> to_hr :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a></code></dt>
+<dt class="spec value" id="val-to_day"><a href="#val-to_day" class=
+"anchor"></a><code><span class="keyword">val</span> to_day :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a></code></dt>
+<dt class="spec value" id="val-to_int63_seconds_round_down_exn">
+<a href="#val-to_int63_seconds_round_down_exn" class=
+"anchor"></a><code><span class="keyword">val</span>
+to_int63_seconds_round_down_exn : <a href="index.html#type-t">t</a>
+<span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel/Int63/index.html#type-t">Core_kernel.Int63.t</a></code></dt>
+<dt class="spec value" id="val-to_proportional_float"><a href=
+"#val-to_proportional_float" class="anchor"></a><code><span class=
+"keyword">val</span> to_proportional_float : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a></code></dt>
+<dt class="spec value" id="val-(+)"><a href="#val-(+)" class=
+"anchor"></a><code><span class="keyword">val</span> (+) : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-(-)"><a href="#val-(-)" class=
+"anchor"></a><code><span class="keyword">val</span> (-) : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-abs"><a href="#val-abs" class=
+"anchor"></a><code><span class="keyword">val</span> abs : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-neg"><a href="#val-neg" class=
+"anchor"></a><code><span class="keyword">val</span> neg : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-scale"><a href="#val-scale" class=
+"anchor"></a><code><span class="keyword">val</span> scale :
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-(/)"><a href="#val-(/)" class=
+"anchor"></a><code><span class="keyword">val</span> (/) : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-(//)"><a href="#val-(//)" class=
+"anchor"></a><code><span class="keyword">val</span> (//) : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+Core_kernel__.Import.float</a></code></dt>
+<dt class="spec value" id="val-next"><a href="#val-next" class=
+"anchor"></a><code><span class="keyword">val</span> next : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-prev"><a href="#val-prev" class=
+"anchor"></a><code><span class="keyword">val</span> prev : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-to_short_string"><a href=
+"#val-to_short_string" class="anchor"></a><code><span class=
+"keyword">val</span> to_short_string : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-string">
+Core_kernel__.Import.string</a></code></dt>
+<dt class="spec value" id="val-to_unit_of_time"><a href=
+"#val-to_unit_of_time" class="anchor"></a><code><span class=
+"keyword">val</span> to_unit_of_time : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel/Unit_of_time/index.html#type-t">
+Core_kernel.Unit_of_time.t</a></code></dt>
+<dt class="spec value" id="val-of_unit_of_time"><a href=
+"#val-of_unit_of_time" class="anchor"></a><code><span class=
+"keyword">val</span> of_unit_of_time : <a href=
+"../../../../core_kernel/Core_kernel/Unit_of_time/index.html#type-t">
+Core_kernel.Unit_of_time.t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
+<dt class="spec value" id="val-to_string_hum"><a href=
+"#val-to_string_hum" class="anchor"></a><code><span class=
+"keyword">val</span> to_string_hum : ?⁠delimiter:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-char">Core_kernel__.Import.char</a>
+<span>-&gt;</span> ?⁠decimals:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> ?⁠align_decimal:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-bool">Core_kernel__.Import.bool</a>
+<span>-&gt;</span> ?⁠unit_of_time:<a href=
+"../../../../core_kernel/Core_kernel/Unit_of_time/index.html#type-t">Core_kernel.Unit_of_time.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a>
+<span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-string">
+Core_kernel__.Import.string</a></code></dt>
+<dt class="spec value" id="val-randomize"><a href="#val-randomize"
+class="anchor"></a><code><span class="keyword">val</span> randomize
+: <a href="index.html#type-t">t</a> <span>-&gt;</span>
+percent:<a href=
+"../../../../core_kernel/Core_kernel/Percent/index.html#type-t">Core_kernel.Percent.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+</dl>
+</details>
+</div>
+</div>
+</div>
+<dl>
+<dt class="spec value" id="val-arg_type"><a href="#val-arg_type"
+class="anchor"></a><code><span class="keyword">val</span> arg_type
+: <a href="index.html#type-t">t</a> <a href=
+"../../../../core_kernel/Core_kernel__Command/Arg_type/index.html#type-t">
+Core_kernel.Command.Arg_type.t</a></code></dt>
 </dl>
 </div>
 </body>

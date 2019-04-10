@@ -45,8 +45,8 @@ tree</code></dt>
 <dl>
 <dt class="spec value" id="val-empty"><a href="#val-empty" class=
 "anchor"></a><code><span class="keyword">val</span> empty :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a></code></dt>
+(<span class="type-var">_</span>,&nbsp;<span class=
+"type-var">_</span>) <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-singleton"><a href="#val-singleton"
 class="anchor"></a><code><span class="keyword">val</span> singleton
 : <span class="type-var">'a</span> <span>-&gt;</span> <span class=
@@ -56,10 +56,10 @@ class="anchor"></a><code><span class="keyword">val</span> singleton
 <dt class="spec value" id="val-of_alist"><a href="#val-of_alist"
 class="anchor"></a><code><span class="keyword">val</span> of_alist
 : (<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) list <span>-&gt;</span> [ `Duplicate_key of
-<span class="type-var">'a</span> | `Ok of (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a> ]</code></dt>
+"type-var">'b</span>) list <span>-&gt;</span> [ `Ok of
+(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>) <a href="index.html#type-t">t</a> |
+`Duplicate_key of <span class="type-var">'a</span> ]</code></dt>
 <dt class="spec value" id="val-of_alist_or_error"><a href=
 "#val-of_alist_or_error" class="anchor"></a><code><span class=
 "keyword">val</span> of_alist_or_error : (<span class=
@@ -139,10 +139,10 @@ f:(int <span>-&gt;</span> <span class="type-var">'a</span> *
 class="anchor"></a><code><span class="keyword">val</span> of_iteri
 : iteri:(f:(key:<span class="type-var">'a</span> <span>-&gt;</span>
 data:<span class="type-var">'b</span> <span>-&gt;</span> unit)
-<span>-&gt;</span> unit) <span>-&gt;</span> [ `Duplicate_key of
-<span class="type-var">'a</span> | `Ok of (<span class=
+<span>-&gt;</span> unit) <span>-&gt;</span> [ `Ok of (<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a> ]</code></dt>
+<a href="index.html#type-t">t</a> | `Duplicate_key of <span class=
+"type-var">'a</span> ]</code></dt>
 <dt class="spec value" id="val-of_tree"><a href="#val-of_tree"
 class="anchor"></a><code><span class="keyword">val</span> of_tree :
 (<span class="type-var">'a</span>,&nbsp;<span class=

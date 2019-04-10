@@ -24,7 +24,6 @@ hljs.initHighlightingOnLoad();
 "../../index.html">Core__Command</a> » <a href=
 "../index.html">Arg_type</a> » Export</nav>
 <h1>Module <code>Arg_type.Export</code></h1>
-<p>Values to include in other namespaces.</p>
 </header>
 <dl>
 <dt class="spec value" id="val-string"><a href="#val-string" class=
@@ -37,17 +36,6 @@ Core_kernel__.Import.string</a> <a href=
 "anchor"></a><code><span class="keyword">val</span> int : <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
 <a href="../index.html#type-t">t</a></code></dt>
-<dd>
-<p>Beware that an anonymous argument of type <code>int</code>
-cannot be specified as negative, as it is ambiguous whether -1 is a
-negative number or a flag. (The same applies to <code>float</code>,
-<code>time_span</code>, etc.) You can use the special built-in
-"-anon" flag to force a string starting with a hyphen to be
-interpreted as an anonymous argument rather than as a flag, or you
-can just make it a parameter to a flag to avoid the issue.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-char"><a href="#val-char" class=
 "anchor"></a><code><span class="keyword">val</span> char : <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-char">

@@ -42,6 +42,14 @@ hljs.initHighlightingOnLoad();
 "keyword">include</span> <a href=
 "../../../../base/Base/Set/index.html#module-type-Accessors_generic">
 Set.Accessors_generic</a></code></span></summary>
+<div>
+<div class="spec include">
+<div class="doc">
+<details open="open">
+<summary><span class="def"><code><span class=
+"keyword">include</span> <a href=
+"../../../../base/Base/Container/index.html#module-type-Generic_phantom">
+Base.Container.Generic_phantom</a></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> ('a, 'phantom)
@@ -53,25 +61,25 @@ elt</code></dt>
 <dl>
 <dt class="spec value" id="val-length"><a href="#val-length" class=
 "anchor"></a><code><span class="keyword">val</span> length :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+(<span class="type-var">_</span>,&nbsp;<span class=
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-is_empty"><a href="#val-is_empty"
 class="anchor"></a><code><span class="keyword">val</span> is_empty
-: (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+: (<span class="type-var">_</span>,&nbsp;<span class=
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-iter"><a href="#val-iter" class=
 "anchor"></a><code><span class="keyword">val</span> iter :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> unit)
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-fold"><a href="#val-fold" class=
 "anchor"></a><code><span class="keyword">val</span> fold :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> init:<span class="type-var">'accum</span>
 <span>-&gt;</span> f:(<span class="type-var">'accum</span>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
@@ -81,7 +89,7 @@ class="anchor"></a><code><span class="keyword">val</span> is_empty
 <dt class="spec value" id="val-fold_result"><a href=
 "#val-fold_result" class="anchor"></a><code><span class=
 "keyword">val</span> fold_result : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
+"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 init:<span class="type-var">'accum</span> <span>-&gt;</span>
 f:(<span class="type-var">'accum</span> <span>-&gt;</span>
@@ -94,24 +102,40 @@ f:(<span class="type-var">'accum</span> <span>-&gt;</span>
 "type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)
 <a href=
 "../../../../base/Base/Result/index.html#type-t">Base.Result.t</a></code></dt>
+<dt class="spec value" id="val-fold_until"><a href=
+"#val-fold_until" class="anchor"></a><code><span class=
+"keyword">val</span> fold_until : (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+init:<span class="type-var">'accum</span> <span>-&gt;</span>
+f:(<span class="type-var">'accum</span> <span>-&gt;</span>
+<span class="type-var">'a</span> <a href=
+"index.html#type-elt">elt</a> <span>-&gt;</span> (<span class=
+"type-var">'accum</span>,&nbsp;<span class=
+"type-var">'final</span>) <a href=
+"../../../../base/Base__/Container_intf/Export/Continue_or_stop/index.html#type-t">
+Base__.Container_intf.Continue_or_stop.t</a>) <span>-&gt;</span>
+finish:(<span class="type-var">'accum</span> <span>-&gt;</span>
+<span class="type-var">'final</span>) <span>-&gt;</span>
+<span class="type-var">'final</span></code></dt>
 <dt class="spec value" id="val-exists"><a href="#val-exists" class=
 "anchor"></a><code><span class="keyword">val</span> exists :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> bool)
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-for_all"><a href="#val-for_all"
 class="anchor"></a><code><span class="keyword">val</span> for_all :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> bool)
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-count"><a href="#val-count" class=
 "anchor"></a><code><span class="keyword">val</span> count :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> bool)
 <span>-&gt;</span> int</code></dt>
@@ -124,7 +148,7 @@ Base__.Container_intf.Summable</a> <span class=
 "../../../../base/Base__/Container_intf/module-type-Summable/index.html#type-t">
 t</a> = <span class="type-var">'sum</span>) <span>-&gt;</span>
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
 "type-var">'sum</span>) <span>-&gt;</span> <span class=
@@ -132,7 +156,7 @@ t</a> = <span class="type-var">'sum</span>) <span>-&gt;</span>
 <dt class="spec value" id="val-find"><a href="#val-find" class=
 "anchor"></a><code><span class="keyword">val</span> find :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> bool)
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
@@ -140,7 +164,7 @@ t</a> = <span class="type-var">'sum</span>) <span>-&gt;</span>
 <dt class="spec value" id="val-find_map"><a href="#val-find_map"
 class="anchor"></a><code><span class="keyword">val</span> find_map
 : (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'c</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
 "type-var">'b</span> option) <span>-&gt;</span> <span class=
@@ -148,16 +172,40 @@ class="anchor"></a><code><span class="keyword">val</span> find_map
 <dt class="spec value" id="val-to_list"><a href="#val-to_list"
 class="anchor"></a><code><span class="keyword">val</span> to_list :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> list</code></dt>
 <dt class="spec value" id="val-to_array"><a href="#val-to_array"
 class="anchor"></a><code><span class="keyword">val</span> to_array
 : (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> array</code></dt>
+<dt class="spec value" id="val-min_elt"><a href="#val-min_elt"
+class="anchor"></a><code><span class="keyword">val</span> min_elt :
+(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">_</span>) <a href="index.html#type-t">t</a>
+<span>-&gt;</span> compare:(<span class="type-var">'a</span>
+<a href="index.html#type-elt">elt</a> <span>-&gt;</span>
+<span class="type-var">'a</span> <a href=
+"index.html#type-elt">elt</a> <span>-&gt;</span> int)
+<span>-&gt;</span> <span class="type-var">'a</span> <a href=
+"index.html#type-elt">elt</a> option</code></dt>
+<dt class="spec value" id="val-max_elt"><a href="#val-max_elt"
+class="anchor"></a><code><span class="keyword">val</span> max_elt :
+(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">_</span>) <a href="index.html#type-t">t</a>
+<span>-&gt;</span> compare:(<span class="type-var">'a</span>
+<a href="index.html#type-elt">elt</a> <span>-&gt;</span>
+<span class="type-var">'a</span> <a href=
+"index.html#type-elt">elt</a> <span>-&gt;</span> int)
+<span>-&gt;</span> <span class="type-var">'a</span> <a href=
+"index.html#type-elt">elt</a> option</code></dt>
 </dl>
+</details>
+</div>
+</div>
+</div>
 <dl>
 <dt class="spec type" id="type-tree"><a href="#type-tree" class=
 "anchor"></a><code><span class="keyword">type</span> ('a, 'cmp)
@@ -165,6 +213,13 @@ tree</code></dt>
 <dt class="spec type" id="type-options"><a href="#type-options"
 class="anchor"></a><code><span class="keyword">type</span> ('a,
 'cmp, 'z) options</code></dt>
+<dd>
+<p>The <code>options</code> type is used to make
+<code>Accessors_generic</code> flexible as to whether a comparator
+is required to be passed to certain functions.</p>
+</dd>
+</dl>
+<dl>
 <dt class="spec type" id="type-cmp"><a href="#type-cmp" class=
 "anchor"></a><code><span class="keyword">type</span> 'cmp
 cmp</code></dt>
@@ -187,6 +242,11 @@ cmp</code></dt>
 "type-var">'a</span> <a href="index.html#type-elt">elt</a>
 <span>-&gt;</span> bool) <a href=
 "index.html#type-options">options</a></code></dt>
+<dd>
+<p>override <code>Container</code>'s <code>mem</code></p>
+</dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-add"><a href="#val-add" class=
 "anchor"></a><code><span class="keyword">val</span> add :
 (<span class="type-var">'a</span>,&nbsp;<span class=
@@ -302,7 +362,7 @@ class="anchor"></a><code><span class="keyword">module</span>
 <dt class="spec value" id="val-fold_until"><a href=
 "#val-fold_until" class="anchor"></a><code><span class=
 "keyword">val</span> fold_until : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 init:<span class="type-var">'b</span> <span>-&gt;</span>
 f:(<span class="type-var">'b</span> <span>-&gt;</span> <span class=
@@ -310,7 +370,7 @@ f:(<span class="type-var">'b</span> <span>-&gt;</span> <span class=
 <span>-&gt;</span> (<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'final</span>)
 <a href=
-"../../../../base/Base__/Container_intf/Export/Continue_or_stop/index.html#type-t">
+"../../../../base/Base__Container_intf/Export/Continue_or_stop/index.html#type-t">
 Base__.Set_intf.Continue_or_stop.t</a>) <span>-&gt;</span>
 finish:(<span class="type-var">'b</span> <span>-&gt;</span>
 <span class="type-var">'final</span>) <span>-&gt;</span>
@@ -318,7 +378,7 @@ finish:(<span class="type-var">'b</span> <span>-&gt;</span>
 <dt class="spec value" id="val-fold_right"><a href=
 "#val-fold_right" class="anchor"></a><code><span class=
 "keyword">val</span> fold_right : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 init:<span class="type-var">'b</span> <span>-&gt;</span>
 f:(<span class="type-var">'a</span> <a href=
@@ -333,13 +393,13 @@ f:(<span class="type-var">'a</span> <a href=
 "type-var">'a</span>,&nbsp;<span class="type-var">'cmp</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> f:([ `Both of
+<a href="index.html#type-t">t</a> <span>-&gt;</span> f:([ `Left of
 <span class="type-var">'a</span> <a href=
-"index.html#type-elt">elt</a> * <span class="type-var">'a</span>
-<a href="index.html#type-elt">elt</a> | `Left of <span class=
-"type-var">'a</span> <a href="index.html#type-elt">elt</a> | `Right
+"index.html#type-elt">elt</a> | `Right of <span class=
+"type-var">'a</span> <a href="index.html#type-elt">elt</a> | `Both
 of <span class="type-var">'a</span> <a href=
-"index.html#type-elt">elt</a> ] <span>-&gt;</span> unit)
+"index.html#type-elt">elt</a> * <span class="type-var">'a</span>
+<a href="index.html#type-elt">elt</a> ] <span>-&gt;</span> unit)
 <span>-&gt;</span> unit) <a href=
 "index.html#type-options">options</a></code></dt>
 <dt class="spec value" id="val-filter"><a href="#val-filter" class=
@@ -372,45 +432,45 @@ f:(<span class="type-var">'a</span> <a href=
 <dt class="spec value" id="val-elements"><a href="#val-elements"
 class="anchor"></a><code><span class="keyword">val</span> elements
 : (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> list</code></dt>
 <dt class="spec value" id="val-min_elt"><a href="#val-min_elt"
 class="anchor"></a><code><span class="keyword">val</span> min_elt :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> option</code></dt>
 <dt class="spec value" id="val-min_elt_exn"><a href=
 "#val-min_elt_exn" class="anchor"></a><code><span class=
 "keyword">val</span> min_elt_exn : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
+"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> <a href=
 "index.html#type-elt">elt</a></code></dt>
 <dt class="spec value" id="val-max_elt"><a href="#val-max_elt"
 class="anchor"></a><code><span class="keyword">val</span> max_elt :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> option</code></dt>
 <dt class="spec value" id="val-max_elt_exn"><a href=
 "#val-max_elt_exn" class="anchor"></a><code><span class=
 "keyword">val</span> max_elt_exn : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
+"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> <a href=
 "index.html#type-elt">elt</a></code></dt>
 <dt class="spec value" id="val-choose"><a href="#val-choose" class=
 "anchor"></a><code><span class="keyword">val</span> choose :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> option</code></dt>
 <dt class="spec value" id="val-choose_exn"><a href=
 "#val-choose_exn" class="anchor"></a><code><span class=
 "keyword">val</span> choose_exn : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
+"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> <a href=
 "index.html#type-elt">elt</a></code></dt>
@@ -444,7 +504,7 @@ equiv:(<span class="type-var">'a</span> <a href=
 <dt class="spec value" id="val-find_exn"><a href="#val-find_exn"
 class="anchor"></a><code><span class="keyword">val</span> find_exn
 : (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> bool)
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
@@ -452,7 +512,7 @@ class="anchor"></a><code><span class="keyword">val</span> find_exn
 <dt class="spec value" id="val-nth"><a href="#val-nth" class=
 "anchor"></a><code><span class="keyword">val</span> nth :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
+"type-var">_</span>) <a href="index.html#type-t">t</a>
 <span>-&gt;</span> int <span>-&gt;</span> <span class=
 "type-var">'a</span> <a href="index.html#type-elt">elt</a>
 option</code></dt>
@@ -479,7 +539,7 @@ class="anchor"></a><code><span class="keyword">val</span> to_tree :
 "#val-to_sequence" class="anchor"></a><code><span class=
 "keyword">val</span> to_sequence : (<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'cmp</span>,&nbsp;?⁠order:[ `Decreasing | `Increasing ]
+"type-var">'cmp</span>,&nbsp;?⁠order:[ `Increasing | `Decreasing ]
 <span>-&gt;</span> ?⁠greater_or_equal_to:<span class=
 "type-var">'a</span> <a href="index.html#type-elt">elt</a>
 <span>-&gt;</span> ?⁠less_or_equal_to:<span class=
@@ -494,7 +554,7 @@ class="anchor"></a><code><span class="keyword">val</span> to_tree :
 "#val-merge_to_sequence" class="anchor"></a><code><span class=
 "keyword">val</span> merge_to_sequence : (<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'cmp</span>,&nbsp;?⁠order:[ `Decreasing | `Increasing ]
+"type-var">'cmp</span>,&nbsp;?⁠order:[ `Increasing | `Decreasing ]
 <span>-&gt;</span> ?⁠greater_or_equal_to:<span class=
 "type-var">'a</span> <a href="index.html#type-elt">elt</a>
 <span>-&gt;</span> ?⁠less_or_equal_to:<span class=
@@ -694,16 +754,15 @@ of_increasing_iterator_unchecked : (<span class=
 "#val-stable_dedup_list" class="anchor"></a><code><span class=
 "keyword">val</span> stable_dedup_list : (<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'a</span>
-<a href="index.html#type-elt">elt</a> list <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-elt">elt</a> list) <a href=
-"index.html#type-options">options</a></code></dt>
+"type-var">_</span>,&nbsp;<span class="type-var">'a</span> <a href=
+"index.html#type-elt">elt</a> list <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-elt">elt</a> list)
+<a href="index.html#type-options">options</a></code></dt>
 <dt class="spec value" id="val-map"><a href="#val-map" class=
 "anchor"></a><code><span class="keyword">val</span> map :
 (<span class="type-var">'b</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-set">set</a> <span>-&gt;</span>
 f:(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span> <a href="index.html#type-elt">elt</a>)
@@ -711,12 +770,30 @@ f:(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
 <a href="index.html#type-t">t</a>) <a href=
 "index.html#type-options">options</a></code></dt>
+<dd>
+<p>The types of <code>map</code> and <code>filter_map</code> are
+subtle. The input set, <code>('a, _) set</code>, reflects the fact
+that these functions take a set of *any* type, with any comparator,
+while the output set, <code>('b, 'cmp) t</code>, reflects that the
+output set has the particular <code>'cmp</code> of the creation
+function. The comparator can come in one of three ways, depending
+on which set module is used</p>
+<ul>
+<li><code>Set.map</code> -- comparator comes as an argument</li>
+<li><code>Set.Poly.map</code> -- comparator is polymorphic
+comparison</li>
+<li><code>Foo.Set.map</code> -- comparator is
+<code>Foo.comparator</code></li>
+</ul>
+</dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-filter_map"><a href=
 "#val-filter_map" class="anchor"></a><code><span class=
 "keyword">val</span> filter_map : (<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-set">set</a> <span>-&gt;</span>
 f:(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span> <a href="index.html#type-elt">elt</a> option)

@@ -59,18 +59,6 @@ values, use <span class="xref-unresolved" title=
 for example.</p>
 </dd>
 </dl>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-<dd>
-<p>Represents <code>value option</code> without allocating a
-<code>Some</code> tag. The interface does not enforce that
-<code>t</code> is immediate because some types, like
-<code>Int63.t</code>, are only immediate on 64-bit platforms. For
-representations whose type is immediate, use <code>S</code> below
-which adds the <code>[@@immediate]</code> annotation.</p>
-</dd>
-</dl>
 <div>
 <div class="spec include">
 <div class="doc">

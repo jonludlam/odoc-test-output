@@ -32,17 +32,11 @@ hljs.initHighlightingOnLoad();
 </ul>
 <h3 class="heading">Signature</h3>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-<dt class="spec type" id="type-elt"><a href="#type-elt" class=
-"anchor"></a><code><span class="keyword">type</span>
-elt</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-mem"><a href="#val-mem" class=
 "anchor"></a><code><span class="keyword">val</span> mem : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool</code></dt>
+"argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+<a href="argument-1-T/Elt/index.html#type-t">T.Elt.t</a>
+<span>-&gt;</span> bool</code></dt>
 <dd>
 <p>Checks whether the provided element is there, using equality on
 <code>elt</code>s.</p>
@@ -51,17 +45,17 @@ elt</code></dt>
 <dl>
 <dt class="spec value" id="val-length"><a href="#val-length" class=
 "anchor"></a><code><span class="keyword">val</span> length :
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<a href="argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
 int</code></dt>
 <dt class="spec value" id="val-is_empty"><a href="#val-is_empty"
 class="anchor"></a><code><span class="keyword">val</span> is_empty
-: <a href="index.html#type-t">t</a> <span>-&gt;</span>
-bool</code></dt>
+: <a href="argument-1-T/index.html#type-t">T.t</a>
+<span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-iter"><a href="#val-iter" class=
 "anchor"></a><code><span class="keyword">val</span> iter : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> unit)
-<span>-&gt;</span> unit</code></dt>
+"argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+f:(<a href="argument-1-T/Elt/index.html#type-t">T.Elt.t</a>
+<span>-&gt;</span> unit) <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>iter</code> must allow exceptions raised in <code>f</code>
 to escape, terminating the iteration cleanly. The same holds for
@@ -71,12 +65,12 @@ all functions below taking an <code>f</code>.</p>
 <dl>
 <dt class="spec value" id="val-fold"><a href="#val-fold" class=
 "anchor"></a><code><span class="keyword">val</span> fold : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> init:<span class=
-"type-var">'accum</span> <span>-&gt;</span> f:(<span class=
-"type-var">'accum</span> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
-"type-var">'accum</span>) <span>-&gt;</span> <span class=
-"type-var">'accum</span></code></dt>
+"argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+init:<span class="type-var">'accum</span> <span>-&gt;</span>
+f:(<span class="type-var">'accum</span> <span>-&gt;</span> <a href=
+"argument-1-T/Elt/index.html#type-t">T.Elt.t</a> <span>-&gt;</span>
+<span class="type-var">'accum</span>) <span>-&gt;</span>
+<span class="type-var">'accum</span></code></dt>
 <dd>
 <p><code>fold t ~init ~f</code> returns <code>f (... f (f (f init
 e1) e2) e3 ...) en</code>, where <code>e1..en</code> are the
@@ -87,15 +81,16 @@ elements of <code>t</code>.</p>
 <dt class="spec value" id="val-fold_result"><a href=
 "#val-fold_result" class="anchor"></a><code><span class=
 "keyword">val</span> fold_result : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> init:<span class=
-"type-var">'accum</span> <span>-&gt;</span> f:(<span class=
-"type-var">'accum</span> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> (<span class=
-"type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)
-<a href="../../Result/index.html#type-t">Result.t</a>)
-<span>-&gt;</span> (<span class=
-"type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)
-<a href="../../Result/index.html#type-t">Result.t</a></code></dt>
+"argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+init:<span class="type-var">'accum</span> <span>-&gt;</span>
+f:(<span class="type-var">'accum</span> <span>-&gt;</span> <a href=
+"argument-1-T/Elt/index.html#type-t">T.Elt.t</a> <span>-&gt;</span>
+(<span class="type-var">'accum</span>,&nbsp;<span class=
+"type-var">'e</span>) <a href=
+"../../Result/index.html#type-t">Result.t</a>) <span>-&gt;</span>
+(<span class="type-var">'accum</span>,&nbsp;<span class=
+"type-var">'e</span>) <a href=
+"../../Result/index.html#type-t">Result.t</a></code></dt>
 <dd>
 <p><code>fold_result t ~init ~f</code> is a short-circuiting
 version of <code>fold</code> that runs in the <code>Result</code>
@@ -107,12 +102,12 @@ value is returned without any additional invocations of
 <dl>
 <dt class="spec value" id="val-fold_until"><a href=
 "#val-fold_until" class="anchor"></a><code><span class=
-"keyword">val</span> fold_until : <a href="index.html#type-t">t</a>
-<span>-&gt;</span> init:<span class="type-var">'accum</span>
-<span>-&gt;</span> f:(<span class="type-var">'accum</span>
-<span>-&gt;</span> <a href="index.html#type-elt">elt</a>
-<span>-&gt;</span> (<span class=
-"type-var">'accum</span>,&nbsp;<span class=
+"keyword">val</span> fold_until : <a href=
+"argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+init:<span class="type-var">'accum</span> <span>-&gt;</span>
+f:(<span class="type-var">'accum</span> <span>-&gt;</span> <a href=
+"argument-1-T/Elt/index.html#type-t">T.Elt.t</a> <span>-&gt;</span>
+(<span class="type-var">'accum</span>,&nbsp;<span class=
 "type-var">'final</span>) <a href=
 "../../../Base__/Container_intf/Export/Continue_or_stop/index.html#type-t">
 Base__.Container_intf.Continue_or_stop.t</a>) <span>-&gt;</span>
@@ -131,9 +126,9 @@ final result is computed by <code>finish</code>.</p>
 <dl>
 <dt class="spec value" id="val-exists"><a href="#val-exists" class=
 "anchor"></a><code><span class="keyword">val</span> exists :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> bool</code></dt>
+<a href="argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+f:(<a href="argument-1-T/Elt/index.html#type-t">T.Elt.t</a>
+<span>-&gt;</span> bool) <span>-&gt;</span> bool</code></dt>
 <dd>
 <p>Returns <code>true</code> if and only if there exists an element
 for which the provided function evaluates to <code>true</code>.
@@ -143,9 +138,9 @@ This is a short-circuiting operation.</p>
 <dl>
 <dt class="spec value" id="val-for_all"><a href="#val-for_all"
 class="anchor"></a><code><span class="keyword">val</span> for_all :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> bool</code></dt>
+<a href="argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+f:(<a href="argument-1-T/Elt/index.html#type-t">T.Elt.t</a>
+<span>-&gt;</span> bool) <span>-&gt;</span> bool</code></dt>
 <dd>
 <p>Returns <code>true</code> if and only if the provided function
 evaluates to <code>true</code> for all elements. This is a
@@ -155,9 +150,9 @@ short-circuiting operation.</p>
 <dl>
 <dt class="spec value" id="val-count"><a href="#val-count" class=
 "anchor"></a><code><span class="keyword">val</span> count :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> int</code></dt>
+<a href="argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+f:(<a href="argument-1-T/Elt/index.html#type-t">T.Elt.t</a>
+<span>-&gt;</span> bool) <span>-&gt;</span> int</code></dt>
 <dd>
 <p>Returns the number of elements for which the provided function
 evaluates to true.</p>
@@ -172,10 +167,10 @@ evaluates to true.</p>
 <a href=
 "../../../Base__/Container_intf/module-type-Summable/index.html#type-t">
 t</a> = <span class="type-var">'sum</span>) <span>-&gt;</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
-"type-var">'sum</span>) <span>-&gt;</span> <span class=
-"type-var">'sum</span></code></dt>
+<a href="argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+f:(<a href="argument-1-T/Elt/index.html#type-t">T.Elt.t</a>
+<span>-&gt;</span> <span class="type-var">'sum</span>)
+<span>-&gt;</span> <span class="type-var">'sum</span></code></dt>
 <dd>
 <p>Returns the sum of <code>f i</code> for all <code>i</code> in
 the container.</p>
@@ -184,10 +179,10 @@ the container.</p>
 <dl>
 <dt class="spec value" id="val-find"><a href="#val-find" class=
 "anchor"></a><code><span class="keyword">val</span> find : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> <a href="index.html#type-elt">elt</a>
-option</code></dt>
+"argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+f:(<a href="argument-1-T/Elt/index.html#type-t">T.Elt.t</a>
+<span>-&gt;</span> bool) <span>-&gt;</span> <a href=
+"argument-1-T/Elt/index.html#type-t">T.Elt.t</a> option</code></dt>
 <dd>
 <p>Returns as an <code>option</code> the first element for which
 <code>f</code> evaluates to true.</p>
@@ -196,10 +191,11 @@ option</code></dt>
 <dl>
 <dt class="spec value" id="val-find_map"><a href="#val-find_map"
 class="anchor"></a><code><span class="keyword">val</span> find_map
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> option) <span>-&gt;</span> <span class=
-"type-var">'a</span> option</code></dt>
+: <a href="argument-1-T/index.html#type-t">T.t</a>
+<span>-&gt;</span> f:(<a href=
+"argument-1-T/Elt/index.html#type-t">T.Elt.t</a> <span>-&gt;</span>
+<span class="type-var">'a</span> option) <span>-&gt;</span>
+<span class="type-var">'a</span> option</code></dt>
 <dd>
 <p>Returns the first evaluation of <code>f</code> that returns
 <code>Some</code>, and returns <code>None</code> if there is no
@@ -209,19 +205,22 @@ such element.</p>
 <dl>
 <dt class="spec value" id="val-to_list"><a href="#val-to_list"
 class="anchor"></a><code><span class="keyword">val</span> to_list :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> list</code></dt>
+<a href="argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+<a href="argument-1-T/Elt/index.html#type-t">T.Elt.t</a>
+list</code></dt>
 <dt class="spec value" id="val-to_array"><a href="#val-to_array"
 class="anchor"></a><code><span class="keyword">val</span> to_array
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> array</code></dt>
+: <a href="argument-1-T/index.html#type-t">T.t</a>
+<span>-&gt;</span> <a href=
+"argument-1-T/Elt/index.html#type-t">T.Elt.t</a> array</code></dt>
 <dt class="spec value" id="val-min_elt"><a href="#val-min_elt"
 class="anchor"></a><code><span class="keyword">val</span> min_elt :
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-compare:(<a href="index.html#type-elt">elt</a> <span>-&gt;</span>
-<a href="index.html#type-elt">elt</a> <span>-&gt;</span> int)
-<span>-&gt;</span> <a href="index.html#type-elt">elt</a>
-option</code></dt>
+<a href="argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+compare:(<a href="argument-1-T/Elt/index.html#type-t">T.Elt.t</a>
+<span>-&gt;</span> <a href=
+"argument-1-T/Elt/index.html#type-t">T.Elt.t</a> <span>-&gt;</span>
+int) <span>-&gt;</span> <a href=
+"argument-1-T/Elt/index.html#type-t">T.Elt.t</a> option</code></dt>
 <dd>
 <p>Returns a min (resp. max) element from the collection using the
 provided <code>compare</code> function. In case of a tie, the first
@@ -234,11 +233,12 @@ collection is empty.</p>
 <dl>
 <dt class="spec value" id="val-max_elt"><a href="#val-max_elt"
 class="anchor"></a><code><span class="keyword">val</span> max_elt :
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-compare:(<a href="index.html#type-elt">elt</a> <span>-&gt;</span>
-<a href="index.html#type-elt">elt</a> <span>-&gt;</span> int)
-<span>-&gt;</span> <a href="index.html#type-elt">elt</a>
-option</code></dt>
+<a href="argument-1-T/index.html#type-t">T.t</a> <span>-&gt;</span>
+compare:(<a href="argument-1-T/Elt/index.html#type-t">T.Elt.t</a>
+<span>-&gt;</span> <a href=
+"argument-1-T/Elt/index.html#type-t">T.Elt.t</a> <span>-&gt;</span>
+int) <span>-&gt;</span> <a href=
+"argument-1-T/Elt/index.html#type-t">T.Elt.t</a> option</code></dt>
 </dl>
 </div>
 </body>

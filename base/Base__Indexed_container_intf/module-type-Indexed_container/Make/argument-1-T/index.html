@@ -39,9 +39,6 @@ Base__.Container_intf.Make_arg</a></code></span></summary>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> 'a
 t</code></dt>
-<dt class="spec type" id="type-elt"><a href="#type-elt" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-elt</code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-fold"><a href="#val-fold" class=
@@ -50,16 +47,16 @@ elt</code></dt>
 <span>-&gt;</span> init:<span class="type-var">'accum</span>
 <span>-&gt;</span> f:(<span class="type-var">'accum</span>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
-"type-var">'accum</span>) <span>-&gt;</span> <span class=
-"type-var">'accum</span></code></dt>
+"../../../../Base/Monad/Ident/index.html#type-t">Base.Monad.Ident.t</a>
+<span>-&gt;</span> <span class="type-var">'accum</span>)
+<span>-&gt;</span> <span class="type-var">'accum</span></code></dt>
 <dt class="spec value" id="val-iter"><a href="#val-iter" class=
 "anchor"></a><code><span class="keyword">val</span> iter : [
 `Define_using_fold | `Custom of <span class="type-var">'a</span>
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 f:(<span class="type-var">'a</span> <a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> unit)
-<span>-&gt;</span> unit ]</code></dt>
+"../../../../Base/Monad/Ident/index.html#type-t">Base.Monad.Ident.t</a>
+<span>-&gt;</span> unit) <span>-&gt;</span> unit ]</code></dt>
 <dd>
 <p>The <code>iter</code> argument to <code>Container.Make</code>
 specifies how to implement the container's <code>iter</code>

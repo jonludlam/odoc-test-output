@@ -144,53 +144,6 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 <a href=
 "../../../base/Base/index.html#module-Ordering">Ordering</a>.t :=
 <a href="index.html#type-t">t</a></code></span></summary>
-<aside>
-<p><code>Ordering</code> is intended to make code that matches on
-the result of a comparison more concise and easier to read.</p>
-<p>For example, instead of writing:</p>
-<pre><code class="ml">let r = compare x y in
-if r &lt; 0 then
-  ...
-else if r = 0 then
-  ...
-else
-  ...</code></pre>
-<p>you could simply write:</p>
-<pre><code class="ml">match Ordering.of_int (compare x y) with
-| Less -&gt; ...
-| Equal -&gt; ...
-| Greater -&gt; ...</code></pre></aside>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code>
-<code>=</code></dt>
-<dd>
-<table class="variant">
-<tr id="type-t.Less" class="anchored">
-<td class="def constructor"><a href="#type-t.Less" class=
-"anchor"></a><code>|</code> <code><span class=
-"constructor">Less</span></code></td>
-</tr>
-<tr id="type-t.Equal" class="anchored">
-<td class="def constructor"><a href="#type-t.Equal" class=
-"anchor"></a><code>|</code> <code><span class=
-"constructor">Equal</span></code></td>
-</tr>
-<tr id="type-t.Greater" class="anchored">
-<td class="def constructor"><a href="#type-t.Greater" class=
-"anchor"></a><code>|</code> <code><span class=
-"constructor">Greater</span></code></td>
-</tr>
-</table>
-</dd>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
 <dl>
 <dt class="spec value" id="val-compare"><a href="#val-compare"
 class="anchor"></a><code><span class="keyword">val</span> compare :
@@ -219,65 +172,23 @@ class="anchor"></a><code><span class="keyword">val</span> t_of_sexp
 class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 : <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "../../../base/Base/Sexp/index.html#type-t">Base.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../../base/Base/Equal/index.html#module-type-S">Base.Equal.S</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href=
-"../../../base/Base/Equal/module-type-S/index.html#type-t">t</a> :=
-<a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-equal"><a href="#val-equal" class=
 "anchor"></a><code><span class="keyword">val</span> equal :
 <a href="index.html#type-t">t</a> <a href=
 "../../../base/Base/Equal/index.html#type-equal">Base.Equal.equal</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
 <dt class="spec value" id="val-of_int"><a href="#val-of_int" class=
 "anchor"></a><code><span class="keyword">val</span> of_int : int
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
-<dd>
-<p><code>of_int n</code> is:</p>
-<pre>      Less     if n &lt; 0
-      Equal    if n = 0
-      Greater  if n &gt; 0</pre></dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-to_int"><a href="#val-to_int" class=
 "anchor"></a><code><span class="keyword">val</span> to_int :
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 int</code></dt>
-<dd>
-<p><code>to_int t</code> is:</p>
-<pre>      Less     -&gt; -1
-      Equal    -&gt; 0
-      Greater  -&gt; 1</pre>
-<p>It can be useful when writing a comparison function to allow one
-to return <code>Ordering.t</code> values and transform them to
-<code>int</code>s later.</p>
-</dd>
 </dl>
 <div class="spec module" id="module-Export"><a href=
 "#module-Export" class="anchor"></a><code><span class=
-"keyword">module</span> Export = <a href=
-"../../../base/Base/Ordering/index.html#module-Export">Base.Ordering.Export</a></code></div>
+"keyword">module</span> <a href="Export/index.html">Export</a> :
+<span class="keyword">sig</span> ... <span class=
+"keyword">end</span></code></div>
 </details>
 </div>
 </div>

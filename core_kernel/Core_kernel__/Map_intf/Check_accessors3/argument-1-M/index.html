@@ -46,22 +46,19 @@ tree</code></dt>
 <dt class="spec value" id="val-invariants"><a href=
 "#val-invariants" class="anchor"></a><code><span class=
 "keyword">val</span> invariants : (<span class=
-"type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-bool</code></dt>
+"type-var">_</span>,&nbsp;<span class=
+"type-var">_</span>,&nbsp;<span class="type-var">_</span>) <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-is_empty"><a href="#val-is_empty"
 class="anchor"></a><code><span class="keyword">val</span> is_empty
-: (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-bool</code></dt>
+: (<span class="type-var">_</span>,&nbsp;<span class=
+"type-var">_</span>,&nbsp;<span class="type-var">_</span>) <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-length"><a href="#val-length" class=
 "anchor"></a><code><span class="keyword">val</span> length :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-int</code></dt>
+(<span class="type-var">_</span>,&nbsp;<span class=
+"type-var">_</span>,&nbsp;<span class="type-var">_</span>) <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-add"><a href="#val-add" class=
 "anchor"></a><code><span class="keyword">val</span> add :
 (<span class="type-var">'a</span>,&nbsp;<span class=
@@ -72,7 +69,7 @@ data:<span class="type-var">'b</span> <span>-&gt;</span>
 (<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
 <a href="index.html#type-t">t</a> <a href=
-"../../../../../base/Base__Map_intf/Or_duplicate/index.html#type-t">
+"../../../../../base/Base__/Map_intf/Or_duplicate/index.html#type-t">
 Base__.Map_intf.Or_duplicate.t</a></code></dt>
 <dt class="spec value" id="val-add_exn"><a href="#val-add_exn"
 class="anchor"></a><code><span class="keyword">val</span> add_exn :
@@ -176,13 +173,13 @@ class="anchor"></a><code><span class="keyword">val</span> find_exn
 <dt class="spec value" id="val-iter_keys"><a href="#val-iter_keys"
 class="anchor"></a><code><span class="keyword">val</span> iter_keys
 : (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
+"type-var">_</span>,&nbsp;<span class="type-var">'cmp</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 f:(<span class="type-var">'a</span> <span>-&gt;</span> unit)
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-iter"><a href="#val-iter" class=
 "anchor"></a><code><span class="keyword">val</span> iter :
-(<span class="type-var">'a</span>,&nbsp;<span class=
+(<span class="type-var">_</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 f:(<span class="type-var">'b</span> <span>-&gt;</span> unit)
@@ -204,10 +201,10 @@ data:<span class="type-var">'b</span> <span>-&gt;</span> unit)
 "type-var">'c</span>,&nbsp;<span class="type-var">'cmp</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 f:(key:<span class="type-var">'a</span> <span>-&gt;</span> data:[
-`Both of <span class="type-var">'b</span> * <span class=
-"type-var">'c</span> | `Left of <span class="type-var">'b</span> |
-`Right of <span class="type-var">'c</span> ] <span>-&gt;</span>
-unit) <span>-&gt;</span> unit</code></dt>
+`Left of <span class="type-var">'b</span> | `Right of <span class=
+"type-var">'c</span> | `Both of <span class="type-var">'b</span> *
+<span class="type-var">'c</span> ] <span>-&gt;</span> unit)
+<span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-map"><a href="#val-map" class=
 "anchor"></a><code><span class="keyword">val</span> map :
 (<span class="type-var">'a</span>,&nbsp;<span class=
@@ -232,7 +229,7 @@ data:<span class="type-var">'b</span> <span>-&gt;</span>
 <dt class="spec value" id="val-fold"><a href="#val-fold" class=
 "anchor"></a><code><span class="keyword">val</span> fold :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'d</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 init:<span class="type-var">'c</span> <span>-&gt;</span>
 f:(key:<span class="type-var">'a</span> <span>-&gt;</span>
@@ -244,7 +241,7 @@ data:<span class="type-var">'b</span> <span>-&gt;</span>
 "#val-fold_right" class="anchor"></a><code><span class=
 "keyword">val</span> fold_right : (<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'d</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 init:<span class="type-var">'c</span> <span>-&gt;</span>
 f:(key:<span class="type-var">'a</span> <span>-&gt;</span>
@@ -262,10 +259,10 @@ data:<span class="type-var">'b</span> <span>-&gt;</span>
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 init:<span class="type-var">'d</span> <span>-&gt;</span>
 f:(key:<span class="type-var">'a</span> <span>-&gt;</span> data:[
-`Both of <span class="type-var">'b</span> * <span class=
-"type-var">'c</span> | `Left of <span class="type-var">'b</span> |
-`Right of <span class="type-var">'c</span> ] <span>-&gt;</span>
-<span class="type-var">'d</span> <span>-&gt;</span> <span class=
+`Left of <span class="type-var">'b</span> | `Right of <span class=
+"type-var">'c</span> | `Both of <span class="type-var">'b</span> *
+<span class="type-var">'c</span> ] <span>-&gt;</span> <span class=
+"type-var">'d</span> <span>-&gt;</span> <span class=
 "type-var">'d</span>) <span>-&gt;</span> <span class=
 "type-var">'d</span></code></dt>
 <dt class="spec value" id="val-filter_keys"><a href=
@@ -409,20 +406,20 @@ bool</code></dt>
 <dt class="spec value" id="val-keys"><a href="#val-keys" class=
 "anchor"></a><code><span class="keyword">val</span> keys :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
+"type-var">_</span>,&nbsp;<span class="type-var">_</span>) <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> list</code></dt>
 <dt class="spec value" id="val-data"><a href="#val-data" class=
 "anchor"></a><code><span class="keyword">val</span> data :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+(<span class="type-var">_</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
 "type-var">'b</span> list</code></dt>
 <dt class="spec value" id="val-to_alist"><a href="#val-to_alist"
 class="anchor"></a><code><span class="keyword">val</span> to_alist
-: ?⁠key_order:[ `Decreasing | `Increasing ] <span>-&gt;</span>
+: ?⁠key_order:[ `Increasing | `Decreasing ] <span>-&gt;</span>
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
 "type-var">'a</span> * <span class="type-var">'b</span>)
 list</code></dt>
@@ -433,7 +430,7 @@ class="anchor"></a><code><span class="keyword">val</span> validate
 "../../../../../base/Base/Validate/index.html#type-check">Base.Validate.check</a>
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <a href=
 "../../../../../base/Base/Validate/index.html#type-check">Base.Validate.check</a></code></dt>
 <dt class="spec value" id="val-merge"><a href="#val-merge" class=
@@ -444,12 +441,12 @@ class="anchor"></a><code><span class="keyword">val</span> validate
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class="type-var">'cmp</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
-f:(key:<span class="type-var">'a</span> <span>-&gt;</span> [ `Both
-of <span class="type-var">'b</span> * <span class=
-"type-var">'c</span> | `Left of <span class="type-var">'b</span> |
-`Right of <span class="type-var">'c</span> ] <span>-&gt;</span>
-<span class="type-var">'d</span> option) <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+f:(key:<span class="type-var">'a</span> <span>-&gt;</span> [ `Left
+of <span class="type-var">'b</span> | `Right of <span class=
+"type-var">'c</span> | `Both of <span class="type-var">'b</span> *
+<span class="type-var">'c</span> ] <span>-&gt;</span> <span class=
+"type-var">'d</span> option) <span>-&gt;</span> (<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class="type-var">'cmp</span>)
 <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-symmetric_diff"><a href=
@@ -466,7 +463,7 @@ data_equal:(<span class="type-var">'b</span> <span>-&gt;</span>
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
 <a href=
-"../../../../../base/Base__Map_intf/Symmetric_diff_element/index.html#type-t">
+"../../../../../base/Base__/Map_intf/Symmetric_diff_element/index.html#type-t">
 Base__.Map_intf.Symmetric_diff_element.t</a> <a href=
 "../../../../../base/Base/Sequence/index.html#type-t">Base.Sequence.t</a></code></dt>
 <dt class="spec value" id="val-min_elt"><a href="#val-min_elt"
@@ -499,45 +496,45 @@ option</code></dt>
 "type-var">'a</span> * <span class="type-var">'b</span></code></dt>
 <dt class="spec value" id="val-for_all"><a href="#val-for_all"
 class="anchor"></a><code><span class="keyword">val</span> for_all :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+(<span class="type-var">_</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 f:(<span class="type-var">'b</span> <span>-&gt;</span> bool)
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-for_alli"><a href="#val-for_alli"
 class="anchor"></a><code><span class="keyword">val</span> for_alli
 : (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 f:(key:<span class="type-var">'a</span> <span>-&gt;</span>
 data:<span class="type-var">'b</span> <span>-&gt;</span> bool)
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-exists"><a href="#val-exists" class=
 "anchor"></a><code><span class="keyword">val</span> exists :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+(<span class="type-var">_</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 f:(<span class="type-var">'b</span> <span>-&gt;</span> bool)
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-existsi"><a href="#val-existsi"
 class="anchor"></a><code><span class="keyword">val</span> existsi :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 f:(key:<span class="type-var">'a</span> <span>-&gt;</span>
 data:<span class="type-var">'b</span> <span>-&gt;</span> bool)
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-count"><a href="#val-count" class=
 "anchor"></a><code><span class="keyword">val</span> count :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+(<span class="type-var">_</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 f:(<span class="type-var">'b</span> <span>-&gt;</span> bool)
 <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-counti"><a href="#val-counti" class=
 "anchor"></a><code><span class="keyword">val</span> counti :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 f:(key:<span class="type-var">'a</span> <span>-&gt;</span>
 data:<span class="type-var">'b</span> <span>-&gt;</span> bool)
@@ -585,7 +582,7 @@ lower_bound:<span class="type-var">'k</span> <a href=
 "#val-fold_range_inclusive" class="anchor"></a><code><span class=
 "keyword">val</span> fold_range_inclusive : (<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'d</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 min:<span class="type-var">'a</span> <span>-&gt;</span>
 max:<span class="type-var">'a</span> <span>-&gt;</span>
@@ -599,7 +596,7 @@ data:<span class="type-var">'b</span> <span>-&gt;</span>
 "#val-range_to_alist" class="anchor"></a><code><span class=
 "keyword">val</span> range_to_alist : (<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
 min:<span class="type-var">'a</span> <span>-&gt;</span>
 max:<span class="type-var">'a</span> <span>-&gt;</span>
@@ -609,7 +606,7 @@ max:<span class="type-var">'a</span> <span>-&gt;</span>
 "#val-closest_key" class="anchor"></a><code><span class=
 "keyword">val</span> closest_key : (<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span> [
 `Greater_or_equal_to | `Greater_than | `Less_or_equal_to |
 `Less_than ] <span>-&gt;</span> <span class="type-var">'a</span>
@@ -618,22 +615,22 @@ max:<span class="type-var">'a</span> <span>-&gt;</span>
 <dt class="spec value" id="val-nth"><a href="#val-nth" class=
 "anchor"></a><code><span class="keyword">val</span> nth :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span> int
 <span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
 "type-var">'b</span>) option</code></dt>
 <dt class="spec value" id="val-nth_exn"><a href="#val-nth_exn"
 class="anchor"></a><code><span class="keyword">val</span> nth_exn :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span> int
 <span>-&gt;</span> <span class="type-var">'a</span> * <span class=
 "type-var">'b</span></code></dt>
 <dt class="spec value" id="val-rank"><a href="#val-rank" class=
 "anchor"></a><code><span class="keyword">val</span> rank :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
+"type-var">_</span>,&nbsp;<span class="type-var">_</span>) <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> <span>-&gt;</span> int option</code></dt>
 <dt class="spec value" id="val-to_tree"><a href="#val-to_tree"
 class="anchor"></a><code><span class="keyword">val</span> to_tree :
@@ -645,13 +642,13 @@ class="anchor"></a><code><span class="keyword">val</span> to_tree :
 <a href="index.html#type-tree">tree</a></code></dt>
 <dt class="spec value" id="val-to_sequence"><a href=
 "#val-to_sequence" class="anchor"></a><code><span class=
-"keyword">val</span> to_sequence : ?⁠order:[ `Decreasing_key |
-`Increasing_key ] <span>-&gt;</span>
+"keyword">val</span> to_sequence : ?⁠order:[ `Increasing_key |
+`Decreasing_key ] <span>-&gt;</span>
 ?⁠keys_greater_or_equal_to:<span class="type-var">'a</span>
 <span>-&gt;</span> ?⁠keys_less_or_equal_to:<span class=
 "type-var">'a</span> <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'b</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
 "type-var">'a</span> * <span class="type-var">'b</span>) <a href=
 "../../../../../base/Base/Sequence/index.html#type-t">Base.Sequence.t</a></code></dt>

@@ -46,7 +46,7 @@ key</code></dt>
 <dl>
 <dt class="spec value" id="val-empty"><a href="#val-empty" class=
 "anchor"></a><code><span class="keyword">val</span> empty :
-<span class="type-var">'a</span> <a href=
+<span class="type-var">_</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-singleton"><a href="#val-singleton"
 class="anchor"></a><code><span class="keyword">val</span> singleton
@@ -56,9 +56,9 @@ class="anchor"></a><code><span class="keyword">val</span> singleton
 <dt class="spec value" id="val-of_alist"><a href="#val-of_alist"
 class="anchor"></a><code><span class="keyword">val</span> of_alist
 : (<a href="index.html#type-key">key</a> * <span class=
-"type-var">'a</span>) list <span>-&gt;</span> [ `Duplicate_key of
-<a href="index.html#type-key">key</a> | `Ok of <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"type-var">'a</span>) list <span>-&gt;</span> [ `Ok of <span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a> |
+`Duplicate_key of <a href="index.html#type-key">key</a>
 ]</code></dt>
 <dt class="spec value" id="val-of_alist_or_error"><a href=
 "#val-of_alist_or_error" class="anchor"></a><code><span class=
@@ -133,10 +133,9 @@ class="anchor"></a><code><span class="keyword">val</span> of_iteri
 : iteri:(f:(key:<a href="index.html#type-key">key</a>
 <span>-&gt;</span> data:<span class="type-var">'v</span>
 <span>-&gt;</span> unit) <span>-&gt;</span> unit)
-<span>-&gt;</span> [ `Duplicate_key of <a href=
-"index.html#type-key">key</a> | `Ok of <span class=
-"type-var">'v</span> <a href="index.html#type-t">t</a>
-]</code></dt>
+<span>-&gt;</span> [ `Ok of <span class="type-var">'v</span>
+<a href="index.html#type-t">t</a> | `Duplicate_key of <a href=
+"index.html#type-key">key</a> ]</code></dt>
 <dt class="spec value" id="val-of_tree"><a href="#val-of_tree"
 class="anchor"></a><code><span class="keyword">val</span> of_tree :
 <span class="type-var">'a</span> <a href=

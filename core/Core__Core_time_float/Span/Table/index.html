@@ -25,42 +25,23 @@ hljs.initHighlightingOnLoad();
 "../index.html">Span</a> » Table</nav>
 <h1>Module <code>Span.Table</code></h1>
 </header>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/index.html#module-type-S">
-Core_kernel.Hashtbl_intf.S</a></code></span></summary>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/index.html#module-type-S_plain">
-Core_kernel.Hashtbl_intf.S_plain</a></code></span></summary>
 <dl>
 <dt class="spec type" id="type-key"><a href="#type-key" class=
-"anchor"></a><code><span class="keyword">type</span>
-key</code></dt>
+"anchor"></a><code><span class="keyword">type</span> key</code>
+<code>= <a href=
+"../../Time0/Span/index.html#type-t">Time0.Span.t</a></code></dt>
 <dt class="spec type" id="type-hashtbl"><a href="#type-hashtbl"
 class="anchor"></a><code><span class="keyword">type</span> ('a, 'b)
-hashtbl</code></dt>
+hashtbl</code> <code>= (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
+<a href=
+"../../../../core_kernel/Core_kernel/Hashtbl/index.html#type-t">Core_kernel.Hashtbl.t</a></code></dt>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> 'b t</code>
 <code>= (<a href="index.html#type-key">key</a>,&nbsp;<span class=
 "type-var">'b</span>) <a href=
 "index.html#type-hashtbl">hashtbl</a></code></dt>
 </dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
 <dl>
 <dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
 class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
@@ -70,10 +51,6 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
-</details>
-</div>
-</div>
-</div>
 <dl>
 <dt class="spec type" id="type-t_"><a href="#type-t_" class=
 "anchor"></a><code><span class="keyword">type</span> ('a, 'b)
@@ -88,25 +65,6 @@ t_</code> <code>= <span class="type-var">'b</span> <a href=
 class="anchor"></a><code><span class="keyword">val</span> hashable
 : <a href="index.html#type-key">key</a> <a href=
 "../../../../base/Base/Hashable/index.html#type-t">Core_kernel.Hashtbl_intf.Hashable.t</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../../../base/Base/Invariant/index.html#module-type-S1">Core_kernel__.Import.Invariant.S1</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-'b <a href=
-"../../../../base/Base/Invariant/module-type-S1/index.html#type-t">t</a>
-:= <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-invariant"><a href="#val-invariant"
 class="anchor"></a><code><span class="keyword">val</span> invariant
 : <span class="type-var">'a</span> <a href=
@@ -114,38 +72,6 @@ class="anchor"></a><code><span class="keyword">val</span> invariant
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "index.html#type-t">t</a> <a href=
 "../../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/index.html#module-type-Creators">
-Core_kernel.Hashtbl_intf.Creators</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> ('a, 'b)
-<a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/module-type-Creators/index.html#type-t">
-t</a> := (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t_">t_</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/module-type-Creators/index.html#type-key">
-key</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-key_">key_</a> <span class="keyword">with</span>
-<span class="keyword">type</span> ('key, 'data, 'z) <a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/module-type-Creators/index.html#type-create_options">
-create_options</a> := (<span class=
-"type-var">'key</span>,&nbsp;<span class=
-"type-var">'data</span>,&nbsp;<span class="type-var">'z</span>)
-<a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/index.html#type-create_options_without_hashable">
-Core_kernel.Hashtbl_intf.create_options_without_hashable</a></code></span></summary>
-<dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
 (<span class="type-var">'a</span> <a href=
@@ -302,30 +228,6 @@ Core_kernel.Hashtbl_intf.create_options_without_hashable</a></code></dt>
 <a href="index.html#type-t_">t_</a>) <a href=
 "../../../../core_kernel/Core_kernel/Hashtbl_intf/index.html#type-create_options_without_hashable">
 Core_kernel.Hashtbl_intf.create_options_without_hashable</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/index.html#module-type-Accessors">
-Core_kernel.Hashtbl_intf.Accessors</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> ('a, 'b)
-<a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/module-type-Accessors/index.html#type-t">
-t</a> := (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t_">t_</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/module-type-Accessors/index.html#type-key">
-key</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-key_">key_</a></code></span></summary>
-<dl>
 <dt class="spec value" id="val-sexp_of_key"><a href=
 "#val-sexp_of_key" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_key : (<span class=
@@ -686,7 +588,9 @@ f:(key:<span class="type-var">'k</span> <a href=
 <dl>
 <dt class="spec type" id="type-merge_into_action"><a href=
 "#type-merge_into_action" class="anchor"></a><code><span class=
-"keyword">type</span> 'a merge_into_action</code>
+"keyword">type</span> 'a merge_into_action</code> <code>=
+<span class="type-var">'a</span> <a href=
+"../../Time0/Span/Table/index.html#type-merge_into_action">Time0.Span.Table.merge_into_action</a></code>
 <code>=</code></dt>
 <dd>
 <table class="variant">
@@ -840,30 +744,6 @@ class="anchor"></a><code><span class="keyword">val</span> validate
 "index.html#type-t_">t_</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> <a href="index.html#type-key_">key_</a>
 <span>-&gt;</span> unit</code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/index.html#module-type-Multi">
-Core_kernel.Hashtbl_intf.Multi</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> ('a, 'b)
-<a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/module-type-Multi/index.html#type-t">
-t</a> := (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t_">t_</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
-"../../../../core_kernel/Core_kernel/Hashtbl_intf/module-type-Multi/index.html#type-key">
-key</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-key_">key_</a></code></span></summary>
-<dl>
 <dt class="spec value" id="val-add_multi"><a href="#val-add_multi"
 class="anchor"></a><code><span class="keyword">val</span> add_multi
 : (<span class="type-var">'a</span>,&nbsp;<span class=
@@ -888,65 +768,24 @@ unit</code></dt>
 <span>-&gt;</span> <span class="type-var">'b</span>
 list</code></dt>
 </dl>
-</details>
-</div>
-</div>
-</div>
 <div class="spec module" id="module-Provide_of_sexp"><a href=
 "#module-Provide_of_sexp" class="anchor"></a><code><span class=
 "keyword">module</span> <a href=
 "Provide_of_sexp/index.html">Provide_of_sexp</a> : <span class=
 "keyword">functor</span> (<a href=
 "Provide_of_sexp/argument-1-Key/index.html">Key</a> : <span class=
-"keyword">sig</span> ... <span class="keyword">end</span>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="Provide_of_sexp/index.html#type-t">t</a> := <a href=
-"index.html#type-key">key</a>) <span>-&gt;</span> <span class=
-"keyword">sig</span> ... <span class="keyword">end</span>
-<span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href="Provide_of_sexp/index.html#type-t">t</a> :=
-<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></div>
+"keyword">sig</span> ... <span class="keyword">end</span>)
+<span>-&gt;</span> <span class="keyword">sig</span> ...
+<span class="keyword">end</span></code></div>
 <div class="spec module" id="module-Provide_bin_io"><a href=
 "#module-Provide_bin_io" class="anchor"></a><code><span class=
 "keyword">module</span> <a href=
 "Provide_bin_io/index.html">Provide_bin_io</a> : <span class=
 "keyword">functor</span> (<a href=
 "Provide_bin_io/argument-1-Key/index.html">Key</a> : <span class=
-"keyword">sig</span> ... <span class="keyword">end</span>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="Provide_bin_io/index.html#type-t">t</a> := <a href=
-"index.html#type-key">key</a>) <span>-&gt;</span> <span class=
-"keyword">sig</span> ... <span class="keyword">end</span>
-<span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href="Provide_bin_io/index.html#type-t">t</a> := <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a></code></div>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span> <span class="keyword">with</span>
-<span class="keyword">type</span> 'a <a href=
-"index.html#type-t">t</a> := <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> _
-t</code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
+"keyword">sig</span> ... <span class="keyword">end</span>)
+<span>-&gt;</span> <span class="keyword">sig</span> ...
+<span class="keyword">end</span></code></div>
 <dl>
 <dt class="spec value" id="val-t_of_sexp"><a href="#val-t_of_sexp"
 class="anchor"></a><code><span class="keyword">val</span> t_of_sexp
@@ -957,37 +796,6 @@ class="anchor"></a><code><span class="keyword">val</span> t_of_sexp
 "../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <span class="type-var">'v_x__002_</span>
 <a href="index.html#type-t">t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-</details>
-</div>
-</div>
-</div>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../../../core_kernel/Core_kernel__/Binable0/index.html#module-type-S1">
-Core_kernel.Hashtbl_intf.Binable.S1</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'v <a href=
-"../../../../core_kernel/Core_kernel__/Binable0/module-type-S1/index.html#type-t">
-t</a> := <span class="type-var">'v</span> <a href=
-"index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-bin_shape_t"><a href=
 "#val-bin_shape_t" class="anchor"></a><code><span class=
 "keyword">val</span> bin_shape_t : <a href=
@@ -1038,10 +846,6 @@ Bin_prot.Type_class.S1.reader</a></code></dt>
 "type-var">'a</span> <a href="index.html#type-t">t</a>) <a href=
 "../../../../bin_prot/Bin_prot/Type_class/S1/index.html#type-t">Bin_prot.Type_class.S1.t</a></code></dt>
 </dl>
-</details>
-</div>
-</div>
-</div>
 </div>
 </body>
 </html>

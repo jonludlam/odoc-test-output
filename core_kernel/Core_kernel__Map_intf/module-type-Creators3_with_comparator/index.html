@@ -51,7 +51,7 @@ comparator:(<span class="type-var">'a</span>,&nbsp;<span class=
 "../../../base/Base/Comparator/index.html#type-t">Base.Comparator.t</a>
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
+"type-var">_</span>,&nbsp;<span class="type-var">'cmp</span>)
 <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-singleton"><a href="#val-singleton"
 class="anchor"></a><code><span class="keyword">val</span> singleton
@@ -70,11 +70,11 @@ class="anchor"></a><code><span class="keyword">val</span> of_alist
 "type-var">'cmp</span>) <a href=
 "../../../base/Base/Comparator/index.html#type-t">Base.Comparator.t</a>
 <span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) list <span>-&gt;</span> [ `Duplicate_key of
-<span class="type-var">'a</span> | `Ok of (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>) list <span>-&gt;</span> [ `Ok of
+(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> ]</code></dt>
+<a href="index.html#type-t">t</a> | `Duplicate_key of <span class=
+"type-var">'a</span> ]</code></dt>
 <dt class="spec value" id="val-of_alist_or_error"><a href=
 "#val-of_alist_or_error" class="anchor"></a><code><span class=
 "keyword">val</span> of_alist_or_error : comparator:(<span class=
@@ -197,11 +197,11 @@ class="anchor"></a><code><span class="keyword">val</span> of_iteri
 <span>-&gt;</span> iteri:(f:(key:<span class="type-var">'a</span>
 <span>-&gt;</span> data:<span class="type-var">'b</span>
 <span>-&gt;</span> unit) <span>-&gt;</span> unit)
-<span>-&gt;</span> [ `Duplicate_key of <span class=
-"type-var">'a</span> | `Ok of (<span class=
+<span>-&gt;</span> [ `Ok of (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> ]</code></dt>
+<a href="index.html#type-t">t</a> | `Duplicate_key of <span class=
+"type-var">'a</span> ]</code></dt>
 <dt class="spec value" id="val-of_tree"><a href="#val-of_tree"
 class="anchor"></a><code><span class="keyword">val</span> of_tree :
 comparator:(<span class="type-var">'a</span>,&nbsp;<span class=

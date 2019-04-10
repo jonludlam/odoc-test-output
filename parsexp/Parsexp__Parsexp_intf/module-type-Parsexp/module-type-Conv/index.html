@@ -36,24 +36,6 @@ res</code></dt>
 "#type-parsed_sexp" class="anchor"></a><code><span class=
 "keyword">type</span> parsed_sexp</code></dt>
 </dl>
-<div class="spec module" id="module-Parse_error"><a href=
-"#module-Parse_error" class="anchor"></a><code><span class=
-"keyword">module</span> <a href=
-"Parse_error/index.html">Parse_error</a> : <span class=
-"keyword">sig</span> ... <span class=
-"keyword">end</span></code></div>
-<div class="spec module" id="module-Of_sexp_error"><a href=
-"#module-Of_sexp_error" class="anchor"></a><code><span class=
-"keyword">module</span> <a href=
-"Of_sexp_error/index.html">Of_sexp_error</a> : <span class=
-"keyword">sig</span> ... <span class=
-"keyword">end</span></code></div>
-<div class="spec module" id="module-Conv_error"><a href=
-"#module-Conv_error" class="anchor"></a><code><span class=
-"keyword">module</span> <a href=
-"Conv_error/index.html">Conv_error</a> : <span class=
-"keyword">sig</span> ... <span class=
-"keyword">end</span></code></div>
 <dl>
 <dt class="spec value" id="val-parse_string"><a href=
 "#val-parse_string" class="anchor"></a><code><span class=
@@ -62,7 +44,7 @@ res</code></dt>
 <span>-&gt;</span> <span class="type-var">'a</span>)
 <span>-&gt;</span> (<span class="type-var">'a</span> <a href=
 "index.html#type-res">res</a>,&nbsp;<a href=
-"Conv_error/index.html#type-t">Conv_error.t</a>)
+"../Conv_error/index.html#type-t">Conv_error.t</a>)
 Stdlib.result</code></dt>
 <dt class="spec value" id="val-parse_string_exn"><a href=
 "#val-parse_string_exn" class="anchor"></a><code><span class=
@@ -80,7 +62,7 @@ Stdlib.result</code></dt>
 <span>-&gt;</span> <span class="type-var">'a</span>)
 <span>-&gt;</span> (<span class="type-var">'a</span> <a href=
 "index.html#type-res">res</a>,&nbsp;<a href=
-"Of_sexp_error/index.html#type-t">Of_sexp_error.t</a>)
+"../Of_sexp_error/index.html#type-t">Of_sexp_error.t</a>)
 Stdlib.result</code></dt>
 <dt class="spec value" id="val-conv_exn"><a href="#val-conv_exn"
 class="anchor"></a><code><span class="keyword">val</span> conv_exn
@@ -95,13 +77,13 @@ class="anchor"></a><code><span class="keyword">val</span> conv_exn
 "#val-conv_combine" class="anchor"></a><code><span class=
 "keyword">val</span> conv_combine : (<a href=
 "index.html#type-parsed_sexp">parsed_sexp</a> * <a href=
-"../../../Parsexp/Positions/index.html#type-t">Parsexp.Positions.t</a>,&nbsp;<a href="Parse_error/index.html#type-t">Parse_error.t</a>)
+"../../../Parsexp/Positions/index.html#type-t">Parsexp.Positions.t</a>,&nbsp;<a href="../Parse_error/index.html#type-t">Parse_error.t</a>)
 Stdlib.result <span>-&gt;</span> (<a href=
 "index.html#type-chunk_to_conv">chunk_to_conv</a>
 <span>-&gt;</span> <span class="type-var">'a</span>)
 <span>-&gt;</span> (<span class="type-var">'a</span> <a href=
 "index.html#type-res">res</a>,&nbsp;<a href=
-"Conv_error/index.html#type-t">Conv_error.t</a>)
+"../Conv_error/index.html#type-t">Conv_error.t</a>)
 Stdlib.result</code></dt>
 <dd>
 <p>Convenience function for merging parsing and conversion

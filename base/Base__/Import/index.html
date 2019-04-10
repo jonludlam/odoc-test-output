@@ -123,9 +123,6 @@ Stdlib.format6 <span class="keyword">with</span> <span class=
 "keyword">with</span> <span class="keyword">module</span> <a href=
 "Uchar/index.html">Uchar</a> := <a href=
 "../../Caml/index.html">Caml</a>.Uchar</code></span></summary>
-<div class="spec module" id="module-Pervasives"><a href=
-"#module-Pervasives" class="anchor"></a><code><span class=
-"keyword">module</span> Pervasives = Stdlib.Pervasives</code></div>
 <dl>
 <dt class="spec external" id="val-raise"><a href="#val-raise"
 class="anchor"></a><code><span class="keyword">val</span> raise :
@@ -463,9 +460,8 @@ class="anchor"></a><code><span class="keyword">val</span> min_float
 <dl>
 <dt class="spec type" id="type-fpclass"><a href="#type-fpclass"
 class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> fpclass</code> <code>= <a href=
-"index.html#module-Pervasives">Pervasives</a>.fpclass</code>
-<code>=</code></dt>
+<span class="keyword">nonrec</span> fpclass</code> <code>=
+Stdlib.Pervasives.fpclass</code> <code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-fpclass.FP_normal" class="anchored">
@@ -594,13 +590,12 @@ float</code></dt>
 <dt class="spec type" id="type-in_channel"><a href=
 "#type-in_channel" class="anchor"></a><code><span class=
 "keyword">type</span> <span class="keyword">nonrec</span>
-in_channel</code> <code>= <a href=
-"index.html#module-Pervasives">Pervasives</a>.in_channel</code></dt>
+in_channel</code> <code>= Stdlib.Pervasives.in_channel</code></dt>
 <dt class="spec type" id="type-out_channel"><a href=
 "#type-out_channel" class="anchor"></a><code><span class=
 "keyword">type</span> <span class="keyword">nonrec</span>
-out_channel</code> <code>= <a href=
-"index.html#module-Pervasives">Pervasives</a>.out_channel</code></dt>
+out_channel</code> <code>=
+Stdlib.Pervasives.out_channel</code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-stdin"><a href="#val-stdin" class=
@@ -689,9 +684,7 @@ option</code></dt>
 <dt class="spec type" id="type-open_flag"><a href="#type-open_flag"
 class="anchor"></a><code><span class="keyword">type</span>
 <span class="keyword">nonrec</span> open_flag</code> <code>=
-<a href=
-"index.html#module-Pervasives">Pervasives</a>.open_flag</code>
-<code>=</code></dt>
+Stdlib.Pervasives.open_flag</code> <code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-open_flag.Open_rdonly" class="anchored">
@@ -918,57 +911,35 @@ unit</code></dt>
 </dl>
 <div class="spec module" id="module-LargeFile"><a href=
 "#module-LargeFile" class="anchor"></a><code><span class=
-"keyword">module</span> LargeFile = <a href=
-"index.html#module-Pervasives">Pervasives</a>.LargeFile</code></div>
-<dl>
-<dt class="spec type" id="type-ref"><a href="#type-ref" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> 'a ref</code> <code>= <span class=
-"type-var">'a</span> <a href=
-"index.html#module-Pervasives">Pervasives</a>.ref</code>
-<code>=</code> <code>{</code></dt>
-<dd>
-<table class="record">
-<tr id="type-ref.contents" class="anchored">
-<td class="def field"><a href="#type-ref.contents" class=
-"anchor"></a><code><span class="keyword">mutable</span> contents :
-<span class="type-var">'a</span>;</code></td>
-</tr>
-</table>
-<code>}</code></dd>
-</dl>
+"keyword">module</span> LargeFile =
+Stdlib.Pervasives.LargeFile</code></div>
 <dl>
 <dt class="spec external" id="val-ref"><a href="#val-ref" class=
 "anchor"></a><code><span class="keyword">val</span> ref :
 <span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"index.html#type-ref">ref</a></code></dt>
+"type-var">'a</span> Stdlib.ref</code></dt>
 <dt class="spec external" id="val-(!)"><a href="#val-(!)" class=
 "anchor"></a><code><span class="keyword">val</span> (!) :
-<span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+<span class="type-var">'a</span> Stdlib.ref <span>-&gt;</span>
+<span class="type-var">'a</span></code></dt>
 <dt class="spec external" id="val-(:=)"><a href="#val-(:=)" class=
 "anchor"></a><code><span class="keyword">val</span> (:=) :
-<span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> unit</code></dt>
+<span class="type-var">'a</span> Stdlib.ref <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec external" id="val-incr"><a href="#val-incr" class=
 "anchor"></a><code><span class="keyword">val</span> incr : int
-<a href="index.html#type-ref">ref</a> <span>-&gt;</span>
-unit</code></dt>
+Stdlib.ref <span>-&gt;</span> unit</code></dt>
 <dt class="spec external" id="val-decr"><a href="#val-decr" class=
 "anchor"></a><code><span class="keyword">val</span> decr : int
-<a href="index.html#type-ref">ref</a> <span>-&gt;</span>
-unit</code></dt>
+Stdlib.ref <span>-&gt;</span> unit</code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-result"><a href="#type-result"
 class="anchor"></a><code><span class="keyword">type</span>
 <span class="keyword">nonrec</span> ('a, 'b) result</code> <code>=
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href=
-"index.html#module-Pervasives">Pervasives</a>.result</code>
+"type-var">'b</span>) Stdlib.Pervasives.result</code>
 <code>=</code></dt>
 <dd>
 <table class="variant">
@@ -986,32 +957,6 @@ class="anchor"></a><code><span class="keyword">type</span>
 </tr>
 </table>
 </dd>
-<dt class="spec type" id="type-format6"><a href="#type-format6"
-class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> ('a, 'b, 'c, 'd, 'e, 'f)
-format6</code> <code>= (<span class=
-"type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-CamlinternalFormatBasics.format6</code></dt>
-<dt class="spec type" id="type-format4"><a href="#type-format4"
-class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> ('a, 'b, 'c, 'd) format4</code>
-<code>= (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)
-<a href="index.html#type-format6">format6</a></code></dt>
-<dt class="spec type" id="type-format"><a href="#type-format"
-class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> ('a, 'b, 'c) format</code>
-<code>= (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-format4">format4</a></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-string_of_format"><a href=
@@ -1022,8 +967,7 @@ class="anchor"></a><code><span class="keyword">type</span>
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
 "type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-string</code></dt>
+Stdlib.format6 <span>-&gt;</span> string</code></dt>
 </dl>
 <dl>
 <dt class="spec external" id="val-format_of_string"><a href=
@@ -1034,13 +978,13 @@ string</code></dt>
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
 "type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+Stdlib.format6 <span>-&gt;</span> (<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
 "type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a></code></dt>
+Stdlib.format6</code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-(^^)"><a href="#val-(^^)" class=
@@ -1050,19 +994,19 @@ string</code></dt>
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
 "type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-(<span class="type-var">'f</span>,&nbsp;<span class=
+Stdlib.format6 <span>-&gt;</span> (<span class=
+"type-var">'f</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'e</span>,&nbsp;<span class=
 "type-var">'g</span>,&nbsp;<span class="type-var">'h</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+Stdlib.format6 <span>-&gt;</span> (<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
 "type-var">'g</span>,&nbsp;<span class="type-var">'h</span>)
-<a href="index.html#type-format6">format6</a></code></dt>
+Stdlib.format6</code></dt>
 <dt class="spec value" id="val-exit"><a href="#val-exit" class=
 "anchor"></a><code><span class="keyword">val</span> exit : int
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
@@ -1087,19 +1031,10 @@ unit</code></dt>
 <div class="spec module" id="module-Arg"><a href="#module-Arg"
 class="anchor"></a><code><span class="keyword">module</span> Arg =
 Stdlib.Arg</code></div>
-<div class="spec module" id="module-Array"><a href="#module-Array"
-class="anchor"></a><code><span class="keyword">module</span> Array
-= Stdlib.Array</code></div>
 <div class="spec module" id="module-ArrayLabels"><a href=
 "#module-ArrayLabels" class="anchor"></a><code><span class=
 "keyword">module</span> ArrayLabels =
 Stdlib.ArrayLabels</code></div>
-<div class="spec module" id="module-Buffer"><a href=
-"#module-Buffer" class="anchor"></a><code><span class=
-"keyword">module</span> Buffer = Stdlib.Buffer</code></div>
-<div class="spec module" id="module-Bytes"><a href="#module-Bytes"
-class="anchor"></a><code><span class="keyword">module</span> Bytes
-= Stdlib.Bytes</code></div>
 <div class="spec module" id="module-BytesLabels"><a href=
 "#module-BytesLabels" class="anchor"></a><code><span class=
 "keyword">module</span> BytesLabels =
@@ -1107,9 +1042,6 @@ Stdlib.BytesLabels</code></div>
 <div class="spec module" id="module-Callback"><a href=
 "#module-Callback" class="anchor"></a><code><span class=
 "keyword">module</span> Callback = Stdlib.Callback</code></div>
-<div class="spec module" id="module-Char"><a href="#module-Char"
-class="anchor"></a><code><span class="keyword">module</span> Char =
-Stdlib.Char</code></div>
 <div class="spec module" id="module-Complex"><a href=
 "#module-Complex" class="anchor"></a><code><span class=
 "keyword">module</span> Complex = Stdlib.Complex</code></div>
@@ -1122,9 +1054,6 @@ Stdlib.Char</code></div>
 <div class="spec module" id="module-Filename"><a href=
 "#module-Filename" class="anchor"></a><code><span class=
 "keyword">module</span> Filename = Stdlib.Filename</code></div>
-<div class="spec module" id="module-Float"><a href="#module-Float"
-class="anchor"></a><code><span class="keyword">module</span> Float
-= Stdlib.Float</code></div>
 <div class="spec module" id="module-Format"><a href=
 "#module-Format" class="anchor"></a><code><span class=
 "keyword">module</span> Format = Stdlib.Format</code></div>
@@ -1134,39 +1063,18 @@ Stdlib.Gc</code></div>
 <div class="spec module" id="module-Genlex"><a href=
 "#module-Genlex" class="anchor"></a><code><span class=
 "keyword">module</span> Genlex = Stdlib.Genlex</code></div>
-<div class="spec module" id="module-Hashtbl"><a href=
-"#module-Hashtbl" class="anchor"></a><code><span class=
-"keyword">module</span> Hashtbl = Stdlib.Hashtbl</code></div>
-<div class="spec module" id="module-Int32"><a href="#module-Int32"
-class="anchor"></a><code><span class="keyword">module</span> Int32
-= Stdlib.Int32</code></div>
-<div class="spec module" id="module-Int64"><a href="#module-Int64"
-class="anchor"></a><code><span class="keyword">module</span> Int64
-= Stdlib.Int64</code></div>
-<div class="spec module" id="module-Lazy"><a href="#module-Lazy"
-class="anchor"></a><code><span class="keyword">module</span> Lazy =
-Stdlib.Lazy</code></div>
 <div class="spec module" id="module-Lexing"><a href=
 "#module-Lexing" class="anchor"></a><code><span class=
 "keyword">module</span> Lexing = Stdlib.Lexing</code></div>
-<div class="spec module" id="module-List"><a href="#module-List"
-class="anchor"></a><code><span class="keyword">module</span> List =
-Stdlib.List</code></div>
 <div class="spec module" id="module-ListLabels"><a href=
 "#module-ListLabels" class="anchor"></a><code><span class=
 "keyword">module</span> ListLabels = Stdlib.ListLabels</code></div>
-<div class="spec module" id="module-Map"><a href="#module-Map"
-class="anchor"></a><code><span class="keyword">module</span> Map =
-Stdlib.Map</code></div>
 <div class="spec module" id="module-Marshal"><a href=
 "#module-Marshal" class="anchor"></a><code><span class=
 "keyword">module</span> Marshal = Stdlib.Marshal</code></div>
 <div class="spec module" id="module-MoreLabels"><a href=
 "#module-MoreLabels" class="anchor"></a><code><span class=
 "keyword">module</span> MoreLabels = Stdlib.MoreLabels</code></div>
-<div class="spec module" id="module-Nativeint"><a href=
-"#module-Nativeint" class="anchor"></a><code><span class=
-"keyword">module</span> Nativeint = Stdlib.Nativeint</code></div>
 <div class="spec module" id="module-Obj"><a href="#module-Obj"
 class="anchor"></a><code><span class="keyword">module</span> Obj =
 Stdlib.Obj</code></div>
@@ -1179,52 +1087,28 @@ Stdlib.Oo</code></div>
 <div class="spec module" id="module-Printexc"><a href=
 "#module-Printexc" class="anchor"></a><code><span class=
 "keyword">module</span> Printexc = Stdlib.Printexc</code></div>
-<div class="spec module" id="module-Printf"><a href=
-"#module-Printf" class="anchor"></a><code><span class=
-"keyword">module</span> Printf = Stdlib.Printf</code></div>
-<div class="spec module" id="module-Queue"><a href="#module-Queue"
-class="anchor"></a><code><span class="keyword">module</span> Queue
-= Stdlib.Queue</code></div>
-<div class="spec module" id="module-Random"><a href=
-"#module-Random" class="anchor"></a><code><span class=
-"keyword">module</span> Random = Stdlib.Random</code></div>
 <div class="spec module" id="module-Scanf"><a href="#module-Scanf"
 class="anchor"></a><code><span class="keyword">module</span> Scanf
 = Stdlib.Scanf</code></div>
 <div class="spec module" id="module-Seq"><a href="#module-Seq"
 class="anchor"></a><code><span class="keyword">module</span> Seq =
 Stdlib.Seq</code></div>
-<div class="spec module" id="module-Set"><a href="#module-Set"
-class="anchor"></a><code><span class="keyword">module</span> Set =
-Stdlib.Set</code></div>
 <div class="spec module" id="module-Sort"><a href="#module-Sort"
 class="anchor"></a><code><span class="keyword">module</span> Sort =
 Stdlib.Sort</code></div>
 <div class="spec module" id="module-Spacetime"><a href=
 "#module-Spacetime" class="anchor"></a><code><span class=
 "keyword">module</span> Spacetime = Stdlib.Spacetime</code></div>
-<div class="spec module" id="module-Stack"><a href="#module-Stack"
-class="anchor"></a><code><span class="keyword">module</span> Stack
-= Stdlib.Stack</code></div>
 <div class="spec module" id="module-StdLabels"><a href=
 "#module-StdLabels" class="anchor"></a><code><span class=
 "keyword">module</span> StdLabels = Stdlib.StdLabels</code></div>
 <div class="spec module" id="module-Stream"><a href=
 "#module-Stream" class="anchor"></a><code><span class=
 "keyword">module</span> Stream = Stdlib.Stream</code></div>
-<div class="spec module" id="module-String"><a href=
-"#module-String" class="anchor"></a><code><span class=
-"keyword">module</span> String = Stdlib.String</code></div>
 <div class="spec module" id="module-StringLabels"><a href=
 "#module-StringLabels" class="anchor"></a><code><span class=
 "keyword">module</span> StringLabels =
 Stdlib.StringLabels</code></div>
-<div class="spec module" id="module-Sys"><a href="#module-Sys"
-class="anchor"></a><code><span class="keyword">module</span> Sys =
-Stdlib.Sys</code></div>
-<div class="spec module" id="module-Uchar"><a href="#module-Uchar"
-class="anchor"></a><code><span class="keyword">module</span> Uchar
-= Stdlib.Uchar</code></div>
 <div class="spec module" id="module-Weak"><a href="#module-Weak"
 class="anchor"></a><code><span class="keyword">module</span> Weak =
 Stdlib.Weak</code></div>

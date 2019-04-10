@@ -52,10 +52,6 @@ that could be used in both cases.</p>
 "../index.html#module-type-Hashable_sexpable">Hashable_sexpable</a></code></li>
 </ul>
 <h3 class="heading">Signature</h3>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -68,10 +64,12 @@ that could be used in both cases.</p>
 class="anchor"></a><code><span class="keyword">val</span> t_of_sexp
 : <a href=
 "../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <a href=
+"../Make/index.html#type-t">Make(S1)(S2).t</a></code></dt>
 <dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
 class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+: <a href="../Make/index.html#type-t">Make(S1)(S2).t</a>
+<span>-&gt;</span> <a href=
 "../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
 </details>
@@ -87,7 +85,8 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 "../../Hashable/index.html#module-type-S">Hashable.S</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
 <a href="../../Hashable/module-type-S/index.html#type-t">t</a> :=
-<a href="index.html#type-t">t</a></code></span></summary>
+<a href=
+"../Make/index.html#type-t">Make(S1)(S2).t</a></code></span></summary>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -95,10 +94,6 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 <summary><span class="def"><code><span class=
 "keyword">include</span> <a href=
 "../../Hashable/index.html#module-type-Common">Hashable.Common</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -109,19 +104,23 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 <dl>
 <dt class="spec value" id="val-compare"><a href="#val-compare"
 class="anchor"></a><code><span class="keyword">val</span> compare :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+<a href="../Make/index.html#type-t">Make(S1)(S2).t</a>
+<span>-&gt;</span> <a href=
+"../Make/index.html#type-t">Make(S1)(S2).t</a> <span>-&gt;</span>
+<a href=
 "../../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-hash_fold_t"><a href=
 "#val-hash_fold_t" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_t : <a href=
 "../../../../base/Base/Hash/index.html#type-state">Base.Hash.state</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <a href=
+"../Make/index.html#type-t">Make(S1)(S2).t</a> <span>-&gt;</span>
+<a href=
 "../../../../base/Base/Hash/index.html#type-state">Base.Hash.state</a></code></dt>
 <dt class="spec value" id="val-hash"><a href="#val-hash" class=
 "anchor"></a><code><span class="keyword">val</span> hash : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"../Make/index.html#type-t">Make(S1)(S2).t</a> <span>-&gt;</span>
+<a href=
 "../../../../base/Base/Hash/index.html#type-hash_value">Base.Hash.hash_value</a></code></dt>
 </dl>
 </details>
@@ -131,7 +130,7 @@ class="anchor"></a><code><span class="keyword">val</span> compare :
 <dl>
 <dt class="spec value" id="val-hashable"><a href="#val-hashable"
 class="anchor"></a><code><span class="keyword">val</span> hashable
-: <a href="index.html#type-t">t</a> <a href=
+: <a href="../Make/index.html#type-t">Make(S1)(S2).t</a> <a href=
 "../../../../base/Base/Hashable/index.html#type-t">Hashtbl.Hashable.t</a></code></dt>
 </dl>
 </details>
@@ -144,14 +143,15 @@ class="anchor"></a><code><span class="keyword">module</span>
 "../../Hashtbl/index.html#module-type-S">Hashtbl.S</a> <span class=
 "keyword">with</span> <span class="keyword">type</span> <a href=
 "../../Hashtbl/module-type-S/index.html#type-key">key</a> =
-<a href="index.html#type-t">t</a></code></div>
+<a href="../Make/index.html#type-t">Make(S1)(S2).t</a></code></div>
 <div class="spec module" id="module-Hash_set"><a href=
 "#module-Hash_set" class="anchor"></a><code><span class=
 "keyword">module</span> <a href="Hash_set/index.html">Hash_set</a>
 : <a href="../../Hash_set/index.html#module-type-S">Hash_set.S</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
 <a href="../../Hash_set/module-type-S/index.html#type-elt">elt</a>
-= <a href="index.html#type-t">t</a></code></div>
+= <a href=
+"../Make/index.html#type-t">Make(S1)(S2).t</a></code></div>
 <div class="spec module" id="module-Hash_queue"><a href=
 "#module-Hash_queue" class="anchor"></a><code><span class=
 "keyword">module</span> <a href=
@@ -160,7 +160,7 @@ class="anchor"></a><code><span class="keyword">module</span>
 <span class="keyword">with</span> <span class="keyword">type</span>
 <a href=
 "../../Hash_queue/module-type-S/Key/index.html#type-t">Key.t</a> =
-<a href="index.html#type-t">t</a></code></div>
+<a href="../Make/index.html#type-t">Make(S1)(S2).t</a></code></div>
 </details>
 </div>
 </div>

@@ -56,14 +56,6 @@ tree</a> := (<span class="type-var">'a</span>,&nbsp;<span class=
 "../../../../base/Base/Map/index.html#module-type-Creators3_with_comparator">
 Core_kernel.Map_intf.Map.Creators3_with_comparator</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'b, 'cmp)
-t</code></dt>
-<dt class="spec type" id="type-tree"><a href="#type-tree" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'b, 'cmp)
-tree</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-empty"><a href="#val-empty" class=
 "anchor"></a><code><span class="keyword">val</span> empty :
 comparator:(<span class="type-var">'a</span>,&nbsp;<span class=
@@ -71,8 +63,8 @@ comparator:(<span class="type-var">'a</span>,&nbsp;<span class=
 "../../../../base/Base/Comparator/index.html#type-t">Base.Comparator.t</a>
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"type-var">_</span>,&nbsp;<span class="type-var">'cmp</span>)
+<a href="../index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-singleton"><a href="#val-singleton"
 class="anchor"></a><code><span class="keyword">val</span> singleton
 : comparator:(<span class="type-var">'a</span>,&nbsp;<span class=
@@ -83,18 +75,18 @@ class="anchor"></a><code><span class="keyword">val</span> singleton
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<a href="../index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_alist"><a href="#val-of_alist"
 class="anchor"></a><code><span class="keyword">val</span> of_alist
 : comparator:(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'cmp</span>) <a href=
 "../../../../base/Base/Comparator/index.html#type-t">Base.Comparator.t</a>
 <span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) list <span>-&gt;</span> [ `Duplicate_key of
-<span class="type-var">'a</span> | `Ok of (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>) list <span>-&gt;</span> [ `Ok of
+(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> ]</code></dt>
+<a href="../index.html#type-t">t</a> | `Duplicate_key of
+<span class="type-var">'a</span> ]</code></dt>
 <dt class="spec value" id="val-of_alist_or_error"><a href=
 "#val-of_alist_or_error" class="anchor"></a><code><span class=
 "keyword">val</span> of_alist_or_error : comparator:(<span class=
@@ -105,7 +97,7 @@ class="anchor"></a><code><span class="keyword">val</span> of_alist
 "type-var">'b</span>) list <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> <a href=
+<a href="../index.html#type-t">t</a> <a href=
 "../../../../base/Base/Or_error/index.html#type-t">Base.Or_error.t</a></code></dt>
 <dt class="spec value" id="val-of_alist_exn"><a href=
 "#val-of_alist_exn" class="anchor"></a><code><span class=
@@ -117,7 +109,7 @@ class="anchor"></a><code><span class="keyword">val</span> of_alist
 "type-var">'b</span>) list <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<a href="../index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_alist_multi"><a href=
 "#val-of_alist_multi" class="anchor"></a><code><span class=
 "keyword">val</span> of_alist_multi : comparator:(<span class=
@@ -128,7 +120,7 @@ class="anchor"></a><code><span class="keyword">val</span> of_alist
 "type-var">'b</span>) list <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">'b</span>
 list,&nbsp;<span class="type-var">'cmp</span>) <a href=
-"index.html#type-t">t</a></code></dt>
+"../index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_alist_fold"><a href=
 "#val-of_alist_fold" class="anchor"></a><code><span class=
 "keyword">val</span> of_alist_fold : comparator:(<span class=
@@ -143,7 +135,7 @@ list,&nbsp;<span class="type-var">'cmp</span>) <a href=
 "type-var">'c</span>) <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<a href="../index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_alist_reduce"><a href=
 "#val-of_alist_reduce" class="anchor"></a><code><span class=
 "keyword">val</span> of_alist_reduce : comparator:(<span class=
@@ -157,7 +149,7 @@ list,&nbsp;<span class="type-var">'cmp</span>) <a href=
 "type-var">'b</span>) <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<a href="../index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_sorted_array"><a href=
 "#val-of_sorted_array" class="anchor"></a><code><span class=
 "keyword">val</span> of_sorted_array : comparator:(<span class=
@@ -168,7 +160,7 @@ list,&nbsp;<span class="type-var">'cmp</span>) <a href=
 "type-var">'b</span>) array <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> <a href=
+<a href="../index.html#type-t">t</a> <a href=
 "../../../../base/Base/Or_error/index.html#type-t">Base.Or_error.t</a></code></dt>
 <dt class="spec value" id="val-of_sorted_array_unchecked"><a href=
 "#val-of_sorted_array_unchecked" class=
@@ -181,7 +173,7 @@ of_sorted_array_unchecked : comparator:(<span class=
 "type-var">'b</span>) array <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<a href="../index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_increasing_iterator_unchecked">
 <a href="#val-of_increasing_iterator_unchecked" class=
 "anchor"></a><code><span class="keyword">val</span>
@@ -194,7 +186,7 @@ of_increasing_iterator_unchecked : comparator:(<span class=
 "type-var">'b</span>) <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<a href="../index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_increasing_sequence"><a href=
 "#val-of_increasing_sequence" class="anchor"></a><code><span class=
 "keyword">val</span> of_increasing_sequence :
@@ -207,7 +199,7 @@ comparator:(<span class="type-var">'a</span>,&nbsp;<span class=
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> <a href=
+<a href="../index.html#type-t">t</a> <a href=
 "../../../../base/Base/Or_error/index.html#type-t">Base.Or_error.t</a></code></dt>
 <dt class="spec value" id="val-of_iteri"><a href="#val-of_iteri"
 class="anchor"></a><code><span class="keyword">val</span> of_iteri
@@ -217,11 +209,11 @@ class="anchor"></a><code><span class="keyword">val</span> of_iteri
 <span>-&gt;</span> iteri:(f:(key:<span class="type-var">'a</span>
 <span>-&gt;</span> data:<span class="type-var">'b</span>
 <span>-&gt;</span> unit) <span>-&gt;</span> unit)
-<span>-&gt;</span> [ `Duplicate_key of <span class=
-"type-var">'a</span> | `Ok of (<span class=
+<span>-&gt;</span> [ `Ok of (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> ]</code></dt>
+<a href="../index.html#type-t">t</a> | `Duplicate_key of
+<span class="type-var">'a</span> ]</code></dt>
 <dt class="spec value" id="val-of_tree"><a href="#val-of_tree"
 class="anchor"></a><code><span class="keyword">val</span> of_tree :
 comparator:(<span class="type-var">'a</span>,&nbsp;<span class=
@@ -230,10 +222,10 @@ comparator:(<span class="type-var">'a</span>,&nbsp;<span class=
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-tree">tree</a> <span>-&gt;</span>
+<a href="../Tree/index.html#type-t">Tree.t</a> <span>-&gt;</span>
 (<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<a href="../index.html#type-t">t</a></code></dt>
 </dl>
 </details>
 </div>
@@ -253,7 +245,7 @@ comparator:(<span class="type-var">'a</span>,&nbsp;<span class=
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<a href="../index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-quickcheck_generator"><a href=
 "#val-quickcheck_generator" class="anchor"></a><code><span class=
 "keyword">val</span> quickcheck_generator :
@@ -267,7 +259,7 @@ comparator:(<span class="type-var">'a</span>,&nbsp;<span class=
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> <a href=
+<a href="../index.html#type-t">t</a> <a href=
 "../../../Core_kernel/Quickcheck/Generator/index.html#type-t">Core_kernel.Quickcheck.Generator.t</a></code></dt>
 </dl>
 </details>

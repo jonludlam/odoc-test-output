@@ -25,9 +25,6 @@ hljs.initHighlightingOnLoad();
 <h1>Module <code>Core.View</code></h1>
 </header>
 <dl>
-<dt class="spec type" id="type-outer"><a href="#type-outer" class=
-"anchor"></a><code><span class="keyword">type</span>
-outer</code></dt>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> t</code>
 <code>=</code></dt>
@@ -43,20 +40,19 @@ outer</code></dt>
 <td class="def constructor"><a href="#type-t.Sequence" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Sequence</span> <span class="keyword">of</span>
-<a href="index.html#type-outer">outer</a> list</code></td>
+<a href="../index.html#type-t">t</a> list</code></td>
 </tr>
 <tr id="type-t.Alternative" class="anchored">
 <td class="def constructor"><a href="#type-t.Alternative" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Alternative</span> <span class="keyword">of</span>
-<a href="index.html#type-outer">outer</a> list</code></td>
+<a href="../index.html#type-t">t</a> list</code></td>
 </tr>
 <tr id="type-t.Repeat" class="anchored">
 <td class="def constructor"><a href="#type-t.Repeat" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Repeat</span> <span class="keyword">of</span>
-<a href="index.html#type-outer">outer</a> * int * int
-option</code></td>
+<a href="../index.html#type-t">t</a> * int * int option</code></td>
 </tr>
 <tr id="type-t.Beg_of_line" class="anchored">
 <td class="def constructor"><a href="#type-t.Beg_of_line" class=
@@ -113,7 +109,7 @@ class="anchor"></a><code>|</code> <code><span class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Sem</span> <span class="keyword">of</span> <a href=
 "../../Automata/index.html#type-sem">Re__.Automata.sem</a> *
-<a href="index.html#type-outer">outer</a></code></td>
+<a href="../index.html#type-t">t</a></code></td>
 </tr>
 <tr id="type-t.Sem_greedy" class="anchored">
 <td class="def constructor"><a href="#type-t.Sem_greedy" class=
@@ -121,63 +117,63 @@ class="anchor"></a><code>|</code> <code><span class=
 "constructor">Sem_greedy</span> <span class="keyword">of</span>
 <a href=
 "../../Automata/index.html#type-rep_kind">Re__.Automata.rep_kind</a>
-* <a href="index.html#type-outer">outer</a></code></td>
+* <a href="../index.html#type-t">t</a></code></td>
 </tr>
 <tr id="type-t.Group" class="anchored">
 <td class="def constructor"><a href="#type-t.Group" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Group</span> <span class="keyword">of</span> <a href=
-"index.html#type-outer">outer</a></code></td>
+"../index.html#type-t">t</a></code></td>
 </tr>
 <tr id="type-t.No_group" class="anchored">
 <td class="def constructor"><a href="#type-t.No_group" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">No_group</span> <span class="keyword">of</span>
-<a href="index.html#type-outer">outer</a></code></td>
+<a href="../index.html#type-t">t</a></code></td>
 </tr>
 <tr id="type-t.Nest" class="anchored">
 <td class="def constructor"><a href="#type-t.Nest" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Nest</span> <span class="keyword">of</span> <a href=
-"index.html#type-outer">outer</a></code></td>
+"../index.html#type-t">t</a></code></td>
 </tr>
 <tr id="type-t.Case" class="anchored">
 <td class="def constructor"><a href="#type-t.Case" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Case</span> <span class="keyword">of</span> <a href=
-"index.html#type-outer">outer</a></code></td>
+"../index.html#type-t">t</a></code></td>
 </tr>
 <tr id="type-t.No_case" class="anchored">
 <td class="def constructor"><a href="#type-t.No_case" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">No_case</span> <span class="keyword">of</span>
-<a href="index.html#type-outer">outer</a></code></td>
+<a href="../index.html#type-t">t</a></code></td>
 </tr>
 <tr id="type-t.Intersection" class="anchored">
 <td class="def constructor"><a href="#type-t.Intersection" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Intersection</span> <span class="keyword">of</span>
-<a href="index.html#type-outer">outer</a> list</code></td>
+<a href="../index.html#type-t">t</a> list</code></td>
 </tr>
 <tr id="type-t.Complement" class="anchored">
 <td class="def constructor"><a href="#type-t.Complement" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Complement</span> <span class="keyword">of</span>
-<a href="index.html#type-outer">outer</a> list</code></td>
+<a href="../index.html#type-t">t</a> list</code></td>
 </tr>
 <tr id="type-t.Difference" class="anchored">
 <td class="def constructor"><a href="#type-t.Difference" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Difference</span> <span class="keyword">of</span>
-<a href="index.html#type-outer">outer</a> * <a href=
-"index.html#type-outer">outer</a></code></td>
+<a href="../index.html#type-t">t</a> * <a href=
+"../index.html#type-t">t</a></code></td>
 </tr>
 <tr id="type-t.Pmark" class="anchored">
 <td class="def constructor"><a href="#type-t.Pmark" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pmark</span> <span class="keyword">of</span> <a href=
 "../../Pmark/index.html#type-t">Re__.Pmark.t</a> * <a href=
-"index.html#type-outer">outer</a></code></td>
+"../index.html#type-t">t</a></code></td>
 </tr>
 </table>
 </dd>
@@ -189,7 +185,7 @@ may change</p>
 <dl>
 <dt class="spec value" id="val-view"><a href="#val-view" class=
 "anchor"></a><code><span class="keyword">val</span> view : <a href=
-"index.html#type-outer">outer</a> <span>-&gt;</span> <a href=
+"../index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 </dl>
 </div>

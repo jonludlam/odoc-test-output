@@ -27,62 +27,50 @@ hljs.initHighlightingOnLoad();
 <h1>Parameter <code>Check_creators.5-M</code></h1>
 </header>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> ('k, 'v, 'cmp)
-t</code></dt>
-<dt class="spec type" id="type-tree"><a href="#type-tree" class=
-"anchor"></a><code><span class="keyword">type</span> ('k, 'v, 'cmp)
-tree</code></dt>
-<dt class="spec type" id="type-key"><a href="#type-key" class=
-"anchor"></a><code><span class="keyword">type</span> 'k
-key</code></dt>
-<dt class="spec type" id="type-options"><a href="#type-options"
-class="anchor"></a><code><span class="keyword">type</span> ('a,
-'cmp, 'z) options</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-empty"><a href="#val-empty" class=
 "anchor"></a><code><span class="keyword">val</span> empty :
 (<span class="type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">_</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a>) <a href=
-"index.html#type-options">options</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a>) <a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-singleton"><a href="#val-singleton"
 class="anchor"></a><code><span class="keyword">val</span> singleton
 : (<span class="type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;<span class="type-var">'k</span>
-<a href="index.html#type-key">key</a> <span>-&gt;</span>
-<span class="type-var">'v</span> <span>-&gt;</span> (<span class=
+<a href="../argument-3-Key/index.html#type-t">Key.t</a>
+<span>-&gt;</span> <span class="type-var">'v</span>
+<span>-&gt;</span> (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'v</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a>) <a href=
-"index.html#type-options">options</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a>) <a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_sorted_array"><a href=
 "#val-of_sorted_array" class="anchor"></a><code><span class=
 "keyword">val</span> of_sorted_array : (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class="type-var">'k</span>
-<a href="index.html#type-key">key</a> * <span class=
-"type-var">'v</span>) array <span>-&gt;</span> (<span class=
-"type-var">'k</span>,&nbsp;<span class=
+<a href="../argument-3-Key/index.html#type-t">Key.t</a> *
+<span class="type-var">'v</span>) array <span>-&gt;</span>
+(<span class="type-var">'k</span>,&nbsp;<span class=
 "type-var">'v</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> <a href=
+<a href="../argument-1-T/index.html#type-t">T.t</a> <a href=
 "../../../../Base/Or_error/index.html#type-t">Base.Or_error.t</a>)
-<a href="index.html#type-options">options</a></code></dt>
+<a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_sorted_array_unchecked"><a href=
 "#val-of_sorted_array_unchecked" class=
 "anchor"></a><code><span class="keyword">val</span>
 of_sorted_array_unchecked : (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class="type-var">'k</span>
-<a href="index.html#type-key">key</a> * <span class=
-"type-var">'v</span>) array <span>-&gt;</span> (<span class=
-"type-var">'k</span>,&nbsp;<span class=
+<a href="../argument-3-Key/index.html#type-t">Key.t</a> *
+<span class="type-var">'v</span>) array <span>-&gt;</span>
+(<span class="type-var">'k</span>,&nbsp;<span class=
 "type-var">'v</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a>) <a href=
-"index.html#type-options">options</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a>) <a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_increasing_iterator_unchecked">
 <a href="#val-of_increasing_iterator_unchecked" class=
 "anchor"></a><code><span class="keyword">val</span>
@@ -90,124 +78,130 @@ of_increasing_iterator_unchecked : (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;len:int <span>-&gt;</span> f:(int
 <span>-&gt;</span> <span class="type-var">'k</span> <a href=
-"index.html#type-key">key</a> * <span class="type-var">'v</span>)
-<span>-&gt;</span> (<span class=
+"../argument-3-Key/index.html#type-t">Key.t</a> * <span class=
+"type-var">'v</span>) <span>-&gt;</span> (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'v</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a>) <a href=
-"index.html#type-options">options</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a>) <a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_increasing_sequence"><a href=
 "#val-of_increasing_sequence" class="anchor"></a><code><span class=
 "keyword">val</span> of_increasing_sequence : (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class="type-var">'k</span>
-<a href="index.html#type-key">key</a> * <span class=
-"type-var">'v</span>) <a href=
+<a href="../argument-3-Key/index.html#type-t">Key.t</a> *
+<span class="type-var">'v</span>) <a href=
 "../../../../Base/Sequence/index.html#type-t">Base.Sequence.t</a>
 <span>-&gt;</span> (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'v</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> <a href=
+<a href="../argument-1-T/index.html#type-t">T.t</a> <a href=
 "../../../../Base/Or_error/index.html#type-t">Base.Or_error.t</a>)
-<a href="index.html#type-options">options</a></code></dt>
+<a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_alist"><a href="#val-of_alist"
 class="anchor"></a><code><span class="keyword">val</span> of_alist
 : (<span class="type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class="type-var">'k</span>
-<a href="index.html#type-key">key</a> * <span class=
-"type-var">'v</span>) list <span>-&gt;</span> [ `Ok of
+<a href="../argument-3-Key/index.html#type-t">Key.t</a> *
+<span class="type-var">'v</span>) list <span>-&gt;</span> [ `Ok of
 (<span class="type-var">'k</span>,&nbsp;<span class=
 "type-var">'v</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> | `Duplicate_key of <span class=
-"type-var">'k</span> <a href="index.html#type-key">key</a> ])
-<a href="index.html#type-options">options</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a> |
+`Duplicate_key of <span class="type-var">'k</span> <a href=
+"../argument-3-Key/index.html#type-t">Key.t</a> ]) <a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_alist_or_error"><a href=
 "#val-of_alist_or_error" class="anchor"></a><code><span class=
 "keyword">val</span> of_alist_or_error : (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class="type-var">'k</span>
-<a href="index.html#type-key">key</a> * <span class=
-"type-var">'v</span>) list <span>-&gt;</span> (<span class=
-"type-var">'k</span>,&nbsp;<span class=
+<a href="../argument-3-Key/index.html#type-t">Key.t</a> *
+<span class="type-var">'v</span>) list <span>-&gt;</span>
+(<span class="type-var">'k</span>,&nbsp;<span class=
 "type-var">'v</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> <a href=
+<a href="../argument-1-T/index.html#type-t">T.t</a> <a href=
 "../../../../Base/Or_error/index.html#type-t">Base.Or_error.t</a>)
-<a href="index.html#type-options">options</a></code></dt>
+<a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_alist_exn"><a href=
 "#val-of_alist_exn" class="anchor"></a><code><span class=
 "keyword">val</span> of_alist_exn : (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class="type-var">'k</span>
-<a href="index.html#type-key">key</a> * <span class=
-"type-var">'v</span>) list <span>-&gt;</span> (<span class=
-"type-var">'k</span>,&nbsp;<span class=
+<a href="../argument-3-Key/index.html#type-t">Key.t</a> *
+<span class="type-var">'v</span>) list <span>-&gt;</span>
+(<span class="type-var">'k</span>,&nbsp;<span class=
 "type-var">'v</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a>) <a href=
-"index.html#type-options">options</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a>) <a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_alist_multi"><a href=
 "#val-of_alist_multi" class="anchor"></a><code><span class=
 "keyword">val</span> of_alist_multi : (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class="type-var">'k</span>
-<a href="index.html#type-key">key</a> * <span class=
-"type-var">'v</span>) list <span>-&gt;</span> (<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'v</span>
-list,&nbsp;<span class="type-var">'cmp</span>) <a href=
-"index.html#type-t">t</a>) <a href=
-"index.html#type-options">options</a></code></dt>
+<a href="../argument-3-Key/index.html#type-t">Key.t</a> *
+<span class="type-var">'v</span>) list <span>-&gt;</span>
+(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span> list,&nbsp;<span class="type-var">'cmp</span>)
+<a href="../argument-1-T/index.html#type-t">T.t</a>) <a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_alist_fold"><a href=
 "#val-of_alist_fold" class="anchor"></a><code><span class=
 "keyword">val</span> of_alist_fold : (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class="type-var">'k</span>
-<a href="index.html#type-key">key</a> * <span class=
-"type-var">'v1</span>) list <span>-&gt;</span> init:<span class=
-"type-var">'v2</span> <span>-&gt;</span> f:(<span class=
-"type-var">'v2</span> <span>-&gt;</span> <span class=
-"type-var">'v1</span> <span>-&gt;</span> <span class=
+<a href="../argument-3-Key/index.html#type-t">Key.t</a> *
+<span class="type-var">'v1</span>) list <span>-&gt;</span>
+init:<span class="type-var">'v2</span> <span>-&gt;</span>
+f:(<span class="type-var">'v2</span> <span>-&gt;</span>
+<span class="type-var">'v1</span> <span>-&gt;</span> <span class=
 "type-var">'v2</span>) <span>-&gt;</span> (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'v2</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a>) <a href=
-"index.html#type-options">options</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a>) <a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_alist_reduce"><a href=
 "#val-of_alist_reduce" class="anchor"></a><code><span class=
 "keyword">val</span> of_alist_reduce : (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class="type-var">'k</span>
-<a href="index.html#type-key">key</a> * <span class=
-"type-var">'v</span>) list <span>-&gt;</span> f:(<span class=
-"type-var">'v</span> <span>-&gt;</span> <span class=
+<a href="../argument-3-Key/index.html#type-t">Key.t</a> *
+<span class="type-var">'v</span>) list <span>-&gt;</span>
+f:(<span class="type-var">'v</span> <span>-&gt;</span> <span class=
 "type-var">'v</span> <span>-&gt;</span> <span class=
 "type-var">'v</span>) <span>-&gt;</span> (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'v</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a>) <a href=
-"index.html#type-options">options</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a>) <a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_iteri"><a href="#val-of_iteri"
 class="anchor"></a><code><span class="keyword">val</span> of_iteri
 : (<span class="type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;iteri:(f:(key:<span class=
-"type-var">'k</span> <a href="index.html#type-key">key</a>
-<span>-&gt;</span> data:<span class="type-var">'v</span>
-<span>-&gt;</span> unit) <span>-&gt;</span> unit)
-<span>-&gt;</span> [ `Ok of (<span class=
+"type-var">'k</span> <a href=
+"../argument-3-Key/index.html#type-t">Key.t</a> <span>-&gt;</span>
+data:<span class="type-var">'v</span> <span>-&gt;</span> unit)
+<span>-&gt;</span> unit) <span>-&gt;</span> [ `Ok of (<span class=
 "type-var">'k</span>,&nbsp;<span class=
 "type-var">'v</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> | `Duplicate_key of <span class=
-"type-var">'k</span> <a href="index.html#type-key">key</a> ])
-<a href="index.html#type-options">options</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a> |
+`Duplicate_key of <span class="type-var">'k</span> <a href=
+"../argument-3-Key/index.html#type-t">Key.t</a> ]) <a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_tree"><a href="#val-of_tree"
 class="anchor"></a><code><span class="keyword">val</span> of_tree :
 (<span class="type-var">'k</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class="type-var">'k</span>
-<a href="index.html#type-key">key</a>,&nbsp;<span class=
+<a href=
+"../argument-3-Key/index.html#type-t">Key.t</a>,&nbsp;<span class=
 "type-var">'v</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-tree">tree</a> <span>-&gt;</span>
-(<span class="type-var">'k</span>,&nbsp;<span class=
+<a href="../argument-2-Tree/index.html#type-t">Tree.t</a>
+<span>-&gt;</span> (<span class=
+"type-var">'k</span>,&nbsp;<span class=
 "type-var">'v</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a>) <a href=
-"index.html#type-options">options</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a>) <a href=
+"../argument-4-Options/index.html#type-t">Options.t</a></code></dt>
 </dl>
 </div>
 </body>

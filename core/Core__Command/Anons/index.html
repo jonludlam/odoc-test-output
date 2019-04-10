@@ -23,40 +23,22 @@ hljs.initHighlightingOnLoad();
 "../../index.html">core</a> » <a href=
 "../index.html">Core__Command</a> » Anons</nav>
 <h1>Module <code>Core__Command.Anons</code></h1>
-<p>Anonymous command-line argument specification.</p>
 </header>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> +'a
-t</code></dt>
-<dd>
-<p>A specification of some number of anonymous arguments.</p>
-</dd>
+"anchor"></a><code><span class="keyword">type</span> 'a t</code>
+<code>= <span class="type-var">'a</span> <a href=
+"../../../core_kernel/Core_kernel__Command/Anons/index.html#type-t">
+Core_kernel__Command.Anons.t</a></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-(%:)"><a href="#val-(%:)" class=
 "anchor"></a><code><span class="keyword">val</span> (%:) : <a href=
 "../../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
-<dd>
-<p><code>(name %: typ)</code> specifies a required anonymous
-argument of type <code>typ</code>.</p>
-<p>The <code>name</code> must not be surrounded by whitespace; if
-it is, an exn will be raised.</p>
-<p>If the <code>name</code> is surrounded by a special character
-pair (&lt;&gt;, {}, [] or (),) <code>name</code> will remain as-is,
-otherwise, <code>name</code> will be uppercased.</p>
-<p>In the situation where <code>name</code> is only prefixed or
-only suffixed by one of the special character pairs, or different
-pairs are used (e.g., "&lt;ARG]"), an exn will be raised.</p>
-<p>The (possibly transformed) <code>name</code> is mentioned in the
-generated help for the command.</p>
-</dd>
-</dl>
-<dl>
+"../../../core_kernel/Core_kernel__Command/Arg_type/index.html#type-t">
+Arg_type.t</a> <span>-&gt;</span> <span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-sequence"><a href="#val-sequence"
 class="anchor"></a><code><span class="keyword">val</span> sequence
 : <span class="type-var">'a</span> <a href=
@@ -64,14 +46,6 @@ class="anchor"></a><code><span class="keyword">val</span> sequence
 "type-var">'a</span> <a href=
 "../../../core_kernel/Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a>
 <a href="index.html#type-t">t</a></code></dt>
-<dd>
-<p><code>sequence anons</code> specifies a sequence of anonymous
-arguments. An exception will be raised if <code>anons</code>
-matches anything other than a fixed number of anonymous
-arguments.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-non_empty_sequence_as_pair"><a href=
 "#val-non_empty_sequence_as_pair" class=
 "anchor"></a><code><span class="keyword">val</span>
@@ -80,14 +54,6 @@ non_empty_sequence_as_pair : <span class="type-var">'a</span>
 "type-var">'a</span> * <span class="type-var">'a</span> <a href=
 "../../../core_kernel/Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a>)
 <a href="index.html#type-t">t</a></code></dt>
-<dd>
-<p><code>non_empty_sequence_as_pair anons</code> and
-<code>non_empty_sequence_as_list anons</code> are like
-<code>sequence anons</code> except that an exception will be raised
-if there is not at least one anonymous argument given.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-non_empty_sequence_as_list"><a href=
 "#val-non_empty_sequence_as_list" class=
 "anchor"></a><code><span class="keyword">val</span>
@@ -102,12 +68,6 @@ non_empty_sequence_as_list : <span class="type-var">'a</span>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "../../../core_kernel/Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a>
 <a href="index.html#type-t">t</a></code></dt>
-<dd>
-<p><code>(maybe anons)</code> indicates that some anonymous
-arguments are optional.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-maybe_with_default"><a href=
 "#val-maybe_with_default" class="anchor"></a><code><span class=
 "keyword">val</span> maybe_with_default : <span class=
@@ -115,26 +75,6 @@ arguments are optional.</p>
 "type-var">'a</span> <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "index.html#type-t">t</a></code></dt>
-<dd>
-<p><code>(maybe_with_default default anons)</code> indicates an
-optional anonymous argument with a default value.</p>
-</dd>
-</dl>
-<aside>
-<p><code>t2</code>, <code>t3</code>, and <code>t4</code> each
-concatenate multiple anonymous argument specs into a single one.
-The purpose of these combinators is to allow for optional sequences
-of anonymous arguments. Consider a command with usage:</p>
-<pre>        main.exe FOO [BAR BAZ]</pre>
-<p>where the second and third anonymous arguments must either both
-be there or both not be there. This can be expressed as:</p>
-<pre><code class=
-"ml">t2 ("FOO" %: foo) (maybe (t2 ("BAR" %: bar) ("BAZ" %: baz)))]</code></pre>
-<p>Sequences of 5 or more anonymous arguments can be built up using
-nested tuples:</p>
-<pre><code class=
-"ml">maybe (t3 a b (t3 c d e))</code></pre></aside>
-<dl>
 <dt class="spec value" id="val-t2"><a href="#val-t2" class=
 "anchor"></a><code><span class="keyword">val</span> t2 :
 <span class="type-var">'a</span> <a href="index.html#type-t">t</a>
@@ -169,10 +109,6 @@ class="anchor"></a><code><span class="keyword">val</span> map_anons
 "type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span>) <span>-&gt;</span> <span class=
 "type-var">'b</span> <a href="index.html#type-t">t</a></code></dt>
-<dd>
-<p><code>map_anons anons ~f</code> transforms the parsed result of
-<code>anons</code> by applying <code>f</code>.</p>
-</dd>
 </dl>
 </div>
 </body>

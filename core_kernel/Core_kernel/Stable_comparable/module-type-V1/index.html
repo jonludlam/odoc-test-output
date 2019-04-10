@@ -127,8 +127,6 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 "../../Comparator/Stable/V1/module-type-S/index.html#type-t">t</a>
 := <a href="index.html#type-t">t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
 <dt class="spec type" id="type-comparator_witness"><a href=
 "#type-comparator_witness" class="anchor"></a><code><span class=
 "keyword">type</span> comparator_witness</code></dt>
@@ -165,14 +163,6 @@ comparable</a> := <a href="index.html#type-t">t</a> <span class=
 "../../Comparable/Stable/V1/module-type-S/index.html#type-comparator_witness">
 comparator_witness</a> := <a href=
 "index.html#type-comparator_witness">comparator_witness</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-comparable"><a href=
-"#type-comparable" class="anchor"></a><code><span class=
-"keyword">type</span> comparable</code></dt>
-<dt class="spec type" id="type-comparator_witness"><a href=
-"#type-comparator_witness" class="anchor"></a><code><span class=
-"keyword">type</span> comparator_witness</code></dt>
-</dl>
 <div class="spec module" id="module-Map"><a href="#module-Map"
 class="anchor"></a><code><span class="keyword">module</span>
 <a href="Map/index.html">Map</a> : <a href=
@@ -180,8 +170,8 @@ class="anchor"></a><code><span class="keyword">module</span>
 <span class="keyword">with</span> <span class="keyword">type</span>
 <a href=
 "../../Map/Stable/V1/module-type-S/index.html#type-key">key</a> :=
-<a href="index.html#type-comparable">comparable</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> <a href=
+<a href="index.html#type-t">t</a> <span class="keyword">with</span>
+<span class="keyword">type</span> <a href=
 "../../Map/Stable/V1/module-type-S/index.html#type-comparator_witness">
 comparator_witness</a> := <a href=
 "index.html#type-comparator_witness">comparator_witness</a></code></div>
@@ -192,8 +182,8 @@ class="anchor"></a><code><span class="keyword">module</span>
 <span class="keyword">with</span> <span class="keyword">type</span>
 <a href=
 "../../Set/Stable/V1/module-type-S/index.html#type-elt">elt</a> :=
-<a href="index.html#type-comparable">comparable</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> <a href=
+<a href="index.html#type-t">t</a> <span class="keyword">with</span>
+<span class="keyword">type</span> <a href=
 "../../Set/Stable/V1/module-type-S/index.html#type-elt_comparator_witness">
 elt_comparator_witness</a> := <a href=
 "index.html#type-comparator_witness">comparator_witness</a></code></div>

@@ -131,16 +131,15 @@ of_increasing_iterator_unchecked : (<span class=
 "#val-stable_dedup_list" class="anchor"></a><code><span class=
 "keyword">val</span> stable_dedup_list : (<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'a</span>
-<a href="index.html#type-elt">elt</a> list <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-elt">elt</a> list) <a href=
-"index.html#type-options">options</a></code></dt>
+"type-var">_</span>,&nbsp;<span class="type-var">'a</span> <a href=
+"index.html#type-elt">elt</a> list <span>-&gt;</span> <span class=
+"type-var">'a</span> <a href="index.html#type-elt">elt</a> list)
+<a href="index.html#type-options">options</a></code></dt>
 <dt class="spec value" id="val-map"><a href="#val-map" class=
 "anchor"></a><code><span class="keyword">val</span> map :
 (<span class="type-var">'b</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-set">set</a> <span>-&gt;</span>
 f:(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span> <a href="index.html#type-elt">elt</a>)
@@ -148,12 +147,30 @@ f:(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'cmp</span>)
 <a href="index.html#type-t">t</a>) <a href=
 "index.html#type-options">options</a></code></dt>
+<dd>
+<p>The types of <code>map</code> and <code>filter_map</code> are
+subtle. The input set, <code>('a, _) set</code>, reflects the fact
+that these functions take a set of *any* type, with any comparator,
+while the output set, <code>('b, 'cmp) t</code>, reflects that the
+output set has the particular <code>'cmp</code> of the creation
+function. The comparator can come in one of three ways, depending
+on which set module is used</p>
+<ul>
+<li><code>Set.map</code> -- comparator comes as an argument</li>
+<li><code>Set.Poly.map</code> -- comparator is polymorphic
+comparison</li>
+<li><code>Foo.Set.map</code> -- comparator is
+<code>Foo.comparator</code></li>
+</ul>
+</dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-filter_map"><a href=
 "#val-filter_map" class="anchor"></a><code><span class=
 "keyword">val</span> filter_map : (<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'c</span>)
+"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-set">set</a> <span>-&gt;</span>
 f:(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span> <a href="index.html#type-elt">elt</a> option)
@@ -182,35 +199,36 @@ class="anchor"></a><code><span class="keyword">val</span> of_tree :
 "keyword">val</span> of_hash_set : (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;<span class="type-var">'a</span>
-<a href="index.html#type-elt">elt</a> <a href=
+<a href="../argument-3-Elt/index.html#type-t">Elt.t</a> <a href=
 "../../../Core_kernel/Hash_set/index.html#type-t">Core_kernel.Hash_set.t</a>
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a>) <a href=
-"index.html#type-options">options</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a>) <a href=
+"../argument-5-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_hashtbl_keys"><a href=
 "#val-of_hashtbl_keys" class="anchor"></a><code><span class=
 "keyword">val</span> of_hashtbl_keys : (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;(<span class="type-var">'a</span>
-<a href="index.html#type-elt">elt</a>,&nbsp;<span class=
+<a href=
+"../argument-3-Elt/index.html#type-t">Elt.t</a>,&nbsp;<span class=
 "type-var">_</span>) <a href=
 "../../../Core_kernel/Hashtbl/index.html#type-t">Core_kernel.Hashtbl.t</a>
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a>) <a href=
-"index.html#type-options">options</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a>) <a href=
+"../argument-5-Options/index.html#type-t">Options.t</a></code></dt>
 <dt class="spec value" id="val-of_map_keys"><a href=
 "#val-of_map_keys" class="anchor"></a><code><span class=
 "keyword">val</span> of_map_keys : (<span class=
 "type-var">'a</span> <a href=
-"index.html#type-elt">elt</a>,&nbsp;<span class=
+"../argument-3-Elt/index.html#type-t">Elt.t</a>,&nbsp;<span class=
 "type-var">_</span>,&nbsp;<span class="type-var">'cmp</span>
-<a href="index.html#type-cmp">cmp</a>) <a href=
+<a href="../argument-4-Cmp/index.html#type-t">Cmp.t</a>) <a href=
 "../../../Core_kernel/Map/index.html#type-t">Core_kernel.Map.t</a>
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<a href="../argument-1-T/index.html#type-t">T.t</a></code></dt>
 <dd>
 <p>Never requires a comparator because it can get one from the
 input <code>Map.t</code>.</p>
@@ -222,13 +240,14 @@ input <code>Map.t</code>.</p>
 "keyword">val</span> quickcheck_generator : (<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'cmp</span>,&nbsp;<span class="type-var">'a</span>
-<a href="index.html#type-elt">elt</a> <a href=
+<a href="../argument-3-Elt/index.html#type-t">Elt.t</a> <a href=
 "../../../Core_kernel/Quickcheck/Generator/index.html#type-t">Core_kernel.Quickcheck.Generator.t</a>
 <span>-&gt;</span> (<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">'cmp</span>)
-<a href="index.html#type-t">t</a> <a href=
+<a href="../argument-1-T/index.html#type-t">T.t</a> <a href=
 "../../../Core_kernel/Quickcheck/Generator/index.html#type-t">Core_kernel.Quickcheck.Generator.t</a>)
-<a href="index.html#type-options">options</a></code></dt>
+<a href=
+"../argument-5-Options/index.html#type-t">Options.t</a></code></dt>
 </dl>
 </div>
 </body>

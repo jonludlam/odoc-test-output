@@ -56,10 +56,6 @@ hljs.initHighlightingOnLoad();
 <summary><span class="def"><code><span class=
 "keyword">include</span> <a href=
 "../Core_kernel__/Time_intf/index.html#module-type-Basic">Core_kernel__.Time_intf.Basic</a></code></span></summary>
-<div class="spec module" id="module-Time"><a href="#module-Time"
-class="anchor"></a><code><span class="keyword">module</span>
-<a href="Time/index.html">Time</a> : <a href=
-"../Core_kernel__/Time0_intf/index.html#module-type-S">Core_kernel__.Time0_intf.S</a></code></div>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -73,10 +69,11 @@ class="anchor"></a><code><span class="keyword">module</span>
 <dt class="spec type" id="type-underlying"><a href=
 "#type-underlying" class="anchor"></a><code><span class=
 "keyword">type</span> underlying</code> <code>= <a href=
-"Time/index.html#type-underlying">Time.underlying</a></code></dt>
+"../Core_kernel__/Time_float0/index.html#type-underlying">Core_kernel__.Time_float0.underlying</a></code></dt>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> t</code>
-<code>= <a href="Time/index.html#type-t">Time.t</a></code></dt>
+<code>= <a href=
+"../Core_kernel__/Time_float0/index.html#type-t">Core_kernel__.Time_float0.t</a></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-bin_t"><a href="#val-bin_t" class=
@@ -291,7 +288,7 @@ class="anchor"></a><code><span class="keyword">val</span> clamp_exn
 <dt class="spec type" id="type-comparator_witness"><a href=
 "#type-comparator_witness" class="anchor"></a><code><span class=
 "keyword">type</span> comparator_witness</code> <code>= <a href=
-"Time/index.html#type-comparator_witness">Time.comparator_witness</a></code></dt>
+"../Core_kernel__/Time_float0/index.html#type-comparator_witness">Core_kernel__.Time_float0.comparator_witness</a></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-comparator"><a href=
@@ -366,7 +363,8 @@ class="anchor"></a><code><span class="keyword">module</span>
 <span class="keyword">with</span> <span class=
 "keyword">module</span> <a href=
 "../Core_kernel__/Time_intf/module-type-Zone/Time/index.html">Time</a>
-:= <a href="index.html#module-Time">Time</a></code></div>
+:= <a href=
+"../Core_kernel__/index.html#module-Time_float0">Core_kernel__.Time_float0</a></code></div>
 <section>
 <header>
 <h6 id="basic-operations-on-times"><a href=
@@ -466,25 +464,6 @@ than:<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "../Core_kernel__/Time_intf/module-type-Shared/Ofday/index.html">Ofday</a>
 := <a href=
 "index.html#module-Ofday">Ofday</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
-<div class="spec module" id="module-Span"><a href="#module-Span"
-class="anchor"></a><code><span class="keyword">module</span>
-<a href="Span/index.html">Span</a> : <span class=
-"keyword">sig</span> ... <span class=
-"keyword">end</span></code></div>
-<div class="spec module" id="module-Ofday"><a href="#module-Ofday"
-class="anchor"></a><code><span class="keyword">module</span>
-<a href="Ofday/index.html">Ofday</a> : <span class=
-"keyword">sig</span> ... <span class=
-"keyword">end</span></code></div>
-<section>
-<header>
-<h6 id="conversions"><a href="#conversions" class=
-"anchor"></a>Conversions</h6>
-</header>
 <dl>
 <dt class="spec value" id="val-of_date_ofday"><a href=
 "#val-of_date_ofday" class="anchor"></a><code><span class=
@@ -629,7 +608,6 @@ correspond to more than one date/ofday pair in the other zone.</p>
 <span>-&gt;</span> <a href=
 "Span/index.html#type-t">Span.t</a></code></dt>
 </dl>
-</section>
 <section>
 <header>
 <h6 id="other-string-conversions"><a href=
@@ -650,10 +628,6 @@ available. They are generous in what they will read in.</p>
 <a href=
 "../Core_kernel__/Std_internal/module-type-Stringable/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <dl>
 <dt class="spec value" id="val-of_string"><a href="#val-of_string"
 class="anchor"></a><code><span class="keyword">val</span> of_string

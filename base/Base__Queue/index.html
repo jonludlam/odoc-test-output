@@ -67,18 +67,6 @@ class="anchor"></a><code><span class="keyword">val</span> compare :
 "type-var">'a</span> <a href=
 "index.html#type-t">t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-t_of_sexp"><a href="#val-t_of_sexp"
 class="anchor"></a><code><span class="keyword">val</span> t_of_sexp
 : (<a href="../Base/Sexp/index.html#type-t">Base.Sexp.t</a>
@@ -94,36 +82,6 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "../Base/Sexp/index.html#type-t">Base.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../Base/Indexed_container/index.html#module-type-S1">Base.Indexed_container.S1</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
-"../Base/Indexed_container/module-type-S1/index.html#type-t">t</a>
-:= <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></span></summary>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../Base/Container/index.html#module-type-S1">Base.Container.S1</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-mem"><a href="#val-mem" class=
 "anchor"></a><code><span class="keyword">val</span> mem :
 <span class="type-var">'a</span> <a href="index.html#type-t">t</a>
@@ -131,12 +89,6 @@ t</code></dt>
 <span>-&gt;</span> equal:(<span class="type-var">'a</span>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> bool) <span>-&gt;</span> bool</code></dt>
-<dd>
-<p>Checks whether the provided element is there, using
-<code>equal</code>.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-length"><a href="#val-length" class=
 "anchor"></a><code><span class="keyword">val</span> length :
 <span class="type-var">'a</span> <a href="index.html#type-t">t</a>
@@ -158,13 +110,6 @@ class="anchor"></a><code><span class="keyword">val</span> is_empty
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <span class="type-var">'accum</span>)
 <span>-&gt;</span> <span class="type-var">'accum</span></code></dt>
-<dd>
-<p><code>fold t ~init ~f</code> returns <code>f (... f (f (f init
-e1) e2) e3 ...) en</code>, where <code>e1..en</code> are the
-elements of <code>t</code></p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-fold_result"><a href=
 "#val-fold_result" class="anchor"></a><code><span class=
 "keyword">val</span> fold_result : <span class="type-var">'a</span>
@@ -178,15 +123,6 @@ f:(<span class="type-var">'accum</span> <span>-&gt;</span>
 "type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)
 <a href=
 "../Base/Result/index.html#type-t">Base.Result.t</a></code></dt>
-<dd>
-<p><code>fold_result t ~init ~f</code> is a short-circuiting
-version of <code>fold</code> that runs in the <code>Result</code>
-monad. If <code>f</code> returns an <code>Error _</code>, that
-value is returned without any additional invocations of
-<code>f</code>.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-fold_until"><a href=
 "#val-fold_until" class="anchor"></a><code><span class=
 "keyword">val</span> fold_until : <span class="type-var">'a</span>
@@ -196,56 +132,26 @@ f:(<span class="type-var">'accum</span> <span>-&gt;</span>
 <span class="type-var">'a</span> <span>-&gt;</span> (<span class=
 "type-var">'accum</span>,&nbsp;<span class=
 "type-var">'final</span>) <a href=
-"../Base__/Container_intf/Export/Continue_or_stop/index.html#type-t">
+"../Base__Container_intf/Export/Continue_or_stop/index.html#type-t">
 Base__.Container_intf.Continue_or_stop.t</a>) <span>-&gt;</span>
 finish:(<span class="type-var">'accum</span> <span>-&gt;</span>
 <span class="type-var">'final</span>) <span>-&gt;</span>
 <span class="type-var">'final</span></code></dt>
-<dd>
-<p><code>fold_until t ~init ~f ~finish</code> is a short-circuiting
-version of <code>fold</code>. If <code>f</code> returns <code>Stop
-_</code> the computation ceases and results in that value. If
-<code>f</code> returns <code>Continue _</code>, the fold will
-proceed. If <code>f</code> never returns <code>Stop _</code>, the
-final result is computed by <code>finish</code>.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-exists"><a href="#val-exists" class=
 "anchor"></a><code><span class="keyword">val</span> exists :
 <span class="type-var">'a</span> <a href="index.html#type-t">t</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span>
 <span>-&gt;</span> bool) <span>-&gt;</span> bool</code></dt>
-<dd>
-<p>Returns <code>true</code> if and only if there exists an element
-for which the provided function evaluates to <code>true</code>.
-This is a short-circuiting operation.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-for_all"><a href="#val-for_all"
 class="anchor"></a><code><span class="keyword">val</span> for_all :
 <span class="type-var">'a</span> <a href="index.html#type-t">t</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span>
 <span>-&gt;</span> bool) <span>-&gt;</span> bool</code></dt>
-<dd>
-<p>Returns <code>true</code> if and only if the provided function
-evaluates to <code>true</code> for all elements. This is a
-short-circuiting operation.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-count"><a href="#val-count" class=
 "anchor"></a><code><span class="keyword">val</span> count :
 <span class="type-var">'a</span> <a href="index.html#type-t">t</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span>
 <span>-&gt;</span> bool) <span>-&gt;</span> int</code></dt>
-<dd>
-<p>Returns the number of elements for which the provided function
-evaluates to true.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-sum"><a href="#val-sum" class=
 "anchor"></a><code><span class="keyword">val</span> sum :
 (<span class="keyword">module</span> <a href=
@@ -258,24 +164,12 @@ evaluates to true.</p>
 <span>-&gt;</span> f:(<span class="type-var">'a</span>
 <span>-&gt;</span> <span class="type-var">'sum</span>)
 <span>-&gt;</span> <span class="type-var">'sum</span></code></dt>
-<dd>
-<p>Returns the sum of <code>f i</code> for all <code>i</code> in
-the container.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-find"><a href="#val-find" class=
 "anchor"></a><code><span class="keyword">val</span> find :
 <span class="type-var">'a</span> <a href="index.html#type-t">t</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span>
 <span>-&gt;</span> bool) <span>-&gt;</span> <span class=
 "type-var">'a</span> option</code></dt>
-<dd>
-<p>Returns as an <code>option</code> the first element for which
-<code>f</code> evaluates to true.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-find_map"><a href="#val-find_map"
 class="anchor"></a><code><span class="keyword">val</span> find_map
 : <span class="type-var">'a</span> <a href=
@@ -283,13 +177,6 @@ class="anchor"></a><code><span class="keyword">val</span> find_map
 "type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span> option) <span>-&gt;</span> <span class=
 "type-var">'b</span> option</code></dt>
-<dd>
-<p>Returns the first evaluation of <code>f</code> that returns
-<code>Some</code>, and returns <code>None</code> if there is no
-such element.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-to_list"><a href="#val-to_list"
 class="anchor"></a><code><span class="keyword">val</span> to_list :
 <span class="type-var">'a</span> <a href="index.html#type-t">t</a>
@@ -307,16 +194,6 @@ class="anchor"></a><code><span class="keyword">val</span> min_elt :
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> int) <span>-&gt;</span> <span class=
 "type-var">'a</span> option</code></dt>
-<dd>
-<p>Returns a minimum (resp maximum) element from the collection
-using the provided <code>compare</code> function, or
-<code>None</code> if the collection is empty. In case of a tie, the
-first element encountered while traversing the collection is
-returned. The implementation uses <code>fold</code> so it has the
-same complexity as <code>fold</code>.</p>
-</dd>
-</dl>
-<dl>
 <dt class="spec value" id="val-max_elt"><a href="#val-max_elt"
 class="anchor"></a><code><span class="keyword">val</span> max_elt :
 <span class="type-var">'a</span> <a href="index.html#type-t">t</a>
@@ -324,23 +201,13 @@ class="anchor"></a><code><span class="keyword">val</span> max_elt :
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> int) <span>-&gt;</span> <span class=
 "type-var">'a</span> option</code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<aside>
-<p>These are all like their equivalents in <code>Container</code>
-except that an index starting at 0 is added as the first argument
-to <code>f</code>.</p>
-</aside>
-<dl>
 <dt class="spec value" id="val-foldi"><a href="#val-foldi" class=
 "anchor"></a><code><span class="keyword">val</span> foldi :
 (<span class="type-var">'a</span> <a href=
 "index.html#type-t">t</a>,&nbsp;<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
-<a href="../Base__/Indexed_container_intf/index.html#type-foldi">Base__.Indexed_container_intf.foldi</a></code></dt>
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
+<a href=
+"../Base__/Indexed_container_intf/index.html#type-foldi">Base__.Indexed_container_intf.foldi</a></code></dt>
 <dt class="spec value" id="val-iteri"><a href="#val-iteri" class=
 "anchor"></a><code><span class="keyword">val</span> iteri :
 (<span class="type-var">'a</span> <a href=
@@ -379,12 +246,6 @@ class="anchor"></a><code><span class="keyword">val</span> find_mapi
 <span>-&gt;</span> <span class="type-var">'b</span> option)
 <span>-&gt;</span> <span class="type-var">'b</span>
 option</code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
 <dt class="spec value" id="val-singleton"><a href="#val-singleton"
 class="anchor"></a><code><span class="keyword">val</span> singleton
 : <span class="type-var">'a</span> <span>-&gt;</span> <span class=
@@ -480,7 +341,7 @@ class="anchor"></a><code><span class="keyword">val</span> peek_exn
 "type-var">'a</span></code></dt>
 <dt class="spec value" id="val-clear"><a href="#val-clear" class=
 "anchor"></a><code><span class="keyword">val</span> clear :
-<span class="type-var">_</span> <a href="index.html#type-t">t</a>
+<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
 <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>clear t</code> discards all elements from
@@ -612,11 +473,6 @@ unit</code></dt>
 := <span class="type-var">'a</span> <a href=
 "index.html#type-t">t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-equal"><a href="#val-equal" class=
 "anchor"></a><code><span class="keyword">val</span> equal :
 <span class="type-var">'a</span> <a href=
@@ -641,11 +497,6 @@ t</code></dt>
 "../Base/Invariant/module-type-S1/index.html#type-t">t</a> :=
 <span class="type-var">'a</span> <a href=
 "index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
-</dl>
 <dl>
 <dt class="spec value" id="val-invariant"><a href="#val-invariant"
 class="anchor"></a><code><span class="keyword">val</span> invariant

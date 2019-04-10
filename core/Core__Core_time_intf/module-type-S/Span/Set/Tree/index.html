@@ -26,19 +26,11 @@ hljs.initHighlightingOnLoad();
 <a href="../index.html">Set</a> » Tree</nav>
 <h1>Module <code>Set.Tree</code></h1>
 </header>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../../../../../core_kernel/Core_kernel/Set_intf/Make_S_plain_tree/index.html#module-type-S">
-Core_kernel.Set_intf.Make_S_plain_tree(Elt).S</a></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> t</code>
 <code>= (<a href=
-"../Elt/index.html#type-t">Elt.t</a>,&nbsp;<a href="../Elt/index.html#type-comparator_witness">Elt.comparator_witness</a>)
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>,&nbsp;<a href="../../../Time0/Span/Set/Elt/index.html#type-comparator_witness">Time0.Span.Set.Elt.comparator_witness</a>)
 <a href=
 "../../../../../../base/Base__Set/Using_comparator/Tree/index.html#type-t">
 Core_kernel.Set_intf.Tree.t</a></code></dt>
@@ -50,16 +42,12 @@ class="anchor"></a><code><span class="keyword">val</span> compare :
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "../../../../../../core_kernel/Core_kernel__/Import/index.html#type-int">
 Core_kernel__.Import.int</a></code></dt>
-<dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
-class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-named"><a href="#type-named" class=
 "anchor"></a><code><span class="keyword">type</span> named</code>
 <code>= (<a href=
-"../Elt/index.html#type-t">Elt.t</a>,&nbsp;<a href="../Elt/index.html#type-comparator_witness">Elt.comparator_witness</a>)
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>,&nbsp;<a href="../../../Time0/Span/Set/Elt/index.html#type-comparator_witness">Time0.Span.Set.Elt.comparator_witness</a>)
 <a href=
 "../../../../../../base/Base__Set/Using_comparator/Tree/Named/index.html#type-t">
 Core_kernel.Set_intf.Tree.Named.t</a></code></dt>
@@ -76,25 +64,26 @@ bool</code></dt>
 <dt class="spec value" id="val-iter"><a href="#val-iter" class=
 "anchor"></a><code><span class="keyword">val</span> iter : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span> unit)
-<span>-&gt;</span> unit</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> unit) <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-fold"><a href="#val-fold" class=
 "anchor"></a><code><span class="keyword">val</span> fold : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> init:<span class=
 "type-var">'accum</span> <span>-&gt;</span> f:(<span class=
 "type-var">'accum</span> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span>
-<span class="type-var">'accum</span>) <span>-&gt;</span>
-<span class="type-var">'accum</span></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> <span class="type-var">'accum</span>)
+<span>-&gt;</span> <span class="type-var">'accum</span></code></dt>
 <dt class="spec value" id="val-fold_result"><a href=
 "#val-fold_result" class="anchor"></a><code><span class=
 "keyword">val</span> fold_result : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> init:<span class=
 "type-var">'accum</span> <span>-&gt;</span> f:(<span class=
 "type-var">'accum</span> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span>
-(<span class="type-var">'accum</span>,&nbsp;<span class=
-"type-var">'e</span>) <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> (<span class=
+"type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)
+<a href=
 "../../../../../../base/Base/Result/index.html#type-t">Base.Result.t</a>)
 <span>-&gt;</span> (<span class=
 "type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)
@@ -103,18 +92,18 @@ bool</code></dt>
 <dt class="spec value" id="val-exists"><a href="#val-exists" class=
 "anchor"></a><code><span class="keyword">val</span> exists :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> bool</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> bool) <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-for_all"><a href="#val-for_all"
 class="anchor"></a><code><span class="keyword">val</span> for_all :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> bool</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> bool) <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-count"><a href="#val-count" class=
 "anchor"></a><code><span class="keyword">val</span> count :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> int</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> bool) <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-sum"><a href="#val-sum" class=
 "anchor"></a><code><span class="keyword">val</span> sum :
 (<span class="keyword">module</span> <a href=
@@ -124,29 +113,33 @@ Base__.Container_intf.Summable</a> <span class=
 "../../../../../../base/Base__/Container_intf/module-type-Summable/index.html#type-t">
 t</a> = <span class="type-var">'sum</span>) <span>-&gt;</span>
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span>
-<span class="type-var">'sum</span>) <span>-&gt;</span> <span class=
-"type-var">'sum</span></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> <span class="type-var">'sum</span>)
+<span>-&gt;</span> <span class="type-var">'sum</span></code></dt>
 <dt class="spec value" id="val-find"><a href="#val-find" class=
 "anchor"></a><code><span class="keyword">val</span> find : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> <a href="../Elt/index.html#type-t">Elt.t</a>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> bool) <span>-&gt;</span> <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
 option</code></dt>
 <dt class="spec value" id="val-find_map"><a href="#val-find_map"
 class="anchor"></a><code><span class="keyword">val</span> find_map
 : <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> option) <span>-&gt;</span>
-<span class="type-var">'a</span> option</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> <span class="type-var">'a</span> option)
+<span>-&gt;</span> <span class="type-var">'a</span>
+option</code></dt>
 <dt class="spec value" id="val-to_list"><a href="#val-to_list"
 class="anchor"></a><code><span class="keyword">val</span> to_list :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> list</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+list</code></dt>
 <dt class="spec value" id="val-to_array"><a href="#val-to_array"
 class="anchor"></a><code><span class="keyword">val</span> to_array
 : <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> array</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+array</code></dt>
 <dt class="spec value" id="val-invariants"><a href=
 "#val-invariants" class="anchor"></a><code><span class=
 "keyword">val</span> invariants : <a href="index.html#type-t">t</a>
@@ -154,18 +147,18 @@ class="anchor"></a><code><span class="keyword">val</span> to_array
 <dt class="spec value" id="val-mem"><a href="#val-mem" class=
 "anchor"></a><code><span class="keyword">val</span> mem : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span>
-bool</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-add"><a href="#val-add" class=
 "anchor"></a><code><span class="keyword">val</span> add : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-remove"><a href="#val-remove" class=
 "anchor"></a><code><span class="keyword">val</span> remove :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-union"><a href="#val-union" class=
 "anchor"></a><code><span class="keyword">val</span> union :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
@@ -186,8 +179,8 @@ bool</code></dt>
 "keyword">val</span> symmetric_diff : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> (<a href=
-"../Elt/index.html#type-t">Elt.t</a>,&nbsp;<a href=
-"../Elt/index.html#type-t">Elt.t</a>) <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>,&nbsp;<a href="../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>)
+<a href=
 "../../../../../../base/Base/Either/index.html#type-t">Base.Either.t</a>
 <a href=
 "../../../../../../base/Base/Sequence/index.html#type-t">Base.Sequence.t</a></code></dt>
@@ -216,7 +209,8 @@ class="anchor"></a><code><span class="keyword">module</span>
 "keyword">val</span> fold_until : <a href="index.html#type-t">t</a>
 <span>-&gt;</span> init:<span class="type-var">'b</span>
 <span>-&gt;</span> f:(<span class="type-var">'b</span>
-<span>-&gt;</span> <a href="../Elt/index.html#type-t">Elt.t</a>
+<span>-&gt;</span> <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
 <span>-&gt;</span> (<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'final</span>)
 <a href=
@@ -229,7 +223,8 @@ finish:(<span class="type-var">'b</span> <span>-&gt;</span>
 "#val-fold_right" class="anchor"></a><code><span class=
 "keyword">val</span> fold_right : <a href="index.html#type-t">t</a>
 <span>-&gt;</span> init:<span class="type-var">'b</span>
-<span>-&gt;</span> f:(<a href="../Elt/index.html#type-t">Elt.t</a>
+<span>-&gt;</span> f:(<a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
 <span>-&gt;</span> <span class="type-var">'b</span>
 <span>-&gt;</span> <span class="type-var">'b</span>)
 <span>-&gt;</span> <span class="type-var">'b</span></code></dt>
@@ -237,78 +232,91 @@ finish:(<span class="type-var">'b</span> <span>-&gt;</span>
 "anchor"></a><code><span class="keyword">val</span> iter2 :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> f:([ `Both of <a href=
-"../Elt/index.html#type-t">Elt.t</a> * <a href=
-"../Elt/index.html#type-t">Elt.t</a> | `Left of <a href=
-"../Elt/index.html#type-t">Elt.t</a> | `Right of <a href=
-"../Elt/index.html#type-t">Elt.t</a> ] <span>-&gt;</span> unit)
-<span>-&gt;</span> unit</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+* <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+| `Left of <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+| `Right of <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+] <span>-&gt;</span> unit) <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-filter"><a href="#val-filter" class=
 "anchor"></a><code><span class="keyword">val</span> filter :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> bool) <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-partition_tf"><a href=
 "#val-partition_tf" class="anchor"></a><code><span class=
 "keyword">val</span> partition_tf : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> <a href="index.html#type-t">t</a> * <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> bool) <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> * <a href=
 "index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-elements"><a href="#val-elements"
 class="anchor"></a><code><span class="keyword">val</span> elements
 : <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> list</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+list</code></dt>
 <dt class="spec value" id="val-min_elt"><a href="#val-min_elt"
 class="anchor"></a><code><span class="keyword">val</span> min_elt :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> option</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+option</code></dt>
 <dt class="spec value" id="val-min_elt_exn"><a href=
 "#val-min_elt_exn" class="anchor"></a><code><span class=
 "keyword">val</span> min_elt_exn : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a></code></dt>
 <dt class="spec value" id="val-max_elt"><a href="#val-max_elt"
 class="anchor"></a><code><span class="keyword">val</span> max_elt :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> option</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+option</code></dt>
 <dt class="spec value" id="val-max_elt_exn"><a href=
 "#val-max_elt_exn" class="anchor"></a><code><span class=
 "keyword">val</span> max_elt_exn : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a></code></dt>
 <dt class="spec value" id="val-choose"><a href="#val-choose" class=
 "anchor"></a><code><span class="keyword">val</span> choose :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> option</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+option</code></dt>
 <dt class="spec value" id="val-choose_exn"><a href=
 "#val-choose_exn" class="anchor"></a><code><span class=
 "keyword">val</span> choose_exn : <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a></code></dt>
 <dt class="spec value" id="val-split"><a href="#val-split" class=
 "anchor"></a><code><span class="keyword">val</span> split :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span> <a href=
-"index.html#type-t">t</a> * <a href=
-"../Elt/index.html#type-t">Elt.t</a> option * <a href=
-"index.html#type-t">t</a></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a> * <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+option * <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-group_by"><a href="#val-group_by"
 class="anchor"></a><code><span class="keyword">val</span> group_by
 : <a href="index.html#type-t">t</a> <span>-&gt;</span>
-equiv:(<a href="../Elt/index.html#type-t">Elt.t</a>
-<span>-&gt;</span> <a href="../Elt/index.html#type-t">Elt.t</a>
+equiv:(<a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
 <span>-&gt;</span> bool) <span>-&gt;</span> <a href=
 "index.html#type-t">t</a> list</code></dt>
 <dt class="spec value" id="val-find_exn"><a href="#val-find_exn"
 class="anchor"></a><code><span class="keyword">val</span> find_exn
 : <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> bool) <span>-&gt;</span> <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a></code></dt>
 <dt class="spec value" id="val-nth"><a href="#val-nth" class=
 "anchor"></a><code><span class="keyword">val</span> nth : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> int <span>-&gt;</span>
-<a href="../Elt/index.html#type-t">Elt.t</a> option</code></dt>
+<a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+option</code></dt>
 <dt class="spec value" id="val-remove_index"><a href=
 "#val-remove_index" class="anchor"></a><code><span class=
 "keyword">val</span> remove_index : <a href=
@@ -322,61 +330,66 @@ class="anchor"></a><code><span class="keyword">val</span> to_tree :
 "#val-to_sequence" class="anchor"></a><code><span class=
 "keyword">val</span> to_sequence : ?⁠order:[ `Decreasing |
 `Increasing ] <span>-&gt;</span> ?⁠greater_or_equal_to:<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span>
-?⁠less_or_equal_to:<a href="../Elt/index.html#type-t">Elt.t</a>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> ?⁠less_or_equal_to:<a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href="../Elt/index.html#type-t">Elt.t</a>
+<span>-&gt;</span> <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
 <a href=
 "../../../../../../base/Base/Sequence/index.html#type-t">Base.Sequence.t</a></code></dt>
 <dt class="spec value" id="val-merge_to_sequence"><a href=
 "#val-merge_to_sequence" class="anchor"></a><code><span class=
 "keyword">val</span> merge_to_sequence : ?⁠order:[ `Decreasing |
 `Increasing ] <span>-&gt;</span> ?⁠greater_or_equal_to:<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span>
-?⁠less_or_equal_to:<a href="../Elt/index.html#type-t">Elt.t</a>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> ?⁠less_or_equal_to:<a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a>
 <span>-&gt;</span> (<a href=
-"../Elt/index.html#type-t">Elt.t</a>,&nbsp;<a href=
-"../Elt/index.html#type-t">Elt.t</a>) <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>,&nbsp;<a href="../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>)
+<a href=
 "../../../../../../base/Base__Sequence/Merge_with_duplicates_element/index.html#type-t">
 Base__.Set_intf.Merge_to_sequence_element.t</a> <a href=
 "../../../../../../base/Base/Sequence/index.html#type-t">Base.Sequence.t</a></code></dt>
 <dt class="spec value" id="val-to_map"><a href="#val-to_map" class=
 "anchor"></a><code><span class="keyword">val</span> to_map :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span>
-<span class="type-var">'data</span>) <span>-&gt;</span> (<a href=
-"../Elt/index.html#type-t">Elt.t</a>,&nbsp;<span class=
-"type-var">'data</span>,&nbsp;<a href=
-"../Elt/index.html#type-comparator_witness">Elt.comparator_witness</a>)
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> <span class="type-var">'data</span>)
+<span>-&gt;</span> (<a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>,&nbsp;<span class="type-var">'data</span>,&nbsp;<a href="../../../Time0/Span/Set/Elt/index.html#type-comparator_witness">Time0.Span.Set.Elt.comparator_witness</a>)
 <a href=
 "../../../../../../core_kernel/Core_kernel/Map/index.html#type-t">Core_kernel.Map.t</a></code></dt>
 <dt class="spec value" id="val-quickcheck_observer"><a href=
 "#val-quickcheck_observer" class="anchor"></a><code><span class=
 "keyword">val</span> quickcheck_observer : <a href=
-"../Elt/index.html#type-t">Elt.t</a> <a href=
-"../../../../../../core_kernel/Core_kernel/Quickcheck/Observer/index.html#type-t">
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<a href=
+"../../../../../../core_kernel/Core_kernel__Quickcheck/Observer/index.html#type-t">
 Core_kernel.Quickcheck.Observer.t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a> <a href=
-"../../../../../../core_kernel/Core_kernel/Quickcheck/Observer/index.html#type-t">
+"../../../../../../core_kernel/Core_kernel__Quickcheck/Observer/index.html#type-t">
 Core_kernel.Quickcheck.Observer.t</a></code></dt>
 <dt class="spec value" id="val-quickcheck_shrinker"><a href=
 "#val-quickcheck_shrinker" class="anchor"></a><code><span class=
 "keyword">val</span> quickcheck_shrinker : <a href=
-"../Elt/index.html#type-t">Elt.t</a> <a href=
-"../../../../../../core_kernel/Core_kernel/Quickcheck/Shrinker/index.html#type-t">
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<a href=
+"../../../../../../core_kernel/Core_kernel__Quickcheck/Shrinker/index.html#type-t">
 Core_kernel.Quickcheck.Shrinker.t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a> <a href=
-"../../../../../../core_kernel/Core_kernel/Quickcheck/Shrinker/index.html#type-t">
+"../../../../../../core_kernel/Core_kernel__Quickcheck/Shrinker/index.html#type-t">
 Core_kernel.Quickcheck.Shrinker.t</a></code></dt>
 <dt class="spec value" id="val-empty"><a href="#val-empty" class=
 "anchor"></a><code><span class="keyword">val</span> empty :
 <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-singleton"><a href="#val-singleton"
 class="anchor"></a><code><span class="keyword">val</span> singleton
-: <a href="../Elt/index.html#type-t">Elt.t</a> <span>-&gt;</span>
-<a href="index.html#type-t">t</a></code></dt>
+: <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-union_list"><a href=
 "#val-union_list" class="anchor"></a><code><span class=
 "keyword">val</span> union_list : <a href="index.html#type-t">t</a>
@@ -384,36 +397,43 @@ list <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_list"><a href="#val-of_list"
 class="anchor"></a><code><span class="keyword">val</span> of_list :
-<a href="../Elt/index.html#type-t">Elt.t</a> list
-<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+list <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_array"><a href="#val-of_array"
 class="anchor"></a><code><span class="keyword">val</span> of_array
-: <a href="../Elt/index.html#type-t">Elt.t</a> array
-<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+: <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+array <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_sorted_array"><a href=
 "#val-of_sorted_array" class="anchor"></a><code><span class=
 "keyword">val</span> of_sorted_array : <a href=
-"../Elt/index.html#type-t">Elt.t</a> array <span>-&gt;</span>
-<a href="index.html#type-t">t</a> <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+array <span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
 "../../../../../../base/Base/Or_error/index.html#type-t">Base.Or_error.t</a></code></dt>
 <dt class="spec value" id="val-of_sorted_array_unchecked"><a href=
 "#val-of_sorted_array_unchecked" class=
 "anchor"></a><code><span class="keyword">val</span>
 of_sorted_array_unchecked : <a href=
-"../Elt/index.html#type-t">Elt.t</a> array <span>-&gt;</span>
-<a href="index.html#type-t">t</a></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+array <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_increasing_iterator_unchecked">
 <a href="#val-of_increasing_iterator_unchecked" class=
 "anchor"></a><code><span class="keyword">val</span>
 of_increasing_iterator_unchecked : len:int <span>-&gt;</span>
 f:(int <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a>) <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>)
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-stable_dedup_list"><a href=
 "#val-stable_dedup_list" class="anchor"></a><code><span class=
 "keyword">val</span> stable_dedup_list : <a href=
-"../Elt/index.html#type-t">Elt.t</a> list <span>-&gt;</span>
-<a href="../Elt/index.html#type-t">Elt.t</a> list</code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+list <span>-&gt;</span> <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+list</code></dt>
 <dt class="spec value" id="val-map"><a href="#val-map" class=
 "anchor"></a><code><span class="keyword">val</span> map :
 (<span class="type-var">'a</span>,&nbsp;<span class=
@@ -421,8 +441,8 @@ f:(int <span>-&gt;</span> <a href=
 "../../../../../../base/Base__Set/Using_comparator/Tree/index.html#type-t">
 Core_kernel.Set_intf.Tree.t</a> <span>-&gt;</span> f:(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a>) <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>)
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-filter_map"><a href=
 "#val-filter_map" class="anchor"></a><code><span class=
 "keyword">val</span> filter_map : (<span class=
@@ -431,8 +451,9 @@ Core_kernel.Set_intf.Tree.t</a> <span>-&gt;</span> f:(<span class=
 "../../../../../../base/Base__Set/Using_comparator/Tree/index.html#type-t">
 Core_kernel.Set_intf.Tree.t</a> <span>-&gt;</span> f:(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../Elt/index.html#type-t">Elt.t</a> option) <span>-&gt;</span>
-<a href="index.html#type-t">t</a></code></dt>
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+option) <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_tree"><a href="#val-of_tree"
 class="anchor"></a><code><span class="keyword">val</span> of_tree :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
@@ -440,35 +461,35 @@ class="anchor"></a><code><span class="keyword">val</span> of_tree :
 <dt class="spec value" id="val-of_hash_set"><a href=
 "#val-of_hash_set" class="anchor"></a><code><span class=
 "keyword">val</span> of_hash_set : <a href=
-"../Elt/index.html#type-t">Elt.t</a> <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<a href=
 "../../../../../../core_kernel/Core_kernel/Hash_set/index.html#type-t">
 Core_kernel.Hash_set.t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_hashtbl_keys"><a href=
 "#val-of_hashtbl_keys" class="anchor"></a><code><span class=
 "keyword">val</span> of_hashtbl_keys : (<a href=
-"../Elt/index.html#type-t">Elt.t</a>,&nbsp;<span class=
-"type-var">'a</span>) <a href=
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>,&nbsp;<span class="type-var">'a</span>)
+<a href=
 "../../../../../../core_kernel/Core_kernel/Hashtbl/index.html#type-t">
 Core_kernel.Hashtbl.t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_map_keys"><a href=
 "#val-of_map_keys" class="anchor"></a><code><span class=
 "keyword">val</span> of_map_keys : (<a href=
-"../Elt/index.html#type-t">Elt.t</a>,&nbsp;<span class=
-"type-var">'a</span>,&nbsp;<a href=
-"../Elt/index.html#type-comparator_witness">Elt.comparator_witness</a>)
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>,&nbsp;<span class="type-var">'a</span>,&nbsp;<a href="../../../Time0/Span/Set/Elt/index.html#type-comparator_witness">Time0.Span.Set.Elt.comparator_witness</a>)
 <a href=
 "../../../../../../core_kernel/Core_kernel/Map/index.html#type-t">Core_kernel.Map.t</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-quickcheck_generator"><a href=
 "#val-quickcheck_generator" class="anchor"></a><code><span class=
 "keyword">val</span> quickcheck_generator : <a href=
-"../Elt/index.html#type-t">Elt.t</a> <a href=
-"../../../../../../core_kernel/Core_kernel/Quickcheck/Generator/index.html#type-t">
+"../../../Time0/Span/Set/Elt/index.html#type-t">Time0.Span.Set.Elt.t</a>
+<a href=
+"../../../../../../core_kernel/Core_kernel__Quickcheck/Generator/index.html#type-t">
 Core_kernel.Quickcheck.Generator.t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a> <a href=
-"../../../../../../core_kernel/Core_kernel/Quickcheck/Generator/index.html#type-t">
+"../../../../../../core_kernel/Core_kernel__Quickcheck/Generator/index.html#type-t">
 Core_kernel.Quickcheck.Generator.t</a></code></dt>
 </dl>
 <div class="spec module" id="module-Provide_of_sexp"><a href=
@@ -480,25 +501,6 @@ Core_kernel.Quickcheck.Generator.t</a></code></dt>
 "keyword">sig</span> ... <span class="keyword">end</span>)
 <span>-&gt;</span> <span class="keyword">sig</span> ...
 <span class="keyword">end</span></code></div>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../../../../../core_kernel/Core_kernel/Sexpable/index.html#module-type-S">
-Core_kernel.Sexpable.S</a> <span class="keyword">with</span>
-<span class="keyword">type</span> <a href=
-"../../../../../../core_kernel/Core_kernel/Sexpable/module-type-S/index.html#type-t">
-t</a> := <a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <dl>
 <dt class="spec value" id="val-t_of_sexp"><a href="#val-t_of_sexp"
 class="anchor"></a><code><span class="keyword">val</span> t_of_sexp
@@ -510,10 +512,6 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 : <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "../../../../../../base/Base/Sexp/index.html#type-t">Base.Sexp.t</a></code></dt>
 </dl>
-</details>
-</div>
-</div>
-</div>
 </div>
 </body>
 </html>

@@ -90,35 +90,6 @@ Core_kernel__.Stable_module_types.S4</a></code></div>
 "#module-Make_stable" class="anchor"></a><code><span class=
 "keyword">module</span> Make_stable = <a href=
 "../../core_kernel/Core_kernel__/index.html#module-Make_stable">Core_kernel__.Make_stable</a></code></div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../core_kernel/Core_kernel__/index.html#module-Stable_internal">
-Core_kernel__.Stable_internal</a></code></span></summary>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../bin_prot/Bin_prot/index.html#module-Std">Bin_prot.Std</a></code></span></summary>
-<aside>
-<p>This module defines default converters for the types defined in
-the OCaml standard library.</p>
-</aside>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../bin_prot/Bin_prot/index.html#module-Size">Bin_prot.Size</a></code></span></summary>
-<aside>
-<p>Compute size of values in the binary protocol.</p>
-</aside>
 <dl>
 <dt class="spec type" id="type-sizer"><a href="#type-sizer" class=
 "anchor"></a><code><span class="keyword">type</span> 'a
@@ -343,16 +314,14 @@ bin_size_array_no_length : (<span class=
 </dl>
 <div class="spec module" id="module-Maximum"><a href=
 "#module-Maximum" class="anchor"></a><code><span class=
-"keyword">module</span> Maximum = <a href=
-"../../bin_prot/Bin_prot/Size/index.html#module-Maximum">Bin_prot.Size.Maximum</a></code></div>
+"keyword">module</span> <a href="Maximum/index.html">Maximum</a> =
+<a href=
+"../../bin_prot/Bin_prot__Size/index.html#module-Maximum">Bin_prot__Size.Maximum</a></code></div>
 <div class="spec module" id="module-Minimum"><a href=
 "#module-Minimum" class="anchor"></a><code><span class=
-"keyword">module</span> Minimum = <a href=
-"../../bin_prot/Bin_prot/Size/index.html#module-Minimum">Bin_prot.Size.Minimum</a></code></div>
-</details>
-</div>
-</div>
-</div>
+"keyword">module</span> <a href="Minimum/index.html">Minimum</a> =
+<a href=
+"../../bin_prot/Bin_prot__Size/index.html#module-Minimum">Bin_prot__Size.Minimum</a></code></div>
 <dl>
 <dt class="spec value" id="val-bin_unit"><a href="#val-bin_unit"
 class="anchor"></a><code><span class="keyword">val</span> bin_unit
@@ -1318,246 +1287,117 @@ __bin_read_float64_vec__ : <span class="type-var">'a</span>
 "../../bin_prot/Bin_prot/Common/index.html#type-pos">Bin_prot.Common.pos</a>
 Stdlib.ref <span>-&gt;</span> <span class="type-var">'b</span>
 <span>-&gt;</span> <span class="type-var">'c</span></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../base/Base/Hash/index.html#module-Builtin">Core_kernel__.Import.Hash.Builtin</a></code></span></summary>
-<dl>
 <dt class="spec value" id="val-hash_fold_nativeint"><a href=
 "#val-hash_fold_nativeint" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_nativeint : nativeint <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_int64"><a href=
 "#val-hash_fold_int64" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_int64 : int64 <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_int32"><a href=
 "#val-hash_fold_int32" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_int32 : int32 <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_char"><a href=
 "#val-hash_fold_char" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_char : char <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_int"><a href=
 "#val-hash_fold_int" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_int : int <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_bool"><a href=
 "#val-hash_fold_bool" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_bool : bool <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_string"><a href=
 "#val-hash_fold_string" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_string : string <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_float"><a href=
 "#val-hash_fold_float" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_float : float <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_unit"><a href=
 "#val-hash_fold_unit" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_unit : unit <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_option"><a href=
 "#val-hash_fold_option" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_option : <span class=
 "type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a> <span>-&gt;</span>
-<span class="type-var">'a</span> option <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a>
+<span>-&gt;</span> <span class="type-var">'a</span> option <a href=
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_list"><a href=
 "#val-hash_fold_list" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_list : <span class=
 "type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a> <span>-&gt;</span>
-<span class="type-var">'a</span> list <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a>
+<span>-&gt;</span> <span class="type-var">'a</span> list <a href=
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_lazy_t"><a href=
 "#val-hash_fold_lazy_t" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_lazy_t : <span class=
 "type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a> <span>-&gt;</span>
-<span class="type-var">'a</span> lazy_t <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a>
+<span>-&gt;</span> <span class="type-var">'a</span> lazy_t <a href=
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_ref_frozen"><a href=
 "#val-hash_fold_ref_frozen" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_ref_frozen : <span class=
 "type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a>
+<span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "../../base/Base__/Import0/index.html#type-ref">Base__.Import0.ref</a>
 <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
-<dd>
-<p>Hash support for <code>array</code> and <code>ref</code> is
-provided, but is potentially DANGEROUS, since it incorporates the
-current contents of the array/ref into the hash value. Because of
-this we add a <code>_frozen</code> suffix to the function name.</p>
-<p>Hash support for <code>string</code> is also potentially
-DANGEROUS, but strings are mutated less often, so we don't append
-<code>_frozen</code> to it.</p>
-<p>Also note that we don't support <code>bytes</code>.</p>
-</dd>
-</dl>
-<dl>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_fold_array_frozen"><a href=
 "#val-hash_fold_array_frozen" class="anchor"></a><code><span class=
 "keyword">val</span> hash_fold_array_frozen : <span class=
 "type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a> <span>-&gt;</span>
-<span class="type-var">'a</span> array <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-folder">
-Core_kernel__.Import.Hash.folder</a></code></dt>
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a>
+<span>-&gt;</span> <span class="type-var">'a</span> array <a href=
+"../../base/Base__Hash/index.html#type-folder">Base__Hash.folder</a></code></dt>
 <dt class="spec value" id="val-hash_nativeint"><a href=
 "#val-hash_nativeint" class="anchor"></a><code><span class=
 "keyword">val</span> hash_nativeint : nativeint <span>-&gt;</span>
 <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-hash_value">
-Core_kernel__.Import.Hash.hash_value</a></code></dt>
+"../../base/Base__Hash/index.html#type-hash_value">Base__Hash.hash_value</a></code></dt>
 <dt class="spec value" id="val-hash_int64"><a href=
 "#val-hash_int64" class="anchor"></a><code><span class=
 "keyword">val</span> hash_int64 : int64 <span>-&gt;</span> <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-hash_value">
-Core_kernel__.Import.Hash.hash_value</a></code></dt>
+"../../base/Base__Hash/index.html#type-hash_value">Base__Hash.hash_value</a></code></dt>
 <dt class="spec value" id="val-hash_int32"><a href=
 "#val-hash_int32" class="anchor"></a><code><span class=
 "keyword">val</span> hash_int32 : int32 <span>-&gt;</span> <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-hash_value">
-Core_kernel__.Import.Hash.hash_value</a></code></dt>
+"../../base/Base__Hash/index.html#type-hash_value">Base__Hash.hash_value</a></code></dt>
 <dt class="spec value" id="val-hash_char"><a href="#val-hash_char"
 class="anchor"></a><code><span class="keyword">val</span> hash_char
 : char <span>-&gt;</span> <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-hash_value">
-Core_kernel__.Import.Hash.hash_value</a></code></dt>
+"../../base/Base__Hash/index.html#type-hash_value">Base__Hash.hash_value</a></code></dt>
 <dt class="spec value" id="val-hash_int"><a href="#val-hash_int"
 class="anchor"></a><code><span class="keyword">val</span> hash_int
 : int <span>-&gt;</span> <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-hash_value">
-Core_kernel__.Import.Hash.hash_value</a></code></dt>
+"../../base/Base__Hash/index.html#type-hash_value">Base__Hash.hash_value</a></code></dt>
 <dt class="spec value" id="val-hash_bool"><a href="#val-hash_bool"
 class="anchor"></a><code><span class="keyword">val</span> hash_bool
 : bool <span>-&gt;</span> <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-hash_value">
-Core_kernel__.Import.Hash.hash_value</a></code></dt>
+"../../base/Base__Hash/index.html#type-hash_value">Base__Hash.hash_value</a></code></dt>
 <dt class="spec value" id="val-hash_string"><a href=
 "#val-hash_string" class="anchor"></a><code><span class=
 "keyword">val</span> hash_string : string <span>-&gt;</span>
 <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-hash_value">
-Core_kernel__.Import.Hash.hash_value</a></code></dt>
+"../../base/Base__Hash/index.html#type-hash_value">Base__Hash.hash_value</a></code></dt>
 <dt class="spec value" id="val-hash_float"><a href=
 "#val-hash_float" class="anchor"></a><code><span class=
 "keyword">val</span> hash_float : float <span>-&gt;</span> <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-hash_value">
-Core_kernel__.Import.Hash.hash_value</a></code></dt>
+"../../base/Base__Hash/index.html#type-hash_value">Base__Hash.hash_value</a></code></dt>
 <dt class="spec value" id="val-hash_unit"><a href="#val-hash_unit"
 class="anchor"></a><code><span class="keyword">val</span> hash_unit
 : unit <span>-&gt;</span> <a href=
-"../../core_kernel/Core_kernel__/Import/Hash/index.html#type-hash_value">
-Core_kernel__.Import.Hash.hash_value</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span> <span class="keyword">with</span>
-<span class="keyword">type</span> 'a <a href=
-"index.html#type-array">array</a> := <span class=
-"type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-array">Core_kernel__.Import.array</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="index.html#type-bool">bool</a> := <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-bool">Core_kernel__.Import.bool</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="index.html#type-char">char</a> := <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-char">Core_kernel__.Import.char</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="index.html#type-exn">exn</a> := <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-exn">Core_kernel__.Import.exn</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="index.html#type-float">float</a> := <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-float">Core_kernel__.Import.float</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="index.html#type-int">int</a> := <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="index.html#type-int32">int32</a> := <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-int32">Core_kernel__.Import.int32</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="index.html#type-int64">int64</a> := <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-int64">Core_kernel__.Import.int64</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href="index.html#type-list">list</a> := <span class=
-"type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="index.html#type-nativeint">nativeint</a> := <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-nativeint">Core_kernel__.Import.nativeint</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href="index.html#type-option">option</a> := <span class=
-"type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href="index.html#type-ref">ref</a> := <span class=
-"type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-ref">Core_kernel__.Import.ref</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="index.html#type-string">string</a> := <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="index.html#type-bytes">bytes</a> := <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span class="keyword">with</span> <span class="keyword">type</span>
-<a href="index.html#type-unit">unit</a> := <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-array"><a href="#type-array" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> 'a array</code> <code>= <span class=
-"type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-array">Core_kernel__.Import.array</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
+"../../base/Base__Hash/index.html#type-hash_value">Base__Hash.hash_value</a></code></dt>
 <dt class="spec value" id="val-array_of_sexp"><a href=
 "#val-array_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> array_of_sexp : (<a href=
@@ -1566,239 +1406,94 @@ Core_kernel__.Import.Hash.hash_value</a></code></dt>
 <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-array">array</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-array">Core_kernel__.Import.array</a></code></dt>
 <dt class="spec value" id="val-sexp_of_array"><a href=
 "#val-sexp_of_array" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_array : (<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-array">array</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-array">Core_kernel__.Import.array</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-bool"><a href="#type-bool" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> bool</code> <code>= <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-bool">Core_kernel__.Import.bool</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-bool_of_sexp"><a href=
 "#val-bool_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> bool_of_sexp : <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <a href=
-"index.html#type-bool">bool</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-bool">Core_kernel__.Import.bool</a></code></dt>
 <dt class="spec value" id="val-sexp_of_bool"><a href=
 "#val-sexp_of_bool" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_bool : <a href=
-"index.html#type-bool">bool</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-bool">Core_kernel__.Import.bool</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-char"><a href="#type-char" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> char</code> <code>= <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-char">Core_kernel__.Import.char</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-char_of_sexp"><a href=
 "#val-char_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> char_of_sexp : <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <a href=
-"index.html#type-char">char</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-char">Core_kernel__.Import.char</a></code></dt>
 <dt class="spec value" id="val-sexp_of_char"><a href=
 "#val-sexp_of_char" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_char : <a href=
-"index.html#type-char">char</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-char">Core_kernel__.Import.char</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-exn"><a href="#type-exn" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> exn</code> <code>= <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-exn">Core_kernel__.Import.exn</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-sexp_of_exn"><a href=
 "#val-sexp_of_exn" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_exn : <a href=
-"index.html#type-exn">exn</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-exn">Core_kernel__.Import.exn</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-float"><a href="#type-float" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> float</code> <code>= <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-float">Core_kernel__.Import.float</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-float_of_sexp"><a href=
 "#val-float_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> float_of_sexp : <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <a href=
-"index.html#type-float">float</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-float">Core_kernel__.Import.float</a></code></dt>
 <dt class="spec value" id="val-sexp_of_float"><a href=
 "#val-sexp_of_float" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_float : <a href=
-"index.html#type-float">float</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-float">Core_kernel__.Import.float</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-int"><a href="#type-int" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> int</code> <code>= <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-int_of_sexp"><a href=
 "#val-int_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> int_of_sexp : <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <a href=
-"index.html#type-int">int</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-sexp_of_int"><a href=
 "#val-sexp_of_int" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_int : <a href=
-"index.html#type-int">int</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-int32"><a href="#type-int32" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> int32</code> <code>= <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-int32">Core_kernel__.Import.int32</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-int32_of_sexp"><a href=
 "#val-int32_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> int32_of_sexp : <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <a href=
-"index.html#type-int32">int32</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-int32">Core_kernel__.Import.int32</a></code></dt>
 <dt class="spec value" id="val-sexp_of_int32"><a href=
 "#val-sexp_of_int32" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_int32 : <a href=
-"index.html#type-int32">int32</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-int32">Core_kernel__.Import.int32</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-int64"><a href="#type-int64" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> int64</code> <code>= <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-int64">Core_kernel__.Import.int64</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-int64_of_sexp"><a href=
 "#val-int64_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> int64_of_sexp : <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <a href=
-"index.html#type-int64">int64</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-int64">Core_kernel__.Import.int64</a></code></dt>
 <dt class="spec value" id="val-sexp_of_int64"><a href=
 "#val-sexp_of_int64" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_int64 : <a href=
-"index.html#type-int64">int64</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-int64">Core_kernel__.Import.int64</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-list"><a href="#type-list" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> 'a list</code> <code>= <span class=
-"type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-list_of_sexp"><a href=
 "#val-list_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> list_of_sexp : (<a href=
@@ -1807,67 +1502,28 @@ Core_kernel__.Import.Hash.hash_value</a></code></dt>
 <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-list">list</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a></code></dt>
 <dt class="spec value" id="val-sexp_of_list"><a href=
 "#val-sexp_of_list" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_list : (<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-list">list</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-nativeint"><a href="#type-nativeint"
-class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> nativeint</code> <code>=
-<a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-nativeint">Core_kernel__.Import.nativeint</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-nativeint_of_sexp"><a href=
 "#val-nativeint_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> nativeint_of_sexp : <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <a href=
-"index.html#type-nativeint">nativeint</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-nativeint">Core_kernel__.Import.nativeint</a></code></dt>
 <dt class="spec value" id="val-sexp_of_nativeint"><a href=
 "#val-sexp_of_nativeint" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_nativeint : <a href=
-"index.html#type-nativeint">nativeint</a> <span>-&gt;</span>
-<a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-nativeint">Core_kernel__.Import.nativeint</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-option"><a href="#type-option"
-class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> 'a option</code> <code>=
-<span class="type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-option_of_sexp"><a href=
 "#val-option_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> option_of_sexp : (<a href=
@@ -1876,35 +1532,16 @@ class="anchor"></a><code><span class="keyword">type</span>
 <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-option">option</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
 <dt class="spec value" id="val-sexp_of_option"><a href=
 "#val-sexp_of_option" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_option : (<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-option">option</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-ref"><a href="#type-ref" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> 'a ref</code> <code>= <span class=
-"type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-ref">Core_kernel__.Import.ref</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-ref_of_sexp"><a href=
 "#val-ref_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> ref_of_sexp : (<a href=
@@ -1913,114 +1550,53 @@ class="anchor"></a><code><span class="keyword">type</span>
 <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-ref">Core_kernel__.Import.ref</a></code></dt>
 <dt class="spec value" id="val-sexp_of_ref"><a href=
 "#val-sexp_of_ref" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_ref : (<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-ref">Core_kernel__.Import.ref</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-string"><a href="#type-string"
-class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> string</code> <code>= <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-string_of_sexp"><a href=
 "#val-string_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> string_of_sexp : <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <a href=
-"index.html#type-string">string</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a></code></dt>
 <dt class="spec value" id="val-sexp_of_string"><a href=
 "#val-sexp_of_string" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_string : <a href=
-"index.html#type-string">string</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-bytes"><a href="#type-bytes" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> bytes</code> <code>= <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-bytes_of_sexp"><a href=
 "#val-bytes_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> bytes_of_sexp : <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <a href=
-"index.html#type-bytes">bytes</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></code></dt>
 <dt class="spec value" id="val-sexp_of_bytes"><a href=
 "#val-sexp_of_bytes" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_bytes : <a href=
-"index.html#type-bytes">bytes</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-<dl>
-<dt class="spec type" id="type-unit"><a href="#type-unit" class=
-"anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> unit</code> <code>= <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
-</dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
-<dl>
 <dt class="spec value" id="val-unit_of_sexp"><a href=
 "#val-unit_of_sexp" class="anchor"></a><code><span class=
 "keyword">val</span> unit_of_sexp : <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
 <span>-&gt;</span> <a href=
-"index.html#type-unit">unit</a></code></dt>
+"../../core_kernel/Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-sexp_of_unit"><a href=
 "#val-sexp_of_unit" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_unit : <a href=
-"index.html#type-unit">unit</a> <span>-&gt;</span> <a href=
+"../../core_kernel/Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a>
+<span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
-</details>
-</div>
-</div>
-</div>
-</details>
-</div>
-</div>
-</div>
 <dl>
 <dt class="spec type" id="type-sexp_option"><a href=
 "#type-sexp_option" class="anchor"></a><code><span class=
@@ -2038,7 +1614,7 @@ Core_kernel__.Std_internal.sexp_option</a></code></dt>
 "../../bin_prot/Bin_prot/Shape/index.html#type-t">Bin_prot.Shape.t</a></code></dt>
 <dt class="spec value" id="val-bin_size_sexp_option"><a href=
 "#val-bin_size_sexp_option" class="anchor"></a><code><span class=
-"keyword">val</span> bin_size_sexp_option : a. <span class=
+"keyword">val</span> bin_size_sexp_option : <span class=
 "type-var">'a</span> <a href=
 "../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
@@ -2046,7 +1622,7 @@ Core_kernel__.Std_internal.sexp_option</a></code></dt>
 "../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></code></dt>
 <dt class="spec value" id="val-bin_write_sexp_option"><a href=
 "#val-bin_write_sexp_option" class="anchor"></a><code><span class=
-"keyword">val</span> bin_write_sexp_option : a. <span class=
+"keyword">val</span> bin_write_sexp_option : <span class=
 "type-var">'a</span> <a href=
 "../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
@@ -2063,9 +1639,8 @@ Core_kernel__.Std_internal.sexp_option</a></code></dt>
 <dt class="spec value" id="val-__bin_read_sexp_option__"><a href=
 "#val-__bin_read_sexp_option__" class=
 "anchor"></a><code><span class="keyword">val</span>
-__bin_read_sexp_option__ : a. <span class="type-var">'a</span>
-<a href=
-"../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a>
+__bin_read_sexp_option__ : <span class="type-var">'a</span>
+<a href="../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a>
 <span>-&gt;</span> (<a href=
 "../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
@@ -2073,7 +1648,7 @@ __bin_read_sexp_option__ : a. <span class="type-var">'a</span>
 "../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
 <dt class="spec value" id="val-bin_read_sexp_option"><a href=
 "#val-bin_read_sexp_option" class="anchor"></a><code><span class=
-"keyword">val</span> bin_read_sexp_option : a. <span class=
+"keyword">val</span> bin_read_sexp_option : <span class=
 "type-var">'a</span> <a href=
 "../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
@@ -2097,7 +1672,7 @@ __bin_read_sexp_option__ : a. <span class="type-var">'a</span>
 "../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></code></dt>
 <dt class="spec value" id="val-compare_sexp_option"><a href=
 "#val-compare_sexp_option" class="anchor"></a><code><span class=
-"keyword">val</span> compare_sexp_option : a. (<span class=
+"keyword">val</span> compare_sexp_option : (<span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
 "../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>)
@@ -2109,7 +1684,7 @@ __bin_read_sexp_option__ : a. <span class="type-var">'a</span>
 "../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-hash_fold_sexp_option"><a href=
 "#val-hash_fold_sexp_option" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_sexp_option : a. (<a href=
+"keyword">val</span> hash_fold_sexp_option : (<a href=
 "../../base/Base/Hash/index.html#type-state">Base.Hash.state</a>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
@@ -2137,7 +1712,7 @@ Core_kernel__.Std_internal.sexp_list</a></code></dt>
 "../../bin_prot/Bin_prot/Shape/index.html#type-t">Bin_prot.Shape.t</a></code></dt>
 <dt class="spec value" id="val-bin_size_sexp_list"><a href=
 "#val-bin_size_sexp_list" class="anchor"></a><code><span class=
-"keyword">val</span> bin_size_sexp_list : a. <span class=
+"keyword">val</span> bin_size_sexp_list : <span class=
 "type-var">'a</span> <a href=
 "../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
@@ -2145,7 +1720,7 @@ Core_kernel__.Std_internal.sexp_list</a></code></dt>
 "../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></code></dt>
 <dt class="spec value" id="val-bin_write_sexp_list"><a href=
 "#val-bin_write_sexp_list" class="anchor"></a><code><span class=
-"keyword">val</span> bin_write_sexp_list : a. <span class=
+"keyword">val</span> bin_write_sexp_list : <span class=
 "type-var">'a</span> <a href=
 "../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
@@ -2161,7 +1736,7 @@ Core_kernel__.Std_internal.sexp_list</a></code></dt>
 "../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></code></dt>
 <dt class="spec value" id="val-__bin_read_sexp_list__"><a href=
 "#val-__bin_read_sexp_list__" class="anchor"></a><code><span class=
-"keyword">val</span> __bin_read_sexp_list__ : a. <span class=
+"keyword">val</span> __bin_read_sexp_list__ : <span class=
 "type-var">'a</span> <a href=
 "../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a>
 <span>-&gt;</span> (<a href=
@@ -2171,7 +1746,7 @@ Core_kernel__.Std_internal.sexp_list</a></code></dt>
 "../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
 <dt class="spec value" id="val-bin_read_sexp_list"><a href=
 "#val-bin_read_sexp_list" class="anchor"></a><code><span class=
-"keyword">val</span> bin_read_sexp_list : a. <span class=
+"keyword">val</span> bin_read_sexp_list : <span class=
 "type-var">'a</span> <a href=
 "../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a>
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
@@ -2195,7 +1770,7 @@ Core_kernel__.Std_internal.sexp_list</a></code></dt>
 "../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></code></dt>
 <dt class="spec value" id="val-compare_sexp_list"><a href=
 "#val-compare_sexp_list" class="anchor"></a><code><span class=
-"keyword">val</span> compare_sexp_list : a. (<span class=
+"keyword">val</span> compare_sexp_list : (<span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
 "../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>)
@@ -2207,7 +1782,7 @@ Core_kernel__.Std_internal.sexp_list</a></code></dt>
 "../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-hash_fold_sexp_list"><a href=
 "#val-hash_fold_sexp_list" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_sexp_list : a. (<a href=
+"keyword">val</span> hash_fold_sexp_list : (<a href=
 "../../base/Base/Hash/index.html#type-state">Base.Hash.state</a>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
@@ -2219,32 +1794,12 @@ Core_kernel__.Std_internal.sexp_list</a></code></dt>
 <a href=
 "../../base/Base/Hash/index.html#type-state">Base.Hash.state</a></code></dt>
 </dl>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../core_kernel/Core_kernel__/index.html#module-Stable_containers">
-Core_kernel__.Stable_containers</a></code></span></summary>
-<aside>
-<p>The Stable version of <code>Hashable</code> is defined here
-rather than in <code>Hashable</code>, but the implementation is
-effectively the same.</p>
-</aside>
 <div class="spec module" id="module-Hashable"><a href=
 "#module-Hashable" class="anchor"></a><code><span class=
-"keyword">module</span> Hashable = <a href=
-"../../core_kernel/Core_kernel__/Stable_containers/index.html#module-Hashable">
-Core_kernel__.Stable_containers.Hashable</a></code></div>
-</details>
-</div>
-</div>
-</div>
+"keyword">module</span> <a href="Hashable/index.html">Hashable</a>
+= <a href=
+"../../core_kernel/Core_kernel__Stable_containers/index.html#module-Hashable">
+Core_kernel__Stable_containers.Hashable</a></code></div>
 <div class="spec module" id="module-Binable"><a href=
 "#module-Binable" class="anchor"></a><code><span class=
 "keyword">module</span> Binable = <a href=
@@ -2399,40 +1954,16 @@ Core_kernel.Source_code_position.Stable</a></code></div>
 "#module-String_id" class="anchor"></a><code><span class=
 "keyword">module</span> String_id = <a href=
 "../../core_kernel/Core_kernel/String_id/index.html#module-Stable">Core_kernel.String_id.Stable</a></code></div>
-<div class="spec module" id="module-Time_ns"><a href=
-"#module-Time_ns" class="anchor"></a><code><span class=
-"keyword">module</span> Time_ns = <a href=
-"../../core_kernel/Core_kernel/Time_ns/index.html#module-Stable">Core_kernel.Time_ns.Stable</a></code></div>
-<div class="spec module" id="module-Time"><a href="#module-Time"
-class="anchor"></a><code><span class="keyword">module</span> Time =
-<a href=
-"../../core_kernel/Core_kernel__/Time_float/index.html#module-Stable">
-Core_kernel__.Time_float.Stable</a></code></div>
 <div class="spec module" id="module-Unit"><a href="#module-Unit"
 class="anchor"></a><code><span class="keyword">module</span> Unit =
 <a href=
 "../../core_kernel/Core_kernel/Unit/index.html#module-Stable">Core_kernel.Unit.Stable</a></code></div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../core_kernel/Core_kernel__Perms/Stable/index.html#module-Export">
-Perms.Export</a></code></span></summary>
 <dl>
 <dt class="spec type" id="type-read"><a href="#type-read" class=
 "anchor"></a><code><span class="keyword">type</span> read</code>
 <code>= <a href=
-"../../core_kernel/Core_kernel/Perms/Read/index.html#type-t">Core_kernel.Perms.Read.t</a></code></dt>
+"../../core_kernel/Core_kernel__Perms/Read/index.html#type-t">Core_kernel__Perms.Read.t</a></code></dt>
 </dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
 <dl>
 <dt class="spec value" id="val-bin_read"><a href="#val-bin_read"
 class="anchor"></a><code><span class="keyword">val</span> bin_read
@@ -2503,30 +2034,12 @@ class="anchor"></a><code><span class="keyword">val</span> hash_read
 "index.html#type-read">read</a> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
-</details>
-</div>
-</div>
-</div>
 <dl>
 <dt class="spec type" id="type-write"><a href="#type-write" class=
 "anchor"></a><code><span class="keyword">type</span> write</code>
 <code>= <a href=
-"../../core_kernel/Core_kernel/Perms/Write/index.html#type-t">Core_kernel.Perms.Write.t</a></code></dt>
-<dd>
-<p>We don't expose <code>bin_io</code> for <code>write</code> due
-to a naming conflict with the functions exported by
-<code>bin_io</code> for <code>read_write</code>. If you want
-<code>bin_io</code> for <code>write</code>, use
-<code>Write.t</code>.</p>
-</dd>
+"../../core_kernel/Core_kernel__Perms/Write/index.html#type-t">Core_kernel__Perms.Write.t</a></code></dt>
 </dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
 <dl>
 <dt class="spec value" id="val-compare_write"><a href=
 "#val-compare_write" class="anchor"></a><code><span class=
@@ -2558,23 +2071,12 @@ to a naming conflict with the functions exported by
 "index.html#type-write">write</a> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
-</details>
-</div>
-</div>
-</div>
 <dl>
 <dt class="spec type" id="type-immutable"><a href="#type-immutable"
 class="anchor"></a><code><span class="keyword">type</span>
 immutable</code> <code>= <a href=
-"../../core_kernel/Core_kernel/Perms/Immutable/index.html#type-t">Core_kernel.Perms.Immutable.t</a></code></dt>
+"../../core_kernel/Core_kernel__Perms/Immutable/index.html#type-t">Core_kernel__Perms.Immutable.t</a></code></dt>
 </dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
 <dl>
 <dt class="spec value" id="val-bin_immutable"><a href=
 "#val-bin_immutable" class="anchor"></a><code><span class=
@@ -2651,23 +2153,13 @@ immutable</code> <code>= <a href=
 <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
-</details>
-</div>
-</div>
-</div>
 <dl>
 <dt class="spec type" id="type-read_write"><a href=
 "#type-read_write" class="anchor"></a><code><span class=
 "keyword">type</span> read_write</code> <code>= <a href=
-"../../core_kernel/Core_kernel/Perms/Read_write/index.html#type-t">Core_kernel.Perms.Read_write.t</a></code></dt>
+"../../core_kernel/Core_kernel__Perms/Read_write/index.html#type-t">
+Core_kernel__Perms.Read_write.t</a></code></dt>
 </dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
 <dl>
 <dt class="spec value" id="val-bin_read_write"><a href=
 "#val-bin_read_write" class="anchor"></a><code><span class=
@@ -2745,24 +2237,13 @@ __bin_read_read_write__ : (<a href=
 <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
-</details>
-</div>
-</div>
-</div>
 <dl>
 <dt class="spec type" id="type-perms"><a href="#type-perms" class=
 "anchor"></a><code><span class="keyword">type</span> 'a
 perms</code> <code>= <span class="type-var">'a</span> <a href=
-"../../core_kernel/Core_kernel/Perms/Upper_bound/index.html#type-t">
-Core_kernel.Perms.Upper_bound.t</a></code></dt>
+"../../core_kernel/Core_kernel__Perms/Upper_bound/index.html#type-t">
+Core_kernel__Perms.Upper_bound.t</a></code></dt>
 </dl>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <span class="keyword">sig</span> ...
-<span class="keyword">end</span></code></span></summary>
 <dl>
 <dt class="spec value" id="val-bin_perms"><a href="#val-bin_perms"
 class="anchor"></a><code><span class="keyword">val</span> bin_perms
@@ -2867,165 +2348,136 @@ class="anchor"></a><code><span class="keyword">val</span> bin_perms
 <span>-&gt;</span> <span class="type-var">'a</span> <a href=
 "index.html#type-perms">perms</a> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
-</dl>
-</details>
-</div>
-</div>
-</div>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../ppx_compare/Ppx_compare_lib/index.html#module-Builtin">Ppx_compare_lib.Builtin</a></code></span></summary>
-<dl>
 <dt class="spec value" id="val-compare_bool"><a href=
 "#val-compare_bool" class="anchor"></a><code><span class=
 "keyword">val</span> compare_bool : bool <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-compare_char"><a href=
 "#val-compare_char" class="anchor"></a><code><span class=
 "keyword">val</span> compare_char : char <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-compare_float"><a href=
 "#val-compare_float" class="anchor"></a><code><span class=
 "keyword">val</span> compare_float : float <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-compare_int"><a href=
 "#val-compare_int" class="anchor"></a><code><span class=
 "keyword">val</span> compare_int : int <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-compare_int32"><a href=
 "#val-compare_int32" class="anchor"></a><code><span class=
 "keyword">val</span> compare_int32 : int32 <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-compare_int64"><a href=
 "#val-compare_int64" class="anchor"></a><code><span class=
 "keyword">val</span> compare_int64 : int64 <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-compare_nativeint"><a href=
 "#val-compare_nativeint" class="anchor"></a><code><span class=
 "keyword">val</span> compare_nativeint : nativeint <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-compare_string"><a href=
 "#val-compare_string" class="anchor"></a><code><span class=
 "keyword">val</span> compare_string : string <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-compare_unit"><a href=
 "#val-compare_unit" class="anchor"></a><code><span class=
 "keyword">val</span> compare_unit : unit <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-compare_array"><a href=
 "#val-compare_array" class="anchor"></a><code><span class=
 "keyword">val</span> compare_array : <span class=
 "type-var">'a</span> <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a>
 <span>-&gt;</span> <span class="type-var">'a</span> array <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-compare_list"><a href=
 "#val-compare_list" class="anchor"></a><code><span class=
 "keyword">val</span> compare_list : <span class=
 "type-var">'a</span> <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a>
 <span>-&gt;</span> <span class="type-var">'a</span> list <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-compare_option"><a href=
 "#val-compare_option" class="anchor"></a><code><span class=
 "keyword">val</span> compare_option : <span class=
 "type-var">'a</span> <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a>
 <span>-&gt;</span> <span class="type-var">'a</span> option <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-compare_ref"><a href=
 "#val-compare_ref" class="anchor"></a><code><span class=
 "keyword">val</span> compare_ref : <span class="type-var">'a</span>
 <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a>
 <span>-&gt;</span> <span class="type-var">'a</span> Stdlib.ref
 <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-compare">Base__Ppx_compare_lib.compare</a></code></dt>
 <dt class="spec value" id="val-equal_bool"><a href=
 "#val-equal_bool" class="anchor"></a><code><span class=
 "keyword">val</span> equal_bool : bool <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 <dt class="spec value" id="val-equal_char"><a href=
 "#val-equal_char" class="anchor"></a><code><span class=
 "keyword">val</span> equal_char : char <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 <dt class="spec value" id="val-equal_float"><a href=
 "#val-equal_float" class="anchor"></a><code><span class=
 "keyword">val</span> equal_float : float <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 <dt class="spec value" id="val-equal_int"><a href="#val-equal_int"
 class="anchor"></a><code><span class="keyword">val</span> equal_int
 : int <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 <dt class="spec value" id="val-equal_int32"><a href=
 "#val-equal_int32" class="anchor"></a><code><span class=
 "keyword">val</span> equal_int32 : int32 <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 <dt class="spec value" id="val-equal_int64"><a href=
 "#val-equal_int64" class="anchor"></a><code><span class=
 "keyword">val</span> equal_int64 : int64 <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 <dt class="spec value" id="val-equal_nativeint"><a href=
 "#val-equal_nativeint" class="anchor"></a><code><span class=
 "keyword">val</span> equal_nativeint : nativeint <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 <dt class="spec value" id="val-equal_string"><a href=
 "#val-equal_string" class="anchor"></a><code><span class=
 "keyword">val</span> equal_string : string <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 <dt class="spec value" id="val-equal_unit"><a href=
 "#val-equal_unit" class="anchor"></a><code><span class=
 "keyword">val</span> equal_unit : unit <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 <dt class="spec value" id="val-equal_array"><a href=
 "#val-equal_array" class="anchor"></a><code><span class=
 "keyword">val</span> equal_array : <span class="type-var">'a</span>
 <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a>
 <span>-&gt;</span> <span class="type-var">'a</span> array <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 <dt class="spec value" id="val-equal_list"><a href=
 "#val-equal_list" class="anchor"></a><code><span class=
 "keyword">val</span> equal_list : <span class="type-var">'a</span>
 <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a>
 <span>-&gt;</span> <span class="type-var">'a</span> list <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 <dt class="spec value" id="val-equal_option"><a href=
 "#val-equal_option" class="anchor"></a><code><span class=
 "keyword">val</span> equal_option : <span class=
 "type-var">'a</span> <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a>
 <span>-&gt;</span> <span class="type-var">'a</span> option <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 <dt class="spec value" id="val-equal_ref"><a href="#val-equal_ref"
 class="anchor"></a><code><span class="keyword">val</span> equal_ref
 : <span class="type-var">'a</span> <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a>
 <span>-&gt;</span> <span class="type-var">'a</span> Stdlib.ref
 <a href=
-"../../base/Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../../base/Base__Ppx_compare_lib/index.html#type-equal">Base__Ppx_compare_lib.equal</a></code></dt>
 </dl>
-</details>
-</div>
-</div>
-</div>
-<div>
-<div class="spec include">
-<div class="doc">
-<details open="open">
-<summary><span class="def"><code><span class=
-"keyword">include</span> <a href=
-"../../core_kernel/Core_kernel__/Import/index.html#module-Not_found">
-Core_kernel__.Import.Not_found</a></code></span></summary>
 <dl>
 <dt class="spec exception" id="exception-Not_found"><a href=
 "#exception-Not_found" class="anchor"></a><code><span class=
@@ -3038,10 +2490,6 @@ Core_kernel__.Import.Not_found</a></code></span></summary>
 <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 </dl>
-</details>
-</div>
-</div>
-</div>
 </details>
 </div>
 </div>

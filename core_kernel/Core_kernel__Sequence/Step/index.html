@@ -24,22 +24,14 @@ hljs.initHighlightingOnLoad();
 "../index.html">Core_kernel__Sequence</a> » Step</nav>
 <h1>Module <code>Core_kernel__Sequence.Step</code></h1>
 </header>
-<aside>
-<p>A <code>Step</code> describes the next step of the sequence
-construction. <code>Done</code> indicates the sequence is finished.
-<code>Skip</code> indicates the sequence continues with another
-state without producing the next element yet. <code>Yield</code>
-outputs an element and introduces a new state.</p>
-<p>Modifying <code>'s</code> doesn't violate any <em>internal</em>
-invariants, but it may violate some undocumented expectations. For
-example, one might expect that producing an element from the same
-point in the sequence would always give the same value, but if the
-state can mutate, that is not so.</p>
-</aside>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> ('a, 's)
-t</code> <code>=</code></dt>
+t</code> <code>= (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'s</span>)
+<a href=
+"../../../base/Base__Sequence/Step/index.html#type-t">Base.Sequence.Step.t</a></code>
+<code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-t.Done" class="anchored">
@@ -70,6 +62,109 @@ t</code> <code>=</code></dt>
 <summary><span class="def"><code><span class=
 "keyword">include</span> <span class="keyword">sig</span> ...
 <span class="keyword">end</span></code></span></summary>
+<dl>
+<dt class="spec value" id="val-bin_t"><a href="#val-bin_t" class=
+"anchor"></a><code><span class="keyword">val</span> bin_t :
+<span class="type-var">'a</span> <a href=
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a>
+<span>-&gt;</span> <span class="type-var">'s</span> <a href=
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a>
+<span>-&gt;</span> (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'s</span>)
+<a href="index.html#type-t">t</a> <a href=
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></code></dt>
+<dt class="spec value" id="val-bin_read_t"><a href=
+"#val-bin_read_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_read_t : <span class="type-var">'a</span>
+<a href=
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a>
+<span>-&gt;</span> <span class="type-var">'s</span> <a href=
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a>
+<span>-&gt;</span> (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'s</span>)
+<a href="index.html#type-t">t</a> <a href=
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+<dt class="spec value" id="val-__bin_read_t__"><a href=
+"#val-__bin_read_t__" class="anchor"></a><code><span class=
+"keyword">val</span> __bin_read_t__ : <span class=
+"type-var">'a</span> <a href=
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a>
+<span>-&gt;</span> <span class="type-var">'s</span> <a href=
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a>
+<span>-&gt;</span> (int <span>-&gt;</span> (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'s</span>)
+<a href="index.html#type-t">t</a>) <a href=
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+<dt class="spec value" id="val-bin_reader_t"><a href=
+"#val-bin_reader_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_reader_t : <span class=
+"type-var">'a</span> <a href=
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a>
+<span>-&gt;</span> <span class="type-var">'s</span> <a href=
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a>
+<span>-&gt;</span> (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'s</span>)
+<a href="index.html#type-t">t</a> <a href=
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></code></dt>
+<dt class="spec value" id="val-bin_size_t"><a href=
+"#val-bin_size_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_size_t : <span class="type-var">'a</span>
+<a href=
+"../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a>
+<span>-&gt;</span> <span class="type-var">'s</span> <a href=
+"../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a>
+<span>-&gt;</span> (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'s</span>)
+<a href="index.html#type-t">t</a> <a href=
+"../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></code></dt>
+<dt class="spec value" id="val-bin_write_t"><a href=
+"#val-bin_write_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_write_t : <span class="type-var">'a</span>
+<a href=
+"../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a>
+<span>-&gt;</span> <span class="type-var">'s</span> <a href=
+"../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a>
+<span>-&gt;</span> (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'s</span>)
+<a href="index.html#type-t">t</a> <a href=
+"../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></code></dt>
+<dt class="spec value" id="val-bin_writer_t"><a href=
+"#val-bin_writer_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_writer_t : <span class=
+"type-var">'a</span> <a href=
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a>
+<span>-&gt;</span> <span class="type-var">'s</span> <a href=
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a>
+<span>-&gt;</span> (<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'s</span>)
+<a href="index.html#type-t">t</a> <a href=
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></code></dt>
+<dt class="spec value" id="val-bin_shape_t"><a href=
+"#val-bin_shape_t" class="anchor"></a><code><span class=
+"keyword">val</span> bin_shape_t : <a href=
+"../../../bin_prot/Bin_prot/Shape/index.html#type-t">Bin_prot.Shape.t</a>
+<span>-&gt;</span> <a href=
+"../../../bin_prot/Bin_prot/Shape/index.html#type-t">Bin_prot.Shape.t</a>
+<span>-&gt;</span> <a href=
+"../../../bin_prot/Bin_prot/Shape/index.html#type-t">Bin_prot.Shape.t</a></code></dt>
+</dl>
+</details>
+</div>
+</div>
+</div>
+<div>
+<div class="spec include">
+<div class="doc">
+<details open="open">
+<summary><span class="def"><code><span class=
+"keyword">include</span> <span class="keyword">module</span>
+<span class="keyword">type</span> <span class="keyword">of</span>
+<span class="keyword">sig</span> ... <span class=
+"keyword">end</span> <span class="keyword">with</span> <span class=
+"keyword">type</span> ('a, 's) <a href="index.html#type-t">t</a> :=
+(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'s</span>) <a href=
+"index.html#type-t">t</a></code></span></summary>
 <dl>
 <dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
 class="anchor"></a><code><span class="keyword">val</span> sexp_of_t

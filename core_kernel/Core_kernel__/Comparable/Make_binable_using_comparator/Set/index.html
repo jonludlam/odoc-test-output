@@ -33,11 +33,11 @@ class="anchor"></a><code><span class="keyword">module</span>
 ... <span class="keyword">end</span> <span class=
 "keyword">with</span> <span class="keyword">type</span> <a href=
 "Elt/index.html#type-t">t</a> = <a href=
-"../index.html#type-t">t</a> <span class="keyword">and</span>
-<span class="keyword">type</span> <a href=
+"../argument-1-T/index.html#type-t">T.t</a> <span class=
+"keyword">and</span> <span class="keyword">type</span> <a href=
 "Elt/index.html#type-comparator_witness">comparator_witness</a> =
 <a href=
-"../index.html#type-comparator_witness">comparator_witness</a></code></div>
+"../argument-1-T/index.html#type-comparator_witness">T.comparator_witness</a></code></div>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -49,10 +49,6 @@ class="anchor"></a><code><span class="keyword">module</span>
 "keyword">module</span> <a href=
 "../../../../Core_kernel/Set_intf/module-type-S/Elt/index.html">Elt</a>
 := <a href="index.html#module-Elt">Elt</a></code></span></summary>
-<div class="spec module" id="module-Elt"><a href="#module-Elt"
-class="anchor"></a><code><span class="keyword">module</span>
-<a href="Elt/index.html">Elt</a> : <span class="keyword">sig</span>
-... <span class="keyword">end</span></code></div>
 <div class="spec module" id="module-Tree"><a href="#module-Tree"
 class="anchor"></a><code><span class="keyword">module</span>
 <a href="Tree/index.html">Tree</a> : <span class=
@@ -73,15 +69,6 @@ Elt</a> := <a href="index.html#module-Elt">Elt</a> <span class=
 "../../../../Core_kernel/Set_intf/module-type-S_plain/Tree/index.html">
 Tree</a> := <a href=
 "index.html#module-Tree">Tree</a></code></span></summary>
-<div class="spec module" id="module-Elt"><a href="#module-Elt"
-class="anchor"></a><code><span class="keyword">module</span>
-<a href="Elt/index.html">Elt</a> : <span class="keyword">sig</span>
-... <span class="keyword">end</span></code></div>
-<div class="spec module" id="module-Tree"><a href="#module-Tree"
-class="anchor"></a><code><span class="keyword">module</span> Tree :
-<a href=
-"../../../../Core_kernel/Set_intf/Make_S_plain_tree/index.html#module-type-S">
-Core_kernel.Set_intf.Make_S_plain_tree(Elt).S</a></code></div>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> t</code>
@@ -167,12 +154,29 @@ Core_kernel.Set_intf.Accessors0</a></code></span></summary>
 <summary><span class="def"><code><span class=
 "keyword">include</span> <a href=
 "../../../../../base/Base/Set/index.html#module-type-Accessors0">Core_kernel.Set_intf.Set.Accessors0</a></code></span></summary>
+<div>
+<div class="spec include">
+<div class="doc">
+<details open="open">
+<summary><span class="def"><code><span class=
+"keyword">include</span> <a href=
+"../../../../../base/Base/Container/index.html#module-type-S0">Base.Container.S0</a></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> t</code></dt>
 <dt class="spec type" id="type-elt"><a href="#type-elt" class=
 "anchor"></a><code><span class="keyword">type</span>
 elt</code></dt>
+</dl>
+<dl>
+<dt class="spec value" id="val-mem"><a href="#val-mem" class=
+"anchor"></a><code><span class="keyword">val</span> mem : <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-elt">elt</a> <span>-&gt;</span> bool</code></dt>
+<dd>
+<p>Checks whether the provided element is there, using equality on
+<code>elt</code>s.</p>
+</dd>
 </dl>
 <dl>
 <dt class="spec value" id="val-length"><a href="#val-length" class=
@@ -188,6 +192,13 @@ bool</code></dt>
 "index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> unit)
 <span>-&gt;</span> unit</code></dt>
+<dd>
+<p><code>iter</code> must allow exceptions raised in <code>f</code>
+to escape, terminating the iteration cleanly. The same holds for
+all functions below taking an <code>f</code>.</p>
+</dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-fold"><a href="#val-fold" class=
 "anchor"></a><code><span class="keyword">val</span> fold : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> init:<span class=
@@ -196,6 +207,13 @@ bool</code></dt>
 "index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
 "type-var">'accum</span>) <span>-&gt;</span> <span class=
 "type-var">'accum</span></code></dt>
+<dd>
+<p><code>fold t ~init ~f</code> returns <code>f (... f (f (f init
+e1) e2) e3 ...) en</code>, where <code>e1..en</code> are the
+elements of <code>t</code>.</p>
+</dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-fold_result"><a href=
 "#val-fold_result" class="anchor"></a><code><span class=
 "keyword">val</span> fold_result : <a href=
@@ -210,21 +228,74 @@ bool</code></dt>
 "type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)
 <a href=
 "../../../../../base/Base/Result/index.html#type-t">Base.Result.t</a></code></dt>
+<dd>
+<p><code>fold_result t ~init ~f</code> is a short-circuiting
+version of <code>fold</code> that runs in the <code>Result</code>
+monad. If <code>f</code> returns an <code>Error _</code>, that
+value is returned without any additional invocations of
+<code>f</code>.</p>
+</dd>
+</dl>
+<dl>
+<dt class="spec value" id="val-fold_until"><a href=
+"#val-fold_until" class="anchor"></a><code><span class=
+"keyword">val</span> fold_until : <a href="index.html#type-t">t</a>
+<span>-&gt;</span> init:<span class="type-var">'accum</span>
+<span>-&gt;</span> f:(<span class="type-var">'accum</span>
+<span>-&gt;</span> <a href="index.html#type-elt">elt</a>
+<span>-&gt;</span> (<span class=
+"type-var">'accum</span>,&nbsp;<span class=
+"type-var">'final</span>) <a href=
+"../../../../../base/Base__/Container_intf/Export/Continue_or_stop/index.html#type-t">
+Base__.Container_intf.Continue_or_stop.t</a>) <span>-&gt;</span>
+finish:(<span class="type-var">'accum</span> <span>-&gt;</span>
+<span class="type-var">'final</span>) <span>-&gt;</span>
+<span class="type-var">'final</span></code></dt>
+<dd>
+<p><code>fold_until t ~init ~f ~finish</code> is a short-circuiting
+version of <code>fold</code>. If <code>f</code> returns <code>Stop
+_</code> the computation ceases and results in that value. If
+<code>f</code> returns <code>Continue _</code>, the fold will
+proceed. If <code>f</code> never returns <code>Stop _</code>, the
+final result is computed by <code>finish</code>.</p>
+</dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-exists"><a href="#val-exists" class=
 "anchor"></a><code><span class="keyword">val</span> exists :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> bool)
 <span>-&gt;</span> bool</code></dt>
+<dd>
+<p>Returns <code>true</code> if and only if there exists an element
+for which the provided function evaluates to <code>true</code>.
+This is a short-circuiting operation.</p>
+</dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-for_all"><a href="#val-for_all"
 class="anchor"></a><code><span class="keyword">val</span> for_all :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> bool)
 <span>-&gt;</span> bool</code></dt>
+<dd>
+<p>Returns <code>true</code> if and only if the provided function
+evaluates to <code>true</code> for all elements. This is a
+short-circuiting operation.</p>
+</dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-count"><a href="#val-count" class=
 "anchor"></a><code><span class="keyword">val</span> count :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> bool)
 <span>-&gt;</span> int</code></dt>
+<dd>
+<p>Returns the number of elements for which the provided function
+evaluates to true.</p>
+</dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-sum"><a href="#val-sum" class=
 "anchor"></a><code><span class="keyword">val</span> sum :
 (<span class="keyword">module</span> <a href=
@@ -237,18 +308,37 @@ t</a> = <span class="type-var">'sum</span>) <span>-&gt;</span>
 "index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
 "type-var">'sum</span>) <span>-&gt;</span> <span class=
 "type-var">'sum</span></code></dt>
+<dd>
+<p>Returns the sum of <code>f i</code> for all <code>i</code> in
+the container.</p>
+</dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-find"><a href="#val-find" class=
 "anchor"></a><code><span class="keyword">val</span> find : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> bool)
 <span>-&gt;</span> <a href="index.html#type-elt">elt</a>
 option</code></dt>
+<dd>
+<p>Returns as an <code>option</code> the first element for which
+<code>f</code> evaluates to true.</p>
+</dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-find_map"><a href="#val-find_map"
 class="anchor"></a><code><span class="keyword">val</span> find_map
 : <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
 "type-var">'a</span> option) <span>-&gt;</span> <span class=
 "type-var">'a</span> option</code></dt>
+<dd>
+<p>Returns the first evaluation of <code>f</code> that returns
+<code>Some</code>, and returns <code>None</code> if there is no
+such element.</p>
+</dd>
+</dl>
+<dl>
 <dt class="spec value" id="val-to_list"><a href="#val-to_list"
 class="anchor"></a><code><span class="keyword">val</span> to_list :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
@@ -257,7 +347,35 @@ class="anchor"></a><code><span class="keyword">val</span> to_list :
 class="anchor"></a><code><span class="keyword">val</span> to_array
 : <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "index.html#type-elt">elt</a> array</code></dt>
+<dt class="spec value" id="val-min_elt"><a href="#val-min_elt"
+class="anchor"></a><code><span class="keyword">val</span> min_elt :
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+compare:(<a href="index.html#type-elt">elt</a> <span>-&gt;</span>
+<a href="index.html#type-elt">elt</a> <span>-&gt;</span> int)
+<span>-&gt;</span> <a href="index.html#type-elt">elt</a>
+option</code></dt>
+<dd>
+<p>Returns a min (resp. max) element from the collection using the
+provided <code>compare</code> function. In case of a tie, the first
+element encountered while traversing the collection is returned.
+The implementation uses <code>fold</code> so it has the same
+complexity as <code>fold</code>. Returns <code>None</code> iff the
+collection is empty.</p>
+</dd>
 </dl>
+<dl>
+<dt class="spec value" id="val-max_elt"><a href="#val-max_elt"
+class="anchor"></a><code><span class="keyword">val</span> max_elt :
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+compare:(<a href="index.html#type-elt">elt</a> <span>-&gt;</span>
+<a href="index.html#type-elt">elt</a> <span>-&gt;</span> int)
+<span>-&gt;</span> <a href="index.html#type-elt">elt</a>
+option</code></dt>
+</dl>
+</details>
+</div>
+</div>
+</div>
 <dl>
 <dt class="spec type" id="type-tree"><a href="#type-tree" class=
 "anchor"></a><code><span class="keyword">type</span>
@@ -344,7 +462,7 @@ class="anchor"></a><code><span class="keyword">module</span>
 <span>-&gt;</span> (<span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'final</span>)
 <a href=
-"../../../../../base/Base__/Container_intf/Export/Continue_or_stop/index.html#type-t">
+"../../../../../base/Base__Container_intf/Export/Continue_or_stop/index.html#type-t">
 Base__.Set_intf.Continue_or_stop.t</a>) <span>-&gt;</span>
 finish:(<span class="type-var">'b</span> <span>-&gt;</span>
 <span class="type-var">'final</span>) <span>-&gt;</span>
@@ -360,10 +478,10 @@ finish:(<span class="type-var">'b</span> <span>-&gt;</span>
 <dt class="spec value" id="val-iter2"><a href="#val-iter2" class=
 "anchor"></a><code><span class="keyword">val</span> iter2 :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> f:([ `Both of <a href=
-"index.html#type-elt">elt</a> * <a href=
-"index.html#type-elt">elt</a> | `Left of <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> f:([ `Left of <a href=
 "index.html#type-elt">elt</a> | `Right of <a href=
+"index.html#type-elt">elt</a> | `Both of <a href=
+"index.html#type-elt">elt</a> * <a href=
 "index.html#type-elt">elt</a> ] <span>-&gt;</span> unit)
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-filter"><a href="#val-filter" class=
@@ -443,8 +561,8 @@ class="anchor"></a><code><span class="keyword">val</span> to_tree :
 "index.html#type-tree">tree</a></code></dt>
 <dt class="spec value" id="val-to_sequence"><a href=
 "#val-to_sequence" class="anchor"></a><code><span class=
-"keyword">val</span> to_sequence : ?⁠order:[ `Decreasing |
-`Increasing ] <span>-&gt;</span> ?⁠greater_or_equal_to:<a href=
+"keyword">val</span> to_sequence : ?⁠order:[ `Increasing |
+`Decreasing ] <span>-&gt;</span> ?⁠greater_or_equal_to:<a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span>
 ?⁠less_or_equal_to:<a href="index.html#type-elt">elt</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a>
@@ -452,8 +570,8 @@ class="anchor"></a><code><span class="keyword">val</span> to_tree :
 "../../../../../base/Base/Sequence/index.html#type-t">Base.Sequence.t</a></code></dt>
 <dt class="spec value" id="val-merge_to_sequence"><a href=
 "#val-merge_to_sequence" class="anchor"></a><code><span class=
-"keyword">val</span> merge_to_sequence : ?⁠order:[ `Decreasing |
-`Increasing ] <span>-&gt;</span> ?⁠greater_or_equal_to:<a href=
+"keyword">val</span> merge_to_sequence : ?⁠order:[ `Increasing |
+`Decreasing ] <span>-&gt;</span> ?⁠greater_or_equal_to:<a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span>
 ?⁠less_or_equal_to:<a href="index.html#type-elt">elt</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a>
@@ -512,14 +630,15 @@ Core_kernel.Set_intf.Creators0</a> <span class=
 t</a> := <a href="index.html#type-t">t</a> <span class=
 "keyword">with</span> <span class="keyword">type</span> <a href=
 "../../../../Core_kernel/Set_intf/module-type-Creators0/index.html#type-tree">
-tree</a> := <a href="index.html#type-tree">tree</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> <a href=
+tree</a> := <a href="Tree/index.html#type-t">Tree.t</a>
+<span class="keyword">with</span> <span class="keyword">type</span>
+<a href=
 "../../../../Core_kernel/Set_intf/module-type-Creators0/index.html#type-elt">
-elt</a> := <a href="index.html#type-elt">elt</a> <span class=
+elt</a> := <a href="Elt/index.html#type-t">Elt.t</a> <span class=
 "keyword">with</span> <span class="keyword">type</span> <a href=
 "../../../../Core_kernel/Set_intf/module-type-Creators0/index.html#type-comparator_witness">
 comparator_witness</a> := <a href=
-"index.html#type-comparator_witness">comparator_witness</a></code></span></summary>
+"Elt/index.html#type-comparator_witness">Elt.comparator_witness</a></code></span></summary>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -590,14 +709,14 @@ f:(int <span>-&gt;</span> <a href="index.html#type-elt">elt</a>)
 <dt class="spec value" id="val-map"><a href="#val-map" class=
 "anchor"></a><code><span class="keyword">val</span> map :
 (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-set">set</a>
+"type-var">_</span>) <a href="index.html#type-set">set</a>
 <span>-&gt;</span> f:(<span class="type-var">'a</span>
 <span>-&gt;</span> <a href="index.html#type-elt">elt</a>)
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-filter_map"><a href=
 "#val-filter_map" class="anchor"></a><code><span class=
 "keyword">val</span> filter_map : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
+"type-var">'a</span>,&nbsp;<span class="type-var">_</span>)
 <a href="index.html#type-set">set</a> <span>-&gt;</span>
 f:(<span class="type-var">'a</span> <span>-&gt;</span> <a href=
 "index.html#type-elt">elt</a> option) <span>-&gt;</span> <a href=
@@ -615,29 +734,29 @@ class="anchor"></a><code><span class="keyword">val</span> of_tree :
 <dt class="spec value" id="val-of_hash_set"><a href=
 "#val-of_hash_set" class="anchor"></a><code><span class=
 "keyword">val</span> of_hash_set : <a href=
-"index.html#type-elt">elt</a> <a href=
+"Elt/index.html#type-t">Elt.t</a> <a href=
 "../../../../Core_kernel/Hash_set/index.html#type-t">Core_kernel.Hash_set.t</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_hashtbl_keys"><a href=
 "#val-of_hashtbl_keys" class="anchor"></a><code><span class=
 "keyword">val</span> of_hashtbl_keys : (<a href=
-"index.html#type-elt">elt</a>,&nbsp;<span class=
+"Elt/index.html#type-t">Elt.t</a>,&nbsp;<span class=
 "type-var">_</span>) <a href=
 "../../../../Core_kernel/Hashtbl/index.html#type-t">Core_kernel.Hashtbl.t</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-of_map_keys"><a href=
 "#val-of_map_keys" class="anchor"></a><code><span class=
 "keyword">val</span> of_map_keys : (<a href=
-"index.html#type-elt">elt</a>,&nbsp;<span class=
+"Elt/index.html#type-t">Elt.t</a>,&nbsp;<span class=
 "type-var">_</span>,&nbsp;<a href=
-"index.html#type-comparator_witness">comparator_witness</a>)
+"Elt/index.html#type-comparator_witness">Elt.comparator_witness</a>)
 <a href=
 "../../../../Core_kernel/Map/index.html#type-t">Core_kernel.Map.t</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-quickcheck_generator"><a href=
 "#val-quickcheck_generator" class="anchor"></a><code><span class=
 "keyword">val</span> quickcheck_generator : <a href=
-"index.html#type-elt">elt</a> <a href=
+"Elt/index.html#type-t">Elt.t</a> <a href=
 "../../../../Core_kernel/Quickcheck/Generator/index.html#type-t">Core_kernel.Quickcheck.Generator.t</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
 "../../../../Core_kernel/Quickcheck/Generator/index.html#type-t">Core_kernel.Quickcheck.Generator.t</a></code></dt>
@@ -708,10 +827,6 @@ class="anchor"></a><code><span class="keyword">val</span> of_tree :
 "../../../../Core_kernel/Sexpable/module-type-S/index.html#type-t">t</a>
 := <a href="index.html#type-t">t</a></code></span></summary>
 <dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
-<dl>
 <dt class="spec value" id="val-t_of_sexp"><a href="#val-t_of_sexp"
 class="anchor"></a><code><span class="keyword">val</span> t_of_sexp
 : <a href=
@@ -740,10 +855,6 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 <span class="keyword">with</span> <span class="keyword">type</span>
 <a href="../../../Binable0/module-type-S/index.html#type-t">t</a>
 := <a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -755,10 +866,6 @@ Core_kernel.Set_intf.Binable.S_only_functions</a> <span class=
 "keyword">with</span> <span class="keyword">type</span> <a href=
 "../../../../Core_kernel/Set_intf/Binable/module-type-S_only_functions/index.html#type-t">
 t</a> := <a href="index.html#type-t">t</a></code></span></summary>
-<dl>
-<dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> t</code></dt>
-</dl>
 <dl>
 <dt class="spec value" id="val-bin_size_t"><a href=
 "#val-bin_size_t" class="anchor"></a><code><span class=
