@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Out_channel (stdio.Stdio__.Out_channel)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -78,8 +77,8 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 <dl>
 <dt class="spec value" id="val-equal"><a href="#val-equal" class=
 "anchor"></a><code><span class="keyword">val</span> equal :
-<a href="index.html#type-t">t</a> <a href=
-"../../../base/Base/Equal/index.html#type-equal">Base.Equal.equal</a></code></dt>
+<span><a href="index.html#type-t">t</a> <a href=
+"../../../base/Base/Equal/index.html#type-equal">Base.Equal.equal</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -96,32 +95,33 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 <dl>
 <dt class="spec type" id="type-with_create_args"><a href=
 "#type-with_create_args" class="anchor"></a><code><span class=
-"keyword">type</span> 'a with_create_args</code> <code>=
-?⁠binary:<a href=
-"../../../base/Base/index.html#type-bool">Base.bool</a>
-<span>-&gt;</span> ?⁠append:<a href=
-"../../../base/Base/index.html#type-bool">Base.bool</a>
-<span>-&gt;</span> ?⁠fail_if_exists:<a href=
-"../../../base/Base/index.html#type-bool">Base.bool</a>
-<span>-&gt;</span> ?⁠perm:<a href=
-"../../../base/Base/index.html#type-int">Base.int</a>
+"keyword">type</span> <span>'a with_create_args</span></code>
+<code>= <span>?⁠binary:<a href=
+"../../../base/Base/index.html#type-bool">Base.bool</a></span>
+<span>-&gt;</span> <span>?⁠append:<a href=
+"../../../base/Base/index.html#type-bool">Base.bool</a></span>
+<span>-&gt;</span> <span>?⁠fail_if_exists:<a href=
+"../../../base/Base/index.html#type-bool">Base.bool</a></span>
+<span>-&gt;</span> <span>?⁠perm:<a href=
+"../../../base/Base/index.html#type-int">Base.int</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-(<a href=
+<span><span>(<a href=
 "../../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a>) <a href=
-"index.html#type-with_create_args">with_create_args</a></code></dt>
+<span>-&gt;</span> <a href="index.html#type-t">t</a>)</span>
+<a href=
+"index.html#type-with_create_args">with_create_args</a></span></code></dt>
 <dt class="spec value" id="val-with_file"><a href="#val-with_file"
 class="anchor"></a><code><span class="keyword">val</span> with_file
-: (<a href=
+: <span><span>(<a href=
 "../../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> f:(<a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> <span class="type-var">'a</span>) <a href=
-"index.html#type-with_create_args">with_create_args</a></code></dt>
+<span>-&gt;</span> <span>f:<span>(<a href="index.html#type-t">t</a>
+<span>-&gt;</span> <span class="type-var">'a</span>)</span></span>
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<a href="index.html#type-with_create_args">with_create_args</a></span></code></dt>
 <dt class="spec value" id="val-close"><a href="#val-close" class=
 "anchor"></a><code><span class="keyword">val</span> close :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
@@ -174,12 +174,13 @@ syscall on EINTR. I put a couple CRs in
 "../../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 <dt class="spec value" id="val-output"><a href="#val-output" class=
 "anchor"></a><code><span class="keyword">val</span> output :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> buf:<a href=
-"../../../base/Base/index.html#type-bytes">Base.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../../../base/Base/index.html#type-int">Base.int</a>
-<span>-&gt;</span> len:<a href=
-"../../../base/Base/index.html#type-int">Base.int</a>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span>buf:<a href=
+"../../../base/Base/index.html#type-bytes">Base.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../../../base/Base/index.html#type-int">Base.int</a></span>
+<span>-&gt;</span> <span>len:<a href=
+"../../../base/Base/index.html#type-int">Base.int</a></span>
 <span>-&gt;</span> <a href=
 "../../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 <dt class="spec value" id="val-output_string"><a href=
@@ -192,12 +193,12 @@ syscall on EINTR. I put a couple CRs in
 <dt class="spec value" id="val-output_substring"><a href=
 "#val-output_substring" class="anchor"></a><code><span class=
 "keyword">val</span> output_substring : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> buf:<a href=
-"../../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> pos:<a href=
-"../../../base/Base/index.html#type-int">Base.int</a>
-<span>-&gt;</span> len:<a href=
-"../../../base/Base/index.html#type-int">Base.int</a>
+"index.html#type-t">t</a> <span>-&gt;</span> <span>buf:<a href=
+"../../../base/Base/index.html#type-string">Base.string</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../../../base/Base/index.html#type-int">Base.int</a></span>
+<span>-&gt;</span> <span>len:<a href=
+"../../../base/Base/index.html#type-int">Base.int</a></span>
 <span>-&gt;</span> <a href=
 "../../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 <dt class="spec value" id="val-output_bytes"><a href=
@@ -253,9 +254,9 @@ class="anchor"></a><code><span class="keyword">val</span> newline :
 <dt class="spec value" id="val-output_lines"><a href=
 "#val-output_lines" class="anchor"></a><code><span class=
 "keyword">val</span> output_lines : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <span><a href=
 "../../../base/Base/index.html#type-string">Base.string</a>
-<a href="../../../base/Base/index.html#type-list">Base.list</a>
+<a href="../../../base/Base/index.html#type-list">Base.list</a></span>
 <span>-&gt;</span> <a href=
 "../../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 <dd>
@@ -266,11 +267,12 @@ character</p>
 <dl>
 <dt class="spec value" id="val-fprintf"><a href="#val-fprintf"
 class="anchor"></a><code><span class="keyword">val</span> fprintf :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<a href=
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<a href=
 "index.html#type-t">t</a>,&nbsp;<a href=
-"../../../base/Base/index.html#type-unit">Base.unit</a>) <a href=
-"../../../base/Base/index.html#type-format">Base.format</a>
+"../../../base/Base/index.html#type-unit">Base.unit</a>)</span>
+<a href=
+"../../../base/Base/index.html#type-format">Base.format</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dd>
 <p>Formatted printing to an out channel. This is the same as
@@ -284,10 +286,11 @@ argument and must print to it instead of returning a string.</p>
 <dl>
 <dt class="spec value" id="val-printf"><a href="#val-printf" class=
 "anchor"></a><code><span class="keyword">val</span> printf :
-(<span class="type-var">'a</span>,&nbsp;<a href=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<a href=
 "index.html#type-t">t</a>,&nbsp;<a href=
-"../../../base/Base/index.html#type-unit">Base.unit</a>) <a href=
-"../../../base/Base/index.html#type-format">Base.format</a>
+"../../../base/Base/index.html#type-unit">Base.unit</a>)</span>
+<a href=
+"../../../base/Base/index.html#type-format">Base.format</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dd>
 <p><code>printf fmt</code> is the same as <code>fprintf stdout
@@ -297,8 +300,8 @@ fmt</code></p>
 <dl>
 <dt class="spec value" id="val-print_s"><a href="#val-print_s"
 class="anchor"></a><code><span class="keyword">val</span> print_s :
-?⁠mach:<a href=
-"../../../base/Base/index.html#type-unit">Base.unit</a>
+<span>?⁠mach:<a href=
+"../../../base/Base/index.html#type-unit">Base.unit</a></span>
 <span>-&gt;</span> <a href=
 "../../../base/Base/Sexp/index.html#type-t">Base.Sexp.t</a>
 <span>-&gt;</span> <a href=
@@ -313,10 +316,11 @@ class="anchor"></a><code><span class="keyword">val</span> print_s :
 <dl>
 <dt class="spec value" id="val-eprintf"><a href="#val-eprintf"
 class="anchor"></a><code><span class="keyword">val</span> eprintf :
-(<span class="type-var">'a</span>,&nbsp;<a href=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<a href=
 "index.html#type-t">t</a>,&nbsp;<a href=
-"../../../base/Base/index.html#type-unit">Base.unit</a>) <a href=
-"../../../base/Base/index.html#type-format">Base.format</a>
+"../../../base/Base/index.html#type-unit">Base.unit</a>)</span>
+<a href=
+"../../../base/Base/index.html#type-format">Base.format</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dd>
 <p><code>printf fmt</code> is the same as <code>fprintf stderr
@@ -326,14 +330,14 @@ fmt</code></p>
 <dl>
 <dt class="spec value" id="val-kfprintf"><a href="#val-kfprintf"
 class="anchor"></a><code><span class="keyword">val</span> kfprintf
-: (<a href="index.html#type-t">t</a> <span>-&gt;</span>
-<span class="type-var">'a</span>) <span>-&gt;</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'b</span>,&nbsp;<a href=
+: <span>(<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span class="type-var">'a</span>)</span> <span>-&gt;</span>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><span>(<span class="type-var">'b</span>,&nbsp;<a href=
 "index.html#type-t">t</a>,&nbsp;<a href=
-"../../../base/Base/index.html#type-unit">Base.unit</a>,&nbsp;<span class="type-var">'a</span>)
+"../../../base/Base/index.html#type-unit">Base.unit</a>,&nbsp;<span class="type-var">'a</span>)</span>
 <a href=
-"../../../base/Base/index.html#type-format4">Base.format4</a>
+"../../../base/Base/index.html#type-format4">Base.format4</a></span>
 <span>-&gt;</span> <span class="type-var">'b</span></code></dt>
 <dd>
 <p><code>kfprintf k t fmt</code> is the same as <code>fprintf t
@@ -398,9 +402,9 @@ s</code></p>
 "#val-write_lines" class="anchor"></a><code><span class=
 "keyword">val</span> write_lines : <a href=
 "../../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../../base/Base/index.html#type-string">Base.string</a>
-<a href="../../../base/Base/index.html#type-list">Base.list</a>
+<a href="../../../base/Base/index.html#type-list">Base.list</a></span>
 <span>-&gt;</span> <a href=
 "../../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 <dd>
@@ -412,8 +416,8 @@ s</code></p>
 class="anchor"></a><code><span class="keyword">val</span> write_all
 : <a href=
 "../../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> data:<a href=
-"../../../base/Base/index.html#type-string">Base.string</a>
+<span>-&gt;</span> <span>data:<a href=
+"../../../base/Base/index.html#type-string">Base.string</a></span>
 <span>-&gt;</span> <a href=
 "../../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 </dl>

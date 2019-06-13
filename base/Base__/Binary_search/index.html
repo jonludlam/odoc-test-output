@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Binary_search (base.Base__.Binary_search)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -58,19 +57,23 @@ binary_search_segmented t ~get ~length ~segment_of:(fun e' -&gt;
 <dl>
 <dt class="spec value" id="val-binary_search"><a href=
 "#val-binary_search" class="anchor"></a><code><span class=
-"keyword">val</span> binary_search : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> <span class="type-var">'t</span>
-<span>-&gt;</span> length:(<span class="type-var">'t</span>
-<span>-&gt;</span> int) <span>-&gt;</span> get:(<span class=
-"type-var">'t</span> <span>-&gt;</span> int <span>-&gt;</span>
-<span class="type-var">'elt</span>) <span>-&gt;</span>
-compare:(<span class="type-var">'elt</span> <span>-&gt;</span>
-<span class="type-var">'key</span> <span>-&gt;</span> int)
-<span>-&gt;</span> [ `Last_strictly_less_than |
-`Last_less_than_or_equal_to | `Last_equal_to | `First_equal_to |
-`First_greater_than_or_equal_to | `First_strictly_greater_than ]
+"keyword">val</span> binary_search : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span>
+<span class="type-var">'t</span> <span>-&gt;</span>
+<span>length:<span>(<span class="type-var">'t</span>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span>get:<span>(<span class="type-var">'t</span>
+<span>-&gt;</span> int <span>-&gt;</span> <span class=
+"type-var">'elt</span>)</span></span> <span>-&gt;</span>
+<span>compare:<span>(<span class="type-var">'elt</span>
 <span>-&gt;</span> <span class="type-var">'key</span>
-<span>-&gt;</span> int option</code></dt>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span> <span>[
+`Last_strictly_less_than <span>| `Last_less_than_or_equal_to</span>
+<span>| `Last_equal_to</span> <span>| `First_equal_to</span>
+<span>| `First_greater_than_or_equal_to</span> <span>|
+`First_strictly_greater_than</span> ]</span> <span>-&gt;</span>
+<span class="type-var">'key</span> <span>-&gt;</span> <span>int
+option</span></code></dt>
 <dd>
 <p><code>binary_search ?pos ?len t ~length ~get ~compare which
 elt</code> takes <code>t</code> that is sorted in increasing order
@@ -96,21 +99,24 @@ Behavior is also unspecified if <code>compare</code> mutates
 <dt class="spec value" id="val-binary_search_segmented"><a href=
 "#val-binary_search_segmented" class=
 "anchor"></a><code><span class="keyword">val</span>
-binary_search_segmented : ?⁠pos:int <span>-&gt;</span> ?⁠len:int
-<span>-&gt;</span> <span class="type-var">'t</span>
-<span>-&gt;</span> length:(<span class="type-var">'t</span>
-<span>-&gt;</span> int) <span>-&gt;</span> get:(<span class=
-"type-var">'t</span> <span>-&gt;</span> int <span>-&gt;</span>
-<span class="type-var">'elt</span>) <span>-&gt;</span>
-segment_of:(<span class="type-var">'elt</span> <span>-&gt;</span> [
-`Left | `Right ]) <span>-&gt;</span> [ `Last_on_left |
-`First_on_right ] <span>-&gt;</span> int option</code></dt>
+binary_search_segmented : <span>?⁠pos:int</span> <span>-&gt;</span>
+<span>?⁠len:int</span> <span>-&gt;</span> <span class=
+"type-var">'t</span> <span>-&gt;</span>
+<span>length:<span>(<span class="type-var">'t</span>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span>get:<span>(<span class="type-var">'t</span>
+<span>-&gt;</span> int <span>-&gt;</span> <span class=
+"type-var">'elt</span>)</span></span> <span>-&gt;</span>
+<span>segment_of:<span>(<span class="type-var">'elt</span>
+<span>-&gt;</span> <span>[ `Left <span>| `Right</span>
+]</span>)</span></span> <span>-&gt;</span> <span>[ `Last_on_left
+<span>| `First_on_right</span> ]</span> <span>-&gt;</span>
+<span>int option</span></code></dt>
 <dd>
 <p><code>binary_search_segmented ?pos ?len t ~length ~get
 ~segment_of which</code> takes a <code>segment_of</code> function
 that divides <code>t</code> into two (possibly empty) segments:</p>
-<pre>
-| segment_of elt = `Left | segment_of elt = `Right |</pre>
+<pre>      | segment_of elt = `Left | segment_of elt = `Right |</pre>
 <p><code>binary_search_segmented</code> returns the index of the
 element on the boundary of the segments as specified by
 <code>which</code>: <code>`Last_on_left</code> yields the index of

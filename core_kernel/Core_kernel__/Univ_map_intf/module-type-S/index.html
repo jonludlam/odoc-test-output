@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>S (core_kernel.Core_kernel__.Univ_map_intf.S)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -48,8 +47,8 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 </div>
 <dl>
 <dt class="spec type" id="type-data"><a href="#type-data" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-data</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+data</span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -69,8 +68,8 @@ data</code></dt>
 <dl>
 <dt class="spec value" id="val-invariant"><a href="#val-invariant"
 class="anchor"></a><code><span class="keyword">val</span> invariant
-: <a href="index.html#type-t">t</a> <a href=
-"../../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a></code></dt>
+: <span><a href="index.html#type-t">t</a> <a href=
+"../../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -86,17 +85,17 @@ class="anchor"></a><code><span class="keyword">val</span> is_empty
 "../../Import/index.html#type-bool">Core_kernel__.Import.bool</a></code></dt>
 <dt class="spec value" id="val-set"><a href="#val-set" class=
 "anchor"></a><code><span class="keyword">val</span> set : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
+"index.html#type-t">t</a> <span>-&gt;</span> <span><span class=
 "type-var">'a</span> <a href=
-"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-data">data</a> <span>-&gt;</span> <a href=
+"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-data">data</a></span> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-mem"><a href="#val-mem" class=
 "anchor"></a><code><span class="keyword">val</span> mem : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
+"index.html#type-t">t</a> <span>-&gt;</span> <span><span class=
 "type-var">'a</span> <a href=
-"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a>
+"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-bool">Core_kernel__.Import.bool</a></code></dt>
 <dt class="spec value" id="val-mem_by_id"><a href="#val-mem_by_id"
@@ -107,72 +106,76 @@ class="anchor"></a><code><span class="keyword">val</span> mem_by_id
 "../../Import/index.html#type-bool">Core_kernel__.Import.bool</a></code></dt>
 <dt class="spec value" id="val-find"><a href="#val-find" class=
 "anchor"></a><code><span class="keyword">val</span> find : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
+"index.html#type-t">t</a> <span>-&gt;</span> <span><span class=
 "type-var">'a</span> <a href=
-"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-data">data</a> <a href=
-"../../Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+<a href="index.html#type-data">data</a></span> <a href=
+"../../Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dt class="spec value" id="val-find_exn"><a href="#val-find_exn"
 class="anchor"></a><code><span class="keyword">val</span> find_exn
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-data">data</a></code></dt>
+: <a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-data">data</a></span></code></dt>
 <dt class="spec value" id="val-add"><a href="#val-add" class=
 "anchor"></a><code><span class="keyword">val</span> add : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
+"index.html#type-t">t</a> <span>-&gt;</span> <span><span class=
 "type-var">'a</span> <a href=
-"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-data">data</a> <span>-&gt;</span> [ `Ok of
-<a href="index.html#type-t">t</a> | `Duplicate ]</code></dt>
+"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-data">data</a></span> <span>-&gt;</span> <span>[
+<span>`Ok of <a href="index.html#type-t">t</a></span> <span>|
+`Duplicate</span> ]</span></code></dt>
 <dt class="spec value" id="val-add_exn"><a href="#val-add_exn"
 class="anchor"></a><code><span class="keyword">val</span> add_exn :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-data">data</a> <span>-&gt;</span> <a href=
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-data">data</a></span> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-change"><a href="#val-change" class=
 "anchor"></a><code><span class="keyword">val</span> change :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
-"index.html#type-data">data</a> <a href=
-"../../Import/index.html#type-option">Core_kernel__.Import.option</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-data">data</a> <a href=
-"../../Import/index.html#type-option">Core_kernel__.Import.option</a>)
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a></span>
+<span>-&gt;</span> <span>f:<span>(<span><span><span class=
+"type-var">'a</span> <a href="index.html#type-data">data</a></span>
+<a href=
+"../../Import/index.html#type-option">Core_kernel__.Import.option</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+<a href="index.html#type-data">data</a></span> <a href=
+"../../Import/index.html#type-option">Core_kernel__.Import.option</a></span>)</span></span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-change_exn"><a href=
 "#val-change_exn" class="anchor"></a><code><span class=
 "keyword">val</span> change_exn : <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
-"index.html#type-data">data</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-data">data</a>)
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a></span>
+<span>-&gt;</span> <span>f:<span>(<span><span class=
+"type-var">'a</span> <a href="index.html#type-data">data</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-data">data</a></span>)</span></span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-update"><a href="#val-update" class=
 "anchor"></a><code><span class="keyword">val</span> update :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
-"index.html#type-data">data</a> <a href=
-"../../Import/index.html#type-option">Core_kernel__.Import.option</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-data">data</a>) <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a></span>
+<span>-&gt;</span> <span>f:<span>(<span><span><span class=
+"type-var">'a</span> <a href="index.html#type-data">data</a></span>
+<a href=
+"../../Import/index.html#type-option">Core_kernel__.Import.option</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-data">data</a></span>)</span></span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-remove"><a href="#val-remove" class=
 "anchor"></a><code><span class="keyword">val</span> remove :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../Core_kernel__Type_equal/Id/index.html#type-t">Key.t</a></span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-remove_by_id"><a href=
 "#val-remove_by_id" class="anchor"></a><code><span class=
@@ -189,14 +192,14 @@ class="anchor"></a><code><span class="keyword">val</span> add_exn :
 <dl>
 <dt class="spec value" id="val-to_alist"><a href="#val-to_alist"
 class="anchor"></a><code><span class="keyword">val</span> to_alist
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Packed/index.html#type-t">Packed.t</a> <a href=
-"../../Import/index.html#type-list">Core_kernel__.Import.list</a></code></dt>
+: <a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><a href="Packed/index.html#type-t">Packed.t</a> <a href=
+"../../Import/index.html#type-list">Core_kernel__.Import.list</a></span></code></dt>
 <dt class="spec value" id="val-of_alist_exn"><a href=
 "#val-of_alist_exn" class="anchor"></a><code><span class=
-"keyword">val</span> of_alist_exn : <a href=
+"keyword">val</span> of_alist_exn : <span><a href=
 "Packed/index.html#type-t">Packed.t</a> <a href=
-"../../Import/index.html#type-list">Core_kernel__.Import.list</a>
+"../../Import/index.html#type-list">Core_kernel__.Import.list</a></span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 </dl>
 </div>

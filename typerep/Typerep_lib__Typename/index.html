@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Typerep_lib__Typename
 (typerep.Typerep_lib__Typename)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -28,27 +27,30 @@ Useful for representing types with a nominal notion of equality</p>
 </header>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 <dt class="spec type" id="type-typename"><a href="#type-typename"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-typename</code> <code>= <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+class="anchor"></a><code><span class="keyword">type</span> <span>'a
+typename</span></code> <code>= <span><span class=
+"type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-?⁠name:string <span>-&gt;</span> unit <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span>?⁠name:string</span> <span>-&gt;</span> unit
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-static"><a href="#val-static" class=
-"anchor"></a><code><span class="keyword">val</span> static : unit
-<a href="index.html#type-t">t</a></code></dt>
+"anchor"></a><code><span class="keyword">val</span> static :
+<span>unit <a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-same"><a href="#val-same" class=
 "anchor"></a><code><span class="keyword">val</span> same :
-<span class="type-var">_</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">_</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<span><span class="type-var">_</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">_</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+bool</code></dt>
 <dd>
 <p>nominal type equality test</p>
 </dd>
@@ -56,23 +58,24 @@ typename</code> <code>= <span class="type-var">'a</span> <a href=
 <dl>
 <dt class="spec value" id="val-same_witness"><a href=
 "#val-same_witness" class="anchor"></a><code><span class=
-"keyword">val</span> same_witness : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
+"keyword">val</span> same_witness : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
 <a href=
-"../Typerep_lib/Type_equal/index.html#type-t">Typerep_lib.Type_equal.t</a>
-option</code></dt>
+"../Typerep_lib/Type_equal/index.html#type-t">Typerep_lib.Type_equal.t</a></span>
+option</span></code></dt>
 <dt class="spec value" id="val-same_witness_exn"><a href=
 "#val-same_witness_exn" class="anchor"></a><code><span class=
-"keyword">val</span> same_witness_exn : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href=
-"../Typerep_lib/Type_equal/index.html#type-t">Typerep_lib.Type_equal.t</a></code></dt>
+"keyword">val</span> same_witness_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"../Typerep_lib/Type_equal/index.html#type-t">Typerep_lib.Type_equal.t</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec module" id="module-Key"><a href="#module-Key"
@@ -87,8 +90,8 @@ class="anchor"></a><code><span class="keyword">module</span>
 <dl>
 <dt class="spec value" id="val-key"><a href="#val-key" class=
 "anchor"></a><code><span class="keyword">val</span> key :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "Key/index.html#type-t">Key.t</a></code></dt>
 </dl>
 <dl>
@@ -103,13 +106,14 @@ class="anchor"></a><code><span class="keyword">module</span>
 <dl>
 <dt class="spec value" id="val-uid"><a href="#val-uid" class=
 "anchor"></a><code><span class="keyword">val</span> uid :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "Uid/index.html#type-t">Uid.t</a></code></dt>
 <dt class="spec value" id="val-name"><a href="#val-name" class=
 "anchor"></a><code><span class="keyword">val</span> name :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> string</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+string</code></dt>
 </dl>
 <div class="spec module-type" id="module-type-S0"><a href=
 "#module-type-S0" class="anchor"></a><code><span class=
@@ -165,9 +169,9 @@ class="anchor"></a><code><span class="keyword">module</span>
 "../Typerep_lib/Named_intf/index.html#module-type-S1">Typerep_lib.Named_intf.S1</a>)
 <span>-&gt;</span> <a href="index.html#module-type-S1">S1</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href="Make1/index.html#type-t">t</a> := <span class=
-"type-var">'a</span> <a href=
-"Make1/argument-1-X/index.html#type-t">X.t</a></code></div>
+<span>'a <a href="Make1/index.html#type-t">t</a></span> :=
+<span><span class="type-var">'a</span> <a href=
+"Make1/argument-1-X/index.html#type-t">X.t</a></span></code></div>
 <div class="spec module" id="module-Make2"><a href="#module-Make2"
 class="anchor"></a><code><span class="keyword">module</span>
 <a href="Make2/index.html">Make2</a> : <span class=
@@ -176,9 +180,10 @@ class="anchor"></a><code><span class="keyword">module</span>
 "../Typerep_lib/Named_intf/index.html#module-type-S2">Typerep_lib.Named_intf.S2</a>)
 <span>-&gt;</span> <a href="index.html#module-type-S2">S2</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-('a, 'b) <a href="Make2/index.html#type-t">t</a> := (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="Make2/argument-1-X/index.html#type-t">X.t</a></code></div>
+<span>('a, 'b) <a href="Make2/index.html#type-t">t</a></span> :=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"Make2/argument-1-X/index.html#type-t">X.t</a></span></code></div>
 <div class="spec module" id="module-Make3"><a href="#module-Make3"
 class="anchor"></a><code><span class="keyword">module</span>
 <a href="Make3/index.html">Make3</a> : <span class=
@@ -187,10 +192,11 @@ class="anchor"></a><code><span class="keyword">module</span>
 "../Typerep_lib/Named_intf/index.html#module-type-S3">Typerep_lib.Named_intf.S3</a>)
 <span>-&gt;</span> <a href="index.html#module-type-S3">S3</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-('a, 'b, 'c) <a href="Make3/index.html#type-t">t</a> :=
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="Make3/argument-1-X/index.html#type-t">X.t</a></code></div>
+<span>('a, 'b, 'c) <a href="Make3/index.html#type-t">t</a></span>
+:= <span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)</span>
+<a href=
+"Make3/argument-1-X/index.html#type-t">X.t</a></span></code></div>
 <div class="spec module" id="module-Make4"><a href="#module-Make4"
 class="anchor"></a><code><span class="keyword">module</span>
 <a href="Make4/index.html">Make4</a> : <span class=
@@ -199,11 +205,13 @@ class="anchor"></a><code><span class="keyword">module</span>
 "../Typerep_lib/Named_intf/index.html#module-type-S4">Typerep_lib.Named_intf.S4</a>)
 <span>-&gt;</span> <a href="index.html#module-type-S4">S4</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-('a, 'b, 'c, 'd) <a href="Make4/index.html#type-t">t</a> :=
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span>('a, 'b, 'c, 'd) <a href=
+"Make4/index.html#type-t">t</a></span> := <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)
-<a href="Make4/argument-1-X/index.html#type-t">X.t</a></code></div>
+"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)</span>
+<a href=
+"Make4/argument-1-X/index.html#type-t">X.t</a></span></code></div>
 <div class="spec module" id="module-Make5"><a href="#module-Make5"
 class="anchor"></a><code><span class="keyword">module</span>
 <a href="Make5/index.html">Make5</a> : <span class=
@@ -212,12 +220,14 @@ class="anchor"></a><code><span class="keyword">module</span>
 "../Typerep_lib/Named_intf/index.html#module-type-S5">Typerep_lib.Named_intf.S5</a>)
 <span>-&gt;</span> <a href="index.html#module-type-S5">S5</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-('a, 'b, 'c, 'd, 'e) <a href="Make5/index.html#type-t">t</a> :=
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span>('a, 'b, 'c, 'd, 'e) <a href=
+"Make5/index.html#type-t">t</a></span> := <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'e</span>)
-<a href="Make5/argument-1-X/index.html#type-t">X.t</a></code></div>
+"type-var">'d</span>,&nbsp;<span class="type-var">'e</span>)</span>
+<a href=
+"Make5/argument-1-X/index.html#type-t">X.t</a></span></code></div>
 <div class="spec module" id="module-Table"><a href="#module-Table"
 class="anchor"></a><code><span class="keyword">module</span>
 <a href="Table/index.html">Table</a> : <span class=

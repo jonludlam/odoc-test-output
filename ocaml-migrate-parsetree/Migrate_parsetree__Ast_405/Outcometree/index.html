@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Outcometree
 (ocaml-migrate-parsetree.Migrate_parsetree__Ast_405.Outcometree)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -74,7 +73,8 @@ out_value</code> <code>=</code></dt>
 <td class="def constructor"><a href="#type-out_value.Oval_array"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Oval_array</span> <span class="keyword">of</span>
-<a href="index.html#type-out_value">out_value</a> list</code></td>
+<span><a href="index.html#type-out_value">out_value</a>
+list</span></code></td>
 </tr>
 <tr id="type-out_value.Oval_char" class="anchored">
 <td class="def constructor"><a href="#type-out_value.Oval_char"
@@ -86,8 +86,8 @@ char</code></td>
 <td class="def constructor"><a href="#type-out_value.Oval_constr"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Oval_constr</span> <span class="keyword">of</span>
-<a href="index.html#type-out_ident">out_ident</a> * <a href=
-"index.html#type-out_value">out_value</a> list</code></td>
+<a href="index.html#type-out_ident">out_ident</a> * <span><a href=
+"index.html#type-out_value">out_value</a> list</span></code></td>
 </tr>
 <tr id="type-out_value.Oval_ellipsis" class="anchored">
 <td class="def constructor"><a href="#type-out_value.Oval_ellipsis"
@@ -128,7 +128,8 @@ int64</code></td>
 <td class="def constructor"><a href="#type-out_value.Oval_list"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Oval_list</span> <span class="keyword">of</span>
-<a href="index.html#type-out_value">out_value</a> list</code></td>
+<span><a href="index.html#type-out_value">out_value</a>
+list</span></code></td>
 </tr>
 <tr id="type-out_value.Oval_printer" class="anchored">
 <td class="def constructor"><a href="#type-out_value.Oval_printer"
@@ -140,8 +141,9 @@ Stdlib.Format.formatter <span>-&gt;</span> unit</code></td>
 <td class="def constructor"><a href="#type-out_value.Oval_record"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Oval_record</span> <span class="keyword">of</span>
-(<a href="index.html#type-out_ident">out_ident</a> * <a href=
-"index.html#type-out_value">out_value</a>) list</code></td>
+<span><span>(<a href="index.html#type-out_ident">out_ident</a> *
+<a href="index.html#type-out_value">out_value</a>)</span>
+list</span></code></td>
 </tr>
 <tr id="type-out_value.Oval_string" class="anchored">
 <td class="def constructor"><a href="#type-out_value.Oval_string"
@@ -159,14 +161,15 @@ string</code></td>
 <td class="def constructor"><a href="#type-out_value.Oval_tuple"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Oval_tuple</span> <span class="keyword">of</span>
-<a href="index.html#type-out_value">out_value</a> list</code></td>
+<span><a href="index.html#type-out_value">out_value</a>
+list</span></code></td>
 </tr>
 <tr id="type-out_value.Oval_variant" class="anchored">
 <td class="def constructor"><a href="#type-out_value.Oval_variant"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Oval_variant</span> <span class="keyword">of</span>
-string * <a href="index.html#type-out_value">out_value</a>
-option</code></td>
+string * <span><a href="index.html#type-out_value">out_value</a>
+option</span></code></td>
 </tr>
 </table>
 </dd>
@@ -203,15 +206,16 @@ string * <a href="index.html#type-out_type">out_type</a> * <a href=
 <td class="def constructor"><a href="#type-out_type.Otyp_class"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Otyp_class</span> <span class="keyword">of</span>
-bool * <a href="index.html#type-out_ident">out_ident</a> * <a href=
-"index.html#type-out_type">out_type</a> list</code></td>
+bool * <a href="index.html#type-out_ident">out_ident</a> *
+<span><a href="index.html#type-out_type">out_type</a>
+list</span></code></td>
 </tr>
 <tr id="type-out_type.Otyp_constr" class="anchored">
 <td class="def constructor"><a href="#type-out_type.Otyp_constr"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Otyp_constr</span> <span class="keyword">of</span>
-<a href="index.html#type-out_ident">out_ident</a> * <a href=
-"index.html#type-out_type">out_type</a> list</code></td>
+<a href="index.html#type-out_ident">out_ident</a> * <span><a href=
+"index.html#type-out_type">out_type</a> list</span></code></td>
 </tr>
 <tr id="type-out_type.Otyp_manifest" class="anchored">
 <td class="def constructor"><a href="#type-out_type.Otyp_manifest"
@@ -224,15 +228,17 @@ class="anchor"></a><code>|</code> <code><span class=
 <td class="def constructor"><a href="#type-out_type.Otyp_object"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Otyp_object</span> <span class="keyword">of</span>
-(string * <a href="index.html#type-out_type">out_type</a>) list *
-bool option</code></td>
+<span><span>(string * <a href=
+"index.html#type-out_type">out_type</a>)</span> list</span> *
+<span>bool option</span></code></td>
 </tr>
 <tr id="type-out_type.Otyp_record" class="anchored">
 <td class="def constructor"><a href="#type-out_type.Otyp_record"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Otyp_record</span> <span class="keyword">of</span>
-(string * bool * <a href="index.html#type-out_type">out_type</a>)
-list</code></td>
+<span><span>(string * bool * <a href=
+"index.html#type-out_type">out_type</a>)</span>
+list</span></code></td>
 </tr>
 <tr id="type-out_type.Otyp_stuff" class="anchored">
 <td class="def constructor"><a href="#type-out_type.Otyp_stuff"
@@ -244,15 +250,17 @@ string</code></td>
 <td class="def constructor"><a href="#type-out_type.Otyp_sum"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Otyp_sum</span> <span class="keyword">of</span>
-(string * <a href="index.html#type-out_type">out_type</a> list *
-<a href="index.html#type-out_type">out_type</a> option)
-list</code></td>
+<span><span>(string * <span><a href=
+"index.html#type-out_type">out_type</a> list</span> *
+<span><a href="index.html#type-out_type">out_type</a>
+option</span>)</span> list</span></code></td>
 </tr>
 <tr id="type-out_type.Otyp_tuple" class="anchored">
 <td class="def constructor"><a href="#type-out_type.Otyp_tuple"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Otyp_tuple</span> <span class="keyword">of</span>
-<a href="index.html#type-out_type">out_type</a> list</code></td>
+<span><a href="index.html#type-out_type">out_type</a>
+list</span></code></td>
 </tr>
 <tr id="type-out_type.Otyp_var" class="anchored">
 <td class="def constructor"><a href="#type-out_type.Otyp_var"
@@ -265,21 +273,21 @@ class="anchor"></a><code>|</code> <code><span class=
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Otyp_variant</span> <span class="keyword">of</span>
 bool * <a href="index.html#type-out_variant">out_variant</a> * bool
-* string list option</code></td>
+* <span><span>string list</span> option</span></code></td>
 </tr>
 <tr id="type-out_type.Otyp_poly" class="anchored">
 <td class="def constructor"><a href="#type-out_type.Otyp_poly"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Otyp_poly</span> <span class="keyword">of</span>
-string list * <a href=
+<span>string list</span> * <a href=
 "index.html#type-out_type">out_type</a></code></td>
 </tr>
 <tr id="type-out_type.Otyp_module" class="anchored">
 <td class="def constructor"><a href="#type-out_type.Otyp_module"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Otyp_module</span> <span class="keyword">of</span>
-string * string list * <a href=
-"index.html#type-out_type">out_type</a> list</code></td>
+string * <span>string list</span> * <span><a href=
+"index.html#type-out_type">out_type</a> list</span></code></td>
 </tr>
 <tr id="type-out_type.Otyp_attribute" class="anchored">
 <td class="def constructor"><a href="#type-out_type.Otyp_attribute"
@@ -299,8 +307,9 @@ class="anchor"></a><code>|</code> <code><span class=
 <td class="def constructor"><a href="#type-out_variant.Ovar_fields"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ovar_fields</span> <span class="keyword">of</span>
-(string * bool * <a href="index.html#type-out_type">out_type</a>
-list) list</code></td>
+<span><span>(string * bool * <span><a href=
+"index.html#type-out_type">out_type</a> list</span>)</span>
+list</span></code></td>
 </tr>
 <tr id="type-out_variant.Ovar_typ" class="anchored">
 <td class="def constructor"><a href="#type-out_variant.Ovar_typ"
@@ -320,8 +329,8 @@ class="anchor"></a><code>|</code> <code><span class=
 "#type-out_class_type.Octy_constr" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Octy_constr</span> <span class="keyword">of</span>
-<a href="index.html#type-out_ident">out_ident</a> * <a href=
-"index.html#type-out_type">out_type</a> list</code></td>
+<a href="index.html#type-out_ident">out_ident</a> * <span><a href=
+"index.html#type-out_type">out_type</a> list</span></code></td>
 </tr>
 <tr id="type-out_class_type.Octy_arrow" class="anchored">
 <td class="def constructor"><a href=
@@ -336,9 +345,10 @@ class="anchor"></a><code>|</code> <code><span class=
 "#type-out_class_type.Octy_signature" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Octy_signature</span> <span class="keyword">of</span>
-<a href="index.html#type-out_type">out_type</a> option * <a href=
+<span><a href="index.html#type-out_type">out_type</a> option</span>
+* <span><a href=
 "index.html#type-out_class_sig_item">out_class_sig_item</a>
-list</code></td>
+list</span></code></td>
 </tr>
 </table>
 </dd>
@@ -389,9 +399,9 @@ string * bool * bool * <a href=
 "#type-out_module_type.Omty_functor" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Omty_functor</span> <span class="keyword">of</span>
-string * <a href=
-"index.html#type-out_module_type">out_module_type</a> option *
-<a href=
+string * <span><a href=
+"index.html#type-out_module_type">out_module_type</a> option</span>
+* <a href=
 "index.html#type-out_module_type">out_module_type</a></code></td>
 </tr>
 <tr id="type-out_module_type.Omty_ident" class="anchored">
@@ -406,8 +416,8 @@ string * <a href=
 "#type-out_module_type.Omty_signature" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Omty_signature</span> <span class="keyword">of</span>
-<a href="index.html#type-out_sig_item">out_sig_item</a>
-list</code></td>
+<span><a href="index.html#type-out_sig_item">out_sig_item</a>
+list</span></code></td>
 </tr>
 <tr id="type-out_module_type.Omty_alias" class="anchored">
 <td class="def constructor"><a href=
@@ -427,7 +437,8 @@ list</code></td>
 <td class="def constructor"><a href="#type-out_sig_item.Osig_class"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Osig_class</span> <span class="keyword">of</span>
-bool * string * (string * (bool * bool)) list * <a href=
+bool * string * <span><span>(string * <span>(bool *
+bool)</span>)</span> list</span> * <a href=
 "index.html#type-out_class_type">out_class_type</a> * <a href=
 "index.html#type-out_rec_status">out_rec_status</a></code></td>
 </tr>
@@ -436,9 +447,9 @@ bool * string * (string * (bool * bool)) list * <a href=
 "#type-out_sig_item.Osig_class_type" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Osig_class_type</span> <span class=
-"keyword">of</span> bool * string * (string * (bool * bool)) list *
-<a href="index.html#type-out_class_type">out_class_type</a> *
-<a href=
+"keyword">of</span> bool * string * <span><span>(string *
+<span>(bool * bool)</span>)</span> list</span> * <a href=
+"index.html#type-out_class_type">out_class_type</a> * <a href=
 "index.html#type-out_rec_status">out_rec_status</a></code></td>
 </tr>
 <tr id="type-out_sig_item.Osig_typext" class="anchored">
@@ -498,8 +509,8 @@ class="anchor"></a><code>otype_name : string;</code></td>
 </tr>
 <tr id="type-out_type_decl.otype_params" class="anchored">
 <td class="def field"><a href="#type-out_type_decl.otype_params"
-class="anchor"></a><code>otype_params : (string * (bool * bool))
-list;</code></td>
+class="anchor"></a><code>otype_params : <span><span>(string *
+<span>(bool * bool)</span>)</span> list</span>;</code></td>
 </tr>
 <tr id="type-out_type_decl.otype_type" class="anchored">
 <td class="def field"><a href="#type-out_type_decl.otype_type"
@@ -521,9 +532,10 @@ class="anchor"></a><code>otype_unboxed : bool;</code></td>
 </tr>
 <tr id="type-out_type_decl.otype_cstrs" class="anchored">
 <td class="def field"><a href="#type-out_type_decl.otype_cstrs"
-class="anchor"></a><code>otype_cstrs : (<a href=
+class="anchor"></a><code>otype_cstrs : <span><span>(<a href=
 "index.html#type-out_type">out_type</a> * <a href=
-"index.html#type-out_type">out_type</a>) list;</code></td>
+"index.html#type-out_type">out_type</a>)</span>
+list</span>;</code></td>
 </tr>
 </table>
 <code>}</code></dd>
@@ -548,20 +560,21 @@ out_extension_constructor</code> <code>=</code> <code>{</code></dt>
 "anchored">
 <td class="def field"><a href=
 "#type-out_extension_constructor.oext_type_params" class=
-"anchor"></a><code>oext_type_params : string list;</code></td>
+"anchor"></a><code>oext_type_params : <span>string
+list</span>;</code></td>
 </tr>
 <tr id="type-out_extension_constructor.oext_args" class="anchored">
 <td class="def field"><a href=
 "#type-out_extension_constructor.oext_args" class=
-"anchor"></a><code>oext_args : <a href=
-"index.html#type-out_type">out_type</a> list;</code></td>
+"anchor"></a><code>oext_args : <span><a href=
+"index.html#type-out_type">out_type</a> list</span>;</code></td>
 </tr>
 <tr id="type-out_extension_constructor.oext_ret_type" class=
 "anchored">
 <td class="def field"><a href=
 "#type-out_extension_constructor.oext_ret_type" class=
-"anchor"></a><code>oext_ret_type : <a href=
-"index.html#type-out_type">out_type</a> option;</code></td>
+"anchor"></a><code>oext_ret_type : <span><a href=
+"index.html#type-out_type">out_type</a> option</span>;</code></td>
 </tr>
 <tr id="type-out_extension_constructor.oext_private" class=
 "anchored">
@@ -586,15 +599,17 @@ out_extension_constructor</code> <code>=</code> <code>{</code></dt>
 <tr id="type-out_type_extension.otyext_params" class="anchored">
 <td class="def field"><a href=
 "#type-out_type_extension.otyext_params" class=
-"anchor"></a><code>otyext_params : string list;</code></td>
+"anchor"></a><code>otyext_params : <span>string
+list</span>;</code></td>
 </tr>
 <tr id="type-out_type_extension.otyext_constructors" class=
 "anchored">
 <td class="def field"><a href=
 "#type-out_type_extension.otyext_constructors" class=
-"anchor"></a><code>otyext_constructors : (string * <a href=
-"index.html#type-out_type">out_type</a> list * <a href=
-"index.html#type-out_type">out_type</a> option) list;</code></td>
+"anchor"></a><code>otyext_constructors : <span><span>(string *
+<span><a href="index.html#type-out_type">out_type</a> list</span> *
+<span><a href="index.html#type-out_type">out_type</a>
+option</span>)</span> list</span>;</code></td>
 </tr>
 <tr id="type-out_type_extension.otyext_private" class="anchored">
 <td class="def field"><a href=
@@ -621,12 +636,14 @@ out_extension_constructor</code> <code>=</code> <code>{</code></dt>
 </tr>
 <tr id="type-out_val_decl.oval_prims" class="anchored">
 <td class="def field"><a href="#type-out_val_decl.oval_prims"
-class="anchor"></a><code>oval_prims : string list;</code></td>
+class="anchor"></a><code>oval_prims : <span>string
+list</span>;</code></td>
 </tr>
 <tr id="type-out_val_decl.oval_attributes" class="anchored">
 <td class="def field"><a href="#type-out_val_decl.oval_attributes"
-class="anchor"></a><code>oval_attributes : <a href=
-"index.html#type-out_attribute">out_attribute</a> list;</code></td>
+class="anchor"></a><code>oval_attributes : <span><a href=
+"index.html#type-out_attribute">out_attribute</a>
+list</span>;</code></td>
 </tr>
 </table>
 <code>}</code></dd>
@@ -691,9 +708,10 @@ class="anchor"></a><code>|</code> <code><span class=
 <td class="def constructor"><a href=
 "#type-out_phrase.Ophr_signature" class="anchor"></a><code>|</code>
 <code><span class="constructor">Ophr_signature</span> <span class=
-"keyword">of</span> (<a href=
-"index.html#type-out_sig_item">out_sig_item</a> * <a href=
-"index.html#type-out_value">out_value</a> option) list</code></td>
+"keyword">of</span> <span><span>(<a href=
+"index.html#type-out_sig_item">out_sig_item</a> * <span><a href=
+"index.html#type-out_value">out_value</a> option</span>)</span>
+list</span></code></td>
 </tr>
 <tr id="type-out_phrase.Ophr_exception" class="anchored">
 <td class="def constructor"><a href=

@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Make (typerep.Typerep_lib.Type_generic.Make)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -41,13 +40,14 @@ dependencies between generics at runtime. Example: if
 <h3 class="heading">Signature</h3>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a t</code>
-<code>= <span class="type-var">'a</span> <a href=
-"argument-1-X/index.html#type-t">X.t</a></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code> <code>= <span><span class="type-var">'a</span>
+<a href="argument-1-X/index.html#type-t">X.t</a></span></code></dt>
 <dt class="spec type" id="type-computation"><a href=
 "#type-computation" class="anchor"></a><code><span class=
-"keyword">type</span> 'a computation</code> <code>= <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a></code></dt>
+"keyword">type</span> <span>'a computation</span></code> <code>=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-ident"><a href="#val-ident" class=
@@ -73,14 +73,14 @@ string * string</code></dt>
 "keyword">include</span> <a href=
 "../../Type_generic_intf/index.html#module-type-S">Type_generic_intf.S</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
-"../../Type_generic_intf/module-type-S/index.html#type-t">t</a> :=
-<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></span></summary>
+<span>'a <a href=
+"../../Type_generic_intf/module-type-S/index.html#type-t">t</a></span>
+:= <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -138,8 +138,8 @@ t</code></dt>
 <dl>
 <dt class="spec value" id="val-register0"><a href="#val-register0"
 class="anchor"></a><code><span class="keyword">val</span> register0
-: (<span class="keyword">module</span> <a href=
-"module-type-S0/index.html">S0</a>) <span>-&gt;</span>
+: <span>(<span class="keyword">module</span> <a href=
+"module-type-S0/index.html">S0</a>)</span> <span>-&gt;</span>
 unit</code></dt>
 <dd>
 <p>Extending an existing generic for a particular type name</p>
@@ -152,36 +152,36 @@ unit ...</p>
 <dl>
 <dt class="spec value" id="val-register1"><a href="#val-register1"
 class="anchor"></a><code><span class="keyword">val</span> register1
-: (<span class="keyword">module</span> <a href=
-"module-type-S1/index.html">S1</a>) <span>-&gt;</span>
+: <span>(<span class="keyword">module</span> <a href=
+"module-type-S1/index.html">S1</a>)</span> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec value" id="val-register2"><a href="#val-register2"
 class="anchor"></a><code><span class="keyword">val</span> register2
-: (<span class="keyword">module</span> <a href=
-"module-type-S2/index.html">S2</a>) <span>-&gt;</span>
+: <span>(<span class="keyword">module</span> <a href=
+"module-type-S2/index.html">S2</a>)</span> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec value" id="val-register3"><a href="#val-register3"
 class="anchor"></a><code><span class="keyword">val</span> register3
-: (<span class="keyword">module</span> <a href=
-"module-type-S3/index.html">S3</a>) <span>-&gt;</span>
+: <span>(<span class="keyword">module</span> <a href=
+"module-type-S3/index.html">S3</a>)</span> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec value" id="val-register4"><a href="#val-register4"
 class="anchor"></a><code><span class="keyword">val</span> register4
-: (<span class="keyword">module</span> <a href=
-"module-type-S4/index.html">S4</a>) <span>-&gt;</span>
+: <span>(<span class="keyword">module</span> <a href=
+"module-type-S4/index.html">S4</a>)</span> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec value" id="val-register5"><a href="#val-register5"
 class="anchor"></a><code><span class="keyword">val</span> register5
-: (<span class="keyword">module</span> <a href=
-"module-type-S5/index.html">S5</a>) <span>-&gt;</span>
+: <span>(<span class="keyword">module</span> <a href=
+"module-type-S5/index.html">S5</a>)</span> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec value" id="val-register"><a href="#val-register"
 class="anchor"></a><code><span class="keyword">val</span> register
-: <span class="type-var">'a</span> <a href=
-"../../Std_internal/Typerep/index.html#type-t">Std_internal.Typerep.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-computation">computation</a> <span>-&gt;</span>
-unit</code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"../../Std_internal/Typerep/index.html#type-t">Std_internal.Typerep.t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-computation">computation</a></span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p>special less scary type when the type has no parameters. this is
 equivalent as using register0</p>
@@ -190,11 +190,13 @@ equivalent as using register0</p>
 <dl>
 <dt class="spec value" id="val-of_typerep"><a href=
 "#val-of_typerep" class="anchor"></a><code><span class=
-"keyword">val</span> of_typerep : <span class="type-var">'a</span>
-<a href=
-"../../Std_internal/Typerep/index.html#type-t">Std_internal.Typerep.t</a>
-<span>-&gt;</span> [ `generic of <span class="type-var">'a</span>
-<a href="index.html#type-computation">computation</a> ]</code></dt>
+"keyword">val</span> of_typerep : <span><span class=
+"type-var">'a</span> <a href=
+"../../Std_internal/Typerep/index.html#type-t">Std_internal.Typerep.t</a></span>
+<span>-&gt;</span> <span>[ <span>`generic of <span><span class=
+"type-var">'a</span> <a href=
+"index.html#type-computation">computation</a></span></span>
+]</span></code></dt>
 <dd>
 <p>main function : compute the generic computation from the
 typerep</p>
@@ -207,9 +209,10 @@ typerep</p>
 "Computation/index.html">Computation</a> : <a href=
 "../index.html#module-type-Computation">Computation</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href="../module-type-Computation/index.html#type-t">t</a> =
-<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span>'a <a href=
+"../module-type-Computation/index.html#type-t">t</a></span> =
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>exported to build a computation on top of a previous one</p>
 </dd>

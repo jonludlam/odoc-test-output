@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Binable0 (core_kernel.Core_kernel__.Binable0)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -85,43 +84,44 @@ class="anchor"></a><code><span class="keyword">module</span> List =
 <dl>
 <dt class="spec type" id="type-bigstring"><a href="#type-bigstring"
 class="anchor"></a><code><span class="keyword">type</span>
-bigstring</code> <code>= (<a href=
-"../Import/index.html#type-char">Core_kernel__.Import.char</a>,&nbsp;Bigarray.int8_unsigned_elt,&nbsp;Bigarray.c_layout)
-Bigarray.Array1.t</code></dt>
+bigstring</code> <code>= <span><span>(<a href=
+"../Import/index.html#type-char">Core_kernel__.Import.char</a>,&nbsp;Bigarray.int8_unsigned_elt,&nbsp;Bigarray.c_layout)</span>
+Bigarray.Array1.t</span></code></dt>
 <dt class="spec type" id="type-m"><a href="#type-m" class=
-"anchor"></a><code><span class="keyword">type</span> 'a m</code>
-<code>= (<span class="keyword">module</span> <a href=
-"module-type-S/index.html">S</a> <span class="keyword">with</span>
-<span class="keyword">type</span> <a href=
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+m</span></code> <code>= <span>(<span class="keyword">module</span>
+<a href="module-type-S/index.html">S</a> <span class=
+"keyword">with</span> <span class="keyword">type</span> <a href=
 "module-type-S/index.html#type-t">t</a> = <span class=
-"type-var">'a</span>)</code></dt>
+"type-var">'a</span>)</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-of_bigstring"><a href=
 "#val-of_bigstring" class="anchor"></a><code><span class=
-"keyword">val</span> of_bigstring : (<span class=
+"keyword">val</span> of_bigstring : <span>(<span class=
 "keyword">module</span> <a href="module-type-S/index.html">S</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
 <a href="module-type-S/index.html#type-t">t</a> = <span class=
-"type-var">'a</span>) <span>-&gt;</span> <a href=
+"type-var">'a</span>)</span> <span>-&gt;</span> <a href=
 "../../../bin_prot/Bin_prot/Common/index.html#type-buf">Bin_prot.Common.buf</a>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dt class="spec value" id="val-create_bigstring"><a href=
 "#val-create_bigstring" class="anchor"></a><code><span class=
 "keyword">val</span> create_bigstring : int <span>-&gt;</span>
-(char,&nbsp;Bigarray.int8_unsigned_elt,&nbsp;Bigarray.c_layout)
-Bigarray.Array1.t</code></dt>
+<span><span>(char,&nbsp;Bigarray.int8_unsigned_elt,&nbsp;Bigarray.c_layout)</span>
+Bigarray.Array1.t</span></code></dt>
 <dt class="spec value" id="val-to_bigstring"><a href=
 "#val-to_bigstring" class="anchor"></a><code><span class=
-"keyword">val</span> to_bigstring : ?⁠prefix_with_length:bool
-<span>-&gt;</span> (<span class="keyword">module</span> <a href=
+"keyword">val</span> to_bigstring :
+<span>?⁠prefix_with_length:bool</span> <span>-&gt;</span>
+<span>(<span class="keyword">module</span> <a href=
 "module-type-S/index.html">S</a> <span class="keyword">with</span>
 <span class="keyword">type</span> <a href=
 "module-type-S/index.html#type-t">t</a> = <span class=
-"type-var">'a</span>) <span>-&gt;</span> <span class=
+"type-var">'a</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'a</span> <span>-&gt;</span>
-(char,&nbsp;Bigarray.int8_unsigned_elt,&nbsp;Bigarray.c_layout)
-Bigarray.Array1.t</code></dt>
+<span><span>(char,&nbsp;Bigarray.int8_unsigned_elt,&nbsp;Bigarray.c_layout)</span>
+Bigarray.Array1.t</span></code></dt>
 </dl>
 <div class="spec module" id="module-Of_binable"><a href=
 "#module-Of_binable" class="anchor"></a><code><span class=

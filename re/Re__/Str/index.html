@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Str (re.Re__.Str)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -289,9 +288,9 @@ substring matching the regular expression is replaced.</p>
 <dt class="spec value" id="val-global_substitute"><a href=
 "#val-global_substitute" class="anchor"></a><code><span class=
 "keyword">val</span> global_substitute : <a href=
-"index.html#type-regexp">regexp</a> <span>-&gt;</span> (string
-<span>-&gt;</span> string) <span>-&gt;</span> string
-<span>-&gt;</span> string</code></dt>
+"index.html#type-regexp">regexp</a> <span>-&gt;</span>
+<span>(string <span>-&gt;</span> string)</span> <span>-&gt;</span>
+string <span>-&gt;</span> string</code></dt>
 <dd>
 <p><code>global_substitute regexp subst s</code> returns a string
 identical to <code>s</code>, except that all substrings of
@@ -305,9 +304,9 @@ receives <code>s</code> (the whole text) as argument.</p>
 <dt class="spec value" id="val-substitute_first"><a href=
 "#val-substitute_first" class="anchor"></a><code><span class=
 "keyword">val</span> substitute_first : <a href=
-"index.html#type-regexp">regexp</a> <span>-&gt;</span> (string
-<span>-&gt;</span> string) <span>-&gt;</span> string
-<span>-&gt;</span> string</code></dt>
+"index.html#type-regexp">regexp</a> <span>-&gt;</span>
+<span>(string <span>-&gt;</span> string)</span> <span>-&gt;</span>
+string <span>-&gt;</span> string</code></dt>
 <dd>
 <p>Same as <code>global_substitute</code>, except that only the
 first substring matching the regular expression is replaced.</p>
@@ -336,7 +335,7 @@ same string that was matched during this matching operation.</p>
 <dt class="spec value" id="val-split"><a href="#val-split" class=
 "anchor"></a><code><span class="keyword">val</span> split :
 <a href="index.html#type-regexp">regexp</a> <span>-&gt;</span>
-string <span>-&gt;</span> string list</code></dt>
+string <span>-&gt;</span> <span>string list</span></code></dt>
 <dd>
 <p><code>split r s</code> splits <code>s</code> into substrings,
 taking as delimiters the substrings that match <code>r</code>, and
@@ -351,7 +350,8 @@ end of the string is ignored.</p>
 "#val-bounded_split" class="anchor"></a><code><span class=
 "keyword">val</span> bounded_split : <a href=
 "index.html#type-regexp">regexp</a> <span>-&gt;</span> string
-<span>-&gt;</span> int <span>-&gt;</span> string list</code></dt>
+<span>-&gt;</span> int <span>-&gt;</span> <span>string
+list</span></code></dt>
 <dd>
 <p>Same as <code>split</code>, but splits into at most
 <code>n</code> substrings, where <code>n</code> is the extra
@@ -363,12 +363,13 @@ integer parameter.</p>
 "#val-split_delim" class="anchor"></a><code><span class=
 "keyword">val</span> split_delim : <a href=
 "index.html#type-regexp">regexp</a> <span>-&gt;</span> string
-<span>-&gt;</span> string list</code></dt>
+<span>-&gt;</span> <span>string list</span></code></dt>
 <dt class="spec value" id="val-bounded_split_delim"><a href=
 "#val-bounded_split_delim" class="anchor"></a><code><span class=
 "keyword">val</span> bounded_split_delim : <a href=
 "index.html#type-regexp">regexp</a> <span>-&gt;</span> string
-<span>-&gt;</span> int <span>-&gt;</span> string list</code></dt>
+<span>-&gt;</span> int <span>-&gt;</span> <span>string
+list</span></code></dt>
 <dd>
 <p>Same as <code>split</code> and <code>bounded_split</code>, but
 occurrences of the delimiter at the beginning and at the end of the
@@ -404,14 +405,16 @@ string</code></td>
 "#val-full_split" class="anchor"></a><code><span class=
 "keyword">val</span> full_split : <a href=
 "index.html#type-regexp">regexp</a> <span>-&gt;</span> string
-<span>-&gt;</span> <a href=
-"index.html#type-split_result">split_result</a> list</code></dt>
+<span>-&gt;</span> <span><a href=
+"index.html#type-split_result">split_result</a>
+list</span></code></dt>
 <dt class="spec value" id="val-bounded_full_split"><a href=
 "#val-bounded_full_split" class="anchor"></a><code><span class=
 "keyword">val</span> bounded_full_split : <a href=
 "index.html#type-regexp">regexp</a> <span>-&gt;</span> string
-<span>-&gt;</span> int <span>-&gt;</span> <a href=
-"index.html#type-split_result">split_result</a> list</code></dt>
+<span>-&gt;</span> int <span>-&gt;</span> <span><a href=
+"index.html#type-split_result">split_result</a>
+list</span></code></dt>
 <dd>
 <p>Same as <code>split_delim</code> and
 <code>bounded_split_delim</code>, but returns the delimiters as

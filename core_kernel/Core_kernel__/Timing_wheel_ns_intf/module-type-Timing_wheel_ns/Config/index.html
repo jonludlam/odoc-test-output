@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Config
 (core_kernel.Core_kernel__.Timing_wheel_ns_intf.Timing_wheel_ns.Config)</title>
 <link rel="stylesheet" href="../../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../../highlight.pack.js">
-</script>
+<script src="../../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -71,8 +70,8 @@ t</a> := <a href="index.html#type-t">t</a></code></span></summary>
 <dl>
 <dt class="spec value" id="val-invariant"><a href="#val-invariant"
 class="anchor"></a><code><span class="keyword">val</span> invariant
-: <a href="index.html#type-t">t</a> <a href=
-"../../../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a></code></dt>
+: <span><a href="index.html#type-t">t</a> <a href=
+"../../../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -81,12 +80,12 @@ class="anchor"></a><code><span class="keyword">val</span> invariant
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-?⁠capacity:<a href=
-"../../../Import/index.html#type-int">Core_kernel__.Import.int</a>
-<span>-&gt;</span> ?⁠level_bits:<a href=
-"../Level_bits/index.html#type-t">Level_bits.t</a>
-<span>-&gt;</span> alarm_precision:<a href=
-"../Alarm_precision/index.html#type-t">Alarm_precision.t</a>
+<span>?⁠capacity:<a href=
+"../../../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
+<span>-&gt;</span> <span>?⁠level_bits:<a href=
+"../Level_bits/index.html#type-t">Level_bits.t</a></span>
+<span>-&gt;</span> <span>alarm_precision:<a href=
+"../Alarm_precision/index.html#type-t">Alarm_precision.t</a></span>
 <span>-&gt;</span> <a href=
 "../../../Import/index.html#type-unit">Core_kernel__.Import.unit</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
@@ -113,9 +112,10 @@ class="anchor"></a><code><span class="keyword">val</span> invariant
 "../Level_bits/index.html#type-t">Level_bits.t</a></code></dt>
 <dt class="spec value" id="val-durations"><a href="#val-durations"
 class="anchor"></a><code><span class="keyword">val</span> durations
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Time/Span/index.html#type-t">Time.Span.t</a> <a href=
-"../../../Import/index.html#type-list">Core_kernel__.Import.list</a></code></dt>
+: <a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><a href="../Time/Span/index.html#type-t">Time.Span.t</a>
+<a href=
+"../../../Import/index.html#type-list">Core_kernel__.Import.list</a></span></code></dt>
 <dd>
 <p><code>durations t</code> returns the durations of the levels in
 <code>t</code></p>

@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Bin_prot__Utils (bin_prot.Bin_prot__Utils)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -49,12 +48,12 @@ the payload.</p>
 <dl>
 <dt class="spec value" id="val-bin_read_size_header"><a href=
 "#val-bin_read_size_header" class="anchor"></a><code><span class=
-"keyword">val</span> bin_read_size_header : int <a href=
-"../Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+"keyword">val</span> bin_read_size_header : <span>int <a href=
+"../Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_write_size_header"><a href=
 "#val-bin_write_size_header" class="anchor"></a><code><span class=
-"keyword">val</span> bin_write_size_header : int <a href=
-"../Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></code></dt>
+"keyword">val</span> bin_write_size_header : <span>int <a href=
+"../Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></span></code></dt>
 <dd>
 <p><code>bin_read_size_header</code> and
 <code>bin_write_size_header</code> are bin-prot serializers for the
@@ -64,9 +63,9 @@ size header described above.</p>
 <dl>
 <dt class="spec value" id="val-bin_dump"><a href="#val-bin_dump"
 class="anchor"></a><code><span class="keyword">val</span> bin_dump
-: ?⁠header:bool <span>-&gt;</span> <span class="type-var">'a</span>
-<a href=
-"../Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a>
+: <span>?⁠header:bool</span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> <a href=
+"../Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
 "../Bin_prot/Common/index.html#type-buf">Bin_prot.Common.buf</a></code></dt>
@@ -102,13 +101,13 @@ raise.</p>
 <dl>
 <dt class="spec value" id="val-bin_read_stream"><a href=
 "#val-bin_read_stream" class="anchor"></a><code><span class=
-"keyword">val</span> bin_read_stream : ?⁠max_size:int
-<span>-&gt;</span> read:(<a href=
+"keyword">val</span> bin_read_stream : <span>?⁠max_size:int</span>
+<span>-&gt;</span> <span>read:<span>(<a href=
 "../Bin_prot/Common/index.html#type-buf">Bin_prot.Common.buf</a>
-<span>-&gt;</span> pos:int <span>-&gt;</span> len:int
-<span>-&gt;</span> unit) <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a>
+<span>-&gt;</span> <span>pos:int</span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> unit)</span></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dd>
 <p><code>bin_read_stream ?max_size ~read reader</code> reads binary
@@ -192,9 +191,9 @@ with <code>reader</code> can raise.</p>
 <span>-&gt;</span> <a href=
 "../Bin_prot/Binable/index.html#module-type-S1">Bin_prot.Binable.S1</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href="Make_binable1/index.html#type-t">t</a> := <span class=
-"type-var">'a</span> <a href=
-"Make_binable1/argument-1-Bin_spec/index.html#type-t">Bin_spec.t</a></code></div>
+<span>'a <a href="Make_binable1/index.html#type-t">t</a></span> :=
+<span><span class="type-var">'a</span> <a href=
+"Make_binable1/argument-1-Bin_spec/index.html#type-t">Bin_spec.t</a></span></code></div>
 <div class="spec module-type" id="module-type-Make_binable2_spec">
 <a href="#module-type-Make_binable2_spec" class=
 "anchor"></a><code><span class="keyword">module</span> <span class=
@@ -213,10 +212,11 @@ with <code>reader</code> can raise.</p>
 <span>-&gt;</span> <a href=
 "../Bin_prot/Binable/index.html#module-type-S2">Bin_prot.Binable.S2</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-('a, 'b) <a href="Make_binable2/index.html#type-t">t</a> :=
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href=
-"Make_binable2/argument-1-Bin_spec/index.html#type-t">Bin_spec.t</a></code></div>
+<span>('a, 'b) <a href=
+"Make_binable2/index.html#type-t">t</a></span> :=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"Make_binable2/argument-1-Bin_spec/index.html#type-t">Bin_spec.t</a></span></code></div>
 <div class="spec module-type" id="module-type-Make_binable3_spec">
 <a href="#module-type-Make_binable3_spec" class=
 "anchor"></a><code><span class="keyword">module</span> <span class=
@@ -235,11 +235,12 @@ with <code>reader</code> can raise.</p>
 <span>-&gt;</span> <a href=
 "../Bin_prot/Binable/index.html#module-type-S3">Bin_prot.Binable.S3</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-('a, 'b, 'c) <a href="Make_binable3/index.html#type-t">t</a> :=
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+<span>('a, 'b, 'c) <a href=
+"Make_binable3/index.html#type-t">t</a></span> :=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)</span>
 <a href=
-"Make_binable3/argument-1-Bin_spec/index.html#type-t">Bin_spec.t</a></code></div>
+"Make_binable3/argument-1-Bin_spec/index.html#type-t">Bin_spec.t</a></span></code></div>
 <aside>
 <p>Conversion of iterable types</p>
 </aside>
@@ -283,10 +284,11 @@ with <code>reader</code> can raise.</p>
 <span>-&gt;</span> <a href=
 "../Bin_prot/Binable/index.html#module-type-S1">Bin_prot.Binable.S1</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href="Make_iterable_binable1/index.html#type-t">t</a> :=
-<span class="type-var">'a</span> <a href=
+<span>'a <a href=
+"Make_iterable_binable1/index.html#type-t">t</a></span> :=
+<span><span class="type-var">'a</span> <a href=
 "Make_iterable_binable1/argument-1-Iterable_spec/index.html#type-t">
-Iterable_spec.t</a></code></div>
+Iterable_spec.t</a></span></code></div>
 <div class="spec module-type" id=
 "module-type-Make_iterable_binable2_spec"><a href=
 "#module-type-Make_iterable_binable2_spec" class=
@@ -306,11 +308,12 @@ Iterable_spec.t</a></code></div>
 <span>-&gt;</span> <a href=
 "../Bin_prot/Binable/index.html#module-type-S2">Bin_prot.Binable.S2</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-('a, 'b) <a href="Make_iterable_binable2/index.html#type-t">t</a>
-:= (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href=
+<span>('a, 'b) <a href=
+"Make_iterable_binable2/index.html#type-t">t</a></span> :=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
 "Make_iterable_binable2/argument-1-Iterable_spec/index.html#type-t">
-Iterable_spec.t</a></code></div>
+Iterable_spec.t</a></span></code></div>
 <div class="spec module-type" id=
 "module-type-Make_iterable_binable3_spec"><a href=
 "#module-type-Make_iterable_binable3_spec" class=
@@ -330,13 +333,13 @@ Iterable_spec.t</a></code></div>
 <span>-&gt;</span> <a href=
 "../Bin_prot/Binable/index.html#module-type-S3">Bin_prot.Binable.S3</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-('a, 'b, 'c) <a href=
-"Make_iterable_binable3/index.html#type-t">t</a> := (<span class=
-"type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+<span>('a, 'b, 'c) <a href=
+"Make_iterable_binable3/index.html#type-t">t</a></span> :=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)</span>
 <a href=
 "Make_iterable_binable3/argument-1-Iterable_spec/index.html#type-t">
-Iterable_spec.t</a></code></div>
+Iterable_spec.t</a></span></code></div>
 </div>
 </body>
 </html>

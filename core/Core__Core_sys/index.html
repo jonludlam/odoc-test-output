@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Core__Core_sys (core.Core__Core_sys)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -31,8 +30,8 @@ hljs.initHighlightingOnLoad();
 </header>
 <dl>
 <dt class="spec value" id="val-argv"><a href="#val-argv" class=
-"anchor"></a><code><span class="keyword">val</span> argv : string
-array</code></dt>
+"anchor"></a><code><span class="keyword">val</span> argv :
+<span>string array</span></code></dt>
 <dd>
 <p>The command line arguments given to the process. The first
 element is the command name used to invoke the program. The
@@ -56,9 +55,10 @@ running.</p>
 <dl>
 <dt class="spec value" id="val-file_exists"><a href=
 "#val-file_exists" class="anchor"></a><code><span class=
-"keyword">val</span> file_exists : ?⁠follow_symlinks:bool
-<span>-&gt;</span> string <span>-&gt;</span> [ `Yes | `No |
-`Unknown ]</code></dt>
+"keyword">val</span> file_exists :
+<span>?⁠follow_symlinks:bool</span> <span>-&gt;</span> string
+<span>-&gt;</span> <span>[ `Yes <span>| `No</span> <span>|
+`Unknown</span> ]</span></code></dt>
 <dd>
 <p><code>file_exists ~follow_symlinks path</code></p>
 <p>Test whether the file in <code>path</code> exists on the file
@@ -73,8 +73,9 @@ files in directories to which we do not have read permission).</p>
 <dl>
 <dt class="spec value" id="val-file_exists_exn"><a href=
 "#val-file_exists_exn" class="anchor"></a><code><span class=
-"keyword">val</span> file_exists_exn : ?⁠follow_symlinks:bool
-<span>-&gt;</span> string <span>-&gt;</span> bool</code></dt>
+"keyword">val</span> file_exists_exn :
+<span>?⁠follow_symlinks:bool</span> <span>-&gt;</span> string
+<span>-&gt;</span> bool</code></dt>
 <dd>
 <p>Same as <code>file_exists</code> but blows up on
 <code>`Unknown</code></p>
@@ -83,9 +84,10 @@ files in directories to which we do not have read permission).</p>
 <dl>
 <dt class="spec value" id="val-is_directory"><a href=
 "#val-is_directory" class="anchor"></a><code><span class=
-"keyword">val</span> is_directory : ?⁠follow_symlinks:bool
-<span>-&gt;</span> string <span>-&gt;</span> [ `Yes | `No |
-`Unknown ]</code></dt>
+"keyword">val</span> is_directory :
+<span>?⁠follow_symlinks:bool</span> <span>-&gt;</span> string
+<span>-&gt;</span> <span>[ `Yes <span>| `No</span> <span>|
+`Unknown</span> ]</span></code></dt>
 <dd>
 <p>Returns <code>`Yes</code> if the file exists and is a
 directory</p>
@@ -94,8 +96,9 @@ directory</p>
 <dl>
 <dt class="spec value" id="val-is_file"><a href="#val-is_file"
 class="anchor"></a><code><span class="keyword">val</span> is_file :
-?⁠follow_symlinks:bool <span>-&gt;</span> string <span>-&gt;</span>
-[ `Yes | `No | `Unknown ]</code></dt>
+<span>?⁠follow_symlinks:bool</span> <span>-&gt;</span> string
+<span>-&gt;</span> <span>[ `Yes <span>| `No</span> <span>|
+`Unknown</span> ]</span></code></dt>
 <dd>
 <p>Returns <code>`Yes</code> if the file exists and is a regular
 file</p>
@@ -104,12 +107,14 @@ file</p>
 <dl>
 <dt class="spec value" id="val-is_directory_exn"><a href=
 "#val-is_directory_exn" class="anchor"></a><code><span class=
-"keyword">val</span> is_directory_exn : ?⁠follow_symlinks:bool
-<span>-&gt;</span> string <span>-&gt;</span> bool</code></dt>
+"keyword">val</span> is_directory_exn :
+<span>?⁠follow_symlinks:bool</span> <span>-&gt;</span> string
+<span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-is_file_exn"><a href=
 "#val-is_file_exn" class="anchor"></a><code><span class=
-"keyword">val</span> is_file_exn : ?⁠follow_symlinks:bool
-<span>-&gt;</span> string <span>-&gt;</span> bool</code></dt>
+"keyword">val</span> is_file_exn :
+<span>?⁠follow_symlinks:bool</span> <span>-&gt;</span> string
+<span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-remove"><a href="#val-remove" class=
 "anchor"></a><code><span class="keyword">val</span> remove : string
 <span>-&gt;</span> unit</code></dt>
@@ -131,7 +136,7 @@ depending on your operating system.</p>
 <dl>
 <dt class="spec value" id="val-getenv"><a href="#val-getenv" class=
 "anchor"></a><code><span class="keyword">val</span> getenv : string
-<span>-&gt;</span> string option</code></dt>
+<span>-&gt;</span> <span>string option</span></code></dt>
 <dd>
 <p>Return the value associated to a variable in the process
 environment unless the process has special privileges. Return
@@ -147,7 +152,7 @@ string</code></dt>
 <dt class="spec value" id="val-unsafe_getenv"><a href=
 "#val-unsafe_getenv" class="anchor"></a><code><span class=
 "keyword">val</span> unsafe_getenv : string <span>-&gt;</span>
-string option</code></dt>
+<span>string option</span></code></dt>
 <dd>
 <p>Return the value associated to a variable in the process
 environment.</p>
@@ -215,7 +220,7 @@ with sh, bash, and zsh.</p>
 <dl>
 <dt class="spec value" id="val-readdir"><a href="#val-readdir"
 class="anchor"></a><code><span class="keyword">val</span> readdir :
-string <span>-&gt;</span> string array</code></dt>
+string <span>-&gt;</span> <span>string array</span></code></dt>
 <dd>
 <p>Return the names of all files present in the given directory.
 Names denoting the current directory and the parent directory
@@ -229,9 +234,10 @@ particular, guaranteed to appear in alphabetical order.</p>
 <dl>
 <dt class="spec value" id="val-fold_dir"><a href="#val-fold_dir"
 class="anchor"></a><code><span class="keyword">val</span> fold_dir
-: init:<span class="type-var">'acc</span> <span>-&gt;</span>
-f:(<span class="type-var">'acc</span> <span>-&gt;</span> string
-<span>-&gt;</span> <span class="type-var">'acc</span>)
+: <span>init:<span class="type-var">'acc</span></span>
+<span>-&gt;</span> <span>f:<span>(<span class=
+"type-var">'acc</span> <span>-&gt;</span> string <span>-&gt;</span>
+<span class="type-var">'acc</span>)</span></span>
 <span>-&gt;</span> string <span>-&gt;</span> <span class=
 "type-var">'acc</span></code></dt>
 <dd>
@@ -250,7 +256,7 @@ same exception than opendir and closedir.</p>
 <dl>
 <dt class="spec value" id="val-ls_dir"><a href="#val-ls_dir" class=
 "anchor"></a><code><span class="keyword">val</span> ls_dir : string
-<span>-&gt;</span> string list</code></dt>
+<span>-&gt;</span> <span>string list</span></code></dt>
 <dd>
 <p>Same as <code>readdir</code>, but return a list rather than an
 array.</p>
@@ -259,8 +265,8 @@ array.</p>
 <dl>
 <dt class="spec value" id="val-interactive"><a href=
 "#val-interactive" class="anchor"></a><code><span class=
-"keyword">val</span> interactive : bool <a href=
-"../Core__/Import/index.html#type-ref">Core__.Import.ref</a></code></dt>
+"keyword">val</span> interactive : <span>bool <a href=
+"../Core__/Import/index.html#type-ref">Core__.Import.ref</a></span></code></dt>
 <dd>
 <p>This reference is initially set to <code>false</code> in
 standalone programs and to <code>true</code> if the code is being
@@ -370,8 +376,8 @@ string. The <code>[.patchlevel]</code> and
 <dl>
 <dt class="spec value" id="val-execution_mode"><a href=
 "#val-execution_mode" class="anchor"></a><code><span class=
-"keyword">val</span> execution_mode : unit <span>-&gt;</span> [
-`Bytecode | `Native ]</code></dt>
+"keyword">val</span> execution_mode : unit <span>-&gt;</span>
+<span>[ `Bytecode <span>| `Native</span> ]</span></code></dt>
 <dd>
 <p><code>execution_mode</code> tests whether the code being
 executed was compiled natively or to bytecode.</p>

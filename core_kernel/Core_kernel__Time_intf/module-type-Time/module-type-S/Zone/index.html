@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Zone
 (core_kernel.Core_kernel__Time_intf.Time.S.Zone)</title>
 <link rel="stylesheet" href="../../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../../highlight.pack.js">
-</script>
+<script src="../../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -88,10 +87,10 @@ class="anchor"></a><code><span class="keyword">val</span> compare :
 <dl>
 <dt class="spec value" id="val-input_tz_file"><a href=
 "#val-input_tz_file" class="anchor"></a><code><span class=
-"keyword">val</span> input_tz_file : zonename:<a href=
-"../../../../Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
-<span>-&gt;</span> filename:<a href=
-"../../../../Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
+"keyword">val</span> input_tz_file : <span>zonename:<a href=
+"../../../../Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a></span>
+<span>-&gt;</span> <span>filename:<a href=
+"../../../../Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a></span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>input_tz_file ~zonename ~filename</code> read in
@@ -102,12 +101,12 @@ t</code> = <code>zonename</code></p>
 <dl>
 <dt class="spec value" id="val-likely_machine_zones"><a href=
 "#val-likely_machine_zones" class="anchor"></a><code><span class=
-"keyword">val</span> likely_machine_zones : <a href=
+"keyword">val</span> likely_machine_zones : <span><span><a href=
 "../../../../Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
 <a href=
-"../../../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a>
+"../../../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a></span>
 <a href=
-"../../../../Core_kernel__/Import/index.html#type-ref">Core_kernel__.Import.ref</a></code></dt>
+"../../../../Core_kernel__/Import/index.html#type-ref">Core_kernel__.Import.ref</a></span></code></dt>
 <dd>
 <p><code>likely_machine_zones</code> is a list of zone names that
 will be searched first when trying to determine the machine zone of
@@ -118,8 +117,8 @@ will speed the very first use of the local timezone.</p>
 <dl>
 <dt class="spec value" id="val-of_utc_offset"><a href=
 "#val-of_utc_offset" class="anchor"></a><code><span class=
-"keyword">val</span> of_utc_offset : hours:<a href=
-"../../../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> of_utc_offset : <span>hours:<a href=
+"../../../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>of_utc_offset offset</code> returns a timezone with a
@@ -142,10 +141,10 @@ static UTC offset (given in hours).</p>
 <dt class="spec value" id="val-original_filename"><a href=
 "#val-original_filename" class="anchor"></a><code><span class=
 "keyword">val</span> original_filename : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> <span><a href=
 "../../../../Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
 <a href=
-"../../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+"../../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p><code>original_filename t</code> return the filename
 <code>t</code> was loaded from (if any)</p>
@@ -154,10 +153,10 @@ static UTC offset (given in hours).</p>
 <dl>
 <dt class="spec value" id="val-digest"><a href="#val-digest" class=
 "anchor"></a><code><span class="keyword">val</span> digest :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <span><a href=
 "../../../../Core_kernel/Md5/index.html#type-t">Core_kernel.Md5.t</a>
 <a href=
-"../../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+"../../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p><code>digest t</code> return the MD5 digest of the file the t
 was created from (if any)</p>
@@ -348,10 +347,11 @@ date_and_ofday_of_absolute_time : <a href="index.html#type-t">t</a>
 "#val-next_clock_shift" class="anchor"></a><code><span class=
 "keyword">val</span> next_clock_shift : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span>
-strictly_after:<a href="Time/index.html#type-t">Time.t</a>
-<span>-&gt;</span> (<a href="Time/index.html#type-t">Time.t</a> *
-<a href="Time/Span/index.html#type-t">Time.Span.t</a>) <a href=
-"../../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+<span>strictly_after:<a href=
+"Time/index.html#type-t">Time.t</a></span> <span>-&gt;</span>
+<span><span>(<a href="Time/index.html#type-t">Time.t</a> * <a href=
+"Time/Span/index.html#type-t">Time.Span.t</a>)</span> <a href=
+"../../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p>Takes a <code>Time.t</code> and returns the next
 <code>Time.t</code> strictly after it, if any, that the time zone
@@ -362,11 +362,12 @@ UTC offset changes, and by how much it does so.</p>
 <dt class="spec value" id="val-prev_clock_shift"><a href=
 "#val-prev_clock_shift" class="anchor"></a><code><span class=
 "keyword">val</span> prev_clock_shift : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> at_or_before:<a href=
-"Time/index.html#type-t">Time.t</a> <span>-&gt;</span> (<a href=
-"Time/index.html#type-t">Time.t</a> * <a href=
-"Time/Span/index.html#type-t">Time.Span.t</a>) <a href=
-"../../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+"index.html#type-t">t</a> <span>-&gt;</span>
+<span>at_or_before:<a href=
+"Time/index.html#type-t">Time.t</a></span> <span>-&gt;</span>
+<span><span>(<a href="Time/index.html#type-t">Time.t</a> * <a href=
+"Time/Span/index.html#type-t">Time.Span.t</a>)</span> <a href=
+"../../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p>As <code>next_clock_shift</code>, but *at or before* the given
 time.</p>

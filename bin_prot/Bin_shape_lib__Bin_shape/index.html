@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Bin_shape_lib__Bin_shape
 (bin_prot.Bin_shape_lib__Bin_shape)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -100,10 +99,11 @@ group</code></dt>
 <dt class="spec value" id="val-group"><a href="#val-group" class=
 "anchor"></a><code><span class="keyword">val</span> group :
 <a href="Location/index.html#type-t">Location.t</a>
-<span>-&gt;</span> (<a href="Tid/index.html#type-t">Tid.t</a> *
-<a href="Vid/index.html#type-t">Vid.t</a> list * <a href=
-"index.html#type-t">t</a>) list <span>-&gt;</span> <a href=
-"index.html#type-group">group</a></code></dt>
+<span>-&gt;</span> <span><span>(<a href=
+"Tid/index.html#type-t">Tid.t</a> * <span><a href=
+"Vid/index.html#type-t">Vid.t</a> list</span> * <a href=
+"index.html#type-t">t</a>)</span> list</span> <span>-&gt;</span>
+<a href="index.html#type-group">group</a></code></dt>
 <dd>
 <p>This function is generative; repeated calls create distinct
 groups</p>
@@ -112,16 +112,18 @@ groups</p>
 <dl>
 <dt class="spec value" id="val-tuple"><a href="#val-tuple" class=
 "anchor"></a><code><span class="keyword">val</span> tuple :
-<a href="index.html#type-t">t</a> list <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><a href="index.html#type-t">t</a> list</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-record"><a href="#val-record" class=
 "anchor"></a><code><span class="keyword">val</span> record :
-(string * <a href="index.html#type-t">t</a>) list
-<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<span><span>(string * <a href="index.html#type-t">t</a>)</span>
+list</span> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-variant"><a href="#val-variant"
 class="anchor"></a><code><span class="keyword">val</span> variant :
-(string * <a href="index.html#type-t">t</a> list) list
-<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<span><span>(string * <span><a href="index.html#type-t">t</a>
+list</span>)</span> list</span> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-poly_variant_row"><a href=
@@ -131,8 +133,8 @@ class="anchor"></a><code><span class="keyword">val</span> variant :
 <dl>
 <dt class="spec value" id="val-constr"><a href="#val-constr" class=
 "anchor"></a><code><span class="keyword">val</span> constr : string
-<span>-&gt;</span> <a href="index.html#type-t">t</a> option
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href="index.html#type-t">t</a>
+option</span> <span>-&gt;</span> <a href=
 "index.html#type-poly_variant_row">poly_variant_row</a></code></dt>
 <dt class="spec value" id="val-inherit_"><a href="#val-inherit_"
 class="anchor"></a><code><span class="keyword">val</span> inherit_
@@ -144,14 +146,14 @@ class="anchor"></a><code><span class="keyword">val</span> inherit_
 "#val-poly_variant" class="anchor"></a><code><span class=
 "keyword">val</span> poly_variant : <a href=
 "Location/index.html#type-t">Location.t</a> <span>-&gt;</span>
-<a href="index.html#type-poly_variant_row">poly_variant_row</a>
-list <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><a href=
+"index.html#type-poly_variant_row">poly_variant_row</a> list</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-rec_app"><a href="#val-rec_app"
 class="anchor"></a><code><span class="keyword">val</span> rec_app :
 <a href="Tid/index.html#type-t">Tid.t</a> <span>-&gt;</span>
-<a href="index.html#type-t">t</a> list <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><a href="index.html#type-t">t</a> list</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p>recursive apps within the current group</p>
 </dd>
@@ -161,8 +163,8 @@ class="anchor"></a><code><span class="keyword">val</span> rec_app :
 class="anchor"></a><code><span class="keyword">val</span> top_app :
 <a href="index.html#type-group">group</a> <span>-&gt;</span>
 <a href="Tid/index.html#type-t">Tid.t</a> <span>-&gt;</span>
-<a href="index.html#type-t">t</a> list <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><a href="index.html#type-t">t</a> list</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p>apps from outside the group</p>
 </dd>
@@ -176,8 +178,8 @@ class="anchor"></a><code><span class="keyword">val</span> top_app :
 <dt class="spec value" id="val-basetype"><a href="#val-basetype"
 class="anchor"></a><code><span class="keyword">val</span> basetype
 : <a href="Uuid/index.html#type-t">Uuid.t</a> <span>-&gt;</span>
-<a href="index.html#type-t">t</a> list <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><a href="index.html#type-t">t</a> list</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p>Built-in types and types with custom serialization: i.e.
 int,list,... To avoid accidental protocol compatibility, pass a

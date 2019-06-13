@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Core_kernel__Type_immediacy
 (core_kernel.Core_kernel__Type_immediacy)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -187,8 +186,8 @@ witness (e.g. <code>Sometimes</code> instead of
 </header>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <div class="spec module" id="module-Always"><a href=
 "#module-Always" class="anchor"></a><code><span class=
@@ -209,38 +208,39 @@ class="anchor"></a><code><span class="keyword">module</span>
 <dl>
 <dt class="spec value" id="val-of_typerep"><a href=
 "#val-of_typerep" class="anchor"></a><code><span class=
-"keyword">val</span> of_typerep : <span class="type-var">'a</span>
-<a href=
+"keyword">val</span> of_typerep : <span><span class=
+"type-var">'a</span> <a href=
 "../../typerep/Typerep_lib__Std_internal/Typerep/index.html#type-t">
-Core_kernel__.Import.Typerep.t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.Typerep.t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-dest"><a href="#type-dest" class=
-"anchor"></a><code><span class="keyword">type</span> 'a dest</code>
-<code>=</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+dest</span></code> <code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-dest.Always" class="anchored">
 <td class="def constructor"><a href="#type-dest.Always" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Always</span> <span class="keyword">of</span>
-<span class="type-var">'a</span> <a href=
-"Always/index.html#type-t">Always.t</a></code></td>
+<span><span class="type-var">'a</span> <a href=
+"Always/index.html#type-t">Always.t</a></span></code></td>
 </tr>
 <tr id="type-dest.Sometimes" class="anchored">
 <td class="def constructor"><a href="#type-dest.Sometimes" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Sometimes</span> <span class="keyword">of</span>
-<span class="type-var">'a</span> <a href=
-"Sometimes/index.html#type-t">Sometimes.t</a></code></td>
+<span><span class="type-var">'a</span> <a href=
+"Sometimes/index.html#type-t">Sometimes.t</a></span></code></td>
 </tr>
 <tr id="type-dest.Never" class="anchored">
 <td class="def constructor"><a href="#type-dest.Never" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Never</span> <span class="keyword">of</span>
-<span class="type-var">'a</span> <a href=
-"Never/index.html#type-t">Never.t</a></code></td>
+<span><span class="type-var">'a</span> <a href=
+"Never/index.html#type-t">Never.t</a></span></code></td>
 </tr>
 </table>
 </dd>
@@ -248,52 +248,53 @@ Core_kernel__.Import.Typerep.t</a> <span>-&gt;</span> <span class=
 <dl>
 <dt class="spec value" id="val-dest"><a href="#val-dest" class=
 "anchor"></a><code><span class="keyword">val</span> dest :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-dest">dest</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-dest">dest</a></span></code></dt>
 <dt class="spec value" id="val-int_as_value"><a href=
 "#val-int_as_value" class="anchor"></a><code><span class=
-"keyword">val</span> int_as_value : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> int_as_value : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href=
 "../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dt class="spec value" id="val-int_as_value_exn"><a href=
 "#val-int_as_value_exn" class="anchor"></a><code><span class=
-"keyword">val</span> int_as_value_exn : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> int_as_value_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href=
 "../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dt class="spec value" id="val-int_is_value"><a href=
 "#val-int_is_value" class="anchor"></a><code><span class=
-"keyword">val</span> int_is_value : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> int_is_value : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href=
 "../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
 "../Core_kernel__/Import/index.html#type-bool">Core_kernel__.Import.bool</a></code></dt>
 <dt class="spec value" id="val-value_as_int"><a href=
 "#val-value_as_int" class="anchor"></a><code><span class=
-"keyword">val</span> value_as_int : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> value_as_int : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
 <a href=
-"../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+"../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dt class="spec value" id="val-value_as_int_exn"><a href=
 "#val-value_as_int_exn" class="anchor"></a><code><span class=
-"keyword">val</span> value_as_int_exn : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> value_as_int_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
 "../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-value_is_int"><a href=
 "#val-value_is_int" class="anchor"></a><code><span class=
-"keyword">val</span> value_is_int : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> value_is_int : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
 "../Core_kernel__/Import/index.html#type-bool">Core_kernel__.Import.bool</a></code></dt>

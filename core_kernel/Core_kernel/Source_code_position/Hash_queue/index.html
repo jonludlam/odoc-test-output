@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Hash_queue
 (core_kernel.Core_kernel.Source_code_position.Hash_queue)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -44,8 +43,8 @@ class="anchor"></a><code><span class="keyword">module</span> Key :
 = <a href="../index.html#type-t">t</a></code></div>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 <dd>
 <p>A hash-queue, where the values are of type <code>'a</code>.</p>
 </dd>
@@ -60,10 +59,11 @@ t</code></dt>
 <dl>
 <dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
 class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
-: (<span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+: <span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<a href=
+"../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
 </details>
@@ -78,22 +78,25 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 "keyword">include</span> <a href=
 "../../Container/index.html#module-type-S1">Container.S1</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href="../../Container/module-type-S1/index.html#type-t">t</a>
-:= <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></span></summary>
+<span>'a <a href=
+"../../Container/module-type-S1/index.html#type-t">t</a></span> :=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-mem"><a href="#val-mem" class=
 "anchor"></a><code><span class="keyword">val</span> mem :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span>
+<span>equal:<span>(<span class="type-var">'a</span>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> equal:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> bool) <span>-&gt;</span> bool</code></dt>
+<span>-&gt;</span> bool)</span></span> <span>-&gt;</span>
+bool</code></dt>
 <dd>
 <p>Checks whether the provided element is there, using
 <code>equal</code>.</p>
@@ -102,25 +105,29 @@ t</code></dt>
 <dl>
 <dt class="spec value" id="val-length"><a href="#val-length" class=
 "anchor"></a><code><span class="keyword">val</span> length :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> int</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-is_empty"><a href="#val-is_empty"
 class="anchor"></a><code><span class="keyword">val</span> is_empty
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+bool</code></dt>
 <dt class="spec value" id="val-iter"><a href="#val-iter" class=
 "anchor"></a><code><span class="keyword">val</span> iter :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span>
-<span>-&gt;</span> unit) <span>-&gt;</span> unit</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+unit)</span></span> <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-fold"><a href="#val-fold" class=
 "anchor"></a><code><span class="keyword">val</span> fold :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> init:<span class="type-var">'accum</span>
-<span>-&gt;</span> f:(<span class="type-var">'accum</span>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'accum</span>)
-<span>-&gt;</span> <span class="type-var">'accum</span></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>init:<span class="type-var">'accum</span></span>
+<span>-&gt;</span> <span>f:<span>(<span class=
+"type-var">'accum</span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <span class=
+"type-var">'accum</span>)</span></span> <span>-&gt;</span>
+<span class="type-var">'accum</span></code></dt>
 <dd>
 <p><code>fold t ~init ~f</code> returns <code>f (... f (f (f init
 e1) e2) e3 ...) en</code>, where <code>e1..en</code> are the
@@ -130,18 +137,20 @@ elements of <code>t</code></p>
 <dl>
 <dt class="spec value" id="val-fold_result"><a href=
 "#val-fold_result" class="anchor"></a><code><span class=
-"keyword">val</span> fold_result : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-init:<span class="type-var">'accum</span> <span>-&gt;</span>
-f:(<span class="type-var">'accum</span> <span>-&gt;</span>
-<span class="type-var">'a</span> <span>-&gt;</span> (<span class=
-"type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)
-<a href=
-"../../../../base/Base/Result/index.html#type-t">Base.Result.t</a>)
-<span>-&gt;</span> (<span class=
-"type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)
-<a href=
-"../../../../base/Base/Result/index.html#type-t">Base.Result.t</a></code></dt>
+"keyword">val</span> fold_result : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>init:<span class=
+"type-var">'accum</span></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'accum</span>
+<span>-&gt;</span> <span class="type-var">'a</span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'accum</span>,&nbsp;<span class=
+"type-var">'e</span>)</span> <a href=
+"../../../../base/Base/Result/index.html#type-t">Base.Result.t</a></span>)</span></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'accum</span>,&nbsp;<span class=
+"type-var">'e</span>)</span> <a href=
+"../../../../base/Base/Result/index.html#type-t">Base.Result.t</a></span></code></dt>
 <dd>
 <p><code>fold_result t ~init ~f</code> is a short-circuiting
 version of <code>fold</code> that runs in the <code>Result</code>
@@ -153,17 +162,20 @@ value is returned without any additional invocations of
 <dl>
 <dt class="spec value" id="val-fold_until"><a href=
 "#val-fold_until" class="anchor"></a><code><span class=
-"keyword">val</span> fold_until : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-init:<span class="type-var">'accum</span> <span>-&gt;</span>
-f:(<span class="type-var">'accum</span> <span>-&gt;</span>
-<span class="type-var">'a</span> <span>-&gt;</span> (<span class=
+"keyword">val</span> fold_until : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>init:<span class=
+"type-var">'accum</span></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'accum</span>
+<span>-&gt;</span> <span class="type-var">'a</span>
+<span>-&gt;</span> <span><span>(<span class=
 "type-var">'accum</span>,&nbsp;<span class=
-"type-var">'final</span>) <a href=
+"type-var">'final</span>)</span> <a href=
 "../../../../base/Base__/Container_intf/Export/Continue_or_stop/index.html#type-t">
-Base__.Container_intf.Continue_or_stop.t</a>) <span>-&gt;</span>
-finish:(<span class="type-var">'accum</span> <span>-&gt;</span>
-<span class="type-var">'final</span>) <span>-&gt;</span>
+Base__.Container_intf.Continue_or_stop.t</a></span>)</span></span>
+<span>-&gt;</span> <span>finish:<span>(<span class=
+"type-var">'accum</span> <span>-&gt;</span> <span class=
+"type-var">'final</span>)</span></span> <span>-&gt;</span>
 <span class="type-var">'final</span></code></dt>
 <dd>
 <p><code>fold_until t ~init ~f ~finish</code> is a short-circuiting
@@ -177,9 +189,10 @@ final result is computed by <code>finish</code>.</p>
 <dl>
 <dt class="spec value" id="val-exists"><a href="#val-exists" class=
 "anchor"></a><code><span class="keyword">val</span> exists :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span>
-<span>-&gt;</span> bool) <span>-&gt;</span> bool</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+bool)</span></span> <span>-&gt;</span> bool</code></dt>
 <dd>
 <p>Returns <code>true</code> if and only if there exists an element
 for which the provided function evaluates to <code>true</code>.
@@ -189,9 +202,10 @@ This is a short-circuiting operation.</p>
 <dl>
 <dt class="spec value" id="val-for_all"><a href="#val-for_all"
 class="anchor"></a><code><span class="keyword">val</span> for_all :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span>
-<span>-&gt;</span> bool) <span>-&gt;</span> bool</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+bool)</span></span> <span>-&gt;</span> bool</code></dt>
 <dd>
 <p>Returns <code>true</code> if and only if the provided function
 evaluates to <code>true</code> for all elements. This is a
@@ -201,9 +215,10 @@ short-circuiting operation.</p>
 <dl>
 <dt class="spec value" id="val-count"><a href="#val-count" class=
 "anchor"></a><code><span class="keyword">val</span> count :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span>
-<span>-&gt;</span> bool) <span>-&gt;</span> int</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+bool)</span></span> <span>-&gt;</span> int</code></dt>
 <dd>
 <p>Returns the number of elements for which the provided function
 evaluates to true.</p>
@@ -212,15 +227,16 @@ evaluates to true.</p>
 <dl>
 <dt class="spec value" id="val-sum"><a href="#val-sum" class=
 "anchor"></a><code><span class="keyword">val</span> sum :
-(<span class="keyword">module</span> <a href=
+<span>(<span class="keyword">module</span> <a href=
 "../../../../base/Base__/Container_intf/module-type-Summable/index.html">
 Base__.Container_intf.Summable</a> <span class=
 "keyword">with</span> <span class="keyword">type</span> <a href=
 "../../../../base/Base__/Container_intf/module-type-Summable/index.html#type-t">
-t</a> = <span class="type-var">'sum</span>) <span>-&gt;</span>
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'sum</span>)
+t</a> = <span class="type-var">'sum</span>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'sum</span>)</span></span>
 <span>-&gt;</span> <span class="type-var">'sum</span></code></dt>
 <dd>
 <p>Returns the sum of <code>f i</code> for all <code>i</code> in
@@ -230,10 +246,11 @@ the container.</p>
 <dl>
 <dt class="spec value" id="val-find"><a href="#val-find" class=
 "anchor"></a><code><span class="keyword">val</span> find :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span>
-<span>-&gt;</span> bool) <span>-&gt;</span> <span class=
-"type-var">'a</span> option</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+bool)</span></span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> option</span></code></dt>
 <dd>
 <p>Returns as an <code>option</code> the first element for which
 <code>f</code> evaluates to true.</p>
@@ -242,11 +259,12 @@ the container.</p>
 <dl>
 <dt class="spec value" id="val-find_map"><a href="#val-find_map"
 class="anchor"></a><code><span class="keyword">val</span> find_map
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> f:(<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span> option) <span>-&gt;</span> <span class=
-"type-var">'b</span> option</code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> option</span>)</span></span>
+<span>-&gt;</span> <span><span class="type-var">'b</span>
+option</span></code></dt>
 <dd>
 <p>Returns the first evaluation of <code>f</code> that returns
 <code>Some</code>, and returns <code>None</code> if there is no
@@ -256,21 +274,22 @@ such element.</p>
 <dl>
 <dt class="spec value" id="val-to_list"><a href="#val-to_list"
 class="anchor"></a><code><span class="keyword">val</span> to_list :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-list</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> list</span></code></dt>
 <dt class="spec value" id="val-to_array"><a href="#val-to_array"
 class="anchor"></a><code><span class="keyword">val</span> to_array
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> array</code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> array</span></code></dt>
 <dt class="spec value" id="val-min_elt"><a href="#val-min_elt"
 class="anchor"></a><code><span class="keyword">val</span> min_elt :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> compare:(<span class="type-var">'a</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>compare:<span>(<span class="type-var">'a</span>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> int) <span>-&gt;</span> <span class=
-"type-var">'a</span> option</code></dt>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> option</span></code></dt>
 <dd>
 <p>Returns a minimum (resp maximum) element from the collection
 using the provided <code>compare</code> function, or
@@ -283,11 +302,12 @@ same complexity as <code>fold</code>.</p>
 <dl>
 <dt class="spec value" id="val-max_elt"><a href="#val-max_elt"
 class="anchor"></a><code><span class="keyword">val</span> max_elt :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> compare:(<span class="type-var">'a</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>compare:<span>(<span class="type-var">'a</span>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> int) <span>-&gt;</span> <span class=
-"type-var">'a</span> option</code></dt>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> option</span></code></dt>
 </dl>
 </details>
 </div>
@@ -299,19 +319,19 @@ class="anchor"></a><code><span class="keyword">val</span> max_elt :
 <dl>
 <dt class="spec value" id="val-invariant"><a href="#val-invariant"
 class="anchor"></a><code><span class="keyword">val</span> invariant
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-?⁠growth_allowed:<a href=
-"../../../Core_kernel__/Import/index.html#type-bool">Core_kernel__.Import.bool</a>
-<span>-&gt;</span> ?⁠size:<a href=
-"../../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>?⁠growth_allowed:<a href=
+"../../../Core_kernel__/Import/index.html#type-bool">Core_kernel__.Import.bool</a></span>
+<span>-&gt;</span> <span>?⁠size:<a href=
+"../../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>create ()</code> returns an empty queue. The arguments
 <code>growth_allowed</code> and <code>size</code> are referring to
@@ -333,8 +353,8 @@ the underlying hashtable.</p>
 <dl>
 <dt class="spec value" id="val-clear"><a href="#val-clear" class=
 "anchor"></a><code><span class="keyword">val</span> clear :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dd>
 <p>Clears the queue.</p>
@@ -348,9 +368,9 @@ the underlying hashtable.</p>
 <dl>
 <dt class="spec value" id="val-mem"><a href="#val-mem" class=
 "anchor"></a><code><span class="keyword">val</span> mem :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
-<span>-&gt;</span> <a href=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
+"Key/index.html#type-t">Key.t</a> <span>-&gt;</span> <a href=
 "../../../Core_kernel__/Import/index.html#type-bool">Core_kernel__.Import.bool</a></code></dt>
 <dd>
 <p><code>mem q k</code> returns true iff there is some (k, v) in
@@ -360,10 +380,11 @@ the queue.</p>
 <dl>
 <dt class="spec value" id="val-lookup"><a href="#val-lookup" class=
 "anchor"></a><code><span class="keyword">val</span> lookup :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
+"Key/index.html#type-t">Key.t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p><code>lookup t k</code> returns the value of the key-value pair
 in the queue with key k, if there is one.</p>
@@ -372,10 +393,10 @@ in the queue with key k, if there is one.</p>
 <dl>
 <dt class="spec value" id="val-lookup_exn"><a href=
 "#val-lookup_exn" class="anchor"></a><code><span class=
-"keyword">val</span> lookup_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Key/index.html#type-t">Key.t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+"keyword">val</span> lookup_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
+<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 </dl>
 </section>
 <section>
@@ -389,11 +410,12 @@ but only if there is an ongoing iteration.</p>
 <dl>
 <dt class="spec value" id="val-enqueue"><a href="#val-enqueue"
 class="anchor"></a><code><span class="keyword">val</span> enqueue :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> [ `back | `front ] <span>-&gt;</span> <a href=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span>[ `back
+<span>| `front</span> ]</span> <span>-&gt;</span> <a href=
 "Key/index.html#type-t">Key.t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> [ `Ok |
-`Key_already_present ]</code></dt>
+"type-var">'a</span> <span>-&gt;</span> <span>[ `Ok <span>|
+`Key_already_present</span> ]</span></code></dt>
 <dd>
 <p><code>enqueue t back_or_front k v</code> adds the key-value pair
 (k, v) to the front or back of the queue, returning
@@ -405,11 +427,12 @@ the queue.</p>
 <dl>
 <dt class="spec value" id="val-enqueue_exn"><a href=
 "#val-enqueue_exn" class="anchor"></a><code><span class=
-"keyword">val</span> enqueue_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> [ `back |
-`front ] <span>-&gt;</span> <a href=
-"Key/index.html#type-t">Key.t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> <a href=
+"keyword">val</span> enqueue_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>[ `back <span>| `front</span> ]</span>
+<span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
+<span>-&gt;</span> <span class="type-var">'a</span>
+<span>-&gt;</span> <a href=
 "../../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dd>
 <p>Like <a href="index.html#val-enqueue"><code>enqueue</code></a>,
@@ -419,11 +442,12 @@ but it raises in the <code>`Key_already_present</code> case</p>
 <dl>
 <dt class="spec value" id="val-enqueue_back"><a href=
 "#val-enqueue_back" class="anchor"></a><code><span class=
-"keyword">val</span> enqueue_back : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> enqueue_back : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> [ `Ok | `Key_already_present ]</code></dt>
+<span>-&gt;</span> <span>[ `Ok <span>| `Key_already_present</span>
+]</span></code></dt>
 <dd>
 <p>See <a href="index.html#val-enqueue"><code>enqueue</code></a>.
 <code>enqueue_back t k v</code> is the same as <code>enqueue t
@@ -433,8 +457,8 @@ but it raises in the <code>`Key_already_present</code> case</p>
 <dl>
 <dt class="spec value" id="val-enqueue_back_exn"><a href=
 "#val-enqueue_back_exn" class="anchor"></a><code><span class=
-"keyword">val</span> enqueue_back_exn : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> enqueue_back_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
@@ -449,11 +473,12 @@ but it raises in the <code>`Key_already_present</code> case</p>
 <dl>
 <dt class="spec value" id="val-enqueue_front"><a href=
 "#val-enqueue_front" class="anchor"></a><code><span class=
-"keyword">val</span> enqueue_front : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> enqueue_front : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> [ `Ok | `Key_already_present ]</code></dt>
+<span>-&gt;</span> <span>[ `Ok <span>| `Key_already_present</span>
+]</span></code></dt>
 <dd>
 <p>See <a href="index.html#val-enqueue"><code>enqueue</code></a>.
 <code>enqueue_front t k v</code> is the same as <code>enqueue t
@@ -463,8 +488,8 @@ but it raises in the <code>`Key_already_present</code> case</p>
 <dl>
 <dt class="spec value" id="val-enqueue_front_exn"><a href=
 "#val-enqueue_front_exn" class="anchor"></a><code><span class=
-"keyword">val</span> enqueue_front_exn : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> enqueue_front_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
@@ -480,11 +505,11 @@ but it raises in the <code>`Key_already_present</code> case</p>
 <dt class="spec value" id="val-lookup_and_move_to_back"><a href=
 "#val-lookup_and_move_to_back" class=
 "anchor"></a><code><span class="keyword">val</span>
-lookup_and_move_to_back : <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Key/index.html#type-t">Key.t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+lookup_and_move_to_back : <span><span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="Key/index.html#type-t">Key.t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p><code>lookup_and_move_to_back</code> finds the key-value pair
 (k, v) and moves it to the back of the queue if it exists,
@@ -497,10 +522,10 @@ key-value pair does not exist.</p>
 <dt class="spec value" id="val-lookup_and_move_to_back_exn">
 <a href="#val-lookup_and_move_to_back_exn" class=
 "anchor"></a><code><span class="keyword">val</span>
-lookup_and_move_to_back_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Key/index.html#type-t">Key.t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+lookup_and_move_to_back_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
+<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dd>
 <p>Like <a href=
 "index.html#val-lookup_and_move_to_back"><code>lookup_and_move_to_back</code></a>,
@@ -511,11 +536,11 @@ but raises instead of returning an option</p>
 <dt class="spec value" id="val-lookup_and_move_to_front"><a href=
 "#val-lookup_and_move_to_front" class=
 "anchor"></a><code><span class="keyword">val</span>
-lookup_and_move_to_front : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Key/index.html#type-t">Key.t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+lookup_and_move_to_front : <span><span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="Key/index.html#type-t">Key.t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p>Like <a href=
 "index.html#val-lookup_and_move_to_back"><code>lookup_and_move_to_back</code></a>,
@@ -526,10 +551,10 @@ but moves element to the front of the queue</p>
 <dt class="spec value" id="val-lookup_and_move_to_front_exn">
 <a href="#val-lookup_and_move_to_front_exn" class=
 "anchor"></a><code><span class="keyword">val</span>
-lookup_and_move_to_front_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Key/index.html#type-t">Key.t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+lookup_and_move_to_front_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
+<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dd>
 <p>Like <a href=
 "index.html#val-lookup_and_move_to_front"><code>lookup_and_move_to_front</code></a>,
@@ -539,9 +564,10 @@ but raises instead of returning an option</p>
 <dl>
 <dt class="spec value" id="val-first"><a href="#val-first" class=
 "anchor"></a><code><span class="keyword">val</span> first :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p><code>first t</code> returns the front element of the queue,
 without removing it.</p>
@@ -550,11 +576,12 @@ without removing it.</p>
 <dl>
 <dt class="spec value" id="val-first_with_key"><a href=
 "#val-first_with_key" class="anchor"></a><code><span class=
-"keyword">val</span> first_with_key : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<a href="Key/index.html#type-t">Key.t</a> *
-<span class="type-var">'a</span>) <a href=
-"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+"keyword">val</span> first_with_key : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span>(<a href=
+"Key/index.html#type-t">Key.t</a> * <span class=
+"type-var">'a</span>)</span> <a href=
+"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p><code>first_with_key t</code> returns the front element of the
 queue and its key, without removing it.</p>
@@ -563,10 +590,10 @@ queue and its key, without removing it.</p>
 <dl>
 <dt class="spec value" id="val-keys"><a href="#val-keys" class=
 "anchor"></a><code><span class="keyword">val</span> keys :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
-<a href=
-"../../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span><a href=
+"Key/index.html#type-t">Key.t</a> <a href=
+"../../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a></span></code></dt>
 <dd>
 <p><code>keys t</code> returns the keys in the order of the
 queue.</p>
@@ -575,9 +602,10 @@ queue.</p>
 <dl>
 <dt class="spec value" id="val-dequeue"><a href="#val-dequeue"
 class="anchor"></a><code><span class="keyword">val</span> dequeue :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p><code>dequeue t</code> returns the front element of the
 queue.</p>
@@ -586,16 +614,17 @@ queue.</p>
 <dl>
 <dt class="spec value" id="val-dequeue_exn"><a href=
 "#val-dequeue_exn" class="anchor"></a><code><span class=
-"keyword">val</span> dequeue_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+"keyword">val</span> dequeue_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dt class="spec value" id="val-dequeue_with_key"><a href=
 "#val-dequeue_with_key" class="anchor"></a><code><span class=
-"keyword">val</span> dequeue_with_key : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<a href="Key/index.html#type-t">Key.t</a> *
-<span class="type-var">'a</span>) <a href=
-"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+"keyword">val</span> dequeue_with_key : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span>(<a href=
+"Key/index.html#type-t">Key.t</a> * <span class=
+"type-var">'a</span>)</span> <a href=
+"../../../Core_kernel__/Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p><code>dequeue_with_key t</code> returns the front element of the
 queue and its key.</p>
@@ -604,16 +633,17 @@ queue and its key.</p>
 <dl>
 <dt class="spec value" id="val-dequeue_with_key_exn"><a href=
 "#val-dequeue_with_key_exn" class="anchor"></a><code><span class=
-"keyword">val</span> dequeue_with_key_exn : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> dequeue_with_key_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a> *
 <span class="type-var">'a</span></code></dt>
 <dt class="spec value" id="val-dequeue_all"><a href=
 "#val-dequeue_all" class="anchor"></a><code><span class=
-"keyword">val</span> dequeue_all : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-f:(<span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a>)
+"keyword">val</span> dequeue_all : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>f:<span>(<span class="type-var">'a</span>
+<span>-&gt;</span> <a href=
+"../../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a>)</span></span>
 <span>-&gt;</span> <a href=
 "../../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dd>
@@ -624,9 +654,10 @@ queue and applies <code>f</code> to each one.</p>
 <dl>
 <dt class="spec value" id="val-remove"><a href="#val-remove" class=
 "anchor"></a><code><span class="keyword">val</span> remove :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
-<span>-&gt;</span> [ `Ok | `No_such_key ]</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
+"Key/index.html#type-t">Key.t</a> <span>-&gt;</span> <span>[ `Ok
+<span>| `No_such_key</span> ]</span></code></dt>
 <dd>
 <p><code>remove q k</code> removes the key-value pair with key
 <code>k</code> from the queue.</p>
@@ -635,16 +666,18 @@ queue and applies <code>f</code> to each one.</p>
 <dl>
 <dt class="spec value" id="val-remove_exn"><a href=
 "#val-remove_exn" class="anchor"></a><code><span class=
-"keyword">val</span> remove_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Key/index.html#type-t">Key.t</a> <span>-&gt;</span> <a href=
+"keyword">val</span> remove_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
+<span>-&gt;</span> <a href=
 "../../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-replace"><a href="#val-replace"
 class="anchor"></a><code><span class="keyword">val</span> replace :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> [ `Ok | `No_such_key ]</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
+"Key/index.html#type-t">Key.t</a> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <span>[ `Ok <span>|
+`No_such_key</span> ]</span></code></dt>
 <dd>
 <p><code>replace q k v</code> changes the value of key
 <code>k</code> in the queue to <code>v</code>.</p>
@@ -653,10 +686,11 @@ class="anchor"></a><code><span class="keyword">val</span> replace :
 <dl>
 <dt class="spec value" id="val-replace_exn"><a href=
 "#val-replace_exn" class="anchor"></a><code><span class=
-"keyword">val</span> replace_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Key/index.html#type-t">Key.t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> <a href=
+"keyword">val</span> replace_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <a href="Key/index.html#type-t">Key.t</a>
+<span>-&gt;</span> <span class="type-var">'a</span>
+<span>-&gt;</span> <a href=
 "../../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 </dl>
 </section>
@@ -668,11 +702,13 @@ class="anchor"></a>Iterating over elements</h3>
 <dl>
 <dt class="spec value" id="val-iteri"><a href="#val-iteri" class=
 "anchor"></a><code><span class="keyword">val</span> iteri :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(key:<a href="Key/index.html#type-t">Key.t</a>
-<span>-&gt;</span> data:<span class="type-var">'a</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span>key:<a href=
+"Key/index.html#type-t">Key.t</a></span> <span>-&gt;</span>
+<span>data:<span class="type-var">'a</span></span>
 <span>-&gt;</span> <a href=
-"../../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a>)
+"../../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a>)</span></span>
 <span>-&gt;</span> <a href=
 "../../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dd>
@@ -683,12 +719,14 @@ element of the queue.</p>
 <dl>
 <dt class="spec value" id="val-foldi"><a href="#val-foldi" class=
 "anchor"></a><code><span class="keyword">val</span> foldi :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> init:<span class="type-var">'b</span>
-<span>-&gt;</span> f:(<span class="type-var">'b</span>
-<span>-&gt;</span> key:<a href="Key/index.html#type-t">Key.t</a>
-<span>-&gt;</span> data:<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'b</span>)
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>init:<span class="type-var">'b</span></span>
+<span>-&gt;</span> <span>f:<span>(<span class="type-var">'b</span>
+<span>-&gt;</span> <span>key:<a href=
+"Key/index.html#type-t">Key.t</a></span> <span>-&gt;</span>
+<span>data:<span class="type-var">'a</span></span>
+<span>-&gt;</span> <span class="type-var">'b</span>)</span></span>
 <span>-&gt;</span> <span class="type-var">'b</span></code></dt>
 </dl>
 </section>

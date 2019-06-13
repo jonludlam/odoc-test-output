@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Multi (base.Base__.Hashtbl_intf.Hashtbl.Multi)</title>
 <link rel="stylesheet" href="../../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../../highlight.pack.js">
-</script>
+<script src="../../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -28,20 +27,22 @@ hljs.initHighlightingOnLoad();
 </header>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'b)
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>('a, 'b)
+t</span></code></dt>
 <dt class="spec type" id="type-key"><a href="#type-key" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-key</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+key</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-add_multi"><a href="#val-add_multi"
 class="anchor"></a><code><span class="keyword">val</span> add_multi
-: (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span> list) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> key:<span class="type-var">'a</span> <a href=
-"index.html#type-key">key</a> <span>-&gt;</span> data:<span class=
-"type-var">'b</span> <span>-&gt;</span> unit</code></dt>
+: <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span><span class="type-var">'b</span>
+list</span>)</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>key:<span><span class="type-var">'a</span>
+<a href="index.html#type-key">key</a></span></span>
+<span>-&gt;</span> <span>data:<span class=
+"type-var">'b</span></span> <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>add_multi t ~key ~data</code> if <code>key</code> is
 present in the table then cons <code>data</code> on the list,
@@ -51,11 +52,12 @@ otherwise add <code>key</code> with a single element list.</p>
 <dl>
 <dt class="spec value" id="val-remove_multi"><a href=
 "#val-remove_multi" class="anchor"></a><code><span class=
-"keyword">val</span> remove_multi : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">_</span> list)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-key">key</a>
-<span>-&gt;</span> unit</code></dt>
+"keyword">val</span> remove_multi : <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span><span class="type-var">_</span>
+list</span>)</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-key">key</a></span> <span>-&gt;</span>
+unit</code></dt>
 <dd>
 <p><code>remove_multi t key</code> updates the table, removing the
 head of the list bound to <code>key</code>. If the list has only
@@ -65,12 +67,12 @@ one element (or is empty) then the binding is removed.</p>
 <dl>
 <dt class="spec value" id="val-find_multi"><a href=
 "#val-find_multi" class="anchor"></a><code><span class=
-"keyword">val</span> find_multi : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span> list)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-key">key</a>
-<span>-&gt;</span> <span class="type-var">'b</span>
-list</code></dt>
+"keyword">val</span> find_multi : <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span><span class="type-var">'b</span>
+list</span>)</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-key">key</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> list</span></code></dt>
 <dd>
 <p><code>find_multi t key</code> returns the empty list if
 <code>key</code> is not present in the table, returns

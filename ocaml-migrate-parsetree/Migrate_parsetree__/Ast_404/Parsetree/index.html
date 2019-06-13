@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Parsetree
 (ocaml-migrate-parsetree.Migrate_parsetree__.Ast_404.Parsetree)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -48,7 +47,7 @@ constant</code> <code>=</code></dt>
 <td class="def constructor"><a href="#type-constant.Pconst_integer"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Pconst_integer</span> <span class="keyword">of</span>
-string * char option</code></td>
+string * <span>char option</span></code></td>
 </tr>
 <tr id="type-constant.Pconst_char" class="anchored">
 <td class="def constructor"><a href="#type-constant.Pconst_char"
@@ -60,13 +59,13 @@ char</code></td>
 <td class="def constructor"><a href="#type-constant.Pconst_string"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Pconst_string</span> <span class="keyword">of</span>
-string * string option</code></td>
+string * <span>string option</span></code></td>
 </tr>
 <tr id="type-constant.Pconst_float" class="anchored">
 <td class="def constructor"><a href="#type-constant.Pconst_float"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Pconst_float</span> <span class="keyword">of</span>
-string * char option</code></td>
+string * <span>char option</span></code></td>
 </tr>
 </table>
 </dd>
@@ -79,18 +78,18 @@ string * char option</code></td>
 <dl>
 <dt class="spec type" id="type-attribute"><a href="#type-attribute"
 class="anchor"></a><code><span class="keyword">type</span>
-attribute</code> <code>= string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-payload">payload</a></code></dt>
+attribute</code> <code>= <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href="index.html#type-payload">payload</a></code></dt>
 <dt class="spec type" id="type-extension"><a href="#type-extension"
 class="anchor"></a><code><span class="keyword">and</span>
-extension</code> <code>= string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-payload">payload</a></code></dt>
+extension</code> <code>= <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href="index.html#type-payload">payload</a></code></dt>
 <dt class="spec type" id="type-attributes"><a href=
 "#type-attributes" class="anchor"></a><code><span class=
-"keyword">and</span> attributes</code> <code>= <a href=
-"index.html#type-attribute">attribute</a> list</code></dt>
+"keyword">and</span> attributes</code> <code>= <span><a href=
+"index.html#type-attribute">attribute</a> list</span></code></dt>
 <dt class="spec type" id="type-payload"><a href="#type-payload"
 class="anchor"></a><code><span class="keyword">and</span>
 payload</code> <code>=</code></dt>
@@ -118,8 +117,9 @@ payload</code> <code>=</code></dt>
 <td class="def constructor"><a href="#type-payload.PPat" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">PPat</span> <span class="keyword">of</span> <a href=
-"index.html#type-pattern">pattern</a> * <a href=
-"index.html#type-expression">expression</a> option</code></td>
+"index.html#type-pattern">pattern</a> * <span><a href=
+"index.html#type-expression">expression</a>
+option</span></code></td>
 </tr>
 </table>
 </dd>
@@ -182,35 +182,39 @@ string</code></td>
 <td class="def constructor"><a href=
 "#type-core_type_desc.Ptyp_tuple" class="anchor"></a><code>|</code>
 <code><span class="constructor">Ptyp_tuple</span> <span class=
-"keyword">of</span> <a href=
-"index.html#type-core_type">core_type</a> list</code></td>
+"keyword">of</span> <span><a href=
+"index.html#type-core_type">core_type</a> list</span></code></td>
 </tr>
 <tr id="type-core_type_desc.Ptyp_constr" class="anchored">
 <td class="def constructor"><a href=
 "#type-core_type_desc.Ptyp_constr" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Ptyp_constr</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-core_type">core_type</a> list</code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href="../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<span><a href="index.html#type-core_type">core_type</a>
+list</span></code></td>
 </tr>
 <tr id="type-core_type_desc.Ptyp_object" class="anchored">
 <td class="def constructor"><a href=
 "#type-core_type_desc.Ptyp_object" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Ptyp_object</span> <span class="keyword">of</span>
-(string * <a href="index.html#type-attributes">attributes</a> *
-<a href="index.html#type-core_type">core_type</a>) list * <a href=
+<span><span>(string * <a href=
+"index.html#type-attributes">attributes</a> * <a href=
+"index.html#type-core_type">core_type</a>)</span> list</span> *
+<a href=
 "../Asttypes/index.html#type-closed_flag">Asttypes.closed_flag</a></code></td>
 </tr>
 <tr id="type-core_type_desc.Ptyp_class" class="anchored">
 <td class="def constructor"><a href=
 "#type-core_type_desc.Ptyp_class" class="anchor"></a><code>|</code>
 <code><span class="constructor">Ptyp_class</span> <span class=
-"keyword">of</span> <a href=
+"keyword">of</span> <span><a href=
 "../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-core_type">core_type</a> list</code></td>
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<span><a href="index.html#type-core_type">core_type</a>
+list</span></code></td>
 </tr>
 <tr id="type-core_type_desc.Ptyp_alias" class="anchored">
 <td class="def constructor"><a href=
@@ -224,16 +228,18 @@ string</code></td>
 "#type-core_type_desc.Ptyp_variant" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Ptyp_variant</span> <span class="keyword">of</span>
-<a href="index.html#type-row_field">row_field</a> list * <a href=
+<span><a href="index.html#type-row_field">row_field</a> list</span>
+* <a href=
 "../Asttypes/index.html#type-closed_flag">Asttypes.closed_flag</a>
-* <a href="../Asttypes/index.html#type-label">Asttypes.label</a>
-list option</code></td>
+* <span><span><a href=
+"../Asttypes/index.html#type-label">Asttypes.label</a> list</span>
+option</span></code></td>
 </tr>
 <tr id="type-core_type_desc.Ptyp_poly" class="anchored">
 <td class="def constructor"><a href=
 "#type-core_type_desc.Ptyp_poly" class="anchor"></a><code>|</code>
 <code><span class="constructor">Ptyp_poly</span> <span class=
-"keyword">of</span> string list * <a href=
+"keyword">of</span> <span>string list</span> * <a href=
 "index.html#type-core_type">core_type</a></code></td>
 </tr>
 <tr id="type-core_type_desc.Ptyp_package" class="anchored">
@@ -254,12 +260,14 @@ list option</code></td>
 </dd>
 <dt class="spec type" id="type-package_type"><a href=
 "#type-package_type" class="anchor"></a><code><span class=
-"keyword">and</span> package_type</code> <code>= <a href=
+"keyword">and</span> package_type</code> <code>= <span><a href=
 "../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * (<a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<span><span>(<span><a href=
 "../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-core_type">core_type</a>) list</code></dt>
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href="index.html#type-core_type">core_type</a>)</span>
+list</span></code></dt>
 <dt class="spec type" id="type-row_field"><a href="#type-row_field"
 class="anchor"></a><code><span class="keyword">and</span>
 row_field</code> <code>=</code></dt>
@@ -270,8 +278,8 @@ row_field</code> <code>=</code></dt>
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Rtag</span> <span class="keyword">of</span> <a href=
 "../Asttypes/index.html#type-label">Asttypes.label</a> * <a href=
-"index.html#type-attributes">attributes</a> * bool * <a href=
-"index.html#type-core_type">core_type</a> list</code></td>
+"index.html#type-attributes">attributes</a> * bool * <span><a href=
+"index.html#type-core_type">core_type</a> list</span></code></td>
 </tr>
 <tr id="type-row_field.Rinherit" class="anchored">
 <td class="def constructor"><a href="#type-row_field.Rinherit"
@@ -317,15 +325,16 @@ class="anchor"></a><code>|</code> <code><span class=
 <td class="def constructor"><a href="#type-pattern_desc.Ppat_var"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ppat_var</span> <span class="keyword">of</span>
-string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+<span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 <tr id="type-pattern_desc.Ppat_alias" class="anchored">
 <td class="def constructor"><a href="#type-pattern_desc.Ppat_alias"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ppat_alias</span> <span class="keyword">of</span>
-<a href="index.html#type-pattern">pattern</a> * string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+<a href="index.html#type-pattern">pattern</a> * <span>string
+<a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 <tr id="type-pattern_desc.Ppat_constant" class="anchored">
 <td class="def constructor"><a href=
@@ -346,40 +355,45 @@ class="anchor"></a><code>|</code> <code><span class=
 <td class="def constructor"><a href="#type-pattern_desc.Ppat_tuple"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ppat_tuple</span> <span class="keyword">of</span>
-<a href="index.html#type-pattern">pattern</a> list</code></td>
+<span><a href="index.html#type-pattern">pattern</a>
+list</span></code></td>
 </tr>
 <tr id="type-pattern_desc.Ppat_construct" class="anchored">
 <td class="def constructor"><a href=
 "#type-pattern_desc.Ppat_construct" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Ppat_construct</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-pattern">pattern</a> option</code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href="../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<span><a href="index.html#type-pattern">pattern</a>
+option</span></code></td>
 </tr>
 <tr id="type-pattern_desc.Ppat_variant" class="anchored">
 <td class="def constructor"><a href=
 "#type-pattern_desc.Ppat_variant" class="anchor"></a><code>|</code>
 <code><span class="constructor">Ppat_variant</span> <span class=
 "keyword">of</span> <a href=
-"../Asttypes/index.html#type-label">Asttypes.label</a> * <a href=
-"index.html#type-pattern">pattern</a> option</code></td>
+"../Asttypes/index.html#type-label">Asttypes.label</a> *
+<span><a href="index.html#type-pattern">pattern</a>
+option</span></code></td>
 </tr>
 <tr id="type-pattern_desc.Ppat_record" class="anchored">
 <td class="def constructor"><a href=
 "#type-pattern_desc.Ppat_record" class="anchor"></a><code>|</code>
 <code><span class="constructor">Ppat_record</span> <span class=
-"keyword">of</span> (<a href=
+"keyword">of</span> <span><span>(<span><a href=
 "../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-pattern">pattern</a>) list * <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href="index.html#type-pattern">pattern</a>)</span> list</span> *
+<a href=
 "../Asttypes/index.html#type-closed_flag">Asttypes.closed_flag</a></code></td>
 </tr>
 <tr id="type-pattern_desc.Ppat_array" class="anchored">
 <td class="def constructor"><a href="#type-pattern_desc.Ppat_array"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ppat_array</span> <span class="keyword">of</span>
-<a href="index.html#type-pattern">pattern</a> list</code></td>
+<span><a href="index.html#type-pattern">pattern</a>
+list</span></code></td>
 </tr>
 <tr id="type-pattern_desc.Ppat_or" class="anchored">
 <td class="def constructor"><a href="#type-pattern_desc.Ppat_or"
@@ -400,8 +414,9 @@ class="anchor"></a><code>|</code> <code><span class=
 <td class="def constructor"><a href="#type-pattern_desc.Ppat_type"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ppat_type</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 <tr id="type-pattern_desc.Ppat_lazy" class="anchored">
 <td class="def constructor"><a href="#type-pattern_desc.Ppat_lazy"
@@ -413,8 +428,8 @@ class="anchor"></a><code>|</code> <code><span class=
 <td class="def constructor"><a href=
 "#type-pattern_desc.Ppat_unpack" class="anchor"></a><code>|</code>
 <code><span class="constructor">Ppat_unpack</span> <span class=
-"keyword">of</span> string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+"keyword">of</span> <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 <tr id="type-pattern_desc.Ppat_exception" class="anchored">
 <td class="def constructor"><a href=
@@ -434,9 +449,9 @@ class="anchor"></a><code>|</code> <code><span class=
 <td class="def constructor"><a href="#type-pattern_desc.Ppat_open"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ppat_open</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-pattern">pattern</a></code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href="../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href="index.html#type-pattern">pattern</a></code></td>
 </tr>
 </table>
 </dd>
@@ -473,8 +488,9 @@ class="anchor"></a><code>pexp_attributes : <a href=
 "#type-expression_desc.Pexp_ident" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_ident</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_constant" class="anchored">
 <td class="def constructor"><a href=
@@ -489,15 +505,17 @@ class="anchor"></a><code>pexp_attributes : <a href=
 <code><span class="constructor">Pexp_let</span> <span class=
 "keyword">of</span> <a href=
 "../Asttypes/index.html#type-rec_flag">Asttypes.rec_flag</a> *
-<a href="index.html#type-value_binding">value_binding</a> list *
-<a href="index.html#type-expression">expression</a></code></td>
+<span><a href="index.html#type-value_binding">value_binding</a>
+list</span> * <a href=
+"index.html#type-expression">expression</a></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_function" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_function" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_function</span> <span class="keyword">of</span>
-<a href="index.html#type-case">case</a> list</code></td>
+<span><a href="index.html#type-case">case</a>
+list</span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_fun" class="anchored">
 <td class="def constructor"><a href=
@@ -505,52 +523,55 @@ class="anchor"></a><code>pexp_attributes : <a href=
 <code><span class="constructor">Pexp_fun</span> <span class=
 "keyword">of</span> <a href=
 "../Asttypes/index.html#type-arg_label">Asttypes.arg_label</a> *
-<a href="index.html#type-expression">expression</a> option *
-<a href="index.html#type-pattern">pattern</a> * <a href=
-"index.html#type-expression">expression</a></code></td>
+<span><a href="index.html#type-expression">expression</a>
+option</span> * <a href="index.html#type-pattern">pattern</a> *
+<a href="index.html#type-expression">expression</a></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_apply" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_apply" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_apply</span> <span class="keyword">of</span>
-<a href="index.html#type-expression">expression</a> * (<a href=
+<a href="index.html#type-expression">expression</a> *
+<span><span>(<a href=
 "../Asttypes/index.html#type-arg_label">Asttypes.arg_label</a> *
-<a href="index.html#type-expression">expression</a>)
-list</code></td>
+<a href="index.html#type-expression">expression</a>)</span>
+list</span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_match" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_match" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_match</span> <span class="keyword">of</span>
-<a href="index.html#type-expression">expression</a> * <a href=
-"index.html#type-case">case</a> list</code></td>
+<a href="index.html#type-expression">expression</a> *
+<span><a href="index.html#type-case">case</a>
+list</span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_try" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_try" class="anchor"></a><code>|</code>
 <code><span class="constructor">Pexp_try</span> <span class=
 "keyword">of</span> <a href=
-"index.html#type-expression">expression</a> * <a href=
-"index.html#type-case">case</a> list</code></td>
+"index.html#type-expression">expression</a> * <span><a href=
+"index.html#type-case">case</a> list</span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_tuple" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_tuple" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_tuple</span> <span class="keyword">of</span>
-<a href="index.html#type-expression">expression</a>
-list</code></td>
+<span><a href="index.html#type-expression">expression</a>
+list</span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_construct" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_construct" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_construct</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-expression">expression</a> option</code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href="../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<span><a href="index.html#type-expression">expression</a>
+option</span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_variant" class="anchored">
 <td class="def constructor"><a href=
@@ -558,45 +579,49 @@ list</code></td>
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_variant</span> <span class="keyword">of</span>
 <a href="../Asttypes/index.html#type-label">Asttypes.label</a> *
-<a href="index.html#type-expression">expression</a>
-option</code></td>
+<span><a href="index.html#type-expression">expression</a>
+option</span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_record" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_record" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_record</span> <span class="keyword">of</span>
-(<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-expression">expression</a>) list * <a href=
-"index.html#type-expression">expression</a> option</code></td>
+<span><span>(<span><a href=
+"../index.html#module-Longident">Longident</a>.t <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href="index.html#type-expression">expression</a>)</span>
+list</span> * <span><a href=
+"index.html#type-expression">expression</a>
+option</span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_field" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_field" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_field</span> <span class="keyword">of</span>
-<a href="index.html#type-expression">expression</a> * <a href=
-"../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+<a href="index.html#type-expression">expression</a> *
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_setfield" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_setfield" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_setfield</span> <span class="keyword">of</span>
-<a href="index.html#type-expression">expression</a> * <a href=
-"../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-expression">expression</a></code></td>
+<a href="index.html#type-expression">expression</a> *
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href="../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href="index.html#type-expression">expression</a></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_array" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_array" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_array</span> <span class="keyword">of</span>
-<a href="index.html#type-expression">expression</a>
-list</code></td>
+<span><a href="index.html#type-expression">expression</a>
+list</span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_ifthenelse" class="anchored">
 <td class="def constructor"><a href=
@@ -605,8 +630,9 @@ list</code></td>
 "constructor">Pexp_ifthenelse</span> <span class=
 "keyword">of</span> <a href=
 "index.html#type-expression">expression</a> * <a href=
-"index.html#type-expression">expression</a> * <a href=
-"index.html#type-expression">expression</a> option</code></td>
+"index.html#type-expression">expression</a> * <span><a href=
+"index.html#type-expression">expression</a>
+option</span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_sequence" class="anchored">
 <td class="def constructor"><a href=
@@ -648,8 +674,9 @@ list</code></td>
 "#type-expression_desc.Pexp_coerce" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_coerce</span> <span class="keyword">of</span>
-<a href="index.html#type-expression">expression</a> * <a href=
-"index.html#type-core_type">core_type</a> option * <a href=
+<a href="index.html#type-expression">expression</a> *
+<span><a href="index.html#type-core_type">core_type</a>
+option</span> * <a href=
 "index.html#type-core_type">core_type</a></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_send" class="anchored">
@@ -663,34 +690,36 @@ list</code></td>
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_new" class="anchor"></a><code>|</code>
 <code><span class="constructor">Pexp_new</span> <span class=
-"keyword">of</span> <a href=
+"keyword">of</span> <span><a href=
 "../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_setinstvar" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_setinstvar" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_setinstvar</span> <span class=
-"keyword">of</span> string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-expression">expression</a></code></td>
+"keyword">of</span> <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href="index.html#type-expression">expression</a></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_override" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_override" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_override</span> <span class="keyword">of</span>
-(string <a href="../Asttypes/index.html#type-loc">Asttypes.loc</a>
-* <a href="index.html#type-expression">expression</a>)
-list</code></td>
+<span><span>(<span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href="index.html#type-expression">expression</a>)</span>
+list</span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_letmodule" class="anchored">
 <td class="def constructor"><a href=
 "#type-expression_desc.Pexp_letmodule" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pexp_letmodule</span> <span class="keyword">of</span>
-string <a href="../Asttypes/index.html#type-loc">Asttypes.loc</a> *
+<span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
 <a href="index.html#type-module_expr">module_expr</a> * <a href=
 "index.html#type-expression">expression</a></code></td>
 </tr>
@@ -722,8 +751,8 @@ string <a href="../Asttypes/index.html#type-loc">Asttypes.loc</a> *
 "#type-expression_desc.Pexp_poly" class="anchor"></a><code>|</code>
 <code><span class="constructor">Pexp_poly</span> <span class=
 "keyword">of</span> <a href=
-"index.html#type-expression">expression</a> * <a href=
-"index.html#type-core_type">core_type</a> option</code></td>
+"index.html#type-expression">expression</a> * <span><a href=
+"index.html#type-core_type">core_type</a> option</span></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_object" class="anchored">
 <td class="def constructor"><a href=
@@ -754,9 +783,9 @@ string * <a href=
 <code><span class="constructor">Pexp_open</span> <span class=
 "keyword">of</span> <a href=
 "../Asttypes/index.html#type-override_flag">Asttypes.override_flag</a>
-* <a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-expression">expression</a></code></td>
+* <span><a href="../index.html#module-Longident">Longident</a>.t
+<a href="../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href="index.html#type-expression">expression</a></code></td>
 </tr>
 <tr id="type-expression_desc.Pexp_extension" class="anchored">
 <td class="def constructor"><a href=
@@ -785,8 +814,9 @@ string * <a href=
 </tr>
 <tr id="type-case.pc_guard" class="anchored">
 <td class="def field"><a href="#type-case.pc_guard" class=
-"anchor"></a><code>pc_guard : <a href=
-"index.html#type-expression">expression</a> option;</code></td>
+"anchor"></a><code>pc_guard : <span><a href=
+"index.html#type-expression">expression</a>
+option</span>;</code></td>
 </tr>
 <tr id="type-case.pc_rhs" class="anchored">
 <td class="def field"><a href="#type-case.pc_rhs" class=
@@ -803,8 +833,8 @@ string * <a href=
 <table class="record">
 <tr id="type-value_description.pval_name" class="anchored">
 <td class="def field"><a href="#type-value_description.pval_name"
-class="anchor"></a><code>pval_name : string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a>;</code></td>
+class="anchor"></a><code>pval_name : <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span>;</code></td>
 </tr>
 <tr id="type-value_description.pval_type" class="anchored">
 <td class="def field"><a href="#type-value_description.pval_type"
@@ -813,7 +843,8 @@ class="anchor"></a><code>pval_type : <a href=
 </tr>
 <tr id="type-value_description.pval_prim" class="anchored">
 <td class="def field"><a href="#type-value_description.pval_prim"
-class="anchor"></a><code>pval_prim : string list;</code></td>
+class="anchor"></a><code>pval_prim : <span>string
+list</span>;</code></td>
 </tr>
 <tr id="type-value_description.pval_attributes" class="anchored">
 <td class="def field"><a href=
@@ -836,22 +867,23 @@ class="anchor"></a><code>pval_loc : <a href=
 <table class="record">
 <tr id="type-type_declaration.ptype_name" class="anchored">
 <td class="def field"><a href="#type-type_declaration.ptype_name"
-class="anchor"></a><code>ptype_name : string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a>;</code></td>
+class="anchor"></a><code>ptype_name : <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span>;</code></td>
 </tr>
 <tr id="type-type_declaration.ptype_params" class="anchored">
 <td class="def field"><a href="#type-type_declaration.ptype_params"
-class="anchor"></a><code>ptype_params : (<a href=
+class="anchor"></a><code>ptype_params : <span><span>(<a href=
 "index.html#type-core_type">core_type</a> * <a href=
-"../Asttypes/index.html#type-variance">Asttypes.variance</a>)
-list;</code></td>
+"../Asttypes/index.html#type-variance">Asttypes.variance</a>)</span>
+list</span>;</code></td>
 </tr>
 <tr id="type-type_declaration.ptype_cstrs" class="anchored">
 <td class="def field"><a href="#type-type_declaration.ptype_cstrs"
-class="anchor"></a><code>ptype_cstrs : (<a href=
+class="anchor"></a><code>ptype_cstrs : <span><span>(<a href=
 "index.html#type-core_type">core_type</a> * <a href=
 "index.html#type-core_type">core_type</a> * <a href=
-"../index.html#module-Location">Location</a>.t) list;</code></td>
+"../index.html#module-Location">Location</a>.t)</span>
+list</span>;</code></td>
 </tr>
 <tr id="type-type_declaration.ptype_kind" class="anchored">
 <td class="def field"><a href="#type-type_declaration.ptype_kind"
@@ -867,8 +899,9 @@ class="anchor"></a><code>ptype_kind : <a href=
 <tr id="type-type_declaration.ptype_manifest" class="anchored">
 <td class="def field"><a href=
 "#type-type_declaration.ptype_manifest" class=
-"anchor"></a><code>ptype_manifest : <a href=
-"index.html#type-core_type">core_type</a> option;</code></td>
+"anchor"></a><code>ptype_manifest : <span><a href=
+"index.html#type-core_type">core_type</a>
+option</span>;</code></td>
 </tr>
 <tr id="type-type_declaration.ptype_attributes" class="anchored">
 <td class="def field"><a href=
@@ -897,16 +930,17 @@ type_kind</code> <code>=</code></dt>
 <td class="def constructor"><a href="#type-type_kind.Ptype_variant"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ptype_variant</span> <span class="keyword">of</span>
-<a href=
+<span><a href=
 "index.html#type-constructor_declaration">constructor_declaration</a>
-list</code></td>
+list</span></code></td>
 </tr>
 <tr id="type-type_kind.Ptype_record" class="anchored">
 <td class="def constructor"><a href="#type-type_kind.Ptype_record"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ptype_record</span> <span class="keyword">of</span>
-<a href="index.html#type-label_declaration">label_declaration</a>
-list</code></td>
+<span><a href=
+"index.html#type-label_declaration">label_declaration</a>
+list</span></code></td>
 </tr>
 <tr id="type-type_kind.Ptype_open" class="anchored">
 <td class="def constructor"><a href="#type-type_kind.Ptype_open"
@@ -923,8 +957,8 @@ class="anchor"></a><code>|</code> <code><span class=
 <table class="record">
 <tr id="type-label_declaration.pld_name" class="anchored">
 <td class="def field"><a href="#type-label_declaration.pld_name"
-class="anchor"></a><code>pld_name : string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a>;</code></td>
+class="anchor"></a><code>pld_name : <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span>;</code></td>
 </tr>
 <tr id="type-label_declaration.pld_mutable" class="anchored">
 <td class="def field"><a href="#type-label_declaration.pld_mutable"
@@ -958,8 +992,8 @@ constructor_declaration</code> <code>=</code> <code>{</code></dt>
 <tr id="type-constructor_declaration.pcd_name" class="anchored">
 <td class="def field"><a href=
 "#type-constructor_declaration.pcd_name" class=
-"anchor"></a><code>pcd_name : string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a>;</code></td>
+"anchor"></a><code>pcd_name : <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span>;</code></td>
 </tr>
 <tr id="type-constructor_declaration.pcd_args" class="anchored">
 <td class="def field"><a href=
@@ -970,8 +1004,9 @@ constructor_declaration</code> <code>=</code> <code>{</code></dt>
 <tr id="type-constructor_declaration.pcd_res" class="anchored">
 <td class="def field"><a href=
 "#type-constructor_declaration.pcd_res" class=
-"anchor"></a><code>pcd_res : <a href=
-"index.html#type-core_type">core_type</a> option;</code></td>
+"anchor"></a><code>pcd_res : <span><a href=
+"index.html#type-core_type">core_type</a>
+option</span>;</code></td>
 </tr>
 <tr id="type-constructor_declaration.pcd_loc" class="anchored">
 <td class="def field"><a href=
@@ -999,15 +1034,17 @@ constructor_declaration</code> <code>=</code> <code>{</code></dt>
 "#type-constructor_arguments.Pcstr_tuple" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pcstr_tuple</span> <span class="keyword">of</span>
-<a href="index.html#type-core_type">core_type</a> list</code></td>
+<span><a href="index.html#type-core_type">core_type</a>
+list</span></code></td>
 </tr>
 <tr id="type-constructor_arguments.Pcstr_record" class="anchored">
 <td class="def constructor"><a href=
 "#type-constructor_arguments.Pcstr_record" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pcstr_record</span> <span class="keyword">of</span>
-<a href="index.html#type-label_declaration">label_declaration</a>
-list</code></td>
+<span><a href=
+"index.html#type-label_declaration">label_declaration</a>
+list</span></code></td>
 </tr>
 </table>
 </dd>
@@ -1019,23 +1056,23 @@ list</code></td>
 <table class="record">
 <tr id="type-type_extension.ptyext_path" class="anchored">
 <td class="def field"><a href="#type-type_extension.ptyext_path"
-class="anchor"></a><code>ptyext_path : <a href=
+class="anchor"></a><code>ptyext_path : <span><a href=
 "../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a>;</code></td>
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span>;</code></td>
 </tr>
 <tr id="type-type_extension.ptyext_params" class="anchored">
 <td class="def field"><a href="#type-type_extension.ptyext_params"
-class="anchor"></a><code>ptyext_params : (<a href=
+class="anchor"></a><code>ptyext_params : <span><span>(<a href=
 "index.html#type-core_type">core_type</a> * <a href=
-"../Asttypes/index.html#type-variance">Asttypes.variance</a>)
-list;</code></td>
+"../Asttypes/index.html#type-variance">Asttypes.variance</a>)</span>
+list</span>;</code></td>
 </tr>
 <tr id="type-type_extension.ptyext_constructors" class="anchored">
 <td class="def field"><a href=
 "#type-type_extension.ptyext_constructors" class=
-"anchor"></a><code>ptyext_constructors : <a href=
+"anchor"></a><code>ptyext_constructors : <span><a href=
 "index.html#type-extension_constructor">extension_constructor</a>
-list;</code></td>
+list</span>;</code></td>
 </tr>
 <tr id="type-type_extension.ptyext_private" class="anchored">
 <td class="def field"><a href="#type-type_extension.ptyext_private"
@@ -1059,8 +1096,8 @@ class="anchor"></a><code>ptyext_private : <a href=
 <tr id="type-extension_constructor.pext_name" class="anchored">
 <td class="def field"><a href=
 "#type-extension_constructor.pext_name" class=
-"anchor"></a><code>pext_name : string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a>;</code></td>
+"anchor"></a><code>pext_name : <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span>;</code></td>
 </tr>
 <tr id="type-extension_constructor.pext_kind" class="anchored">
 <td class="def field"><a href=
@@ -1097,8 +1134,8 @@ extension_constructor_kind</code> <code>=</code></dt>
 "constructor">Pext_decl</span> <span class="keyword">of</span>
 <a href=
 "index.html#type-constructor_arguments">constructor_arguments</a> *
-<a href="index.html#type-core_type">core_type</a>
-option</code></td>
+<span><a href="index.html#type-core_type">core_type</a>
+option</span></code></td>
 </tr>
 <tr id="type-extension_constructor_kind.Pext_rebind" class=
 "anchored">
@@ -1106,8 +1143,9 @@ option</code></td>
 "#type-extension_constructor_kind.Pext_rebind" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pext_rebind</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 </table>
 </dd>
@@ -1152,9 +1190,10 @@ class="anchor"></a><code>pcty_attributes : <a href=
 "#type-class_type_desc.Pcty_constr" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pcty_constr</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-core_type">core_type</a> list</code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href="../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<span><a href="index.html#type-core_type">core_type</a>
+list</span></code></td>
 </tr>
 <tr id="type-class_type_desc.Pcty_signature" class="anchored">
 <td class="def constructor"><a href=
@@ -1196,9 +1235,9 @@ class="anchor"></a><code>pcsig_self : <a href=
 </tr>
 <tr id="type-class_signature.pcsig_fields" class="anchored">
 <td class="def field"><a href="#type-class_signature.pcsig_fields"
-class="anchor"></a><code>pcsig_fields : <a href=
+class="anchor"></a><code>pcsig_fields : <span><a href=
 "index.html#type-class_type_field">class_type_field</a>
-list;</code></td>
+list</span>;</code></td>
 </tr>
 </table>
 <code>}</code></dd>
@@ -1291,8 +1330,8 @@ string * <a href=
 </dd>
 <dt class="spec type" id="type-class_infos"><a href=
 "#type-class_infos" class="anchor"></a><code><span class=
-"keyword">and</span> 'a class_infos</code> <code>=</code>
-<code>{</code></dt>
+"keyword">and</span> <span>'a class_infos</span></code>
+<code>=</code> <code>{</code></dt>
 <dd>
 <table class="record">
 <tr id="type-class_infos.pci_virt" class="anchored">
@@ -1302,15 +1341,15 @@ string * <a href=
 </tr>
 <tr id="type-class_infos.pci_params" class="anchored">
 <td class="def field"><a href="#type-class_infos.pci_params" class=
-"anchor"></a><code>pci_params : (<a href=
+"anchor"></a><code>pci_params : <span><span>(<a href=
 "index.html#type-core_type">core_type</a> * <a href=
-"../Asttypes/index.html#type-variance">Asttypes.variance</a>)
-list;</code></td>
+"../Asttypes/index.html#type-variance">Asttypes.variance</a>)</span>
+list</span>;</code></td>
 </tr>
 <tr id="type-class_infos.pci_name" class="anchored">
 <td class="def field"><a href="#type-class_infos.pci_name" class=
-"anchor"></a><code>pci_name : string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a>;</code></td>
+"anchor"></a><code>pci_name : <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span>;</code></td>
 </tr>
 <tr id="type-class_infos.pci_expr" class="anchored">
 <td class="def field"><a href="#type-class_infos.pci_expr" class=
@@ -1331,15 +1370,15 @@ class="anchor"></a><code>pci_attributes : <a href=
 <code>}</code></dd>
 <dt class="spec type" id="type-class_description"><a href=
 "#type-class_description" class="anchor"></a><code><span class=
-"keyword">and</span> class_description</code> <code>= <a href=
-"index.html#type-class_type">class_type</a> <a href=
-"index.html#type-class_infos">class_infos</a></code></dt>
+"keyword">and</span> class_description</code> <code>=
+<span><a href="index.html#type-class_type">class_type</a> <a href=
+"index.html#type-class_infos">class_infos</a></span></code></dt>
 <dt class="spec type" id="type-class_type_declaration"><a href=
 "#type-class_type_declaration" class=
 "anchor"></a><code><span class="keyword">and</span>
-class_type_declaration</code> <code>= <a href=
+class_type_declaration</code> <code>= <span><a href=
 "index.html#type-class_type">class_type</a> <a href=
-"index.html#type-class_infos">class_infos</a></code></dt>
+"index.html#type-class_infos">class_infos</a></span></code></dt>
 <dt class="spec type" id="type-class_expr"><a href=
 "#type-class_expr" class="anchor"></a><code><span class=
 "keyword">and</span> class_expr</code> <code>=</code>
@@ -1373,9 +1412,10 @@ class="anchor"></a><code>pcl_attributes : <a href=
 "#type-class_expr_desc.Pcl_constr" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pcl_constr</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"index.html#type-core_type">core_type</a> list</code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href="../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<span><a href="index.html#type-core_type">core_type</a>
+list</span></code></td>
 </tr>
 <tr id="type-class_expr_desc.Pcl_structure" class="anchored">
 <td class="def constructor"><a href=
@@ -1391,19 +1431,19 @@ class="anchor"></a><code>|</code> <code><span class=
 "constructor">Pcl_fun</span> <span class="keyword">of</span>
 <a href=
 "../Asttypes/index.html#type-arg_label">Asttypes.arg_label</a> *
-<a href="index.html#type-expression">expression</a> option *
-<a href="index.html#type-pattern">pattern</a> * <a href=
-"index.html#type-class_expr">class_expr</a></code></td>
+<span><a href="index.html#type-expression">expression</a>
+option</span> * <a href="index.html#type-pattern">pattern</a> *
+<a href="index.html#type-class_expr">class_expr</a></code></td>
 </tr>
 <tr id="type-class_expr_desc.Pcl_apply" class="anchored">
 <td class="def constructor"><a href=
 "#type-class_expr_desc.Pcl_apply" class="anchor"></a><code>|</code>
 <code><span class="constructor">Pcl_apply</span> <span class=
 "keyword">of</span> <a href=
-"index.html#type-class_expr">class_expr</a> * (<a href=
+"index.html#type-class_expr">class_expr</a> * <span><span>(<a href=
 "../Asttypes/index.html#type-arg_label">Asttypes.arg_label</a> *
-<a href="index.html#type-expression">expression</a>)
-list</code></td>
+<a href="index.html#type-expression">expression</a>)</span>
+list</span></code></td>
 </tr>
 <tr id="type-class_expr_desc.Pcl_let" class="anchored">
 <td class="def constructor"><a href="#type-class_expr_desc.Pcl_let"
@@ -1411,8 +1451,9 @@ class="anchor"></a><code>|</code> <code><span class=
 "constructor">Pcl_let</span> <span class="keyword">of</span>
 <a href=
 "../Asttypes/index.html#type-rec_flag">Asttypes.rec_flag</a> *
-<a href="index.html#type-value_binding">value_binding</a> list *
-<a href="index.html#type-class_expr">class_expr</a></code></td>
+<span><a href="index.html#type-value_binding">value_binding</a>
+list</span> * <a href=
+"index.html#type-class_expr">class_expr</a></code></td>
 </tr>
 <tr id="type-class_expr_desc.Pcl_constraint" class="anchored">
 <td class="def constructor"><a href=
@@ -1444,8 +1485,9 @@ class="anchor"></a><code>pcstr_self : <a href=
 </tr>
 <tr id="type-class_structure.pcstr_fields" class="anchored">
 <td class="def field"><a href="#type-class_structure.pcstr_fields"
-class="anchor"></a><code>pcstr_fields : <a href=
-"index.html#type-class_field">class_field</a> list;</code></td>
+class="anchor"></a><code>pcstr_fields : <span><a href=
+"index.html#type-class_field">class_field</a>
+list</span>;</code></td>
 </tr>
 </table>
 <code>}</code></dd>
@@ -1484,16 +1526,16 @@ class="anchor"></a><code>pcf_attributes : <a href=
 "constructor">Pcf_inherit</span> <span class="keyword">of</span>
 <a href=
 "../Asttypes/index.html#type-override_flag">Asttypes.override_flag</a>
-* <a href="index.html#type-class_expr">class_expr</a> * string
-option</code></td>
+* <a href="index.html#type-class_expr">class_expr</a> *
+<span>string option</span></code></td>
 </tr>
 <tr id="type-class_field_desc.Pcf_val" class="anchored">
 <td class="def constructor"><a href=
 "#type-class_field_desc.Pcf_val" class="anchor"></a><code>|</code>
 <code><span class="constructor">Pcf_val</span> <span class=
-"keyword">of</span> string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"../Asttypes/index.html#type-mutable_flag">Asttypes.mutable_flag</a>
+"keyword">of</span> <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href="../Asttypes/index.html#type-mutable_flag">Asttypes.mutable_flag</a>
 * <a href=
 "index.html#type-class_field_kind">class_field_kind</a></code></td>
 </tr>
@@ -1502,9 +1544,9 @@ option</code></td>
 "#type-class_field_desc.Pcf_method" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pcf_method</span> <span class="keyword">of</span>
-string <a href="../Asttypes/index.html#type-loc">Asttypes.loc</a> *
-<a href=
-"../Asttypes/index.html#type-private_flag">Asttypes.private_flag</a>
+<span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href="../Asttypes/index.html#type-private_flag">Asttypes.private_flag</a>
 * <a href=
 "index.html#type-class_field_kind">class_field_kind</a></code></td>
 </tr>
@@ -1565,9 +1607,9 @@ string <a href="../Asttypes/index.html#type-loc">Asttypes.loc</a> *
 </dd>
 <dt class="spec type" id="type-class_declaration"><a href=
 "#type-class_declaration" class="anchor"></a><code><span class=
-"keyword">and</span> class_declaration</code> <code>= <a href=
-"index.html#type-class_expr">class_expr</a> <a href=
-"index.html#type-class_infos">class_infos</a></code></dt>
+"keyword">and</span> class_declaration</code> <code>=
+<span><a href="index.html#type-class_expr">class_expr</a> <a href=
+"index.html#type-class_infos">class_infos</a></span></code></dt>
 </dl>
 </section>
 <section>
@@ -1609,8 +1651,9 @@ class="anchor"></a><code>pmty_attributes : <a href=
 "#type-module_type_desc.Pmty_ident" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pmty_ident</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 <tr id="type-module_type_desc.Pmty_signature" class="anchored">
 <td class="def constructor"><a href=
@@ -1624,18 +1667,20 @@ class="anchor"></a><code>pmty_attributes : <a href=
 "#type-module_type_desc.Pmty_functor" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pmty_functor</span> <span class="keyword">of</span>
-string <a href="../Asttypes/index.html#type-loc">Asttypes.loc</a> *
-<a href="index.html#type-module_type">module_type</a> option *
-<a href="index.html#type-module_type">module_type</a></code></td>
+<span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<span><a href="index.html#type-module_type">module_type</a>
+option</span> * <a href=
+"index.html#type-module_type">module_type</a></code></td>
 </tr>
 <tr id="type-module_type_desc.Pmty_with" class="anchored">
 <td class="def constructor"><a href=
 "#type-module_type_desc.Pmty_with" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pmty_with</span> <span class="keyword">of</span>
-<a href="index.html#type-module_type">module_type</a> * <a href=
-"index.html#type-with_constraint">with_constraint</a>
-list</code></td>
+<a href="index.html#type-module_type">module_type</a> *
+<span><a href="index.html#type-with_constraint">with_constraint</a>
+list</span></code></td>
 </tr>
 <tr id="type-module_type_desc.Pmty_typeof" class="anchored">
 <td class="def constructor"><a href=
@@ -1656,16 +1701,17 @@ list</code></td>
 "#type-module_type_desc.Pmty_alias" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pmty_alias</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 </table>
 </dd>
 <dt class="spec type" id="type-signature"><a href="#type-signature"
 class="anchor"></a><code><span class="keyword">and</span>
-signature</code> <code>= <a href=
+signature</code> <code>= <span><a href=
 "index.html#type-signature_item">signature_item</a>
-list</code></dt>
+list</span></code></dt>
 <dt class="spec type" id="type-signature_item"><a href=
 "#type-signature_item" class="anchor"></a><code><span class=
 "keyword">and</span> signature_item</code> <code>=</code>
@@ -1704,8 +1750,9 @@ class="anchor"></a><code>psig_loc : <a href=
 "constructor">Psig_type</span> <span class="keyword">of</span>
 <a href=
 "../Asttypes/index.html#type-rec_flag">Asttypes.rec_flag</a> *
-<a href="index.html#type-type_declaration">type_declaration</a>
-list</code></td>
+<span><a href=
+"index.html#type-type_declaration">type_declaration</a>
+list</span></code></td>
 </tr>
 <tr id="type-signature_item_desc.Psig_typext" class="anchored">
 <td class="def constructor"><a href=
@@ -1736,8 +1783,9 @@ list</code></td>
 "#type-signature_item_desc.Psig_recmodule" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Psig_recmodule</span> <span class="keyword">of</span>
-<a href="index.html#type-module_declaration">module_declaration</a>
-list</code></td>
+<span><a href=
+"index.html#type-module_declaration">module_declaration</a>
+list</span></code></td>
 </tr>
 <tr id="type-signature_item_desc.Psig_modtype" class="anchored">
 <td class="def constructor"><a href=
@@ -1768,17 +1816,18 @@ list</code></td>
 "#type-signature_item_desc.Psig_class" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Psig_class</span> <span class="keyword">of</span>
-<a href="index.html#type-class_description">class_description</a>
-list</code></td>
+<span><a href=
+"index.html#type-class_description">class_description</a>
+list</span></code></td>
 </tr>
 <tr id="type-signature_item_desc.Psig_class_type" class="anchored">
 <td class="def constructor"><a href=
 "#type-signature_item_desc.Psig_class_type" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Psig_class_type</span> <span class=
-"keyword">of</span> <a href=
+"keyword">of</span> <span><a href=
 "index.html#type-class_type_declaration">class_type_declaration</a>
-list</code></td>
+list</span></code></td>
 </tr>
 <tr id="type-signature_item_desc.Psig_attribute" class="anchored">
 <td class="def constructor"><a href=
@@ -1805,8 +1854,8 @@ list</code></td>
 <table class="record">
 <tr id="type-module_declaration.pmd_name" class="anchored">
 <td class="def field"><a href="#type-module_declaration.pmd_name"
-class="anchor"></a><code>pmd_name : string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a>;</code></td>
+class="anchor"></a><code>pmd_name : <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span>;</code></td>
 </tr>
 <tr id="type-module_declaration.pmd_type" class="anchored">
 <td class="def field"><a href="#type-module_declaration.pmd_type"
@@ -1835,14 +1884,15 @@ module_type_declaration</code> <code>=</code> <code>{</code></dt>
 <tr id="type-module_type_declaration.pmtd_name" class="anchored">
 <td class="def field"><a href=
 "#type-module_type_declaration.pmtd_name" class=
-"anchor"></a><code>pmtd_name : string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a>;</code></td>
+"anchor"></a><code>pmtd_name : <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span>;</code></td>
 </tr>
 <tr id="type-module_type_declaration.pmtd_type" class="anchored">
 <td class="def field"><a href=
 "#type-module_type_declaration.pmtd_type" class=
-"anchor"></a><code>pmtd_type : <a href=
-"index.html#type-module_type">module_type</a> option;</code></td>
+"anchor"></a><code>pmtd_type : <span><a href=
+"index.html#type-module_type">module_type</a>
+option</span>;</code></td>
 </tr>
 <tr id="type-module_type_declaration.pmtd_attributes" class=
 "anchored">
@@ -1867,9 +1917,9 @@ module_type_declaration</code> <code>=</code> <code>{</code></dt>
 <table class="record">
 <tr id="type-open_description.popen_lid" class="anchored">
 <td class="def field"><a href="#type-open_description.popen_lid"
-class="anchor"></a><code>popen_lid : <a href=
+class="anchor"></a><code>popen_lid : <span><a href=
 "../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a>;</code></td>
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span>;</code></td>
 </tr>
 <tr id="type-open_description.popen_override" class="anchored">
 <td class="def field"><a href=
@@ -1892,8 +1942,8 @@ class="anchor"></a><code>popen_loc : <a href=
 <code>}</code></dd>
 <dt class="spec type" id="type-include_infos"><a href=
 "#type-include_infos" class="anchor"></a><code><span class=
-"keyword">and</span> 'a include_infos</code> <code>=</code>
-<code>{</code></dt>
+"keyword">and</span> <span>'a include_infos</span></code>
+<code>=</code> <code>{</code></dt>
 <dd>
 <table class="record">
 <tr id="type-include_infos.pincl_mod" class="anchored">
@@ -1916,14 +1966,14 @@ class="anchor"></a><code>pincl_loc : <a href=
 <code>}</code></dd>
 <dt class="spec type" id="type-include_description"><a href=
 "#type-include_description" class="anchor"></a><code><span class=
-"keyword">and</span> include_description</code> <code>= <a href=
-"index.html#type-module_type">module_type</a> <a href=
-"index.html#type-include_infos">include_infos</a></code></dt>
+"keyword">and</span> include_description</code> <code>=
+<span><a href="index.html#type-module_type">module_type</a>
+<a href="index.html#type-include_infos">include_infos</a></span></code></dt>
 <dt class="spec type" id="type-include_declaration"><a href=
 "#type-include_declaration" class="anchor"></a><code><span class=
-"keyword">and</span> include_declaration</code> <code>= <a href=
-"index.html#type-module_expr">module_expr</a> <a href=
-"index.html#type-include_infos">include_infos</a></code></dt>
+"keyword">and</span> include_declaration</code> <code>=
+<span><a href="index.html#type-module_expr">module_expr</a>
+<a href="index.html#type-include_infos">include_infos</a></span></code></dt>
 <dt class="spec type" id="type-with_constraint"><a href=
 "#type-with_constraint" class="anchor"></a><code><span class=
 "keyword">and</span> with_constraint</code> <code>=</code></dt>
@@ -1934,8 +1984,9 @@ class="anchor"></a><code>pincl_loc : <a href=
 "#type-with_constraint.Pwith_type" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pwith_type</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href="../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<a href=
 "index.html#type-type_declaration">type_declaration</a></code></td>
 </tr>
 <tr id="type-with_constraint.Pwith_module" class="anchored">
@@ -1943,10 +1994,11 @@ class="anchor"></a><code>pincl_loc : <a href=
 "#type-with_constraint.Pwith_module" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pwith_module</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a> * <a href=
-"../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href="../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 <tr id="type-with_constraint.Pwith_typesubst" class="anchored">
 <td class="def constructor"><a href=
@@ -1961,9 +2013,11 @@ class="anchor"></a><code>pincl_loc : <a href=
 "#type-with_constraint.Pwith_modsubst" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pwith_modsubst</span> <span class="keyword">of</span>
-string <a href="../Asttypes/index.html#type-loc">Asttypes.loc</a> *
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+<span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 </table>
 </dd>
@@ -2000,8 +2054,9 @@ class="anchor"></a><code>pmod_attributes : <a href=
 "#type-module_expr_desc.Pmod_ident" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pmod_ident</span> <span class="keyword">of</span>
-<a href="../index.html#module-Longident">Longident</a>.t <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a></code></td>
+<span><a href="../index.html#module-Longident">Longident</a>.t
+<a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span></code></td>
 </tr>
 <tr id="type-module_expr_desc.Pmod_structure" class="anchored">
 <td class="def constructor"><a href=
@@ -2015,9 +2070,11 @@ class="anchor"></a><code>pmod_attributes : <a href=
 "#type-module_expr_desc.Pmod_functor" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pmod_functor</span> <span class="keyword">of</span>
-string <a href="../Asttypes/index.html#type-loc">Asttypes.loc</a> *
-<a href="index.html#type-module_type">module_type</a> option *
-<a href="index.html#type-module_expr">module_expr</a></code></td>
+<span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span> *
+<span><a href="index.html#type-module_type">module_type</a>
+option</span> * <a href=
+"index.html#type-module_expr">module_expr</a></code></td>
 </tr>
 <tr id="type-module_expr_desc.Pmod_apply" class="anchored">
 <td class="def constructor"><a href=
@@ -2054,9 +2111,9 @@ string <a href="../Asttypes/index.html#type-loc">Asttypes.loc</a> *
 </dd>
 <dt class="spec type" id="type-structure"><a href="#type-structure"
 class="anchor"></a><code><span class="keyword">and</span>
-structure</code> <code>= <a href=
+structure</code> <code>= <span><a href=
 "index.html#type-structure_item">structure_item</a>
-list</code></dt>
+list</span></code></dt>
 <dt class="spec type" id="type-structure_item"><a href=
 "#type-structure_item" class="anchor"></a><code><span class=
 "keyword">and</span> structure_item</code> <code>=</code>
@@ -2095,8 +2152,8 @@ class="anchor"></a><code>pstr_loc : <a href=
 "constructor">Pstr_value</span> <span class="keyword">of</span>
 <a href=
 "../Asttypes/index.html#type-rec_flag">Asttypes.rec_flag</a> *
-<a href="index.html#type-value_binding">value_binding</a>
-list</code></td>
+<span><a href="index.html#type-value_binding">value_binding</a>
+list</span></code></td>
 </tr>
 <tr id="type-structure_item_desc.Pstr_primitive" class="anchored">
 <td class="def constructor"><a href=
@@ -2113,8 +2170,9 @@ list</code></td>
 "constructor">Pstr_type</span> <span class="keyword">of</span>
 <a href=
 "../Asttypes/index.html#type-rec_flag">Asttypes.rec_flag</a> *
-<a href="index.html#type-type_declaration">type_declaration</a>
-list</code></td>
+<span><a href=
+"index.html#type-type_declaration">type_declaration</a>
+list</span></code></td>
 </tr>
 <tr id="type-structure_item_desc.Pstr_typext" class="anchored">
 <td class="def constructor"><a href=
@@ -2145,8 +2203,8 @@ list</code></td>
 "#type-structure_item_desc.Pstr_recmodule" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pstr_recmodule</span> <span class="keyword">of</span>
-<a href="index.html#type-module_binding">module_binding</a>
-list</code></td>
+<span><a href="index.html#type-module_binding">module_binding</a>
+list</span></code></td>
 </tr>
 <tr id="type-structure_item_desc.Pstr_modtype" class="anchored">
 <td class="def constructor"><a href=
@@ -2169,17 +2227,18 @@ list</code></td>
 "#type-structure_item_desc.Pstr_class" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pstr_class</span> <span class="keyword">of</span>
-<a href="index.html#type-class_declaration">class_declaration</a>
-list</code></td>
+<span><a href=
+"index.html#type-class_declaration">class_declaration</a>
+list</span></code></td>
 </tr>
 <tr id="type-structure_item_desc.Pstr_class_type" class="anchored">
 <td class="def constructor"><a href=
 "#type-structure_item_desc.Pstr_class_type" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pstr_class_type</span> <span class=
-"keyword">of</span> <a href=
+"keyword">of</span> <span><a href=
 "index.html#type-class_type_declaration">class_type_declaration</a>
-list</code></td>
+list</span></code></td>
 </tr>
 <tr id="type-structure_item_desc.Pstr_include" class="anchored">
 <td class="def constructor"><a href=
@@ -2242,8 +2301,8 @@ class="anchor"></a><code>pvb_attributes : <a href=
 <table class="record">
 <tr id="type-module_binding.pmb_name" class="anchored">
 <td class="def field"><a href="#type-module_binding.pmb_name"
-class="anchor"></a><code>pmb_name : string <a href=
-"../Asttypes/index.html#type-loc">Asttypes.loc</a>;</code></td>
+class="anchor"></a><code>pmb_name : <span>string <a href=
+"../Asttypes/index.html#type-loc">Asttypes.loc</a></span>;</code></td>
 </tr>
 <tr id="type-module_binding.pmb_expr" class="anchored">
 <td class="def field"><a href="#type-module_binding.pmb_expr"
@@ -2314,7 +2373,7 @@ string</code></td>
 "#type-directive_argument.Pdir_int" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Pdir_int</span> <span class="keyword">of</span>
-string * char option</code></td>
+string * <span>char option</span></code></td>
 </tr>
 <tr id="type-directive_argument.Pdir_ident" class="anchored">
 <td class="def constructor"><a href=

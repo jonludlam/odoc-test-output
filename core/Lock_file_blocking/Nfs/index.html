@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Nfs (core.Lock_file_blocking.Nfs)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -74,9 +73,9 @@ release the lock in quick succession)</li>
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-?⁠message:string <span>-&gt;</span> string <span>-&gt;</span> unit
-<a href=
-"../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core.Or_error.t</a></code></dt>
+<span>?⁠message:string</span> <span>-&gt;</span> string
+<span>-&gt;</span> <span>unit <a href=
+"../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>create ?message path</code> tries to create and lock the
 file at <code>path</code> by creating a hard link to
@@ -94,7 +93,7 @@ lockfile.</p>
 <dl>
 <dt class="spec value" id="val-create_exn"><a href=
 "#val-create_exn" class="anchor"></a><code><span class=
-"keyword">val</span> create_exn : ?⁠message:string
+"keyword">val</span> create_exn : <span>?⁠message:string</span>
 <span>-&gt;</span> string <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>create_exn ?message path</code> is like
@@ -105,10 +104,10 @@ obtain the lock.</p>
 <dl>
 <dt class="spec value" id="val-blocking_create"><a href=
 "#val-blocking_create" class="anchor"></a><code><span class=
-"keyword">val</span> blocking_create : ?⁠timeout:<a href=
-"../../Core__Core_time_float/Span/index.html#type-t">Core.Time.Span.t</a>
-<span>-&gt;</span> ?⁠message:string <span>-&gt;</span> string
-<span>-&gt;</span> unit</code></dt>
+"keyword">val</span> blocking_create : <span>?⁠timeout:<a href=
+"../../Core__Core_time_float/Span/index.html#type-t">Core.Time.Span.t</a></span>
+<span>-&gt;</span> <span>?⁠message:string</span> <span>-&gt;</span>
+string <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>blocking_create ?message path</code> is like
 <code>create</code>, but sleeps for a short while between lock
@@ -120,12 +119,13 @@ indefinitely.</p>
 <dl>
 <dt class="spec value" id="val-critical_section"><a href=
 "#val-critical_section" class="anchor"></a><code><span class=
-"keyword">val</span> critical_section : ?⁠message:string
-<span>-&gt;</span> string <span>-&gt;</span> timeout:<a href=
-"../../Core__Core_time_float/Span/index.html#type-t">Core.Time.Span.t</a>
-<span>-&gt;</span> f:(unit <span>-&gt;</span> <span class=
-"type-var">'a</span>) <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+"keyword">val</span> critical_section :
+<span>?⁠message:string</span> <span>-&gt;</span> string
+<span>-&gt;</span> <span>timeout:<a href=
+"../../Core__Core_time_float/Span/index.html#type-t">Core.Time.Span.t</a></span>
+<span>-&gt;</span> <span>f:<span>(unit <span>-&gt;</span>
+<span class="type-var">'a</span>)</span></span> <span>-&gt;</span>
+<span class="type-var">'a</span></code></dt>
 <dd>
 <p><code>critical_section ?message ~timeout path ~f</code> wraps
 function <code>f</code> (including exceptions escaping it) by first
@@ -138,9 +138,9 @@ and then unlocking the given lock file.</p>
 <dt class="spec value" id="val-get_hostname_and_pid"><a href=
 "#val-get_hostname_and_pid" class="anchor"></a><code><span class=
 "keyword">val</span> get_hostname_and_pid : string
-<span>-&gt;</span> (string * <a href=
-"../../../core_kernel/Core_kernel/Pid/index.html#type-t">Core.Pid.t</a>)
-option</code></dt>
+<span>-&gt;</span> <span><span>(string * <a href=
+"../../../core_kernel/Core_kernel/Pid/index.html#type-t">Core.Pid.t</a>)</span>
+option</span></code></dt>
 <dd>
 <p><code>get_hostname_and_pid path</code> reads the lock file at
 <code>path</code> and returns the hostname and path in the file.
@@ -150,8 +150,8 @@ Returns <code>None</code> if the file cannot be read.</p>
 <dl>
 <dt class="spec value" id="val-get_message"><a href=
 "#val-get_message" class="anchor"></a><code><span class=
-"keyword">val</span> get_message : string <span>-&gt;</span> string
-option</code></dt>
+"keyword">val</span> get_message : string <span>-&gt;</span>
+<span>string option</span></code></dt>
 <dd>
 <p><code>get_message path</code> reads the lock file at
 <code>path</code> and returns the message in the file. Returns
@@ -182,8 +182,8 @@ all the locks taken.</p>
 <dl>
 <dt class="spec value" id="val-unlock"><a href="#val-unlock" class=
 "anchor"></a><code><span class="keyword">val</span> unlock : string
-<span>-&gt;</span> unit <a href=
-"../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core.Or_error.t</a></code></dt>
+<span>-&gt;</span> <span>unit <a href=
+"../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core.Or_error.t</a></span></code></dt>
 </dl>
 </div>
 </body>

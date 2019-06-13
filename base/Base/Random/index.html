@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Random (base.Base.Random)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -54,7 +53,7 @@ seed will always yield the same sequence of numbers.</p>
 <dl>
 <dt class="spec value" id="val-full_init"><a href="#val-full_init"
 class="anchor"></a><code><span class="keyword">val</span> full_init
-: int array <span>-&gt;</span> unit</code></dt>
+: <span>int array</span> <span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Same as <a href=
 "index.html#val-init"><code>Random.init</code></a> but takes more
@@ -64,8 +63,8 @@ data as seed.</p>
 <dl>
 <dt class="spec value" id="val-self_init"><a href="#val-self_init"
 class="anchor"></a><code><span class="keyword">val</span> self_init
-: ?⁠allow_in_tests:bool <span>-&gt;</span> unit <span>-&gt;</span>
-unit</code></dt>
+: <span>?⁠allow_in_tests:bool</span> <span>-&gt;</span> unit
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Initialize the generator with a more-or-less random seed chosen
 in a system-dependent way. By default, <code>self_init</code> is

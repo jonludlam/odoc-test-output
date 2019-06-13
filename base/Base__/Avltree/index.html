@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Avltree (base.Base__.Avltree)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -72,8 +71,9 @@ and removal.</p>
 </header>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> ('k, 'v)
-t</code> <code>= <span class="keyword">private</span></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>('k, 'v)
+t</span></code> <code>= <span class=
+"keyword">private</span></code></dt>
 <dd>
 <table class="variant">
 <tr id="type-t.Empty" class="anchored">
@@ -90,9 +90,9 @@ t</code> <code>= <span class="keyword">private</span></code></dt>
 <tr id="type-t.left" class="anchored">
 <td class="def field"><a href="#type-t.left" class=
 "anchor"></a><code><span class="keyword">mutable</span> left :
-(<span class="type-var">'k</span>,&nbsp;<span class=
-"type-var">'v</span>) <a href=
-"index.html#type-t">t</a>;</code></td>
+<span><span>(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span>)</span> <a href=
+"index.html#type-t">t</a></span>;</code></td>
 </tr>
 <tr id="type-t.key" class="anchored">
 <td class="def field"><a href="#type-t.key" class=
@@ -112,9 +112,9 @@ int;</code></td>
 <tr id="type-t.right" class="anchored">
 <td class="def field"><a href="#type-t.right" class=
 "anchor"></a><code><span class="keyword">mutable</span> right :
-(<span class="type-var">'k</span>,&nbsp;<span class=
-"type-var">'v</span>) <a href=
-"index.html#type-t">t</a>;</code></td>
+<span><span>(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span>)</span> <a href=
+"index.html#type-t">t</a></span>;</code></td>
 </tr>
 </table>
 <code>}</code></td>
@@ -150,15 +150,18 @@ avltree invariants.</p>
 <dl>
 <dt class="spec value" id="val-empty"><a href="#val-empty" class=
 "anchor"></a><code><span class="keyword">val</span> empty :
-(<span class="type-var">'k</span>,&nbsp;<span class=
-"type-var">'v</span>) <a href="index.html#type-t">t</a></code></dt>
+<span><span>(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-invariant"><a href="#val-invariant"
 class="anchor"></a><code><span class="keyword">val</span> invariant
-: (<span class="type-var">'k</span>,&nbsp;<span class=
-"type-var">'v</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> compare:(<span class="type-var">'k</span>
+: <span><span>(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>compare:<span>(<span class="type-var">'k</span>
 <span>-&gt;</span> <span class="type-var">'k</span>
-<span>-&gt;</span> int) <span>-&gt;</span> unit</code></dt>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+unit</code></dt>
 <dd>
 <p>Checks invariants, raising an exception if any invariants
 fail.</p>
@@ -167,18 +170,21 @@ fail.</p>
 <dl>
 <dt class="spec value" id="val-add"><a href="#val-add" class=
 "anchor"></a><code><span class="keyword">val</span> add :
-(<span class="type-var">'k</span>,&nbsp;<span class=
-"type-var">'v</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> replace:bool <span>-&gt;</span>
-compare:(<span class="type-var">'k</span> <span>-&gt;</span>
-<span class="type-var">'k</span> <span>-&gt;</span> int)
-<span>-&gt;</span> added:bool <a href=
-"../Import/index.html#type-ref">Base__.Import.ref</a>
-<span>-&gt;</span> key:<span class="type-var">'k</span>
-<span>-&gt;</span> data:<span class="type-var">'v</span>
-<span>-&gt;</span> (<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'v</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span><span>(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>replace:bool</span> <span>-&gt;</span>
+<span>compare:<span>(<span class="type-var">'k</span>
+<span>-&gt;</span> <span class="type-var">'k</span>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span>added:<span>bool <a href=
+"../Import/index.html#type-ref">Base__.Import.ref</a></span></span>
+<span>-&gt;</span> <span>key:<span class=
+"type-var">'k</span></span> <span>-&gt;</span>
+<span>data:<span class="type-var">'v</span></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'v</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>Adds the specified key and data to the tree destructively
 (previous <code>t</code>'s are no longer valid) using the specified
@@ -202,25 +208,28 @@ tree.</p>
 <dl>
 <dt class="spec value" id="val-first"><a href="#val-first" class=
 "anchor"></a><code><span class="keyword">val</span> first :
-(<span class="type-var">'k</span>,&nbsp;<span class=
-"type-var">'v</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class="type-var">'k</span> * <span class=
-"type-var">'v</span>) option</code></dt>
+<span><span>(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'k</span> * <span class=
+"type-var">'v</span>)</span> option</span></code></dt>
 <dt class="spec value" id="val-last"><a href="#val-last" class=
 "anchor"></a><code><span class="keyword">val</span> last :
-(<span class="type-var">'k</span>,&nbsp;<span class=
-"type-var">'v</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class="type-var">'k</span> * <span class=
-"type-var">'v</span>) option</code></dt>
+<span><span>(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'k</span> * <span class=
+"type-var">'v</span>)</span> option</span></code></dt>
 <dt class="spec value" id="val-find"><a href="#val-find" class=
 "anchor"></a><code><span class="keyword">val</span> find :
-(<span class="type-var">'k</span>,&nbsp;<span class=
-"type-var">'v</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> compare:(<span class="type-var">'k</span>
+<span><span>(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>compare:<span>(<span class="type-var">'k</span>
 <span>-&gt;</span> <span class="type-var">'k</span>
-<span>-&gt;</span> int) <span>-&gt;</span> <span class=
-"type-var">'k</span> <span>-&gt;</span> <span class=
-"type-var">'v</span> option</code></dt>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span class="type-var">'k</span> <span>-&gt;</span>
+<span><span class="type-var">'v</span> option</span></code></dt>
 <dd>
 <p>If the specified key exists in the tree, returns the
 corresponding value. O(log(N)) time and O(1) space.</p>
@@ -229,17 +238,19 @@ corresponding value. O(log(N)) time and O(1) space.</p>
 <dl>
 <dt class="spec value" id="val-find_and_call"><a href=
 "#val-find_and_call" class="anchor"></a><code><span class=
-"keyword">val</span> find_and_call : (<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'v</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-compare:(<span class="type-var">'k</span> <span>-&gt;</span>
-<span class="type-var">'k</span> <span>-&gt;</span> int)
+"keyword">val</span> find_and_call : <span><span>(<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'v</span>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>compare:<span>(<span class="type-var">'k</span>
 <span>-&gt;</span> <span class="type-var">'k</span>
-<span>-&gt;</span> if_found:(<span class="type-var">'v</span>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> if_not_found:(<span class="type-var">'k</span>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span class="type-var">'k</span> <span>-&gt;</span>
+<span>if_found:<span>(<span class="type-var">'v</span>
+<span>-&gt;</span> <span class="type-var">'a</span>)</span></span>
+<span>-&gt;</span> <span>if_not_found:<span>(<span class=
+"type-var">'k</span> <span>-&gt;</span> <span class=
+"type-var">'a</span>)</span></span> <span>-&gt;</span> <span class=
+"type-var">'a</span></code></dt>
 <dd>
 <p><code>find_and_call t ~compare k ~if_found
 ~if_not_found</code></p>
@@ -252,26 +263,31 @@ None -&gt; if_not_found k</code></p>
 <dl>
 <dt class="spec value" id="val-findi_and_call"><a href=
 "#val-findi_and_call" class="anchor"></a><code><span class=
-"keyword">val</span> findi_and_call : (<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'v</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-compare:(<span class="type-var">'k</span> <span>-&gt;</span>
-<span class="type-var">'k</span> <span>-&gt;</span> int)
+"keyword">val</span> findi_and_call : <span><span>(<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'v</span>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>compare:<span>(<span class="type-var">'k</span>
 <span>-&gt;</span> <span class="type-var">'k</span>
-<span>-&gt;</span> if_found:(key:<span class="type-var">'k</span>
-<span>-&gt;</span> data:<span class="type-var">'v</span>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> if_not_found:(<span class="type-var">'k</span>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span class="type-var">'k</span> <span>-&gt;</span>
+<span>if_found:<span>(<span>key:<span class=
+"type-var">'k</span></span> <span>-&gt;</span>
+<span>data:<span class="type-var">'v</span></span>
+<span>-&gt;</span> <span class="type-var">'a</span>)</span></span>
+<span>-&gt;</span> <span>if_not_found:<span>(<span class=
+"type-var">'k</span> <span>-&gt;</span> <span class=
+"type-var">'a</span>)</span></span> <span>-&gt;</span> <span class=
+"type-var">'a</span></code></dt>
 <dt class="spec value" id="val-mem"><a href="#val-mem" class=
 "anchor"></a><code><span class="keyword">val</span> mem :
-(<span class="type-var">'k</span>,&nbsp;<span class=
-"type-var">'v</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> compare:(<span class="type-var">'k</span>
+<span><span>(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>compare:<span>(<span class="type-var">'k</span>
 <span>-&gt;</span> <span class="type-var">'k</span>
-<span>-&gt;</span> int) <span>-&gt;</span> <span class=
-"type-var">'k</span> <span>-&gt;</span> bool</code></dt>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span class="type-var">'k</span> <span>-&gt;</span>
+bool</code></dt>
 <dd>
 <p>Returns true if key is present in the tree, and false
 otherwise.</p>
@@ -280,16 +296,18 @@ otherwise.</p>
 <dl>
 <dt class="spec value" id="val-remove"><a href="#val-remove" class=
 "anchor"></a><code><span class="keyword">val</span> remove :
-(<span class="type-var">'k</span>,&nbsp;<span class=
-"type-var">'v</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> removed:bool <a href=
-"../Import/index.html#type-ref">Base__.Import.ref</a>
-<span>-&gt;</span> compare:(<span class="type-var">'k</span>
+<span><span>(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>removed:<span>bool <a href=
+"../Import/index.html#type-ref">Base__.Import.ref</a></span></span>
+<span>-&gt;</span> <span>compare:<span>(<span class=
+"type-var">'k</span> <span>-&gt;</span> <span class=
+"type-var">'k</span> <span>-&gt;</span> int)</span></span>
 <span>-&gt;</span> <span class="type-var">'k</span>
-<span>-&gt;</span> int) <span>-&gt;</span> <span class=
-"type-var">'k</span> <span>-&gt;</span> (<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'v</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'v</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>Removes key destructively from the tree if it exists, returning
 the new root node. Previous root nodes are not usable anymore; do
@@ -300,13 +318,15 @@ if a node was actually removed, and false otherwise.</p>
 <dl>
 <dt class="spec value" id="val-fold"><a href="#val-fold" class=
 "anchor"></a><code><span class="keyword">val</span> fold :
-(<span class="type-var">'k</span>,&nbsp;<span class=
-"type-var">'v</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> init:<span class="type-var">'a</span>
-<span>-&gt;</span> f:(key:<span class="type-var">'k</span>
-<span>-&gt;</span> data:<span class="type-var">'v</span>
+<span><span>(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>init:<span class="type-var">'a</span></span>
+<span>-&gt;</span> <span>f:<span>(<span>key:<span class=
+"type-var">'k</span></span> <span>-&gt;</span>
+<span>data:<span class="type-var">'v</span></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span></span>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dd>
 <p>Folds over the tree.</p>
@@ -315,11 +335,13 @@ if a node was actually removed, and false otherwise.</p>
 <dl>
 <dt class="spec value" id="val-iter"><a href="#val-iter" class=
 "anchor"></a><code><span class="keyword">val</span> iter :
-(<span class="type-var">'k</span>,&nbsp;<span class=
-"type-var">'v</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(key:<span class="type-var">'k</span>
-<span>-&gt;</span> data:<span class="type-var">'v</span>
-<span>-&gt;</span> unit) <span>-&gt;</span> unit</code></dt>
+<span><span>(<span class="type-var">'k</span>,&nbsp;<span class=
+"type-var">'v</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span>key:<span class="type-var">'k</span></span>
+<span>-&gt;</span> <span>data:<span class=
+"type-var">'v</span></span> <span>-&gt;</span> unit)</span></span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Iterates over the tree.</p>
 </dd>
@@ -327,12 +349,13 @@ if a node was actually removed, and false otherwise.</p>
 <dl>
 <dt class="spec value" id="val-mapi_inplace"><a href=
 "#val-mapi_inplace" class="anchor"></a><code><span class=
-"keyword">val</span> mapi_inplace : (<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'v</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-f:(key:<span class="type-var">'k</span> <span>-&gt;</span>
-data:<span class="type-var">'v</span> <span>-&gt;</span>
-<span class="type-var">'v</span>) <span>-&gt;</span>
+"keyword">val</span> mapi_inplace : <span><span>(<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'v</span>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span>key:<span class="type-var">'k</span></span>
+<span>-&gt;</span> <span>data:<span class=
+"type-var">'v</span></span> <span>-&gt;</span> <span class=
+"type-var">'v</span>)</span></span> <span>-&gt;</span>
 unit</code></dt>
 <dd>
 <p>Map over the the tree, changing the data in place.</p>

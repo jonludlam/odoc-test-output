@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Let_syntax (core.Core.Command.Let_syntax)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -27,8 +26,8 @@ Let_syntax</nav>
 </header>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 <dd>
 <p>Substituted below.</p>
 </dd>
@@ -36,8 +35,9 @@ t</code></dt>
 <dl>
 <dt class="spec value" id="val-return"><a href="#val-return" class=
 "anchor"></a><code><span class="keyword">val</span> return :
-<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -47,24 +47,27 @@ t</code></dt>
 "keyword">include</span> <a href=
 "../../../../base/Base/Applicative/index.html#module-type-Applicative_infix">
 Core_kernel__.Import.Applicative.Applicative_infix</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href=
 "../../../../base/Base/Applicative/module-type-Applicative_infix/index.html#type-t">
-t</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></span></summary>
+t</a></span> := <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-(&lt;*&gt;)"><a href=
 "#val-(%3C*%3E)" class="anchor"></a><code><span class=
-"keyword">val</span> (&lt;*&gt;) : (<span class=
+"keyword">val</span> (&lt;*&gt;) : <span><span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a></code></dt>
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>same as <code>apply</code></p>
 </dd>
@@ -72,23 +75,26 @@ t</code></dt>
 <dl>
 <dt class="spec value" id="val-(&lt;*)"><a href="#val-(%3C*)"
 class="anchor"></a><code><span class="keyword">val</span> (&lt;*) :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> unit <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span>unit
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-(*&gt;)"><a href="#val-(*%3E)"
 class="anchor"></a><code><span class="keyword">val</span> (*&gt;) :
-unit <a href="index.html#type-t">t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span>unit <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-(&gt;&gt;|)"><a href=
 "#val-(%3E%3E|)" class="anchor"></a><code><span class=
-"keyword">val</span> (&gt;&gt;|) : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> (&gt;&gt;|) : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span>
+<span>-&gt;</span> <span class="type-var">'b</span>)</span>
+<span>-&gt;</span> <span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -100,9 +106,9 @@ unit <a href="index.html#type-t">t</a> <span>-&gt;</span>
 "Let_syntax/index.html">Let_syntax</a> : <span class=
 "keyword">sig</span> ... <span class="keyword">end</span>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href="Let_syntax/index.html#type-t">t</a> := <span class=
-"type-var">'a</span> <a href=
-"../Param/index.html#type-t">Param.t</a></code></div>
+<span>'a <a href="Let_syntax/index.html#type-t">t</a></span> :=
+<span><span class="type-var">'a</span> <a href=
+"../Param/index.html#type-t">Param.t</a></span></code></div>
 </div>
 </body>
 </html>

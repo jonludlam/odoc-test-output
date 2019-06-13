@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Core_unix (core.Core__.Core_unix)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -493,10 +492,10 @@ function, if it has one, or the empty string otherwise.</p>
 <span class="keyword">of</span> <a href=
 "../index.html#module-Syscall_result">Core__.Syscall_result</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
-"../index.html#module-Syscall_result">Syscall_result</a>.t =
-<span class="type-var">'a</span> <a href=
-"../Syscall_result/index.html#type-t">Core__.Syscall_result.t</a></code></div>
+<span>'a <a href=
+"../index.html#module-Syscall_result">Syscall_result</a>.t</span> =
+<span><span class="type-var">'a</span> <a href=
+"../Syscall_result/index.html#type-t">Core__.Syscall_result.t</a></span></code></div>
 <dl>
 <dt class="spec external" id="val-unix_error"><a href=
 "#val-unix_error" class="anchor"></a><code><span class=
@@ -520,9 +519,9 @@ function, if it has one, or the empty string otherwise.</p>
 string</code></dt>
 <dt class="spec value" id="val-handle_unix_error"><a href=
 "#val-handle_unix_error" class="anchor"></a><code><span class=
-"keyword">val</span> handle_unix_error : (unit <span>-&gt;</span>
-<span class="type-var">'a</span>) <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+"keyword">val</span> handle_unix_error : <span>(unit
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dd>
 <p><code>handle_unix_error f</code> runs <code>f ()</code> and
 returns the result. If the exception <code>Unix_error</code> is
@@ -533,8 +532,8 @@ code 2.</p>
 <dl>
 <dt class="spec value" id="val-retry_until_no_eintr"><a href=
 "#val-retry_until_no_eintr" class="anchor"></a><code><span class=
-"keyword">val</span> retry_until_no_eintr : (unit
-<span>-&gt;</span> <span class="type-var">'a</span>)
+"keyword">val</span> retry_until_no_eintr : <span>(unit
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dd>
 <p><code>retry_until_no_eintr f</code> returns <code>f ()</code>
@@ -555,8 +554,8 @@ module.</p>
 <dl>
 <dt class="spec value" id="val-environment"><a href=
 "#val-environment" class="anchor"></a><code><span class=
-"keyword">val</span> environment : unit <span>-&gt;</span> string
-array</code></dt>
+"keyword">val</span> environment : unit <span>-&gt;</span>
+<span>string array</span></code></dt>
 <dd>
 <p>Return the process environment, as an array of strings with the
 format ``variable=value''. The returned array is empty if the
@@ -566,8 +565,8 @@ process has special privileges.</p>
 <dl>
 <dt class="spec value" id="val-putenv"><a href="#val-putenv" class=
 "anchor"></a><code><span class="keyword">val</span> putenv :
-key:string <span>-&gt;</span> data:string <span>-&gt;</span>
-unit</code></dt>
+<span>key:string</span> <span>-&gt;</span> <span>data:string</span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>Unix.putenv ~key ~data</code> sets the value associated to
 a variable in the process environment. <code>key</code> is the name
@@ -623,22 +622,25 @@ class="anchor"></a><code><span class="keyword">module</span>
 <tr id="type-env.Replace" class="anchored">
 <td class="def constructor"><a href="#type-env.Replace" class=
 "anchor"></a><code>|</code> <code>`Replace <span class=
-"keyword">of</span> (string * string) list</code></td>
+"keyword">of</span> <span><span>(string * string)</span>
+list</span></code></td>
 </tr>
 <tr id="type-env.Extend" class="anchored">
 <td class="def constructor"><a href="#type-env.Extend" class=
 "anchor"></a><code>|</code> <code>`Extend <span class=
-"keyword">of</span> (string * string) list</code></td>
+"keyword">of</span> <span><span>(string * string)</span>
+list</span></code></td>
 </tr>
 <tr id="type-env.Override" class="anchored">
 <td class="def constructor"><a href="#type-env.Override" class=
 "anchor"></a><code>|</code> <code>`Override <span class=
-"keyword">of</span> (string * string option) list</code></td>
+"keyword">of</span> <span><span>(string * <span>string
+option</span>)</span> list</span></code></td>
 </tr>
 <tr id="type-env.Replace_raw" class="anchored">
 <td class="def constructor"><a href="#type-env.Replace_raw" class=
 "anchor"></a><code>|</code> <code>`Replace_raw <span class=
-"keyword">of</span> string list</code></td>
+"keyword">of</span> <span>string list</span></code></td>
 </tr>
 </table>
 <code>]</code></dd>
@@ -692,9 +694,10 @@ over the existing environment.</p>
 <dl>
 <dt class="spec value" id="val-exec"><a href="#val-exec" class=
 "anchor"></a><code><span class="keyword">val</span> exec :
-prog:string <span>-&gt;</span> argv:string list <span>-&gt;</span>
-?⁠use_path:bool <span>-&gt;</span> ?⁠env:<a href=
-"index.html#type-env">env</a> <span>-&gt;</span> unit
+<span>prog:string</span> <span>-&gt;</span> <span>argv:<span>string
+list</span></span> <span>-&gt;</span> <span>?⁠use_path:bool</span>
+<span>-&gt;</span> <span>?⁠env:<a href=
+"index.html#type-env">env</a></span> <span>-&gt;</span> unit
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-never_returns">Core__.Import.never_returns</a></code></dt>
 <dd>
@@ -713,10 +716,11 @@ itself; the correct way to call <code>exec</code> is:</p>
 <dl>
 <dt class="spec value" id="val-fork_exec"><a href="#val-fork_exec"
 class="anchor"></a><code><span class="keyword">val</span> fork_exec
-: prog:string <span>-&gt;</span> argv:string list
-<span>-&gt;</span> ?⁠use_path:bool <span>-&gt;</span>
-?⁠env:<a href="index.html#type-env">env</a> <span>-&gt;</span> unit
-<span>-&gt;</span> <a href=
+: <span>prog:string</span> <span>-&gt;</span>
+<span>argv:<span>string list</span></span> <span>-&gt;</span>
+<span>?⁠use_path:bool</span> <span>-&gt;</span>
+<span>?⁠env:<a href="index.html#type-env">env</a></span>
+<span>-&gt;</span> unit <span>-&gt;</span> <a href=
 "../../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a></code></dt>
 <dd>
 <p><code>fork_exec ~prog ~argv ?use_path ?env ()</code> forks and
@@ -729,9 +733,10 @@ the program itself.</p>
 <dl>
 <dt class="spec value" id="val-fork"><a href="#val-fork" class=
 "anchor"></a><code><span class="keyword">val</span> fork : unit
-<span>-&gt;</span> [ `In_the_child | `In_the_parent of <a href=
-"../../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a>
-]</code></dt>
+<span>-&gt;</span> <span>[ `In_the_child <span><span>|
+`In_the_parent</span> of <a href=
+"../../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a></span>
+]</span></code></dt>
 <dd>
 <p><code>fork ()</code> forks a new process. The return value
 indicates whether we are continuing in the child or the parent, and
@@ -815,7 +820,7 @@ wait_on</code> = <code>[</code></dt>
 <dl>
 <dt class="spec value" id="val-wait"><a href="#val-wait" class=
 "anchor"></a><code><span class="keyword">val</span> wait :
-?⁠restart:bool <span>-&gt;</span> <a href=
+<span>?⁠restart:bool</span> <span>-&gt;</span> <a href=
 "index.html#type-wait_on">wait_on</a> <span>-&gt;</span> <a href=
 "../../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a>
 * <a href=
@@ -823,13 +828,15 @@ wait_on</code> = <code>[</code></dt>
 <dt class="spec value" id="val-wait_nohang"><a href=
 "#val-wait_nohang" class="anchor"></a><code><span class=
 "keyword">val</span> wait_nohang : <a href=
-"index.html#type-wait_on">wait_on</a> <span>-&gt;</span> (<a href=
+"index.html#type-wait_on">wait_on</a> <span>-&gt;</span>
+<span><span>(<a href=
 "../../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a>
-* <a href="Exit_or_signal/index.html#type-t">Exit_or_signal.t</a>)
-option</code></dt>
+* <a href=
+"Exit_or_signal/index.html#type-t">Exit_or_signal.t</a>)</span>
+option</span></code></dt>
 <dt class="spec value" id="val-wait_untraced"><a href=
 "#val-wait_untraced" class="anchor"></a><code><span class=
-"keyword">val</span> wait_untraced : ?⁠restart:bool
+"keyword">val</span> wait_untraced : <span>?⁠restart:bool</span>
 <span>-&gt;</span> <a href="index.html#type-wait_on">wait_on</a>
 <span>-&gt;</span> <a href=
 "../../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a>
@@ -838,11 +845,12 @@ option</code></dt>
 <dt class="spec value" id="val-wait_nohang_untraced"><a href=
 "#val-wait_nohang_untraced" class="anchor"></a><code><span class=
 "keyword">val</span> wait_nohang_untraced : <a href=
-"index.html#type-wait_on">wait_on</a> <span>-&gt;</span> (<a href=
+"index.html#type-wait_on">wait_on</a> <span>-&gt;</span>
+<span><span>(<a href=
 "../../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a>
 * <a href=
-"Exit_or_signal_or_stop/index.html#type-t">Exit_or_signal_or_stop.t</a>)
-option</code></dt>
+"Exit_or_signal_or_stop/index.html#type-t">Exit_or_signal_or_stop.t</a>)</span>
+option</span></code></dt>
 <dt class="spec value" id="val-waitpid"><a href="#val-waitpid"
 class="anchor"></a><code><span class="keyword">val</span> waitpid :
 <a href=
@@ -887,9 +895,9 @@ indicates that the shell couldn't be executed.</p>
 <dl>
 <dt class="spec value" id="val-getppid"><a href="#val-getppid"
 class="anchor"></a><code><span class="keyword">val</span> getppid :
-unit <span>-&gt;</span> <a href=
+unit <span>-&gt;</span> <span><a href=
 "../../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a>
-option</code></dt>
+option</span></code></dt>
 <dd>
 <p>Return the pid of the parent process.</p>
 </dd>
@@ -912,10 +920,10 @@ you're never going to be the init process.</p>
 "keyword">end</span></code></div>
 <dl>
 <dt class="spec value" id="val-gettid"><a href="#val-gettid" class=
-"anchor"></a><code><span class="keyword">val</span> gettid : (unit
-<span>-&gt;</span> <a href=
-"Thread_id/index.html#type-t">Thread_id.t</a>) <a href=
-"../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"anchor"></a><code><span class="keyword">val</span> gettid :
+<span><span>(unit <span>-&gt;</span> <a href=
+"Thread_id/index.html#type-t">Thread_id.t</a>)</span> <a href=
+"../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p>Get the numeric ID of the current thread, e.g. for identifying
 it in top(1).</p>
@@ -1154,11 +1162,11 @@ file_perm</code> <code>= int</code></dt>
 <dl>
 <dt class="spec value" id="val-openfile"><a href="#val-openfile"
 class="anchor"></a><code><span class="keyword">val</span> openfile
-: ?⁠perm:<a href="index.html#type-file_perm">file_perm</a>
-<span>-&gt;</span> mode:<a href=
-"index.html#type-open_flag">open_flag</a> list <span>-&gt;</span>
-string <span>-&gt;</span> <a href=
-"File_descr/index.html#type-t">File_descr.t</a></code></dt>
+: <span>?⁠perm:<a href=
+"index.html#type-file_perm">file_perm</a></span> <span>-&gt;</span>
+<span>mode:<span><a href="index.html#type-open_flag">open_flag</a>
+list</span></span> <span>-&gt;</span> string <span>-&gt;</span>
+<a href="File_descr/index.html#type-t">File_descr.t</a></code></dt>
 <dd>
 <p>Open the named file with the given flags. Third argument is the
 permissions to give to the file if it is created. Return a file
@@ -1201,7 +1209,7 @@ per the Linux man page, on Linux this only allows
 <dl>
 <dt class="spec value" id="val-close"><a href="#val-close" class=
 "anchor"></a><code><span class="keyword">val</span> close :
-?⁠restart:bool <span>-&gt;</span> <a href=
+<span>?⁠restart:bool</span> <span>-&gt;</span> <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
 unit</code></dt>
 <dd>
@@ -1211,12 +1219,14 @@ unit</code></dt>
 <dl>
 <dt class="spec value" id="val-with_file"><a href="#val-with_file"
 class="anchor"></a><code><span class="keyword">val</span> with_file
-: ?⁠perm:<a href="index.html#type-file_perm">file_perm</a>
-<span>-&gt;</span> string <span>-&gt;</span> mode:<a href=
-"index.html#type-open_flag">open_flag</a> list <span>-&gt;</span>
-f:(<a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
+: <span>?⁠perm:<a href=
+"index.html#type-file_perm">file_perm</a></span> <span>-&gt;</span>
+string <span>-&gt;</span> <span>mode:<span><a href=
+"index.html#type-open_flag">open_flag</a> list</span></span>
+<span>-&gt;</span> <span>f:<span>(<a href=
+"File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
+<span class="type-var">'a</span>)</span></span> <span>-&gt;</span>
+<span class="type-var">'a</span></code></dt>
 <dd>
 <p><code>with_file file ~mode ~perm ~f</code> opens
 <code>file</code>, and applies <code>f</code> to the resulting file
@@ -1228,11 +1238,12 @@ of <code>f</code> (or raises).</p>
 <dl>
 <dt class="spec value" id="val-read"><a href="#val-read" class=
 "anchor"></a><code><span class="keyword">val</span> read :
-?⁠restart:bool <span>-&gt;</span> ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> <a href=
+<span>?⁠restart:bool</span> <span>-&gt;</span>
+<span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-buf:<a href=
-"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>
+<span>buf:<a href=
+"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a></span>
 <span>-&gt;</span> int</code></dt>
 <dd>
 <p><code>read fd buff ofs len</code> reads <code>len</code>
@@ -1245,10 +1256,11 @@ read.</p>
 <dl>
 <dt class="spec value" id="val-write"><a href="#val-write" class=
 "anchor"></a><code><span class="keyword">val</span> write :
-?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span> <a href=
+<span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-buf:<a href=
-"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>
+<span>buf:<a href=
+"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a></span>
 <span>-&gt;</span> int</code></dt>
 <dd>
 <p><code>write fd buff ofs len</code> writes <code>len</code>
@@ -1266,10 +1278,11 @@ EINTR properly. You should most probably be using single write.</p>
 <dl>
 <dt class="spec value" id="val-write_substring"><a href=
 "#val-write_substring" class="anchor"></a><code><span class=
-"keyword">val</span> write_substring : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> <a href=
-"File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-buf:string <span>-&gt;</span> int</code></dt>
+"keyword">val</span> write_substring : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span>
+<a href="File_descr/index.html#type-t">File_descr.t</a>
+<span>-&gt;</span> <span>buf:string</span> <span>-&gt;</span>
+int</code></dt>
 <dd>
 <p>Same as <code>write</code> but with a string buffer.</p>
 </dd>
@@ -1277,12 +1290,12 @@ buf:string <span>-&gt;</span> int</code></dt>
 <dl>
 <dt class="spec value" id="val-single_write"><a href=
 "#val-single_write" class="anchor"></a><code><span class=
-"keyword">val</span> single_write : ?⁠restart:bool
-<span>-&gt;</span> ?⁠pos:int <span>-&gt;</span> ?⁠len:int
-<span>-&gt;</span> <a href=
+"keyword">val</span> single_write : <span>?⁠restart:bool</span>
+<span>-&gt;</span> <span>?⁠pos:int</span> <span>-&gt;</span>
+<span>?⁠len:int</span> <span>-&gt;</span> <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-buf:<a href=
-"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>
+<span>buf:<a href=
+"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a></span>
 <span>-&gt;</span> int</code></dt>
 <dd>
 <p>Same as <code>write</code> but ensures that all errors are
@@ -1293,11 +1306,12 @@ is reported.</p>
 <dl>
 <dt class="spec value" id="val-single_write_substring"><a href=
 "#val-single_write_substring" class="anchor"></a><code><span class=
-"keyword">val</span> single_write_substring : ?⁠restart:bool
-<span>-&gt;</span> ?⁠pos:int <span>-&gt;</span> ?⁠len:int
+"keyword">val</span> single_write_substring :
+<span>?⁠restart:bool</span> <span>-&gt;</span>
+<span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
 <span>-&gt;</span> <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-buf:string <span>-&gt;</span> int</code></dt>
+<span>buf:string</span> <span>-&gt;</span> int</code></dt>
 <dd>
 <p>Same as <code>single_write</code> but with a string buffer.</p>
 </dd>
@@ -1431,9 +1445,9 @@ class="anchor"></a><code>|</code> <code><span class=
 <dt class="spec value" id="val-lseek"><a href="#val-lseek" class=
 "anchor"></a><code><span class="keyword">val</span> lseek :
 <a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> int64 <span>-&gt;</span> mode:<a href=
-"index.html#type-seek_command">seek_command</a> <span>-&gt;</span>
-int64</code></dt>
+<span>-&gt;</span> int64 <span>-&gt;</span> <span>mode:<a href=
+"index.html#type-seek_command">seek_command</a></span>
+<span>-&gt;</span> int64</code></dt>
 <dd>
 <p>Set the current position for a file descriptor</p>
 </dd>
@@ -1441,8 +1455,8 @@ int64</code></dt>
 <dl>
 <dt class="spec value" id="val-truncate"><a href="#val-truncate"
 class="anchor"></a><code><span class="keyword">val</span> truncate
-: string <span>-&gt;</span> len:int64 <span>-&gt;</span>
-unit</code></dt>
+: string <span>-&gt;</span> <span>len:int64</span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Truncates the named file to the given size.</p>
 </dd>
@@ -1451,7 +1465,8 @@ unit</code></dt>
 <dt class="spec value" id="val-ftruncate"><a href="#val-ftruncate"
 class="anchor"></a><code><span class="keyword">val</span> ftruncate
 : <a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> len:int64 <span>-&gt;</span> unit</code></dt>
+<span>-&gt;</span> <span>len:int64</span> <span>-&gt;</span>
+unit</code></dt>
 <dd>
 <p>Truncates the file corresponding to the given descriptor to the
 given size.</p>
@@ -1826,10 +1841,10 @@ class="anchor"></a><code>|</code> <code><span class=
 <dt class="spec value" id="val-lockf"><a href="#val-lockf" class=
 "anchor"></a><code><span class="keyword">val</span> lockf :
 <a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> mode:<a href=
-"index.html#type-lock_command">lock_command</a> <span>-&gt;</span>
-len:<a href=
-"../../../core_kernel/Core_kernel/Int64/index.html#type-t">Core__.Import.Int64.t</a>
+<span>-&gt;</span> <span>mode:<a href=
+"index.html#type-lock_command">lock_command</a></span>
+<span>-&gt;</span> <span>len:<a href=
+"../../../core_kernel/Core_kernel/Int64/index.html#type-t">Core__.Import.Int64.t</a></span>
 <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>lockf fd cmd size</code> place a lock on a file_descr that
@@ -1878,14 +1893,15 @@ memory</h6>
 <dt class="spec value" id="val-map_file"><a href="#val-map_file"
 class="anchor"></a><code><span class="keyword">val</span> map_file
 : <a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> ?⁠pos:int64 <span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-Bigarray.kind <span>-&gt;</span> <span class="type-var">'c</span>
-Bigarray.layout <span>-&gt;</span> shared:bool <span>-&gt;</span>
-int array <span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
-Bigarray.Genarray.t</code></dt>
+<span>-&gt;</span> <span>?⁠pos:int64</span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> Bigarray.kind</span>
+<span>-&gt;</span> <span><span class="type-var">'c</span>
+Bigarray.layout</span> <span>-&gt;</span> <span>shared:bool</span>
+<span>-&gt;</span> <span>int array</span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)</span>
+Bigarray.Genarray.t</span></code></dt>
 <dd>
 <p>Memory mapping of a file as a big array. <code>map_file fd kind
 layout ~shared dims</code> returns a big array of kind
@@ -1954,8 +1970,8 @@ names</h6>
 <dl>
 <dt class="spec value" id="val-rename"><a href="#val-rename" class=
 "anchor"></a><code><span class="keyword">val</span> rename :
-src:string <span>-&gt;</span> dst:string <span>-&gt;</span>
-unit</code></dt>
+<span>src:string</span> <span>-&gt;</span> <span>dst:string</span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>rename old new</code> changes the name of a file from
 <code>old</code> to <code>new</code>.</p>
@@ -1964,9 +1980,10 @@ unit</code></dt>
 <dl>
 <dt class="spec value" id="val-link"><a href="#val-link" class=
 "anchor"></a><code><span class="keyword">val</span> link :
-?⁠force:bool <span>-&gt;</span> target:string <span>-&gt;</span>
-link_name:string <span>-&gt;</span> unit <span>-&gt;</span>
-unit</code></dt>
+<span>?⁠force:bool</span> <span>-&gt;</span>
+<span>target:string</span> <span>-&gt;</span>
+<span>link_name:string</span> <span>-&gt;</span> unit
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>link ?force ~target ~link_name ()</code> creates a hard
 link named <code>link_name</code> to the file named
@@ -1986,8 +2003,8 @@ permissions and ownership</h6>
 <dl>
 <dt class="spec value" id="val-chmod"><a href="#val-chmod" class=
 "anchor"></a><code><span class="keyword">val</span> chmod : string
-<span>-&gt;</span> perm:<a href=
-"index.html#type-file_perm">file_perm</a> <span>-&gt;</span>
+<span>-&gt;</span> <span>perm:<a href=
+"index.html#type-file_perm">file_perm</a></span> <span>-&gt;</span>
 unit</code></dt>
 <dd>
 <p>Change the permissions of the named file.</p>
@@ -1997,8 +2014,8 @@ unit</code></dt>
 <dt class="spec value" id="val-fchmod"><a href="#val-fchmod" class=
 "anchor"></a><code><span class="keyword">val</span> fchmod :
 <a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> perm:<a href=
-"index.html#type-file_perm">file_perm</a> <span>-&gt;</span>
+<span>-&gt;</span> <span>perm:<a href=
+"index.html#type-file_perm">file_perm</a></span> <span>-&gt;</span>
 unit</code></dt>
 <dd>
 <p>Change the permissions of an opened file.</p>
@@ -2007,8 +2024,8 @@ unit</code></dt>
 <dl>
 <dt class="spec value" id="val-chown"><a href="#val-chown" class=
 "anchor"></a><code><span class="keyword">val</span> chown : string
-<span>-&gt;</span> uid:int <span>-&gt;</span> gid:int
-<span>-&gt;</span> unit</code></dt>
+<span>-&gt;</span> <span>uid:int</span> <span>-&gt;</span>
+<span>gid:int</span> <span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Change the owner uid and owner gid of the named file.</p>
 </dd>
@@ -2017,8 +2034,8 @@ unit</code></dt>
 <dt class="spec value" id="val-fchown"><a href="#val-fchown" class=
 "anchor"></a><code><span class="keyword">val</span> fchown :
 <a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> uid:int <span>-&gt;</span> gid:int
-<span>-&gt;</span> unit</code></dt>
+<span>-&gt;</span> <span>uid:int</span> <span>-&gt;</span>
+<span>gid:int</span> <span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Change the owner uid and owner gid of an opened file.</p>
 </dd>
@@ -2034,9 +2051,10 @@ unit</code></dt>
 <dl>
 <dt class="spec value" id="val-access"><a href="#val-access" class=
 "anchor"></a><code><span class="keyword">val</span> access : string
-<span>-&gt;</span> [ `Read | `Write | `Exec | `Exists ] list
-<span>-&gt;</span> (unit,&nbsp;exn) <a href=
-"../../../core_kernel/Core_kernel/Result/index.html#type-t">Core__.Import.Result.t</a></code></dt>
+<span>-&gt;</span> <span><span>[ `Read <span>| `Write</span>
+<span>| `Exec</span> <span>| `Exists</span> ]</span> list</span>
+<span>-&gt;</span> <span><span>(unit,&nbsp;exn)</span> <a href=
+"../../../core_kernel/Core_kernel/Result/index.html#type-t">Core__.Import.Result.t</a></span></code></dt>
 <dd>
 <p>Check that the process has the given permissions over the named
 file.</p>
@@ -2045,8 +2063,9 @@ file.</p>
 <dl>
 <dt class="spec value" id="val-access_exn"><a href=
 "#val-access_exn" class="anchor"></a><code><span class=
-"keyword">val</span> access_exn : string <span>-&gt;</span> [ `Read
-| `Write | `Exec | `Exists ] list <span>-&gt;</span>
+"keyword">val</span> access_exn : string <span>-&gt;</span>
+<span><span>[ `Read <span>| `Write</span> <span>| `Exec</span>
+<span>| `Exists</span> ]</span> list</span> <span>-&gt;</span>
 unit</code></dt>
 </dl>
 </section>
@@ -2069,10 +2088,11 @@ given descriptor.</p>
 <dl>
 <dt class="spec value" id="val-dup2"><a href="#val-dup2" class=
 "anchor"></a><code><span class="keyword">val</span> dup2 :
-src:<a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> dst:<a href=
-"File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-unit</code></dt>
+<span>src:<a href=
+"File_descr/index.html#type-t">File_descr.t</a></span>
+<span>-&gt;</span> <span>dst:<a href=
+"File_descr/index.html#type-t">File_descr.t</a></span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>dup2 ~src ~dst</code> duplicates <code>src</code> to
 <code>dst</code>, closing <code>dst</code> if already opened.</p>
@@ -2141,8 +2161,9 @@ UnixLabels</code>.set_close_on_exec</span>.</p>
 <dl>
 <dt class="spec value" id="val-mkdir"><a href="#val-mkdir" class=
 "anchor"></a><code><span class="keyword">val</span> mkdir :
-?⁠perm:<a href="index.html#type-file_perm">file_perm</a>
-<span>-&gt;</span> string <span>-&gt;</span> unit</code></dt>
+<span>?⁠perm:<a href=
+"index.html#type-file_perm">file_perm</a></span> <span>-&gt;</span>
+string <span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Create a directory. The permissions of the created directory are
 (perm &amp; ~umask &amp; 0777). The default perm is 0777.</p>
@@ -2151,8 +2172,9 @@ UnixLabels</code>.set_close_on_exec</span>.</p>
 <dl>
 <dt class="spec value" id="val-mkdir_p"><a href="#val-mkdir_p"
 class="anchor"></a><code><span class="keyword">val</span> mkdir_p :
-?⁠perm:<a href="index.html#type-file_perm">file_perm</a>
-<span>-&gt;</span> string <span>-&gt;</span> unit</code></dt>
+<span>?⁠perm:<a href=
+"index.html#type-file_perm">file_perm</a></span> <span>-&gt;</span>
+string <span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Create a directory recursively. The permissions of the created
 directory are those granted by <code>mkdir ~perm</code>.</p>
@@ -2202,8 +2224,9 @@ Unix.dir_handle</code></dt>
 <dl>
 <dt class="spec value" id="val-opendir"><a href="#val-opendir"
 class="anchor"></a><code><span class="keyword">val</span> opendir :
-?⁠restart:bool <span>-&gt;</span> string <span>-&gt;</span>
-<a href="index.html#type-dir_handle">dir_handle</a></code></dt>
+<span>?⁠restart:bool</span> <span>-&gt;</span> string
+<span>-&gt;</span> <a href=
+"index.html#type-dir_handle">dir_handle</a></code></dt>
 <dd>
 <p>Open a descriptor on a directory</p>
 </dd>
@@ -2213,7 +2236,7 @@ class="anchor"></a><code><span class="keyword">val</span> opendir :
 "#val-readdir_opt" class="anchor"></a><code><span class=
 "keyword">val</span> readdir_opt : <a href=
 "index.html#type-dir_handle">dir_handle</a> <span>-&gt;</span>
-string option</code></dt>
+<span>string option</span></code></dt>
 <dd>
 <p>Return the next entry in a directory. Returns <code>None</code>
 when the end of the directory has been reached.</p>
@@ -2268,8 +2291,8 @@ opened for writing, that's the entrance to the pipe.</p>
 <dl>
 <dt class="spec value" id="val-mkfifo"><a href="#val-mkfifo" class=
 "anchor"></a><code><span class="keyword">val</span> mkfifo : string
-<span>-&gt;</span> perm:<a href=
-"index.html#type-file_perm">file_perm</a> <span>-&gt;</span>
+<span>-&gt;</span> <span>perm:<a href=
+"index.html#type-file_perm">file_perm</a></span> <span>-&gt;</span>
 unit</code></dt>
 <dd>
 <p>Create a named pipe with the given permissions.</p>
@@ -2294,8 +2317,9 @@ unit</code></dt>
 <dl>
 <dt class="spec value" id="val-create_process"><a href=
 "#val-create_process" class="anchor"></a><code><span class=
-"keyword">val</span> create_process : prog:string
-<span>-&gt;</span> args:string list <span>-&gt;</span> <a href=
+"keyword">val</span> create_process : <span>prog:string</span>
+<span>-&gt;</span> <span>args:<span>string list</span></span>
+<span>-&gt;</span> <a href=
 "Process_info/index.html#type-t">Process_info.t</a></code></dt>
 <dd>
 <p><code>create_process ~prog ~args</code> forks a new process that
@@ -2311,10 +2335,12 @@ name is automatically passed as the first argument.</p>
 <dl>
 <dt class="spec value" id="val-create_process_env"><a href=
 "#val-create_process_env" class="anchor"></a><code><span class=
-"keyword">val</span> create_process_env : ?⁠working_dir:string
-<span>-&gt;</span> ?⁠argv0:string <span>-&gt;</span> prog:string
-<span>-&gt;</span> args:string list <span>-&gt;</span> env:<a href=
-"index.html#type-env">env</a> <span>-&gt;</span> unit
+"keyword">val</span> create_process_env :
+<span>?⁠working_dir:string</span> <span>-&gt;</span>
+<span>?⁠argv0:string</span> <span>-&gt;</span>
+<span>prog:string</span> <span>-&gt;</span> <span>args:<span>string
+list</span></span> <span>-&gt;</span> <span>env:<a href=
+"index.html#type-env">env</a></span> <span>-&gt;</span> unit
 <span>-&gt;</span> <a href=
 "Process_info/index.html#type-t">Process_info.t</a></code></dt>
 <dd>
@@ -2397,7 +2423,8 @@ input, and standard error of the command.</p>
 <dt class="spec value" id="val-open_process_full"><a href=
 "#val-open_process_full" class="anchor"></a><code><span class=
 "keyword">val</span> open_process_full : string <span>-&gt;</span>
-env:string array <span>-&gt;</span> <a href=
+<span>env:<span>string array</span></span> <span>-&gt;</span>
+<a href=
 "Process_channels/index.html#type-t">Process_channels.t</a></code></dt>
 </dl>
 <aside>
@@ -2435,10 +2462,10 @@ command to terminate, and return its termination status.</p>
 <dl>
 <dt class="spec value" id="val-close_process"><a href=
 "#val-close_process" class="anchor"></a><code><span class=
-"keyword">val</span> close_process : (<a href=
+"keyword">val</span> close_process : <span>(<a href=
 "../../../stdio/Stdio/In_channel/index.html#type-t">Core__.Import.In_channel.t</a>
 * <a href=
-"../../../stdio/Stdio/Out_channel/index.html#type-t">Core__.Import.Out_channel.t</a>)
+"../../../stdio/Stdio/Out_channel/index.html#type-t">Core__.Import.Out_channel.t</a>)</span>
 <span>-&gt;</span> <a href=
 "Exit_or_signal/index.html#type-t">Exit_or_signal.t</a></code></dt>
 <dd>
@@ -2471,8 +2498,8 @@ command to terminate, and return its termination status.</p>
 <dl>
 <dt class="spec value" id="val-symlink"><a href="#val-symlink"
 class="anchor"></a><code><span class="keyword">val</span> symlink :
-target:string <span>-&gt;</span> link_name:string
-<span>-&gt;</span> unit</code></dt>
+<span>target:string</span> <span>-&gt;</span>
+<span>link_name:string</span> <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>symlink ~target ~link_name</code> creates the file
 <code>link_name</code> as a symbolic link to the file
@@ -2546,14 +2573,15 @@ class="anchor"></a><code>|</code> <code>`After <span class=
 <dl>
 <dt class="spec value" id="val-select"><a href="#val-select" class=
 "anchor"></a><code><span class="keyword">val</span> select :
-?⁠restart:bool <span>-&gt;</span> read:<a href=
-"File_descr/index.html#type-t">File_descr.t</a> list
-<span>-&gt;</span> write:<a href=
-"File_descr/index.html#type-t">File_descr.t</a> list
-<span>-&gt;</span> except:<a href=
-"File_descr/index.html#type-t">File_descr.t</a> list
-<span>-&gt;</span> timeout:<a href=
-"index.html#type-select_timeout">select_timeout</a>
+<span>?⁠restart:bool</span> <span>-&gt;</span>
+<span>read:<span><a href=
+"File_descr/index.html#type-t">File_descr.t</a> list</span></span>
+<span>-&gt;</span> <span>write:<span><a href=
+"File_descr/index.html#type-t">File_descr.t</a> list</span></span>
+<span>-&gt;</span> <span>except:<span><a href=
+"File_descr/index.html#type-t">File_descr.t</a> list</span></span>
+<span>-&gt;</span> <span>timeout:<a href=
+"index.html#type-select_timeout">select_timeout</a></span>
 <span>-&gt;</span> unit <span>-&gt;</span> <a href=
 "Select_fds/index.html#type-t">Select_fds.t</a></code></dt>
 <dd>
@@ -2833,8 +2861,8 @@ options.</p>
 <dl>
 <dt class="spec value" id="val-strptime"><a href="#val-strptime"
 class="anchor"></a><code><span class="keyword">val</span> strptime
-: fmt:string <span>-&gt;</span> string <span>-&gt;</span>
-Unix.tm</code></dt>
+: <span>fmt:string</span> <span>-&gt;</span> string
+<span>-&gt;</span> Unix.tm</code></dt>
 <dd>
 <p>Given a format string, convert a corresponding string to a date
 and time See 'man strptime' for format options.</p>
@@ -2880,8 +2908,8 @@ is returned. Any other failure raises an exception.</p>
 <dl>
 <dt class="spec value" id="val-utimes"><a href="#val-utimes" class=
 "anchor"></a><code><span class="keyword">val</span> utimes : string
-<span>-&gt;</span> access:float <span>-&gt;</span> modif:float
-<span>-&gt;</span> unit</code></dt>
+<span>-&gt;</span> <span>access:float</span> <span>-&gt;</span>
+<span>modif:float</span> <span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Set the last access time (second arg) and last modification time
 (third arg) for a file. Times are expressed in seconds from
@@ -3229,43 +3257,44 @@ class="anchor"></a><code>|</code> <code><span class=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 <dt class="spec value" id="val-bin_socket_domain"><a href=
 "#val-bin_socket_domain" class="anchor"></a><code><span class=
-"keyword">val</span> bin_socket_domain : <a href=
+"keyword">val</span> bin_socket_domain : <span><a href=
 "index.html#type-socket_domain">socket_domain</a> <a href=
-"../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></code></dt>
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></span></code></dt>
 <dt class="spec value" id="val-bin_read_socket_domain"><a href=
 "#val-bin_read_socket_domain" class="anchor"></a><code><span class=
-"keyword">val</span> bin_read_socket_domain : <a href=
+"keyword">val</span> bin_read_socket_domain : <span><a href=
 "index.html#type-socket_domain">socket_domain</a> <a href=
-"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id="val-__bin_read_socket_domain__"><a href=
 "#val-__bin_read_socket_domain__" class=
 "anchor"></a><code><span class="keyword">val</span>
-__bin_read_socket_domain__ : (int <span>-&gt;</span> <a href=
-"index.html#type-socket_domain">socket_domain</a>) <a href=
-"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+__bin_read_socket_domain__ : <span><span>(int <span>-&gt;</span>
+<a href="index.html#type-socket_domain">socket_domain</a>)</span>
+<a href=
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_reader_socket_domain"><a href=
 "#val-bin_reader_socket_domain" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_reader_socket_domain : <a href=
+bin_reader_socket_domain : <span><a href=
 "index.html#type-socket_domain">socket_domain</a> <a href=
-"../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></code></dt>
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_size_socket_domain"><a href=
 "#val-bin_size_socket_domain" class="anchor"></a><code><span class=
-"keyword">val</span> bin_size_socket_domain : <a href=
+"keyword">val</span> bin_size_socket_domain : <span><a href=
 "index.html#type-socket_domain">socket_domain</a> <a href=
-"../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></code></dt>
+"../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></span></code></dt>
 <dt class="spec value" id="val-bin_write_socket_domain"><a href=
 "#val-bin_write_socket_domain" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_write_socket_domain : <a href=
+bin_write_socket_domain : <span><a href=
 "index.html#type-socket_domain">socket_domain</a> <a href=
-"../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></code></dt>
+"../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></span></code></dt>
 <dt class="spec value" id="val-bin_writer_socket_domain"><a href=
 "#val-bin_writer_socket_domain" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_writer_socket_domain : <a href=
+bin_writer_socket_domain : <span><a href=
 "index.html#type-socket_domain">socket_domain</a> <a href=
-"../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></code></dt>
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></span></code></dt>
 <dt class="spec value" id="val-bin_shape_socket_domain"><a href=
 "#val-bin_shape_socket_domain" class=
 "anchor"></a><code><span class="keyword">val</span>
@@ -3345,40 +3374,41 @@ communications.</p>
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 <dt class="spec value" id="val-bin_socket_type"><a href=
 "#val-bin_socket_type" class="anchor"></a><code><span class=
-"keyword">val</span> bin_socket_type : <a href=
+"keyword">val</span> bin_socket_type : <span><a href=
 "index.html#type-socket_type">socket_type</a> <a href=
-"../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></code></dt>
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></span></code></dt>
 <dt class="spec value" id="val-bin_read_socket_type"><a href=
 "#val-bin_read_socket_type" class="anchor"></a><code><span class=
-"keyword">val</span> bin_read_socket_type : <a href=
+"keyword">val</span> bin_read_socket_type : <span><a href=
 "index.html#type-socket_type">socket_type</a> <a href=
-"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id="val-__bin_read_socket_type__"><a href=
 "#val-__bin_read_socket_type__" class=
 "anchor"></a><code><span class="keyword">val</span>
-__bin_read_socket_type__ : (int <span>-&gt;</span> <a href=
-"index.html#type-socket_type">socket_type</a>) <a href=
-"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+__bin_read_socket_type__ : <span><span>(int <span>-&gt;</span>
+<a href="index.html#type-socket_type">socket_type</a>)</span>
+<a href=
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_reader_socket_type"><a href=
 "#val-bin_reader_socket_type" class="anchor"></a><code><span class=
-"keyword">val</span> bin_reader_socket_type : <a href=
+"keyword">val</span> bin_reader_socket_type : <span><a href=
 "index.html#type-socket_type">socket_type</a> <a href=
-"../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></code></dt>
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_size_socket_type"><a href=
 "#val-bin_size_socket_type" class="anchor"></a><code><span class=
-"keyword">val</span> bin_size_socket_type : <a href=
+"keyword">val</span> bin_size_socket_type : <span><a href=
 "index.html#type-socket_type">socket_type</a> <a href=
-"../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></code></dt>
+"../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></span></code></dt>
 <dt class="spec value" id="val-bin_write_socket_type"><a href=
 "#val-bin_write_socket_type" class="anchor"></a><code><span class=
-"keyword">val</span> bin_write_socket_type : <a href=
+"keyword">val</span> bin_write_socket_type : <span><a href=
 "index.html#type-socket_type">socket_type</a> <a href=
-"../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></code></dt>
+"../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></span></code></dt>
 <dt class="spec value" id="val-bin_writer_socket_type"><a href=
 "#val-bin_writer_socket_type" class="anchor"></a><code><span class=
-"keyword">val</span> bin_writer_socket_type : <a href=
+"keyword">val</span> bin_writer_socket_type : <span><a href=
 "index.html#type-socket_type">socket_type</a> <a href=
-"../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></code></dt>
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></span></code></dt>
 <dt class="spec value" id="val-bin_shape_socket_type"><a href=
 "#val-bin_shape_socket_type" class="anchor"></a><code><span class=
 "keyword">val</span> bin_shape_socket_type : <a href=
@@ -3428,40 +3458,40 @@ number.</p>
 <dl>
 <dt class="spec value" id="val-bin_sockaddr"><a href=
 "#val-bin_sockaddr" class="anchor"></a><code><span class=
-"keyword">val</span> bin_sockaddr : <a href=
+"keyword">val</span> bin_sockaddr : <span><a href=
 "index.html#type-sockaddr">sockaddr</a> <a href=
-"../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></code></dt>
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></span></code></dt>
 <dt class="spec value" id="val-bin_read_sockaddr"><a href=
 "#val-bin_read_sockaddr" class="anchor"></a><code><span class=
-"keyword">val</span> bin_read_sockaddr : <a href=
+"keyword">val</span> bin_read_sockaddr : <span><a href=
 "index.html#type-sockaddr">sockaddr</a> <a href=
-"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id="val-__bin_read_sockaddr__"><a href=
 "#val-__bin_read_sockaddr__" class="anchor"></a><code><span class=
-"keyword">val</span> __bin_read_sockaddr__ : (int
-<span>-&gt;</span> <a href="index.html#type-sockaddr">sockaddr</a>)
-<a href=
-"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+"keyword">val</span> __bin_read_sockaddr__ : <span><span>(int
+<span>-&gt;</span> <a href=
+"index.html#type-sockaddr">sockaddr</a>)</span> <a href=
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_reader_sockaddr"><a href=
 "#val-bin_reader_sockaddr" class="anchor"></a><code><span class=
-"keyword">val</span> bin_reader_sockaddr : <a href=
+"keyword">val</span> bin_reader_sockaddr : <span><a href=
 "index.html#type-sockaddr">sockaddr</a> <a href=
-"../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></code></dt>
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_size_sockaddr"><a href=
 "#val-bin_size_sockaddr" class="anchor"></a><code><span class=
-"keyword">val</span> bin_size_sockaddr : <a href=
+"keyword">val</span> bin_size_sockaddr : <span><a href=
 "index.html#type-sockaddr">sockaddr</a> <a href=
-"../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></code></dt>
+"../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></span></code></dt>
 <dt class="spec value" id="val-bin_write_sockaddr"><a href=
 "#val-bin_write_sockaddr" class="anchor"></a><code><span class=
-"keyword">val</span> bin_write_sockaddr : <a href=
+"keyword">val</span> bin_write_sockaddr : <span><a href=
 "index.html#type-sockaddr">sockaddr</a> <a href=
-"../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></code></dt>
+"../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></span></code></dt>
 <dt class="spec value" id="val-bin_writer_sockaddr"><a href=
 "#val-bin_writer_sockaddr" class="anchor"></a><code><span class=
-"keyword">val</span> bin_writer_sockaddr : <a href=
+"keyword">val</span> bin_writer_sockaddr : <span><a href=
 "index.html#type-sockaddr">sockaddr</a> <a href=
-"../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></code></dt>
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></span></code></dt>
 <dt class="spec value" id="val-bin_shape_sockaddr"><a href=
 "#val-bin_shape_sockaddr" class="anchor"></a><code><span class=
 "keyword">val</span> bin_shape_sockaddr : <a href=
@@ -3513,54 +3543,54 @@ lookup to resolve <code>Inet_addr.t</code>.</p>
 <dt class="spec value" id="val-bin_sockaddr_blocking_sexp"><a href=
 "#val-bin_sockaddr_blocking_sexp" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_sockaddr_blocking_sexp : <a href=
+bin_sockaddr_blocking_sexp : <span><a href=
 "index.html#type-sockaddr_blocking_sexp">sockaddr_blocking_sexp</a>
 <a href=
-"../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></code></dt>
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></span></code></dt>
 <dt class="spec value" id="val-bin_read_sockaddr_blocking_sexp">
 <a href="#val-bin_read_sockaddr_blocking_sexp" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_read_sockaddr_blocking_sexp : <a href=
+bin_read_sockaddr_blocking_sexp : <span><a href=
 "index.html#type-sockaddr_blocking_sexp">sockaddr_blocking_sexp</a>
 <a href=
-"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id=
 "val-__bin_read_sockaddr_blocking_sexp__"><a href=
 "#val-__bin_read_sockaddr_blocking_sexp__" class=
 "anchor"></a><code><span class="keyword">val</span>
-__bin_read_sockaddr_blocking_sexp__ : (int <span>-&gt;</span>
+__bin_read_sockaddr_blocking_sexp__ : <span><span>(int
+<span>-&gt;</span> <a href=
+"index.html#type-sockaddr_blocking_sexp">sockaddr_blocking_sexp</a>)</span>
 <a href=
-"index.html#type-sockaddr_blocking_sexp">sockaddr_blocking_sexp</a>)
-<a href=
-"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+"../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_reader_sockaddr_blocking_sexp">
 <a href="#val-bin_reader_sockaddr_blocking_sexp" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_reader_sockaddr_blocking_sexp : <a href=
+bin_reader_sockaddr_blocking_sexp : <span><a href=
 "index.html#type-sockaddr_blocking_sexp">sockaddr_blocking_sexp</a>
 <a href=
-"../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></code></dt>
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_size_sockaddr_blocking_sexp">
 <a href="#val-bin_size_sockaddr_blocking_sexp" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_size_sockaddr_blocking_sexp : <a href=
+bin_size_sockaddr_blocking_sexp : <span><a href=
 "index.html#type-sockaddr_blocking_sexp">sockaddr_blocking_sexp</a>
 <a href=
-"../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></code></dt>
+"../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></span></code></dt>
 <dt class="spec value" id="val-bin_write_sockaddr_blocking_sexp">
 <a href="#val-bin_write_sockaddr_blocking_sexp" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_write_sockaddr_blocking_sexp : <a href=
+bin_write_sockaddr_blocking_sexp : <span><a href=
 "index.html#type-sockaddr_blocking_sexp">sockaddr_blocking_sexp</a>
 <a href=
-"../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></code></dt>
+"../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></span></code></dt>
 <dt class="spec value" id="val-bin_writer_sockaddr_blocking_sexp">
 <a href="#val-bin_writer_sockaddr_blocking_sexp" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_writer_sockaddr_blocking_sexp : <a href=
+bin_writer_sockaddr_blocking_sexp : <span><a href=
 "index.html#type-sockaddr_blocking_sexp">sockaddr_blocking_sexp</a>
 <a href=
-"../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></code></dt>
+"../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></span></code></dt>
 <dt class="spec value" id="val-bin_shape_sockaddr_blocking_sexp">
 <a href="#val-bin_shape_sockaddr_blocking_sexp" class=
 "anchor"></a><code><span class="keyword">val</span>
@@ -3599,11 +3629,12 @@ address.</p>
 <dl>
 <dt class="spec value" id="val-socket"><a href="#val-socket" class=
 "anchor"></a><code><span class="keyword">val</span> socket :
-domain:<a href="index.html#type-socket_domain">socket_domain</a>
-<span>-&gt;</span> kind:<a href=
-"index.html#type-socket_type">socket_type</a> <span>-&gt;</span>
-protocol:int <span>-&gt;</span> <a href=
-"File_descr/index.html#type-t">File_descr.t</a></code></dt>
+<span>domain:<a href=
+"index.html#type-socket_domain">socket_domain</a></span>
+<span>-&gt;</span> <span>kind:<a href=
+"index.html#type-socket_type">socket_type</a></span>
+<span>-&gt;</span> <span>protocol:int</span> <span>-&gt;</span>
+<a href="File_descr/index.html#type-t">File_descr.t</a></code></dt>
 <dd>
 <p>Create a new socket in the given domain, and with the given
 kind. The third argument is the protocol type; 0 selects the
@@ -3613,12 +3644,12 @@ default protocol for that kind of sockets.</p>
 <dl>
 <dt class="spec value" id="val-socketpair"><a href=
 "#val-socketpair" class="anchor"></a><code><span class=
-"keyword">val</span> socketpair : domain:<a href=
-"index.html#type-socket_domain">socket_domain</a>
-<span>-&gt;</span> kind:<a href=
-"index.html#type-socket_type">socket_type</a> <span>-&gt;</span>
-protocol:int <span>-&gt;</span> <a href=
-"File_descr/index.html#type-t">File_descr.t</a> * <a href=
+"keyword">val</span> socketpair : <span>domain:<a href=
+"index.html#type-socket_domain">socket_domain</a></span>
+<span>-&gt;</span> <span>kind:<a href=
+"index.html#type-socket_type">socket_type</a></span>
+<span>-&gt;</span> <span>protocol:int</span> <span>-&gt;</span>
+<a href="File_descr/index.html#type-t">File_descr.t</a> * <a href=
 "File_descr/index.html#type-t">File_descr.t</a></code></dt>
 <dd>
 <p>Create a pair of unnamed sockets, connected together.</p>
@@ -3641,7 +3672,7 @@ address of the connecting client.</p>
 <dt class="spec value" id="val-bind"><a href="#val-bind" class=
 "anchor"></a><code><span class="keyword">val</span> bind : <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-addr:<a href="index.html#type-sockaddr">sockaddr</a>
+<span>addr:<a href="index.html#type-sockaddr">sockaddr</a></span>
 <span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Bind a socket to an address.</p>
@@ -3651,8 +3682,8 @@ addr:<a href="index.html#type-sockaddr">sockaddr</a>
 <dt class="spec value" id="val-connect"><a href="#val-connect"
 class="anchor"></a><code><span class="keyword">val</span> connect :
 <a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> addr:<a href=
-"index.html#type-sockaddr">sockaddr</a> <span>-&gt;</span>
+<span>-&gt;</span> <span>addr:<a href=
+"index.html#type-sockaddr">sockaddr</a></span> <span>-&gt;</span>
 unit</code></dt>
 <dd>
 <p>Connect a socket to an address.</p>
@@ -3662,7 +3693,8 @@ unit</code></dt>
 <dt class="spec value" id="val-listen"><a href="#val-listen" class=
 "anchor"></a><code><span class="keyword">val</span> listen :
 <a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> backlog:int <span>-&gt;</span> unit</code></dt>
+<span>-&gt;</span> <span>backlog:int</span> <span>-&gt;</span>
+unit</code></dt>
 <dd>
 <p>Set up a socket for receiving connection requests. The integer
 argument is the number of pending requests that will be established
@@ -3753,8 +3785,8 @@ sexp_of_shutdown_command : <a href=
 <dt class="spec value" id="val-shutdown"><a href="#val-shutdown"
 class="anchor"></a><code><span class="keyword">val</span> shutdown
 : <a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> mode:<a href=
-"index.html#type-shutdown_command">shutdown_command</a>
+<span>-&gt;</span> <span>mode:<a href=
+"index.html#type-shutdown_command">shutdown_command</a></span>
 <span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Shutdown a socket connection. <code>SHUTDOWN_SEND</code> as
@@ -3847,12 +3879,12 @@ and <span class="xref-unresolved" title=
 <dt class="spec value" id="val-recv"><a href="#val-recv" class=
 "anchor"></a><code><span class="keyword">val</span> recv : <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-buf:<a href=
-"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>
-<span>-&gt;</span> pos:int <span>-&gt;</span> len:int
-<span>-&gt;</span> mode:<a href=
-"index.html#type-msg_flag">msg_flag</a> list <span>-&gt;</span>
-int</code></dt>
+<span>buf:<a href=
+"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a></span>
+<span>-&gt;</span> <span>pos:int</span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> <span>mode:<span><a href=
+"index.html#type-msg_flag">msg_flag</a> list</span></span>
+<span>-&gt;</span> int</code></dt>
 <dd>
 <p>Receive data from a connected socket.</p>
 </dd>
@@ -3861,12 +3893,13 @@ int</code></dt>
 <dt class="spec value" id="val-recvfrom"><a href="#val-recvfrom"
 class="anchor"></a><code><span class="keyword">val</span> recvfrom
 : <a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> buf:<a href=
-"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>
-<span>-&gt;</span> pos:int <span>-&gt;</span> len:int
-<span>-&gt;</span> mode:<a href=
-"index.html#type-msg_flag">msg_flag</a> list <span>-&gt;</span> int
-* <a href="index.html#type-sockaddr">sockaddr</a></code></dt>
+<span>-&gt;</span> <span>buf:<a href=
+"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a></span>
+<span>-&gt;</span> <span>pos:int</span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> <span>mode:<span><a href=
+"index.html#type-msg_flag">msg_flag</a> list</span></span>
+<span>-&gt;</span> int * <a href=
+"index.html#type-sockaddr">sockaddr</a></code></dt>
 <dd>
 <p>Receive data from an unconnected socket.</p>
 </dd>
@@ -3875,12 +3908,12 @@ class="anchor"></a><code><span class="keyword">val</span> recvfrom
 <dt class="spec value" id="val-send"><a href="#val-send" class=
 "anchor"></a><code><span class="keyword">val</span> send : <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-buf:<a href=
-"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>
-<span>-&gt;</span> pos:int <span>-&gt;</span> len:int
-<span>-&gt;</span> mode:<a href=
-"index.html#type-msg_flag">msg_flag</a> list <span>-&gt;</span>
-int</code></dt>
+<span>buf:<a href=
+"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a></span>
+<span>-&gt;</span> <span>pos:int</span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> <span>mode:<span><a href=
+"index.html#type-msg_flag">msg_flag</a> list</span></span>
+<span>-&gt;</span> int</code></dt>
 <dd>
 <p>Send data over a connected socket.</p>
 </dd>
@@ -3890,10 +3923,10 @@ int</code></dt>
 "#val-send_substring" class="anchor"></a><code><span class=
 "keyword">val</span> send_substring : <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-buf:string <span>-&gt;</span> pos:int <span>-&gt;</span> len:int
-<span>-&gt;</span> mode:<a href=
-"index.html#type-msg_flag">msg_flag</a> list <span>-&gt;</span>
-int</code></dt>
+<span>buf:string</span> <span>-&gt;</span> <span>pos:int</span>
+<span>-&gt;</span> <span>len:int</span> <span>-&gt;</span>
+<span>mode:<span><a href="index.html#type-msg_flag">msg_flag</a>
+list</span></span> <span>-&gt;</span> int</code></dt>
 <dd>
 <p>Same as <code>send</code> but with a string buffer.</p>
 </dd>
@@ -3902,13 +3935,14 @@ int</code></dt>
 <dt class="spec value" id="val-sendto"><a href="#val-sendto" class=
 "anchor"></a><code><span class="keyword">val</span> sendto :
 <a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> buf:<a href=
-"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>
-<span>-&gt;</span> pos:int <span>-&gt;</span> len:int
-<span>-&gt;</span> mode:<a href=
-"index.html#type-msg_flag">msg_flag</a> list <span>-&gt;</span>
-addr:<a href="index.html#type-sockaddr">sockaddr</a>
-<span>-&gt;</span> int</code></dt>
+<span>-&gt;</span> <span>buf:<a href=
+"../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a></span>
+<span>-&gt;</span> <span>pos:int</span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> <span>mode:<span><a href=
+"index.html#type-msg_flag">msg_flag</a> list</span></span>
+<span>-&gt;</span> <span>addr:<a href=
+"index.html#type-sockaddr">sockaddr</a></span> <span>-&gt;</span>
+int</code></dt>
 <dd>
 <p>Send data over an unconnected socket.</p>
 </dd>
@@ -3918,11 +3952,12 @@ addr:<a href="index.html#type-sockaddr">sockaddr</a>
 "#val-sendto_substring" class="anchor"></a><code><span class=
 "keyword">val</span> sendto_substring : <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-buf:string <span>-&gt;</span> pos:int <span>-&gt;</span> len:int
-<span>-&gt;</span> mode:<a href=
-"index.html#type-msg_flag">msg_flag</a> list <span>-&gt;</span>
-addr:<a href="index.html#type-sockaddr">sockaddr</a>
-<span>-&gt;</span> int</code></dt>
+<span>buf:string</span> <span>-&gt;</span> <span>pos:int</span>
+<span>-&gt;</span> <span>len:int</span> <span>-&gt;</span>
+<span>mode:<span><a href="index.html#type-msg_flag">msg_flag</a>
+list</span></span> <span>-&gt;</span> <span>addr:<a href=
+"index.html#type-sockaddr">sockaddr</a></span> <span>-&gt;</span>
+int</code></dt>
 <dd>
 <p>Same as <code>sendto</code> but with a string buffer.</p>
 </dd>
@@ -4311,7 +4346,7 @@ for an integer-valued socket option.</p>
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
 <a href=
 "index.html#type-socket_optint_option">socket_optint_option</a>
-<span>-&gt;</span> int option</code></dt>
+<span>-&gt;</span> <span>int option</span></code></dt>
 <dd>
 <p>Same as <span class="xref-unresolved" title=
 "unresolved reference to &quot;UnixLabels.getsockopt&quot;"><code>UnixLabels</code>.getsockopt</span>
@@ -4325,7 +4360,8 @@ for a socket option whose value is an <code>int option</code>.</p>
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
 <a href=
 "index.html#type-socket_optint_option">socket_optint_option</a>
-<span>-&gt;</span> int option <span>-&gt;</span> unit</code></dt>
+<span>-&gt;</span> <span>int option</span> <span>-&gt;</span>
+unit</code></dt>
 <dd>
 <p>Same as <span class="xref-unresolved" title=
 "unresolved reference to &quot;UnixLabels.setsockopt&quot;"><code>UnixLabels</code>.setsockopt</span>
@@ -4402,13 +4438,13 @@ the connection.</p>
 <dl>
 <dt class="spec value" id="val-establish_server"><a href=
 "#val-establish_server" class="anchor"></a><code><span class=
-"keyword">val</span> establish_server : (<a href=
+"keyword">val</span> establish_server : <span>(<a href=
 "../../../stdio/Stdio/In_channel/index.html#type-t">Core__.Import.In_channel.t</a>
 <span>-&gt;</span> <a href=
 "../../../stdio/Stdio/Out_channel/index.html#type-t">Core__.Import.Out_channel.t</a>
-<span>-&gt;</span> unit) <span>-&gt;</span> addr:<a href=
-"index.html#type-sockaddr">sockaddr</a> <span>-&gt;</span>
-unit</code></dt>
+<span>-&gt;</span> unit)</span> <span>-&gt;</span>
+<span>addr:<a href="index.html#type-sockaddr">sockaddr</a></span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Establish a server on the given address. The function given as
 first argument is called for each connection with two buffered
@@ -4664,10 +4700,10 @@ sexp_of_getaddrinfo_option : <a href=
 <dt class="spec value" id="val-getaddrinfo"><a href=
 "#val-getaddrinfo" class="anchor"></a><code><span class=
 "keyword">val</span> getaddrinfo : string <span>-&gt;</span> string
-<span>-&gt;</span> <a href=
-"index.html#type-getaddrinfo_option">getaddrinfo_option</a> list
-<span>-&gt;</span> <a href=
-"index.html#type-addr_info">addr_info</a> list</code></dt>
+<span>-&gt;</span> <span><a href=
+"index.html#type-getaddrinfo_option">getaddrinfo_option</a>
+list</span> <span>-&gt;</span> <span><a href=
+"index.html#type-addr_info">addr_info</a> list</span></code></dt>
 <dd>
 <p><code>getaddrinfo host service opts</code> returns a list of
 <span class="xref-unresolved" title=
@@ -4832,9 +4868,10 @@ sexp_of_getnameinfo_option : <a href=
 <dt class="spec value" id="val-getnameinfo"><a href=
 "#val-getnameinfo" class="anchor"></a><code><span class=
 "keyword">val</span> getnameinfo : <a href=
-"index.html#type-sockaddr">sockaddr</a> <span>-&gt;</span> <a href=
-"index.html#type-getnameinfo_option">getnameinfo_option</a> list
-<span>-&gt;</span> <a href=
+"index.html#type-sockaddr">sockaddr</a> <span>-&gt;</span>
+<span><a href=
+"index.html#type-getnameinfo_option">getnameinfo_option</a>
+list</span> <span>-&gt;</span> <a href=
 "index.html#type-name_info">name_info</a></code></dt>
 <dd>
 <p><code>getnameinfo addr opts</code> returns the host name and
@@ -4916,10 +4953,11 @@ class="anchor"></a>Filesystem functions</h3>
 <dl>
 <dt class="spec value" id="val-mknod"><a href="#val-mknod" class=
 "anchor"></a><code><span class="keyword">val</span> mknod :
-?⁠file_kind:<a href="index.html#type-file_kind">file_kind</a>
-<span>-&gt;</span> ?⁠perm:int <span>-&gt;</span> ?⁠major:int
-<span>-&gt;</span> ?⁠minor:int <span>-&gt;</span> string
-<span>-&gt;</span> unit</code></dt>
+<span>?⁠file_kind:<a href=
+"index.html#type-file_kind">file_kind</a></span> <span>-&gt;</span>
+<span>?⁠perm:int</span> <span>-&gt;</span> <span>?⁠major:int</span>
+<span>-&gt;</span> <span>?⁠minor:int</span> <span>-&gt;</span>
+string <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>mknod ?file_kind ?perm ?major ?minor path</code> creates a
 filesystem entry. Note that only FIFO-entries are guaranteed to be
@@ -5028,7 +5066,7 @@ disk, but do not necessarily write file attributes.</p>
 "#val-readdir_ino_opt" class="anchor"></a><code><span class=
 "keyword">val</span> readdir_ino_opt : <a href=
 "index.html#type-dir_handle">dir_handle</a> <span>-&gt;</span>
-(string * nativeint) option</code></dt>
+<span><span>(string * nativeint)</span> option</span></code></dt>
 <dd>
 <p><code>readdir_ino_opt dh</code> return the next entry in a
 directory ((<code>(filename, inode)</code>). Returns
@@ -5053,7 +5091,8 @@ end of the directory by raising <code>End_of_file</code>.</p>
 "anchor"></a><code><span class="keyword">val</span>
 read_assume_fd_is_nonblocking : <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span> <a href=
+<span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href=
 "../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>
 <span>-&gt;</span> int</code></dt>
 <dd>
@@ -5099,7 +5138,8 @@ GOING TO BLOCK. Reads at most <code>len</code> bytes into buffer
 "anchor"></a><code><span class="keyword">val</span>
 write_assume_fd_is_nonblocking : <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span> <a href=
+<span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href=
 "../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>
 <span>-&gt;</span> int</code></dt>
 <dd>
@@ -5145,9 +5185,9 @@ GOING TO BLOCK. Writes at most <code>len</code> bytes from buffer
 "anchor"></a><code><span class="keyword">val</span>
 writev_assume_fd_is_nonblocking : <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
-?⁠count:int <span>-&gt;</span> string <a href=
-"IOVec/index.html#type-t">IOVec.t</a> array <span>-&gt;</span>
-int</code></dt>
+<span>?⁠count:int</span> <span>-&gt;</span> <span><span>string
+<a href="IOVec/index.html#type-t">IOVec.t</a></span> array</span>
+<span>-&gt;</span> int</code></dt>
 <dd>
 <p><code>writev_assume_fd_is_nonblocking fd ?count iovecs</code>
 calls the system call <code>writev</code> ASSUMING THAT IT IS NOT
@@ -5177,9 +5217,10 @@ GOING TO BLOCK using <code>count</code> I/O-vectors
 <dt class="spec value" id="val-writev"><a href="#val-writev" class=
 "anchor"></a><code><span class="keyword">val</span> writev :
 <a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> ?⁠count:int <span>-&gt;</span> string <a href=
-"IOVec/index.html#type-t">IOVec.t</a> array <span>-&gt;</span>
-int</code></dt>
+<span>-&gt;</span> <span>?⁠count:int</span> <span>-&gt;</span>
+<span><span>string <a href=
+"IOVec/index.html#type-t">IOVec.t</a></span> array</span>
+<span>-&gt;</span> int</code></dt>
 <dd>
 <p><code>writev fd ?count iovecs</code> like <a href=
 "index.html#val-writev_assume_fd_is_nonblocking"><code>writev_assume_fd_is_nonblocking</code></a>,
@@ -5211,16 +5252,18 @@ intermediate buffers on the C-heap.</p>
 <dl>
 <dt class="spec external" id="val-pselect"><a href="#val-pselect"
 class="anchor"></a><code><span class="keyword">val</span> pselect :
-<a href="File_descr/index.html#type-t">File_descr.t</a> list
-<span>-&gt;</span> <a href=
-"File_descr/index.html#type-t">File_descr.t</a> list
-<span>-&gt;</span> <a href=
-"File_descr/index.html#type-t">File_descr.t</a> list
-<span>-&gt;</span> float <span>-&gt;</span> int list
-<span>-&gt;</span> <a href=
-"File_descr/index.html#type-t">File_descr.t</a> list * <a href=
-"File_descr/index.html#type-t">File_descr.t</a> list * <a href=
-"File_descr/index.html#type-t">File_descr.t</a> list</code></dt>
+<span><a href="File_descr/index.html#type-t">File_descr.t</a>
+list</span> <span>-&gt;</span> <span><a href=
+"File_descr/index.html#type-t">File_descr.t</a> list</span>
+<span>-&gt;</span> <span><a href=
+"File_descr/index.html#type-t">File_descr.t</a> list</span>
+<span>-&gt;</span> float <span>-&gt;</span> <span>int list</span>
+<span>-&gt;</span> <span><a href=
+"File_descr/index.html#type-t">File_descr.t</a> list</span> *
+<span><a href="File_descr/index.html#type-t">File_descr.t</a>
+list</span> * <span><a href=
+"File_descr/index.html#type-t">File_descr.t</a>
+list</span></code></dt>
 <dd>
 <p><code>pselect rfds wfds efds timeout sigmask</code> like
 <a href="index.html#val-select"><code>Core_unix.select</code></a>
@@ -5366,7 +5409,7 @@ class="anchor"></a>System configuration</h3>
 <dt class="spec external" id="val-sysconf"><a href="#val-sysconf"
 class="anchor"></a><code><span class="keyword">val</span> sysconf :
 <a href="index.html#type-sysconf">sysconf</a> <span>-&gt;</span>
-int64 option</code></dt>
+<span>int64 option</span></code></dt>
 <dd>
 <p>Wrapper over <code>sysconf</code> function in C.</p>
 </dd>
@@ -5456,7 +5499,7 @@ override it.</p>
 <dt class="spec value" id="val-getgrouplist"><a href=
 "#val-getgrouplist" class="anchor"></a><code><span class=
 "keyword">val</span> getgrouplist : string <span>-&gt;</span> int
-<span>-&gt;</span> int array</code></dt>
+<span>-&gt;</span> <span>int array</span></code></dt>
 <dd>
 <p><code>getgrouplist user group</code> returns the list of groups
 to which <code>user</code> belongs. See 'man getgrouplist'.</p>
@@ -5465,7 +5508,7 @@ to which <code>user</code> belongs. See 'man getgrouplist'.</p>
 <dl>
 <dt class="spec value" id="val-getgroups"><a href="#val-getgroups"
 class="anchor"></a><code><span class="keyword">val</span> getgroups
-: unit <span>-&gt;</span> int array</code></dt>
+: unit <span>-&gt;</span> <span>int array</span></code></dt>
 <dd>
 <p>Return the list of groups to which the user executing the
 process belongs.</p>
@@ -5481,8 +5524,10 @@ shell expansion</h3>
 <dl>
 <dt class="spec value" id="val-fnmatch"><a href="#val-fnmatch"
 class="anchor"></a><code><span class="keyword">val</span> fnmatch :
-?⁠flags:[ `No_escape | `Pathname | `Period | `File_name |
-`Leading_dir | `Casefold ] list <span>-&gt;</span> pat:string
+<span>?⁠flags:<span><span>[ `No_escape <span>| `Pathname</span>
+<span>| `Period</span> <span>| `File_name</span> <span>|
+`Leading_dir</span> <span>| `Casefold</span> ]</span>
+list</span></span> <span>-&gt;</span> <span>pat:string</span>
 <span>-&gt;</span> string <span>-&gt;</span> bool</code></dt>
 <dd>
 <p>no system calls involved</p>
@@ -5491,9 +5536,11 @@ class="anchor"></a><code><span class="keyword">val</span> fnmatch :
 <dl>
 <dt class="spec value" id="val-wordexp"><a href="#val-wordexp"
 class="anchor"></a><code><span class="keyword">val</span> wordexp :
-(?⁠flags:[ `No_cmd | `Show_err | `Undef ] list <span>-&gt;</span>
-string <span>-&gt;</span> string array) <a href=
-"../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span><span>(<span>?⁠flags:<span><span>[ `No_cmd <span>|
+`Show_err</span> <span>| `Undef</span> ]</span> list</span></span>
+<span>-&gt;</span> string <span>-&gt;</span> <span>string
+array</span>)</span> <a href=
+"../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p>See man page for wordexp.</p>
 </dd>
@@ -5539,12 +5586,13 @@ Otherwise, it raises <code>Unix_error</code>.</p>
 <dl>
 <dt class="spec value" id="val-mcast_join"><a href=
 "#val-mcast_join" class="anchor"></a><code><span class=
-"keyword">val</span> mcast_join : ?⁠ifname:string
-<span>-&gt;</span> ?⁠source:<a href=
-"Inet_addr/index.html#type-t">Inet_addr.t</a> <span>-&gt;</span>
-<a href="File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> <a href="index.html#type-sockaddr">sockaddr</a>
-<span>-&gt;</span> unit</code></dt>
+"keyword">val</span> mcast_join : <span>?⁠ifname:string</span>
+<span>-&gt;</span> <span>?⁠source:<a href=
+"Inet_addr/index.html#type-t">Inet_addr.t</a></span>
+<span>-&gt;</span> <a href=
+"File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
+<a href="index.html#type-sockaddr">sockaddr</a> <span>-&gt;</span>
+unit</code></dt>
 <dd>
 <p><code>mcast_join ?ifname sock addr</code> join a multicast group
 at <code>addr</code> with socket <code>sock</code>, from source at
@@ -5561,7 +5609,7 @@ interface <code>ifname</code>.</p>
 <dl>
 <dt class="spec value" id="val-mcast_leave"><a href=
 "#val-mcast_leave" class="anchor"></a><code><span class=
-"keyword">val</span> mcast_leave : ?⁠ifname:string
+"keyword">val</span> mcast_leave : <span>?⁠ifname:string</span>
 <span>-&gt;</span> <a href=
 "File_descr/index.html#type-t">File_descr.t</a> <span>-&gt;</span>
 <a href="index.html#type-sockaddr">sockaddr</a> <span>-&gt;</span>
@@ -5677,8 +5725,9 @@ getifaddrs</code>.</p>
 <dl>
 <dt class="spec value" id="val-getifaddrs"><a href=
 "#val-getifaddrs" class="anchor"></a><code><span class=
-"keyword">val</span> getifaddrs : unit <span>-&gt;</span> <a href=
-"Ifaddr/index.html#type-t">Ifaddr.t</a> list</code></dt>
+"keyword">val</span> getifaddrs : unit <span>-&gt;</span>
+<span><a href="Ifaddr/index.html#type-t">Ifaddr.t</a>
+list</span></code></dt>
 </dl>
 <div class="spec module" id="module-Stable"><a href=
 "#module-Stable" class="anchor"></a><code><span class=

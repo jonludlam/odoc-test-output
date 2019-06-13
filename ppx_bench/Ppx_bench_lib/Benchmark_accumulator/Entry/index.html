@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Entry
 (ppx_bench.Ppx_bench_lib.Benchmark_accumulator.Entry)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -29,8 +28,8 @@ hljs.initHighlightingOnLoad();
 <dl>
 <dt class="spec type" id="type-indexed_spec"><a href=
 "#type-indexed_spec" class="anchor"></a><code><span class=
-"keyword">type</span> 'a indexed_spec</code> <code>=</code>
-<code>{</code></dt>
+"keyword">type</span> <span>'a indexed_spec</span></code>
+<code>=</code> <code>{</code></dt>
 <dd>
 <table class="record">
 <tr id="type-indexed_spec.arg_name" class="anchored">
@@ -39,7 +38,8 @@ hljs.initHighlightingOnLoad();
 </tr>
 <tr id="type-indexed_spec.arg_values" class="anchored">
 <td class="def field"><a href="#type-indexed_spec.arg_values"
-class="anchor"></a><code>arg_values : int list;</code></td>
+class="anchor"></a><code>arg_values : <span>int
+list</span>;</code></td>
 </tr>
 <tr id="type-indexed_spec.thunk" class="anchored">
 <td class="def field"><a href="#type-indexed_spec.thunk" class=
@@ -56,18 +56,19 @@ test_spec</code> <code>=</code></dt>
 <tr id="type-test_spec.Regular_thunk" class="anchored">
 <td class="def constructor"><a href="#type-test_spec.Regular_thunk"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Regular_thunk</span> : ([ `init ] <span>-&gt;</span>
-unit <span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> <a href=
+"constructor">Regular_thunk</span> : <span>(<span>[ `init ]</span>
+<span>-&gt;</span> unit <span>-&gt;</span> <span class=
+"type-var">'a</span>)</span> <span>-&gt;</span> <a href=
 "index.html#type-test_spec">test_spec</a></code></td>
 </tr>
 <tr id="type-test_spec.Indexed_thunk" class="anchored">
 <td class="def constructor"><a href="#type-test_spec.Indexed_thunk"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Indexed_thunk</span> : <span class=
+"constructor">Indexed_thunk</span> : <span><span class=
 "type-var">'a</span> <a href=
-"index.html#type-indexed_spec">indexed_spec</a> <span>-&gt;</span>
-<a href="index.html#type-test_spec">test_spec</a></code></td>
+"index.html#type-indexed_spec">indexed_spec</a></span>
+<span>-&gt;</span> <a href=
+"index.html#type-test_spec">test_spec</a></code></td>
 </tr>
 </table>
 </dd>
@@ -116,7 +117,8 @@ class="anchor"></a><code>|</code> <code><span class=
 </tr>
 <tr id="type-t.bench_module_name" class="anchored">
 <td class="def field"><a href="#type-t.bench_module_name" class=
-"anchor"></a><code>bench_module_name : string option;</code></td>
+"anchor"></a><code>bench_module_name : <span>string
+option</span>;</code></td>
 </tr>
 </table>
 <code>}</code></dd>
@@ -129,13 +131,13 @@ class="anchor"></a><code><span class="keyword">val</span> compare :
 <dt class="spec value" id="val-get_indexed_arg_name"><a href=
 "#val-get_indexed_arg_name" class="anchor"></a><code><span class=
 "keyword">val</span> get_indexed_arg_name : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> string
-option</code></dt>
+"index.html#type-t">t</a> <span>-&gt;</span> <span>string
+option</span></code></dt>
 <dt class="spec value" id="val-get_module_name_opt"><a href=
 "#val-get_module_name_opt" class="anchor"></a><code><span class=
 "keyword">val</span> get_module_name_opt : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> string
-option</code></dt>
+"index.html#type-t">t</a> <span>-&gt;</span> <span>string
+option</span></code></dt>
 </dl>
 </div>
 </body>

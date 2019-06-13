@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Shrinker
 (core_kernel.Core_kernel__.Quickcheck_intf.Shrinker)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -49,170 +48,205 @@ example shrinkers.</p>
 </aside>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a t</code>
-<code>= <span class="type-var">'a</span> <a href=
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code> <code>= <span><span class="type-var">'a</span>
+<a href=
 "../../../../base_quickcheck/Base_quickcheck/Shrinker/index.html#type-t">
-Base_quickcheck.Shrinker.t</a></code></dt>
+Base_quickcheck.Shrinker.t</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-shrink"><a href="#val-shrink" class=
 "anchor"></a><code><span class="keyword">val</span> shrink :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../../Core_kernel/Sequence/index.html#type-t">Core_kernel.Sequence.t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> <a href=
+"../../../Core_kernel/Sequence/index.html#type-t">Core_kernel.Sequence.t</a></span></code></dt>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../../../Core_kernel/Sequence/index.html#type-t">Core_kernel.Sequence.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../Core_kernel/Sequence/index.html#type-t">Core_kernel.Sequence.t</a></span>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-empty"><a href="#val-empty" class=
 "anchor"></a><code><span class="keyword">val</span> empty :
 <a href="../../Import/index.html#type-unit">Core_kernel__.Import.unit</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-bool"><a href="#val-bool" class=
-"anchor"></a><code><span class="keyword">val</span> bool : <a href=
+"anchor"></a><code><span class="keyword">val</span> bool :
+<span><a href=
 "../../Import/index.html#type-bool">Core_kernel__.Import.bool</a>
-<a href="index.html#type-t">t</a></code></dt>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-char"><a href="#val-char" class=
-"anchor"></a><code><span class="keyword">val</span> char : <a href=
+"anchor"></a><code><span class="keyword">val</span> char :
+<span><a href=
 "../../Import/index.html#type-char">Core_kernel__.Import.char</a>
-<a href="index.html#type-t">t</a></code></dt>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-map"><a href="#val-map" class=
 "anchor"></a><code><span class="keyword">val</span> map :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'b</span>)
-<span>-&gt;</span> f_inverse:(<span class="type-var">'b</span>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span></span> <span>-&gt;</span>
+<span>f_inverse:<span>(<span class="type-var">'b</span>
+<span>-&gt;</span> <span class="type-var">'a</span>)</span></span>
+<span>-&gt;</span> <span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-tuple2"><a href="#val-tuple2" class=
 "anchor"></a><code><span class="keyword">val</span> tuple2 :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span> * <span class="type-var">'b</span>) <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-tuple3"><a href="#val-tuple3" class=
 "anchor"></a><code><span class="keyword">val</span> tuple3 :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'c</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
-"type-var">'b</span> * <span class="type-var">'c</span>) <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'c</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span> * <span class="type-var">'c</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-tuple4"><a href="#val-tuple4" class=
 "anchor"></a><code><span class="keyword">val</span> tuple4 :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'c</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'d</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span> * <span class="type-var">'b</span> *
-<span class="type-var">'c</span> * <span class=
-"type-var">'d</span>) <a href="index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'c</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'d</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span> * <span class="type-var">'c</span> *
+<span class="type-var">'d</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-tuple5"><a href="#val-tuple5" class=
 "anchor"></a><code><span class="keyword">val</span> tuple5 :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'c</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'d</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'e</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'c</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'d</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'e</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span class=
 "type-var">'b</span> * <span class="type-var">'c</span> *
 <span class="type-var">'d</span> * <span class=
-"type-var">'e</span>) <a href="index.html#type-t">t</a></code></dt>
+"type-var">'e</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-tuple6"><a href="#val-tuple6" class=
 "anchor"></a><code><span class="keyword">val</span> tuple6 :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'c</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'d</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'e</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'f</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span> * <span class="type-var">'b</span> *
-<span class="type-var">'c</span> * <span class="type-var">'d</span>
-* <span class="type-var">'e</span> * <span class=
-"type-var">'f</span>) <a href="index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'c</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'d</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'e</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'f</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span> * <span class="type-var">'c</span> *
+<span class="type-var">'d</span> * <span class="type-var">'e</span>
+* <span class="type-var">'f</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-variant2"><a href="#val-variant2"
 class="anchor"></a><code><span class="keyword">val</span> variant2
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> [ `A of <span class="type-var">'a</span> | `B of
-<span class="type-var">'b</span> ] <a href=
-"index.html#type-t">t</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span><span>[
+<span>`A of <span class="type-var">'a</span></span> <span><span>|
+`B</span> of <span class="type-var">'b</span></span> ]</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-variant3"><a href="#val-variant3"
 class="anchor"></a><code><span class="keyword">val</span> variant3
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'c</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> [ `A of <span class=
-"type-var">'a</span> | `B of <span class="type-var">'b</span> | `C
-of <span class="type-var">'c</span> ] <a href=
-"index.html#type-t">t</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'c</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span><span>[
+<span>`A of <span class="type-var">'a</span></span> <span><span>|
+`B</span> of <span class="type-var">'b</span></span> <span><span>|
+`C</span> of <span class="type-var">'c</span></span> ]</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-variant4"><a href="#val-variant4"
 class="anchor"></a><code><span class="keyword">val</span> variant4
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'c</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'d</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> [ `A of <span class="type-var">'a</span> | `B of
-<span class="type-var">'b</span> | `C of <span class=
-"type-var">'c</span> | `D of <span class="type-var">'d</span> ]
-<a href="index.html#type-t">t</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'c</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'d</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span><span>[
+<span>`A of <span class="type-var">'a</span></span> <span><span>|
+`B</span> of <span class="type-var">'b</span></span> <span><span>|
+`C</span> of <span class="type-var">'c</span></span> <span><span>|
+`D</span> of <span class="type-var">'d</span></span> ]</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-variant5"><a href="#val-variant5"
 class="anchor"></a><code><span class="keyword">val</span> variant5
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'c</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'d</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'e</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> [ `A of <span class=
-"type-var">'a</span> | `B of <span class="type-var">'b</span> | `C
-of <span class="type-var">'c</span> | `D of <span class=
-"type-var">'d</span> | `E of <span class="type-var">'e</span> ]
-<a href="index.html#type-t">t</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'c</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'d</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'e</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span><span>[
+<span>`A of <span class="type-var">'a</span></span> <span><span>|
+`B</span> of <span class="type-var">'b</span></span> <span><span>|
+`C</span> of <span class="type-var">'c</span></span> <span><span>|
+`D</span> of <span class="type-var">'d</span></span> <span><span>|
+`E</span> of <span class="type-var">'e</span></span> ]</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-variant6"><a href="#val-variant6"
 class="anchor"></a><code><span class="keyword">val</span> variant6
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'c</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'d</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'e</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'f</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> [ `A of <span class="type-var">'a</span> | `B of
-<span class="type-var">'b</span> | `C of <span class=
-"type-var">'c</span> | `D of <span class="type-var">'d</span> | `E
-of <span class="type-var">'e</span> | `F of <span class=
-"type-var">'f</span> ] <a href=
-"index.html#type-t">t</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'c</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'d</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'e</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'f</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span><span>[
+<span>`A of <span class="type-var">'a</span></span> <span><span>|
+`B</span> of <span class="type-var">'b</span></span> <span><span>|
+`C</span> of <span class="type-var">'c</span></span> <span><span>|
+`D</span> of <span class="type-var">'d</span></span> <span><span>|
+`E</span> of <span class="type-var">'e</span></span> <span><span>|
+`F</span> of <span class="type-var">'f</span></span> ]</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-fixed_point"><a href=
 "#val-fixed_point" class="anchor"></a><code><span class=
-"keyword">val</span> fixed_point : (<span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a>) <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> fixed_point : <span>(<span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span>)</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>fixed_point</code> assists with shrinking structures
 recursively. Its advantage over directly using <code>rec</code> in
@@ -223,11 +257,12 @@ where possible.</p>
 <dl>
 <dt class="spec value" id="val-recursive"><a href="#val-recursive"
 class="anchor"></a><code><span class="keyword">val</span> recursive
-: (<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+: <span>(<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span>)</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 </dl>
 </div>
 </body>

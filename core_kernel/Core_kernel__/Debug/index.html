@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Debug (core_kernel.Core_kernel__.Debug)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -46,9 +45,9 @@ class="anchor"></a><code><span class="keyword">val</span> eprints :
 <a href=
 "../Import/index.html#type-string">Core_kernel__.Import.string</a>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> (<span class="type-var">'a</span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
-"../../Core_kernel/Sexp/index.html#type-t">Core_kernel.Sexp.t</a>)
+"../../Core_kernel/Sexp/index.html#type-t">Core_kernel.Sexp.t</a>)</span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dd>
@@ -72,10 +71,10 @@ followed by a newline and a flush.</p>
 <dl>
 <dt class="spec value" id="val-eprintf"><a href="#val-eprintf"
 class="anchor"></a><code><span class="keyword">val</span> eprintf :
-(<span class="type-var">'r</span>,&nbsp;<a href=
-"../Import/index.html#type-unit">Core_kernel__.Import.unit</a>,&nbsp;<a href="../Import/index.html#type-string">Core_kernel__.Import.string</a>,&nbsp;<a href="../Import/index.html#type-unit">Core_kernel__.Import.unit</a>)
+<span><span>(<span class="type-var">'r</span>,&nbsp;<a href=
+"../Import/index.html#type-unit">Core_kernel__.Import.unit</a>,&nbsp;<a href="../Import/index.html#type-string">Core_kernel__.Import.string</a>,&nbsp;<a href="../Import/index.html#type-unit">Core_kernel__.Import.unit</a>)</span>
 <a href=
-"../Import/index.html#type-format4">Core_kernel__.Import.format4</a>
+"../Import/index.html#type-format4">Core_kernel__.Import.format4</a></span>
 <span>-&gt;</span> <span class="type-var">'r</span></code></dt>
 <dd>
 <p><code>eprintf message arg1 ... argn</code> prints to stderr
@@ -127,25 +126,26 @@ step through one's code by stepping through the messages.</p>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-string">Core_kernel__.Import.string</a>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> (<span class="type-var">'a</span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
-"../../Core_kernel/Sexp/index.html#type-t">Core_kernel.Sexp.t</a>)
+"../../Core_kernel/Sexp/index.html#type-t">Core_kernel.Sexp.t</a>)</span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-amf"><a href="#val-amf" class=
 "anchor"></a><code><span class="keyword">val</span> amf : <a href=
 "../../Core_kernel/Source_code_position/index.html#type-t">Core_kernel.Source_code_position.t</a>
-<span>-&gt;</span> (<span class="type-var">'r</span>,&nbsp;<a href=
-"../Import/index.html#type-unit">Core_kernel__.Import.unit</a>,&nbsp;<a href="../Import/index.html#type-string">Core_kernel__.Import.string</a>,&nbsp;<a href="../Import/index.html#type-unit">Core_kernel__.Import.unit</a>)
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'r</span>,&nbsp;<a href=
+"../Import/index.html#type-unit">Core_kernel__.Import.unit</a>,&nbsp;<a href="../Import/index.html#type-string">Core_kernel__.Import.string</a>,&nbsp;<a href="../Import/index.html#type-unit">Core_kernel__.Import.unit</a>)</span>
 <a href=
-"../Import/index.html#type-format4">Core_kernel__.Import.format4</a>
+"../Import/index.html#type-format4">Core_kernel__.Import.format4</a></span>
 <span>-&gt;</span> <span class="type-var">'r</span></code></dt>
 <dt class="spec value" id="val-should_print_backtrace"><a href=
 "#val-should_print_backtrace" class="anchor"></a><code><span class=
-"keyword">val</span> should_print_backtrace : <a href=
+"keyword">val</span> should_print_backtrace : <span><a href=
 "../Import/index.html#type-bool">Core_kernel__.Import.bool</a>
 <a href=
-"../Import/index.html#type-ref">Core_kernel__.Import.ref</a></code></dt>
+"../Import/index.html#type-ref">Core_kernel__.Import.ref</a></span></code></dt>
 <dd>
 <p><code>should_print_backtrace</code> governs whether the
 <code>am*</code> functions print a backtrace.</p>

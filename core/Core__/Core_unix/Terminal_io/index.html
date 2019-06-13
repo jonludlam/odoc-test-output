@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Terminal_io (core.Core__.Core_unix.Terminal_io)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -415,9 +414,9 @@ descriptor.</p>
 class="anchor"></a><code><span class="keyword">val</span> tcsetattr
 : <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "../File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> mode:<a href=
-"index.html#type-setattr_when">setattr_when</a> <span>-&gt;</span>
-unit</code></dt>
+<span>-&gt;</span> <span>mode:<a href=
+"index.html#type-setattr_when">setattr_when</a></span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Set the status of the terminal referred to by the given file
 descriptor. The second argument indicates when the status change
@@ -434,7 +433,8 @@ changing the input parameters.</p>
 "#val-tcsendbreak" class="anchor"></a><code><span class=
 "keyword">val</span> tcsendbreak : <a href=
 "../File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> duration:int <span>-&gt;</span> unit</code></dt>
+<span>-&gt;</span> <span>duration:int</span> <span>-&gt;</span>
+unit</code></dt>
 <dd>
 <p>Send a break condition on the given file descriptor. The second
 argument is the duration of the break, in 0.1s units; 0 means
@@ -505,9 +505,9 @@ class="anchor"></a><code>|</code> <code><span class=
 <dt class="spec value" id="val-tcflush"><a href="#val-tcflush"
 class="anchor"></a><code><span class="keyword">val</span> tcflush :
 <a href="../File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> mode:<a href=
-"index.html#type-flush_queue">flush_queue</a> <span>-&gt;</span>
-unit</code></dt>
+<span>-&gt;</span> <span>mode:<a href=
+"index.html#type-flush_queue">flush_queue</a></span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Discard data written on the given file descriptor but not yet
 transmitted, or data received but not yet read, depending on the
@@ -575,9 +575,9 @@ class="anchor"></a><code>|</code> <code><span class=
 <dt class="spec value" id="val-tcflow"><a href="#val-tcflow" class=
 "anchor"></a><code><span class="keyword">val</span> tcflow :
 <a href="../File_descr/index.html#type-t">File_descr.t</a>
-<span>-&gt;</span> mode:<a href=
-"index.html#type-flow_action">flow_action</a> <span>-&gt;</span>
-unit</code></dt>
+<span>-&gt;</span> <span>mode:<a href=
+"index.html#type-flow_action">flow_action</a></span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Suspend or restart reception or transmission of data on the
 given file descriptor, depending on the second argument:

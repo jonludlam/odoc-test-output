@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Export (base.Base.Export)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -31,36 +30,37 @@ Export</nav>
 </header>
 <dl>
 <dt class="spec type" id="type-array"><a href="#type-array" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-array</code> <code>= <span class="type-var">'a</span> <a href=
-"../Array/index.html#type-t">Array.t</a></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+array</span></code> <code>= <span><span class="type-var">'a</span>
+<a href="../Array/index.html#type-t">Array.t</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-compare_array"><a href=
 "#val-compare_array" class="anchor"></a><code><span class=
-"keyword">val</span> compare_array : a. (<span class=
+"keyword">val</span> compare_array : a. <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> int) <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-array">array</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-array">array</a>
-<span>-&gt;</span> int</code></dt>
+"type-var">'a</span> <span>-&gt;</span> int)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-array">array</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-array">array</a></span> <span>-&gt;</span>
+int</code></dt>
 <dt class="spec value" id="val-array_of_sexp"><a href=
 "#val-array_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> array_of_sexp : a. (<a href=
+"keyword">val</span> array_of_sexp : a. <span>(<a href=
 "../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span>) <span>-&gt;</span> <a href=
-"../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-array">array</a></code></dt>
+<span class="type-var">'a</span>)</span> <span>-&gt;</span>
+<a href="../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-array">array</a></span></code></dt>
 <dt class="spec value" id="val-sexp_of_array"><a href=
 "#val-sexp_of_array" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_array : a. (<span class=
+"keyword">val</span> sexp_of_array : a. <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../Sexp/index.html#type-t">Sexp.t</a>) <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-array">array</a> <span>-&gt;</span> <a href=
-"../Sexp/index.html#type-t">Sexp.t</a></code></dt>
+"../Sexp/index.html#type-t">Sexp.t</a>)</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-array">array</a></span> <span>-&gt;</span>
+<a href="../Sexp/index.html#type-t">Sexp.t</a></code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-bool"><a href="#type-bool" class=
@@ -280,46 +280,48 @@ class="anchor"></a><code><span class="keyword">val</span> hash_int
 </dl>
 <dl>
 <dt class="spec type" id="type-list"><a href="#type-list" class=
-"anchor"></a><code><span class="keyword">type</span> 'a list</code>
-<code>= <span class="type-var">'a</span> <a href=
-"../List/index.html#type-t">List.t</a></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+list</span></code> <code>= <span><span class="type-var">'a</span>
+<a href="../List/index.html#type-t">List.t</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-compare_list"><a href=
 "#val-compare_list" class="anchor"></a><code><span class=
-"keyword">val</span> compare_list : a. (<span class=
+"keyword">val</span> compare_list : a. <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"index.html#type-int">int</a>) <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-list">list</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-list">list</a> <span>-&gt;</span> <a href=
+"index.html#type-int">int</a>)</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-list">list</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-list">list</a></span> <span>-&gt;</span> <a href=
 "index.html#type-int">int</a></code></dt>
 <dt class="spec value" id="val-hash_fold_list"><a href=
 "#val-hash_fold_list" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_list : a. (<a href=
+"keyword">val</span> hash_fold_list : a. <span>(<a href=
 "../Hash/index.html#type-state">Hash.state</a> <span>-&gt;</span>
 <span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../Hash/index.html#type-state">Hash.state</a>) <span>-&gt;</span>
-<a href="../Hash/index.html#type-state">Hash.state</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-list">list</a> <span>-&gt;</span> <a href=
+"../Hash/index.html#type-state">Hash.state</a>)</span>
+<span>-&gt;</span> <a href=
+"../Hash/index.html#type-state">Hash.state</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-list">list</a></span> <span>-&gt;</span> <a href=
 "../Hash/index.html#type-state">Hash.state</a></code></dt>
 <dt class="spec value" id="val-list_of_sexp"><a href=
 "#val-list_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> list_of_sexp : a. (<a href=
+"keyword">val</span> list_of_sexp : a. <span>(<a href=
 "../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span>) <span>-&gt;</span> <a href=
-"../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-list">list</a></code></dt>
+<span class="type-var">'a</span>)</span> <span>-&gt;</span>
+<a href="../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-list">list</a></span></code></dt>
 <dt class="spec value" id="val-sexp_of_list"><a href=
 "#val-sexp_of_list" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_list : a. (<span class=
+"keyword">val</span> sexp_of_list : a. <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../Sexp/index.html#type-t">Sexp.t</a>) <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-list">list</a> <span>-&gt;</span> <a href=
+"../Sexp/index.html#type-t">Sexp.t</a>)</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-list">list</a></span> <span>-&gt;</span> <a href=
 "../Sexp/index.html#type-t">Sexp.t</a></code></dt>
 </dl>
 <dl>
@@ -362,80 +364,84 @@ nativeint</code> <code>= <a href=
 </dl>
 <dl>
 <dt class="spec type" id="type-option"><a href="#type-option"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-option</code> <code>= <span class="type-var">'a</span> <a href=
-"../Option/index.html#type-t">Option.t</a></code></dt>
+class="anchor"></a><code><span class="keyword">type</span> <span>'a
+option</span></code> <code>= <span><span class="type-var">'a</span>
+<a href=
+"../Option/index.html#type-t">Option.t</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-compare_option"><a href=
 "#val-compare_option" class="anchor"></a><code><span class=
-"keyword">val</span> compare_option : a. (<span class=
+"keyword">val</span> compare_option : a. <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"index.html#type-int">int</a>) <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-option">option</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-option">option</a> <span>-&gt;</span> <a href=
-"index.html#type-int">int</a></code></dt>
+"index.html#type-int">int</a>)</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-option">option</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-option">option</a></span> <span>-&gt;</span>
+<a href="index.html#type-int">int</a></code></dt>
 <dt class="spec value" id="val-hash_fold_option"><a href=
 "#val-hash_fold_option" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_option : a. (<a href=
+"keyword">val</span> hash_fold_option : a. <span>(<a href=
 "../Hash/index.html#type-state">Hash.state</a> <span>-&gt;</span>
 <span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../Hash/index.html#type-state">Hash.state</a>) <span>-&gt;</span>
-<a href="../Hash/index.html#type-state">Hash.state</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-option">option</a> <span>-&gt;</span> <a href=
-"../Hash/index.html#type-state">Hash.state</a></code></dt>
+"../Hash/index.html#type-state">Hash.state</a>)</span>
+<span>-&gt;</span> <a href=
+"../Hash/index.html#type-state">Hash.state</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-option">option</a></span> <span>-&gt;</span>
+<a href="../Hash/index.html#type-state">Hash.state</a></code></dt>
 <dt class="spec value" id="val-option_of_sexp"><a href=
 "#val-option_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> option_of_sexp : a. (<a href=
+"keyword">val</span> option_of_sexp : a. <span>(<a href=
 "../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span>) <span>-&gt;</span> <a href=
-"../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-option">option</a></code></dt>
+<span class="type-var">'a</span>)</span> <span>-&gt;</span>
+<a href="../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-option">option</a></span></code></dt>
 <dt class="spec value" id="val-sexp_of_option"><a href=
 "#val-sexp_of_option" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_option : a. (<span class=
+"keyword">val</span> sexp_of_option : a. <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../Sexp/index.html#type-t">Sexp.t</a>) <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-option">option</a> <span>-&gt;</span> <a href=
-"../Sexp/index.html#type-t">Sexp.t</a></code></dt>
+"../Sexp/index.html#type-t">Sexp.t</a>)</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-option">option</a></span> <span>-&gt;</span>
+<a href="../Sexp/index.html#type-t">Sexp.t</a></code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-ref"><a href="#type-ref" class=
-"anchor"></a><code><span class="keyword">type</span> 'a ref</code>
-<code>= <span class="type-var">'a</span> <a href=
-"../Ref/index.html#type-t">Ref.t</a></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+ref</span></code> <code>= <span><span class="type-var">'a</span>
+<a href="../Ref/index.html#type-t">Ref.t</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-compare_ref"><a href=
 "#val-compare_ref" class="anchor"></a><code><span class=
-"keyword">val</span> compare_ref : a. (<span class=
+"keyword">val</span> compare_ref : a. <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"index.html#type-int">int</a>) <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-ref">ref</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <a href=
+"index.html#type-int">int</a>)</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span> <span>-&gt;</span> <a href=
 "index.html#type-int">int</a></code></dt>
 <dt class="spec value" id="val-ref_of_sexp"><a href=
 "#val-ref_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> ref_of_sexp : a. (<a href=
+"keyword">val</span> ref_of_sexp : a. <span>(<a href=
 "../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span>) <span>-&gt;</span> <a href=
-"../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a></code></dt>
+<span class="type-var">'a</span>)</span> <span>-&gt;</span>
+<a href="../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span></code></dt>
 <dt class="spec value" id="val-sexp_of_ref"><a href=
 "#val-sexp_of_ref" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_ref : a. (<span class=
+"keyword">val</span> sexp_of_ref : a. <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../Sexp/index.html#type-t">Sexp.t</a>) <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <a href=
+"../Sexp/index.html#type-t">Sexp.t</a>)</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span> <span>-&gt;</span> <a href=
 "../Sexp/index.html#type-t">Sexp.t</a></code></dt>
 </dl>
 <dl>
@@ -537,27 +543,29 @@ class="anchor"></a><code><span class="keyword">val</span> hash_unit
 <dl>
 <dt class="spec type" id="type-format"><a href="#type-format"
 class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> ('a, 'b, 'c) format</code>
-<code>= (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
-Stdlib.format</code></dt>
+<span class="keyword">nonrec</span> <span>('a, 'b, 'c)
+format</span></code> <code>= <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)</span>
+Stdlib.format</span></code></dt>
 <dt class="spec type" id="type-format4"><a href="#type-format4"
 class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> ('a, 'b, 'c, 'd) format4</code>
-<code>= (<span class="type-var">'a</span>,&nbsp;<span class=
+<span class="keyword">nonrec</span> <span>('a, 'b, 'c, 'd)
+format4</span></code> <code>= <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)
-Stdlib.format4</code></dt>
+"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)</span>
+Stdlib.format4</span></code></dt>
 <dt class="spec type" id="type-format6"><a href="#type-format6"
 class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> ('a, 'b, 'c, 'd, 'e, 'f)
-format6</code> <code>= (<span class=
+<span class="keyword">nonrec</span> <span>('a, 'b, 'c, 'd, 'e, 'f)
+format6</span></code> <code>= <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-Stdlib.format6</code></dt>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+Stdlib.format6</span></code></dt>
 </dl>
 <section>
 <header>
@@ -578,22 +586,23 @@ produce the atom <code>&lt;opaque&gt;</code>.</p>
 <dl>
 <dt class="spec type" id="type-sexp_array"><a href=
 "#type-sexp_array" class="anchor"></a><code><span class=
-"keyword">type</span> 'a sexp_array</code> <code>= <span class=
-"type-var">'a</span> <a href=
-"index.html#type-array">array</a></code></dt>
+"keyword">type</span> <span>'a sexp_array</span></code> <code>=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-array">array</a></span></code></dt>
 <dt class="spec type" id="type-sexp_list"><a href="#type-sexp_list"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-sexp_list</code> <code>= <span class="type-var">'a</span> <a href=
-"index.html#type-list">list</a></code></dt>
+class="anchor"></a><code><span class="keyword">type</span> <span>'a
+sexp_list</span></code> <code>= <span><span class=
+"type-var">'a</span> <a href=
+"index.html#type-list">list</a></span></code></dt>
 <dt class="spec type" id="type-sexp_opaque"><a href=
 "#type-sexp_opaque" class="anchor"></a><code><span class=
-"keyword">type</span> 'a sexp_opaque</code> <code>= <span class=
-"type-var">'a</span></code></dt>
+"keyword">type</span> <span>'a sexp_opaque</span></code> <code>=
+<span class="type-var">'a</span></code></dt>
 <dt class="spec type" id="type-sexp_option"><a href=
 "#type-sexp_option" class="anchor"></a><code><span class=
-"keyword">type</span> 'a sexp_option</code> <code>= <span class=
-"type-var">'a</span> <a href=
-"index.html#type-option">option</a></code></dt>
+"keyword">type</span> <span>'a sexp_option</span></code> <code>=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-option">option</a></span></code></dt>
 </dl>
 <aside>
 <p>List operators</p>
@@ -608,12 +617,12 @@ sexp_list</code> <code>= <span class="type-var">'a</span> <a href=
 <dl>
 <dt class="spec value" id="val-(@)"><a href="#val-(@)" class=
 "anchor"></a><code><span class="keyword">val</span> (@) :
-<span class="type-var">'a</span> <a href=
-"../../Base__List/index.html#type-t">Base__List.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../Base__List/index.html#type-t">Base__List.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../Base__List/index.html#type-t">Base__List.t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"../../Base__List/index.html#type-t">Base__List.t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../../Base__List/index.html#type-t">Base__List.t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../../Base__List/index.html#type-t">Base__List.t</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -895,10 +904,10 @@ int <span>-&gt;</span> int <span>-&gt;</span> int</code></dt>
 <dl>
 <dt class="spec external" id="val-(|&gt;)"><a href="#val-(|%3E)"
 class="anchor"></a><code><span class="keyword">val</span> (|&gt;) :
-<span class="type-var">'a</span> <span>-&gt;</span> (<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'b</span></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span> <span>-&gt;</span>
+<span class="type-var">'b</span></code></dt>
 <dd>
 <p>Reverse application operator. <code>x |&gt; g |&gt; f</code> is
 equivalent to <code>f (g (x))</code>.</p>
@@ -907,9 +916,9 @@ equivalent to <code>f (g (x))</code>.</p>
 <dl>
 <dt class="spec external" id="val-(@@)"><a href="#val-(@@)" class=
 "anchor"></a><code><span class="keyword">val</span> (@@) :
-(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
+<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span> <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span></code></dt>
 <dd>
 <p>Application operator. <code>g @@ f @@ x</code> is equivalent to
@@ -957,19 +966,19 @@ class="anchor"></a><code><span class="keyword">val</span> ignore :
 <dl>
 <dt class="spec external" id="val-(!)"><a href="#val-(!)" class=
 "anchor"></a><code><span class="keyword">val</span> (!) :
-<span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span> <span>-&gt;</span>
+<span class="type-var">'a</span></code></dt>
 <dt class="spec external" id="val-ref"><a href="#val-ref" class=
 "anchor"></a><code><span class="keyword">val</span> ref :
-<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"index.html#type-ref">ref</a></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span></code></dt>
 <dt class="spec external" id="val-(:=)"><a href="#val-(:=)" class=
 "anchor"></a><code><span class="keyword">val</span> (:=) :
-<span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> <a href=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span> <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span> <a href=
 "index.html#type-unit">unit</a></code></dt>
 </dl>
 <aside>
@@ -978,13 +987,13 @@ class="anchor"></a><code><span class="keyword">val</span> ignore :
 <dl>
 <dt class="spec value" id="val-fst"><a href="#val-fst" class=
 "anchor"></a><code><span class="keyword">val</span> fst :
-(<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
+<span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'a</span></code></dt>
 <dt class="spec value" id="val-snd"><a href="#val-snd" class=
 "anchor"></a><code><span class="keyword">val</span> snd :
-(<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
+<span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'b</span></code></dt>
 </dl>
 <aside>
@@ -1023,8 +1032,8 @@ class="anchor"></a><code><span class="keyword">val</span> raise_s :
 <dl>
 <dt class="spec external" id="val-force"><a href="#val-force"
 class="anchor"></a><code><span class="keyword">val</span> force :
-<span class="type-var">'a</span> <a href=
-"../Lazy/index.html#type-t">Lazy.t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../Lazy/index.html#type-t">Lazy.t</a></span> <span>-&gt;</span>
 <span class="type-var">'a</span></code></dt>
 </dl>
 </section>

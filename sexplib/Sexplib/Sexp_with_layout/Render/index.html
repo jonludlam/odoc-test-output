@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Render (sexplib.Sexplib.Sexp_with_layout.Render)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -70,8 +69,8 @@ last_atom</code> <code>=</code> <code>{</code></dt>
 <tr id="type-state.last_atom" class="anchored">
 <td class="def field"><a href="#type-state.last_atom" class=
 "anchor"></a><code><span class="keyword">mutable</span> last_atom :
-<a href="index.html#type-last_atom">last_atom</a>
-option;</code></td>
+<span><a href="index.html#type-last_atom">last_atom</a>
+option</span>;</code></td>
 </tr>
 <tr id="type-state.last_comment_row" class="anchored">
 <td class="def field"><a href="#type-state.last_comment_row" class=
@@ -81,10 +80,10 @@ last_comment_row : int;</code></td>
 </table>
 <code>}</code></dd>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a t</code>
-<code>= (char <span>-&gt;</span> unit) <span>-&gt;</span> <a href=
-"index.html#type-state">state</a> <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code> <code>= <span>(char <span>-&gt;</span> unit)</span>
+<span>-&gt;</span> <a href="index.html#type-state">state</a>
+<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-return"><a href="#val-return" class=
@@ -95,81 +94,87 @@ last_comment_row : int;</code></td>
 "type-var">'a</span></code></dt>
 <dt class="spec value" id="val-bind"><a href="#val-bind" class=
 "anchor"></a><code><span class="keyword">val</span> bind :
-(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
+<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span> <span>-&gt;</span> <span class=
+"type-var">'c</span>)</span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'c</span> <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span> <span>-&gt;</span> <span class=
-"type-var">'c</span>) <span>-&gt;</span> f:(<span class=
-"type-var">'c</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span> <span>-&gt;</span> <span class=
-"type-var">'d</span>) <span>-&gt;</span> <span class=
+"type-var">'d</span>)</span></span> <span>-&gt;</span> <span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span> <span>-&gt;</span> <span class=
 "type-var">'d</span></code></dt>
 <dt class="spec value" id="val-run"><a href="#val-run" class=
 "anchor"></a><code><span class="keyword">val</span> run :
-<span class="type-var">'a</span> <span>-&gt;</span> (<span class=
-"type-var">'a</span> <span>-&gt;</span> <a href=
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span>(<span class="type-var">'a</span> <span>-&gt;</span> <a href=
 "index.html#type-state">state</a> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
+"type-var">'b</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'b</span></code></dt>
 <dt class="spec value" id="val-emit_char"><a href="#val-emit_char"
 class="anchor"></a><code><span class="keyword">val</span> emit_char
-: (char <span>-&gt;</span> unit) <span>-&gt;</span> <a href=
-"index.html#type-state">state</a> <span>-&gt;</span> char
+: <span>(char <span>-&gt;</span> unit)</span> <span>-&gt;</span>
+<a href="index.html#type-state">state</a> <span>-&gt;</span> char
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-emit_string"><a href=
 "#val-emit_string" class="anchor"></a><code><span class=
-"keyword">val</span> emit_string : (char <span>-&gt;</span> unit)
-<span>-&gt;</span> <a href="index.html#type-state">state</a>
-<span>-&gt;</span> string <span>-&gt;</span> unit</code></dt>
+"keyword">val</span> emit_string : <span>(char <span>-&gt;</span>
+unit)</span> <span>-&gt;</span> <a href=
+"index.html#type-state">state</a> <span>-&gt;</span> string
+<span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-emit_chars"><a href=
 "#val-emit_chars" class="anchor"></a><code><span class=
-"keyword">val</span> emit_chars : (char <span>-&gt;</span> unit)
-<span>-&gt;</span> <a href="index.html#type-state">state</a>
-<span>-&gt;</span> char <span>-&gt;</span> n:int <span>-&gt;</span>
+"keyword">val</span> emit_chars : <span>(char <span>-&gt;</span>
+unit)</span> <span>-&gt;</span> <a href=
+"index.html#type-state">state</a> <span>-&gt;</span> char
+<span>-&gt;</span> <span>n:int</span> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec value" id="val-advance"><a href="#val-advance"
 class="anchor"></a><code><span class="keyword">val</span> advance :
-(char <span>-&gt;</span> unit) <span>-&gt;</span> anchor:<a href=
-"../../../Sexplib__Src_pos/Absolute/index.html#type-t">Abs_pos.t</a>
+<span>(char <span>-&gt;</span> unit)</span> <span>-&gt;</span>
+<span>anchor:<a href=
+"../../../Sexplib__Src_pos/Absolute/index.html#type-t">Abs_pos.t</a></span>
 <span>-&gt;</span> <a href="index.html#type-state">state</a>
-<span>-&gt;</span> by:<a href=
-"../../../Sexplib__Src_pos/Relative/index.html#type-t">Sexplib__Src_pos.Relative.t</a>
-<span>-&gt;</span> unescaped_atom:bool <span>-&gt;</span>
-line_comment:bool <span>-&gt;</span> unit</code></dt>
+<span>-&gt;</span> <span>by:<a href=
+"../../../Sexplib__Src_pos/Relative/index.html#type-t">Sexplib__Src_pos.Relative.t</a></span>
+<span>-&gt;</span> <span>unescaped_atom:bool</span>
+<span>-&gt;</span> <span>line_comment:bool</span>
+<span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-render_t"><a href="#val-render_t"
 class="anchor"></a><code><span class="keyword">val</span> render_t
-: (char <span>-&gt;</span> unit) <span>-&gt;</span> anchor:<a href=
-"../../../Sexplib__Src_pos/Absolute/index.html#type-t">Abs_pos.t</a>
+: <span>(char <span>-&gt;</span> unit)</span> <span>-&gt;</span>
+<span>anchor:<a href=
+"../../../Sexplib__Src_pos/Absolute/index.html#type-t">Abs_pos.t</a></span>
 <span>-&gt;</span> <a href="index.html#type-state">state</a>
 <span>-&gt;</span> <a href="../index.html#type-t">t</a>
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-render_toc"><a href=
 "#val-render_toc" class="anchor"></a><code><span class=
-"keyword">val</span> render_toc : (char <span>-&gt;</span> unit)
-<span>-&gt;</span> anchor:<a href=
-"../../../Sexplib__Src_pos/Absolute/index.html#type-t">Abs_pos.t</a>
+"keyword">val</span> render_toc : <span>(char <span>-&gt;</span>
+unit)</span> <span>-&gt;</span> <span>anchor:<a href=
+"../../../Sexplib__Src_pos/Absolute/index.html#type-t">Abs_pos.t</a></span>
 <span>-&gt;</span> <a href="index.html#type-state">state</a>
 <span>-&gt;</span> <a href=
 "../index.html#type-t_or_comment">t_or_comment</a>
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-render_c"><a href="#val-render_c"
 class="anchor"></a><code><span class="keyword">val</span> render_c
-: (char <span>-&gt;</span> unit) <span>-&gt;</span> anchor:<a href=
-"../../../Sexplib__Src_pos/Absolute/index.html#type-t">Abs_pos.t</a>
+: <span>(char <span>-&gt;</span> unit)</span> <span>-&gt;</span>
+<span>anchor:<a href=
+"../../../Sexplib__Src_pos/Absolute/index.html#type-t">Abs_pos.t</a></span>
 <span>-&gt;</span> <a href="index.html#type-state">state</a>
 <span>-&gt;</span> <a href="../index.html#type-comment">comment</a>
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-render"><a href="#val-render" class=
 "anchor"></a><code><span class="keyword">val</span> render :
 <a href="../index.html#type-t_or_comment">t_or_comment</a>
-<span>-&gt;</span> (char <span>-&gt;</span> unit)
+<span>-&gt;</span> <span>(char <span>-&gt;</span> unit)</span>
 <span>-&gt;</span> <a href="index.html#type-state">state</a>
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-sexp"><a href="#val-sexp" class=
 "anchor"></a><code><span class="keyword">val</span> sexp : <a href=
 "../index.html#type-t_or_comment">t_or_comment</a>
-<span>-&gt;</span> (char <span>-&gt;</span> unit)
+<span>-&gt;</span> <span>(char <span>-&gt;</span> unit)</span>
 <span>-&gt;</span> <a href="index.html#type-state">state</a>
 <span>-&gt;</span> unit</code></dt>
 </dl>

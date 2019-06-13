@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>S (core_kernel.Core_kernel__Substring.S)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -89,9 +88,10 @@ class="anchor"></a><code><span class="keyword">val</span> is_empty
 bool</code></dt>
 <dt class="spec value" id="val-iter"><a href="#val-iter" class=
 "anchor"></a><code><span class="keyword">val</span> iter : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> unit)
-<span>-&gt;</span> unit</code></dt>
+"index.html#type-t">t</a> <span>-&gt;</span>
+<span>f:<span>(<a href="index.html#type-elt">elt</a>
+<span>-&gt;</span> unit)</span></span> <span>-&gt;</span>
+unit</code></dt>
 <dd>
 <p><code>iter</code> must allow exceptions raised in <code>f</code>
 to escape, terminating the iteration cleanly. The same holds for
@@ -101,12 +101,13 @@ all functions below taking an <code>f</code>.</p>
 <dl>
 <dt class="spec value" id="val-fold"><a href="#val-fold" class=
 "anchor"></a><code><span class="keyword">val</span> fold : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> init:<span class=
-"type-var">'accum</span> <span>-&gt;</span> f:(<span class=
+"index.html#type-t">t</a> <span>-&gt;</span>
+<span>init:<span class="type-var">'accum</span></span>
+<span>-&gt;</span> <span>f:<span>(<span class=
 "type-var">'accum</span> <span>-&gt;</span> <a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
-"type-var">'accum</span>) <span>-&gt;</span> <span class=
-"type-var">'accum</span></code></dt>
+"type-var">'accum</span>)</span></span> <span>-&gt;</span>
+<span class="type-var">'accum</span></code></dt>
 <dd>
 <p><code>fold t ~init ~f</code> returns <code>f (... f (f (f init
 e1) e2) e3 ...) en</code>, where <code>e1..en</code> are the
@@ -117,17 +118,19 @@ elements of <code>t</code>.</p>
 <dt class="spec value" id="val-fold_result"><a href=
 "#val-fold_result" class="anchor"></a><code><span class=
 "keyword">val</span> fold_result : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> init:<span class=
-"type-var">'accum</span> <span>-&gt;</span> f:(<span class=
+"index.html#type-t">t</a> <span>-&gt;</span>
+<span>init:<span class="type-var">'accum</span></span>
+<span>-&gt;</span> <span>f:<span>(<span class=
 "type-var">'accum</span> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> (<span class=
-"type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)
+"index.html#type-elt">elt</a> <span>-&gt;</span>
+<span><span>(<span class=
+"type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)</span>
 <a href=
-"../../../base/Base/Result/index.html#type-t">Base.Result.t</a>)
-<span>-&gt;</span> (<span class=
-"type-var">'accum</span>,&nbsp;<span class="type-var">'e</span>)
-<a href=
-"../../../base/Base/Result/index.html#type-t">Base.Result.t</a></code></dt>
+"../../../base/Base/Result/index.html#type-t">Base.Result.t</a></span>)</span></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'accum</span>,&nbsp;<span class=
+"type-var">'e</span>)</span> <a href=
+"../../../base/Base/Result/index.html#type-t">Base.Result.t</a></span></code></dt>
 <dd>
 <p><code>fold_result t ~init ~f</code> is a short-circuiting
 version of <code>fold</code> that runs in the <code>Result</code>
@@ -140,16 +143,18 @@ value is returned without any additional invocations of
 <dt class="spec value" id="val-fold_until"><a href=
 "#val-fold_until" class="anchor"></a><code><span class=
 "keyword">val</span> fold_until : <a href="index.html#type-t">t</a>
-<span>-&gt;</span> init:<span class="type-var">'accum</span>
-<span>-&gt;</span> f:(<span class="type-var">'accum</span>
+<span>-&gt;</span> <span>init:<span class=
+"type-var">'accum</span></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'accum</span>
 <span>-&gt;</span> <a href="index.html#type-elt">elt</a>
-<span>-&gt;</span> (<span class=
+<span>-&gt;</span> <span><span>(<span class=
 "type-var">'accum</span>,&nbsp;<span class=
-"type-var">'final</span>) <a href=
+"type-var">'final</span>)</span> <a href=
 "../../../base/Base__/Container_intf/Export/Continue_or_stop/index.html#type-t">
-Base__.Container_intf.Continue_or_stop.t</a>) <span>-&gt;</span>
-finish:(<span class="type-var">'accum</span> <span>-&gt;</span>
-<span class="type-var">'final</span>) <span>-&gt;</span>
+Base__.Container_intf.Continue_or_stop.t</a></span>)</span></span>
+<span>-&gt;</span> <span>finish:<span>(<span class=
+"type-var">'accum</span> <span>-&gt;</span> <span class=
+"type-var">'final</span>)</span></span> <span>-&gt;</span>
 <span class="type-var">'final</span></code></dt>
 <dd>
 <p><code>fold_until t ~init ~f ~finish</code> is a short-circuiting
@@ -163,9 +168,10 @@ final result is computed by <code>finish</code>.</p>
 <dl>
 <dt class="spec value" id="val-exists"><a href="#val-exists" class=
 "anchor"></a><code><span class="keyword">val</span> exists :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> bool</code></dt>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span>f:<span>(<a href="index.html#type-elt">elt</a>
+<span>-&gt;</span> bool)</span></span> <span>-&gt;</span>
+bool</code></dt>
 <dd>
 <p>Returns <code>true</code> if and only if there exists an element
 for which the provided function evaluates to <code>true</code>.
@@ -175,9 +181,10 @@ This is a short-circuiting operation.</p>
 <dl>
 <dt class="spec value" id="val-for_all"><a href="#val-for_all"
 class="anchor"></a><code><span class="keyword">val</span> for_all :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> bool</code></dt>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span>f:<span>(<a href="index.html#type-elt">elt</a>
+<span>-&gt;</span> bool)</span></span> <span>-&gt;</span>
+bool</code></dt>
 <dd>
 <p>Returns <code>true</code> if and only if the provided function
 evaluates to <code>true</code> for all elements. This is a
@@ -187,9 +194,10 @@ short-circuiting operation.</p>
 <dl>
 <dt class="spec value" id="val-count"><a href="#val-count" class=
 "anchor"></a><code><span class="keyword">val</span> count :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> int</code></dt>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span>f:<span>(<a href="index.html#type-elt">elt</a>
+<span>-&gt;</span> bool)</span></span> <span>-&gt;</span>
+int</code></dt>
 <dd>
 <p>Returns the number of elements for which the provided function
 evaluates to true.</p>
@@ -198,16 +206,17 @@ evaluates to true.</p>
 <dl>
 <dt class="spec value" id="val-sum"><a href="#val-sum" class=
 "anchor"></a><code><span class="keyword">val</span> sum :
-(<span class="keyword">module</span> <a href=
+<span>(<span class="keyword">module</span> <a href=
 "../../../base/Base__/Container_intf/module-type-Summable/index.html">
 Base__.Container_intf.Summable</a> <span class=
 "keyword">with</span> <span class="keyword">type</span> <a href=
 "../../../base/Base__/Container_intf/module-type-Summable/index.html#type-t">
-t</a> = <span class="type-var">'sum</span>) <span>-&gt;</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
+t</a> = <span class="type-var">'sum</span>)</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a>
+<span>-&gt;</span> <span>f:<span>(<a href=
 "index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
-"type-var">'sum</span>) <span>-&gt;</span> <span class=
-"type-var">'sum</span></code></dt>
+"type-var">'sum</span>)</span></span> <span>-&gt;</span>
+<span class="type-var">'sum</span></code></dt>
 <dd>
 <p>Returns the sum of <code>f i</code> for all <code>i</code> in
 the container.</p>
@@ -216,10 +225,11 @@ the container.</p>
 <dl>
 <dt class="spec value" id="val-find"><a href="#val-find" class=
 "anchor"></a><code><span class="keyword">val</span> find : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> bool)
-<span>-&gt;</span> <a href="index.html#type-elt">elt</a>
-option</code></dt>
+"index.html#type-t">t</a> <span>-&gt;</span>
+<span>f:<span>(<a href="index.html#type-elt">elt</a>
+<span>-&gt;</span> bool)</span></span> <span>-&gt;</span>
+<span><a href="index.html#type-elt">elt</a>
+option</span></code></dt>
 <dd>
 <p>Returns as an <code>option</code> the first element for which
 <code>f</code> evaluates to true.</p>
@@ -228,10 +238,11 @@ option</code></dt>
 <dl>
 <dt class="spec value" id="val-find_map"><a href="#val-find_map"
 class="anchor"></a><code><span class="keyword">val</span> find_map
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-elt">elt</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> option) <span>-&gt;</span> <span class=
-"type-var">'a</span> option</code></dt>
+: <a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span>f:<span>(<a href="index.html#type-elt">elt</a>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+option</span>)</span></span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> option</span></code></dt>
 <dd>
 <p>Returns the first evaluation of <code>f</code> that returns
 <code>Some</code>, and returns <code>None</code> if there is no
@@ -241,19 +252,21 @@ such element.</p>
 <dl>
 <dt class="spec value" id="val-to_list"><a href="#val-to_list"
 class="anchor"></a><code><span class="keyword">val</span> to_list :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> list</code></dt>
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <span><a href=
+"index.html#type-elt">elt</a> list</span></code></dt>
 <dt class="spec value" id="val-to_array"><a href="#val-to_array"
 class="anchor"></a><code><span class="keyword">val</span> to_array
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-elt">elt</a> array</code></dt>
+: <a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><a href="index.html#type-elt">elt</a>
+array</span></code></dt>
 <dt class="spec value" id="val-min_elt"><a href="#val-min_elt"
 class="anchor"></a><code><span class="keyword">val</span> min_elt :
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
-compare:(<a href="index.html#type-elt">elt</a> <span>-&gt;</span>
-<a href="index.html#type-elt">elt</a> <span>-&gt;</span> int)
+<span>compare:<span>(<a href="index.html#type-elt">elt</a>
 <span>-&gt;</span> <a href="index.html#type-elt">elt</a>
-option</code></dt>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span><a href="index.html#type-elt">elt</a>
+option</span></code></dt>
 <dd>
 <p>Returns a min (resp. max) element from the collection using the
 provided <code>compare</code> function. In case of a tie, the first
@@ -267,10 +280,11 @@ collection is empty.</p>
 <dt class="spec value" id="val-max_elt"><a href="#val-max_elt"
 class="anchor"></a><code><span class="keyword">val</span> max_elt :
 <a href="index.html#type-t">t</a> <span>-&gt;</span>
-compare:(<a href="index.html#type-elt">elt</a> <span>-&gt;</span>
-<a href="index.html#type-elt">elt</a> <span>-&gt;</span> int)
+<span>compare:<span>(<a href="index.html#type-elt">elt</a>
 <span>-&gt;</span> <a href="index.html#type-elt">elt</a>
-option</code></dt>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span><a href="index.html#type-elt">elt</a>
+option</span></code></dt>
 </dl>
 </details>
 </div>
@@ -305,10 +319,10 @@ raises an exception if the index is out of bounds.</p>
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-?⁠pos:<a href=
-"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
-<span>-&gt;</span> ?⁠len:<a href=
-"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>?⁠pos:<a href=
+"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
+<span>-&gt;</span> <span>?⁠len:<a href=
+"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href="index.html#type-base">base</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
@@ -326,10 +340,10 @@ mutates <code>t</code> and vice versa.</p>
 <dl>
 <dt class="spec value" id="val-sub"><a href="#val-sub" class=
 "anchor"></a><code><span class="keyword">val</span> sub :
-?⁠pos:<a href=
-"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
-<span>-&gt;</span> ?⁠len:<a href=
-"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+<span>?⁠pos:<a href=
+"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
+<span>-&gt;</span> <span>?⁠len:<a href=
+"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 </dl>
@@ -344,50 +358,50 @@ and substrings.</p>
 <dt class="spec value" id="val-blit_to_string"><a href=
 "#val-blit_to_string" class="anchor"></a><code><span class=
 "keyword">val</span> blit_to_string : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> dst:<a href=
-"../../Core_kernel__/Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> dst_pos:<a href=
-"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+"index.html#type-t">t</a> <span>-&gt;</span> <span>dst:<a href=
+"../../Core_kernel__/Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>dst_pos:<a href=
+"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-blit_to_bytes"><a href=
 "#val-blit_to_bytes" class="anchor"></a><code><span class=
 "keyword">val</span> blit_to_bytes : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> dst:<a href=
-"../../Core_kernel__/Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> dst_pos:<a href=
-"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+"index.html#type-t">t</a> <span>-&gt;</span> <span>dst:<a href=
+"../../Core_kernel__/Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>dst_pos:<a href=
+"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-blit_to_bigstring"><a href=
 "#val-blit_to_bigstring" class="anchor"></a><code><span class=
 "keyword">val</span> blit_to_bigstring : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> dst:<a href=
-"../../Core_kernel/Bigstring/index.html#type-t">Core_kernel.Bigstring.t</a>
-<span>-&gt;</span> dst_pos:<a href=
-"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+"index.html#type-t">t</a> <span>-&gt;</span> <span>dst:<a href=
+"../../Core_kernel/Bigstring/index.html#type-t">Core_kernel.Bigstring.t</a></span>
+<span>-&gt;</span> <span>dst_pos:<a href=
+"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-blit_from_string"><a href=
 "#val-blit_from_string" class="anchor"></a><code><span class=
 "keyword">val</span> blit_from_string : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> src:<a href=
-"../../Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
-<span>-&gt;</span> src_pos:<a href=
-"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
-<span>-&gt;</span> len:<a href=
-"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+"index.html#type-t">t</a> <span>-&gt;</span> <span>src:<a href=
+"../../Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a></span>
+<span>-&gt;</span> <span>src_pos:<a href=
+"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
+<span>-&gt;</span> <span>len:<a href=
+"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-blit_from_bigstring"><a href=
 "#val-blit_from_bigstring" class="anchor"></a><code><span class=
 "keyword">val</span> blit_from_bigstring : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> src:<a href=
-"../../Core_kernel/Bigstring/index.html#type-t">Core_kernel.Bigstring.t</a>
-<span>-&gt;</span> src_pos:<a href=
-"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
-<span>-&gt;</span> len:<a href=
-"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
+"index.html#type-t">t</a> <span>-&gt;</span> <span>src:<a href=
+"../../Core_kernel/Bigstring/index.html#type-t">Core_kernel.Bigstring.t</a></span>
+<span>-&gt;</span> <span>src_pos:<a href=
+"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
+<span>-&gt;</span> <span>len:<a href=
+"../../Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 </dl>
@@ -403,21 +417,21 @@ class="anchor"></a>String concatenation</h3>
 <dl>
 <dt class="spec value" id="val-concat"><a href="#val-concat" class=
 "anchor"></a><code><span class="keyword">val</span> concat :
-<a href="index.html#type-t">t</a> <a href=
-"../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a>
+<span><a href="index.html#type-t">t</a> <a href=
+"../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a></span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-concat_string"><a href=
 "#val-concat_string" class="anchor"></a><code><span class=
-"keyword">val</span> concat_string : <a href=
+"keyword">val</span> concat_string : <span><a href=
 "index.html#type-t">t</a> <a href=
-"../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a>
+"../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a></span>
 <span>-&gt;</span> <a href=
 "../../Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a></code></dt>
 <dt class="spec value" id="val-concat_bigstring"><a href=
 "#val-concat_bigstring" class="anchor"></a><code><span class=
-"keyword">val</span> concat_bigstring : <a href=
+"keyword">val</span> concat_bigstring : <span><a href=
 "index.html#type-t">t</a> <a href=
-"../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a>
+"../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a></span>
 <span>-&gt;</span> <a href=
 "../../Core_kernel/Bigstring/index.html#type-t">Core_kernel.Bigstring.t</a></code></dt>
 </dl>

@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Base__Import (base.Base__Import)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -39,28 +38,29 @@ hljs.initHighlightingOnLoad();
 <span class="keyword">type</span> <span class="keyword">of</span>
 <span class="keyword">sig</span> ... <span class=
 "keyword">end</span> <span class="keyword">with</span> <span class=
-"keyword">type</span> 'a <a href="index.html#type-ref">ref</a> :=
-<span class="type-var">'a</span> Stdlib.ref <span class=
-"keyword">with</span> <span class="keyword">type</span> ('a, 'b,
-'c) <a href="index.html#type-format">format</a> := (<span class=
-"type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
-Stdlib.format <span class="keyword">with</span> <span class=
-"keyword">type</span> ('a, 'b, 'c, 'd) <a href=
-"index.html#type-format4">format4</a> := (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"keyword">type</span> <span>'a <a href=
+"index.html#type-ref">ref</a></span> := <span><span class=
+"type-var">'a</span> Stdlib.ref</span> <span class=
+"keyword">with</span> <span class="keyword">type</span> <span>('a,
+'b, 'c) <a href="index.html#type-format">format</a></span> :=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)</span>
+Stdlib.format</span> <span class="keyword">with</span> <span class=
+"keyword">type</span> <span>('a, 'b, 'c, 'd) <a href=
+"index.html#type-format4">format4</a></span> :=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)
-Stdlib.format4 <span class="keyword">with</span> <span class=
-"keyword">type</span> ('a, 'b, 'c, 'd, 'e, 'f) <a href=
-"index.html#type-format6">format6</a> := (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)</span>
+Stdlib.format4</span> <span class="keyword">with</span>
+<span class="keyword">type</span> <span>('a, 'b, 'c, 'd, 'e, 'f)
+<a href="index.html#type-format6">format6</a></span> :=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-Stdlib.format6 <span class="keyword">with</span> <span class=
-"keyword">module</span> <a href=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+Stdlib.format6</span> <span class="keyword">with</span>
+<span class="keyword">module</span> <a href=
 "Pervasives/index.html">Pervasives</a> := Stdlib.Pervasives
 <span class="keyword">with</span> <span class=
 "keyword">module</span> <a href="Array/index.html">Array</a> :=
@@ -246,19 +246,19 @@ string * int * int * int</code></dt>
 <dt class="spec external" id="val-__POS_OF__"><a href=
 "#val-__POS_OF__" class="anchor"></a><code><span class=
 "keyword">val</span> __POS_OF__ : <span class="type-var">'a</span>
-<span>-&gt;</span> (string * int * int * int) * <span class=
-"type-var">'a</span></code></dt>
+<span>-&gt;</span> <span>(string * int * int * int)</span> *
+<span class="type-var">'a</span></code></dt>
 <dt class="spec external" id="val-(|&gt;)"><a href="#val-(|%3E)"
 class="anchor"></a><code><span class="keyword">val</span> (|&gt;) :
-<span class="type-var">'a</span> <span>-&gt;</span> (<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'b</span></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span> <span>-&gt;</span>
+<span class="type-var">'b</span></code></dt>
 <dt class="spec external" id="val-(@@)"><a href="#val-(@@)" class=
 "anchor"></a><code><span class="keyword">val</span> (@@) :
-(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
+<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span> <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span></code></dt>
 <dt class="spec external" id="val-(~-)"><a href="#val-(~-)" class=
 "anchor"></a><code><span class="keyword">val</span> (~-) : int
@@ -536,7 +536,7 @@ bool</code></dt>
 <dt class="spec value" id="val-bool_of_string_opt"><a href=
 "#val-bool_of_string_opt" class="anchor"></a><code><span class=
 "keyword">val</span> bool_of_string_opt : string <span>-&gt;</span>
-bool option</code></dt>
+<span>bool option</span></code></dt>
 <dt class="spec value" id="val-string_of_int"><a href=
 "#val-string_of_int" class="anchor"></a><code><span class=
 "keyword">val</span> string_of_int : int <span>-&gt;</span>
@@ -552,7 +552,7 @@ int</code></dt>
 <dt class="spec value" id="val-int_of_string_opt"><a href=
 "#val-int_of_string_opt" class="anchor"></a><code><span class=
 "keyword">val</span> int_of_string_opt : string <span>-&gt;</span>
-int option</code></dt>
+<span>int option</span></code></dt>
 <dt class="spec value" id="val-string_of_float"><a href=
 "#val-string_of_float" class="anchor"></a><code><span class=
 "keyword">val</span> string_of_float : float <span>-&gt;</span>
@@ -568,26 +568,27 @@ float</code></dt>
 <dt class="spec value" id="val-float_of_string_opt"><a href=
 "#val-float_of_string_opt" class="anchor"></a><code><span class=
 "keyword">val</span> float_of_string_opt : string
-<span>-&gt;</span> float option</code></dt>
+<span>-&gt;</span> <span>float option</span></code></dt>
 </dl>
 <dl>
 <dt class="spec external" id="val-fst"><a href="#val-fst" class=
 "anchor"></a><code><span class="keyword">val</span> fst :
-(<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
+<span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'a</span></code></dt>
 <dt class="spec external" id="val-snd"><a href="#val-snd" class=
 "anchor"></a><code><span class="keyword">val</span> snd :
-(<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
+<span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'b</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-(@)"><a href="#val-(@)" class=
 "anchor"></a><code><span class="keyword">val</span> (@) :
-<span class="type-var">'a</span> list <span>-&gt;</span>
-<span class="type-var">'a</span> list <span>-&gt;</span>
-<span class="type-var">'a</span> list</code></dt>
+<span><span class="type-var">'a</span> list</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+list</span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> list</span></code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-in_channel"><a href=
@@ -673,16 +674,16 @@ class="anchor"></a><code><span class="keyword">val</span> read_int
 : unit <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-read_int_opt"><a href=
 "#val-read_int_opt" class="anchor"></a><code><span class=
-"keyword">val</span> read_int_opt : unit <span>-&gt;</span> int
-option</code></dt>
+"keyword">val</span> read_int_opt : unit <span>-&gt;</span>
+<span>int option</span></code></dt>
 <dt class="spec value" id="val-read_float"><a href=
 "#val-read_float" class="anchor"></a><code><span class=
 "keyword">val</span> read_float : unit <span>-&gt;</span>
 float</code></dt>
 <dt class="spec value" id="val-read_float_opt"><a href=
 "#val-read_float_opt" class="anchor"></a><code><span class=
-"keyword">val</span> read_float_opt : unit <span>-&gt;</span> float
-option</code></dt>
+"keyword">val</span> read_float_opt : unit <span>-&gt;</span>
+<span>float option</span></code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-open_flag"><a href="#type-open_flag"
@@ -752,10 +753,10 @@ class="anchor"></a><code><span class="keyword">val</span> open_out
 <a href="index.html#type-out_channel">out_channel</a></code></dt>
 <dt class="spec value" id="val-open_out_gen"><a href=
 "#val-open_out_gen" class="anchor"></a><code><span class=
-"keyword">val</span> open_out_gen : <a href=
-"index.html#type-open_flag">open_flag</a> list <span>-&gt;</span>
-int <span>-&gt;</span> string <span>-&gt;</span> <a href=
-"index.html#type-out_channel">out_channel</a></code></dt>
+"keyword">val</span> open_out_gen : <span><a href=
+"index.html#type-open_flag">open_flag</a> list</span>
+<span>-&gt;</span> int <span>-&gt;</span> string <span>-&gt;</span>
+<a href="index.html#type-out_channel">out_channel</a></code></dt>
 <dt class="spec value" id="val-flush"><a href="#val-flush" class=
 "anchor"></a><code><span class="keyword">val</span> flush :
 <a href="index.html#type-out_channel">out_channel</a>
@@ -842,10 +843,10 @@ string <span>-&gt;</span> <a href=
 <a href="index.html#type-in_channel">in_channel</a></code></dt>
 <dt class="spec value" id="val-open_in_gen"><a href=
 "#val-open_in_gen" class="anchor"></a><code><span class=
-"keyword">val</span> open_in_gen : <a href=
-"index.html#type-open_flag">open_flag</a> list <span>-&gt;</span>
-int <span>-&gt;</span> string <span>-&gt;</span> <a href=
-"index.html#type-in_channel">in_channel</a></code></dt>
+"keyword">val</span> open_in_gen : <span><a href=
+"index.html#type-open_flag">open_flag</a> list</span>
+<span>-&gt;</span> int <span>-&gt;</span> string <span>-&gt;</span>
+<a href="index.html#type-in_channel">in_channel</a></code></dt>
 <dt class="spec value" id="val-input_char"><a href=
 "#val-input_char" class="anchor"></a><code><span class=
 "keyword">val</span> input_char : <a href=
@@ -922,9 +923,9 @@ unit</code></dt>
 <dl>
 <dt class="spec type" id="type-ref"><a href="#type-ref" class=
 "anchor"></a><code><span class="keyword">type</span> <span class=
-"keyword">nonrec</span> 'a ref</code> <code>= <span class=
-"type-var">'a</span> <a href=
-"index.html#module-Pervasives">Pervasives</a>.ref</code>
+"keyword">nonrec</span> <span>'a ref</span></code> <code>=
+<span><span class="type-var">'a</span> <a href=
+"index.html#module-Pervasives">Pervasives</a>.ref</span></code>
 <code>=</code> <code>{</code></dt>
 <dd>
 <table class="record">
@@ -939,35 +940,37 @@ unit</code></dt>
 <dl>
 <dt class="spec external" id="val-ref"><a href="#val-ref" class=
 "anchor"></a><code><span class="keyword">val</span> ref :
-<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"index.html#type-ref">ref</a></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span></code></dt>
 <dt class="spec external" id="val-(!)"><a href="#val-(!)" class=
 "anchor"></a><code><span class="keyword">val</span> (!) :
-<span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span> <span>-&gt;</span>
+<span class="type-var">'a</span></code></dt>
 <dt class="spec external" id="val-(:=)"><a href="#val-(:=)" class=
 "anchor"></a><code><span class="keyword">val</span> (:=) :
-<span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> unit</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span> <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec external" id="val-incr"><a href="#val-incr" class=
-"anchor"></a><code><span class="keyword">val</span> incr : int
-<a href="index.html#type-ref">ref</a> <span>-&gt;</span>
-unit</code></dt>
+"anchor"></a><code><span class="keyword">val</span> incr :
+<span>int <a href="index.html#type-ref">ref</a></span>
+<span>-&gt;</span> unit</code></dt>
 <dt class="spec external" id="val-decr"><a href="#val-decr" class=
-"anchor"></a><code><span class="keyword">val</span> decr : int
-<a href="index.html#type-ref">ref</a> <span>-&gt;</span>
-unit</code></dt>
+"anchor"></a><code><span class="keyword">val</span> decr :
+<span>int <a href="index.html#type-ref">ref</a></span>
+<span>-&gt;</span> unit</code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-result"><a href="#type-result"
 class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> ('a, 'b) result</code> <code>=
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href=
-"index.html#module-Pervasives">Pervasives</a>.result</code>
+<span class="keyword">nonrec</span> <span>('a, 'b)
+result</span></code> <code>= <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+<a href=
+"index.html#module-Pervasives">Pervasives</a>.result</span></code>
 <code>=</code></dt>
 <dd>
 <table class="variant">
@@ -987,87 +990,93 @@ class="anchor"></a><code><span class="keyword">type</span>
 </dd>
 <dt class="spec type" id="type-format6"><a href="#type-format6"
 class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> ('a, 'b, 'c, 'd, 'e, 'f)
-format6</code> <code>= (<span class=
+<span class="keyword">nonrec</span> <span>('a, 'b, 'c, 'd, 'e, 'f)
+format6</span></code> <code>= <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-CamlinternalFormatBasics.format6</code></dt>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+CamlinternalFormatBasics.format6</span></code></dt>
 <dt class="spec type" id="type-format4"><a href="#type-format4"
 class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> ('a, 'b, 'c, 'd) format4</code>
-<code>= (<span class="type-var">'a</span>,&nbsp;<span class=
+<span class="keyword">nonrec</span> <span>('a, 'b, 'c, 'd)
+format4</span></code> <code>= <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)
-<a href="index.html#type-format6">format6</a></code></dt>
+"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)</span>
+<a href="index.html#type-format6">format6</a></span></code></dt>
 <dt class="spec type" id="type-format"><a href="#type-format"
 class="anchor"></a><code><span class="keyword">type</span>
-<span class="keyword">nonrec</span> ('a, 'b, 'c) format</code>
-<code>= (<span class="type-var">'a</span>,&nbsp;<span class=
+<span class="keyword">nonrec</span> <span>('a, 'b, 'c)
+format</span></code> <code>= <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-format4">format4</a></code></dt>
+"type-var">'c</span>,&nbsp;<span class="type-var">'c</span>)</span>
+<a href="index.html#type-format4">format4</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-string_of_format"><a href=
 "#val-string_of_format" class="anchor"></a><code><span class=
-"keyword">val</span> string_of_format : (<span class=
+"keyword">val</span> string_of_format : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-string</code></dt>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> string</code></dt>
 </dl>
 <dl>
 <dt class="spec external" id="val-format_of_string"><a href=
 "#val-format_of_string" class="anchor"></a><code><span class=
-"keyword">val</span> format_of_string : (<span class=
+"keyword">val</span> format_of_string : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a></code></dt>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-format6">format6</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-(^^)"><a href="#val-(^^)" class=
 "anchor"></a><code><span class="keyword">val</span> (^^) :
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-(<span class="type-var">'f</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'f</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'e</span>,&nbsp;<span class=
-"type-var">'g</span>,&nbsp;<span class="type-var">'h</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'g</span>,&nbsp;<span class="type-var">'h</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'g</span>,&nbsp;<span class="type-var">'h</span>)
-<a href="index.html#type-format6">format6</a></code></dt>
+"type-var">'g</span>,&nbsp;<span class="type-var">'h</span>)</span>
+<a href="index.html#type-format6">format6</a></span></code></dt>
 <dt class="spec value" id="val-exit"><a href="#val-exit" class=
 "anchor"></a><code><span class="keyword">val</span> exit : int
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dt class="spec value" id="val-at_exit"><a href="#val-at_exit"
 class="anchor"></a><code><span class="keyword">val</span> at_exit :
-(unit <span>-&gt;</span> unit) <span>-&gt;</span> unit</code></dt>
+<span>(unit <span>-&gt;</span> unit)</span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec value" id="val-valid_float_lexem"><a href=
 "#val-valid_float_lexem" class="anchor"></a><code><span class=
 "keyword">val</span> valid_float_lexem : string <span>-&gt;</span>
@@ -1239,10 +1248,10 @@ Stdlib.Weak</code></div>
 </div>
 <dl>
 <dt class="spec type" id="type-ref"><a href="#type-ref" class=
-"anchor"></a><code><span class="keyword">type</span> 'a ref</code>
-<code>= <span class="type-var">'a</span> <a href=
-"../Caml/index.html">Caml</a>.ref</code> <code>=</code>
-<code>{</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+ref</span></code> <code>= <span><span class="type-var">'a</span>
+<a href="../Caml/index.html">Caml</a>.ref</span></code>
+<code>=</code> <code>{</code></dt>
 <dd>
 <table class="record">
 <tr id="type-ref.contents" class="anchored">
@@ -1260,10 +1269,10 @@ class="anchor"></a><code><span class="keyword">module</span> Caml =
 <dl>
 <dt class="spec external" id="val-(|&gt;)"><a href="#val-(|%3E)"
 class="anchor"></a><code><span class="keyword">val</span> (|&gt;) :
-<span class="type-var">'a</span> <span>-&gt;</span> (<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'b</span></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span> <span>-&gt;</span>
+<span class="type-var">'b</span></code></dt>
 <dt class="spec external" id="val-(&amp;&amp;)"><a href=
 "#val-(&amp;&amp;)" class="anchor"></a><code><span class=
 "keyword">val</span> (&amp;&amp;) : bool <span>-&gt;</span> bool
@@ -1449,26 +1458,28 @@ Base__.Import0.Bytes_replace_polymorphic_compare</a></code></div>
 <dl>
 <dt class="spec external" id="val-(:=)"><a href="#val-(:=)" class=
 "anchor"></a><code><span class="keyword">val</span> (:=) :
-<span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> unit</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span> <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec external" id="val-(!)"><a href="#val-(!)" class=
 "anchor"></a><code><span class="keyword">val</span> (!) :
-<span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span> <span>-&gt;</span>
+<span class="type-var">'a</span></code></dt>
 <dt class="spec external" id="val-ref"><a href="#val-ref" class=
 "anchor"></a><code><span class="keyword">val</span> ref :
-<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"index.html#type-ref">ref</a></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-(@)"><a href="#val-(@)" class=
 "anchor"></a><code><span class="keyword">val</span> (@) :
-<span class="type-var">'a</span> list <span>-&gt;</span>
-<span class="type-var">'a</span> list <span>-&gt;</span>
-<span class="type-var">'a</span> list</code></dt>
+<span><span class="type-var">'a</span> list</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+list</span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> list</span></code></dt>
 <dt class="spec value" id="val-(^)"><a href="#val-(^)" class=
 "anchor"></a><code><span class="keyword">val</span> (^) : string
 <span>-&gt;</span> string <span>-&gt;</span> string</code></dt>
@@ -1511,8 +1522,8 @@ class="anchor"></a><code><span class="keyword">val</span> failwith
 "type-var">'a</span></code></dt>
 <dt class="spec value" id="val-fst"><a href="#val-fst" class=
 "anchor"></a><code><span class="keyword">val</span> fst :
-(<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
+<span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'a</span></code></dt>
 <dt class="spec value" id="val-invalid_arg"><a href=
 "#val-invalid_arg" class="anchor"></a><code><span class=
@@ -1520,8 +1531,8 @@ class="anchor"></a><code><span class="keyword">val</span> failwith
 <span class="type-var">'a</span></code></dt>
 <dt class="spec value" id="val-snd"><a href="#val-snd" class=
 "anchor"></a><code><span class="keyword">val</span> snd :
-(<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
+<span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'b</span></code></dt>
 </dl>
 <dl>
@@ -1536,13 +1547,13 @@ exn <span>-&gt;</span> <span class="type-var">_</span></code></dt>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-decr"><a href="#val-decr" class=
-"anchor"></a><code><span class="keyword">val</span> decr : int
-<a href="index.html#module-Caml">Caml</a>.ref <span>-&gt;</span>
-unit</code></dt>
+"anchor"></a><code><span class="keyword">val</span> decr :
+<span>int <a href="index.html#module-Caml">Caml</a>.ref</span>
+<span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-incr"><a href="#val-incr" class=
-"anchor"></a><code><span class="keyword">val</span> incr : int
-<a href="index.html#module-Caml">Caml</a>.ref <span>-&gt;</span>
-unit</code></dt>
+"anchor"></a><code><span class="keyword">val</span> incr :
+<span>int <a href="index.html#module-Caml">Caml</a>.ref</span>
+<span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-float_of_string"><a href=
 "#val-float_of_string" class="anchor"></a><code><span class=
 "keyword">val</span> float_of_string : string <span>-&gt;</span>
@@ -1585,20 +1596,20 @@ types</p>
 <dl>
 <dt class="spec type" id="type-sexp_option"><a href=
 "#type-sexp_option" class="anchor"></a><code><span class=
-"keyword">type</span> 'a sexp_option</code> <code>= <span class=
-"type-var">'a</span> option</code></dt>
+"keyword">type</span> <span>'a sexp_option</span></code> <code>=
+<span><span class="type-var">'a</span> option</span></code></dt>
 <dt class="spec type" id="type-sexp_list"><a href="#type-sexp_list"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-sexp_list</code> <code>= <span class="type-var">'a</span>
-list</code></dt>
+class="anchor"></a><code><span class="keyword">type</span> <span>'a
+sexp_list</span></code> <code>= <span><span class=
+"type-var">'a</span> list</span></code></dt>
 <dt class="spec type" id="type-sexp_array"><a href=
 "#type-sexp_array" class="anchor"></a><code><span class=
-"keyword">type</span> 'a sexp_array</code> <code>= <span class=
-"type-var">'a</span> array</code></dt>
+"keyword">type</span> <span>'a sexp_array</span></code> <code>=
+<span><span class="type-var">'a</span> array</span></code></dt>
 <dt class="spec type" id="type-sexp_opaque"><a href=
 "#type-sexp_opaque" class="anchor"></a><code><span class=
-"keyword">type</span> 'a sexp_opaque</code> <code>= <span class=
-"type-var">'a</span></code></dt>
+"keyword">type</span> <span>'a sexp_opaque</span></code> <code>=
+<span class="type-var">'a</span></code></dt>
 </dl>
 <section>
 <header>
@@ -1610,8 +1621,8 @@ list</code></dt>
 <dt class="spec value" id="val-default_string_of_float"><a href=
 "#val-default_string_of_float" class=
 "anchor"></a><code><span class="keyword">val</span>
-default_string_of_float : (float <span>-&gt;</span> string)
-Stdlib.ref</code></dt>
+default_string_of_float : <span><span>(float <span>-&gt;</span>
+string)</span> Stdlib.ref</span></code></dt>
 <dd>
 <p><code>default_string_of_float</code> reference to the default
 function used to convert floats to strings.</p>
@@ -1622,7 +1633,7 @@ function used to convert floats to strings.</p>
 <dt class="spec value" id="val-write_old_option_format"><a href=
 "#val-write_old_option_format" class=
 "anchor"></a><code><span class="keyword">val</span>
-write_old_option_format : bool Stdlib.ref</code></dt>
+write_old_option_format : <span>bool Stdlib.ref</span></code></dt>
 <dd>
 <p><code>write_old_option_format</code> reference for the default
 option format used to write option values. If set to
@@ -1634,8 +1645,8 @@ new-style one otherwise.</p>
 <dl>
 <dt class="spec value" id="val-read_old_option_format"><a href=
 "#val-read_old_option_format" class="anchor"></a><code><span class=
-"keyword">val</span> read_old_option_format : bool
-Stdlib.ref</code></dt>
+"keyword">val</span> read_old_option_format : <span>bool
+Stdlib.ref</span></code></dt>
 <dd>
 <p><code>read_old_option_format</code> reference for the default
 option format used to read option values.
@@ -1651,10 +1662,11 @@ macros.</p>
 <dl>
 <dt class="spec value" id="val-list_map"><a href="#val-list_map"
 class="anchor"></a><code><span class="keyword">val</span> list_map
-: (<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'a</span> list <span>-&gt;</span> <span class=
-"type-var">'b</span> list</code></dt>
+: <span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> list</span>
+<span>-&gt;</span> <span><span class="type-var">'b</span>
+list</span></code></dt>
 <dd>
 <p>We re-export a tail recursive map function, because some modules
 override the standard library functions (e.g.
@@ -1773,11 +1785,11 @@ S-expression.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_ref"><a href=
 "#val-sexp_of_ref" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_ref : (<span class=
+"keyword">val</span> sexp_of_ref : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> Stdlib.ref
-<span>-&gt;</span> <a href=
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+Stdlib.ref</span> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_ref conv r</code> converts the value
@@ -1789,11 +1801,11 @@ S-expression.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_lazy_t"><a href=
 "#val-sexp_of_lazy_t" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_lazy_t : (<span class=
+"keyword">val</span> sexp_of_lazy_t : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> lazy_t
-<span>-&gt;</span> <a href=
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+lazy_t</span> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_lazy_t conv l</code> converts the value
@@ -1805,11 +1817,11 @@ an S-expression.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_option"><a href=
 "#val-sexp_of_option" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_option : (<span class=
+"keyword">val</span> sexp_of_option : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> option
-<span>-&gt;</span> <a href=
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+option</span> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_option conv opt</code> converts the value
@@ -1821,15 +1833,15 @@ an S-expression.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_pair"><a href=
 "#val-sexp_of_pair" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_pair : (<span class=
+"keyword">val</span> sexp_of_pair : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'b</span>
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'b</span>
 <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span> *
+<span class="type-var">'b</span>)</span> <span>-&gt;</span>
+<a href="../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_pair conv1 conv2 pair</code> converts a pair to an
 S-expression. It uses its first argument to convert the first
@@ -1840,18 +1852,18 @@ element of the pair.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_triple"><a href=
 "#val-sexp_of_triple" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_triple : (<span class=
+"keyword">val</span> sexp_of_triple : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'b</span>
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'b</span>
 <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'c</span>
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'c</span>
 <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
-"type-var">'b</span> * <span class="type-var">'c</span>)
-<span>-&gt;</span> <a href=
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span> *
+<span class="type-var">'b</span> * <span class=
+"type-var">'c</span>)</span> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_triple conv1 conv2 conv3 triple</code> converts a
@@ -1863,11 +1875,11 @@ elements.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_list"><a href=
 "#val-sexp_of_list" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_list : (<span class=
+"keyword">val</span> sexp_of_list : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> list
-<span>-&gt;</span> <a href=
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+list</span> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_list conv lst</code> converts the value
@@ -1879,11 +1891,11 @@ an S-expression.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_array"><a href=
 "#val-sexp_of_array" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_array : (<span class=
+"keyword">val</span> sexp_of_array : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> array
-<span>-&gt;</span> <a href=
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+array</span> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_array conv ar</code> converts the value
@@ -1895,15 +1907,15 @@ an S-expression.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_hashtbl"><a href=
 "#val-sexp_of_hashtbl" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_hashtbl : (<span class=
+"keyword">val</span> sexp_of_hashtbl : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'b</span>
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'b</span>
 <span>-&gt;</span> <a href=
-"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-Stdlib.Hashtbl.t <span>-&gt;</span> <a href=
+"../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+Stdlib.Hashtbl.t</span> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_hashtbl conv_key conv_value htbl</code> converts
@@ -1929,9 +1941,9 @@ provide converters, but the result cannot be interpreted.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_fun"><a href=
 "#val-sexp_of_fun" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_fun : (<span class=
+"keyword">val</span> sexp_of_fun : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <a href=
+"type-var">'b</span>)</span> <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_fun f</code> converts the value <code>f</code> of
@@ -1964,7 +1976,8 @@ OCaml-value.</p>
 <dt class="spec value" id="val-record_check_extra_fields"><a href=
 "#val-record_check_extra_fields" class=
 "anchor"></a><code><span class="keyword">val</span>
-record_check_extra_fields : bool Stdlib.ref</code></dt>
+record_check_extra_fields : <span>bool
+Stdlib.ref</span></code></dt>
 <dd>
 <p><code>record_check_extra_fields</code> checks for extra (=
 unknown) fields in record S-expressions.</p>
@@ -2117,13 +2130,13 @@ unknown) fields in record S-expressions.</p>
 <dl>
 <dt class="spec value" id="val-ref_of_sexp"><a href=
 "#val-ref_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> ref_of_sexp : (<a href=
+"keyword">val</span> ref_of_sexp : <span>(<a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-Stdlib.ref</code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+Stdlib.ref</span></code></dt>
 <dd>
 <p><code>ref_of_sexp conv sexp</code> converts S-expression
 <code>sexp</code> to a value of type <code>'a ref</code> using
@@ -2134,13 +2147,13 @@ S-expression to a value of type <code>'a</code>.</p>
 <dl>
 <dt class="spec value" id="val-lazy_t_of_sexp"><a href=
 "#val-lazy_t_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> lazy_t_of_sexp : (<a href=
+"keyword">val</span> lazy_t_of_sexp : <span>(<a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-lazy_t</code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+lazy_t</span></code></dt>
 <dd>
 <p><code>lazy_t_of_sexp conv sexp</code> converts S-expression
 <code>sexp</code> to a value of type <code>'a lazy_t</code> using
@@ -2151,13 +2164,13 @@ S-expression to a value of type <code>'a</code>.</p>
 <dl>
 <dt class="spec value" id="val-option_of_sexp"><a href=
 "#val-option_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> option_of_sexp : (<a href=
+"keyword">val</span> option_of_sexp : <span>(<a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-option</code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+option</span></code></dt>
 <dd>
 <p><code>option_of_sexp conv sexp</code> converts S-expression
 <code>sexp</code> to a value of type <code>'a option</code> using
@@ -2168,12 +2181,12 @@ S-expression to a value of type <code>'a</code>.</p>
 <dl>
 <dt class="spec value" id="val-pair_of_sexp"><a href=
 "#val-pair_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> pair_of_sexp : (<a href=
+"keyword">val</span> pair_of_sexp : <span>(<a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> (<a href=
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<span>-&gt;</span> <span>(<a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'b</span>)
+<span>-&gt;</span> <span class="type-var">'b</span>)</span>
 <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> * <span class=
@@ -2189,15 +2202,15 @@ which convert S-expressions to values of type <code>'a</code> and
 <dl>
 <dt class="spec value" id="val-triple_of_sexp"><a href=
 "#val-triple_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> triple_of_sexp : (<a href=
+"keyword">val</span> triple_of_sexp : <span>(<a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> (<a href=
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<span>-&gt;</span> <span>(<a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'b</span>)
-<span>-&gt;</span> (<a href=
+<span>-&gt;</span> <span class="type-var">'b</span>)</span>
+<span>-&gt;</span> <span>(<a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'c</span>)
+<span>-&gt;</span> <span class="type-var">'c</span>)</span>
 <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> * <span class=
@@ -2214,13 +2227,13 @@ and <code>'c</code> respectively.</p>
 <dl>
 <dt class="spec value" id="val-list_of_sexp"><a href=
 "#val-list_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> list_of_sexp : (<a href=
+"keyword">val</span> list_of_sexp : <span>(<a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-list</code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+list</span></code></dt>
 <dd>
 <p><code>list_of_sexp conv sexp</code> converts S-expression
 <code>sexp</code> to a value of type <code>'a list</code> using
@@ -2231,13 +2244,13 @@ S-expression to a value of type <code>'a</code>.</p>
 <dl>
 <dt class="spec value" id="val-array_of_sexp"><a href=
 "#val-array_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> array_of_sexp : (<a href=
+"keyword">val</span> array_of_sexp : <span>(<a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-array</code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+array</span></code></dt>
 <dd>
 <p><code>array_of_sexp conv sexp</code> converts S-expression
 <code>sexp</code> to a value of type <code>'a array</code> using
@@ -2248,17 +2261,17 @@ S-expression to a value of type <code>'a</code>.</p>
 <dl>
 <dt class="spec value" id="val-hashtbl_of_sexp"><a href=
 "#val-hashtbl_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> hashtbl_of_sexp : (<a href=
+"keyword">val</span> hashtbl_of_sexp : <span>(<a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> (<a href=
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<span>-&gt;</span> <span>(<a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'b</span>)
+<span>-&gt;</span> <span class="type-var">'b</span>)</span>
 <span>-&gt;</span> <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-Stdlib.Hashtbl.t</code></dt>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+Stdlib.Hashtbl.t</span></code></dt>
 <dd>
 <p><code>hashtbl_of_sexp conv_key conv_value sexp</code> converts
 S-expression <code>sexp</code> to a value of type <code>('a, 'b)
@@ -2321,9 +2334,9 @@ atomic S-expression.</p>
 <dt class="spec value" id="val-sexp_of_exn_opt"><a href=
 "#val-sexp_of_exn_opt" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_exn_opt : exn <span>-&gt;</span>
-<a href=
+<span><a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-option</code></dt>
+option</span></code></dt>
 <dd>
 <p><code>sexp_of_exn_opt exc</code> converts exception
 <code>exc</code> to <code>Some sexp</code>. If no suitable
@@ -2350,70 +2363,74 @@ Sexplib0.Sexp_conv.Exn_converter</a></code></div>
 <dl>
 <dt class="spec value" id="val-hash_fold_nativeint"><a href=
 "#val-hash_fold_nativeint" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_nativeint : nativeint <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"keyword">val</span> hash_fold_nativeint : <span>nativeint <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_fold_int64"><a href=
 "#val-hash_fold_int64" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_int64 : int64 <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"keyword">val</span> hash_fold_int64 : <span>int64 <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_fold_int32"><a href=
 "#val-hash_fold_int32" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_int32 : int32 <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"keyword">val</span> hash_fold_int32 : <span>int32 <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_fold_char"><a href=
 "#val-hash_fold_char" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_char : char <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"keyword">val</span> hash_fold_char : <span>char <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_fold_int"><a href=
 "#val-hash_fold_int" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_int : int <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"keyword">val</span> hash_fold_int : <span>int <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_fold_bool"><a href=
 "#val-hash_fold_bool" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_bool : bool <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"keyword">val</span> hash_fold_bool : <span>bool <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_fold_string"><a href=
 "#val-hash_fold_string" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_string : string <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"keyword">val</span> hash_fold_string : <span>string <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_fold_float"><a href=
 "#val-hash_fold_float" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_float : float <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"keyword">val</span> hash_fold_float : <span>float <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_fold_unit"><a href=
 "#val-hash_fold_unit" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_unit : unit <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"keyword">val</span> hash_fold_unit : <span>unit <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_fold_option"><a href=
 "#val-hash_fold_option" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_option : <span class=
+"keyword">val</span> hash_fold_option : <span><span class=
 "type-var">'a</span> <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a>
-<span>-&gt;</span> <span class="type-var">'a</span> option <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+option</span> <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_fold_list"><a href=
 "#val-hash_fold_list" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_list : <span class=
+"keyword">val</span> hash_fold_list : <span><span class=
 "type-var">'a</span> <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a>
-<span>-&gt;</span> <span class="type-var">'a</span> list <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+list</span> <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_fold_lazy_t"><a href=
 "#val-hash_fold_lazy_t" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_lazy_t : <span class=
+"keyword">val</span> hash_fold_lazy_t : <span><span class=
 "type-var">'a</span> <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a>
-<span>-&gt;</span> <span class="type-var">'a</span> lazy_t <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+lazy_t</span> <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_fold_ref_frozen"><a href=
 "#val-hash_fold_ref_frozen" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_ref_frozen : <span class=
+"keyword">val</span> hash_fold_ref_frozen : <span><span class=
 "type-var">'a</span> <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../Base__/Import0/index.html#type-ref">Base__.Import0.ref</a>
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
 <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"../Base__/Import0/index.html#type-ref">Base__.Import0.ref</a></span>
+<a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dd>
 <p>Hash support for <code>array</code> and <code>ref</code> is
 provided, but is potentially DANGEROUS, since it incorporates the
@@ -2428,11 +2445,12 @@ DANGEROUS, but strings are mutated less often, so we don't append
 <dl>
 <dt class="spec value" id="val-hash_fold_array_frozen"><a href=
 "#val-hash_fold_array_frozen" class="anchor"></a><code><span class=
-"keyword">val</span> hash_fold_array_frozen : <span class=
+"keyword">val</span> hash_fold_array_frozen : <span><span class=
 "type-var">'a</span> <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a>
-<span>-&gt;</span> <span class="type-var">'a</span> array <a href=
-"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></code></dt>
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+array</span> <a href=
+"../Base/Hash/index.html#type-folder">Base.Hash.folder</a></span></code></dt>
 <dt class="spec value" id="val-hash_nativeint"><a href=
 "#val-hash_nativeint" class="anchor"></a><code><span class=
 "keyword">val</span> hash_nativeint : nativeint <span>-&gt;</span>
@@ -2486,133 +2504,139 @@ class="anchor"></a><code><span class="keyword">val</span> hash_unit
 <dl>
 <dt class="spec value" id="val-compare_bool"><a href=
 "#val-compare_bool" class="anchor"></a><code><span class=
-"keyword">val</span> compare_bool : bool <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"keyword">val</span> compare_bool : <span>bool <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-compare_char"><a href=
 "#val-compare_char" class="anchor"></a><code><span class=
-"keyword">val</span> compare_char : char <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"keyword">val</span> compare_char : <span>char <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-compare_float"><a href=
 "#val-compare_float" class="anchor"></a><code><span class=
-"keyword">val</span> compare_float : float <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"keyword">val</span> compare_float : <span>float <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-compare_int"><a href=
 "#val-compare_int" class="anchor"></a><code><span class=
-"keyword">val</span> compare_int : int <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"keyword">val</span> compare_int : <span>int <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-compare_int32"><a href=
 "#val-compare_int32" class="anchor"></a><code><span class=
-"keyword">val</span> compare_int32 : int32 <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"keyword">val</span> compare_int32 : <span>int32 <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-compare_int64"><a href=
 "#val-compare_int64" class="anchor"></a><code><span class=
-"keyword">val</span> compare_int64 : int64 <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"keyword">val</span> compare_int64 : <span>int64 <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-compare_nativeint"><a href=
 "#val-compare_nativeint" class="anchor"></a><code><span class=
-"keyword">val</span> compare_nativeint : nativeint <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"keyword">val</span> compare_nativeint : <span>nativeint <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-compare_string"><a href=
 "#val-compare_string" class="anchor"></a><code><span class=
-"keyword">val</span> compare_string : string <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"keyword">val</span> compare_string : <span>string <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-compare_unit"><a href=
 "#val-compare_unit" class="anchor"></a><code><span class=
-"keyword">val</span> compare_unit : unit <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"keyword">val</span> compare_unit : <span>unit <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-compare_array"><a href=
 "#val-compare_array" class="anchor"></a><code><span class=
-"keyword">val</span> compare_array : <span class=
+"keyword">val</span> compare_array : <span><span class=
 "type-var">'a</span> <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a>
-<span>-&gt;</span> <span class="type-var">'a</span> array <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+array</span> <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-compare_list"><a href=
 "#val-compare_list" class="anchor"></a><code><span class=
-"keyword">val</span> compare_list : <span class=
+"keyword">val</span> compare_list : <span><span class=
 "type-var">'a</span> <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a>
-<span>-&gt;</span> <span class="type-var">'a</span> list <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+list</span> <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-compare_option"><a href=
 "#val-compare_option" class="anchor"></a><code><span class=
-"keyword">val</span> compare_option : <span class=
+"keyword">val</span> compare_option : <span><span class=
 "type-var">'a</span> <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a>
-<span>-&gt;</span> <span class="type-var">'a</span> option <a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+option</span> <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-compare_ref"><a href=
 "#val-compare_ref" class="anchor"></a><code><span class=
-"keyword">val</span> compare_ref : <span class="type-var">'a</span>
-<a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a>
-<span>-&gt;</span> <span class="type-var">'a</span> Stdlib.ref
-<a href=
-"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></code></dt>
+"keyword">val</span> compare_ref : <span><span class=
+"type-var">'a</span> <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+Stdlib.ref</span> <a href=
+"../Base__/Ppx_compare_lib/index.html#type-compare">Base__.Ppx_compare_lib.compare</a></span></code></dt>
 <dt class="spec value" id="val-equal_bool"><a href=
 "#val-equal_bool" class="anchor"></a><code><span class=
-"keyword">val</span> equal_bool : bool <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"keyword">val</span> equal_bool : <span>bool <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 <dt class="spec value" id="val-equal_char"><a href=
 "#val-equal_char" class="anchor"></a><code><span class=
-"keyword">val</span> equal_char : char <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"keyword">val</span> equal_char : <span>char <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 <dt class="spec value" id="val-equal_float"><a href=
 "#val-equal_float" class="anchor"></a><code><span class=
-"keyword">val</span> equal_float : float <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"keyword">val</span> equal_float : <span>float <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 <dt class="spec value" id="val-equal_int"><a href="#val-equal_int"
 class="anchor"></a><code><span class="keyword">val</span> equal_int
-: int <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+: <span>int <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 <dt class="spec value" id="val-equal_int32"><a href=
 "#val-equal_int32" class="anchor"></a><code><span class=
-"keyword">val</span> equal_int32 : int32 <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"keyword">val</span> equal_int32 : <span>int32 <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 <dt class="spec value" id="val-equal_int64"><a href=
 "#val-equal_int64" class="anchor"></a><code><span class=
-"keyword">val</span> equal_int64 : int64 <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"keyword">val</span> equal_int64 : <span>int64 <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 <dt class="spec value" id="val-equal_nativeint"><a href=
 "#val-equal_nativeint" class="anchor"></a><code><span class=
-"keyword">val</span> equal_nativeint : nativeint <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"keyword">val</span> equal_nativeint : <span>nativeint <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 <dt class="spec value" id="val-equal_string"><a href=
 "#val-equal_string" class="anchor"></a><code><span class=
-"keyword">val</span> equal_string : string <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"keyword">val</span> equal_string : <span>string <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 <dt class="spec value" id="val-equal_unit"><a href=
 "#val-equal_unit" class="anchor"></a><code><span class=
-"keyword">val</span> equal_unit : unit <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"keyword">val</span> equal_unit : <span>unit <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 <dt class="spec value" id="val-equal_array"><a href=
 "#val-equal_array" class="anchor"></a><code><span class=
-"keyword">val</span> equal_array : <span class="type-var">'a</span>
-<a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a>
-<span>-&gt;</span> <span class="type-var">'a</span> array <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"keyword">val</span> equal_array : <span><span class=
+"type-var">'a</span> <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+array</span> <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 <dt class="spec value" id="val-equal_list"><a href=
 "#val-equal_list" class="anchor"></a><code><span class=
-"keyword">val</span> equal_list : <span class="type-var">'a</span>
-<a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a>
-<span>-&gt;</span> <span class="type-var">'a</span> list <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"keyword">val</span> equal_list : <span><span class=
+"type-var">'a</span> <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+list</span> <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 <dt class="spec value" id="val-equal_option"><a href=
 "#val-equal_option" class="anchor"></a><code><span class=
-"keyword">val</span> equal_option : <span class=
+"keyword">val</span> equal_option : <span><span class=
 "type-var">'a</span> <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a>
-<span>-&gt;</span> <span class="type-var">'a</span> option <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+option</span> <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 <dt class="spec value" id="val-equal_ref"><a href="#val-equal_ref"
 class="anchor"></a><code><span class="keyword">val</span> equal_ref
-: <span class="type-var">'a</span> <a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a>
-<span>-&gt;</span> <span class="type-var">'a</span> Stdlib.ref
-<a href=
-"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+Stdlib.ref</span> <a href=
+"../Base__/Ppx_compare_lib/index.html#type-equal">Base__.Ppx_compare_lib.equal</a></span></code></dt>
 </dl>
 </details>
 </div>

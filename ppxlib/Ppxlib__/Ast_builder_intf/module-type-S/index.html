@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>S (ppxlib.Ppxlib__.Ast_builder_intf.S)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -30,10 +29,10 @@ hljs.initHighlightingOnLoad();
 "keyword">module</span> <a href="Located/index.html">Located</a> :
 <a href="../index.html#module-type-Located">Located</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
-"../module-type-Located/index.html#type-with_loc">with_loc</a> :=
-<span class="type-var">'a</span> <a href=
-"../index.html#type-without_location">without_location</a></code></div>
+<span>'a <a href=
+"../module-type-Located/index.html#type-with_loc">with_loc</a></span>
+:= <span><span class="type-var">'a</span> <a href=
+"../index.html#type-without_location">without_location</a></span></code></div>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -49,21 +48,21 @@ hljs.initHighlightingOnLoad();
 "../../../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a></code></dt>
 <dt class="spec value" id="val-case"><a href="#val-case" class=
 "anchor"></a><code><span class="keyword">val</span> case :
-lhs:<a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
-<span>-&gt;</span> guard:<a href=
+<span>lhs:<a href=
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></span>
+<span>-&gt;</span> <span>guard:<span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-option <span>-&gt;</span> rhs:<a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
+option</span></span> <span>-&gt;</span> <span>rhs:<a href=
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-case">Ppxlib__.Import.case</a></code></dt>
 <dt class="spec value" id="val-pcl_constr"><a href=
 "#val-pcl_constr" class="anchor"></a><code><span class=
 "keyword">val</span> pcl_constr : <a href=
 "../../Import/index.html#type-longident_loc">Ppxlib__.Import.longident_loc</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_expr">Ppxlib__.Import.class_expr</a></code></dt>
 <dt class="spec value" id="val-pcl_structure"><a href=
 "#val-pcl_structure" class="anchor"></a><code><span class=
@@ -75,9 +74,9 @@ list <span>-&gt;</span> <a href=
 class="anchor"></a><code><span class="keyword">val</span> pcl_fun :
 <a href=
 "../../Import/index.html#type-arg_label">Ppxlib__.Import.arg_label</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-option <span>-&gt;</span> <a href=
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_expr">Ppxlib__.Import.class_expr</a>
@@ -87,19 +86,19 @@ option <span>-&gt;</span> <a href=
 class="anchor"></a><code><span class="keyword">val</span> pcl_apply
 : <a href=
 "../../Import/index.html#type-class_expr">Ppxlib__.Import.class_expr</a>
-<span>-&gt;</span> (<a href=
+<span>-&gt;</span> <span><span>(<a href=
 "../../Import/index.html#type-arg_label">Ppxlib__.Import.arg_label</a>
 * <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-list <span>-&gt;</span> <a href=
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_expr">Ppxlib__.Import.class_expr</a></code></dt>
 <dt class="spec value" id="val-pcl_let"><a href="#val-pcl_let"
 class="anchor"></a><code><span class="keyword">val</span> pcl_let :
 <a href=
 "../../Import/index.html#type-rec_flag">Ppxlib__.Import.rec_flag</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-value_binding">Ppxlib__.Import.value_binding</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_expr">Ppxlib__.Import.class_expr</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_expr">Ppxlib__.Import.class_expr</a></code></dt>
@@ -133,38 +132,40 @@ class="anchor"></a><code><span class="keyword">val</span> pcl_open
 "../../Import/index.html#type-override_flag">Ppxlib__.Import.override_flag</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_expr">Ppxlib__.Import.class_expr</a>
-<span>-&gt;</span> string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a> option
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><span>string <a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span>
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_field">Ppxlib__.Import.class_field</a></code></dt>
 <dt class="spec value" id="val-pcf_val"><a href="#val-pcf_val"
 class="anchor"></a><code><span class="keyword">val</span> pcf_val :
-(<a href=
+<span>(<span><a href=
 "../../Import/index.html#type-label">Ppxlib__.Import.label</a>
-<a href="../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-* <a href=
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span> *
+<a href=
 "../../Import/index.html#type-mutable_flag">Ppxlib__.Import.mutable_flag</a>
 * <a href=
-"../../Import/index.html#type-class_field_kind">Ppxlib__.Import.class_field_kind</a>)
+"../../Import/index.html#type-class_field_kind">Ppxlib__.Import.class_field_kind</a>)</span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_field">Ppxlib__.Import.class_field</a></code></dt>
 <dt class="spec value" id="val-pcf_method"><a href=
 "#val-pcf_method" class="anchor"></a><code><span class=
-"keyword">val</span> pcf_method : (<a href=
+"keyword">val</span> pcf_method : <span>(<span><a href=
 "../../Import/index.html#type-label">Ppxlib__.Import.label</a>
-<a href="../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-* <a href=
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span> *
+<a href=
 "../../Import/index.html#type-private_flag">Ppxlib__.Import.private_flag</a>
 * <a href=
-"../../Import/index.html#type-class_field_kind">Ppxlib__.Import.class_field_kind</a>)
+"../../Import/index.html#type-class_field_kind">Ppxlib__.Import.class_field_kind</a>)</span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_field">Ppxlib__.Import.class_field</a></code></dt>
 <dt class="spec value" id="val-pcf_constraint"><a href=
 "#val-pcf_constraint" class="anchor"></a><code><span class=
-"keyword">val</span> pcf_constraint : (<a href=
+"keyword">val</span> pcf_constraint : <span>(<a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 * <a href=
-"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>)
+"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>)</span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_field">Ppxlib__.Import.class_field</a></code></dt>
 <dt class="spec value" id="val-pcf_initializer"><a href=
@@ -187,40 +188,42 @@ class="anchor"></a><code><span class="keyword">val</span> pcf_val :
 "../../Import/index.html#type-class_field">Ppxlib__.Import.class_field</a></code></dt>
 <dt class="spec value" id="val-class_infos"><a href=
 "#val-class_infos" class="anchor"></a><code><span class=
-"keyword">val</span> class_infos : virt:<a href=
-"../../Import/index.html#type-virtual_flag">Ppxlib__.Import.virtual_flag</a>
-<span>-&gt;</span> params:(<a href=
+"keyword">val</span> class_infos : <span>virt:<a href=
+"../../Import/index.html#type-virtual_flag">Ppxlib__.Import.virtual_flag</a></span>
+<span>-&gt;</span> <span>params:<span><span>(<a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 * <a href=
-"../../Import/index.html#type-variance">Ppxlib__.Import.variance</a>)
-list <span>-&gt;</span> name:string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-<span>-&gt;</span> expr:<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../Import/index.html#type-class_infos">Ppxlib__.Import.class_infos</a></code></dt>
+"../../Import/index.html#type-variance">Ppxlib__.Import.variance</a>)</span>
+list</span></span> <span>-&gt;</span> <span>name:<span>string
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span></span>
+<span>-&gt;</span> <span>expr:<span class=
+"type-var">'a</span></span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> <a href=
+"../../Import/index.html#type-class_infos">Ppxlib__.Import.class_infos</a></span></code></dt>
 <dt class="spec value" id="val-class_signature"><a href=
 "#val-class_signature" class="anchor"></a><code><span class=
-"keyword">val</span> class_signature : self:<a href=
-"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
-<span>-&gt;</span> fields:<a href=
+"keyword">val</span> class_signature : <span>self:<a href=
+"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a></span>
+<span>-&gt;</span> <span>fields:<span><a href=
 "../../Import/index.html#type-class_type_field">Ppxlib__.Import.class_type_field</a>
-list <span>-&gt;</span> <a href=
+list</span></span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_signature">Ppxlib__.Import.class_signature</a></code></dt>
 <dt class="spec value" id="val-class_structure"><a href=
 "#val-class_structure" class="anchor"></a><code><span class=
-"keyword">val</span> class_structure : self:<a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
-<span>-&gt;</span> fields:<a href=
+"keyword">val</span> class_structure : <span>self:<a href=
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></span>
+<span>-&gt;</span> <span>fields:<span><a href=
 "../../Import/index.html#type-class_field">Ppxlib__.Import.class_field</a>
-list <span>-&gt;</span> <a href=
+list</span></span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_structure">Ppxlib__.Import.class_structure</a></code></dt>
 <dt class="spec value" id="val-pcty_constr"><a href=
 "#val-pcty_constr" class="anchor"></a><code><span class=
 "keyword">val</span> pcty_constr : <a href=
 "../../Import/index.html#type-longident_loc">Ppxlib__.Import.longident_loc</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_type">Ppxlib__.Import.class_type</a></code></dt>
 <dt class="spec value" id="val-pcty_signature"><a href=
 "#val-pcty_signature" class="anchor"></a><code><span class=
@@ -262,36 +265,38 @@ class="anchor"></a><code><span class="keyword">val</span> pcty_open
 "../../Import/index.html#type-class_type_field">Ppxlib__.Import.class_type_field</a></code></dt>
 <dt class="spec value" id="val-pctf_val"><a href="#val-pctf_val"
 class="anchor"></a><code><span class="keyword">val</span> pctf_val
-: (<a href=
+: <span>(<span><a href=
 "../../Import/index.html#type-label">Ppxlib__.Import.label</a>
-<a href="../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-* <a href=
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span> *
+<a href=
 "../../Import/index.html#type-mutable_flag">Ppxlib__.Import.mutable_flag</a>
 * <a href=
 "../../Import/index.html#type-virtual_flag">Ppxlib__.Import.virtual_flag</a>
 * <a href=
-"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>)
+"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>)</span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_type_field">Ppxlib__.Import.class_type_field</a></code></dt>
 <dt class="spec value" id="val-pctf_method"><a href=
 "#val-pctf_method" class="anchor"></a><code><span class=
-"keyword">val</span> pctf_method : (<a href=
+"keyword">val</span> pctf_method : <span>(<span><a href=
 "../../Import/index.html#type-label">Ppxlib__.Import.label</a>
-<a href="../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-* <a href=
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span> *
+<a href=
 "../../Import/index.html#type-private_flag">Ppxlib__.Import.private_flag</a>
 * <a href=
 "../../Import/index.html#type-virtual_flag">Ppxlib__.Import.virtual_flag</a>
 * <a href=
-"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>)
+"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>)</span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_type_field">Ppxlib__.Import.class_type_field</a></code></dt>
 <dt class="spec value" id="val-pctf_constraint"><a href=
 "#val-pctf_constraint" class="anchor"></a><code><span class=
-"keyword">val</span> pctf_constraint : (<a href=
+"keyword">val</span> pctf_constraint : <span>(<a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 * <a href=
-"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>)
+"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>)</span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-class_type_field">Ppxlib__.Import.class_type_field</a></code></dt>
 <dt class="spec value" id="val-pctf_attribute"><a href=
@@ -309,13 +314,13 @@ class="anchor"></a><code><span class="keyword">val</span> pctf_val
 <dt class="spec value" id="val-constructor_declaration"><a href=
 "#val-constructor_declaration" class=
 "anchor"></a><code><span class="keyword">val</span>
-constructor_declaration : name:string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-<span>-&gt;</span> args:<a href=
-"../../Import/index.html#type-constructor_arguments">Ppxlib__.Import.constructor_arguments</a>
-<span>-&gt;</span> res:<a href=
+constructor_declaration : <span>name:<span>string <a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span></span>
+<span>-&gt;</span> <span>args:<a href=
+"../../Import/index.html#type-constructor_arguments">Ppxlib__.Import.constructor_arguments</a></span>
+<span>-&gt;</span> <span>res:<span><a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
-option <span>-&gt;</span> <a href=
+option</span></span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-constructor_declaration">Ppxlib__.Import.constructor_declaration</a></code></dt>
 <dt class="spec value" id="val-ptyp_any"><a href="#val-ptyp_any"
 class="anchor"></a><code><span class="keyword">val</span> ptyp_any
@@ -337,23 +342,23 @@ class="anchor"></a><code><span class="keyword">val</span> ptyp_var
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a></code></dt>
 <dt class="spec value" id="val-ptyp_tuple"><a href=
 "#val-ptyp_tuple" class="anchor"></a><code><span class=
-"keyword">val</span> ptyp_tuple : <a href=
+"keyword">val</span> ptyp_tuple : <span><a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a></code></dt>
 <dt class="spec value" id="val-ptyp_constr"><a href=
 "#val-ptyp_constr" class="anchor"></a><code><span class=
 "keyword">val</span> ptyp_constr : <a href=
 "../../Import/index.html#type-longident_loc">Ppxlib__.Import.longident_loc</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a></code></dt>
 <dt class="spec value" id="val-ptyp_object"><a href=
 "#val-ptyp_object" class="anchor"></a><code><span class=
-"keyword">val</span> ptyp_object : <a href=
+"keyword">val</span> ptyp_object : <span><a href=
 "../../Import/index.html#type-object_field">Ppxlib__.Import.object_field</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-closed_flag">Ppxlib__.Import.closed_flag</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a></code></dt>
@@ -361,9 +366,9 @@ list <span>-&gt;</span> <a href=
 "#val-ptyp_class" class="anchor"></a><code><span class=
 "keyword">val</span> ptyp_class : <a href=
 "../../Import/index.html#type-longident_loc">Ppxlib__.Import.longident_loc</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a></code></dt>
 <dt class="spec value" id="val-ptyp_alias"><a href=
 "#val-ptyp_alias" class="anchor"></a><code><span class=
@@ -373,19 +378,19 @@ list <span>-&gt;</span> <a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a></code></dt>
 <dt class="spec value" id="val-ptyp_variant"><a href=
 "#val-ptyp_variant" class="anchor"></a><code><span class=
-"keyword">val</span> ptyp_variant : <a href=
+"keyword">val</span> ptyp_variant : <span><a href=
 "../../Import/index.html#type-row_field">Ppxlib__.Import.row_field</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-closed_flag">Ppxlib__.Import.closed_flag</a>
-<span>-&gt;</span> <a href=
-"../../Import/index.html#type-label">Ppxlib__.Import.label</a> list
-option <span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><span><a href=
+"../../Import/index.html#type-label">Ppxlib__.Import.label</a>
+list</span> option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a></code></dt>
 <dt class="spec value" id="val-ptyp_poly"><a href="#val-ptyp_poly"
 class="anchor"></a><code><span class="keyword">val</span> ptyp_poly
-: string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a> list
-<span>-&gt;</span> <a href=
+: <span><span>string <a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span>
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a></code></dt>
@@ -417,25 +422,25 @@ class="anchor"></a><code><span class="keyword">val</span> ptyp_poly
 class="anchor"></a><code><span class="keyword">val</span> pexp_let
 : <a href=
 "../../Import/index.html#type-rec_flag">Ppxlib__.Import.rec_flag</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-value_binding">Ppxlib__.Import.value_binding</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_function"><a href=
 "#val-pexp_function" class="anchor"></a><code><span class=
-"keyword">val</span> pexp_function : <a href=
-"../../Import/index.html#type-case">Ppxlib__.Import.case</a> list
-<span>-&gt;</span> <a href=
+"keyword">val</span> pexp_function : <span><a href=
+"../../Import/index.html#type-case">Ppxlib__.Import.case</a>
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_fun"><a href="#val-pexp_fun"
 class="anchor"></a><code><span class="keyword">val</span> pexp_fun
 : <a href=
 "../../Import/index.html#type-arg_label">Ppxlib__.Import.arg_label</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-option <span>-&gt;</span> <a href=
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
@@ -445,59 +450,59 @@ option <span>-&gt;</span> <a href=
 "#val-pexp_apply" class="anchor"></a><code><span class=
 "keyword">val</span> pexp_apply : <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-<span>-&gt;</span> (<a href=
+<span>-&gt;</span> <span><span>(<a href=
 "../../Import/index.html#type-arg_label">Ppxlib__.Import.arg_label</a>
 * <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-list <span>-&gt;</span> <a href=
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_match"><a href=
 "#val-pexp_match" class="anchor"></a><code><span class=
 "keyword">val</span> pexp_match : <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-<span>-&gt;</span> <a href=
-"../../Import/index.html#type-case">Ppxlib__.Import.case</a> list
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
+"../../Import/index.html#type-case">Ppxlib__.Import.case</a>
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_try"><a href="#val-pexp_try"
 class="anchor"></a><code><span class="keyword">val</span> pexp_try
 : <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-<span>-&gt;</span> <a href=
-"../../Import/index.html#type-case">Ppxlib__.Import.case</a> list
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
+"../../Import/index.html#type-case">Ppxlib__.Import.case</a>
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_tuple"><a href=
 "#val-pexp_tuple" class="anchor"></a><code><span class=
-"keyword">val</span> pexp_tuple : <a href=
+"keyword">val</span> pexp_tuple : <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_construct"><a href=
 "#val-pexp_construct" class="anchor"></a><code><span class=
 "keyword">val</span> pexp_construct : <a href=
 "../../Import/index.html#type-longident_loc">Ppxlib__.Import.longident_loc</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-option <span>-&gt;</span> <a href=
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_variant"><a href=
 "#val-pexp_variant" class="anchor"></a><code><span class=
 "keyword">val</span> pexp_variant : <a href=
 "../../Import/index.html#type-label">Ppxlib__.Import.label</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-option <span>-&gt;</span> <a href=
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_record"><a href=
 "#val-pexp_record" class="anchor"></a><code><span class=
-"keyword">val</span> pexp_record : (<a href=
+"keyword">val</span> pexp_record : <span><span>(<a href=
 "../../Import/index.html#type-longident_loc">Ppxlib__.Import.longident_loc</a>
 * <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-list <span>-&gt;</span> <a href=
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+list</span> <span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-option <span>-&gt;</span> <a href=
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_field"><a href=
 "#val-pexp_field" class="anchor"></a><code><span class=
@@ -519,9 +524,9 @@ option <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_array"><a href=
 "#val-pexp_array" class="anchor"></a><code><span class=
-"keyword">val</span> pexp_array : <a href=
+"keyword">val</span> pexp_array : <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_ifthenelse"><a href=
 "#val-pexp_ifthenelse" class="anchor"></a><code><span class=
@@ -529,9 +534,9 @@ list <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-option <span>-&gt;</span> <a href=
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_sequence"><a href=
 "#val-pexp_sequence" class="anchor"></a><code><span class=
@@ -575,9 +580,9 @@ class="anchor"></a><code><span class="keyword">val</span> pexp_for
 "#val-pexp_coerce" class="anchor"></a><code><span class=
 "keyword">val</span> pexp_coerce : <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
-option <span>-&gt;</span> <a href=
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
@@ -585,9 +590,10 @@ option <span>-&gt;</span> <a href=
 class="anchor"></a><code><span class="keyword">val</span> pexp_send
 : <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-label">Ppxlib__.Import.label</a>
-<a href="../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_new"><a href="#val-pexp_new"
@@ -598,26 +604,28 @@ class="anchor"></a><code><span class="keyword">val</span> pexp_new
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_setinstvar"><a href=
 "#val-pexp_setinstvar" class="anchor"></a><code><span class=
-"keyword">val</span> pexp_setinstvar : <a href=
+"keyword">val</span> pexp_setinstvar : <span><a href=
 "../../Import/index.html#type-label">Ppxlib__.Import.label</a>
-<a href="../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_override"><a href=
 "#val-pexp_override" class="anchor"></a><code><span class=
-"keyword">val</span> pexp_override : (<a href=
+"keyword">val</span> pexp_override : <span><span>(<span><a href=
 "../../Import/index.html#type-label">Ppxlib__.Import.label</a>
-<a href="../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-* <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-list <span>-&gt;</span> <a href=
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span> *
+<a href=
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_letmodule"><a href=
 "#val-pexp_letmodule" class="anchor"></a><code><span class=
-"keyword">val</span> pexp_letmodule : string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
+"keyword">val</span> pexp_letmodule : <span>string <a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-module_expr">Ppxlib__.Import.module_expr</a>
 <span>-&gt;</span> <a href=
@@ -648,9 +656,9 @@ class="anchor"></a><code><span class="keyword">val</span> pexp_lazy
 class="anchor"></a><code><span class="keyword">val</span> pexp_poly
 : <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
-option <span>-&gt;</span> <a href=
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_object"><a href=
 "#val-pexp_object" class="anchor"></a><code><span class=
@@ -660,8 +668,8 @@ option <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-pexp_newtype"><a href=
 "#val-pexp_newtype" class="anchor"></a><code><span class=
-"keyword">val</span> pexp_newtype : string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
+"keyword">val</span> pexp_newtype : <span>string <a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <span>-&gt;</span> <a href=
@@ -694,50 +702,55 @@ class="anchor"></a><code><span class="keyword">val</span> pexp_open
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-extension_constructor"><a href=
 "#val-extension_constructor" class="anchor"></a><code><span class=
-"keyword">val</span> extension_constructor : name:string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-<span>-&gt;</span> kind:<a href=
-"../../Import/index.html#type-extension_constructor_kind">Ppxlib__.Import.extension_constructor_kind</a>
+"keyword">val</span> extension_constructor :
+<span>name:<span>string <a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span></span>
+<span>-&gt;</span> <span>kind:<a href=
+"../../Import/index.html#type-extension_constructor_kind">Ppxlib__.Import.extension_constructor_kind</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-extension_constructor">Ppxlib__.Import.extension_constructor</a></code></dt>
 <dt class="spec value" id="val-include_infos"><a href=
 "#val-include_infos" class="anchor"></a><code><span class=
 "keyword">val</span> include_infos : <span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <span><span class=
 "type-var">'a</span> <a href=
-"../../Import/index.html#type-include_infos">Ppxlib__.Import.include_infos</a></code></dt>
+"../../Import/index.html#type-include_infos">Ppxlib__.Import.include_infos</a></span></code></dt>
 <dt class="spec value" id="val-label_declaration"><a href=
 "#val-label_declaration" class="anchor"></a><code><span class=
-"keyword">val</span> label_declaration : name:string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-<span>-&gt;</span> mutable_:<a href=
-"../../Import/index.html#type-mutable_flag">Ppxlib__.Import.mutable_flag</a>
-<span>-&gt;</span> type_:<a href=
-"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
+"keyword">val</span> label_declaration : <span>name:<span>string
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span></span>
+<span>-&gt;</span> <span>mutable_:<a href=
+"../../Import/index.html#type-mutable_flag">Ppxlib__.Import.mutable_flag</a></span>
+<span>-&gt;</span> <span>type_:<a href=
+"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-label_declaration">Ppxlib__.Import.label_declaration</a></code></dt>
 <dt class="spec value" id="val-location"><a href="#val-location"
 class="anchor"></a><code><span class="keyword">val</span> location
-: start:<a href=
-"../../Import/index.html#type-position">Ppxlib__.Import.position</a>
-<span>-&gt;</span> end_:<a href=
-"../../Import/index.html#type-position">Ppxlib__.Import.position</a>
-<span>-&gt;</span> ghost:bool <span>-&gt;</span> <a href=
+: <span>start:<a href=
+"../../Import/index.html#type-position">Ppxlib__.Import.position</a></span>
+<span>-&gt;</span> <span>end_:<a href=
+"../../Import/index.html#type-position">Ppxlib__.Import.position</a></span>
+<span>-&gt;</span> <span>ghost:bool</span> <span>-&gt;</span>
+<a href=
 "../../Import/index.html#type-location">Ppxlib__.Import.location</a></code></dt>
 <dt class="spec value" id="val-module_binding"><a href=
 "#val-module_binding" class="anchor"></a><code><span class=
-"keyword">val</span> module_binding : name:string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-<span>-&gt;</span> expr:<a href=
-"../../Import/index.html#type-module_expr">Ppxlib__.Import.module_expr</a>
+"keyword">val</span> module_binding : <span>name:<span>string
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span></span>
+<span>-&gt;</span> <span>expr:<a href=
+"../../Import/index.html#type-module_expr">Ppxlib__.Import.module_expr</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-module_binding">Ppxlib__.Import.module_binding</a></code></dt>
 <dt class="spec value" id="val-module_declaration"><a href=
 "#val-module_declaration" class="anchor"></a><code><span class=
-"keyword">val</span> module_declaration : name:string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-<span>-&gt;</span> type_:<a href=
-"../../Import/index.html#type-module_type">Ppxlib__.Import.module_type</a>
+"keyword">val</span> module_declaration : <span>name:<span>string
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span></span>
+<span>-&gt;</span> <span>type_:<a href=
+"../../Import/index.html#type-module_type">Ppxlib__.Import.module_type</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-module_declaration">Ppxlib__.Import.module_declaration</a></code></dt>
 <dt class="spec value" id="val-pmod_ident"><a href=
@@ -754,11 +767,11 @@ class="anchor"></a><code><span class="keyword">val</span> location
 "../../Import/index.html#type-module_expr">Ppxlib__.Import.module_expr</a></code></dt>
 <dt class="spec value" id="val-pmod_functor"><a href=
 "#val-pmod_functor" class="anchor"></a><code><span class=
-"keyword">val</span> pmod_functor : string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-<span>-&gt;</span> <a href=
+"keyword">val</span> pmod_functor : <span>string <a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span>
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-module_type">Ppxlib__.Import.module_type</a>
-option <span>-&gt;</span> <a href=
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-module_expr">Ppxlib__.Import.module_expr</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-module_expr">Ppxlib__.Import.module_expr</a></code></dt>
@@ -804,11 +817,11 @@ option <span>-&gt;</span> <a href=
 "../../Import/index.html#type-module_type">Ppxlib__.Import.module_type</a></code></dt>
 <dt class="spec value" id="val-pmty_functor"><a href=
 "#val-pmty_functor" class="anchor"></a><code><span class=
-"keyword">val</span> pmty_functor : string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-<span>-&gt;</span> <a href=
+"keyword">val</span> pmty_functor : <span>string <a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span>
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-module_type">Ppxlib__.Import.module_type</a>
-option <span>-&gt;</span> <a href=
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-module_type">Ppxlib__.Import.module_type</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-module_type">Ppxlib__.Import.module_type</a></code></dt>
@@ -816,9 +829,9 @@ option <span>-&gt;</span> <a href=
 class="anchor"></a><code><span class="keyword">val</span> pmty_with
 : <a href=
 "../../Import/index.html#type-module_type">Ppxlib__.Import.module_type</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-with_constraint">Ppxlib__.Import.with_constraint</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-module_type">Ppxlib__.Import.module_type</a></code></dt>
 <dt class="spec value" id="val-pmty_typeof"><a href=
 "#val-pmty_typeof" class="anchor"></a><code><span class=
@@ -841,18 +854,18 @@ list <span>-&gt;</span> <a href=
 <dt class="spec value" id="val-module_type_declaration"><a href=
 "#val-module_type_declaration" class=
 "anchor"></a><code><span class="keyword">val</span>
-module_type_declaration : name:string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-<span>-&gt;</span> type_:<a href=
+module_type_declaration : <span>name:<span>string <a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span></span>
+<span>-&gt;</span> <span>type_:<span><a href=
 "../../Import/index.html#type-module_type">Ppxlib__.Import.module_type</a>
-option <span>-&gt;</span> <a href=
+option</span></span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-module_type_declaration">Ppxlib__.Import.module_type_declaration</a></code></dt>
 <dt class="spec value" id="val-open_description"><a href=
 "#val-open_description" class="anchor"></a><code><span class=
-"keyword">val</span> open_description : lid:<a href=
-"../../Import/index.html#type-longident_loc">Ppxlib__.Import.longident_loc</a>
-<span>-&gt;</span> override:<a href=
-"../../Import/index.html#type-override_flag">Ppxlib__.Import.override_flag</a>
+"keyword">val</span> open_description : <span>lid:<a href=
+"../../Import/index.html#type-longident_loc">Ppxlib__.Import.longident_loc</a></span>
+<span>-&gt;</span> <span>override:<a href=
+"../../Import/index.html#type-override_flag">Ppxlib__.Import.override_flag</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-open_description">Ppxlib__.Import.open_description</a></code></dt>
 <dt class="spec value" id="val-ppat_any"><a href="#val-ppat_any"
@@ -861,16 +874,16 @@ class="anchor"></a><code><span class="keyword">val</span> ppat_any
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-ppat_var"><a href="#val-ppat_var"
 class="anchor"></a><code><span class="keyword">val</span> ppat_var
-: string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
+: <span>string <a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-ppat_alias"><a href=
 "#val-ppat_alias" class="anchor"></a><code><span class=
 "keyword">val</span> ppat_alias : <a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
-<span>-&gt;</span> string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
+<span>-&gt;</span> <span>string <a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-ppat_constant"><a href=
@@ -889,41 +902,41 @@ class="anchor"></a><code><span class="keyword">val</span> ppat_var
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-ppat_tuple"><a href=
 "#val-ppat_tuple" class="anchor"></a><code><span class=
-"keyword">val</span> ppat_tuple : <a href=
+"keyword">val</span> ppat_tuple : <span><a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-ppat_construct"><a href=
 "#val-ppat_construct" class="anchor"></a><code><span class=
 "keyword">val</span> ppat_construct : <a href=
 "../../Import/index.html#type-longident_loc">Ppxlib__.Import.longident_loc</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
-option <span>-&gt;</span> <a href=
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-ppat_variant"><a href=
 "#val-ppat_variant" class="anchor"></a><code><span class=
 "keyword">val</span> ppat_variant : <a href=
 "../../Import/index.html#type-label">Ppxlib__.Import.label</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
-option <span>-&gt;</span> <a href=
+option</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-ppat_record"><a href=
 "#val-ppat_record" class="anchor"></a><code><span class=
-"keyword">val</span> ppat_record : (<a href=
+"keyword">val</span> ppat_record : <span><span>(<a href=
 "../../Import/index.html#type-longident_loc">Ppxlib__.Import.longident_loc</a>
 * <a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)
-list <span>-&gt;</span> <a href=
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)</span>
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-closed_flag">Ppxlib__.Import.closed_flag</a>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-ppat_array"><a href=
 "#val-ppat_array" class="anchor"></a><code><span class=
-"keyword">val</span> ppat_array : <a href=
+"keyword">val</span> ppat_array : <span><a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-ppat_or"><a href="#val-ppat_or"
 class="anchor"></a><code><span class="keyword">val</span> ppat_or :
@@ -955,8 +968,8 @@ class="anchor"></a><code><span class="keyword">val</span> ppat_lazy
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-ppat_unpack"><a href=
 "#val-ppat_unpack" class="anchor"></a><code><span class=
-"keyword">val</span> ppat_unpack : string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
+"keyword">val</span> ppat_unpack : <span>string <a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-ppat_exception"><a href=
@@ -981,9 +994,10 @@ class="anchor"></a><code><span class="keyword">val</span> ppat_open
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-position"><a href="#val-position"
 class="anchor"></a><code><span class="keyword">val</span> position
-: fname:string <span>-&gt;</span> lnum:int <span>-&gt;</span>
-bol:int <span>-&gt;</span> cnum:int <span>-&gt;</span> <a href=
-"../../Import/index.html#type-position">Ppxlib__.Import.position</a></code></dt>
+: <span>fname:string</span> <span>-&gt;</span>
+<span>lnum:int</span> <span>-&gt;</span> <span>bol:int</span>
+<span>-&gt;</span> <span>cnum:int</span> <span>-&gt;</span>
+<a href="../../Import/index.html#type-position">Ppxlib__.Import.position</a></code></dt>
 <dt class="spec value" id="val-psig_value"><a href=
 "#val-psig_value" class="anchor"></a><code><span class=
 "keyword">val</span> psig_value : <a href=
@@ -994,9 +1008,9 @@ bol:int <span>-&gt;</span> cnum:int <span>-&gt;</span> <a href=
 class="anchor"></a><code><span class="keyword">val</span> psig_type
 : <a href=
 "../../Import/index.html#type-rec_flag">Ppxlib__.Import.rec_flag</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a></code></dt>
 <dt class="spec value" id="val-psig_typext"><a href=
 "#val-psig_typext" class="anchor"></a><code><span class=
@@ -1018,9 +1032,9 @@ list <span>-&gt;</span> <a href=
 "../../Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a></code></dt>
 <dt class="spec value" id="val-psig_recmodule"><a href=
 "#val-psig_recmodule" class="anchor"></a><code><span class=
-"keyword">val</span> psig_recmodule : <a href=
+"keyword">val</span> psig_recmodule : <span><a href=
 "../../Import/index.html#type-module_declaration">Ppxlib__.Import.module_declaration</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a></code></dt>
 <dt class="spec value" id="val-psig_modtype"><a href=
 "#val-psig_modtype" class="anchor"></a><code><span class=
@@ -1042,15 +1056,15 @@ class="anchor"></a><code><span class="keyword">val</span> psig_open
 "../../Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a></code></dt>
 <dt class="spec value" id="val-psig_class"><a href=
 "#val-psig_class" class="anchor"></a><code><span class=
-"keyword">val</span> psig_class : <a href=
+"keyword">val</span> psig_class : <span><a href=
 "../../Import/index.html#type-class_description">Ppxlib__.Import.class_description</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a></code></dt>
 <dt class="spec value" id="val-psig_class_type"><a href=
 "#val-psig_class_type" class="anchor"></a><code><span class=
-"keyword">val</span> psig_class_type : <a href=
+"keyword">val</span> psig_class_type : <span><a href=
 "../../Import/index.html#type-class_type_declaration">Ppxlib__.Import.class_type_declaration</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a></code></dt>
 <dt class="spec value" id="val-psig_attribute"><a href=
 "#val-psig_attribute" class="anchor"></a><code><span class=
@@ -1078,9 +1092,9 @@ class="anchor"></a><code><span class="keyword">val</span> pstr_eval
 "#val-pstr_value" class="anchor"></a><code><span class=
 "keyword">val</span> pstr_value : <a href=
 "../../Import/index.html#type-rec_flag">Ppxlib__.Import.rec_flag</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-value_binding">Ppxlib__.Import.value_binding</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a></code></dt>
 <dt class="spec value" id="val-pstr_primitive"><a href=
 "#val-pstr_primitive" class="anchor"></a><code><span class=
@@ -1092,9 +1106,9 @@ list <span>-&gt;</span> <a href=
 class="anchor"></a><code><span class="keyword">val</span> pstr_type
 : <a href=
 "../../Import/index.html#type-rec_flag">Ppxlib__.Import.rec_flag</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a></code></dt>
 <dt class="spec value" id="val-pstr_typext"><a href=
 "#val-pstr_typext" class="anchor"></a><code><span class=
@@ -1116,9 +1130,9 @@ list <span>-&gt;</span> <a href=
 "../../Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a></code></dt>
 <dt class="spec value" id="val-pstr_recmodule"><a href=
 "#val-pstr_recmodule" class="anchor"></a><code><span class=
-"keyword">val</span> pstr_recmodule : <a href=
+"keyword">val</span> pstr_recmodule : <span><a href=
 "../../Import/index.html#type-module_binding">Ppxlib__.Import.module_binding</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a></code></dt>
 <dt class="spec value" id="val-pstr_modtype"><a href=
 "#val-pstr_modtype" class="anchor"></a><code><span class=
@@ -1134,15 +1148,15 @@ class="anchor"></a><code><span class="keyword">val</span> pstr_open
 "../../Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a></code></dt>
 <dt class="spec value" id="val-pstr_class"><a href=
 "#val-pstr_class" class="anchor"></a><code><span class=
-"keyword">val</span> pstr_class : <a href=
+"keyword">val</span> pstr_class : <span><a href=
 "../../Import/index.html#type-class_declaration">Ppxlib__.Import.class_declaration</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a></code></dt>
 <dt class="spec value" id="val-pstr_class_type"><a href=
 "#val-pstr_class_type" class="anchor"></a><code><span class=
-"keyword">val</span> pstr_class_type : <a href=
+"keyword">val</span> pstr_class_type : <span><a href=
 "../../Import/index.html#type-class_type_declaration">Ppxlib__.Import.class_type_declaration</a>
-list <span>-&gt;</span> <a href=
+list</span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a></code></dt>
 <dt class="spec value" id="val-pstr_include"><a href=
 "#val-pstr_include" class="anchor"></a><code><span class=
@@ -1166,55 +1180,60 @@ list <span>-&gt;</span> <a href=
 "../../Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a></code></dt>
 <dt class="spec value" id="val-type_declaration"><a href=
 "#val-type_declaration" class="anchor"></a><code><span class=
-"keyword">val</span> type_declaration : name:string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-<span>-&gt;</span> params:(<a href=
+"keyword">val</span> type_declaration : <span>name:<span>string
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span></span>
+<span>-&gt;</span> <span>params:<span><span>(<a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 * <a href=
-"../../Import/index.html#type-variance">Ppxlib__.Import.variance</a>)
-list <span>-&gt;</span> cstrs:(<a href=
+"../../Import/index.html#type-variance">Ppxlib__.Import.variance</a>)</span>
+list</span></span> <span>-&gt;</span>
+<span>cstrs:<span><span>(<a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 * <a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 * <a href=
-"../../Import/index.html#type-location">Ppxlib__.Import.location</a>)
-list <span>-&gt;</span> kind:<a href=
-"../../Import/index.html#type-type_kind">Ppxlib__.Import.type_kind</a>
-<span>-&gt;</span> private_:<a href=
-"../../Import/index.html#type-private_flag">Ppxlib__.Import.private_flag</a>
-<span>-&gt;</span> manifest:<a href=
+"../../Import/index.html#type-location">Ppxlib__.Import.location</a>)</span>
+list</span></span> <span>-&gt;</span> <span>kind:<a href=
+"../../Import/index.html#type-type_kind">Ppxlib__.Import.type_kind</a></span>
+<span>-&gt;</span> <span>private_:<a href=
+"../../Import/index.html#type-private_flag">Ppxlib__.Import.private_flag</a></span>
+<span>-&gt;</span> <span>manifest:<span><a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
-option <span>-&gt;</span> <a href=
+option</span></span> <span>-&gt;</span> <a href=
 "../../Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a></code></dt>
 <dt class="spec value" id="val-type_extension"><a href=
 "#val-type_extension" class="anchor"></a><code><span class=
-"keyword">val</span> type_extension : path:<a href=
-"../../Import/index.html#type-longident_loc">Ppxlib__.Import.longident_loc</a>
-<span>-&gt;</span> params:(<a href=
+"keyword">val</span> type_extension : <span>path:<a href=
+"../../Import/index.html#type-longident_loc">Ppxlib__.Import.longident_loc</a></span>
+<span>-&gt;</span> <span>params:<span><span>(<a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 * <a href=
-"../../Import/index.html#type-variance">Ppxlib__.Import.variance</a>)
-list <span>-&gt;</span> constructors:<a href=
+"../../Import/index.html#type-variance">Ppxlib__.Import.variance</a>)</span>
+list</span></span> <span>-&gt;</span>
+<span>constructors:<span><a href=
 "../../Import/index.html#type-extension_constructor">Ppxlib__.Import.extension_constructor</a>
-list <span>-&gt;</span> private_:<a href=
-"../../Import/index.html#type-private_flag">Ppxlib__.Import.private_flag</a>
+list</span></span> <span>-&gt;</span> <span>private_:<a href=
+"../../Import/index.html#type-private_flag">Ppxlib__.Import.private_flag</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-type_extension">Ppxlib__.Import.type_extension</a></code></dt>
 <dt class="spec value" id="val-value_binding"><a href=
 "#val-value_binding" class="anchor"></a><code><span class=
-"keyword">val</span> value_binding : pat:<a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
-<span>-&gt;</span> expr:<a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
+"keyword">val</span> value_binding : <span>pat:<a href=
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></span>
+<span>-&gt;</span> <span>expr:<a href=
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-value_binding">Ppxlib__.Import.value_binding</a></code></dt>
 <dt class="spec value" id="val-value_description"><a href=
 "#val-value_description" class="anchor"></a><code><span class=
-"keyword">val</span> value_description : name:string <a href=
-"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a>
-<span>-&gt;</span> type_:<a href=
-"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
-<span>-&gt;</span> prim:string list <span>-&gt;</span> <a href=
+"keyword">val</span> value_description : <span>name:<span>string
+<a href=
+"../../Import/index.html#type-loc">Ppxlib__.Import.loc</a></span></span>
+<span>-&gt;</span> <span>type_:<a href=
+"../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a></span>
+<span>-&gt;</span> <span>prim:<span>string list</span></span>
+<span>-&gt;</span> <a href=
 "../../Import/index.html#type-value_description">Ppxlib__.Import.value_description</a></code></dt>
 </dl>
 </details>
@@ -1229,140 +1248,145 @@ list <span>-&gt;</span> private_:<a href=
 "keyword">include</span> <a href=
 "../index.html#module-type-Additional_helpers">Additional_helpers</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
-"../module-type-Additional_helpers/index.html#type-with_loc">with_loc</a>
-:= <span class="type-var">'a</span> <a href=
-"../index.html#type-without_location">without_location</a></code></span></summary>
+<span>'a <a href=
+"../module-type-Additional_helpers/index.html#type-with_loc">with_loc</a></span>
+:= <span><span class="type-var">'a</span> <a href=
+"../index.html#type-without_location">without_location</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-with_loc"><a href="#type-with_loc"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-with_loc</code></dt>
+class="anchor"></a><code><span class="keyword">type</span> <span>'a
+with_loc</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-eint"><a href="#val-eint" class=
 "anchor"></a><code><span class="keyword">val</span> eint :
-(<a href="../../Import/index.html#type-int">Ppxlib__.Import.int</a>
+<span><span>(<a href=
+"../../Import/index.html#type-int">Ppxlib__.Import.int</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-echar"><a href="#val-echar" class=
 "anchor"></a><code><span class="keyword">val</span> echar :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-char">Ppxlib__.Import.char</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-estring"><a href="#val-estring"
 class="anchor"></a><code><span class="keyword">val</span> estring :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-string">Ppxlib__.Import.string</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-efloat"><a href="#val-efloat" class=
 "anchor"></a><code><span class="keyword">val</span> efloat :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-string">Ppxlib__.Import.string</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-eint32"><a href="#val-eint32" class=
 "anchor"></a><code><span class="keyword">val</span> eint32 :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-int32">Ppxlib__.Import.int32</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-eint64"><a href="#val-eint64" class=
 "anchor"></a><code><span class="keyword">val</span> eint64 :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-int64">Ppxlib__.Import.int64</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-enativeint"><a href=
 "#val-enativeint" class="anchor"></a><code><span class=
-"keyword">val</span> enativeint : (<a href=
+"keyword">val</span> enativeint : <span><span>(<a href=
 "../../Import/index.html#type-nativeint">Ppxlib__.Import.nativeint</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-ebool"><a href="#val-ebool" class=
 "anchor"></a><code><span class="keyword">val</span> ebool :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-bool">Ppxlib__.Import.bool</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-pint"><a href="#val-pint" class=
 "anchor"></a><code><span class="keyword">val</span> pint :
-(<a href="../../Import/index.html#type-int">Ppxlib__.Import.int</a>
+<span><span>(<a href=
+"../../Import/index.html#type-int">Ppxlib__.Import.int</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-pchar"><a href="#val-pchar" class=
 "anchor"></a><code><span class="keyword">val</span> pchar :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-char">Ppxlib__.Import.char</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-pstring"><a href="#val-pstring"
 class="anchor"></a><code><span class="keyword">val</span> pstring :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-string">Ppxlib__.Import.string</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-pfloat"><a href="#val-pfloat" class=
 "anchor"></a><code><span class="keyword">val</span> pfloat :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-string">Ppxlib__.Import.string</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-pint32"><a href="#val-pint32" class=
 "anchor"></a><code><span class="keyword">val</span> pint32 :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-int32">Ppxlib__.Import.int32</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-pint64"><a href="#val-pint64" class=
 "anchor"></a><code><span class="keyword">val</span> pint64 :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-int64">Ppxlib__.Import.int64</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-pnativeint"><a href=
 "#val-pnativeint" class="anchor"></a><code><span class=
-"keyword">val</span> pnativeint : (<a href=
+"keyword">val</span> pnativeint : <span><span>(<a href=
 "../../Import/index.html#type-nativeint">Ppxlib__.Import.nativeint</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-pbool"><a href="#val-pbool" class=
 "anchor"></a><code><span class="keyword">val</span> pbool :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-bool">Ppxlib__.Import.bool</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-eunit"><a href="#val-eunit" class=
 "anchor"></a><code><span class="keyword">val</span> eunit :
-<a href="../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+<span><a href=
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-punit"><a href="#val-punit" class=
 "anchor"></a><code><span class="keyword">val</span> punit :
-<a href="../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+<span><a href=
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-evar"><a href="#val-evar" class=
 "anchor"></a><code><span class="keyword">val</span> evar :
-(<a href="../../Import/index.html#type-string">Ppxlib__.Import.string</a>
+<span><span>(<a href=
+"../../Import/index.html#type-string">Ppxlib__.Import.string</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dd>
 <p><code>evar id</code> produces a <code>Pexp_ident _</code>
 expression, it parses its input so you can pass any dot-separated
@@ -1372,21 +1396,22 @@ identifier, for instance: <code>evar ~loc "Foo.bar"</code>.</p>
 <dl>
 <dt class="spec value" id="val-pvar"><a href="#val-pvar" class=
 "anchor"></a><code><span class="keyword">val</span> pvar :
-(<a href="../../Import/index.html#type-string">Ppxlib__.Import.string</a>
+<span><span>(<a href=
+"../../Import/index.html#type-string">Ppxlib__.Import.string</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-eapply"><a href="#val-eapply" class=
 "anchor"></a><code><span class="keyword">val</span> eapply :
-(<a href=
+<span><span>(<a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <a href=
-"../../Import/index.html#type-list">Ppxlib__.Import.list</a>
+"../../Import/index.html#type-list">Ppxlib__.Import.list</a></span>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dd>
 <p>Same as pexp_apply but without labels</p>
 </dd>
@@ -1394,98 +1419,99 @@ identifier, for instance: <code>evar ~loc "Foo.bar"</code>.</p>
 <dl>
 <dt class="spec value" id="val-eabstract"><a href="#val-eabstract"
 class="anchor"></a><code><span class="keyword">val</span> eabstract
-: (<a href=
+: <span><span>(<span><a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
 <a href=
-"../../Import/index.html#type-list">Ppxlib__.Import.list</a>
+"../../Import/index.html#type-list">Ppxlib__.Import.list</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-esequence"><a href="#val-esequence"
 class="anchor"></a><code><span class="keyword">val</span> esequence
-: (<a href=
+: <span><span>(<span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <a href=
-"../../Import/index.html#type-list">Ppxlib__.Import.list</a>
+"../../Import/index.html#type-list">Ppxlib__.Import.list</a></span>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-ppat_tuple_opt"><a href=
 "#val-ppat_tuple_opt" class="anchor"></a><code><span class=
-"keyword">val</span> ppat_tuple_opt : (<a href=
+"keyword">val</span> ppat_tuple_opt : <span><span>(<span><a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
 <a href=
-"../../Import/index.html#type-list">Ppxlib__.Import.list</a>
-<span>-&gt;</span> <a href=
+"../../Import/index.html#type-list">Ppxlib__.Import.list</a></span>
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
 <a href=
-"../../Import/index.html#type-option">Ppxlib__.Import.option</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-option">Ppxlib__.Import.option</a></span>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-pexp_tuple_opt"><a href=
 "#val-pexp_tuple_opt" class="anchor"></a><code><span class=
-"keyword">val</span> pexp_tuple_opt : (<a href=
+"keyword">val</span> pexp_tuple_opt : <span><span>(<span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <a href=
-"../../Import/index.html#type-list">Ppxlib__.Import.list</a>
-<span>-&gt;</span> <a href=
+"../../Import/index.html#type-list">Ppxlib__.Import.list</a></span>
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <a href=
-"../../Import/index.html#type-option">Ppxlib__.Import.option</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-option">Ppxlib__.Import.option</a></span>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-pconstruct"><a href=
 "#val-pconstruct" class="anchor"></a><code><span class=
 "keyword">val</span> pconstruct : <a href=
 "../../Import/index.html#type-constructor_declaration">Ppxlib__.Import.constructor_declaration</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
 <a href=
-"../../Import/index.html#type-option">Ppxlib__.Import.option</a>
+"../../Import/index.html#type-option">Ppxlib__.Import.option</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a></code></dt>
 <dt class="spec value" id="val-econstruct"><a href=
 "#val-econstruct" class="anchor"></a><code><span class=
 "keyword">val</span> econstruct : <a href=
 "../../Import/index.html#type-constructor_declaration">Ppxlib__.Import.constructor_declaration</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <a href=
-"../../Import/index.html#type-option">Ppxlib__.Import.option</a>
+"../../Import/index.html#type-option">Ppxlib__.Import.option</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 <dt class="spec value" id="val-elist"><a href="#val-elist" class=
 "anchor"></a><code><span class="keyword">val</span> elist :
-(<a href=
+<span><span>(<span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <a href=
-"../../Import/index.html#type-list">Ppxlib__.Import.list</a>
+"../../Import/index.html#type-list">Ppxlib__.Import.list</a></span>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-plist"><a href="#val-plist" class=
 "anchor"></a><code><span class="keyword">val</span> plist :
-(<a href=
+<span><span>(<span><a href=
 "../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>
 <a href=
-"../../Import/index.html#type-list">Ppxlib__.Import.list</a>
+"../../Import/index.html#type-list">Ppxlib__.Import.list</a></span>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-pattern">Ppxlib__.Import.pattern</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-pstr_value_list"><a href=
 "#val-pstr_value_list" class="anchor"></a><code><span class=
-"keyword">val</span> pstr_value_list : loc:<a href=
-"../../../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a>
+"keyword">val</span> pstr_value_list : <span>loc:<a href=
+"../../../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a></span>
 <span>-&gt;</span> <a href=
 "../../../../ocaml-migrate-parsetree/Migrate_parsetree__Ast_407/Asttypes/index.html#type-rec_flag">
-Ppxlib__.Import.Asttypes.rec_flag</a> <span>-&gt;</span> <a href=
+Ppxlib__.Import.Asttypes.rec_flag</a> <span>-&gt;</span>
+<span><a href=
 "../../Import/index.html#type-value_binding">Ppxlib__.Import.value_binding</a>
 <a href=
-"../../Import/index.html#type-list">Ppxlib__.Import.list</a>
-<span>-&gt;</span> <a href=
+"../../Import/index.html#type-list">Ppxlib__.Import.list</a></span>
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>
 <a href=
-"../../Import/index.html#type-list">Ppxlib__.Import.list</a></code></dt>
+"../../Import/index.html#type-list">Ppxlib__.Import.list</a></span></code></dt>
 <dd>
 <p><code>pstr_value_list ~loc rf vbs</code> = <code>pstr_value ~loc
 rf vbs</code> if <code>vbs &lt;&gt; []</code>, <code>[]</code>
@@ -1496,47 +1522,49 @@ otherwise.</p>
 <dt class="spec value" id="val-nonrec_type_declaration"><a href=
 "#val-nonrec_type_declaration" class=
 "anchor"></a><code><span class="keyword">val</span>
-nonrec_type_declaration : (name:<a href=
+nonrec_type_declaration : <span><span>(<span>name:<span><a href=
 "../../Import/index.html#type-string">Ppxlib__.Import.string</a>
-<a href="../../../Ppxlib/Loc/index.html#type-t">Ppxlib.Loc.t</a>
-<span>-&gt;</span> params:(<a href=
+<a href=
+"../../../Ppxlib/Loc/index.html#type-t">Ppxlib.Loc.t</a></span></span>
+<span>-&gt;</span> <span>params:<span><span>(<a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 * <a href=
 "../../../../ocaml-migrate-parsetree/Migrate_parsetree__Ast_407/Asttypes/index.html#type-variance">
-Ppxlib__.Import.Asttypes.variance</a>) <a href=
-"../../Import/index.html#type-list">Ppxlib__.Import.list</a>
-<span>-&gt;</span> cstrs:(<a href=
+Ppxlib__.Import.Asttypes.variance</a>)</span> <a href=
+"../../Import/index.html#type-list">Ppxlib__.Import.list</a></span></span>
+<span>-&gt;</span> <span>cstrs:<span><span>(<a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 * <a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 * <a href=
-"../../../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a>)
+"../../../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a>)</span>
 <a href=
-"../../Import/index.html#type-list">Ppxlib__.Import.list</a>
-<span>-&gt;</span> kind:<a href=
-"../../Import/index.html#type-type_kind">Ppxlib__.Import.type_kind</a>
-<span>-&gt;</span> private_:<a href=
-"../../../../ocaml-migrate-parsetree/Migrate_parsetree__Ast_407/Asttypes/index.html#type-private_flag">Ppxlib__.Import.Asttypes.private_flag</a>
-<span>-&gt;</span> manifest:<a href=
+"../../Import/index.html#type-list">Ppxlib__.Import.list</a></span></span>
+<span>-&gt;</span> <span>kind:<a href=
+"../../Import/index.html#type-type_kind">Ppxlib__.Import.type_kind</a></span>
+<span>-&gt;</span> <span>private_:<a href=
+"../../../../ocaml-migrate-parsetree/Migrate_parsetree__Ast_407/Asttypes/index.html#type-private_flag">Ppxlib__.Import.Asttypes.private_flag</a></span>
+<span>-&gt;</span> <span>manifest:<span><a href=
 "../../Import/index.html#type-core_type">Ppxlib__.Import.core_type</a>
 <a href=
-"../../Import/index.html#type-option">Ppxlib__.Import.option</a>
+"../../Import/index.html#type-option">Ppxlib__.Import.option</a></span></span>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-unapplied_type_constr_conv"><a href=
 "#val-unapplied_type_constr_conv" class=
 "anchor"></a><code><span class="keyword">val</span>
-unapplied_type_constr_conv : (<a href=
+unapplied_type_constr_conv : <span><span>(<span><a href=
 "../../../Ppxlib/Longident/index.html#type-t">Ppxlib.Longident.t</a>
-<a href="../../../Ppxlib/Loc/index.html#type-t">Ppxlib.Loc.t</a>
-<span>-&gt;</span> f:(<a href=
+<a href=
+"../../../Ppxlib/Loc/index.html#type-t">Ppxlib.Loc.t</a></span>
+<span>-&gt;</span> <span>f:<span>(<a href=
 "../../Import/index.html#type-string">Ppxlib__.Import.string</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-string">Ppxlib__.Import.string</a>)
+"../../Import/index.html#type-string">Ppxlib__.Import.string</a>)</span></span>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dd>
 <p><code>unapplied_type_constr_conv</code> is the standard way to
 map identifiers to conversion fonctions, for preprocessor that
@@ -1556,28 +1584,29 @@ since type constructors are always applied.</li>
 <dl>
 <dt class="spec value" id="val-type_constr_conv"><a href=
 "#val-type_constr_conv" class="anchor"></a><code><span class=
-"keyword">val</span> type_constr_conv : (<a href=
+"keyword">val</span> type_constr_conv : <span><span>(<span><a href=
 "../../../Ppxlib/Longident/index.html#type-t">Ppxlib.Longident.t</a>
-<a href="../../../Ppxlib/Loc/index.html#type-t">Ppxlib.Loc.t</a>
-<span>-&gt;</span> f:(<a href=
+<a href=
+"../../../Ppxlib/Loc/index.html#type-t">Ppxlib.Loc.t</a></span>
+<span>-&gt;</span> <span>f:<span>(<a href=
 "../../Import/index.html#type-string">Ppxlib__.Import.string</a>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-string">Ppxlib__.Import.string</a>)
-<span>-&gt;</span> <a href=
+"../../Import/index.html#type-string">Ppxlib__.Import.string</a>)</span></span>
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <a href=
-"../../Import/index.html#type-list">Ppxlib__.Import.list</a>
+"../../Import/index.html#type-list">Ppxlib__.Import.list</a></span>
 <span>-&gt;</span> <a href=
-"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)
-<a href="index.html#type-with_loc">with_loc</a></code></dt>
+"../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>)</span>
+<a href="index.html#type-with_loc">with_loc</a></span></code></dt>
 <dt class="spec value" id="val-eta_reduce"><a href=
 "#val-eta_reduce" class="anchor"></a><code><span class=
 "keyword">val</span> eta_reduce : <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <a href=
-"../../Import/index.html#type-option">Ppxlib__.Import.option</a></code></dt>
+"../../Import/index.html#type-option">Ppxlib__.Import.option</a></span></code></dt>
 <dd>
 <p>Tries to simplify <code>fun v1 v2 .. -&gt; f v1 v2 ..</code>
 into <code>f</code>. Only works when <code>f</code> is a path, not
@@ -1617,8 +1646,8 @@ to avoid a compile error.</p>
 "anchor"></a><code><span class="keyword">val</span>
 eta_reduce_if_possible_and_nonrec : <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-<span>-&gt;</span> rec_flag:<a href=
-"../../Import/index.html#type-rec_flag">Ppxlib__.Import.rec_flag</a>
+<span>-&gt;</span> <span>rec_flag:<a href=
+"../../Import/index.html#type-rec_flag">Ppxlib__.Import.rec_flag</a></span>
 <span>-&gt;</span> <a href=
 "../../Import/index.html#type-expression">Ppxlib__.Import.expression</a></code></dt>
 </dl>

@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Conv (sexplib.Sexplib.Conv)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -62,20 +61,20 @@ types</p>
 <dl>
 <dt class="spec type" id="type-sexp_option"><a href=
 "#type-sexp_option" class="anchor"></a><code><span class=
-"keyword">type</span> 'a sexp_option</code> <code>= <span class=
-"type-var">'a</span> option</code></dt>
+"keyword">type</span> <span>'a sexp_option</span></code> <code>=
+<span><span class="type-var">'a</span> option</span></code></dt>
 <dt class="spec type" id="type-sexp_list"><a href="#type-sexp_list"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-sexp_list</code> <code>= <span class="type-var">'a</span>
-list</code></dt>
+class="anchor"></a><code><span class="keyword">type</span> <span>'a
+sexp_list</span></code> <code>= <span><span class=
+"type-var">'a</span> list</span></code></dt>
 <dt class="spec type" id="type-sexp_array"><a href=
 "#type-sexp_array" class="anchor"></a><code><span class=
-"keyword">type</span> 'a sexp_array</code> <code>= <span class=
-"type-var">'a</span> array</code></dt>
+"keyword">type</span> <span>'a sexp_array</span></code> <code>=
+<span><span class="type-var">'a</span> array</span></code></dt>
 <dt class="spec type" id="type-sexp_opaque"><a href=
 "#type-sexp_opaque" class="anchor"></a><code><span class=
-"keyword">type</span> 'a sexp_opaque</code> <code>= <span class=
-"type-var">'a</span></code></dt>
+"keyword">type</span> <span>'a sexp_opaque</span></code> <code>=
+<span class="type-var">'a</span></code></dt>
 </dl>
 <section>
 <header>
@@ -87,8 +86,8 @@ list</code></dt>
 <dt class="spec value" id="val-default_string_of_float"><a href=
 "#val-default_string_of_float" class=
 "anchor"></a><code><span class="keyword">val</span>
-default_string_of_float : (float <span>-&gt;</span> string)
-Stdlib.ref</code></dt>
+default_string_of_float : <span><span>(float <span>-&gt;</span>
+string)</span> Stdlib.ref</span></code></dt>
 <dd>
 <p><code>default_string_of_float</code> reference to the default
 function used to convert floats to strings.</p>
@@ -99,7 +98,7 @@ function used to convert floats to strings.</p>
 <dt class="spec value" id="val-write_old_option_format"><a href=
 "#val-write_old_option_format" class=
 "anchor"></a><code><span class="keyword">val</span>
-write_old_option_format : bool Stdlib.ref</code></dt>
+write_old_option_format : <span>bool Stdlib.ref</span></code></dt>
 <dd>
 <p><code>write_old_option_format</code> reference for the default
 option format used to write option values. If set to
@@ -111,8 +110,8 @@ new-style one otherwise.</p>
 <dl>
 <dt class="spec value" id="val-read_old_option_format"><a href=
 "#val-read_old_option_format" class="anchor"></a><code><span class=
-"keyword">val</span> read_old_option_format : bool
-Stdlib.ref</code></dt>
+"keyword">val</span> read_old_option_format : <span>bool
+Stdlib.ref</span></code></dt>
 <dd>
 <p><code>read_old_option_format</code> reference for the default
 option format used to read option values.
@@ -128,10 +127,11 @@ macros.</p>
 <dl>
 <dt class="spec value" id="val-list_map"><a href="#val-list_map"
 class="anchor"></a><code><span class="keyword">val</span> list_map
-: (<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'a</span> list <span>-&gt;</span> <span class=
-"type-var">'b</span> list</code></dt>
+: <span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> list</span>
+<span>-&gt;</span> <span><span class="type-var">'b</span>
+list</span></code></dt>
 <dd>
 <p>We re-export a tail recursive map function, because some modules
 override the standard library functions (e.g.
@@ -250,11 +250,11 @@ S-expression.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_ref"><a href=
 "#val-sexp_of_ref" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_ref : (<span class=
+"keyword">val</span> sexp_of_ref : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> Stdlib.ref
-<span>-&gt;</span> <a href=
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+Stdlib.ref</span> <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_ref conv r</code> converts the value
@@ -266,11 +266,11 @@ S-expression.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_lazy_t"><a href=
 "#val-sexp_of_lazy_t" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_lazy_t : (<span class=
+"keyword">val</span> sexp_of_lazy_t : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> lazy_t
-<span>-&gt;</span> <a href=
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+lazy_t</span> <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_lazy_t conv l</code> converts the value
@@ -282,11 +282,11 @@ an S-expression.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_option"><a href=
 "#val-sexp_of_option" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_option : (<span class=
+"keyword">val</span> sexp_of_option : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> option
-<span>-&gt;</span> <a href=
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+option</span> <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_option conv opt</code> converts the value
@@ -298,15 +298,15 @@ an S-expression.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_pair"><a href=
 "#val-sexp_of_pair" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_pair : (<span class=
+"keyword">val</span> sexp_of_pair : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'b</span>
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'b</span>
 <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span> *
+<span class="type-var">'b</span>)</span> <span>-&gt;</span>
+<a href="../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_pair conv1 conv2 pair</code> converts a pair to an
 S-expression. It uses its first argument to convert the first
@@ -317,18 +317,18 @@ element of the pair.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_triple"><a href=
 "#val-sexp_of_triple" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_triple : (<span class=
+"keyword">val</span> sexp_of_triple : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'b</span>
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'b</span>
 <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'c</span>
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'c</span>
 <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
-"type-var">'b</span> * <span class="type-var">'c</span>)
-<span>-&gt;</span> <a href=
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span> *
+<span class="type-var">'b</span> * <span class=
+"type-var">'c</span>)</span> <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_triple conv1 conv2 conv3 triple</code> converts a
@@ -340,11 +340,11 @@ elements.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_list"><a href=
 "#val-sexp_of_list" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_list : (<span class=
+"keyword">val</span> sexp_of_list : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> list
-<span>-&gt;</span> <a href=
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+list</span> <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_list conv lst</code> converts the value
@@ -356,11 +356,11 @@ an S-expression.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_array"><a href=
 "#val-sexp_of_array" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_array : (<span class=
+"keyword">val</span> sexp_of_array : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> array
-<span>-&gt;</span> <a href=
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+array</span> <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_array conv ar</code> converts the value
@@ -372,15 +372,15 @@ an S-expression.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_hashtbl"><a href=
 "#val-sexp_of_hashtbl" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_hashtbl : (<span class=
+"keyword">val</span> sexp_of_hashtbl : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'b</span>
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'b</span>
 <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-Stdlib.Hashtbl.t <span>-&gt;</span> <a href=
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+Stdlib.Hashtbl.t</span> <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_hashtbl conv_key conv_value htbl</code> converts
@@ -406,9 +406,9 @@ provide converters, but the result cannot be interpreted.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_fun"><a href=
 "#val-sexp_of_fun" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_fun : (<span class=
+"keyword">val</span> sexp_of_fun : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <a href=
+"type-var">'b</span>)</span> <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a></code></dt>
 <dd>
 <p><code>sexp_of_fun f</code> converts the value <code>f</code> of
@@ -441,7 +441,8 @@ OCaml-value.</p>
 <dt class="spec value" id="val-record_check_extra_fields"><a href=
 "#val-record_check_extra_fields" class=
 "anchor"></a><code><span class="keyword">val</span>
-record_check_extra_fields : bool Stdlib.ref</code></dt>
+record_check_extra_fields : <span>bool
+Stdlib.ref</span></code></dt>
 <dd>
 <p><code>record_check_extra_fields</code> checks for extra (=
 unknown) fields in record S-expressions.</p>
@@ -594,13 +595,13 @@ unknown) fields in record S-expressions.</p>
 <dl>
 <dt class="spec value" id="val-ref_of_sexp"><a href=
 "#val-ref_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> ref_of_sexp : (<a href=
+"keyword">val</span> ref_of_sexp : <span>(<a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-Stdlib.ref</code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+Stdlib.ref</span></code></dt>
 <dd>
 <p><code>ref_of_sexp conv sexp</code> converts S-expression
 <code>sexp</code> to a value of type <code>'a ref</code> using
@@ -611,13 +612,13 @@ S-expression to a value of type <code>'a</code>.</p>
 <dl>
 <dt class="spec value" id="val-lazy_t_of_sexp"><a href=
 "#val-lazy_t_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> lazy_t_of_sexp : (<a href=
+"keyword">val</span> lazy_t_of_sexp : <span>(<a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-lazy_t</code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+lazy_t</span></code></dt>
 <dd>
 <p><code>lazy_t_of_sexp conv sexp</code> converts S-expression
 <code>sexp</code> to a value of type <code>'a lazy_t</code> using
@@ -628,13 +629,13 @@ S-expression to a value of type <code>'a</code>.</p>
 <dl>
 <dt class="spec value" id="val-option_of_sexp"><a href=
 "#val-option_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> option_of_sexp : (<a href=
+"keyword">val</span> option_of_sexp : <span>(<a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-option</code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+option</span></code></dt>
 <dd>
 <p><code>option_of_sexp conv sexp</code> converts S-expression
 <code>sexp</code> to a value of type <code>'a option</code> using
@@ -645,12 +646,12 @@ S-expression to a value of type <code>'a</code>.</p>
 <dl>
 <dt class="spec value" id="val-pair_of_sexp"><a href=
 "#val-pair_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> pair_of_sexp : (<a href=
+"keyword">val</span> pair_of_sexp : <span>(<a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> (<a href=
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<span>-&gt;</span> <span>(<a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'b</span>)
+<span>-&gt;</span> <span class="type-var">'b</span>)</span>
 <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> * <span class=
@@ -666,15 +667,15 @@ which convert S-expressions to values of type <code>'a</code> and
 <dl>
 <dt class="spec value" id="val-triple_of_sexp"><a href=
 "#val-triple_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> triple_of_sexp : (<a href=
+"keyword">val</span> triple_of_sexp : <span>(<a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> (<a href=
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<span>-&gt;</span> <span>(<a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'b</span>)
-<span>-&gt;</span> (<a href=
+<span>-&gt;</span> <span class="type-var">'b</span>)</span>
+<span>-&gt;</span> <span>(<a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'c</span>)
+<span>-&gt;</span> <span class="type-var">'c</span>)</span>
 <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
 <span>-&gt;</span> <span class="type-var">'a</span> * <span class=
@@ -691,13 +692,13 @@ and <code>'c</code> respectively.</p>
 <dl>
 <dt class="spec value" id="val-list_of_sexp"><a href=
 "#val-list_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> list_of_sexp : (<a href=
+"keyword">val</span> list_of_sexp : <span>(<a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-list</code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+list</span></code></dt>
 <dd>
 <p><code>list_of_sexp conv sexp</code> converts S-expression
 <code>sexp</code> to a value of type <code>'a list</code> using
@@ -708,13 +709,13 @@ S-expression to a value of type <code>'a</code>.</p>
 <dl>
 <dt class="spec value" id="val-array_of_sexp"><a href=
 "#val-array_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> array_of_sexp : (<a href=
+"keyword">val</span> array_of_sexp : <span>(<a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-array</code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+array</span></code></dt>
 <dd>
 <p><code>array_of_sexp conv sexp</code> converts S-expression
 <code>sexp</code> to a value of type <code>'a array</code> using
@@ -725,17 +726,17 @@ S-expression to a value of type <code>'a</code>.</p>
 <dl>
 <dt class="spec value" id="val-hashtbl_of_sexp"><a href=
 "#val-hashtbl_of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> hashtbl_of_sexp : (<a href=
+"keyword">val</span> hashtbl_of_sexp : <span>(<a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> (<a href=
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<span>-&gt;</span> <span>(<a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'b</span>)
+<span>-&gt;</span> <span class="type-var">'b</span>)</span>
 <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-Stdlib.Hashtbl.t</code></dt>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+Stdlib.Hashtbl.t</span></code></dt>
 <dd>
 <p><code>hashtbl_of_sexp conv_key conv_value sexp</code> converts
 S-expression <code>sexp</code> to a value of type <code>('a, 'b)
@@ -798,9 +799,9 @@ atomic S-expression.</p>
 <dt class="spec value" id="val-sexp_of_exn_opt"><a href=
 "#val-sexp_of_exn_opt" class="anchor"></a><code><span class=
 "keyword">val</span> sexp_of_exn_opt : exn <span>-&gt;</span>
-<a href=
+<span><a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Sexplib0.Sexp.t</a>
-option</code></dt>
+option</span></code></dt>
 <dd>
 <p><code>sexp_of_exn_opt exc</code> converts exception
 <code>exc</code> to <code>Some sexp</code>. If no suitable
@@ -826,18 +827,18 @@ Sexplib0.Sexp_conv.Exn_converter</a></code></div>
 <dt class="spec type" id="type-bigstring"><a href="#type-bigstring"
 class="anchor"></a><code><span class="keyword">type</span>
 bigstring</code> <code>=
-(char,&nbsp;Bigarray.int8_unsigned_elt,&nbsp;Bigarray.c_layout)
-Bigarray.Array1.t</code></dt>
+<span><span>(char,&nbsp;Bigarray.int8_unsigned_elt,&nbsp;Bigarray.c_layout)</span>
+Bigarray.Array1.t</span></code></dt>
 <dt class="spec type" id="type-float32_vec"><a href=
 "#type-float32_vec" class="anchor"></a><code><span class=
 "keyword">type</span> float32_vec</code> <code>=
-(float,&nbsp;Bigarray.float32_elt,&nbsp;Bigarray.fortran_layout)
-Bigarray.Array1.t</code></dt>
+<span><span>(float,&nbsp;Bigarray.float32_elt,&nbsp;Bigarray.fortran_layout)</span>
+Bigarray.Array1.t</span></code></dt>
 <dt class="spec type" id="type-float64_vec"><a href=
 "#type-float64_vec" class="anchor"></a><code><span class=
 "keyword">type</span> float64_vec</code> <code>=
-(float,&nbsp;Bigarray.float64_elt,&nbsp;Bigarray.fortran_layout)
-Bigarray.Array1.t</code></dt>
+<span><span>(float,&nbsp;Bigarray.float64_elt,&nbsp;Bigarray.fortran_layout)</span>
+Bigarray.Array1.t</span></code></dt>
 <dt class="spec type" id="type-vec"><a href="#type-vec" class=
 "anchor"></a><code><span class="keyword">type</span> vec</code>
 <code>= <a href=
@@ -845,13 +846,13 @@ Bigarray.Array1.t</code></dt>
 <dt class="spec type" id="type-float32_mat"><a href=
 "#type-float32_mat" class="anchor"></a><code><span class=
 "keyword">type</span> float32_mat</code> <code>=
-(float,&nbsp;Bigarray.float32_elt,&nbsp;Bigarray.fortran_layout)
-Bigarray.Array2.t</code></dt>
+<span><span>(float,&nbsp;Bigarray.float32_elt,&nbsp;Bigarray.fortran_layout)</span>
+Bigarray.Array2.t</span></code></dt>
 <dt class="spec type" id="type-float64_mat"><a href=
 "#type-float64_mat" class="anchor"></a><code><span class=
 "keyword">type</span> float64_mat</code> <code>=
-(float,&nbsp;Bigarray.float64_elt,&nbsp;Bigarray.fortran_layout)
-Bigarray.Array2.t</code></dt>
+<span><span>(float,&nbsp;Bigarray.float64_elt,&nbsp;Bigarray.fortran_layout)</span>
+Bigarray.Array2.t</span></code></dt>
 <dt class="spec type" id="type-mat"><a href="#type-mat" class=
 "anchor"></a><code><span class="keyword">type</span> mat</code>
 <code>= <a href=
@@ -948,9 +949,9 @@ Fortran-layout to an S-expression.</p>
 <dl>
 <dt class="spec value" id="val-string_of__of__sexp_of"><a href=
 "#val-string_of__of__sexp_of" class="anchor"></a><code><span class=
-"keyword">val</span> string_of__of__sexp_of : (<span class=
+"keyword">val</span> string_of__of__sexp_of : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../Sexp/index.html#type-t">Sexp.t</a>) <span>-&gt;</span>
+"../Sexp/index.html#type-t">Sexp.t</a>)</span> <span>-&gt;</span>
 <span class="type-var">'a</span> <span>-&gt;</span>
 string</code></dt>
 <dd>
@@ -1051,9 +1052,9 @@ Fortran-layout.</p>
 <dl>
 <dt class="spec value" id="val-of_string__of__of_sexp"><a href=
 "#val-of_string__of__of_sexp" class="anchor"></a><code><span class=
-"keyword">val</span> of_string__of__of_sexp : (<a href=
+"keyword">val</span> of_string__of__of_sexp : <span>(<a href=
 "../Sexp/index.html#type-t">Sexp.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span>) <span>-&gt;</span> string
+<span class="type-var">'a</span>)</span> <span>-&gt;</span> string
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dd>
 <p><code>of_string__of__of_sexp conv str</code> converts the

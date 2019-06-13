@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Indexed_container (base.Base.Indexed_container)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -41,24 +40,26 @@ x -&gt; f i x; i + 1))</code>.</p>
 <dl>
 <dt class="spec value" id="val-foldi"><a href="#val-foldi" class=
 "anchor"></a><code><span class="keyword">val</span> foldi :
-fold:(<span class="type-var">'t</span>,&nbsp;<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'accum</span>)
-<a href=
-"../../Base__/Indexed_container_intf/index.html#type-fold">Base__.Indexed_container_intf.fold</a>
-<span>-&gt;</span> (<span class=
+<span>fold:<span><span>(<span class=
 "type-var">'t</span>,&nbsp;<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'accum</span>)
-<a href=
-"../../Base__/Indexed_container_intf/index.html#type-foldi">Base__.Indexed_container_intf.foldi</a></code></dt>
+"type-var">'a</span>,&nbsp;<span class=
+"type-var">'accum</span>)</span> <a href=
+"../../Base__/Indexed_container_intf/index.html#type-fold">Base__.Indexed_container_intf.fold</a></span></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'t</span>,&nbsp;<span class=
+"type-var">'a</span>,&nbsp;<span class=
+"type-var">'accum</span>)</span> <a href=
+"../../Base__/Indexed_container_intf/index.html#type-foldi">Base__.Indexed_container_intf.foldi</a></span></code></dt>
 <dt class="spec value" id="val-iteri"><a href="#val-iteri" class=
 "anchor"></a><code><span class="keyword">val</span> iteri :
-fold:(<span class="type-var">'t</span>,&nbsp;<span class=
-"type-var">'a</span>,&nbsp;int) <a href=
-"../../Base__/Indexed_container_intf/index.html#type-fold">Base__.Indexed_container_intf.fold</a>
-<span>-&gt;</span> (<span class=
-"type-var">'t</span>,&nbsp;<span class="type-var">'a</span>)
+<span>fold:<span><span>(<span class=
+"type-var">'t</span>,&nbsp;<span class=
+"type-var">'a</span>,&nbsp;int)</span> <a href=
+"../../Base__/Indexed_container_intf/index.html#type-fold">Base__.Indexed_container_intf.fold</a></span></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'t</span>,&nbsp;<span class="type-var">'a</span>)</span>
 <a href=
-"../../Base__/Indexed_container_intf/index.html#type-iteri">Base__.Indexed_container_intf.iteri</a></code></dt>
+"../../Base__/Indexed_container_intf/index.html#type-iteri">Base__.Indexed_container_intf.iteri</a></span></code></dt>
 </dl>
 <aside>
 <p>Generic definitions of indexed container operations in terms of
@@ -67,13 +68,14 @@ fold:(<span class="type-var">'t</span>,&nbsp;<span class=
 <dl>
 <dt class="spec value" id="val-counti"><a href="#val-counti" class=
 "anchor"></a><code><span class="keyword">val</span> counti :
-foldi:(<span class="type-var">'t</span>,&nbsp;<span class=
-"type-var">'a</span>,&nbsp;int) <a href=
-"../../Base__/Indexed_container_intf/index.html#type-foldi">Base__.Indexed_container_intf.foldi</a>
+<span>foldi:<span><span>(<span class=
+"type-var">'t</span>,&nbsp;<span class=
+"type-var">'a</span>,&nbsp;int)</span> <a href=
+"../../Base__/Indexed_container_intf/index.html#type-foldi">Base__.Indexed_container_intf.foldi</a></span></span>
 <span>-&gt;</span> <span class="type-var">'t</span>
-<span>-&gt;</span> f:(int <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> bool) <span>-&gt;</span>
-int</code></dt>
+<span>-&gt;</span> <span>f:<span>(int <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span>
+bool)</span></span> <span>-&gt;</span> int</code></dt>
 </dl>
 <aside>
 <p>Generic definitions of indexed container operations in terms of
@@ -82,41 +84,47 @@ int</code></dt>
 <dl>
 <dt class="spec value" id="val-existsi"><a href="#val-existsi"
 class="anchor"></a><code><span class="keyword">val</span> existsi :
-iteri:(<span class="type-var">'t</span>,&nbsp;<span class=
-"type-var">'a</span>) <a href=
-"../../Base__/Indexed_container_intf/index.html#type-iteri">Base__.Indexed_container_intf.iteri</a>
+<span>iteri:<span><span>(<span class=
+"type-var">'t</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href=
+"../../Base__/Indexed_container_intf/index.html#type-iteri">Base__.Indexed_container_intf.iteri</a></span></span>
 <span>-&gt;</span> <span class="type-var">'t</span>
-<span>-&gt;</span> f:(int <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> bool) <span>-&gt;</span>
-bool</code></dt>
+<span>-&gt;</span> <span>f:<span>(int <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span>
+bool)</span></span> <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-for_alli"><a href="#val-for_alli"
 class="anchor"></a><code><span class="keyword">val</span> for_alli
-: iteri:(<span class="type-var">'t</span>,&nbsp;<span class=
-"type-var">'a</span>) <a href=
-"../../Base__/Indexed_container_intf/index.html#type-iteri">Base__.Indexed_container_intf.iteri</a>
+: <span>iteri:<span><span>(<span class=
+"type-var">'t</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href=
+"../../Base__/Indexed_container_intf/index.html#type-iteri">Base__.Indexed_container_intf.iteri</a></span></span>
 <span>-&gt;</span> <span class="type-var">'t</span>
-<span>-&gt;</span> f:(int <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> bool) <span>-&gt;</span>
-bool</code></dt>
+<span>-&gt;</span> <span>f:<span>(int <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span>
+bool)</span></span> <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-findi"><a href="#val-findi" class=
 "anchor"></a><code><span class="keyword">val</span> findi :
-iteri:(<span class="type-var">'t</span>,&nbsp;<span class=
-"type-var">'a</span>) <a href=
-"../../Base__/Indexed_container_intf/index.html#type-iteri">Base__.Indexed_container_intf.iteri</a>
+<span>iteri:<span><span>(<span class=
+"type-var">'t</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href=
+"../../Base__/Indexed_container_intf/index.html#type-iteri">Base__.Indexed_container_intf.iteri</a></span></span>
 <span>-&gt;</span> <span class="type-var">'t</span>
-<span>-&gt;</span> f:(int <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> bool) <span>-&gt;</span>
-(int * <span class="type-var">'a</span>) option</code></dt>
+<span>-&gt;</span> <span>f:<span>(int <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span>
+bool)</span></span> <span>-&gt;</span> <span><span>(int *
+<span class="type-var">'a</span>)</span> option</span></code></dt>
 <dt class="spec value" id="val-find_mapi"><a href="#val-find_mapi"
 class="anchor"></a><code><span class="keyword">val</span> find_mapi
-: iteri:(<span class="type-var">'t</span>,&nbsp;<span class=
-"type-var">'a</span>) <a href=
-"../../Base__/Indexed_container_intf/index.html#type-iteri">Base__.Indexed_container_intf.iteri</a>
+: <span>iteri:<span><span>(<span class=
+"type-var">'t</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href=
+"../../Base__/Indexed_container_intf/index.html#type-iteri">Base__.Indexed_container_intf.iteri</a></span></span>
 <span>-&gt;</span> <span class="type-var">'t</span>
-<span>-&gt;</span> f:(int <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span> option) <span>-&gt;</span> <span class=
-"type-var">'b</span> option</code></dt>
+<span>-&gt;</span> <span>f:<span>(int <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> option</span>)</span></span>
+<span>-&gt;</span> <span><span class="type-var">'b</span>
+option</span></code></dt>
 </dl>
 <div class="spec module" id="module-Make"><a href="#module-Make"
 class="anchor"></a><code><span class="keyword">module</span>
@@ -126,9 +134,10 @@ class="anchor"></a><code><span class="keyword">module</span>
 "../../Base__/Indexed_container_intf/index.html#module-type-Make_arg">
 Base__.Indexed_container_intf.Make_arg</a>) <span>-&gt;</span>
 <a href="index.html#module-type-S1">S1</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
-"Make/index.html#type-t">t</a> := <span class="type-var">'a</span>
-<a href="Make/argument-1-T/index.html#type-t">T.t</a></code></div>
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href="Make/index.html#type-t">t</a></span> := <span><span class=
+"type-var">'a</span> <a href=
+"Make/argument-1-T/index.html#type-t">T.t</a></span></code></div>
 </div>
 </div>
 </div>

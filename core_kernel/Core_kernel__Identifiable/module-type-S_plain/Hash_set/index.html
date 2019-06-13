@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Hash_set
 (core_kernel.Core_kernel__Identifiable.S_plain.Hash_set)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -31,12 +30,12 @@ hljs.initHighlightingOnLoad();
 "anchor"></a><code><span class="keyword">type</span> elt</code>
 <code>= <a href="../index.html#type-t">t</a></code></dt>
 <dt class="spec type" id="type-hash_set"><a href="#type-hash_set"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-hash_set</code></dt>
+class="anchor"></a><code><span class="keyword">type</span> <span>'a
+hash_set</span></code></dt>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span> t</code>
-<code>= <a href="index.html#type-elt">elt</a> <a href=
-"index.html#type-hash_set">hash_set</a></code></dt>
+<code>= <span><a href="index.html#type-elt">elt</a> <a href=
+"index.html#type-hash_set">hash_set</a></span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -57,11 +56,13 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 </div>
 <dl>
 <dt class="spec type" id="type-t_"><a href="#type-t_" class=
-"anchor"></a><code><span class="keyword">type</span> 'a t_</code>
-<code>= <a href="index.html#type-t">t</a></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t_</span></code> <code>= <a href=
+"index.html#type-t">t</a></code></dt>
 <dt class="spec type" id="type-elt_"><a href="#type-elt_" class=
-"anchor"></a><code><span class="keyword">type</span> 'a elt_</code>
-<code>= <a href="index.html#type-elt">elt</a></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+elt_</span></code> <code>= <a href=
+"index.html#type-elt">elt</a></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -71,46 +72,52 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 "keyword">include</span> <a href=
 "../../../Core_kernel__/Hash_set_intf/index.html#module-type-Creators_generic">
 Core_kernel__.Hash_set_intf.Creators_generic</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href=
 "../../../Core_kernel__/Hash_set_intf/module-type-Creators_generic/index.html#type-t">
-t</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-t_">t_</a> <span class="keyword">with</span>
-<span class="keyword">type</span> 'a <a href=
+t</a></span> := <span><span class="type-var">'a</span> <a href=
+"index.html#type-t_">t_</a></span> <span class=
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href=
 "../../../Core_kernel__/Hash_set_intf/module-type-Creators_generic/index.html#type-elt">
-elt</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-elt_">elt_</a> <span class="keyword">with</span>
-<span class="keyword">type</span> ('a, 'z) <a href=
+elt</a></span> := <span><span class="type-var">'a</span> <a href=
+"index.html#type-elt_">elt_</a></span> <span class=
+"keyword">with</span> <span class="keyword">type</span> <span>('a,
+'z) <a href=
 "../../../Core_kernel__/Hash_set_intf/module-type-Creators_generic/index.html#type-create_options">
-create_options</a> := (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'z</span>)
+create_options</a></span> := <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'z</span>)</span>
 <a href=
 "../../../Core_kernel__/Hash_set_intf/index.html#type-create_options_without_first_class_module">
-Core_kernel__.Hash_set_intf.create_options_without_first_class_module</a></code></span></summary>
+Core_kernel__.Hash_set_intf.create_options_without_first_class_module</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 <dt class="spec type" id="type-elt"><a href="#type-elt" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-elt</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+elt</span></code></dt>
 <dt class="spec type" id="type-create_options"><a href=
 "#type-create_options" class="anchor"></a><code><span class=
-"keyword">type</span> ('a, 'z) create_options</code></dt>
+"keyword">type</span> <span>('a, 'z)
+create_options</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-(<span class="type-var">'a</span>,&nbsp;unit <span>-&gt;</span>
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>)
-<a href=
-"index.html#type-create_options">create_options</a></code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;unit
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span>)</span> <a href=
+"index.html#type-create_options">create_options</a></span></code></dt>
 <dt class="spec value" id="val-of_list"><a href="#val-of_list"
 class="anchor"></a><code><span class="keyword">val</span> of_list :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'a</span> <a href="index.html#type-elt">elt</a> list
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a>) <a href=
-"index.html#type-create_options">create_options</a></code></dt>
+<span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span><span><span class=
+"type-var">'a</span> <a href="index.html#type-elt">elt</a></span>
+list</span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> <a href=
+"index.html#type-t">t</a></span>)</span> <a href=
+"index.html#type-create_options">create_options</a></span></code></dt>
 </dl>
 </details>
 </div>

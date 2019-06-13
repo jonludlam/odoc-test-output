@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>String
 (bin_prot.Bin_shape_lib__Core_fragment.String)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -57,44 +56,48 @@ int <span>-&gt;</span> bytes</code></dt>
 <span>-&gt;</span> char <span>-&gt;</span> string</code></dt>
 <dt class="spec value" id="val-init"><a href="#val-init" class=
 "anchor"></a><code><span class="keyword">val</span> init : int
-<span>-&gt;</span> f:(int <span>-&gt;</span> char)
-<span>-&gt;</span> string</code></dt>
+<span>-&gt;</span> <span>f:<span>(int <span>-&gt;</span>
+char)</span></span> <span>-&gt;</span> string</code></dt>
 <dt class="spec value" id="val-copy"><a href="#val-copy" class=
 "anchor"></a><code><span class="keyword">val</span> copy : string
 <span>-&gt;</span> string</code></dt>
 <dt class="spec value" id="val-sub"><a href="#val-sub" class=
 "anchor"></a><code><span class="keyword">val</span> sub : string
-<span>-&gt;</span> pos:int <span>-&gt;</span> len:int
-<span>-&gt;</span> string</code></dt>
+<span>-&gt;</span> <span>pos:int</span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> string</code></dt>
 <dt class="spec value" id="val-fill"><a href="#val-fill" class=
 "anchor"></a><code><span class="keyword">val</span> fill : bytes
-<span>-&gt;</span> pos:int <span>-&gt;</span> len:int
-<span>-&gt;</span> char <span>-&gt;</span> unit</code></dt>
+<span>-&gt;</span> <span>pos:int</span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> char <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec value" id="val-blit"><a href="#val-blit" class=
 "anchor"></a><code><span class="keyword">val</span> blit :
-src:string <span>-&gt;</span> src_pos:int <span>-&gt;</span>
-dst:bytes <span>-&gt;</span> dst_pos:int <span>-&gt;</span> len:int
+<span>src:string</span> <span>-&gt;</span> <span>src_pos:int</span>
+<span>-&gt;</span> <span>dst:bytes</span> <span>-&gt;</span>
+<span>dst_pos:int</span> <span>-&gt;</span> <span>len:int</span>
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-concat"><a href="#val-concat" class=
 "anchor"></a><code><span class="keyword">val</span> concat :
-sep:string <span>-&gt;</span> string list <span>-&gt;</span>
-string</code></dt>
-<dt class="spec value" id="val-iter"><a href="#val-iter" class=
-"anchor"></a><code><span class="keyword">val</span> iter : f:(char
-<span>-&gt;</span> unit) <span>-&gt;</span> string
-<span>-&gt;</span> unit</code></dt>
-<dt class="spec value" id="val-iteri"><a href="#val-iteri" class=
-"anchor"></a><code><span class="keyword">val</span> iteri : f:(int
-<span>-&gt;</span> char <span>-&gt;</span> unit) <span>-&gt;</span>
-string <span>-&gt;</span> unit</code></dt>
-<dt class="spec value" id="val-map"><a href="#val-map" class=
-"anchor"></a><code><span class="keyword">val</span> map : f:(char
-<span>-&gt;</span> char) <span>-&gt;</span> string
+<span>sep:string</span> <span>-&gt;</span> <span>string list</span>
 <span>-&gt;</span> string</code></dt>
+<dt class="spec value" id="val-iter"><a href="#val-iter" class=
+"anchor"></a><code><span class="keyword">val</span> iter :
+<span>f:<span>(char <span>-&gt;</span> unit)</span></span>
+<span>-&gt;</span> string <span>-&gt;</span> unit</code></dt>
+<dt class="spec value" id="val-iteri"><a href="#val-iteri" class=
+"anchor"></a><code><span class="keyword">val</span> iteri :
+<span>f:<span>(int <span>-&gt;</span> char <span>-&gt;</span>
+unit)</span></span> <span>-&gt;</span> string <span>-&gt;</span>
+unit</code></dt>
+<dt class="spec value" id="val-map"><a href="#val-map" class=
+"anchor"></a><code><span class="keyword">val</span> map :
+<span>f:<span>(char <span>-&gt;</span> char)</span></span>
+<span>-&gt;</span> string <span>-&gt;</span> string</code></dt>
 <dt class="spec value" id="val-mapi"><a href="#val-mapi" class=
-"anchor"></a><code><span class="keyword">val</span> mapi : f:(int
-<span>-&gt;</span> char <span>-&gt;</span> char) <span>-&gt;</span>
-string <span>-&gt;</span> string</code></dt>
+"anchor"></a><code><span class="keyword">val</span> mapi :
+<span>f:<span>(int <span>-&gt;</span> char <span>-&gt;</span>
+char)</span></span> <span>-&gt;</span> string <span>-&gt;</span>
+string</code></dt>
 <dt class="spec value" id="val-trim"><a href="#val-trim" class=
 "anchor"></a><code><span class="keyword">val</span> trim : string
 <span>-&gt;</span> string</code></dt>
@@ -106,15 +109,15 @@ string <span>-&gt;</span> string</code></dt>
 <span>-&gt;</span> char <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-index_opt"><a href="#val-index_opt"
 class="anchor"></a><code><span class="keyword">val</span> index_opt
-: string <span>-&gt;</span> char <span>-&gt;</span> int
-option</code></dt>
+: string <span>-&gt;</span> char <span>-&gt;</span> <span>int
+option</span></code></dt>
 <dt class="spec value" id="val-rindex"><a href="#val-rindex" class=
 "anchor"></a><code><span class="keyword">val</span> rindex : string
 <span>-&gt;</span> char <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-rindex_opt"><a href=
 "#val-rindex_opt" class="anchor"></a><code><span class=
 "keyword">val</span> rindex_opt : string <span>-&gt;</span> char
-<span>-&gt;</span> int option</code></dt>
+<span>-&gt;</span> <span>int option</span></code></dt>
 <dt class="spec value" id="val-index_from"><a href=
 "#val-index_from" class="anchor"></a><code><span class=
 "keyword">val</span> index_from : string <span>-&gt;</span> int
@@ -122,7 +125,8 @@ option</code></dt>
 <dt class="spec value" id="val-index_from_opt"><a href=
 "#val-index_from_opt" class="anchor"></a><code><span class=
 "keyword">val</span> index_from_opt : string <span>-&gt;</span> int
-<span>-&gt;</span> char <span>-&gt;</span> int option</code></dt>
+<span>-&gt;</span> char <span>-&gt;</span> <span>int
+option</span></code></dt>
 <dt class="spec value" id="val-rindex_from"><a href=
 "#val-rindex_from" class="anchor"></a><code><span class=
 "keyword">val</span> rindex_from : string <span>-&gt;</span> int
@@ -130,8 +134,8 @@ option</code></dt>
 <dt class="spec value" id="val-rindex_from_opt"><a href=
 "#val-rindex_from_opt" class="anchor"></a><code><span class=
 "keyword">val</span> rindex_from_opt : string <span>-&gt;</span>
-int <span>-&gt;</span> char <span>-&gt;</span> int
-option</code></dt>
+int <span>-&gt;</span> char <span>-&gt;</span> <span>int
+option</span></code></dt>
 <dt class="spec value" id="val-contains"><a href="#val-contains"
 class="anchor"></a><code><span class="keyword">val</span> contains
 : string <span>-&gt;</span> char <span>-&gt;</span>
@@ -191,19 +195,20 @@ class="anchor"></a><code><span class="keyword">val</span> compare :
 "index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
 <dt class="spec value" id="val-split_on_char"><a href=
 "#val-split_on_char" class="anchor"></a><code><span class=
-"keyword">val</span> split_on_char : sep:char <span>-&gt;</span>
-string <span>-&gt;</span> string list</code></dt>
+"keyword">val</span> split_on_char : <span>sep:char</span>
+<span>-&gt;</span> string <span>-&gt;</span> <span>string
+list</span></code></dt>
 <dt class="spec value" id="val-to_seq"><a href="#val-to_seq" class=
 "anchor"></a><code><span class="keyword">val</span> to_seq :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> char
-Stdlib.Seq.t</code></dt>
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <span>char
+Stdlib.Seq.t</span></code></dt>
 <dt class="spec value" id="val-to_seqi"><a href="#val-to_seqi"
 class="anchor"></a><code><span class="keyword">val</span> to_seqi :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> (int * char)
-Stdlib.Seq.t</code></dt>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><span>(int * char)</span> Stdlib.Seq.t</span></code></dt>
 <dt class="spec value" id="val-of_seq"><a href="#val-of_seq" class=
-"anchor"></a><code><span class="keyword">val</span> of_seq : char
-Stdlib.Seq.t <span>-&gt;</span> <a href=
+"anchor"></a><code><span class="keyword">val</span> of_seq :
+<span>char Stdlib.Seq.t</span> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 </dl>
 <dl>
@@ -217,15 +222,16 @@ Stdlib.Seq.t <span>-&gt;</span> <a href=
 <span>-&gt;</span> char <span>-&gt;</span> unit</code></dt>
 <dt class="spec external" id="val-unsafe_blit"><a href=
 "#val-unsafe_blit" class="anchor"></a><code><span class=
-"keyword">val</span> unsafe_blit : src:string <span>-&gt;</span>
-src_pos:int <span>-&gt;</span> dst:bytes <span>-&gt;</span>
-dst_pos:int <span>-&gt;</span> len:int <span>-&gt;</span>
+"keyword">val</span> unsafe_blit : <span>src:string</span>
+<span>-&gt;</span> <span>src_pos:int</span> <span>-&gt;</span>
+<span>dst:bytes</span> <span>-&gt;</span> <span>dst_pos:int</span>
+<span>-&gt;</span> <span>len:int</span> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec external" id="val-unsafe_fill"><a href=
 "#val-unsafe_fill" class="anchor"></a><code><span class=
-"keyword">val</span> unsafe_fill : bytes <span>-&gt;</span> pos:int
-<span>-&gt;</span> len:int <span>-&gt;</span> char
-<span>-&gt;</span> unit</code></dt>
+"keyword">val</span> unsafe_fill : bytes <span>-&gt;</span>
+<span>pos:int</span> <span>-&gt;</span> <span>len:int</span>
+<span>-&gt;</span> char <span>-&gt;</span> unit</code></dt>
 </dl>
 </details>
 </div>

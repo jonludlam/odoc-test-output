@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Benchmark_accumulator
 (ppx_bench.Ppx_bench_lib.Benchmark_accumulator)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -61,8 +60,9 @@ should be added to the hashtable</p>
 <dl>
 <dt class="spec value" id="val-lookup_lib"><a href=
 "#val-lookup_lib" class="anchor"></a><code><span class=
-"keyword">val</span> lookup_lib : libname:string <span>-&gt;</span>
-<a href="Entry/index.html#type-t">Entry.t</a> list</code></dt>
+"keyword">val</span> lookup_lib : <span>libname:string</span>
+<span>-&gt;</span> <span><a href=
+"Entry/index.html#type-t">Entry.t</a> list</span></code></dt>
 <dd>
 <p><code>lookup_lib</code> returns all the benchmarks from the
 specified library</p>
@@ -71,11 +71,13 @@ specified library</p>
 <dl>
 <dt class="spec value" id="val-add_bench"><a href="#val-add_bench"
 class="anchor"></a><code><span class="keyword">val</span> add_bench
-: name:string <span>-&gt;</span> code:string <span>-&gt;</span>
-filename:string <span>-&gt;</span> type_conv_path:string
-<span>-&gt;</span> line:int <span>-&gt;</span> startpos:int
-<span>-&gt;</span> endpos:int <span>-&gt;</span> <a href=
-"Entry/index.html#type-test_spec">Entry.test_spec</a>
+: <span>name:string</span> <span>-&gt;</span>
+<span>code:string</span> <span>-&gt;</span>
+<span>filename:string</span> <span>-&gt;</span>
+<span>type_conv_path:string</span> <span>-&gt;</span>
+<span>line:int</span> <span>-&gt;</span> <span>startpos:int</span>
+<span>-&gt;</span> <span>endpos:int</span> <span>-&gt;</span>
+<a href="Entry/index.html#type-test_spec">Entry.test_spec</a>
 <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>add_bench</code> registers benchmarks with the global
@@ -87,12 +89,14 @@ macros</p>
 <dl>
 <dt class="spec value" id="val-add_bench_module"><a href=
 "#val-add_bench_module" class="anchor"></a><code><span class=
-"keyword">val</span> add_bench_module : name:string
-<span>-&gt;</span> code:string <span>-&gt;</span>
-type_conv_path:string <span>-&gt;</span> filename:string
-<span>-&gt;</span> line:int <span>-&gt;</span> startpos:int
-<span>-&gt;</span> endpos:int <span>-&gt;</span> (unit
-<span>-&gt;</span> unit) <span>-&gt;</span> unit</code></dt>
+"keyword">val</span> add_bench_module : <span>name:string</span>
+<span>-&gt;</span> <span>code:string</span> <span>-&gt;</span>
+<span>type_conv_path:string</span> <span>-&gt;</span>
+<span>filename:string</span> <span>-&gt;</span>
+<span>line:int</span> <span>-&gt;</span> <span>startpos:int</span>
+<span>-&gt;</span> <span>endpos:int</span> <span>-&gt;</span>
+<span>(unit <span>-&gt;</span> unit)</span> <span>-&gt;</span>
+unit</code></dt>
 <dd>
 <p><code>add_bench_module</code> adds a bench module name to the
 benchmarks. This is called by BENCH_MODULE macro</p>

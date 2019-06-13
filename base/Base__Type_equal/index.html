@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Base__Type_equal (base.Base__Type_equal)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -59,16 +58,16 @@ compiler could, in principle, not pass around values of type
 </header>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'b)
-t</code> <code>=</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>('a, 'b)
+t</span></code> <code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-t.T" class="anchored">
 <td class="def constructor"><a href="#type-t.T" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">T</span> : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-t">t</a></code></td>
+"constructor">T</span> : <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-t">t</a></span></code></td>
 </tr>
 </table>
 </dd>
@@ -83,15 +82,15 @@ t</code> <code>=</code></dt>
 <dl>
 <dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
 class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
-: (<span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../Base/Sexp/index.html#type-t">Base.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'b</span>
+: <span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<a href="../Base/Sexp/index.html#type-t">Base.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'b</span>
 <span>-&gt;</span> <a href=
-"../Base/Sexp/index.html#type-t">Base.Sexp.t</a>)
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../Base/Sexp/index.html#type-t">Base.Sexp.t</a></code></dt>
+"../Base/Sexp/index.html#type-t">Base.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../Base/Sexp/index.html#type-t">Base.Sexp.t</a></code></dt>
 </dl>
 </details>
 </div>
@@ -99,10 +98,10 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 </div>
 <dl>
 <dt class="spec type" id="type-equal"><a href="#type-equal" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'b)
-equal</code> <code>= (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>('a, 'b)
+equal</span></code> <code>= <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>just an alias, needed when <code>t</code> gets shadowed
 below</p>
@@ -116,30 +115,35 @@ transitive.</p>
 <dl>
 <dt class="spec value" id="val-refl"><a href="#val-refl" class=
 "anchor"></a><code><span class="keyword">val</span> refl :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'a</span>) <a href="index.html#type-t">t</a></code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'a</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-sym"><a href="#val-sym" class=
 "anchor"></a><code><span class="keyword">val</span> sym :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'b</span>,&nbsp;<span class=
+"type-var">'a</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-trans"><a href="#val-trans" class=
 "anchor"></a><code><span class="keyword">val</span> trans :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'b</span>,&nbsp;<span class=
+"type-var">'c</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'c</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-conv"><a href="#val-conv" class=
 "anchor"></a><code><span class="keyword">val</span> conv :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'b</span></code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <span class=
+"type-var">'b</span></code></dt>
 <dd>
 <p><code>conv t x</code> uses the type equality <code>t : (a, b)
 t</code> as evidence to safely cast <code>x</code> from type
@@ -205,25 +209,28 @@ equality on a 2-tuple and its components.</p>
 <dl>
 <dt class="spec value" id="val-detuple2"><a href="#val-detuple2"
 class="anchor"></a><code><span class="keyword">val</span> detuple2
-: (<span class="type-var">'a1</span> * <span class=
+: <span><span>(<span class="type-var">'a1</span> * <span class=
 "type-var">'a2</span>,&nbsp;<span class="type-var">'b1</span> *
-<span class="type-var">'b2</span>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a1</span>,&nbsp;<span class="type-var">'b1</span>)
-<a href="index.html#type-t">t</a> * (<span class=
-"type-var">'a2</span>,&nbsp;<span class="type-var">'b2</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span class="type-var">'b2</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a1</span>,&nbsp;<span class=
+"type-var">'b1</span>)</span> <a href=
+"index.html#type-t">t</a></span> * <span><span>(<span class=
+"type-var">'a2</span>,&nbsp;<span class=
+"type-var">'b2</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-tuple2"><a href="#val-tuple2" class=
 "anchor"></a><code><span class="keyword">val</span> tuple2 :
-(<span class="type-var">'a1</span>,&nbsp;<span class=
-"type-var">'b1</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class=
-"type-var">'a2</span>,&nbsp;<span class="type-var">'b2</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a1</span> * <span class=
+<span><span>(<span class="type-var">'a1</span>,&nbsp;<span class=
+"type-var">'b1</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a2</span>,&nbsp;<span class=
+"type-var">'b2</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a1</span> * <span class=
 "type-var">'a2</span>,&nbsp;<span class="type-var">'b1</span> *
-<span class="type-var">'b2</span>) <a href=
-"index.html#type-t">t</a></code></dt>
+<span class="type-var">'b2</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec module-type" id="module-type-Injective"><a href=
@@ -264,13 +271,14 @@ in both type arguments.</p>
 : <a href="index.html#module-type-Injective">Injective</a>)
 <span>-&gt;</span> <a href=
 "index.html#module-type-Injective">Injective</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
-"Composition_preserves_injectivity/index.html#type-t">t</a> =
-<span class="type-var">'a</span> <a href=
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href=
+"Composition_preserves_injectivity/index.html#type-t">t</a></span>
+= <span><span><span class="type-var">'a</span> <a href=
 "Composition_preserves_injectivity/argument-1-M1/index.html#type-t">
-M1.t</a> <a href=
+M1.t</a></span> <a href=
 "Composition_preserves_injectivity/argument-2-M2/index.html#type-t">
-M2.t</a></code></dt>
+M2.t</a></span></code></dt>
 <dd>
 <p><code>Composition_preserves_injectivity</code> is a functor that
 proves that composition of injective types is injective.</p>

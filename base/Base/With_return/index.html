@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>With_return (base.Base.With_return)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -60,9 +59,9 @@ namespace of record fields but that is much more acceptable.</p>
 </header>
 <dl>
 <dt class="spec type" id="type-return"><a href="#type-return"
-class="anchor"></a><code><span class="keyword">type</span> -'a
-return</code> <code>= <span class="keyword">private</span></code>
-<code>{</code></dt>
+class="anchor"></a><code><span class="keyword">type</span>
+<span>-'a return</span></code> <code>= <span class=
+"keyword">private</span></code> <code>{</code></dt>
 <dd>
 <table class="record">
 <tr id="type-return.return" class="anchored">
@@ -76,16 +75,18 @@ return</code> <code>= <span class="keyword">private</span></code>
 <dl>
 <dt class="spec value" id="val-with_return"><a href=
 "#val-with_return" class="anchor"></a><code><span class=
-"keyword">val</span> with_return : (<span class=
-"type-var">'a</span> <a href="index.html#type-return">return</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
+"keyword">val</span> with_return : <span>(<span><span class=
+"type-var">'a</span> <a href=
+"index.html#type-return">return</a></span> <span>-&gt;</span>
+<span class="type-var">'a</span>)</span> <span>-&gt;</span>
+<span class="type-var">'a</span></code></dt>
 <dt class="spec value" id="val-with_return_option"><a href=
 "#val-with_return_option" class="anchor"></a><code><span class=
-"keyword">val</span> with_return_option : (<span class=
-"type-var">'a</span> <a href="index.html#type-return">return</a>
-<span>-&gt;</span> unit) <span>-&gt;</span> <span class=
-"type-var">'a</span> option</code></dt>
+"keyword">val</span> with_return_option : <span>(<span><span class=
+"type-var">'a</span> <a href=
+"index.html#type-return">return</a></span> <span>-&gt;</span>
+unit)</span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> option</span></code></dt>
 <dd>
 <p>Note that <code>with_return_option</code> allocates ~5 words
 more than the equivalent <code>with_return</code> call.</p>
@@ -94,12 +95,12 @@ more than the equivalent <code>with_return</code> call.</p>
 <dl>
 <dt class="spec value" id="val-prepend"><a href="#val-prepend"
 class="anchor"></a><code><span class="keyword">val</span> prepend :
-<span class="type-var">'a</span> <a href=
-"index.html#type-return">return</a> <span>-&gt;</span>
-f:(<span class="type-var">'b</span> <span>-&gt;</span> <span class=
-"type-var">'a</span>) <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href=
-"index.html#type-return">return</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-return">return</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'b</span> <span>-&gt;</span>
+<span class="type-var">'a</span>)</span></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-return">return</a></span></code></dt>
 <dd>
 <p><code>prepend a ~f</code> returns a value <code>x</code> such
 that each call to <code>x.return</code> first applies

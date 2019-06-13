@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Ppxlib__Extension (ppxlib.Ppxlib__Extension)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -25,23 +24,23 @@ hljs.initHighlightingOnLoad();
 </header>
 <dl>
 <dt class="spec type" id="type-equality"><a href="#type-equality"
-class="anchor"></a><code><span class="keyword">type</span> (_, _)
-equality</code> <code>=</code></dt>
+class="anchor"></a><code><span class="keyword">type</span>
+<span>(_, _) equality</span></code> <code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-equality.Eq" class="anchored">
 <td class="def constructor"><a href="#type-equality.Eq" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Eq</span> : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-equality">equality</a></code></td>
+"constructor">Eq</span> : <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-equality">equality</a></span></code></td>
 </tr>
 <tr id="type-equality.Ne" class="anchored">
 <td class="def constructor"><a href="#type-equality.Ne" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Ne</span> : (<span class=
-"type-var">_</span>,&nbsp;<span class="type-var">_</span>) <a href=
-"index.html#type-equality">equality</a></code></td>
+"constructor">Ne</span> : <span><span>(<span class=
+"type-var">_</span>,&nbsp;<span class="type-var">_</span>)</span>
+<a href="index.html#type-equality">equality</a></span></code></td>
 </tr>
 </table>
 </dd>
@@ -63,17 +62,17 @@ equality</code> <code>=</code></dt>
 class="anchor"></a><code><span class="keyword">val</span> declare :
 <a href=
 "../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> <span class="type-var">'context</span> <a href=
-"Context/index.html#type-t">Context.t</a> <span>-&gt;</span>
-(<a href=
-"../Ppxlib__/Import/index.html#type-payload">Ppxlib__.Import.payload</a>,&nbsp;<span class="type-var">'a</span>,&nbsp;<span class="type-var">'context</span>)
+<span>-&gt;</span> <span><span class="type-var">'context</span>
+<a href="Context/index.html#type-t">Context.t</a></span>
+<span>-&gt;</span> <span><span>(<a href=
+"../Ppxlib__/Import/index.html#type-payload">Ppxlib__.Import.payload</a>,&nbsp;<span class="type-var">'a</span>,&nbsp;<span class="type-var">'context</span>)</span>
 <a href=
-"../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a>
-<span>-&gt;</span> (loc:<a href=
-"../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a>
-<span>-&gt;</span> path:<a href=
-"../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+"../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a></span>
+<span>-&gt;</span> <span>(<span>loc:<a href=
+"../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a></span>
+<span>-&gt;</span> <span>path:<a href=
+"../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a></span>
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>declare name context pattern expander</code> declares the
@@ -92,23 +91,23 @@ instance for expression it is the <code>pexp_loc</code> field</li>
 "#val-declare_with_path_arg" class="anchor"></a><code><span class=
 "keyword">val</span> declare_with_path_arg : <a href=
 "../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> <span class="type-var">'context</span> <a href=
-"Context/index.html#type-t">Context.t</a> <span>-&gt;</span>
-(<a href=
-"../Ppxlib__/Import/index.html#type-payload">Ppxlib__.Import.payload</a>,&nbsp;<span class="type-var">'a</span>,&nbsp;<span class="type-var">'context</span>)
+<span>-&gt;</span> <span><span class="type-var">'context</span>
+<a href="Context/index.html#type-t">Context.t</a></span>
+<span>-&gt;</span> <span><span>(<a href=
+"../Ppxlib__/Import/index.html#type-payload">Ppxlib__.Import.payload</a>,&nbsp;<span class="type-var">'a</span>,&nbsp;<span class="type-var">'context</span>)</span>
 <a href=
-"../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a>
-<span>-&gt;</span> (loc:<a href=
-"../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a>
-<span>-&gt;</span> path:<a href=
-"../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> arg:<a href=
+"../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a></span>
+<span>-&gt;</span> <span>(<span>loc:<a href=
+"../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a></span>
+<span>-&gt;</span> <span>path:<a href=
+"../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a></span>
+<span>-&gt;</span> <span>arg:<span><span><a href=
 "../Ppxlib/Longident/index.html#type-t">Ppxlib.Longident.t</a>
 <a href=
 "../../ocaml-migrate-parsetree/Migrate_parsetree__Ast_407/Asttypes/index.html#type-loc">
-Ppxlib__.Import.Asttypes.loc</a> <a href=
-"../Ppxlib__/Import/index.html#type-option">Ppxlib__.Import.option</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+Ppxlib__.Import.Asttypes.loc</a></span> <a href=
+"../Ppxlib__/Import/index.html#type-option">Ppxlib__.Import.option</a></span></span>
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p>Same as <code>declare</code> except that the extension name
@@ -124,19 +123,19 @@ argument <code>Foo.Bar</code>:</p>
 "#val-declare_inline" class="anchor"></a><code><span class=
 "keyword">val</span> declare_inline : <a href=
 "../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> <span class="type-var">'context</span> <a href=
-"Context/index.html#type-t">Context.t</a> <span>-&gt;</span>
-(<a href=
-"../Ppxlib__/Import/index.html#type-payload">Ppxlib__.Import.payload</a>,&nbsp;<span class="type-var">'a</span>,&nbsp;<span class="type-var">'context</span>
+<span>-&gt;</span> <span><span class="type-var">'context</span>
+<a href="Context/index.html#type-t">Context.t</a></span>
+<span>-&gt;</span> <span><span>(<a href=
+"../Ppxlib__/Import/index.html#type-payload">Ppxlib__.Import.payload</a>,&nbsp;<span class="type-var">'a</span>,&nbsp;<span><span class="type-var">'context</span>
 <a href=
-"../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a>)
+"../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a></span>)</span>
 <a href=
-"../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a>
-<span>-&gt;</span> (loc:<a href=
-"../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a>
-<span>-&gt;</span> path:<a href=
-"../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+"../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a></span>
+<span>-&gt;</span> <span>(<span>loc:<a href=
+"../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a></span>
+<span>-&gt;</span> <span>path:<a href=
+"../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a></span>
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p>Inline the result of the expansion into its parent. Only works
@@ -155,25 +154,25 @@ for these contexts:</p>
 "anchor"></a><code><span class="keyword">val</span>
 declare_inline_with_path_arg : <a href=
 "../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> <span class="type-var">'context</span> <a href=
-"Context/index.html#type-t">Context.t</a> <span>-&gt;</span>
-(<a href=
-"../Ppxlib__/Import/index.html#type-payload">Ppxlib__.Import.payload</a>,&nbsp;<span class="type-var">'a</span>,&nbsp;<span class="type-var">'context</span>
+<span>-&gt;</span> <span><span class="type-var">'context</span>
+<a href="Context/index.html#type-t">Context.t</a></span>
+<span>-&gt;</span> <span><span>(<a href=
+"../Ppxlib__/Import/index.html#type-payload">Ppxlib__.Import.payload</a>,&nbsp;<span class="type-var">'a</span>,&nbsp;<span><span class="type-var">'context</span>
 <a href=
-"../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a>)
+"../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a></span>)</span>
 <a href=
-"../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a>
-<span>-&gt;</span> (loc:<a href=
-"../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a>
-<span>-&gt;</span> path:<a href=
-"../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> arg:<a href=
+"../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a></span>
+<span>-&gt;</span> <span>(<span>loc:<a href=
+"../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a></span>
+<span>-&gt;</span> <span>path:<a href=
+"../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a></span>
+<span>-&gt;</span> <span>arg:<span><span><a href=
 "../Ppxlib/Longident/index.html#type-t">Ppxlib.Longident.t</a>
 <a href=
 "../../ocaml-migrate-parsetree/Migrate_parsetree__Ast_407/Asttypes/index.html#type-loc">
-Ppxlib__.Import.Asttypes.loc</a> <a href=
-"../Ppxlib__/Import/index.html#type-option">Ppxlib__.Import.option</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+Ppxlib__.Import.Asttypes.loc</a></span> <a href=
+"../Ppxlib__/Import/index.html#type-option">Ppxlib__.Import.option</a></span></span>
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 </dl>
 <div class="spec module" id="module-For_context"><a href=
@@ -185,14 +184,15 @@ Ppxlib__.Import.Asttypes.loc</a> <a href=
 <dl>
 <dt class="spec value" id="val-filter_by_context"><a href=
 "#val-filter_by_context" class="anchor"></a><code><span class=
-"keyword">val</span> filter_by_context : <span class=
+"keyword">val</span> filter_by_context : <span><span class=
 "type-var">'a</span> <a href=
-"Context/index.html#type-t">Context.t</a> <span>-&gt;</span>
-<a href="index.html#type-t">t</a> <a href=
-"../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"For_context/index.html#type-t">For_context.t</a> <a href=
-"../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a></code></dt>
+"Context/index.html#type-t">Context.t</a></span> <span>-&gt;</span>
+<span><a href="index.html#type-t">t</a> <a href=
+"../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+<a href="For_context/index.html#type-t">For_context.t</a></span>
+<a href=
+"../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a></span></code></dt>
 <dd>
 <p>Given a context and a list of extension expander, returns all
 the ones that are for this context.</p>

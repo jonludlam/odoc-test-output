@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Unsafe (core_kernel.Core_kernel__Heap.Unsafe)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -37,11 +36,11 @@ class="anchor"></a><code><span class="keyword">module</span>
 <dl>
 <dt class="spec value" id="val-add_removable"><a href=
 "#val-add_removable" class="anchor"></a><code><span class=
-"keyword">val</span> add_removable : <span class=
-"type-var">'a</span> <a href="../index.html#type-t">t</a>
+"keyword">val</span> add_removable : <span><span class=
+"type-var">'a</span> <a href="../index.html#type-t">t</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"Elt/index.html#type-t">Elt.t</a></code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"Elt/index.html#type-t">Elt.t</a></span></code></dt>
 <dd>
 <p><code>add_removable t v</code> returns a token that can be later
 used to remove <code>v</code>. Unlike the regular function, this
@@ -51,11 +50,11 @@ unsafe version doesn't allocate.</p>
 <dl>
 <dt class="spec value" id="val-remove"><a href="#val-remove" class=
 "anchor"></a><code><span class="keyword">val</span> remove :
-<span class="type-var">'a</span> <a href=
-"../index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="Elt/index.html#type-t">Elt.t</a>
-<span>-&gt;</span> <a href=
-"../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"../index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"Elt/index.html#type-t">Elt.t</a></span> <span>-&gt;</span>
+<a href="../../Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dd>
 <p><code>remove t elt</code> removes <code>elt</code> from
 <code>t</code>. Behavior is undefined and could lead to segfaults
@@ -67,12 +66,13 @@ has already been removed (e.g., via <code>pop</code>).</p>
 <dl>
 <dt class="spec value" id="val-update"><a href="#val-update" class=
 "anchor"></a><code><span class="keyword">val</span> update :
-<span class="type-var">'a</span> <a href=
-"../index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="Elt/index.html#type-t">Elt.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"Elt/index.html#type-t">Elt.t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"../index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"Elt/index.html#type-t">Elt.t</a></span> <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"Elt/index.html#type-t">Elt.t</a></span></code></dt>
 <dd>
 <p><code>update t token v</code> is shorthand for <code>remove t
 token; add_removable t v</code>.</p>

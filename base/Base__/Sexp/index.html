@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Sexp (base.Base__.Sexp)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -41,8 +40,8 @@ string</code></td>
 <tr id="type-t.List" class="anchored">
 <td class="def constructor"><a href="#type-t.List" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">List</span> <span class="keyword">of</span> <a href=
-"index.html#type-t">t</a> list</code></td>
+"constructor">List</span> <span class="keyword">of</span>
+<span><a href="index.html#type-t">t</a> list</span></code></td>
 </tr>
 </table>
 </dd>
@@ -110,8 +109,8 @@ string</code></td>
 <tr id="type-t.List" class="anchored">
 <td class="def constructor"><a href="#type-t.List" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">List</span> <span class="keyword">of</span> <a href=
-"index.html#type-t">t</a> list</code></td>
+"constructor">List</span> <span class="keyword">of</span>
+<span><a href="index.html#type-t">t</a> list</span></code></td>
 </tr>
 </table>
 </dd>
@@ -167,9 +166,9 @@ OCaml-value.</p>
 <dl>
 <dt class="spec value" id="val-message"><a href="#val-message"
 class="anchor"></a><code><span class="keyword">val</span> message :
-string <span>-&gt;</span> (string * <a href=
-"index.html#type-t">t</a>) list <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+string <span>-&gt;</span> <span><span>(string * <a href=
+"index.html#type-t">t</a>)</span> list</span> <span>-&gt;</span>
+<a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p>Helper to build nice s-expressions for error messages. It
 imitates the behavior of <code>[%message ...]</code> from the
@@ -196,7 +195,8 @@ empty string, <code>value</code> is used directly instead as for
 <dl>
 <dt class="spec value" id="val-default_indent"><a href=
 "#val-default_indent" class="anchor"></a><code><span class=
-"keyword">val</span> default_indent : int Stdlib.ref</code></dt>
+"keyword">val</span> default_indent : <span>int
+Stdlib.ref</span></code></dt>
 <dd>
 <p><code>default_indent</code> reference to default indentation
 level for human-readable conversions.</p>
@@ -262,7 +262,7 @@ class="anchor"></a>Conversion to strings</h2>
 <dl>
 <dt class="spec value" id="val-to_string_hum"><a href=
 "#val-to_string_hum" class="anchor"></a><code><span class=
-"keyword">val</span> to_string_hum : ?⁠indent:int
+"keyword">val</span> to_string_hum : <span>?⁠indent:int</span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a>
 <span>-&gt;</span> string</code></dt>
 <dd>
@@ -305,12 +305,14 @@ string</code></dt>
 <dl>
 <dt class="spec value" id="val-of_float_style"><a href=
 "#val-of_float_style" class="anchor"></a><code><span class=
-"keyword">val</span> of_float_style : [ `Underscores |
-`No_underscores ] Stdlib.ref</code></dt>
+"keyword">val</span> of_float_style : <span><span>[ `Underscores
+<span>| `No_underscores</span> ]</span>
+Stdlib.ref</span></code></dt>
 <dt class="spec value" id="val-of_int_style"><a href=
 "#val-of_int_style" class="anchor"></a><code><span class=
-"keyword">val</span> of_int_style : [ `Underscores |
-`No_underscores ] Stdlib.ref</code></dt>
+"keyword">val</span> of_int_style : <span><span>[ `Underscores
+<span>| `No_underscores</span> ]</span>
+Stdlib.ref</span></code></dt>
 </dl>
 <div class="spec module" id="module-Private"><a href=
 "#module-Private" class="anchor"></a><code><span class=

@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Registrar (ppxlib.Ppxlib__Name.Registrar)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -26,8 +25,8 @@ hljs.initHighlightingOnLoad();
 </header>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'context
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'context
+t</span></code></dt>
 <dd>
 <p>Names are organized by context. For instance contexts can be:
 expressions, patterns, types, ...</p>
@@ -36,17 +35,17 @@ expressions, patterns, types, ...</p>
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-kind:<a href=
-"../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> current_file:<a href=
-"../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> string_of_context:(<span class=
-"type-var">'context</span> <span>-&gt;</span> <a href=
+<span>kind:<a href=
+"../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a></span>
+<span>-&gt;</span> <span>current_file:<a href=
+"../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a></span>
+<span>-&gt;</span> <span>string_of_context:<span>(<span class=
+"type-var">'context</span> <span>-&gt;</span> <span><a href=
 "../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
 <a href=
-"../../Ppxlib__/Import/index.html#type-option">Ppxlib__.Import.option</a>)
-<span>-&gt;</span> <span class="type-var">'context</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"../../Ppxlib__/Import/index.html#type-option">Ppxlib__.Import.option</a></span>)</span></span>
+<span>-&gt;</span> <span><span class="type-var">'context</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dd>
 <ul>
 <li><code>kind</code> is a description of the things registered.
@@ -65,8 +64,9 @@ context</li>
 <dl>
 <dt class="spec value" id="val-register"><a href="#val-register"
 class="anchor"></a><code><span class="keyword">val</span> register
-: kind:[ `Attribute | `Extension ] <span>-&gt;</span> <span class=
-"type-var">'context</span> <a href="index.html#type-t">t</a>
+: <span>kind:<span>[ `Attribute <span>| `Extension</span>
+]</span></span> <span>-&gt;</span> <span><span class=
+"type-var">'context</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <span class="type-var">'context</span>
 <span>-&gt;</span> <a href=
 "../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
@@ -74,37 +74,38 @@ class="anchor"></a><code><span class="keyword">val</span> register
 "../../Ppxlib__/Import/index.html#type-unit">Ppxlib__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-spellcheck"><a href=
 "#val-spellcheck" class="anchor"></a><code><span class=
-"keyword">val</span> spellcheck : <span class=
-"type-var">'context</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> spellcheck : <span><span class=
+"type-var">'context</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <span class="type-var">'context</span>
-<span>-&gt;</span> ?⁠white_list:<a href=
+<span>-&gt;</span> <span>?⁠white_list:<span><a href=
 "../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
 <a href=
-"../../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a>
+"../../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a></span></span>
 <span>-&gt;</span> <a href=
 "../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
 <a href=
-"../../Ppxlib__/Import/index.html#type-option">Ppxlib__.Import.option</a></code></dt>
+"../../Ppxlib__/Import/index.html#type-option">Ppxlib__.Import.option</a></span></code></dt>
 <dt class="spec value" id="val-raise_errorf"><a href=
 "#val-raise_errorf" class="anchor"></a><code><span class=
-"keyword">val</span> raise_errorf : <span class=
-"type-var">'context</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> raise_errorf : <span><span class=
+"type-var">'context</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <span class="type-var">'context</span>
-<span>-&gt;</span> ?⁠white_list:<a href=
+<span>-&gt;</span> <span>?⁠white_list:<span><a href=
 "../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
 <a href=
-"../../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a>
-<span>-&gt;</span> (<a href=
+"../../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a></span></span>
+<span>-&gt;</span> <span><span>(<a href=
 "../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
 <span>-&gt;</span> <span class="type-var">'a</span>,&nbsp;<a href=
-"../../Ppxlib__/Import/index.html#type-unit">Ppxlib__.Import.unit</a>,&nbsp;<a href="../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>,&nbsp;<span class="type-var">'c</span>)
+"../../Ppxlib__/Import/index.html#type-unit">Ppxlib__.Import.unit</a>,&nbsp;<a href="../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>,&nbsp;<span class="type-var">'c</span>)</span>
 <a href=
-"../../Ppxlib__/Import/index.html#type-format4">Ppxlib__.Import.format4</a>
-<span>-&gt;</span> <a href=
+"../../Ppxlib__/Import/index.html#type-format4">Ppxlib__.Import.format4</a></span>
+<span>-&gt;</span> <span><a href=
 "../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<a href="../../Ppxlib/Loc/index.html#type-t">Ppxlib.Loc.t</a>
+<a href=
+"../../Ppxlib/Loc/index.html#type-t">Ppxlib.Loc.t</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 </dl>
 </div>

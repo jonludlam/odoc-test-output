@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Ppx_assert_lib__Runtime
 (ppx_assert.Ppx_assert_lib__Runtime)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -27,45 +26,47 @@ hljs.initHighlightingOnLoad();
 </header>
 <dl>
 <dt class="spec type" id="type-test_pred"><a href="#type-test_pred"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-test_pred</code> <code>= ?⁠here:Stdlib.Lexing.position <a href=
-"../../base/Base/index.html#type-list">Base.list</a>
-<span>-&gt;</span> ?⁠message:<a href=
-"../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> (<span class="type-var">'a</span>
+class="anchor"></a><code><span class="keyword">type</span> <span>'a
+test_pred</span></code> <code>=
+<span>?⁠here:<span>Stdlib.Lexing.position <a href=
+"../../base/Base/index.html#type-list">Base.list</a></span></span>
+<span>-&gt;</span> <span>?⁠message:<a href=
+"../../base/Base/index.html#type-string">Base.string</a></span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
-"../../base/Base/index.html#type-bool">Base.bool</a>)
+"../../base/Base/index.html#type-bool">Base.bool</a>)</span>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
 "../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 <dt class="spec type" id="type-test_eq"><a href="#type-test_eq"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-test_eq</code> <code>= ?⁠here:Stdlib.Lexing.position <a href=
-"../../base/Base/index.html#type-list">Base.list</a>
-<span>-&gt;</span> ?⁠message:<a href=
-"../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> ?⁠equal:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <a href=
-"../../base/Base/index.html#type-bool">Base.bool</a>)
+class="anchor"></a><code><span class="keyword">type</span> <span>'a
+test_eq</span></code> <code>=
+<span>?⁠here:<span>Stdlib.Lexing.position <a href=
+"../../base/Base/index.html#type-list">Base.list</a></span></span>
+<span>-&gt;</span> <span>?⁠message:<a href=
+"../../base/Base/index.html#type-string">Base.string</a></span>
+<span>-&gt;</span> <span>?⁠equal:<span>(<span class=
+"type-var">'a</span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <a href=
+"../../base/Base/index.html#type-bool">Base.bool</a>)</span></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
 "../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 <dt class="spec type" id="type-test_result"><a href=
 "#type-test_result" class="anchor"></a><code><span class=
-"keyword">type</span> 'a test_result</code> <code>=
-?⁠here:Stdlib.Lexing.position <a href=
-"../../base/Base/index.html#type-list">Base.list</a>
-<span>-&gt;</span> ?⁠message:<a href=
-"../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> ?⁠equal:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <a href=
-"../../base/Base/index.html#type-bool">Base.bool</a>)
-<span>-&gt;</span> expect:<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <a href=
+"keyword">type</span> <span>'a test_result</span></code> <code>=
+<span>?⁠here:<span>Stdlib.Lexing.position <a href=
+"../../base/Base/index.html#type-list">Base.list</a></span></span>
+<span>-&gt;</span> <span>?⁠message:<a href=
+"../../base/Base/index.html#type-string">Base.string</a></span>
+<span>-&gt;</span> <span>?⁠equal:<span>(<span class=
+"type-var">'a</span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <a href=
+"../../base/Base/index.html#type-bool">Base.bool</a>)</span></span>
+<span>-&gt;</span> <span>expect:<span class=
+"type-var">'a</span></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <a href=
 "../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 </dl>
 <aside>
@@ -74,76 +75,79 @@ test_eq</code> <code>= ?⁠here:Stdlib.Lexing.position <a href=
 <dl>
 <dt class="spec value" id="val-test_pred"><a href="#val-test_pred"
 class="anchor"></a><code><span class="keyword">val</span> test_pred
-: pos:<a href=
-"../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> sexpifier:(<span class="type-var">'a</span>
+: <span>pos:<a href=
+"../../base/Base/index.html#type-string">Base.string</a></span>
+<span>-&gt;</span> <span>sexpifier:<span>(<span class=
+"type-var">'a</span> <span>-&gt;</span> <a href=
+"../../base/Base/Sexp/index.html#type-t">Base.Sexp.t</a>)</span></span>
+<span>-&gt;</span> <span>here:<span>Stdlib.Lexing.position <a href=
+"../../base/Base/index.html#type-list">Base.list</a></span></span>
+<span>-&gt;</span> <span>?⁠message:<a href=
+"../../base/Base/index.html#type-string">Base.string</a></span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
-"../../base/Base/Sexp/index.html#type-t">Base.Sexp.t</a>)
-<span>-&gt;</span> here:Stdlib.Lexing.position <a href=
-"../../base/Base/index.html#type-list">Base.list</a>
-<span>-&gt;</span> ?⁠message:<a href=
-"../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> (<span class="type-var">'a</span>
-<span>-&gt;</span> <a href=
-"../../base/Base/index.html#type-bool">Base.bool</a>)
+"../../base/Base/index.html#type-bool">Base.bool</a>)</span>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
 "../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 <dt class="spec value" id="val-test_eq"><a href="#val-test_eq"
 class="anchor"></a><code><span class="keyword">val</span> test_eq :
-pos:<a href=
-"../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> sexpifier:(<span class="type-var">'a</span>
-<span>-&gt;</span> <a href=
-"../../base/Base/Sexp/index.html#type-t">Base.Sexp.t</a>)
-<span>-&gt;</span> comparator:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <a href=
-"../../base/Base/index.html#type-int">Base.int</a>)
-<span>-&gt;</span> here:Stdlib.Lexing.position <a href=
-"../../base/Base/index.html#type-list">Base.list</a>
-<span>-&gt;</span> ?⁠message:<a href=
-"../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> ?⁠equal:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <a href=
-"../../base/Base/index.html#type-bool">Base.bool</a>)
+<span>pos:<a href=
+"../../base/Base/index.html#type-string">Base.string</a></span>
+<span>-&gt;</span> <span>sexpifier:<span>(<span class=
+"type-var">'a</span> <span>-&gt;</span> <a href=
+"../../base/Base/Sexp/index.html#type-t">Base.Sexp.t</a>)</span></span>
+<span>-&gt;</span> <span>comparator:<span>(<span class=
+"type-var">'a</span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <a href=
+"../../base/Base/index.html#type-int">Base.int</a>)</span></span>
+<span>-&gt;</span> <span>here:<span>Stdlib.Lexing.position <a href=
+"../../base/Base/index.html#type-list">Base.list</a></span></span>
+<span>-&gt;</span> <span>?⁠message:<a href=
+"../../base/Base/index.html#type-string">Base.string</a></span>
+<span>-&gt;</span> <span>?⁠equal:<span>(<span class=
+"type-var">'a</span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <a href=
+"../../base/Base/index.html#type-bool">Base.bool</a>)</span></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
 "../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 <dt class="spec value" id="val-test_result"><a href=
 "#val-test_result" class="anchor"></a><code><span class=
-"keyword">val</span> test_result : pos:<a href=
-"../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> sexpifier:(<span class="type-var">'a</span>
-<span>-&gt;</span> <a href=
-"../../base/Base/Sexp/index.html#type-t">Base.Sexp.t</a>)
-<span>-&gt;</span> comparator:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <a href=
-"../../base/Base/index.html#type-int">Base.int</a>)
-<span>-&gt;</span> here:Stdlib.Lexing.position <a href=
-"../../base/Base/index.html#type-list">Base.list</a>
-<span>-&gt;</span> ?⁠message:<a href=
-"../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> ?⁠equal:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <a href=
-"../../base/Base/index.html#type-bool">Base.bool</a>)
-<span>-&gt;</span> expect:<span class="type-var">'a</span>
-<span>-&gt;</span> got:<span class="type-var">'a</span>
+"keyword">val</span> test_result : <span>pos:<a href=
+"../../base/Base/index.html#type-string">Base.string</a></span>
+<span>-&gt;</span> <span>sexpifier:<span>(<span class=
+"type-var">'a</span> <span>-&gt;</span> <a href=
+"../../base/Base/Sexp/index.html#type-t">Base.Sexp.t</a>)</span></span>
+<span>-&gt;</span> <span>comparator:<span>(<span class=
+"type-var">'a</span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <a href=
+"../../base/Base/index.html#type-int">Base.int</a>)</span></span>
+<span>-&gt;</span> <span>here:<span>Stdlib.Lexing.position <a href=
+"../../base/Base/index.html#type-list">Base.list</a></span></span>
+<span>-&gt;</span> <span>?⁠message:<a href=
+"../../base/Base/index.html#type-string">Base.string</a></span>
+<span>-&gt;</span> <span>?⁠equal:<span>(<span class=
+"type-var">'a</span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <a href=
+"../../base/Base/index.html#type-bool">Base.bool</a>)</span></span>
+<span>-&gt;</span> <span>expect:<span class=
+"type-var">'a</span></span> <span>-&gt;</span>
+<span>got:<span class="type-var">'a</span></span>
 <span>-&gt;</span> <a href=
 "../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 <dt class="spec value" id="val-set_diff_function"><a href=
 "#val-set_diff_function" class="anchor"></a><code><span class=
-"keyword">val</span> set_diff_function : (from_:<a href=
-"../../base/Base/index.html#type-string">Base.string</a>
-<span>-&gt;</span> to_:<a href=
-"../../base/Base/index.html#type-string">Base.string</a>
+"keyword">val</span> set_diff_function :
+<span><span>(<span>from_:<a href=
+"../../base/Base/index.html#type-string">Base.string</a></span>
+<span>-&gt;</span> <span>to_:<a href=
+"../../base/Base/index.html#type-string">Base.string</a></span>
 <span>-&gt;</span> <a href=
-"../../base/Base/index.html#type-unit">Base.unit</a>) <a href=
-"../../base/Base/index.html#type-option">Base.option</a>
+"../../base/Base/index.html#type-unit">Base.unit</a>)</span>
+<a href=
+"../../base/Base/index.html#type-option">Base.option</a></span>
 <span>-&gt;</span> <a href=
 "../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 <dd>

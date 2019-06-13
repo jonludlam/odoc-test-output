@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Blit_intf (base.Base__.Blit_intf)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -30,11 +29,13 @@ for validating <code>blit</code> arguments.</p>
 </aside>
 <dl>
 <dt class="spec type" id="type-blit"><a href="#type-blit" class=
-"anchor"></a><code><span class="keyword">type</span> ('src, 'dst)
-blit</code> <code>= src:<span class="type-var">'src</span>
-<span>-&gt;</span> src_pos:int <span>-&gt;</span> dst:<span class=
-"type-var">'dst</span> <span>-&gt;</span> dst_pos:int
-<span>-&gt;</span> len:int <span>-&gt;</span> unit</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>('src,
+'dst) blit</span></code> <code>= <span>src:<span class=
+"type-var">'src</span></span> <span>-&gt;</span>
+<span>src_pos:int</span> <span>-&gt;</span> <span>dst:<span class=
+"type-var">'dst</span></span> <span>-&gt;</span>
+<span>dst_pos:int</span> <span>-&gt;</span> <span>len:int</span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p>If <code>blit : (src, dst) blit</code>, then <code>blit ~src
 ~src_pos ~len ~dst ~dst_pos</code> blits <code>len</code> values
@@ -47,12 +48,14 @@ and <code>dst_pos</code> don't specify valid slices of
 </dl>
 <dl>
 <dt class="spec type" id="type-blito"><a href="#type-blito" class=
-"anchor"></a><code><span class="keyword">type</span> ('src, 'dst)
-blito</code> <code>= src:<span class="type-var">'src</span>
-<span>-&gt;</span> ?⁠src_pos:int <span>-&gt;</span> ?⁠src_len:int
-<span>-&gt;</span> dst:<span class="type-var">'dst</span>
-<span>-&gt;</span> ?⁠dst_pos:int <span>-&gt;</span> unit
-<span>-&gt;</span> unit</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>('src,
+'dst) blito</span></code> <code>= <span>src:<span class=
+"type-var">'src</span></span> <span>-&gt;</span>
+<span>?⁠src_pos:int</span> <span>-&gt;</span>
+<span>?⁠src_len:int</span> <span>-&gt;</span>
+<span>dst:<span class="type-var">'dst</span></span>
+<span>-&gt;</span> <span>?⁠dst_pos:int</span> <span>-&gt;</span>
+unit <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>blito</code> is like <code>blit</code>, except that the
 <code>src_pos</code>, <code>src_len</code>, and
@@ -65,10 +68,11 @@ the end of <code>src</code>.</p>
 </dl>
 <dl>
 <dt class="spec type" id="type-sub"><a href="#type-sub" class=
-"anchor"></a><code><span class="keyword">type</span> ('src, 'dst)
-sub</code> <code>= <span class="type-var">'src</span>
-<span>-&gt;</span> pos:int <span>-&gt;</span> len:int
-<span>-&gt;</span> <span class="type-var">'dst</span></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>('src,
+'dst) sub</span></code> <code>= <span class="type-var">'src</span>
+<span>-&gt;</span> <span>pos:int</span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> <span class=
+"type-var">'dst</span></code></dt>
 <dd>
 <p>If <code>sub : (src, dst) sub</code>, then <code>sub ~src ~pos
 ~len</code> returns a sequence of type <code>dst</code> containing
@@ -80,10 +84,11 @@ sub</code> <code>= <span class="type-var">'src</span>
 </dl>
 <dl>
 <dt class="spec type" id="type-subo"><a href="#type-subo" class=
-"anchor"></a><code><span class="keyword">type</span> ('src, 'dst)
-subo</code> <code>= ?⁠pos:int <span>-&gt;</span> ?⁠len:int
-<span>-&gt;</span> <span class="type-var">'src</span>
-<span>-&gt;</span> <span class="type-var">'dst</span></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>('src,
+'dst) subo</span></code> <code>= <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span>
+<span class="type-var">'src</span> <span>-&gt;</span> <span class=
+"type-var">'dst</span></code></dt>
 </dl>
 <div class="spec module-type" id="module-type-S"><a href=
 "#module-type-S" class="anchor"></a><code><span class=
@@ -122,8 +127,9 @@ need to implement modules that match those signatures.</p>
 "keyword">end</span></code></div>
 <dl>
 <dt class="spec type" id="type-poly"><a href="#type-poly" class=
-"anchor"></a><code><span class="keyword">type</span> 'a poly</code>
-<code>= <span class="type-var">'a</span></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+poly</span></code> <code>= <span class=
+"type-var">'a</span></code></dt>
 </dl>
 <div class="spec module-type" id="module-type-Sequence1"><a href=
 "#module-type-Sequence1" class="anchor"></a><code><span class=

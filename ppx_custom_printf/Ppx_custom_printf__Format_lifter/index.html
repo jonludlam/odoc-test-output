@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Ppx_custom_printf__Format_lifter
 (ppx_custom_printf.Ppx_custom_printf__Format_lifter)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -266,108 +265,116 @@ class="anchor"></a><code>|</code> <code><span class=
 </table>
 </dd>
 <dt class="spec type" id="type-padding"><a href="#type-padding"
-class="anchor"></a><code><span class="keyword">and</span> ('a, 'b)
-padding</code> <code>= (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-CamlinternalFormatBasics.padding</code> <code>=</code></dt>
+class="anchor"></a><code><span class="keyword">and</span>
+<span>('a, 'b) padding</span></code> <code>=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span>
+CamlinternalFormatBasics.padding</span></code> <code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-padding.No_padding" class="anchored">
 <td class="def constructor"><a href="#type-padding.No_padding"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">No_padding</span> : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-padding">padding</a></code></td>
+"constructor">No_padding</span> : <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-padding">padding</a></span></code></td>
 </tr>
 <tr id="type-padding.Lit_padding" class="anchored">
 <td class="def constructor"><a href="#type-padding.Lit_padding"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Lit_padding</span> : <a href=
 "index.html#type-padty">padty</a> * int <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'a</span>) <a href=
-"index.html#type-padding">padding</a></code></td>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'a</span>)</span> <a href=
+"index.html#type-padding">padding</a></span></code></td>
 </tr>
 <tr id="type-padding.Arg_padding" class="anchored">
 <td class="def constructor"><a href="#type-padding.Arg_padding"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Arg_padding</span> : <a href=
-"index.html#type-padty">padty</a> <span>-&gt;</span> (int
-<span>-&gt;</span> <span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-padding">padding</a></code></td>
+"index.html#type-padty">padty</a> <span>-&gt;</span>
+<span><span>(int <span>-&gt;</span> <span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-padding">padding</a></span></code></td>
 </tr>
 </table>
 </dd>
 <dt class="spec type" id="type-pad_option"><a href=
 "#type-pad_option" class="anchor"></a><code><span class=
-"keyword">and</span> pad_option</code> <code>= int
-option</code></dt>
+"keyword">and</span> pad_option</code> <code>= <span>int
+option</span></code></dt>
 <dt class="spec type" id="type-precision"><a href="#type-precision"
-class="anchor"></a><code><span class="keyword">and</span> ('a, 'b)
-precision</code> <code>= (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-CamlinternalFormatBasics.precision</code> <code>=</code></dt>
+class="anchor"></a><code><span class="keyword">and</span>
+<span>('a, 'b) precision</span></code> <code>=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span>
+CamlinternalFormatBasics.precision</span></code>
+<code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-precision.No_precision" class="anchored">
 <td class="def constructor"><a href="#type-precision.No_precision"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">No_precision</span> : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-precision">precision</a></code></td>
+"constructor">No_precision</span> : <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href=
+"index.html#type-precision">precision</a></span></code></td>
 </tr>
 <tr id="type-precision.Lit_precision" class="anchored">
 <td class="def constructor"><a href="#type-precision.Lit_precision"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Lit_precision</span> : int <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'a</span>) <a href=
-"index.html#type-precision">precision</a></code></td>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'a</span>)</span> <a href=
+"index.html#type-precision">precision</a></span></code></td>
 </tr>
 <tr id="type-precision.Arg_precision" class="anchored">
 <td class="def constructor"><a href="#type-precision.Arg_precision"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Arg_precision</span> : (int <span>-&gt;</span>
-<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'a</span>) <a href=
-"index.html#type-precision">precision</a></code></td>
+"constructor">Arg_precision</span> : <span><span>(int
+<span>-&gt;</span> <span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href=
+"index.html#type-precision">precision</a></span></code></td>
 </tr>
 </table>
 </dd>
 <dt class="spec type" id="type-prec_option"><a href=
 "#type-prec_option" class="anchor"></a><code><span class=
-"keyword">and</span> prec_option</code> <code>= int
-option</code></dt>
+"keyword">and</span> prec_option</code> <code>= <span>int
+option</span></code></dt>
 <dt class="spec type" id="type-custom_arity"><a href=
 "#type-custom_arity" class="anchor"></a><code><span class=
-"keyword">and</span> ('a, 'b, 'c) custom_arity</code> <code>=
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
-CamlinternalFormatBasics.custom_arity</code> <code>=</code></dt>
+"keyword">and</span> <span>('a, 'b, 'c) custom_arity</span></code>
+<code>= <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)</span>
+CamlinternalFormatBasics.custom_arity</span></code>
+<code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-custom_arity.Custom_zero" class="anchored">
 <td class="def constructor"><a href=
 "#type-custom_arity.Custom_zero" class="anchor"></a><code>|</code>
-<code><span class="constructor">Custom_zero</span> : (<span class=
+<code><span class="constructor">Custom_zero</span> :
+<span><span>(<span class=
 "type-var">'a</span>,&nbsp;string,&nbsp;<span class=
-"type-var">'a</span>) <a href=
-"index.html#type-custom_arity">custom_arity</a></code></td>
+"type-var">'a</span>)</span> <a href=
+"index.html#type-custom_arity">custom_arity</a></span></code></td>
 </tr>
 <tr id="type-custom_arity.Custom_succ" class="anchored">
 <td class="def constructor"><a href=
 "#type-custom_arity.Custom_succ" class="anchor"></a><code>|</code>
-<code><span class="constructor">Custom_succ</span> : (<span class=
-"type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-custom_arity">custom_arity</a>
-<span>-&gt;</span> (<span class=
+<code><span class="constructor">Custom_succ</span> :
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)</span>
+<a href="index.html#type-custom_arity">custom_arity</a></span>
+<span>-&gt;</span> <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class="type-var">'x</span>
 <span>-&gt;</span> <span class=
 "type-var">'b</span>,&nbsp;<span class="type-var">'x</span>
-<span>-&gt;</span> <span class="type-var">'c</span>) <a href=
-"index.html#type-custom_arity">custom_arity</a></code></td>
+<span>-&gt;</span> <span class="type-var">'c</span>)</span>
+<a href="index.html#type-custom_arity">custom_arity</a></span></code></td>
 </tr>
 </table>
 </dd>
@@ -475,57 +482,61 @@ class="anchor"></a><code>|</code> <code><span class=
 </dd>
 <dt class="spec type" id="type-formatting_gen"><a href=
 "#type-formatting_gen" class="anchor"></a><code><span class=
-"keyword">and</span> ('a, 'b, 'c, 'd, 'e, 'f) formatting_gen</code>
-<code>= (<span class="type-var">'a</span>,&nbsp;<span class=
+"keyword">and</span> <span>('a, 'b, 'c, 'd, 'e, 'f)
+formatting_gen</span></code> <code>= <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-CamlinternalFormatBasics.formatting_gen</code> <code>=</code></dt>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+CamlinternalFormatBasics.formatting_gen</span></code>
+<code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-formatting_gen.Open_tag" class="anchored">
 <td class="def constructor"><a href="#type-formatting_gen.Open_tag"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Open_tag</span> : (<span class=
+"constructor">Open_tag</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
 <a href=
-"index.html#type-formatting_gen">formatting_gen</a></code></td>
+"index.html#type-formatting_gen">formatting_gen</a></span></code></td>
 </tr>
 <tr id="type-formatting_gen.Open_box" class="anchored">
 <td class="def constructor"><a href="#type-formatting_gen.Open_box"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Open_box</span> : (<span class=
+"constructor">Open_box</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
 <a href=
-"index.html#type-formatting_gen">formatting_gen</a></code></td>
+"index.html#type-formatting_gen">formatting_gen</a></span></code></td>
 </tr>
 </table>
 </dd>
 <dt class="spec type" id="type-fmtty"><a href="#type-fmtty" class=
-"anchor"></a><code><span class="keyword">and</span> ('a, 'b, 'c,
-'d, 'e, 'f) fmtty</code> <code>= (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"anchor"></a><code><span class="keyword">and</span> <span>('a, 'b,
+'c, 'd, 'e, 'f) fmtty</span></code> <code>=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
@@ -535,12 +546,13 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></dt>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></dt>
 <dt class="spec type" id="type-fmtty_rel"><a href="#type-fmtty_rel"
-class="anchor"></a><code><span class="keyword">and</span> ('a1,
-'b1, 'c1, 'd1, 'e1, 'f1, 'a2, 'b2, 'c2, 'd2, 'e2, 'f2)
-fmtty_rel</code> <code>= (<span class=
+class="anchor"></a><code><span class="keyword">and</span>
+<span>('a1, 'b1, 'c1, 'd1, 'e1, 'f1, 'a2, 'b2, 'c2, 'd2, 'e2, 'f2)
+fmtty_rel</span></code> <code>= <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -551,14 +563,16 @@ fmtty_rel</code> <code>= (<span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-CamlinternalFormatBasics.fmtty_rel</code> <code>=</code></dt>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span>
+CamlinternalFormatBasics.fmtty_rel</span></code>
+<code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-fmtty_rel.Char_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.Char_ty"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Char_ty</span> : (<span class=
+"constructor">Char_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -569,9 +583,10 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> (char <span>-&gt;</span> <span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(char <span>-&gt;</span> <span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -582,13 +597,14 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.String_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.String_ty"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">String_ty</span> : (<span class=
+"constructor">String_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -599,9 +615,10 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> (string <span>-&gt;</span> <span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(string <span>-&gt;</span> <span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -612,13 +629,14 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Int_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.Int_ty" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Int_ty</span> : (<span class=
+"constructor">Int_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -629,9 +647,10 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> (int <span>-&gt;</span> <span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(int <span>-&gt;</span> <span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -642,13 +661,14 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Int32_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.Int32_ty"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Int32_ty</span> : (<span class=
+"constructor">Int32_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -659,9 +679,10 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> (int32 <span>-&gt;</span> <span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(int32 <span>-&gt;</span> <span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -672,13 +693,14 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Nativeint_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.Nativeint_ty"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Nativeint_ty</span> : (<span class=
+"constructor">Nativeint_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -689,9 +711,10 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> (nativeint <span>-&gt;</span> <span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(nativeint <span>-&gt;</span> <span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -702,13 +725,14 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Int64_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.Int64_ty"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Int64_ty</span> : (<span class=
+"constructor">Int64_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -719,9 +743,10 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> (int64 <span>-&gt;</span> <span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(int64 <span>-&gt;</span> <span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -732,13 +757,14 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Float_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.Float_ty"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Float_ty</span> : (<span class=
+"constructor">Float_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -749,9 +775,10 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> (float <span>-&gt;</span> <span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(float <span>-&gt;</span> <span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -762,13 +789,14 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Bool_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.Bool_ty"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Bool_ty</span> : (<span class=
+"constructor">Bool_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -779,9 +807,10 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> (bool <span>-&gt;</span> <span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(bool <span>-&gt;</span> <span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -792,20 +821,21 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Format_arg_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.Format_arg_ty"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Format_arg_ty</span> : (<span class=
+"constructor">Format_arg_ty</span> : <span><span>(<span class=
 "type-var">'g</span>,&nbsp;<span class=
 "type-var">'h</span>,&nbsp;<span class=
 "type-var">'i</span>,&nbsp;<span class=
 "type-var">'j</span>,&nbsp;<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)
-<a href="index.html#type-fmtty">fmtty</a> * (<span class=
-"type-var">'a1</span>,&nbsp;<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)</span>
+<a href="index.html#type-fmtty">fmtty</a></span> *
+<span><span>(<span class="type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
 "type-var">'d1</span>,&nbsp;<span class=
@@ -815,39 +845,43 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> ((<span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(<span><span>(<span class=
 "type-var">'g</span>,&nbsp;<span class=
 "type-var">'h</span>,&nbsp;<span class=
 "type-var">'i</span>,&nbsp;<span class=
 "type-var">'j</span>,&nbsp;<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-<span class="type-var">'a1</span>,&nbsp;<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span class=
+"type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
 "type-var">'d1</span>,&nbsp;<span class=
 "type-var">'e1</span>,&nbsp;<span class=
-"type-var">'f1</span>,&nbsp;(<span class=
+"type-var">'f1</span>,&nbsp;<span><span>(<span class=
 "type-var">'g</span>,&nbsp;<span class=
 "type-var">'h</span>,&nbsp;<span class=
 "type-var">'i</span>,&nbsp;<span class=
 "type-var">'j</span>,&nbsp;<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-<span class="type-var">'a2</span>,&nbsp;<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span class=
+"type-var">'a2</span>,&nbsp;<span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Format_subst_ty" class="anchored">
 <td class="def constructor"><a href=
 "#type-fmtty_rel.Format_subst_ty" class="anchor"></a><code>|</code>
 <code><span class="constructor">Format_subst_ty</span> :
-(<span class="type-var">'g</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'g</span>,&nbsp;<span class=
 "type-var">'h</span>,&nbsp;<span class=
 "type-var">'i</span>,&nbsp;<span class=
 "type-var">'j</span>,&nbsp;<span class=
@@ -857,9 +891,10 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
 "type-var">'j1</span>,&nbsp;<span class=
-"type-var">'d1</span>,&nbsp;<span class="type-var">'a1</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a> * (<span class=
-"type-var">'g</span>,&nbsp;<span class=
+"type-var">'d1</span>,&nbsp;<span class=
+"type-var">'a1</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> *
+<span><span>(<span class="type-var">'g</span>,&nbsp;<span class=
 "type-var">'h</span>,&nbsp;<span class=
 "type-var">'i</span>,&nbsp;<span class=
 "type-var">'j</span>,&nbsp;<span class=
@@ -869,9 +904,10 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'j2</span>,&nbsp;<span class=
-"type-var">'d2</span>,&nbsp;<span class="type-var">'a2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a> * (<span class=
-"type-var">'a1</span>,&nbsp;<span class=
+"type-var">'d2</span>,&nbsp;<span class=
+"type-var">'a2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> *
+<span><span>(<span class="type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
 "type-var">'d1</span>,&nbsp;<span class=
@@ -881,38 +917,42 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> ((<span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(<span><span>(<span class=
 "type-var">'g</span>,&nbsp;<span class=
 "type-var">'h</span>,&nbsp;<span class=
 "type-var">'i</span>,&nbsp;<span class=
 "type-var">'j</span>,&nbsp;<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-<span class="type-var">'g1</span>,&nbsp;<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span class=
+"type-var">'g1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
 "type-var">'j1</span>,&nbsp;<span class=
 "type-var">'e1</span>,&nbsp;<span class=
-"type-var">'f1</span>,&nbsp;(<span class=
+"type-var">'f1</span>,&nbsp;<span><span>(<span class=
 "type-var">'g</span>,&nbsp;<span class=
 "type-var">'h</span>,&nbsp;<span class=
 "type-var">'i</span>,&nbsp;<span class=
 "type-var">'j</span>,&nbsp;<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-<span class="type-var">'g2</span>,&nbsp;<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span class=
+"type-var">'g2</span>,&nbsp;<span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'j2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Alpha_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.Alpha_ty"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Alpha_ty</span> : (<span class=
+"constructor">Alpha_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -923,11 +963,12 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> ((<span class="type-var">'b1</span>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(<span>(<span class="type-var">'b1</span>
 <span>-&gt;</span> <span class="type-var">'x</span>
-<span>-&gt;</span> <span class="type-var">'c1</span>)
+<span>-&gt;</span> <span class="type-var">'c1</span>)</span>
 <span>-&gt;</span> <span class="type-var">'x</span>
 <span>-&gt;</span> <span class=
 "type-var">'a1</span>,&nbsp;<span class=
@@ -935,22 +976,23 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'c1</span>,&nbsp;<span class=
 "type-var">'d1</span>,&nbsp;<span class=
 "type-var">'e1</span>,&nbsp;<span class=
-"type-var">'f1</span>,&nbsp;(<span class="type-var">'b2</span>
-<span>-&gt;</span> <span class="type-var">'x</span>
-<span>-&gt;</span> <span class="type-var">'c2</span>)
-<span>-&gt;</span> <span class="type-var">'x</span>
-<span>-&gt;</span> <span class=
+"type-var">'f1</span>,&nbsp;<span>(<span class=
+"type-var">'b2</span> <span>-&gt;</span> <span class=
+"type-var">'x</span> <span>-&gt;</span> <span class=
+"type-var">'c2</span>)</span> <span>-&gt;</span> <span class=
+"type-var">'x</span> <span>-&gt;</span> <span class=
 "type-var">'a2</span>,&nbsp;<span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Theta_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.Theta_ty"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Theta_ty</span> : (<span class=
+"constructor">Theta_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -961,30 +1003,32 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> ((<span class="type-var">'b1</span>
-<span>-&gt;</span> <span class="type-var">'c1</span>)
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(<span>(<span class="type-var">'b1</span>
+<span>-&gt;</span> <span class="type-var">'c1</span>)</span>
 <span>-&gt;</span> <span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
 "type-var">'d1</span>,&nbsp;<span class=
 "type-var">'e1</span>,&nbsp;<span class=
-"type-var">'f1</span>,&nbsp;(<span class="type-var">'b2</span>
-<span>-&gt;</span> <span class="type-var">'c2</span>)
-<span>-&gt;</span> <span class=
+"type-var">'f1</span>,&nbsp;<span>(<span class=
+"type-var">'b2</span> <span>-&gt;</span> <span class=
+"type-var">'c2</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'a2</span>,&nbsp;<span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Any_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.Any_ty" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Any_ty</span> : (<span class=
+"constructor">Any_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -995,11 +1039,11 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> (<span class="type-var">'x</span>
-<span>-&gt;</span> <span class=
-"type-var">'a1</span>,&nbsp;<span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'x</span> <span>-&gt;</span>
+<span class="type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
 "type-var">'d1</span>,&nbsp;<span class=
@@ -1010,13 +1054,14 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Reader_ty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.Reader_ty"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Reader_ty</span> : (<span class=
+"constructor">Reader_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -1027,33 +1072,34 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> (<span class="type-var">'x</span>
-<span>-&gt;</span> <span class=
-"type-var">'a1</span>,&nbsp;<span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'x</span> <span>-&gt;</span>
+<span class="type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
-"type-var">'c1</span>,&nbsp;(<span class="type-var">'b1</span>
-<span>-&gt;</span> <span class="type-var">'x</span>)
-<span>-&gt;</span> <span class=
+"type-var">'c1</span>,&nbsp;<span>(<span class=
+"type-var">'b1</span> <span>-&gt;</span> <span class=
+"type-var">'x</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'d1</span>,&nbsp;<span class=
 "type-var">'e1</span>,&nbsp;<span class=
 "type-var">'f1</span>,&nbsp;<span class="type-var">'x</span>
 <span>-&gt;</span> <span class=
 "type-var">'a2</span>,&nbsp;<span class=
 "type-var">'b2</span>,&nbsp;<span class=
-"type-var">'c2</span>,&nbsp;(<span class="type-var">'b2</span>
-<span>-&gt;</span> <span class="type-var">'x</span>)
-<span>-&gt;</span> <span class=
+"type-var">'c2</span>,&nbsp;<span>(<span class=
+"type-var">'b2</span> <span>-&gt;</span> <span class=
+"type-var">'x</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.Ignored_reader_ty" class="anchored">
 <td class="def constructor"><a href=
 "#type-fmtty_rel.Ignored_reader_ty" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Ignored_reader_ty</span> : (<span class=
+"constructor">Ignored_reader_ty</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -1064,30 +1110,31 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a>
-<span>-&gt;</span> (<span class=
-"type-var">'a1</span>,&nbsp;<span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
-"type-var">'c1</span>,&nbsp;(<span class="type-var">'b1</span>
-<span>-&gt;</span> <span class="type-var">'x</span>)
-<span>-&gt;</span> <span class=
+"type-var">'c1</span>,&nbsp;<span>(<span class=
+"type-var">'b1</span> <span>-&gt;</span> <span class=
+"type-var">'x</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'d1</span>,&nbsp;<span class=
 "type-var">'e1</span>,&nbsp;<span class=
 "type-var">'f1</span>,&nbsp;<span class=
 "type-var">'a2</span>,&nbsp;<span class=
 "type-var">'b2</span>,&nbsp;<span class=
-"type-var">'c2</span>,&nbsp;(<span class="type-var">'b2</span>
-<span>-&gt;</span> <span class="type-var">'x</span>)
-<span>-&gt;</span> <span class=
+"type-var">'c2</span>,&nbsp;<span>(<span class=
+"type-var">'b2</span> <span>-&gt;</span> <span class=
+"type-var">'x</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 <tr id="type-fmtty_rel.End_of_fmtty" class="anchored">
 <td class="def constructor"><a href="#type-fmtty_rel.End_of_fmtty"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">End_of_fmtty</span> : (<span class=
+"constructor">End_of_fmtty</span> : <span><span>(<span class=
 "type-var">'f1</span>,&nbsp;<span class=
 "type-var">'b1</span>,&nbsp;<span class=
 "type-var">'c1</span>,&nbsp;<span class=
@@ -1098,317 +1145,324 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b2</span>,&nbsp;<span class=
 "type-var">'c2</span>,&nbsp;<span class=
 "type-var">'d2</span>,&nbsp;<span class=
-"type-var">'d2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a></code></td>
+"type-var">'d2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmtty_rel">fmtty_rel</a></span></code></td>
 </tr>
 </table>
 </dd>
 <dt class="spec type" id="type-fmt"><a href="#type-fmt" class=
-"anchor"></a><code><span class="keyword">and</span> ('a, 'b, 'c,
-'d, 'e, 'f) fmt</code> <code>= (<span class=
+"anchor"></a><code><span class="keyword">and</span> <span>('a, 'b,
+'c, 'd, 'e, 'f) fmt</span></code> <code>= <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-CamlinternalFormatBasics.fmt</code> <code>=</code></dt>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+CamlinternalFormatBasics.fmt</span></code> <code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-fmt.Char" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Char" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Char</span> : (<span class=
+"constructor">Char</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span> (char
-<span>-&gt;</span> <span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(char <span>-&gt;</span> <span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Caml_char" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Caml_char" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Caml_char</span> : (<span class=
+"constructor">Caml_char</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span> (char
-<span>-&gt;</span> <span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(char <span>-&gt;</span> <span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.String" class="anchored">
 <td class="def constructor"><a href="#type-fmt.String" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">String</span> : (<span class=
+"constructor">String</span> : <span><span>(<span class=
 "type-var">'x</span>,&nbsp;string <span>-&gt;</span> <span class=
-"type-var">'a</span>) <a href="index.html#type-padding">padding</a>
-* (<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'a</span>)</span> <a href=
+"index.html#type-padding">padding</a></span> *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'x</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'x</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Caml_string" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Caml_string" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Caml_string</span> : (<span class=
+"constructor">Caml_string</span> : <span><span>(<span class=
 "type-var">'x</span>,&nbsp;string <span>-&gt;</span> <span class=
-"type-var">'a</span>) <a href="index.html#type-padding">padding</a>
-* (<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'a</span>)</span> <a href=
+"index.html#type-padding">padding</a></span> *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'x</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'x</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Int" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Int" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Int</span> : <a href=
-"index.html#type-int_conv">int_conv</a> * (<span class=
-"type-var">'x</span>,&nbsp;<span class="type-var">'y</span>)
-<a href="index.html#type-padding">padding</a> * (<span class=
-"type-var">'y</span>,&nbsp;int <span>-&gt;</span> <span class=
-"type-var">'a</span>) <a href=
-"index.html#type-precision">precision</a> * (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"index.html#type-int_conv">int_conv</a> * <span><span>(<span class=
+"type-var">'x</span>,&nbsp;<span class="type-var">'y</span>)</span>
+<a href="index.html#type-padding">padding</a></span> *
+<span><span>(<span class="type-var">'y</span>,&nbsp;int
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<a href="index.html#type-precision">precision</a></span> *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'x</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'x</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Int32" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Int32" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Int32</span> : <a href=
-"index.html#type-int_conv">int_conv</a> * (<span class=
-"type-var">'x</span>,&nbsp;<span class="type-var">'y</span>)
-<a href="index.html#type-padding">padding</a> * (<span class=
-"type-var">'y</span>,&nbsp;int32 <span>-&gt;</span> <span class=
-"type-var">'a</span>) <a href=
-"index.html#type-precision">precision</a> * (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"index.html#type-int_conv">int_conv</a> * <span><span>(<span class=
+"type-var">'x</span>,&nbsp;<span class="type-var">'y</span>)</span>
+<a href="index.html#type-padding">padding</a></span> *
+<span><span>(<span class="type-var">'y</span>,&nbsp;int32
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<a href="index.html#type-precision">precision</a></span> *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'x</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'x</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Nativeint" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Nativeint" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Nativeint</span> : <a href=
-"index.html#type-int_conv">int_conv</a> * (<span class=
-"type-var">'x</span>,&nbsp;<span class="type-var">'y</span>)
-<a href="index.html#type-padding">padding</a> * (<span class=
-"type-var">'y</span>,&nbsp;nativeint <span>-&gt;</span>
-<span class="type-var">'a</span>) <a href=
-"index.html#type-precision">precision</a> * (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"index.html#type-int_conv">int_conv</a> * <span><span>(<span class=
+"type-var">'x</span>,&nbsp;<span class="type-var">'y</span>)</span>
+<a href="index.html#type-padding">padding</a></span> *
+<span><span>(<span class="type-var">'y</span>,&nbsp;nativeint
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<a href="index.html#type-precision">precision</a></span> *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'x</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'x</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Int64" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Int64" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Int64</span> : <a href=
-"index.html#type-int_conv">int_conv</a> * (<span class=
-"type-var">'x</span>,&nbsp;<span class="type-var">'y</span>)
-<a href="index.html#type-padding">padding</a> * (<span class=
-"type-var">'y</span>,&nbsp;int64 <span>-&gt;</span> <span class=
-"type-var">'a</span>) <a href=
-"index.html#type-precision">precision</a> * (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"index.html#type-int_conv">int_conv</a> * <span><span>(<span class=
+"type-var">'x</span>,&nbsp;<span class="type-var">'y</span>)</span>
+<a href="index.html#type-padding">padding</a></span> *
+<span><span>(<span class="type-var">'y</span>,&nbsp;int64
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<a href="index.html#type-precision">precision</a></span> *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'x</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'x</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Float" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Float" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Float</span> : <a href=
-"index.html#type-float_conv">float_conv</a> * (<span class=
-"type-var">'x</span>,&nbsp;<span class="type-var">'y</span>)
-<a href="index.html#type-padding">padding</a> * (<span class=
-"type-var">'y</span>,&nbsp;float <span>-&gt;</span> <span class=
-"type-var">'a</span>) <a href=
-"index.html#type-precision">precision</a> * (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"index.html#type-float_conv">float_conv</a> *
+<span><span>(<span class="type-var">'x</span>,&nbsp;<span class=
+"type-var">'y</span>)</span> <a href=
+"index.html#type-padding">padding</a></span> *
+<span><span>(<span class="type-var">'y</span>,&nbsp;float
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<a href="index.html#type-precision">precision</a></span> *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'x</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'x</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Bool" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Bool" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Bool</span> : (<span class=
+"constructor">Bool</span> : <span><span>(<span class=
 "type-var">'x</span>,&nbsp;bool <span>-&gt;</span> <span class=
-"type-var">'a</span>) <a href="index.html#type-padding">padding</a>
-* (<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'a</span>)</span> <a href=
+"index.html#type-padding">padding</a></span> *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'x</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'x</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Flush" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Flush" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Flush</span> : (<span class=
+"constructor">Flush</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.String_literal" class="anchored">
 <td class="def constructor"><a href="#type-fmt.String_literal"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">String_literal</span> : string * (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"constructor">String_literal</span> : string *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Char_literal" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Char_literal" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Char_literal</span> : char * (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"constructor">Char_literal</span> : char *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Format_arg" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Format_arg" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Format_arg</span> : <a href=
-"index.html#type-pad_option">pad_option</a> * (<span class=
+"index.html#type-pad_option">pad_option</a> *
+<span><span>(<span class="type-var">'g</span>,&nbsp;<span class=
+"type-var">'h</span>,&nbsp;<span class=
+"type-var">'i</span>,&nbsp;<span class=
+"type-var">'j</span>,&nbsp;<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)</span>
+<a href="index.html#type-fmtty">fmtty</a></span> *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>,&nbsp;<span class=
+"type-var">'c</span>,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span><span>(<span class=
 "type-var">'g</span>,&nbsp;<span class=
 "type-var">'h</span>,&nbsp;<span class=
 "type-var">'i</span>,&nbsp;<span class=
 "type-var">'j</span>,&nbsp;<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)
-<a href="index.html#type-fmtty">fmtty</a> * (<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-((<span class="type-var">'g</span>,&nbsp;<span class=
-"type-var">'h</span>,&nbsp;<span class=
-"type-var">'i</span>,&nbsp;<span class=
-"type-var">'j</span>,&nbsp;<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Format_subst" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Format_subst" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Format_subst</span> : <a href=
-"index.html#type-pad_option">pad_option</a> * (<span class=
-"type-var">'g</span>,&nbsp;<span class=
+"index.html#type-pad_option">pad_option</a> *
+<span><span>(<span class="type-var">'g</span>,&nbsp;<span class=
 "type-var">'h</span>,&nbsp;<span class=
 "type-var">'i</span>,&nbsp;<span class=
 "type-var">'j</span>,&nbsp;<span class=
@@ -1418,286 +1472,294 @@ class="anchor"></a><code>|</code> <code><span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'j2</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-fmtty_rel">fmtty_rel</a> * (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-fmtty_rel">fmtty_rel</a></span> *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-((<span class="type-var">'g</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span><span>(<span class=
+"type-var">'g</span>,&nbsp;<span class=
 "type-var">'h</span>,&nbsp;<span class=
 "type-var">'i</span>,&nbsp;<span class=
 "type-var">'j</span>,&nbsp;<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-<span class="type-var">'g2</span>,&nbsp;<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span class=
+"type-var">'g2</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'j2</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Alpha" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Alpha" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Alpha</span> : (<span class=
+"constructor">Alpha</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-((<span class="type-var">'b</span> <span>-&gt;</span> <span class=
-"type-var">'x</span> <span>-&gt;</span> <span class=
-"type-var">'c</span>) <span>-&gt;</span> <span class=
-"type-var">'x</span> <span>-&gt;</span> <span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span>(<span class="type-var">'b</span>
+<span>-&gt;</span> <span class="type-var">'x</span>
+<span>-&gt;</span> <span class="type-var">'c</span>)</span>
+<span>-&gt;</span> <span class="type-var">'x</span>
+<span>-&gt;</span> <span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Theta" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Theta" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Theta</span> : (<span class=
+"constructor">Theta</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-((<span class="type-var">'b</span> <span>-&gt;</span> <span class=
-"type-var">'c</span>) <span>-&gt;</span> <span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span>(<span class="type-var">'b</span>
+<span>-&gt;</span> <span class="type-var">'c</span>)</span>
+<span>-&gt;</span> <span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Formatting_lit" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Formatting_lit"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Formatting_lit</span> : <a href=
-"index.html#type-formatting_lit">formatting_lit</a> * (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"index.html#type-formatting_lit">formatting_lit</a> *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Formatting_gen" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Formatting_gen"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Formatting_gen</span> : (<span class=
+"constructor">Formatting_gen</span> : <span><span>(<span class=
 "type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d1</span>,&nbsp;<span class=
-"type-var">'e1</span>,&nbsp;<span class="type-var">'f1</span>)
-<a href="index.html#type-formatting_gen">formatting_gen</a> *
-(<span class="type-var">'f1</span>,&nbsp;<span class=
+"type-var">'e1</span>,&nbsp;<span class=
+"type-var">'f1</span>)</span> <a href=
+"index.html#type-formatting_gen">formatting_gen</a></span> *
+<span><span>(<span class="type-var">'f1</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'e1</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'a1</span>,&nbsp;<span class=
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a1</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d1</span>,&nbsp;<span class=
-"type-var">'e2</span>,&nbsp;<span class="type-var">'f2</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e2</span>,&nbsp;<span class=
+"type-var">'f2</span>)</span> <a href=
+"index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Reader" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Reader" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Reader</span> : (<span class=
+"constructor">Reader</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'x</span> <span>-&gt;</span> <span class=
-"type-var">'a</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'x</span> <span>-&gt;</span>
+<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;(<span class="type-var">'b</span>
-<span>-&gt;</span> <span class="type-var">'x</span>)
+"type-var">'c</span>,&nbsp;<span>(<span class="type-var">'b</span>
+<span>-&gt;</span> <span class="type-var">'x</span>)</span>
 <span>-&gt;</span> <span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Scan_char_set" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Scan_char_set"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Scan_char_set</span> : <a href=
 "index.html#type-pad_option">pad_option</a> * <a href=
-"index.html#type-char_set">char_set</a> * (<span class=
+"index.html#type-char_set">char_set</a> * <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span> (string
-<span>-&gt;</span> <span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(string <span>-&gt;</span> <span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Scan_get_counter" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Scan_get_counter"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Scan_get_counter</span> : <a href=
-"index.html#type-counter">counter</a> * (<span class=
+"index.html#type-counter">counter</a> * <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span> (int
-<span>-&gt;</span> <span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(int <span>-&gt;</span> <span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Scan_next_char" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Scan_next_char"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Scan_next_char</span> : (<span class=
+"constructor">Scan_next_char</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span> (char
-<span>-&gt;</span> <span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(char <span>-&gt;</span> <span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Ignored_param" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Ignored_param"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Ignored_param</span> : (<span class=
+"constructor">Ignored_param</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'y</span>,&nbsp;<span class="type-var">'x</span>)
-<a href="index.html#type-ignored">ignored</a> * (<span class=
-"type-var">'x</span>,&nbsp;<span class=
+"type-var">'y</span>,&nbsp;<span class="type-var">'x</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span> *
+<span><span>(<span class="type-var">'x</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'y</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.Custom" class="anchored">
 <td class="def constructor"><a href="#type-fmt.Custom" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Custom</span> : (<span class=
+"constructor">Custom</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
-"type-var">'x</span>,&nbsp;<span class="type-var">'y</span>)
-<a href="index.html#type-custom_arity">custom_arity</a> * (unit
-<span>-&gt;</span> <span class="type-var">'x</span>) *
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'x</span>,&nbsp;<span class="type-var">'y</span>)</span>
+<a href="index.html#type-custom_arity">custom_arity</a></span> *
+<span>(unit <span>-&gt;</span> <span class=
+"type-var">'x</span>)</span> * <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> <span>-&gt;</span>
-(<span class="type-var">'y</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'y</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 <tr id="type-fmt.End_of_format" class="anchored">
 <td class="def constructor"><a href="#type-fmt.End_of_format"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">End_of_format</span> : (<span class=
+"constructor">End_of_format</span> : <span><span>(<span class=
 "type-var">'f</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'e</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span></code></td>
 </tr>
 </table>
 </dd>
 <dt class="spec type" id="type-ignored"><a href="#type-ignored"
-class="anchor"></a><code><span class="keyword">and</span> ('a, 'b,
-'c, 'd, 'e, 'f) ignored</code> <code>= (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+class="anchor"></a><code><span class="keyword">and</span>
+<span>('a, 'b, 'c, 'd, 'e, 'f) ignored</span></code> <code>=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-CamlinternalFormatBasics.ignored</code> <code>=</code></dt>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+CamlinternalFormatBasics.ignored</span></code> <code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-ignored.Ignored_char" class="anchored">
 <td class="def constructor"><a href="#type-ignored.Ignored_char"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Ignored_char</span> : (<span class=
+"constructor">Ignored_char</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_caml_char" class="anchored">
 <td class="def constructor"><a href=
 "#type-ignored.Ignored_caml_char" class="anchor"></a><code>|</code>
 <code><span class="constructor">Ignored_caml_char</span> :
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_string" class="anchored">
 <td class="def constructor"><a href="#type-ignored.Ignored_string"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ignored_string</span> : <a href=
 "index.html#type-pad_option">pad_option</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_caml_string" class="anchored">
 <td class="def constructor"><a href=
@@ -1705,12 +1767,12 @@ class="anchor"></a><code>|</code> <code><span class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Ignored_caml_string</span> : <a href=
 "index.html#type-pad_option">pad_option</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_int" class="anchored">
 <td class="def constructor"><a href="#type-ignored.Ignored_int"
@@ -1718,12 +1780,12 @@ class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ignored_int</span> : <a href=
 "index.html#type-int_conv">int_conv</a> * <a href=
 "index.html#type-pad_option">pad_option</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_int32" class="anchored">
 <td class="def constructor"><a href="#type-ignored.Ignored_int32"
@@ -1731,12 +1793,12 @@ class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ignored_int32</span> : <a href=
 "index.html#type-int_conv">int_conv</a> * <a href=
 "index.html#type-pad_option">pad_option</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_nativeint" class="anchored">
 <td class="def constructor"><a href=
@@ -1744,12 +1806,12 @@ class="anchor"></a><code>|</code> <code><span class=
 <code><span class="constructor">Ignored_nativeint</span> : <a href=
 "index.html#type-int_conv">int_conv</a> * <a href=
 "index.html#type-pad_option">pad_option</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_int64" class="anchored">
 <td class="def constructor"><a href="#type-ignored.Ignored_int64"
@@ -1757,12 +1819,12 @@ class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ignored_int64</span> : <a href=
 "index.html#type-int_conv">int_conv</a> * <a href=
 "index.html#type-pad_option">pad_option</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_float" class="anchored">
 <td class="def constructor"><a href="#type-ignored.Ignored_float"
@@ -1770,75 +1832,75 @@ class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ignored_float</span> : <a href=
 "index.html#type-pad_option">pad_option</a> * <a href=
 "index.html#type-prec_option">prec_option</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_bool" class="anchored">
 <td class="def constructor"><a href="#type-ignored.Ignored_bool"
 class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ignored_bool</span> : <a href=
 "index.html#type-pad_option">pad_option</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_format_arg" class="anchored">
 <td class="def constructor"><a href=
 "#type-ignored.Ignored_format_arg" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Ignored_format_arg</span> : <a href=
-"index.html#type-pad_option">pad_option</a> * (<span class=
-"type-var">'g</span>,&nbsp;<span class=
+"index.html#type-pad_option">pad_option</a> *
+<span><span>(<span class="type-var">'g</span>,&nbsp;<span class=
 "type-var">'h</span>,&nbsp;<span class=
 "type-var">'i</span>,&nbsp;<span class=
 "type-var">'j</span>,&nbsp;<span class=
-"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)
-<a href="index.html#type-fmtty">fmtty</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'k</span>,&nbsp;<span class="type-var">'l</span>)</span>
+<a href="index.html#type-fmtty">fmtty</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_format_subst" class="anchored">
 <td class="def constructor"><a href=
 "#type-ignored.Ignored_format_subst" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Ignored_format_subst</span> : <a href=
-"index.html#type-pad_option">pad_option</a> * (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"index.html#type-pad_option">pad_option</a> *
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmtty">fmtty</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmtty">fmtty</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_reader" class="anchored">
 <td class="def constructor"><a href="#type-ignored.Ignored_reader"
 class="anchor"></a><code>|</code> <code><span class=
-"constructor">Ignored_reader</span> : (<span class=
+"constructor">Ignored_reader</span> : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;(<span class="type-var">'b</span>
-<span>-&gt;</span> <span class="type-var">'x</span>)
+"type-var">'c</span>,&nbsp;<span>(<span class="type-var">'b</span>
+<span>-&gt;</span> <span class="type-var">'x</span>)</span>
 <span>-&gt;</span> <span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_scan_char_set" class="anchored">
 <td class="def constructor"><a href=
@@ -1847,12 +1909,12 @@ class="anchor"></a><code>|</code> <code><span class=
 "constructor">Ignored_scan_char_set</span> : <a href=
 "index.html#type-pad_option">pad_option</a> * <a href=
 "index.html#type-char_set">char_set</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_scan_get_counter" class="anchored">
 <td class="def constructor"><a href=
@@ -1860,48 +1922,48 @@ class="anchor"></a><code>|</code> <code><span class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Ignored_scan_get_counter</span> : <a href=
 "index.html#type-counter">counter</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 <tr id="type-ignored.Ignored_scan_next_char" class="anchored">
 <td class="def constructor"><a href=
 "#type-ignored.Ignored_scan_next_char" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Ignored_scan_next_char</span> : (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+"constructor">Ignored_scan_next_char</span> :
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-ignored">ignored</a></code></td>
+"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)</span>
+<a href="index.html#type-ignored">ignored</a></span></code></td>
 </tr>
 </table>
 </dd>
 <dt class="spec type" id="type-format6"><a href="#type-format6"
-class="anchor"></a><code><span class="keyword">and</span> ('a, 'b,
-'c, 'd, 'e, 'f) format6</code> <code>= (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+class="anchor"></a><code><span class="keyword">and</span>
+<span>('a, 'b, 'c, 'd, 'e, 'f) format6</span></code> <code>=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-CamlinternalFormatBasics.format6</code> <code>=</code></dt>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+CamlinternalFormatBasics.format6</span></code> <code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-format6.Format" class="anchored">
 <td class="def constructor"><a href="#type-format6.Format" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Format</span> <span class="keyword">of</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-fmt">fmt</a> * string</code></td>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-fmt">fmt</a></span> * string</code></td>
 </tr>
 </table>
 </dd>

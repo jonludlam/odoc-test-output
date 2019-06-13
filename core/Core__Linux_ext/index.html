@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Core__Linux_ext (core.Core__Linux_ext)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -40,13 +39,13 @@ class="anchor"></a>Filesystem functions</h3>
 <dl>
 <dt class="spec value" id="val-sendfile"><a href="#val-sendfile"
 class="anchor"></a><code><span class="keyword">val</span> sendfile
-: (?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span>
-fd:<a href=
-"../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a>
+: <span><span>(<span>?⁠pos:int</span> <span>-&gt;</span>
+<span>?⁠len:int</span> <span>-&gt;</span> <span>fd:<a href=
+"../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a></span>
 <span>-&gt;</span> <a href=
 "../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a>
-<span>-&gt;</span> int) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span>-&gt;</span> int)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>sendfile ?pos ?len ~fd sock</code> sends mmap-able data
 from file descriptor <code>fd</code> to socket <code>sock</code>
@@ -155,45 +154,47 @@ sexp_of_tcp_bool_option : <a href=
 "../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 <dt class="spec value" id="val-bin_tcp_bool_option"><a href=
 "#val-bin_tcp_bool_option" class="anchor"></a><code><span class=
-"keyword">val</span> bin_tcp_bool_option : <a href=
+"keyword">val</span> bin_tcp_bool_option : <span><a href=
 "index.html#type-tcp_bool_option">tcp_bool_option</a> <a href=
-"../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></code></dt>
+"../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></span></code></dt>
 <dt class="spec value" id="val-bin_read_tcp_bool_option"><a href=
 "#val-bin_read_tcp_bool_option" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_read_tcp_bool_option : <a href=
+bin_read_tcp_bool_option : <span><a href=
 "index.html#type-tcp_bool_option">tcp_bool_option</a> <a href=
-"../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+"../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id="val-__bin_read_tcp_bool_option__">
 <a href="#val-__bin_read_tcp_bool_option__" class=
 "anchor"></a><code><span class="keyword">val</span>
-__bin_read_tcp_bool_option__ : (int <span>-&gt;</span> <a href=
-"index.html#type-tcp_bool_option">tcp_bool_option</a>) <a href=
-"../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+__bin_read_tcp_bool_option__ : <span><span>(int <span>-&gt;</span>
+<a href=
+"index.html#type-tcp_bool_option">tcp_bool_option</a>)</span>
+<a href=
+"../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_reader_tcp_bool_option"><a href=
 "#val-bin_reader_tcp_bool_option" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_reader_tcp_bool_option : <a href=
+bin_reader_tcp_bool_option : <span><a href=
 "index.html#type-tcp_bool_option">tcp_bool_option</a> <a href=
-"../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></code></dt>
+"../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_size_tcp_bool_option"><a href=
 "#val-bin_size_tcp_bool_option" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_size_tcp_bool_option : <a href=
+bin_size_tcp_bool_option : <span><a href=
 "index.html#type-tcp_bool_option">tcp_bool_option</a> <a href=
-"../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></code></dt>
+"../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></span></code></dt>
 <dt class="spec value" id="val-bin_write_tcp_bool_option"><a href=
 "#val-bin_write_tcp_bool_option" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_write_tcp_bool_option : <a href=
+bin_write_tcp_bool_option : <span><a href=
 "index.html#type-tcp_bool_option">tcp_bool_option</a> <a href=
-"../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></code></dt>
+"../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></span></code></dt>
 <dt class="spec value" id="val-bin_writer_tcp_bool_option"><a href=
 "#val-bin_writer_tcp_bool_option" class=
 "anchor"></a><code><span class="keyword">val</span>
-bin_writer_tcp_bool_option : <a href=
+bin_writer_tcp_bool_option : <span><a href=
 "index.html#type-tcp_bool_option">tcp_bool_option</a> <a href=
-"../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></code></dt>
+"../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></span></code></dt>
 <dt class="spec value" id="val-bin_shape_tcp_bool_option"><a href=
 "#val-bin_shape_tcp_bool_option" class=
 "anchor"></a><code><span class="keyword">val</span>
@@ -207,12 +208,12 @@ bin_shape_tcp_bool_option : <a href=
 <dl>
 <dt class="spec value" id="val-gettcpopt_bool"><a href=
 "#val-gettcpopt_bool" class="anchor"></a><code><span class=
-"keyword">val</span> gettcpopt_bool : (<a href=
+"keyword">val</span> gettcpopt_bool : <span><span>(<a href=
 "../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a>
 <span>-&gt;</span> <a href=
 "index.html#type-tcp_bool_option">tcp_bool_option</a>
-<span>-&gt;</span> bool) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span>-&gt;</span> bool)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>gettcpopt_bool sock opt</code> Returns the current value
 of the boolean TCP socket option <code>opt</code> for socket
@@ -222,12 +223,12 @@ of the boolean TCP socket option <code>opt</code> for socket
 <dl>
 <dt class="spec value" id="val-settcpopt_bool"><a href=
 "#val-settcpopt_bool" class="anchor"></a><code><span class=
-"keyword">val</span> settcpopt_bool : (<a href=
+"keyword">val</span> settcpopt_bool : <span><span>(<a href=
 "../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a>
 <span>-&gt;</span> <a href=
 "index.html#type-tcp_bool_option">tcp_bool_option</a>
-<span>-&gt;</span> bool <span>-&gt;</span> unit) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span>-&gt;</span> bool <span>-&gt;</span> unit)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>settcpopt_bool sock opt v</code> sets the current value of
 the boolean TCP socket option <code>opt</code> for socket
@@ -238,13 +239,13 @@ the boolean TCP socket option <code>opt</code> for socket
 <dt class="spec value" id="val-send_nonblocking_no_sigpipe">
 <a href="#val-send_nonblocking_no_sigpipe" class=
 "anchor"></a><code><span class="keyword">val</span>
-send_nonblocking_no_sigpipe : (<a href=
+send_nonblocking_no_sigpipe : <span><span>(<a href=
 "../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a>
-<span>-&gt;</span> ?⁠pos:int <span>-&gt;</span> ?⁠len:int
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span>?⁠pos:int</span> <span>-&gt;</span>
+<span>?⁠len:int</span> <span>-&gt;</span> <a href=
 "../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>
-<span>-&gt;</span> int option) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span>-&gt;</span> <span>int option</span>)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>send_nonblocking_no_sigpipe sock ?pos ?len buf</code>
 tries to do a nonblocking send on socket <code>sock</code> given
@@ -261,13 +262,13 @@ Unix-errors.</p>
 <dl>
 <dt class="spec value" id="val-send_no_sigpipe"><a href=
 "#val-send_no_sigpipe" class="anchor"></a><code><span class=
-"keyword">val</span> send_no_sigpipe : (<a href=
+"keyword">val</span> send_no_sigpipe : <span><span>(<a href=
 "../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a>
-<span>-&gt;</span> ?⁠pos:int <span>-&gt;</span> ?⁠len:int
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span>?⁠pos:int</span> <span>-&gt;</span>
+<span>?⁠len:int</span> <span>-&gt;</span> <a href=
 "../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>
-<span>-&gt;</span> int) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span>-&gt;</span> int)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>send_no_sigpipe sock ?pos ?len buf</code> tries to do a
 blocking send on socket <code>sock</code> given buffer
@@ -284,12 +285,14 @@ Unix-errors.</p>
 <dt class="spec value" id="val-sendmsg_nonblocking_no_sigpipe">
 <a href="#val-sendmsg_nonblocking_no_sigpipe" class=
 "anchor"></a><code><span class="keyword">val</span>
-sendmsg_nonblocking_no_sigpipe : (<a href=
+sendmsg_nonblocking_no_sigpipe : <span><span>(<a href=
 "../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a>
-<span>-&gt;</span> ?⁠count:int <span>-&gt;</span> string <a href=
-"../Core__Core_unix/IOVec/index.html#type-t">Core__.Core_unix.IOVec.t</a>
-array <span>-&gt;</span> int option) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span>-&gt;</span> <span>?⁠count:int</span> <span>-&gt;</span>
+<span><span>string <a href=
+"../Core__Core_unix/IOVec/index.html#type-t">Core__.Core_unix.IOVec.t</a></span>
+array</span> <span>-&gt;</span> <span>int option</span>)</span>
+<a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>sendmsg_nonblocking_no_sigpipe sock ?count iovecs</code>
 tries to do a nonblocking send on socket <code>sock</code> using
@@ -344,10 +347,10 @@ notifications</h3>
 <dl>
 <dt class="spec value" id="val-pr_set_pdeathsig"><a href=
 "#val-pr_set_pdeathsig" class="anchor"></a><code><span class=
-"keyword">val</span> pr_set_pdeathsig : (<a href=
+"keyword">val</span> pr_set_pdeathsig : <span><span>(<a href=
 "../Core/Signal/index.html#type-t">Core.Signal.t</a>
-<span>-&gt;</span> unit) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span>-&gt;</span> unit)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>pr_set_pdeathsig s</code> sets the signal <code>s</code>
 to be sent to the executing process when its parent dies. NOTE: the
@@ -363,10 +366,11 @@ execute an appropriate handler.</p>
 <dl>
 <dt class="spec value" id="val-pr_get_pdeathsig"><a href=
 "#val-pr_get_pdeathsig" class="anchor"></a><code><span class=
-"keyword">val</span> pr_get_pdeathsig : (unit <span>-&gt;</span>
-<a href="../Core/Signal/index.html#type-t">Core.Signal.t</a>)
+"keyword">val</span> pr_get_pdeathsig : <span><span>(unit
+<span>-&gt;</span> <a href=
+"../Core/Signal/index.html#type-t">Core.Signal.t</a>)</span>
 <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>pr_get_pdeathsig ()</code> gets the signal that will be
 sent to the currently executing process when its parent dies.</p>
@@ -381,9 +385,9 @@ name</h3>
 <dl>
 <dt class="spec value" id="val-pr_set_name_first16"><a href=
 "#val-pr_set_name_first16" class="anchor"></a><code><span class=
-"keyword">val</span> pr_set_name_first16 : (string
-<span>-&gt;</span> unit) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"keyword">val</span> pr_set_name_first16 : <span><span>(string
+<span>-&gt;</span> unit)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>pr_set_name_first16 name</code> sets the name of the
 executing thread to <code>name</code>. Only the first 16 bytes in
@@ -393,9 +397,9 @@ executing thread to <code>name</code>. Only the first 16 bytes in
 <dl>
 <dt class="spec value" id="val-pr_get_name"><a href=
 "#val-pr_get_name" class="anchor"></a><code><span class=
-"keyword">val</span> pr_get_name : (unit <span>-&gt;</span> string)
-<a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"keyword">val</span> pr_get_name : <span><span>(unit
+<span>-&gt;</span> string)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>pr_get_name ()</code> gets the name of the executing
 thread. The name is at most 16 bytes long.</p>
@@ -410,10 +414,10 @@ thread. The name is at most 16 bytes long.</p>
 <dl>
 <dt class="spec value" id="val-file_descr_realpath"><a href=
 "#val-file_descr_realpath" class="anchor"></a><code><span class=
-"keyword">val</span> file_descr_realpath : (<a href=
+"keyword">val</span> file_descr_realpath : <span><span>(<a href=
 "../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a>
-<span>-&gt;</span> string) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span>-&gt;</span> string)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>file_descr_realpath fd</code> returns the canonicalized
 absolute pathname of the file associated with file descriptor
@@ -424,10 +428,10 @@ absolute pathname of the file associated with file descriptor
 <dl>
 <dt class="spec value" id="val-out_channel_realpath"><a href=
 "#val-out_channel_realpath" class="anchor"></a><code><span class=
-"keyword">val</span> out_channel_realpath : (<a href=
+"keyword">val</span> out_channel_realpath : <span><span>(<a href=
 "../../stdio/Stdio/Out_channel/index.html#type-t">Core__.Import.Out_channel.t</a>
-<span>-&gt;</span> string) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span>-&gt;</span> string)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>out_channel_realpath oc</code> returns the canonicalized
 absolute pathname of the file associated with output channel
@@ -438,10 +442,10 @@ absolute pathname of the file associated with output channel
 <dl>
 <dt class="spec value" id="val-in_channel_realpath"><a href=
 "#val-in_channel_realpath" class="anchor"></a><code><span class=
-"keyword">val</span> in_channel_realpath : (<a href=
+"keyword">val</span> in_channel_realpath : <span><span>(<a href=
 "../../stdio/Stdio/In_channel/index.html#type-t">Core__.Import.In_channel.t</a>
-<span>-&gt;</span> string) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span>-&gt;</span> string)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>in_channel_realpath ic</code> returns the canonicalized
 absolute pathname of the file associated with input channel
@@ -458,11 +462,12 @@ absolute pathname of the file associated with input channel
 <dl>
 <dt class="spec value" id="val-sched_setaffinity"><a href=
 "#val-sched_setaffinity" class="anchor"></a><code><span class=
-"keyword">val</span> sched_setaffinity : (?⁠pid:<a href=
-"../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a>
-<span>-&gt;</span> cpuset:int list <span>-&gt;</span> unit
-<span>-&gt;</span> unit) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"keyword">val</span> sched_setaffinity :
+<span><span>(<span>?⁠pid:<a href=
+"../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a></span>
+<span>-&gt;</span> <span>cpuset:<span>int list</span></span>
+<span>-&gt;</span> unit <span>-&gt;</span> unit)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p>Setting the CPU affinity causes a process to only run on the
 cores chosen. You can find out how many cores a system has in
@@ -476,20 +481,22 @@ See <code>man sched_setaffinity</code> for details.</p>
 <dl>
 <dt class="spec value" id="val-sched_getaffinity"><a href=
 "#val-sched_getaffinity" class="anchor"></a><code><span class=
-"keyword">val</span> sched_getaffinity : (?⁠pid:<a href=
-"../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a>
-<span>-&gt;</span> unit <span>-&gt;</span> int list) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"keyword">val</span> sched_getaffinity :
+<span><span>(<span>?⁠pid:<a href=
+"../../core_kernel/Core_kernel/Pid/index.html#type-t">Core__.Import.Pid.t</a></span>
+<span>-&gt;</span> unit <span>-&gt;</span> <span>int
+list</span>)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dt class="spec value" id="val-sched_setaffinity_this_thread">
 <a href="#val-sched_setaffinity_this_thread" class=
 "anchor"></a><code><span class="keyword">val</span>
-sched_setaffinity_this_thread : (cpuset:int list <span>-&gt;</span>
-unit) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+sched_setaffinity_this_thread : <span><span>(<span>cpuset:<span>int
+list</span></span> <span>-&gt;</span> unit)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dt class="spec value" id="val-cores"><a href="#val-cores" class=
-"anchor"></a><code><span class="keyword">val</span> cores : (unit
-<span>-&gt;</span> int) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"anchor"></a><code><span class="keyword">val</span> cores :
+<span><span>(unit <span>-&gt;</span> int)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>cores ()</code> returns the number of cores on the
 machine. This may be different than the number of cores available
@@ -499,11 +506,11 @@ to the calling process.</p>
 <dl>
 <dt class="spec value" id="val-get_terminal_size"><a href=
 "#val-get_terminal_size" class="anchor"></a><code><span class=
-"keyword">val</span> get_terminal_size : ([ `Controlling | `Fd of
-<a href=
-"../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a>
-] <span>-&gt;</span> int * int) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"keyword">val</span> get_terminal_size : <span><span>(<span>[
+`Controlling <span><span>| `Fd</span> of <a href=
+"../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a></span>
+]</span> <span>-&gt;</span> int * int)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>get_terminal_size term</code> returns <code>(rows,
 cols)</code>, the number of rows and columns of the controlling
@@ -530,10 +537,10 @@ priority.</p>
 <dl>
 <dt class="spec value" id="val-setpriority"><a href=
 "#val-setpriority" class="anchor"></a><code><span class=
-"keyword">val</span> setpriority : (<a href=
+"keyword">val</span> setpriority : <span><span>(<a href=
 "Priority/index.html#type-t">Priority.t</a> <span>-&gt;</span>
-unit) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+unit)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p>Set the calling thread's priority in the Linux scheduler</p>
 </dd>
@@ -541,9 +548,10 @@ unit) <a href=
 <dl>
 <dt class="spec value" id="val-getpriority"><a href=
 "#val-getpriority" class="anchor"></a><code><span class=
-"keyword">val</span> getpriority : (unit <span>-&gt;</span>
-<a href="Priority/index.html#type-t">Priority.t</a>) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"keyword">val</span> getpriority : <span><span>(unit
+<span>-&gt;</span> <a href=
+"Priority/index.html#type-t">Priority.t</a>)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p>Get the calling thread's priority in the Linux scheduler</p>
 </dd>
@@ -552,9 +560,9 @@ unit) <a href=
 <dt class="spec value" id="val-get_ipv4_address_for_interface">
 <a href="#val-get_ipv4_address_for_interface" class=
 "anchor"></a><code><span class="keyword">val</span>
-get_ipv4_address_for_interface : (string <span>-&gt;</span> string)
-<a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+get_ipv4_address_for_interface : <span><span>(string
+<span>-&gt;</span> string)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>get_ipv4_address_for_interface "eth0"</code> returns the
 IP address assigned to eth0, or throws an exception if no IP
@@ -564,12 +572,12 @@ address is configured.</p>
 <dl>
 <dt class="spec value" id="val-bind_to_interface"><a href=
 "#val-bind_to_interface" class="anchor"></a><code><span class=
-"keyword">val</span> bind_to_interface : (<a href=
+"keyword">val</span> bind_to_interface : <span><span>(<a href=
 "../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a>
 <span>-&gt;</span> <a href=
 "Bound_to_interface/index.html#type-t">Bound_to_interface.t</a>
-<span>-&gt;</span> unit) <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span>-&gt;</span> unit)</span> <a href=
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dd>
 <p><code>bind_to_interface fd (Only "eth0")</code> restricts
 packets from being received/sent on the given file descriptor
@@ -597,12 +605,12 @@ socket</code> for more information.</p>
 <dl>
 <dt class="spec value" id="val-get_bind_to_interface"><a href=
 "#val-get_bind_to_interface" class="anchor"></a><code><span class=
-"keyword">val</span> get_bind_to_interface : (<a href=
+"keyword">val</span> get_bind_to_interface : <span><span>(<a href=
 "../Core__Core_unix/File_descr/index.html#type-t">Core__.Core_unix.File_descr.t</a>
 <span>-&gt;</span> <a href=
-"Bound_to_interface/index.html#type-t">Bound_to_interface.t</a>)
+"Bound_to_interface/index.html#type-t">Bound_to_interface.t</a>)</span>
 <a href=
-"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec module" id="module-Epoll"><a href="#module-Epoll"

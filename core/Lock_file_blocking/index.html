@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Lock_file_blocking (core.Lock_file_blocking)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -31,8 +30,9 @@ directory.</p>
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-?⁠message:string <span>-&gt;</span> ?⁠close_on_exec:bool
-<span>-&gt;</span> ?⁠unlink_on_exit:bool <span>-&gt;</span> string
+<span>?⁠message:string</span> <span>-&gt;</span>
+<span>?⁠close_on_exec:bool</span> <span>-&gt;</span>
+<span>?⁠unlink_on_exit:bool</span> <span>-&gt;</span> string
 <span>-&gt;</span> bool</code></dt>
 <dd>
 <p><code>create ?close_on_exec ?message path</code> tries to create
@@ -55,10 +55,10 @@ world-writable even with umask 0.</p>
 <dl>
 <dt class="spec value" id="val-create_exn"><a href=
 "#val-create_exn" class="anchor"></a><code><span class=
-"keyword">val</span> create_exn : ?⁠message:string
-<span>-&gt;</span> ?⁠close_on_exec:bool <span>-&gt;</span>
-?⁠unlink_on_exit:bool <span>-&gt;</span> string <span>-&gt;</span>
-unit</code></dt>
+"keyword">val</span> create_exn : <span>?⁠message:string</span>
+<span>-&gt;</span> <span>?⁠close_on_exec:bool</span>
+<span>-&gt;</span> <span>?⁠unlink_on_exit:bool</span>
+<span>-&gt;</span> string <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>create_exn ?message path</code> is like
 <code>create</code> except that it throws an exception on failure
@@ -68,11 +68,12 @@ instead of returning a boolean value.</p>
 <dl>
 <dt class="spec value" id="val-blocking_create"><a href=
 "#val-blocking_create" class="anchor"></a><code><span class=
-"keyword">val</span> blocking_create : ?⁠timeout:<a href=
-"../Core__Core_time_float/Span/index.html#type-t">Core.Time.Span.t</a>
-<span>-&gt;</span> ?⁠message:string <span>-&gt;</span>
-?⁠close_on_exec:bool <span>-&gt;</span> ?⁠unlink_on_exit:bool
-<span>-&gt;</span> string <span>-&gt;</span> unit</code></dt>
+"keyword">val</span> blocking_create : <span>?⁠timeout:<a href=
+"../Core__Core_time_float/Span/index.html#type-t">Core.Time.Span.t</a></span>
+<span>-&gt;</span> <span>?⁠message:string</span> <span>-&gt;</span>
+<span>?⁠close_on_exec:bool</span> <span>-&gt;</span>
+<span>?⁠unlink_on_exit:bool</span> <span>-&gt;</span> string
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>blocking_create t</code> tries to create the lock. If
 another process holds the lock this function will wait until it is
@@ -92,9 +93,9 @@ otherwise. Requires write permission for the lock file.</p>
 <dl>
 <dt class="spec value" id="val-get_pid"><a href="#val-get_pid"
 class="anchor"></a><code><span class="keyword">val</span> get_pid :
-string <span>-&gt;</span> <a href=
+string <span>-&gt;</span> <span><a href=
 "../../core_kernel/Core_kernel/Pid/index.html#type-t">Core.Pid.t</a>
-option</code></dt>
+option</span></code></dt>
 <dd>
 <p><code>get_pid path</code> reads the lock file at
 <code>path</code> and returns the pid in the file. Returns

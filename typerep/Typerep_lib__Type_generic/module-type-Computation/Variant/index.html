@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Variant
 (typerep.Typerep_lib__Type_generic.Computation.Variant)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -28,19 +27,19 @@ hljs.initHighlightingOnLoad();
 </header>
 <dl>
 <dt class="spec type" id="type-tag"><a href="#type-tag" class=
-"anchor"></a><code><span class="keyword">type</span> _ tag</code>
-<code>=</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>_
+tag</span></code> <code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-tag.Tag" class="anchored">
 <td class="def constructor"><a href="#type-tag.Tag" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Tag</span> : (<span class=
+"constructor">Tag</span> : <span><span>(<span class=
 "type-var">'variant</span>,&nbsp;<span class=
-"type-var">'args</span>) <a href=
-"../Tag/index.html#type-t">Tag.t</a> <span>-&gt;</span>
-<span class="type-var">'variant</span> <a href=
-"index.html#type-tag">tag</a></code></td>
+"type-var">'args</span>)</span> <a href=
+"../Tag/index.html#type-t">Tag.t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'variant</span> <a href=
+"index.html#type-tag">tag</a></span></code></td>
 </tr>
 </table>
 </dd>
@@ -54,20 +53,20 @@ and is thus existential</p>
 </dl>
 <dl>
 <dt class="spec type" id="type-value"><a href="#type-value" class=
-"anchor"></a><code><span class="keyword">type</span> _ value</code>
-<code>=</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>_
+value</span></code> <code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-value.Value" class="anchored">
 <td class="def constructor"><a href="#type-value.Value" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Value</span> : (<span class=
+"constructor">Value</span> : <span><span>(<span class=
 "type-var">'variant</span>,&nbsp;<span class=
-"type-var">'args</span>) <a href=
-"../Tag/index.html#type-t">Tag.t</a> * <span class=
-"type-var">'args</span> <span>-&gt;</span> <span class=
+"type-var">'args</span>)</span> <a href=
+"../Tag/index.html#type-t">Tag.t</a></span> * <span class=
+"type-var">'args</span> <span>-&gt;</span> <span><span class=
 "type-var">'variant</span> <a href=
-"index.html#type-value">value</a></code></td>
+"index.html#type-value">value</a></span></code></td>
 </tr>
 </table>
 </dd>
@@ -82,8 +81,8 @@ information about the constructor within the type
 </dl>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 <dd>
 <p>Witness of a variant type. The parameter is the type of the
 variant type witnessed.</p>
@@ -92,14 +91,14 @@ variant type witnessed.</p>
 <dl>
 <dt class="spec value" id="val-typename_of_t"><a href=
 "#val-typename_of_t" class="anchor"></a><code><span class=
-"keyword">val</span> typename_of_t : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../../Typerep_lib/Typename/index.html#type-t">Typerep_lib.Typename.t</a></code></dt>
+"keyword">val</span> typename_of_t : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../../../Typerep_lib/Typename/index.html#type-t">Typerep_lib.Typename.t</a></span></code></dt>
 <dt class="spec value" id="val-length"><a href="#val-length" class=
 "anchor"></a><code><span class="keyword">val</span> length :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> int</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> int</code></dt>
 <dd>
 <p>Returns the number of tags of this variant type definition.</p>
 </dd>
@@ -107,10 +106,10 @@ variant type witnessed.</p>
 <dl>
 <dt class="spec value" id="val-tag"><a href="#val-tag" class=
 "anchor"></a><code><span class="keyword">val</span> tag :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> int <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"index.html#type-tag">tag</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> int
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-tag">tag</a></span></code></dt>
 <dd>
 <p>Get the nth tag of this variant type, indexed from 0.</p>
 </dd>
@@ -118,8 +117,8 @@ variant type witnessed.</p>
 <dl>
 <dt class="spec value" id="val-is_polymorphic"><a href=
 "#val-is_polymorphic" class="anchor"></a><code><span class=
-"keyword">val</span> is_polymorphic : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> is_polymorphic : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> bool</code></dt>
 <dd>
 <p>Distinguish polymorphic variants and standard variants.
@@ -131,10 +130,11 @@ character. Example polymorphic variant: type t = <code>`A |
 <dl>
 <dt class="spec value" id="val-value"><a href="#val-value" class=
 "anchor"></a><code><span class="keyword">val</span> value :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-value">value</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> <a href=
+"index.html#type-value">value</a></span></code></dt>
 <dd>
 <p>Pattern matching on a value of this variant type.</p>
 </dd>
@@ -142,13 +142,15 @@ character. Example polymorphic variant: type t = <code>`A |
 <dl>
 <dt class="spec value" id="val-fold"><a href="#val-fold" class=
 "anchor"></a><code><span class="keyword">val</span> fold :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> init:<span class="type-var">'acc</span>
-<span>-&gt;</span> f:(<span class="type-var">'acc</span>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-tag">tag</a> <span>-&gt;</span> <span class=
-"type-var">'acc</span>) <span>-&gt;</span> <span class=
-"type-var">'acc</span></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>init:<span class="type-var">'acc</span></span>
+<span>-&gt;</span> <span>f:<span>(<span class=
+"type-var">'acc</span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> <a href="index.html#type-tag">tag</a></span>
+<span>-&gt;</span> <span class=
+"type-var">'acc</span>)</span></span> <span>-&gt;</span>
+<span class="type-var">'acc</span></code></dt>
 <dd>
 <p>folding along the tags of the variant type</p>
 </dd>
@@ -156,11 +158,11 @@ character. Example polymorphic variant: type t = <code>`A |
 <dl>
 <dt class="spec value" id="val-internal_use_only"><a href=
 "#val-internal_use_only" class="anchor"></a><code><span class=
-"keyword">val</span> internal_use_only : <span class=
+"keyword">val</span> internal_use_only : <span><span class=
 "type-var">'a</span> <a href=
-"../Variant_internal/index.html#type-t">Variant_internal.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"../Variant_internal/index.html#type-t">Variant_internal.t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 </dl>
 </div>
 </body>

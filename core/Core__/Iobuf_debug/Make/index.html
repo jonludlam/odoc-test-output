@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Make (core.Core__.Iobuf_debug.Make)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -77,23 +76,23 @@ class="anchor"></a><code><span class="keyword">type</span>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
 "anchor"></a><code><span class="keyword">type</span>
-('data_perm_read_write, 'seek_permission) t</code> <code>=
-(<span class=
+<span>('data_perm_read_write, 'seek_permission) t</span></code>
+<code>= <span><span>(<span class=
 "type-var">'data_perm_read_write</span>,&nbsp;<span class=
-"type-var">'seek_permission</span>) <a href=
-"../../../Core__Iobuf/index.html#type-t">Core__Iobuf.t</a></code></dt>
+"type-var">'seek_permission</span>)</span> <a href=
+"../../../Core__Iobuf/index.html#type-t">Core__Iobuf.t</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-invariant"><a href="#val-invariant"
 class="anchor"></a><code><span class="keyword">val</span> invariant
-: <span class="type-var">'a</span> <a href=
-"../../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"../../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a>
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a> <a href=
-"../../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"../../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a></span>
+<span>-&gt;</span> <span><span class="type-var">'b</span> <a href=
+"../../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a></span>
+<span>-&gt;</span> <span><span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+<a href="index.html#type-t">t</a></span> <a href=
+"../../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a></span></code></dt>
 </dl>
 <div class="spec module" id="module-Window"><a href=
 "#module-Window" class="anchor"></a><code><span class=
@@ -117,98 +116,113 @@ class="anchor"></a><code><span class="keyword">module</span>
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-len:int <span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span>len:int</span> <span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-of_bigstring"><a href=
 "#val-of_bigstring" class="anchor"></a><code><span class=
-"keyword">val</span> of_bigstring : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> <a href=
+"keyword">val</span> of_bigstring : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span>
+<a href=
 "../../../../core_kernel/Core_kernel/Bigstring/index.html#type-t">Core__.Import.Bigstring.t</a>
-<span>-&gt;</span> ([&lt; <a href=
+<span>-&gt;</span> <span><span>(<span>[&lt; <a href=
 "../../Import/index.html#type-read_write">Core__.Import.read_write</a>
-],&nbsp;<span class="type-var">'a</span>) <a href=
-"index.html#type-t">t</a></code></dt>
+]</span>,&nbsp;<span class="type-var">'a</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-of_string"><a href="#val-of_string"
 class="anchor"></a><code><span class="keyword">val</span> of_string
-: string <span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a></code></dt>
+: string <span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-sub_shared"><a href=
 "#val-sub_shared" class="anchor"></a><code><span class=
-"keyword">val</span> sub_shared : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> (<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> sub_shared : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'d</span>,&nbsp;<span class=
+"type-var">'a</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'d</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-set_bounds_and_buffer"><a href=
 "#val-set_bounds_and_buffer" class="anchor"></a><code><span class=
-"keyword">val</span> set_bounds_and_buffer : src:([&gt; <a href=
-"../../Import/index.html#type-write">Core__.Import.write</a> ]
-<span class="keyword">as</span> a,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> dst:(<span class=
-"type-var">'a</span>,&nbsp;<a href="index.html#type-seek">seek</a>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
+"keyword">val</span> set_bounds_and_buffer :
+<span>src:<span><span>(<span>[&gt; <a href=
+"../../Import/index.html#type-write">Core__.Import.write</a>
+]</span> <span class="keyword">as</span> a,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span></span> <span>-&gt;</span>
+<span>dst:<span><span>(<span class=
+"type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span></span> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec value" id="val-set_bounds_and_buffer_sub"><a href=
 "#val-set_bounds_and_buffer_sub" class=
 "anchor"></a><code><span class="keyword">val</span>
-set_bounds_and_buffer_sub : pos:int <span>-&gt;</span> len:int
-<span>-&gt;</span> src:([&gt; <a href=
-"../../Import/index.html#type-write">Core__.Import.write</a> ]
-<span class="keyword">as</span> a,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> dst:(<span class=
-"type-var">'a</span>,&nbsp;<a href="index.html#type-seek">seek</a>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
+set_bounds_and_buffer_sub : <span>pos:int</span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span>
+<span>src:<span><span>(<span>[&gt; <a href=
+"../../Import/index.html#type-write">Core__.Import.write</a>
+]</span> <span class="keyword">as</span> a,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span></span> <span>-&gt;</span>
+<span>dst:<span><span>(<span class=
+"type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span></span> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec value" id="val-read_only"><a href="#val-read_only"
 class="anchor"></a><code><span class="keyword">val</span> read_only
-: ([&gt; <a href=
+: <span><span>(<span>[&gt; <a href=
 "../../Import/index.html#type-read">Core__.Import.read</a>
-],&nbsp;<span class="type-var">'s</span>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> (<a href=
-"../../Import/index.html#type-read">Core__.Import.read</a>,&nbsp;<span class="type-var">'s</span>)
-<a href="index.html#type-t">t</a></code></dt>
+]</span>,&nbsp;<span class="type-var">'s</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<a href=
+"../../Import/index.html#type-read">Core__.Import.read</a>,&nbsp;<span class="type-var">'s</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-no_seek"><a href="#val-no_seek"
 class="anchor"></a><code><span class="keyword">val</span> no_seek :
-(<span class="type-var">'r</span>,&nbsp;<span class=
-"type-var">'a</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class="type-var">'r</span>,&nbsp;<a href=
-"index.html#type-no_seek">no_seek</a>) <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span>(<span class="type-var">'r</span>,&nbsp;<span class=
+"type-var">'a</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'r</span>,&nbsp;<a href=
+"index.html#type-no_seek">no_seek</a>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-capacity"><a href="#val-capacity"
 class="anchor"></a><code><span class="keyword">val</span> capacity
-: (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> int</code></dt>
+: <span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-length"><a href="#val-length" class=
 "anchor"></a><code><span class="keyword">val</span> length :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> int</code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-is_empty"><a href="#val-is_empty"
 class="anchor"></a><code><span class="keyword">val</span> is_empty
-: (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> bool</code></dt>
+: <span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+bool</code></dt>
 <dt class="spec value" id="val-narrow"><a href="#val-narrow" class=
 "anchor"></a><code><span class="keyword">val</span> narrow :
-(<span class="type-var">'a</span>,&nbsp;<a href=
-"index.html#type-seek">seek</a>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> unit</code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec value" id="val-narrow_lo"><a href="#val-narrow_lo"
 class="anchor"></a><code><span class="keyword">val</span> narrow_lo
-: (<span class="type-var">'a</span>,&nbsp;<a href=
-"index.html#type-seek">seek</a>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> unit</code></dt>
+: <span><span>(<span class="type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec value" id="val-narrow_hi"><a href="#val-narrow_hi"
 class="anchor"></a><code><span class="keyword">val</span> narrow_hi
-: (<span class="type-var">'a</span>,&nbsp;<a href=
-"index.html#type-seek">seek</a>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> unit</code></dt>
+: <span><span>(<span class="type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+unit</code></dt>
 </dl>
 <div class="spec module-type" id="module-type-Bound"><a href=
 "#module-type-Bound" class="anchor"></a><code><span class=
@@ -229,125 +243,141 @@ class="anchor"></a><code><span class="keyword">val</span> narrow_hi
 <dl>
 <dt class="spec value" id="val-advance"><a href="#val-advance"
 class="anchor"></a><code><span class="keyword">val</span> advance :
-(<span class="type-var">'a</span>,&nbsp;<a href=
-"index.html#type-seek">seek</a>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> int <span>-&gt;</span> unit</code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> int
+<span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-unsafe_advance"><a href=
 "#val-unsafe_advance" class="anchor"></a><code><span class=
-"keyword">val</span> unsafe_advance : (<span class=
-"type-var">'a</span>,&nbsp;<a href="index.html#type-seek">seek</a>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> int
+"keyword">val</span> unsafe_advance : <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> int
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-resize"><a href="#val-resize" class=
 "anchor"></a><code><span class="keyword">val</span> resize :
-(<span class="type-var">'a</span>,&nbsp;<a href=
-"index.html#type-seek">seek</a>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> len:int <span>-&gt;</span> unit</code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-unsafe_resize"><a href=
 "#val-unsafe_resize" class="anchor"></a><code><span class=
-"keyword">val</span> unsafe_resize : (<span class=
-"type-var">'a</span>,&nbsp;<a href="index.html#type-seek">seek</a>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> len:int
-<span>-&gt;</span> unit</code></dt>
+"keyword">val</span> unsafe_resize : <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-rewind"><a href="#val-rewind" class=
 "anchor"></a><code><span class="keyword">val</span> rewind :
-(<span class="type-var">'a</span>,&nbsp;<a href=
-"index.html#type-seek">seek</a>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> unit</code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec value" id="val-reset"><a href="#val-reset" class=
 "anchor"></a><code><span class="keyword">val</span> reset :
-(<span class="type-var">'a</span>,&nbsp;<a href=
-"index.html#type-seek">seek</a>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> unit</code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec value" id="val-flip_lo"><a href="#val-flip_lo"
 class="anchor"></a><code><span class="keyword">val</span> flip_lo :
-(<span class="type-var">'a</span>,&nbsp;<a href=
-"index.html#type-seek">seek</a>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> unit</code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec value" id="val-bounded_flip_lo"><a href=
 "#val-bounded_flip_lo" class="anchor"></a><code><span class=
-"keyword">val</span> bounded_flip_lo : (<span class=
-"type-var">'a</span>,&nbsp;<a href="index.html#type-seek">seek</a>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"keyword">val</span> bounded_flip_lo : <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../../Core__Iobuf/Lo_bound/index.html#type-t">Lo_bound.t</a>
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-compact"><a href="#val-compact"
 class="anchor"></a><code><span class="keyword">val</span> compact :
-(<a href=
-"../../Import/index.html#type-read_write">Core__.Import.read_write</a>,&nbsp;<a href="index.html#type-seek">seek</a>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><span>(<a href=
+"../../Import/index.html#type-read_write">Core__.Import.read_write</a>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec value" id="val-bounded_compact"><a href=
 "#val-bounded_compact" class="anchor"></a><code><span class=
-"keyword">val</span> bounded_compact : (<a href=
-"../../Import/index.html#type-read_write">Core__.Import.read_write</a>,&nbsp;<a href="index.html#type-seek">seek</a>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../Core__Iobuf/Lo_bound/index.html#type-t">Lo_bound.t</a>
+"keyword">val</span> bounded_compact : <span><span>(<a href=
+"../../Import/index.html#type-read_write">Core__.Import.read_write</a>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../Core__Iobuf/Lo_bound/index.html#type-t">Lo_bound.t</a>
 <span>-&gt;</span> <a href=
 "../../../Core__Iobuf/Hi_bound/index.html#type-t">Hi_bound.t</a>
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-flip_hi"><a href="#val-flip_hi"
 class="anchor"></a><code><span class="keyword">val</span> flip_hi :
-(<span class="type-var">'a</span>,&nbsp;<a href=
-"index.html#type-seek">seek</a>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> unit</code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec value" id="val-bounded_flip_hi"><a href=
 "#val-bounded_flip_hi" class="anchor"></a><code><span class=
-"keyword">val</span> bounded_flip_hi : (<span class=
-"type-var">'a</span>,&nbsp;<a href="index.html#type-seek">seek</a>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"keyword">val</span> bounded_flip_hi : <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<a href=
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../../Core__Iobuf/Hi_bound/index.html#type-t">Hi_bound.t</a>
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-protect_window_and_bounds"><a href=
 "#val-protect_window_and_bounds" class=
 "anchor"></a><code><span class="keyword">val</span>
-protect_window_and_bounds : (<span class=
+protect_window_and_bounds : <span><span>(<span class=
 "type-var">'rw</span>,&nbsp;<a href=
-"index.html#type-no_seek">no_seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> f:((<span class=
+"index.html#type-no_seek">no_seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span><span>(<span class=
 "type-var">'rw</span>,&nbsp;<a href=
-"index.html#type-seek">seek</a>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span>)</span></span> <span>-&gt;</span> <span class=
+"type-var">'a</span></code></dt>
 <dt class="spec value" id="val-protect_window_and_bounds_1">
 <a href="#val-protect_window_and_bounds_1" class=
 "anchor"></a><code><span class="keyword">val</span>
-protect_window_and_bounds_1 : (<span class=
+protect_window_and_bounds_1 : <span><span>(<span class=
 "type-var">'rw</span>,&nbsp;<a href=
-"index.html#type-no_seek">no_seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> f:((<span class=
+"index.html#type-no_seek">no_seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span>
+<span>f:<span>(<span><span>(<span class=
 "type-var">'rw</span>,&nbsp;<a href=
-"index.html#type-seek">seek</a>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'b</span>)
-<span>-&gt;</span> <span class="type-var">'b</span></code></dt>
+"index.html#type-seek">seek</a>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <span class=
+"type-var">'b</span>)</span></span> <span>-&gt;</span> <span class=
+"type-var">'b</span></code></dt>
 <dt class="spec value" id="val-to_string"><a href="#val-to_string"
 class="anchor"></a><code><span class="keyword">val</span> to_string
-: ?⁠len:int <span>-&gt;</span> ([&gt; <a href=
+: <span>?⁠len:int</span> <span>-&gt;</span>
+<span><span>(<span>[&gt; <a href=
 "../../Import/index.html#type-read">Core__.Import.read</a>
-],&nbsp;<span class="type-var">'a</span>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> string</code></dt>
+]</span>,&nbsp;<span class="type-var">'a</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+string</code></dt>
 <dt class="spec value" id="val-to_string_hum"><a href=
 "#val-to_string_hum" class="anchor"></a><code><span class=
-"keyword">val</span> to_string_hum : ?⁠max_lines:int
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
+"keyword">val</span> to_string_hum : <span>?⁠max_lines:int</span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
 string</code></dt>
 <dt class="spec value" id="val-to_bytes"><a href="#val-to_bytes"
 class="anchor"></a><code><span class="keyword">val</span> to_bytes
-: (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href=
+: <span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a></code></dt>
 <dt class="spec value" id="val-of_bytes"><a href="#val-of_bytes"
 class="anchor"></a><code><span class="keyword">val</span> of_bytes
 : <a href=
 "../../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 </dl>
 <div class="spec module" id="module-Consume"><a href=
 "#module-Consume" class="anchor"></a><code><span class=
@@ -378,25 +408,26 @@ class="anchor"></a><code><span class="keyword">module</span>
 bin_prot_length_prefix_bytes : int</code></dt>
 <dt class="spec value" id="val-fill_bin_prot"><a href=
 "#val-fill_bin_prot" class="anchor"></a><code><span class=
-"keyword">val</span> fill_bin_prot : ([&gt; <a href=
+"keyword">val</span> fill_bin_prot : <span><span>(<span>[&gt;
+<a href=
 "../../Import/index.html#type-write">Core__.Import.write</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> unit <a href=
-"../../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+<span>-&gt;</span> <span>unit <a href=
+"../../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dt class="spec value" id="val-consume_bin_prot"><a href=
 "#val-consume_bin_prot" class="anchor"></a><code><span class=
-"keyword">val</span> consume_bin_prot : ([&gt; <a href=
-"../../Import/index.html#type-read">Core__.Import.read</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"keyword">val</span> consume_bin_prot : <span><span>(<span>[&gt;
+<a href="../../Import/index.html#type-read">Core__.Import.read</a>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">Bin_prot.Type_class.reader</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 </dl>
 <div class="spec module" id="module-Blit"><a href="#module-Blit"
 class="anchor"></a><code><span class="keyword">module</span>
@@ -453,50 +484,52 @@ ok_or_eof</code> <code>= <a href=
 <a href=
 "../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 <dt class="spec value" id="val-input"><a href="#val-input" class=
-"anchor"></a><code><span class="keyword">val</span> input : ([&gt;
-<a href=
+"anchor"></a><code><span class="keyword">val</span> input :
+<span><span>(<span>[&gt; <a href=
 "../../Import/index.html#type-write">Core__.Import.write</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../../stdio/Stdio/In_channel/index.html#type-t">Core__.Import.In_channel.t</a>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../../stdio/Stdio/In_channel/index.html#type-t">Core__.Import.In_channel.t</a>
 <span>-&gt;</span> <a href=
 "index.html#type-ok_or_eof">ok_or_eof</a></code></dt>
 <dt class="spec value" id="val-read"><a href="#val-read" class=
-"anchor"></a><code><span class="keyword">val</span> read : ([&gt;
-<a href=
+"anchor"></a><code><span class="keyword">val</span> read :
+<span><span>(<span>[&gt; <a href=
 "../../Import/index.html#type-write">Core__.Import.write</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
 <span>-&gt;</span> <a href=
 "index.html#type-ok_or_eof">ok_or_eof</a></code></dt>
 <dt class="spec value" id="val-read_assume_fd_is_nonblocking">
 <a href="#val-read_assume_fd_is_nonblocking" class=
 "anchor"></a><code><span class="keyword">val</span>
-read_assume_fd_is_nonblocking : ([&gt; <a href=
+read_assume_fd_is_nonblocking : <span><span>(<span>[&gt; <a href=
 "../../Import/index.html#type-write">Core__.Import.write</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
 <span>-&gt;</span> <a href=
 "../../../Core__Syscall_result/Unit/index.html#type-t">Core__.Syscall_result.Unit.t</a></code></dt>
 <dt class="spec value" id="val-pread_assume_fd_is_nonblocking">
 <a href="#val-pread_assume_fd_is_nonblocking" class=
 "anchor"></a><code><span class="keyword">val</span>
-pread_assume_fd_is_nonblocking : ([&gt; <a href=
+pread_assume_fd_is_nonblocking : <span><span>(<span>[&gt; <a href=
 "../../Import/index.html#type-write">Core__.Import.write</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
-<span>-&gt;</span> offset:int <span>-&gt;</span> unit</code></dt>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
+<span>-&gt;</span> <span>offset:int</span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec value" id="val-recvfrom_assume_fd_is_nonblocking">
 <a href="#val-recvfrom_assume_fd_is_nonblocking" class=
 "anchor"></a><code><span class="keyword">val</span>
-recvfrom_assume_fd_is_nonblocking : ([&gt; <a href=
+recvfrom_assume_fd_is_nonblocking : <span><span>(<span>[&gt;
+<a href=
 "../../Import/index.html#type-write">Core__.Import.write</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
 <span>-&gt;</span> <a href=
 "../../Core_unix/index.html#type-sockaddr">Core.Iobuf_intf.Unix.sockaddr</a></code></dt>
 </dl>
@@ -509,72 +542,77 @@ recvfrom_assume_fd_is_nonblocking : ([&gt; <a href=
 <dt class="spec value" id="val-recvmmsg_assume_fd_is_nonblocking">
 <a href="#val-recvmmsg_assume_fd_is_nonblocking" class=
 "anchor"></a><code><span class="keyword">val</span>
-recvmmsg_assume_fd_is_nonblocking : (<a href=
+recvmmsg_assume_fd_is_nonblocking : <span><span>(<a href=
 "../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
 <span>-&gt;</span> <a href=
 "../../../Core__Iobuf/Recvmmsg_context/index.html#type-t">Recvmmsg_context.t</a>
 <span>-&gt;</span> <a href=
-"../../../Core__Syscall_result/Int/index.html#type-t">Core.Iobuf_intf.Unix.Syscall_result.Int.t</a>)
+"../../../Core__Syscall_result/Int/index.html#type-t">Core.Iobuf_intf.Unix.Syscall_result.Int.t</a>)</span>
 <a href=
-"../../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"../../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dt class="spec value" id="val-send_nonblocking_no_sigpipe">
 <a href="#val-send_nonblocking_no_sigpipe" class=
 "anchor"></a><code><span class="keyword">val</span>
-send_nonblocking_no_sigpipe : unit <span>-&gt;</span> (([&gt;
-<a href="../../Import/index.html#type-read">Core__.Import.read</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
+send_nonblocking_no_sigpipe : unit <span>-&gt;</span>
+<span><span>(<span><span>(<span>[&gt; <a href=
+"../../Import/index.html#type-read">Core__.Import.read</a>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
 <span>-&gt;</span> <a href=
-"../../../Core__Syscall_result/Unit/index.html#type-t">Core.Iobuf_intf.Unix.Syscall_result.Unit.t</a>)
+"../../../Core__Syscall_result/Unit/index.html#type-t">Core.Iobuf_intf.Unix.Syscall_result.Unit.t</a>)</span>
 <a href=
-"../../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"../../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dt class="spec value" id="val-sendto_nonblocking_no_sigpipe">
 <a href="#val-sendto_nonblocking_no_sigpipe" class=
 "anchor"></a><code><span class="keyword">val</span>
-sendto_nonblocking_no_sigpipe : unit <span>-&gt;</span> (([&gt;
-<a href="../../Import/index.html#type-read">Core__.Import.read</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
+sendto_nonblocking_no_sigpipe : unit <span>-&gt;</span>
+<span><span>(<span><span>(<span>[&gt; <a href=
+"../../Import/index.html#type-read">Core__.Import.read</a>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
 <span>-&gt;</span> <a href=
 "../../Core_unix/index.html#type-sockaddr">Core.Iobuf_intf.Unix.sockaddr</a>
 <span>-&gt;</span> <a href=
-"../../../Core__Syscall_result/Unit/index.html#type-t">Core.Iobuf_intf.Unix.Syscall_result.Unit.t</a>)
+"../../../Core__Syscall_result/Unit/index.html#type-t">Core.Iobuf_intf.Unix.Syscall_result.Unit.t</a>)</span>
 <a href=
-"../../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></code></dt>
+"../../../../core_kernel/Core_kernel/Or_error/index.html#type-t">Core__.Import.Or_error.t</a></span></code></dt>
 <dt class="spec value" id="val-output"><a href="#val-output" class=
-"anchor"></a><code><span class="keyword">val</span> output : ([&gt;
-<a href="../../Import/index.html#type-read">Core__.Import.read</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../../stdio/Stdio/Out_channel/index.html#type-t">Core__.Import.Out_channel.t</a>
+"anchor"></a><code><span class="keyword">val</span> output :
+<span><span>(<span>[&gt; <a href=
+"../../Import/index.html#type-read">Core__.Import.read</a>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../../stdio/Stdio/Out_channel/index.html#type-t">Core__.Import.Out_channel.t</a>
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-write"><a href="#val-write" class=
-"anchor"></a><code><span class="keyword">val</span> write : ([&gt;
-<a href="../../Import/index.html#type-read">Core__.Import.read</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
+"anchor"></a><code><span class="keyword">val</span> write :
+<span><span>(<span>[&gt; <a href=
+"../../Import/index.html#type-read">Core__.Import.read</a>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-write_assume_fd_is_nonblocking">
 <a href="#val-write_assume_fd_is_nonblocking" class=
 "anchor"></a><code><span class="keyword">val</span>
-write_assume_fd_is_nonblocking : ([&gt; <a href=
+write_assume_fd_is_nonblocking : <span><span>(<span>[&gt; <a href=
 "../../Import/index.html#type-read">Core__.Import.read</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-pwrite_assume_fd_is_nonblocking">
 <a href="#val-pwrite_assume_fd_is_nonblocking" class=
 "anchor"></a><code><span class="keyword">val</span>
-pwrite_assume_fd_is_nonblocking : ([&gt; <a href=
+pwrite_assume_fd_is_nonblocking : <span><span>(<span>[&gt; <a href=
 "../../Import/index.html#type-read">Core__.Import.read</a>
-],&nbsp;<a href="index.html#type-seek">seek</a>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
-<span>-&gt;</span> offset:int <span>-&gt;</span> unit</code></dt>
+]</span>,&nbsp;<a href="index.html#type-seek">seek</a>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../Core__Core_unix/File_descr/index.html#type-t">Core.Iobuf_intf.Unix.File_descr.t</a>
+<span>-&gt;</span> <span>offset:int</span> <span>-&gt;</span>
+unit</code></dt>
 </dl>
 <div class="spec module" id="module-Expert"><a href=
 "#module-Expert" class="anchor"></a><code><span class=
@@ -588,12 +626,12 @@ pwrite_assume_fd_is_nonblocking : ([&gt; <a href=
 <dl>
 <dt class="spec value" id="val-check_invariant"><a href=
 "#val-check_invariant" class="anchor"></a><code><span class=
-"keyword">val</span> check_invariant : bool <a href=
-"../../Import/index.html#type-ref">Core__.Import.ref</a></code></dt>
+"keyword">val</span> check_invariant : <span>bool <a href=
+"../../Import/index.html#type-ref">Core__.Import.ref</a></span></code></dt>
 <dt class="spec value" id="val-show_messages"><a href=
 "#val-show_messages" class="anchor"></a><code><span class=
-"keyword">val</span> show_messages : bool <a href=
-"../../Import/index.html#type-ref">Core__.Import.ref</a></code></dt>
+"keyword">val</span> show_messages : <span>bool <a href=
+"../../Import/index.html#type-ref">Core__.Import.ref</a></span></code></dt>
 </dl>
 </div>
 </body>

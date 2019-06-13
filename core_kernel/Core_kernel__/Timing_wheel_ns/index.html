@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Timing_wheel_ns
 (core_kernel.Core_kernel__.Timing_wheel_ns)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -56,8 +55,8 @@ Core_kernel.Timing_wheel_ns_intf.Alarm_precision</a> <span class=
 Time</a> := <a href="index.html#module-Time">Time</a></code></div>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -69,10 +68,11 @@ t</code></dt>
 <dl>
 <dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
 class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
-: (<span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+: <span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<a href=
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
 </details>
@@ -82,12 +82,13 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 <dl>
 <dt class="spec type" id="type-timing_wheel"><a href=
 "#type-timing_wheel" class="anchor"></a><code><span class=
-"keyword">type</span> 'a timing_wheel</code> <code>= <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a></code></dt>
+"keyword">type</span> <span>'a timing_wheel</span></code> <code>=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec type" id="type-t_now"><a href="#type-t_now" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t_now</code> <code>= <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t_now</span></code> <code>= <span><span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>&lt;:sexp_of&lt; _ t_now &gt;&gt;</code> displays only
 <code>now t</code>, not all the alarms.</p>
@@ -103,12 +104,12 @@ t_now</code> <code>= <span class="type-var">'a</span> <a href=
 <dl>
 <dt class="spec value" id="val-sexp_of_t_now"><a href=
 "#val-sexp_of_t_now" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_t_now : (<span class=
+"keyword">val</span> sexp_of_t_now : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t_now">t_now</a> <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t_now">t_now</a></span> <span>-&gt;</span>
+<a href="../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
 </details>
 </div>
@@ -133,23 +134,23 @@ class="anchor"></a><code><span class="keyword">module</span>
 "keyword">include</span> <a href=
 "../../../base/Base/Invariant/index.html#module-type-S1">Core_kernel__.Import.Invariant.S1</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
-"../../../base/Base/Invariant/module-type-S1/index.html#type-t">t</a>
-:= <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></span></summary>
+<span>'a <a href=
+"../../../base/Base/Invariant/module-type-S1/index.html#type-t">t</a></span>
+:= <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-invariant"><a href="#val-invariant"
 class="anchor"></a><code><span class="keyword">val</span> invariant
-: <span class="type-var">'a</span> <a href=
-"../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <a href=
-"../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></span> <a href=
+"../../../base/Base__/Invariant_intf/index.html#type-inv">Base__.Invariant_intf.inv</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -169,10 +170,11 @@ class="anchor"></a><code><span class="keyword">val</span> invariant
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-config:<a href="Config/index.html#type-t">Config.t</a>
-<span>-&gt;</span> start:<a href=
-"Time/index.html#type-t">Time.t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a></code></dt>
+<span>config:<a href="Config/index.html#type-t">Config.t</a></span>
+<span>-&gt;</span> <span>start:<a href=
+"Time/index.html#type-t">Time.t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>create ~config ~start</code> creates a new timing wheel
 with current time <code>start</code>. <code>create</code> raises if
@@ -186,8 +188,8 @@ times/keys and increases the constant factor for
 <dl>
 <dt class="spec value" id="val-alarm_precision"><a href=
 "#val-alarm_precision" class="anchor"></a><code><span class=
-"keyword">val</span> alarm_precision : <span class=
-"type-var">_</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> alarm_precision : <span><span class=
+"type-var">_</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href=
 "Time/Span/index.html#type-t">Time.Span.t</a></code></dt>
 <dd>
@@ -197,13 +199,13 @@ times/keys and increases the constant factor for
 <dl>
 <dt class="spec value" id="val-now"><a href="#val-now" class=
 "anchor"></a><code><span class="keyword">val</span> now :
-<span class="type-var">_</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href=
+<span><span class="type-var">_</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "Time/index.html#type-t">Time.t</a></code></dt>
 <dt class="spec value" id="val-start"><a href="#val-start" class=
 "anchor"></a><code><span class="keyword">val</span> start :
-<span class="type-var">_</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href=
+<span><span class="type-var">_</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "Time/index.html#type-t">Time.t</a></code></dt>
 </dl>
 <aside>
@@ -213,27 +215,30 @@ various container functions along those lines.</p>
 <dl>
 <dt class="spec value" id="val-is_empty"><a href="#val-is_empty"
 class="anchor"></a><code><span class="keyword">val</span> is_empty
-: <span class="type-var">_</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href=
+: <span><span class="type-var">_</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../Import/index.html#type-bool">Core_kernel__.Import.bool</a></code></dt>
 <dt class="spec value" id="val-length"><a href="#val-length" class=
 "anchor"></a><code><span class="keyword">val</span> length :
-<span class="type-var">_</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href=
+<span><span class="type-var">_</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-iter"><a href="#val-iter" class=
 "anchor"></a><code><span class="keyword">val</span> iter :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span> <a href=
-"Alarm/index.html#type-t">Alarm.t</a> <span>-&gt;</span> <a href=
-"../Import/index.html#type-unit">Core_kernel__.Import.unit</a>)
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span><span class="type-var">'a</span> <a href=
+"Alarm/index.html#type-t">Alarm.t</a></span> <span>-&gt;</span>
+<a href=
+"../Import/index.html#type-unit">Core_kernel__.Import.unit</a>)</span></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-interval_num"><a href=
 "#val-interval_num" class="anchor"></a><code><span class=
-"keyword">val</span> interval_num : <span class="type-var">_</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Time/index.html#type-t">Time.t</a> <span>-&gt;</span> <a href=
+"keyword">val</span> interval_num : <span><span class=
+"type-var">_</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <a href="Time/index.html#type-t">Time.t</a>
+<span>-&gt;</span> <a href=
 "Interval_num/index.html#type-t">Interval_num.t</a></code></dt>
 <dd>
 <p><code>interval_num t time</code> returns the number of the
@@ -248,14 +253,14 @@ t)</code>.</p>
 <dl>
 <dt class="spec value" id="val-now_interval_num"><a href=
 "#val-now_interval_num" class="anchor"></a><code><span class=
-"keyword">val</span> now_interval_num : <span class=
-"type-var">_</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> now_interval_num : <span><span class=
+"type-var">_</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href=
 "Interval_num/index.html#type-t">Interval_num.t</a></code></dt>
 <dt class="spec value" id="val-interval_num_start"><a href=
 "#val-interval_num_start" class="anchor"></a><code><span class=
-"keyword">val</span> interval_num_start : <span class=
-"type-var">_</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> interval_num_start : <span><span class=
+"type-var">_</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href=
 "Interval_num/index.html#type-t">Interval_num.t</a>
 <span>-&gt;</span> <a href=
@@ -275,20 +280,21 @@ interval containing <code>time</code>, i.e.:</p>
 <dl>
 <dt class="spec value" id="val-interval_start"><a href=
 "#val-interval_start" class="anchor"></a><code><span class=
-"keyword">val</span> interval_start : <span class=
-"type-var">_</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> interval_start : <span><span class=
+"type-var">_</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href="Time/index.html#type-t">Time.t</a>
 <span>-&gt;</span> <a href=
 "Time/index.html#type-t">Time.t</a></code></dt>
 <dt class="spec value" id="val-advance_clock"><a href=
 "#val-advance_clock" class="anchor"></a><code><span class=
-"keyword">val</span> advance_clock : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> to_:<a href="Time/index.html#type-t">Time.t</a>
-<span>-&gt;</span> handle_fired:(<span class="type-var">'a</span>
-<a href="Alarm/index.html#type-t">Alarm.t</a> <span>-&gt;</span>
-<a href=
-"../Import/index.html#type-unit">Core_kernel__.Import.unit</a>)
+"keyword">val</span> advance_clock : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>to_:<a href=
+"Time/index.html#type-t">Time.t</a></span> <span>-&gt;</span>
+<span>handle_fired:<span>(<span><span class="type-var">'a</span>
+<a href="Alarm/index.html#type-t">Alarm.t</a></span>
+<span>-&gt;</span> <a href=
+"../Import/index.html#type-unit">Core_kernel__.Import.unit</a>)</span></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dd>
@@ -309,12 +315,13 @@ functions.</p>
 <dl>
 <dt class="spec value" id="val-fire_past_alarms"><a href=
 "#val-fire_past_alarms" class="anchor"></a><code><span class=
-"keyword">val</span> fire_past_alarms : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> handle_fired:(<span class="type-var">'a</span>
-<a href="Alarm/index.html#type-t">Alarm.t</a> <span>-&gt;</span>
+"keyword">val</span> fire_past_alarms : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>handle_fired:<span>(<span><span class=
+"type-var">'a</span> <a href=
+"Alarm/index.html#type-t">Alarm.t</a></span> <span>-&gt;</span>
 <a href=
-"../Import/index.html#type-unit">Core_kernel__.Import.unit</a>)
+"../Import/index.html#type-unit">Core_kernel__.Import.unit</a>)</span></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dd>
@@ -333,8 +340,8 @@ functions.</p>
 <dl>
 <dt class="spec value" id="val-alarm_upper_bound"><a href=
 "#val-alarm_upper_bound" class="anchor"></a><code><span class=
-"keyword">val</span> alarm_upper_bound : <span class=
-"type-var">_</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> alarm_upper_bound : <span><span class=
+"type-var">_</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href=
 "Time/index.html#type-t">Time.t</a></code></dt>
 <dd>
@@ -347,8 +354,8 @@ increases as <code>now t</code> increases.</p>
 <dl>
 <dt class="spec value" id="val-max_allowed_alarm_time"><a href=
 "#val-max_allowed_alarm_time" class="anchor"></a><code><span class=
-"keyword">val</span> max_allowed_alarm_time : <span class=
-"type-var">_</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> max_allowed_alarm_time : <span><span class=
+"type-var">_</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href=
 "Time/index.html#type-t">Time.t</a></code></dt>
 <dd>
@@ -362,8 +369,9 @@ increases as <code>now t</code> increases.</p>
 <dt class="spec value" id="val-min_allowed_alarm_interval_num">
 <a href="#val-min_allowed_alarm_interval_num" class=
 "anchor"></a><code><span class="keyword">val</span>
-min_allowed_alarm_interval_num : <span class="type-var">_</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+min_allowed_alarm_interval_num : <span><span class=
+"type-var">_</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <a href=
 "Interval_num/index.html#type-t">Interval_num.t</a></code></dt>
 <dd>
 <p><code>min_allowed_alarm_interval_num t = now_interval_num
@@ -374,8 +382,9 @@ t</code></p>
 <dt class="spec value" id="val-max_allowed_alarm_interval_num">
 <a href="#val-max_allowed_alarm_interval_num" class=
 "anchor"></a><code><span class="keyword">val</span>
-max_allowed_alarm_interval_num : <span class="type-var">_</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+max_allowed_alarm_interval_num : <span><span class=
+"type-var">_</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <a href=
 "Interval_num/index.html#type-t">Interval_num.t</a></code></dt>
 <dd>
 <p><code>max_allowed_alarm_interval_num t = interval_num t
@@ -385,11 +394,12 @@ max_allowed_alarm_interval_num : <span class="type-var">_</span>
 <dl>
 <dt class="spec value" id="val-add"><a href="#val-add" class=
 "anchor"></a><code><span class="keyword">val</span> add :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> at:<a href="Time/index.html#type-t">Time.t</a>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>at:<a href="Time/index.html#type-t">Time.t</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"Alarm/index.html#type-t">Alarm.t</a></code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"Alarm/index.html#type-t">Alarm.t</a></span></code></dt>
 <dd>
 <p><code>add t ~at a</code> adds a new value <code>a</code> to
 <code>t</code> and returns an alarm that can later be supplied to
@@ -403,24 +413,28 @@ raises if <code>interval_num t at &lt; now_interval_num t || at
 <dl>
 <dt class="spec value" id="val-add_at_interval_num"><a href=
 "#val-add_at_interval_num" class="anchor"></a><code><span class=
-"keyword">val</span> add_at_interval_num : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> at:<a href=
-"Interval_num/index.html#type-t">Interval_num.t</a>
+"keyword">val</span> add_at_interval_num : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>at:<a href=
+"Interval_num/index.html#type-t">Interval_num.t</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"Alarm/index.html#type-t">Alarm.t</a></code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"Alarm/index.html#type-t">Alarm.t</a></span></code></dt>
 <dt class="spec value" id="val-mem"><a href="#val-mem" class=
 "anchor"></a><code><span class="keyword">val</span> mem :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"Alarm/index.html#type-t">Alarm.t</a> <span>-&gt;</span> <a href=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"Alarm/index.html#type-t">Alarm.t</a></span> <span>-&gt;</span>
+<a href=
 "../Import/index.html#type-bool">Core_kernel__.Import.bool</a></code></dt>
 <dt class="spec value" id="val-remove"><a href="#val-remove" class=
 "anchor"></a><code><span class="keyword">val</span> remove :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"Alarm/index.html#type-t">Alarm.t</a> <span>-&gt;</span> <a href=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"Alarm/index.html#type-t">Alarm.t</a></span> <span>-&gt;</span>
+<a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dd>
 <p><code>remove t alarm</code> removes <code>alarm</code> from
@@ -431,10 +445,11 @@ alarm)</code>.</p>
 <dl>
 <dt class="spec value" id="val-reschedule"><a href=
 "#val-reschedule" class="anchor"></a><code><span class=
-"keyword">val</span> reschedule : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="Alarm/index.html#type-t">Alarm.t</a>
-<span>-&gt;</span> at:<a href="Time/index.html#type-t">Time.t</a>
+"keyword">val</span> reschedule : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"Alarm/index.html#type-t">Alarm.t</a></span> <span>-&gt;</span>
+<span>at:<a href="Time/index.html#type-t">Time.t</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dd>
@@ -453,17 +468,18 @@ equivalent to:</p>
 <dt class="spec value" id="val-reschedule_at_interval_num"><a href=
 "#val-reschedule_at_interval_num" class=
 "anchor"></a><code><span class="keyword">val</span>
-reschedule_at_interval_num : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="Alarm/index.html#type-t">Alarm.t</a>
-<span>-&gt;</span> at:<a href=
-"Interval_num/index.html#type-t">Interval_num.t</a>
+reschedule_at_interval_num : <span><span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"Alarm/index.html#type-t">Alarm.t</a></span> <span>-&gt;</span>
+<span>at:<a href=
+"Interval_num/index.html#type-t">Interval_num.t</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-clear"><a href="#val-clear" class=
 "anchor"></a><code><span class="keyword">val</span> clear :
-<span class="type-var">_</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href=
+<span><span class="type-var">_</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dd>
 <p><code>clear t</code> removes all alarms from <code>t</code>.</p>
@@ -472,11 +488,11 @@ reschedule_at_interval_num : <span class="type-var">'a</span>
 <dl>
 <dt class="spec value" id="val-min_alarm_interval_num"><a href=
 "#val-min_alarm_interval_num" class="anchor"></a><code><span class=
-"keyword">val</span> min_alarm_interval_num : <span class=
-"type-var">_</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href=
+"keyword">val</span> min_alarm_interval_num : <span><span class=
+"type-var">_</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><a href=
 "Interval_num/index.html#type-t">Interval_num.t</a> <a href=
-"../Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+"../Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p><code>min_alarm_interval_num t</code> is the minimum
 <code>Alarm.interval_num</code> of all alarms in <code>t</code>.
@@ -488,16 +504,17 @@ raises if <code>is_empty t</code>.</p>
 <dt class="spec value" id="val-min_alarm_interval_num_exn"><a href=
 "#val-min_alarm_interval_num_exn" class=
 "anchor"></a><code><span class="keyword">val</span>
-min_alarm_interval_num_exn : <span class="type-var">_</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Interval_num/index.html#type-t">Interval_num.t</a></code></dt>
+min_alarm_interval_num_exn : <span><span class="type-var">_</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="Interval_num/index.html#type-t">Interval_num.t</a></code></dt>
 <dt class="spec value" id="val-max_alarm_time_in_min_interval">
 <a href="#val-max_alarm_time_in_min_interval" class=
 "anchor"></a><code><span class="keyword">val</span>
-max_alarm_time_in_min_interval : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
+max_alarm_time_in_min_interval : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><a href=
 "Time/index.html#type-t">Time.t</a> <a href=
-"../Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+"../Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p><code>max_alarm_time_in_min_interval t</code> returns the
 maximum <code>Alarm.at</code> over all alarms in <code>t</code>
@@ -517,17 +534,17 @@ alarms are processed in order.</p>
 <dt class="spec value" id="val-max_alarm_time_in_min_interval_exn">
 <a href="#val-max_alarm_time_in_min_interval_exn" class=
 "anchor"></a><code><span class="keyword">val</span>
-max_alarm_time_in_min_interval_exn : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+max_alarm_time_in_min_interval_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <a href=
 "Time/index.html#type-t">Time.t</a></code></dt>
 <dt class="spec value" id="val-next_alarm_fires_at"><a href=
 "#val-next_alarm_fires_at" class="anchor"></a><code><span class=
-"keyword">val</span> next_alarm_fires_at : <span class=
-"type-var">_</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href="Time/index.html#type-t">Time.t</a>
-<a href=
-"../Import/index.html#type-option">Core_kernel__.Import.option</a></code></dt>
+"keyword">val</span> next_alarm_fires_at : <span><span class=
+"type-var">_</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><a href=
+"Time/index.html#type-t">Time.t</a> <a href=
+"../Import/index.html#type-option">Core_kernel__.Import.option</a></span></code></dt>
 <dd>
 <p><code>next_alarm_fires_at t</code> returns the minimum time to
 which the clock can be advanced such that an alarm will fire, or
@@ -545,9 +562,9 @@ it is guaranteed that: <code>next - alarm_precision t &lt;= min
 <dt class="spec value" id="val-next_alarm_fires_at_exn"><a href=
 "#val-next_alarm_fires_at_exn" class=
 "anchor"></a><code><span class="keyword">val</span>
-next_alarm_fires_at_exn : <span class="type-var">_</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"Time/index.html#type-t">Time.t</a></code></dt>
+next_alarm_fires_at_exn : <span><span class="type-var">_</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="Time/index.html#type-t">Time.t</a></code></dt>
 </dl>
 </div>
 </div>

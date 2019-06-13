@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Force_once (core_kernel.Core_kernel__.Force_once)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -30,17 +29,17 @@ Subsequent forces will raise an exception.</p>
 </aside>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-(<a href=
+<span>(<a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>create f</code> creates a new <code>force_once</code>.</p>
 </dd>
@@ -48,8 +47,9 @@ t</code></dt>
 <dl>
 <dt class="spec value" id="val-force"><a href="#val-force" class=
 "anchor"></a><code><span class="keyword">val</span> force :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span></code></dt>
 <dd>
 <p><code>force t</code> runs the thunk if it hadn't already been
 forced, else it raises an exception.</p>
@@ -60,9 +60,9 @@ forced, else it raises an exception.</p>
 "anchor"></a><code><span class="keyword">val</span> ignore :
 <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a>
-<a href="index.html#type-t">t</a></code></dt>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>ignore ()</code> = <code>create (fun () -&gt;
 ())</code></p>
@@ -71,10 +71,11 @@ forced, else it raises an exception.</p>
 <dl>
 <dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
 class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
-: (<span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../../Core_kernel/Sexp/index.html#type-t">Core_kernel.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+: <span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<a href=
+"../../Core_kernel/Sexp/index.html#type-t">Core_kernel.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../Core_kernel/Sexp/index.html#type-t">Core_kernel.Sexp.t</a></code></dt>
 </dl>
 </div>

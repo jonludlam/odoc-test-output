@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Spec (core.Core.Command.Spec)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -45,9 +44,9 @@ specifications</a></li>
 </header>
 <dl>
 <dt class="spec type" id="type-param"><a href="#type-param" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-param</code> <code>= <span class="type-var">'a</span> <a href=
-"../Param/index.html#type-t">Param.t</a></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+param</span></code> <code>= <span><span class="type-var">'a</span>
+<a href="../Param/index.html#type-t">Param.t</a></span></code></dt>
 <dd>
 <p>Specification of an individual parameter to the command's main
 function.</p>
@@ -60,14 +59,14 @@ function.</p>
 <summary><span class="def"><code><span class=
 "keyword">include</span> <a href=
 "../Param/index.html#module-type-S">Param.S</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
-"../Param/module-type-S/index.html#type-t">t</a> := <span class=
-"type-var">'a</span> <a href=
-"index.html#type-param">param</a></code></span></summary>
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href="../Param/module-type-S/index.html#type-t">t</a></span> :=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-param">param</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> +'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>+'a
+t</span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -114,10 +113,10 @@ have <code>Command.Param</code> in scope.</p>
 "keyword">include</span> <a href=
 "../../../../base/Base/Applicative/index.html#module-type-S">Core_kernel__.Import.Applicative.S</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
+<span>'a <a href=
 "../../../../base/Base/Applicative/module-type-S/index.html#type-t">
-t</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></span></summary>
+t</a></span> := <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></span></summary>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -128,28 +127,32 @@ t</a> := <span class="type-var">'a</span> <a href=
 Base__.Applicative_intf.For_let_syntax</a></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-return"><a href="#val-return" class=
 "anchor"></a><code><span class="keyword">val</span> return :
-<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-map"><a href="#val-map" class=
 "anchor"></a><code><span class="keyword">val</span> map :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'b</span>)
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-both"><a href="#val-both" class=
 "anchor"></a><code><span class="keyword">val</span> both :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span> * <span class="type-var">'b</span>) <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -159,24 +162,27 @@ t</code></dt>
 "keyword">include</span> <a href=
 "../../../../base/Base__/Applicative_intf/index.html#module-type-Applicative_infix">
 Base__.Applicative_intf.Applicative_infix</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href=
 "../../../../base/Base__/Applicative_intf/module-type-Applicative_infix/index.html#type-t">
-t</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></span></summary>
+t</a></span> := <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-(&lt;*&gt;)"><a href=
 "#val-(%3C*%3E)" class="anchor"></a><code><span class=
-"keyword">val</span> (&lt;*&gt;) : (<span class=
+"keyword">val</span> (&lt;*&gt;) : <span><span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a></code></dt>
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>same as <code>apply</code></p>
 </dd>
@@ -184,23 +190,26 @@ t</code></dt>
 <dl>
 <dt class="spec value" id="val-(&lt;*)"><a href="#val-(%3C*)"
 class="anchor"></a><code><span class="keyword">val</span> (&lt;*) :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> unit <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span>unit
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-(*&gt;)"><a href="#val-(*%3E)"
 class="anchor"></a><code><span class="keyword">val</span> (*&gt;) :
-unit <a href="index.html#type-t">t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span>unit <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-(&gt;&gt;|)"><a href=
 "#val-(%3E%3E|)" class="anchor"></a><code><span class=
-"keyword">val</span> (&gt;&gt;|) : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> (&gt;&gt;|) : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span>
+<span>-&gt;</span> <span class="type-var">'b</span>)</span>
+<span>-&gt;</span> <span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -213,46 +222,54 @@ unit <a href="index.html#type-t">t</a> <span>-&gt;</span>
 <dl>
 <dt class="spec value" id="val-apply"><a href="#val-apply" class=
 "anchor"></a><code><span class="keyword">val</span> apply :
-(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a></code></dt>
+<span><span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-map2"><a href="#val-map2" class=
 "anchor"></a><code><span class="keyword">val</span> map2 :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> f:(<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span> <span>-&gt;</span> <span class=
-"type-var">'c</span>) <span>-&gt;</span> <span class=
-"type-var">'c</span> <a href="index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span> <span>-&gt;</span> <span class=
+"type-var">'c</span>)</span></span> <span>-&gt;</span>
+<span><span class="type-var">'c</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-map3"><a href="#val-map3" class=
 "anchor"></a><code><span class="keyword">val</span> map3 :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'c</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'b</span>
-<span>-&gt;</span> <span class="type-var">'c</span>
-<span>-&gt;</span> <span class="type-var">'d</span>)
-<span>-&gt;</span> <span class="type-var">'d</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'c</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span> <span>-&gt;</span> <span class=
+"type-var">'c</span> <span>-&gt;</span> <span class=
+"type-var">'d</span>)</span></span> <span>-&gt;</span>
+<span><span class="type-var">'d</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-all"><a href="#val-all" class=
 "anchor"></a><code><span class="keyword">val</span> all :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-list <span>-&gt;</span> <span class="type-var">'a</span> list
-<a href="index.html#type-t">t</a></code></dt>
+<span><span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> list</span> <span>-&gt;</span>
+<span><span><span class="type-var">'a</span> list</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-all_unit"><a href="#val-all_unit"
 class="anchor"></a><code><span class="keyword">val</span> all_unit
-: unit <a href="index.html#type-t">t</a> list <span>-&gt;</span>
-unit <a href="index.html#type-t">t</a></code></dt>
+: <span><span>unit <a href="index.html#type-t">t</a></span>
+list</span> <span>-&gt;</span> <span>unit <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-all_ignore"><a href=
 "#val-all_ignore" class="anchor"></a><code><span class=
-"keyword">val</span> all_ignore : unit <a href=
-"index.html#type-t">t</a> list <span>-&gt;</span> unit <a href=
-"index.html#type-t">t</a></code></dt>
+"keyword">val</span> all_ignore : <span><span>unit <a href=
+"index.html#type-t">t</a></span> list</span> <span>-&gt;</span>
+<span>unit <a href="index.html#type-t">t</a></span></code></dt>
 </dl>
 <div class="spec module" id="module-Applicative_infix"><a href=
 "#module-Applicative_infix" class="anchor"></a><code><span class=
@@ -260,10 +277,11 @@ unit <a href="index.html#type-t">t</a></code></dt>
 "Applicative_infix/index.html">Applicative_infix</a> : <a href=
 "../../../../base/Base__/Applicative_intf/index.html#module-type-Applicative_infix">
 Base__.Applicative_intf.Applicative_infix</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href=
 "../../../../base/Base__/Applicative_intf/module-type-Applicative_infix/index.html#type-t">
-t</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></div>
+t</a></span> := <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></div>
 </details>
 </div>
 </div>
@@ -275,35 +293,38 @@ class="anchor"></a>Various internal values</h3>
 </header>
 <dl>
 <dt class="spec value" id="val-help"><a href="#val-help" class=
-"anchor"></a><code><span class="keyword">val</span> help : <a href=
+"anchor"></a><code><span class="keyword">val</span> help :
+<span><span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-string">
 Core_kernel__.Import.string</a> <a href=
-"../../../../core_kernel/Core_kernel/Lazy/index.html#type-t">Core_kernel.Lazy.t</a>
-<a href="index.html#type-t">t</a></code></dt>
+"../../../../core_kernel/Core_kernel/Lazy/index.html#type-t">Core_kernel.Lazy.t</a></span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>The help text for the command.</p>
 </dd>
 </dl>
 <dl>
 <dt class="spec value" id="val-path"><a href="#val-path" class=
-"anchor"></a><code><span class="keyword">val</span> path : <a href=
+"anchor"></a><code><span class="keyword">val</span> path :
+<span><span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-string">
 Core_kernel__.Import.string</a> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-list">
-Core_kernel__.Import.list</a> <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.list</a></span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>The subcommand path of the command.</p>
 </dd>
 </dl>
 <dl>
 <dt class="spec value" id="val-args"><a href="#val-args" class=
-"anchor"></a><code><span class="keyword">val</span> args : <a href=
+"anchor"></a><code><span class="keyword">val</span> args :
+<span><span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-string">
 Core_kernel__.Import.string</a> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-list">
-Core_kernel__.Import.list</a> <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.list</a></span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>The arguments passed to the command.</p>
 </dd>
@@ -311,21 +332,22 @@ Core_kernel__.Import.list</a> <a href=
 <dl>
 <dt class="spec value" id="val-flag"><a href="#val-flag" class=
 "anchor"></a><code><span class="keyword">val</span> flag :
-?⁠aliases:<a href=
+<span>?⁠aliases:<span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
 <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-list">
-Core_kernel__.Import.list</a> <span>-&gt;</span>
-?⁠full_flag_required:<a href=
-"../../../../core_kernel/Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a>
+Core_kernel__.Import.list</a></span></span> <span>-&gt;</span>
+<span>?⁠full_flag_required:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></span>
 <span>-&gt;</span> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-string">
-Core_kernel__.Import.string</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="../Flag/index.html#type-t">Flag.t</a>
-<span>-&gt;</span> doc:<a href=
-"../../../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.string</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../Flag/index.html#type-t">Flag.t</a></span> <span>-&gt;</span>
+<span>doc:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>flag name spec ~doc</code> specifies a command that, among
 other things, takes a flag named <code>name</code> on its command
@@ -351,25 +373,26 @@ rejected.</p>
 <dt class="spec value" id="val-flag_optional_with_default_doc">
 <a href="#val-flag_optional_with_default_doc" class=
 "anchor"></a><code><span class="keyword">val</span>
-flag_optional_with_default_doc : ?⁠aliases:<a href=
+flag_optional_with_default_doc : <span>?⁠aliases:<span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
 <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-list">
-Core_kernel__.Import.list</a> <span>-&gt;</span>
-?⁠full_flag_required:<a href=
-"../../../../core_kernel/Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a>
+Core_kernel__.Import.list</a></span></span> <span>-&gt;</span>
+<span>?⁠full_flag_required:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a></span>
 <span>-&gt;</span> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-string">
-Core_kernel__.Import.string</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a> <span>-&gt;</span>
-(<span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../../core_kernel/Core_kernel/Sexp/index.html#type-t">Core_kernel.Sexp.t</a>)
-<span>-&gt;</span> default:<span class="type-var">'a</span>
-<span>-&gt;</span> doc:<a href=
-"../../../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.string</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../Arg_type/index.html#type-t">Arg_type.t</a></span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span>
+<span>-&gt;</span> <a href=
+"../../../../core_kernel/Core_kernel/Sexp/index.html#type-t">Core_kernel.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>default:<span class=
+"type-var">'a</span></span> <span>-&gt;</span> <span>doc:<a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-string">Core_kernel__.Import.string</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>flag_optional_with_default_doc name arg_type
 sexp_of_default ~default ~doc</code> is a shortcut for
@@ -385,10 +408,10 @@ what the default value appended.</li>
 <dl>
 <dt class="spec value" id="val-anon"><a href="#val-anon" class=
 "anchor"></a><code><span class="keyword">val</span> anon :
-<span class="type-var">'a</span> <a href=
-"../Anons/index.html#type-t">Anons.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"../Anons/index.html#type-t">Anons.t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>anon spec</code> specifies a command that, among other
 things, takes the anonymous arguments specified by
@@ -398,16 +421,17 @@ things, takes the anonymous arguments specified by
 <dl>
 <dt class="spec value" id="val-choose_one"><a href=
 "#val-choose_one" class="anchor"></a><code><span class=
-"keyword">val</span> choose_one : <span class="type-var">'a</span>
-<a href=
+"keyword">val</span> choose_one : <span><span><span><span class=
+"type-var">'a</span> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-option">
-Core_kernel__.Import.option</a> <a href="index.html#type-t">t</a>
-<a href=
+Core_kernel__.Import.option</a></span> <a href=
+"index.html#type-t">t</a></span> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-list">
-Core_kernel__.Import.list</a> <span>-&gt;</span>
-if_nothing_chosen:[ `Default_to of <span class="type-var">'a</span>
-| `Raise ] <span>-&gt;</span> <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.list</a></span> <span>-&gt;</span>
+<span>if_nothing_chosen:<span>[ <span>`Default_to of <span class=
+"type-var">'a</span></span> <span>| `Raise</span> ]</span></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>choose_one clauses ~if_nothing_chosen</code> expresses a
 sum type. It raises if more than one of <code>clauses</code> is
@@ -424,9 +448,9 @@ _</code>.</p>
 <dl>
 <dt class="spec value" id="val-const"><a href="#val-const" class=
 "anchor"></a><code><span class="keyword">val</span> const :
-<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"index.html#type-param">param</a></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-param">param</a></span></code></dt>
 <dd>
 <p>Superceded by <code>return</code>, preserved for backwards
 compatibility.</p>
@@ -435,12 +459,13 @@ compatibility.</p>
 <dl>
 <dt class="spec value" id="val-pair"><a href="#val-pair" class=
 "anchor"></a><code><span class="keyword">val</span> pair :
-<span class="type-var">'a</span> <a href=
-"index.html#type-param">param</a> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-param">param</a>
-<span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) <a href=
-"index.html#type-param">param</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-param">param</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-param">param</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-param">param</a></span></code></dt>
 <dd>
 <p>Superceded by <code>both</code>, preserved for backwards
 compatibility.</p>
@@ -454,8 +479,8 @@ class="anchor"></a>Command specifications</h3>
 </header>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> (-'main_in,
-+'main_out) t</code></dt>
+"anchor"></a><code><span class="keyword">type</span>
+<span>(-'main_in, +'main_out) t</span></code></dt>
 <dd>
 <p>Composable command-line specifications.</p>
 <p>Ultimately one forms a basic command by combining a spec of type
@@ -536,8 +561,9 @@ spec_b: \/rb. (b1 -&gt; ... -&gt; bM -&gt; 'rb) -&gt; 'rb</code></pre>
 <dl>
 <dt class="spec value" id="val-empty"><a href="#val-empty" class=
 "anchor"></a><code><span class="keyword">val</span> empty :
-(<span class="type-var">'m</span>,&nbsp;<span class=
-"type-var">'m</span>) <a href="index.html#type-t">t</a></code></dt>
+<span><span>(<span class="type-var">'m</span>,&nbsp;<span class=
+"type-var">'m</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>The empty command-line spec.</p>
 </dd>
@@ -545,13 +571,15 @@ spec_b: \/rb. (b1 -&gt; ... -&gt; bM -&gt; 'rb) -&gt; 'rb</code></pre>
 <dl>
 <dt class="spec value" id="val-(++)"><a href="#val-(++)" class=
 "anchor"></a><code><span class="keyword">val</span> (++) :
-(<span class="type-var">'m1</span>,&nbsp;<span class=
-"type-var">'m2</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class=
-"type-var">'m2</span>,&nbsp;<span class="type-var">'m3</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'m1</span>,&nbsp;<span class="type-var">'m3</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span><span>(<span class="type-var">'m1</span>,&nbsp;<span class=
+"type-var">'m2</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'m2</span>,&nbsp;<span class=
+"type-var">'m3</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'m1</span>,&nbsp;<span class=
+"type-var">'m3</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>Command-line spec composition.</p>
 </dd>
@@ -559,13 +587,15 @@ spec_b: \/rb. (b1 -&gt; ... -&gt; bM -&gt; 'rb) -&gt; 'rb</code></pre>
 <dl>
 <dt class="spec value" id="val-(+&gt;)"><a href="#val-(+%3E)"
 class="anchor"></a><code><span class="keyword">val</span> (+&gt;) :
-(<span class="type-var">'m1</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'m1</span>,&nbsp;<span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'m2</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-param">param</a> <span>-&gt;</span> (<span class=
-"type-var">'m1</span>,&nbsp;<span class="type-var">'m2</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"type-var">'m2</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-param">param</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'m1</span>,&nbsp;<span class=
+"type-var">'m2</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>Adds a rightmost parameter onto the type of main.</p>
 </dd>
@@ -573,13 +603,15 @@ class="anchor"></a><code><span class="keyword">val</span> (+&gt;) :
 <dl>
 <dt class="spec value" id="val-(+&lt;)"><a href="#val-(+%3C)"
 class="anchor"></a><code><span class="keyword">val</span> (+&lt;) :
-(<span class="type-var">'m1</span>,&nbsp;<span class=
-"type-var">'m2</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-param">param</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'m1</span>,&nbsp;<span class="type-var">'m2</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span><span>(<span class="type-var">'m1</span>,&nbsp;<span class=
+"type-var">'m2</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-param">param</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'m1</span>,&nbsp;<span class=
+"type-var">'m2</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>Adds a leftmost parameter onto the type of main.</p>
 <p>This function should only be used as a workaround in situations
@@ -591,10 +623,11 @@ spec.</p>
 <dl>
 <dt class="spec value" id="val-step"><a href="#val-step" class=
 "anchor"></a><code><span class="keyword">val</span> step :
-(<span class="type-var">'m1</span> <span>-&gt;</span> <span class=
-"type-var">'m2</span>) <span>-&gt;</span> (<span class=
-"type-var">'m1</span>,&nbsp;<span class="type-var">'m2</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span>(<span class="type-var">'m1</span> <span>-&gt;</span>
+<span class="type-var">'m2</span>)</span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'m1</span>,&nbsp;<span class=
+"type-var">'m2</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>Combinator for patching up how parameters are obtained or
 presented.</p>
@@ -632,14 +665,17 @@ making it easily composable with other spec combinators.</p>
 <dl>
 <dt class="spec value" id="val-wrap"><a href="#val-wrap" class=
 "anchor"></a><code><span class="keyword">val</span> wrap :
-(run:(<span class="type-var">'m1</span> <span>-&gt;</span>
-<span class="type-var">'r1</span>) <span>-&gt;</span>
-main:<span class="type-var">'m2</span> <span>-&gt;</span>
-<span class="type-var">'r2</span>) <span>-&gt;</span> (<span class=
-"type-var">'m1</span>,&nbsp;<span class="type-var">'r1</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'m2</span>,&nbsp;<span class="type-var">'r2</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span>(<span>run:<span>(<span class="type-var">'m1</span>
+<span>-&gt;</span> <span class="type-var">'r1</span>)</span></span>
+<span>-&gt;</span> <span>main:<span class=
+"type-var">'m2</span></span> <span>-&gt;</span> <span class=
+"type-var">'r2</span>)</span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'m1</span>,&nbsp;<span class=
+"type-var">'r1</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'m2</span>,&nbsp;<span class=
+"type-var">'r2</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>Combinator for defining a class of commands with common
 behavior.</p>
@@ -665,10 +701,10 @@ behavior.</p>
 "keyword">module</span> <span class="keyword">type</span>
 <span class="keyword">of</span> <a href=
 "../index.html#module-Arg_type">Arg_type</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
-"../index.html#module-Arg_type">Arg_type</a>.t = <span class=
-"type-var">'a</span> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a></code></div>
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href="../index.html#module-Arg_type">Arg_type</a>.t</span> =
+<span><span class="type-var">'a</span> <a href=
+"../Arg_type/index.html#type-t">Arg_type.t</a></span></code></div>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -681,14 +717,16 @@ behavior.</p>
 <dl>
 <dt class="spec value" id="val-string"><a href="#val-string" class=
 "anchor"></a><code><span class="keyword">val</span> string :
-<a href=
+<span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-string">
 Core_kernel__.Import.string</a> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a></code></dt>
+"../Arg_type/index.html#type-t">Arg_type.t</a></span></code></dt>
 <dt class="spec value" id="val-int"><a href="#val-int" class=
-"anchor"></a><code><span class="keyword">val</span> int : <a href=
+"anchor"></a><code><span class="keyword">val</span> int :
+<span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-int">Core_kernel__.Import.int</a>
-<a href="../Arg_type/index.html#type-t">Arg_type.t</a></code></dt>
+<a href=
+"../Arg_type/index.html#type-t">Arg_type.t</a></span></code></dt>
 <dd>
 <p>Beware that an anonymous argument of type <code>int</code>
 cannot be specified as negative, as it is ambiguous whether -1 is a
@@ -701,46 +739,54 @@ can just make it a parameter to a flag to avoid the issue.</p>
 </dl>
 <dl>
 <dt class="spec value" id="val-char"><a href="#val-char" class=
-"anchor"></a><code><span class="keyword">val</span> char : <a href=
+"anchor"></a><code><span class="keyword">val</span> char :
+<span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-char">
 Core_kernel__.Import.char</a> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a></code></dt>
+"../Arg_type/index.html#type-t">Arg_type.t</a></span></code></dt>
 <dt class="spec value" id="val-float"><a href="#val-float" class=
 "anchor"></a><code><span class="keyword">val</span> float :
-<a href="../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
+<span><a href=
+"../../../../core_kernel/Core_kernel__/Import/index.html#type-float">
 Core_kernel__.Import.float</a> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a></code></dt>
+"../Arg_type/index.html#type-t">Arg_type.t</a></span></code></dt>
 <dt class="spec value" id="val-bool"><a href="#val-bool" class=
-"anchor"></a><code><span class="keyword">val</span> bool : <a href=
+"anchor"></a><code><span class="keyword">val</span> bool :
+<span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-bool">
 Core_kernel__.Import.bool</a> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a></code></dt>
+"../Arg_type/index.html#type-t">Arg_type.t</a></span></code></dt>
 <dt class="spec value" id="val-date"><a href="#val-date" class=
-"anchor"></a><code><span class="keyword">val</span> date : <a href=
+"anchor"></a><code><span class="keyword">val</span> date :
+<span><a href=
 "../../../../core_kernel/Core_kernel/Date/index.html#type-t">Core_kernel.Date.t</a>
-<a href="../Arg_type/index.html#type-t">Arg_type.t</a></code></dt>
+<a href=
+"../Arg_type/index.html#type-t">Arg_type.t</a></span></code></dt>
 <dt class="spec value" id="val-percent"><a href="#val-percent"
 class="anchor"></a><code><span class="keyword">val</span> percent :
-<a href=
+<span><a href=
 "../../../../core_kernel/Core_kernel/Percent/index.html#type-t">Core_kernel.Percent.t</a>
-<a href="../Arg_type/index.html#type-t">Arg_type.t</a></code></dt>
+<a href=
+"../Arg_type/index.html#type-t">Arg_type.t</a></span></code></dt>
 <dt class="spec value" id="val-host_and_port"><a href=
 "#val-host_and_port" class="anchor"></a><code><span class=
-"keyword">val</span> host_and_port : <a href=
+"keyword">val</span> host_and_port : <span><a href=
 "../../../../core_kernel/Core_kernel/Host_and_port/index.html#type-t">
 Core_kernel.Host_and_port.t</a> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a></code></dt>
+"../Arg_type/index.html#type-t">Arg_type.t</a></span></code></dt>
 <dt class="spec value" id="val-sexp"><a href="#val-sexp" class=
-"anchor"></a><code><span class="keyword">val</span> sexp : <a href=
+"anchor"></a><code><span class="keyword">val</span> sexp :
+<span><a href=
 "../../../../core_kernel/Core_kernel/Sexp/index.html#type-t">Core_kernel.Sexp.t</a>
-<a href="../Arg_type/index.html#type-t">Arg_type.t</a></code></dt>
+<a href=
+"../Arg_type/index.html#type-t">Arg_type.t</a></span></code></dt>
 <dt class="spec value" id="val-sexp_conv"><a href="#val-sexp_conv"
 class="anchor"></a><code><span class="keyword">val</span> sexp_conv
-: (<a href=
+: <span>(<a href=
 "../../../../core_kernel/Core_kernel/Sexp/index.html#type-t">Core_kernel.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a></code></dt>
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../Arg_type/index.html#type-t">Arg_type.t</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -748,9 +794,9 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_conv
 </div>
 <dl>
 <dt class="spec type" id="type-flag"><a href="#type-flag" class=
-"anchor"></a><code><span class="keyword">type</span> 'a flag</code>
-<code>= <span class="type-var">'a</span> <a href=
-"../Flag/index.html#type-t">Flag.t</a></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+flag</span></code> <code>= <span><span class="type-var">'a</span>
+<a href="../Flag/index.html#type-t">Flag.t</a></span></code></dt>
 <dd>
 <p>A flag specification.</p>
 </dd>
@@ -763,22 +809,22 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_conv
 "keyword">include</span> <span class="keyword">module</span>
 <span class="keyword">type</span> <span class="keyword">of</span>
 <a href="../index.html#module-Flag">Flag</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
-"../index.html#module-Flag">Flag</a>.t := <span class=
-"type-var">'a</span> <a href=
-"index.html#type-flag">flag</a></code></span></summary>
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href="../index.html#module-Flag">Flag</a>.t</span> :=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-flag">flag</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-required"><a href="#val-required"
 class="anchor"></a><code><span class="keyword">val</span> required
-: <span class="type-var">'a</span> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"../Arg_type/index.html#type-t">Arg_type.t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>Required flags must be passed exactly once.</p>
 </dd>
@@ -786,12 +832,13 @@ class="anchor"></a><code><span class="keyword">val</span> required
 <dl>
 <dt class="spec value" id="val-optional"><a href="#val-optional"
 class="anchor"></a><code><span class="keyword">val</span> optional
-: <span class="type-var">'a</span> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
+: <span><span class="type-var">'a</span> <a href=
+"../Arg_type/index.html#type-t">Arg_type.t</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+<a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-option">
-Core_kernel__.Import.option</a> <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.option</a></span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>Optional flags may be passed at most once.</p>
 </dd>
@@ -800,11 +847,11 @@ Core_kernel__.Import.option</a> <a href=
 <dt class="spec value" id="val-optional_with_default"><a href=
 "#val-optional_with_default" class="anchor"></a><code><span class=
 "keyword">val</span> optional_with_default : <span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <span><span class=
 "type-var">'a</span> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"../Arg_type/index.html#type-t">Arg_type.t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>optional_with_default</code> flags may be passed at most
 once, and default to a given value.</p>
@@ -813,12 +860,13 @@ once, and default to a given value.</p>
 <dl>
 <dt class="spec value" id="val-listed"><a href="#val-listed" class=
 "anchor"></a><code><span class="keyword">val</span> listed :
-<span class="type-var">'a</span> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
+<span><span class="type-var">'a</span> <a href=
+"../Arg_type/index.html#type-t">Arg_type.t</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+<a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-list">
-Core_kernel__.Import.list</a> <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.list</a></span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>listed</code> flags may be passed zero or more times.</p>
 </dd>
@@ -826,13 +874,14 @@ Core_kernel__.Import.list</a> <a href=
 <dl>
 <dt class="spec value" id="val-one_or_more"><a href=
 "#val-one_or_more" class="anchor"></a><code><span class=
-"keyword">val</span> one_or_more : <span class="type-var">'a</span>
-<a href="../Arg_type/index.html#type-t">Arg_type.t</a>
-<span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
+"keyword">val</span> one_or_more : <span><span class=
 "type-var">'a</span> <a href=
+"../Arg_type/index.html#type-t">Arg_type.t</a></span>
+<span>-&gt;</span> <span><span>(<span class="type-var">'a</span> *
+<span><span class="type-var">'a</span> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-list">
-Core_kernel__.Import.list</a>) <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.list</a></span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>one_or_more</code> flags must be passed one or more
 times.</p>
@@ -841,10 +890,10 @@ times.</p>
 <dl>
 <dt class="spec value" id="val-no_arg"><a href="#val-no_arg" class=
 "anchor"></a><code><span class="keyword">val</span> no_arg :
-<a href=
+<span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-bool">
 Core_kernel__.Import.bool</a> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>no_arg</code> flags may be passed at most once. The
 boolean returned is true iff the flag is passed on the command
@@ -854,14 +903,15 @@ line.</p>
 <dl>
 <dt class="spec value" id="val-no_arg_register"><a href=
 "#val-no_arg_register" class="anchor"></a><code><span class=
-"keyword">val</span> no_arg_register : key:<span class=
+"keyword">val</span> no_arg_register : <span>key:<span><span class=
 "type-var">'a</span> <a href=
 "../../../../core_kernel/Core_kernel/Univ_map/With_default/Key/index.html#type-t">
-Core_kernel.Univ_map.With_default.Key.t</a> <span>-&gt;</span>
-value:<span class="type-var">'a</span> <span>-&gt;</span> <a href=
+Core_kernel.Univ_map.With_default.Key.t</a></span></span>
+<span>-&gt;</span> <span>value:<span class=
+"type-var">'a</span></span> <span>-&gt;</span> <span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-bool">
 Core_kernel__.Import.bool</a> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>no_arg_register ~key ~value</code> is like
 <code>no_arg</code>, but associates <code>value</code> with
@@ -871,15 +921,15 @@ Core_kernel__.Import.bool</a> <a href=
 <dl>
 <dt class="spec value" id="val-no_arg_abort"><a href=
 "#val-no_arg_abort" class="anchor"></a><code><span class=
-"keyword">val</span> no_arg_abort : exit:(<a href=
+"keyword">val</span> no_arg_abort : <span>exit:<span>(<a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-unit">Core_kernel__.Import.unit</a>
 <span>-&gt;</span> <a href=
 "../../../../core_kernel/Core_kernel__/Std_internal/index.html#type-never_returns">
-Core_kernel__.Std_internal.never_returns</a>) <span>-&gt;</span>
-<a href=
+Core_kernel__.Std_internal.never_returns</a>)</span></span>
+<span>-&gt;</span> <span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-unit">
 Core_kernel__.Import.unit</a> <a href=
-"index.html#type-t">t</a></code></dt>
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>no_arg_abort ~exit</code> is like <code>no_arg</code>, but
 aborts command-line parsing by calling <code>exit</code>. This flag
@@ -890,14 +940,14 @@ exit.</p>
 <dl>
 <dt class="spec value" id="val-escape"><a href="#val-escape" class=
 "anchor"></a><code><span class="keyword">val</span> escape :
-<a href=
+<span><span><span><a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-string">
 Core_kernel__.Import.string</a> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-list">
-Core_kernel__.Import.list</a> <a href=
+Core_kernel__.Import.list</a></span> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-option">
-Core_kernel__.Import.option</a> <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.option</a></span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>escape</code> flags may be passed at most once. They cause
 the command line parser to abort and pass through all remaining
@@ -909,11 +959,12 @@ is <code>"--"</code>.</p>
 <dl>
 <dt class="spec value" id="val-map_flag"><a href="#val-map_flag"
 class="anchor"></a><code><span class="keyword">val</span> map_flag
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> f:(<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>map_flag flag ~f</code> transforms the parsed result of
 <code>flag</code> by applying <code>f</code>.</p>
@@ -926,13 +977,14 @@ class="anchor"></a><code><span class="keyword">val</span> map_flag
 <dl>
 <dt class="spec value" id="val-flags_of_args_exn"><a href=
 "#val-flags_of_args_exn" class="anchor"></a><code><span class=
-"keyword">val</span> flags_of_args_exn : <a href=
+"keyword">val</span> flags_of_args_exn : <span><a href=
 "../../../../core_kernel/Core_kernel/Arg/index.html#type-t">Core_kernel.Arg.t</a>
 <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-list">
-Core_kernel__.Import.list</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'a</span>)
-<a href="index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.list</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'a</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>flags_of_args_exn args</code> creates a spec from
 <code>Caml.Arg.t</code>s, for compatibility with OCaml's base
@@ -950,9 +1002,9 @@ the order that the <code>Caml.Arg.t</code> values appear in
 </dl>
 <dl>
 <dt class="spec type" id="type-anons"><a href="#type-anons" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-anons</code> <code>= <span class="type-var">'a</span> <a href=
-"../Anons/index.html#type-t">Anons.t</a></code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+anons</span></code> <code>= <span><span class="type-var">'a</span>
+<a href="../Anons/index.html#type-t">Anons.t</a></span></code></dt>
 <dd>
 <p>A specification of some number of anonymous arguments.</p>
 </dd>
@@ -965,14 +1017,14 @@ anons</code> <code>= <span class="type-var">'a</span> <a href=
 "keyword">include</span> <span class="keyword">module</span>
 <span class="keyword">type</span> <span class="keyword">of</span>
 <a href="../index.html#module-Anons">Anons</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
-"../index.html#module-Anons">Anons</a>.t := <span class=
-"type-var">'a</span> <a href=
-"index.html#type-anons">anons</a></code></span></summary>
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href="../index.html#module-Anons">Anons</a>.t</span> :=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-anons">anons</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> +'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>+'a
+t</span></code></dt>
 <dd>
 <p>A specification of some number of anonymous arguments.</p>
 </dd>
@@ -981,11 +1033,11 @@ t</code></dt>
 <dt class="spec value" id="val-(%:)"><a href="#val-(%:)" class=
 "anchor"></a><code><span class="keyword">val</span> (%:) : <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-string">
-Core_kernel__.Import.string</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../Arg_type/index.html#type-t">Arg_type.t</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.string</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../Arg_type/index.html#type-t">Arg_type.t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>(name %: typ)</code> specifies a required anonymous
 argument of type <code>typ</code>.</p>
@@ -1004,12 +1056,12 @@ generated help for the command.</p>
 <dl>
 <dt class="spec value" id="val-sequence"><a href="#val-sequence"
 class="anchor"></a><code><span class="keyword">val</span> sequence
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span><span class="type-var">'a</span> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-list">
-Core_kernel__.Import.list</a> <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.list</a></span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>sequence anons</code> specifies a sequence of anonymous
 arguments. An exception will be raised if <code>anons</code>
@@ -1021,12 +1073,13 @@ arguments.</p>
 <dt class="spec value" id="val-non_empty_sequence_as_pair"><a href=
 "#val-non_empty_sequence_as_pair" class=
 "anchor"></a><code><span class="keyword">val</span>
-non_empty_sequence_as_pair : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span> * <span class="type-var">'a</span> <a href=
+non_empty_sequence_as_pair : <span><span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span><span class=
+"type-var">'a</span> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-list">
-Core_kernel__.Import.list</a>) <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.list</a></span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>non_empty_sequence_as_pair anons</code> and
 <code>non_empty_sequence_as_list anons</code> are like
@@ -1038,19 +1091,20 @@ if there is not at least one anonymous argument given.</p>
 <dt class="spec value" id="val-non_empty_sequence_as_list"><a href=
 "#val-non_empty_sequence_as_list" class=
 "anchor"></a><code><span class="keyword">val</span>
-non_empty_sequence_as_list : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
+non_empty_sequence_as_list : <span><span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span><span class="type-var">'a</span> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-list">
-Core_kernel__.Import.list</a> <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.list</a></span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-maybe"><a href="#val-maybe" class=
 "anchor"></a><code><span class="keyword">val</span> maybe :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span><span class="type-var">'a</span> <a href=
 "../../../../core_kernel/Core_kernel__/Import/index.html#type-option">
-Core_kernel__.Import.option</a> <a href=
-"index.html#type-t">t</a></code></dt>
+Core_kernel__.Import.option</a></span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>(maybe anons)</code> indicates that some anonymous
 arguments are optional.</p>
@@ -1060,10 +1114,10 @@ arguments are optional.</p>
 <dt class="spec value" id="val-maybe_with_default"><a href=
 "#val-maybe_with_default" class="anchor"></a><code><span class=
 "keyword">val</span> maybe_with_default : <span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"type-var">'a</span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>(maybe_with_default default anons)</code> indicates an
 optional anonymous argument with a default value.</p>
@@ -1086,38 +1140,46 @@ nested tuples:</p>
 <dl>
 <dt class="spec value" id="val-t2"><a href="#val-t2" class=
 "anchor"></a><code><span class="keyword">val</span> t2 :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span> * <span class="type-var">'b</span>) <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-t3"><a href="#val-t3" class=
 "anchor"></a><code><span class="keyword">val</span> t3 :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'c</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
-"type-var">'b</span> * <span class="type-var">'c</span>) <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'c</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span> * <span class="type-var">'c</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-t4"><a href="#val-t4" class=
 "anchor"></a><code><span class="keyword">val</span> t4 :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'c</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'d</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span> * <span class="type-var">'b</span> *
-<span class="type-var">'c</span> * <span class=
-"type-var">'d</span>) <a href="index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'c</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'d</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span> * <span class="type-var">'c</span> *
+<span class="type-var">'d</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-map_anons"><a href="#val-map_anons"
 class="anchor"></a><code><span class="keyword">val</span> map_anons
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> f:(<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>map_anons anons ~f</code> transforms the parsed result of
 <code>anons</code> by applying <code>f</code>.</p>
@@ -1134,18 +1196,20 @@ line specifications.</p>
 <dl>
 <dt class="spec value" id="val-to_param"><a href="#val-to_param"
 class="anchor"></a><code><span class="keyword">val</span> to_param
-: (<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'r</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'r</span> <a href=
-"../Param/index.html#type-t">Param.t</a></code></dt>
+: <span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'r</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <span><span class=
+"type-var">'r</span> <a href=
+"../Param/index.html#type-t">Param.t</a></span></code></dt>
 <dt class="spec value" id="val-of_param"><a href="#val-of_param"
 class="anchor"></a><code><span class="keyword">val</span> of_param
-: <span class="type-var">'r</span> <a href=
-"../Param/index.html#type-t">Param.t</a> <span>-&gt;</span>
-(<span class="type-var">'r</span> <span>-&gt;</span> <span class=
-"type-var">'m</span>,&nbsp;<span class="type-var">'m</span>)
-<a href="index.html#type-t">t</a></code></dt>
+: <span><span class="type-var">'r</span> <a href=
+"../Param/index.html#type-t">Param.t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'r</span> <span>-&gt;</span>
+<span class="type-var">'m</span>,&nbsp;<span class=
+"type-var">'m</span>)</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 </dl>
 </section>
 </div>

@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Ordered_collection_common
 (core_kernel.Core_kernel__.Ordered_collection_common)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -43,20 +42,22 @@ Base.Ordered_collection_common</code></span></a>.</p>
 <dl>
 <dt class="spec value" id="val-get_pos_len"><a href=
 "#val-get_pos_len" class="anchor"></a><code><span class=
-"keyword">val</span> get_pos_len : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> unit <span>-&gt;</span>
-total_length:int <span>-&gt;</span> (int * int) <a href=
-"../../../base/Base/Or_error/index.html#type-t">Base.Or_error.t</a></code></dt>
+"keyword">val</span> get_pos_len : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span> unit
+<span>-&gt;</span> <span>total_length:int</span> <span>-&gt;</span>
+<span><span>(int * int)</span> <a href=
+"../../../base/Base/Or_error/index.html#type-t">Base.Or_error.t</a></span></code></dt>
 <dt class="spec value" id="val-get_pos_len_exn"><a href=
 "#val-get_pos_len_exn" class="anchor"></a><code><span class=
-"keyword">val</span> get_pos_len_exn : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> unit <span>-&gt;</span>
-total_length:int <span>-&gt;</span> int * int</code></dt>
+"keyword">val</span> get_pos_len_exn : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span> unit
+<span>-&gt;</span> <span>total_length:int</span> <span>-&gt;</span>
+int * int</code></dt>
 <dt class="spec value" id="val-check_pos_len_exn"><a href=
 "#val-check_pos_len_exn" class="anchor"></a><code><span class=
-"keyword">val</span> check_pos_len_exn : pos:int <span>-&gt;</span>
-len:int <span>-&gt;</span> total_length:int <span>-&gt;</span>
-unit</code></dt>
+"keyword">val</span> check_pos_len_exn : <span>pos:int</span>
+<span>-&gt;</span> <span>len:int</span> <span>-&gt;</span>
+<span>total_length:int</span> <span>-&gt;</span> unit</code></dt>
 </dl>
 <div class="spec module" id="module-Private"><a href=
 "#module-Private" class="anchor"></a><code><span class=
@@ -71,18 +72,20 @@ Base__Ordered_collection_common.Private</a></code></div>
 <dl>
 <dt class="spec value" id="val-normalize"><a href="#val-normalize"
 class="anchor"></a><code><span class="keyword">val</span> normalize
-: length_fun:(<span class="type-var">'a</span> <span>-&gt;</span>
-int) <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> int <span>-&gt;</span> int</code></dt>
+: <span>length_fun:<span>(<span class="type-var">'a</span>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span> int
+<span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-slice"><a href="#val-slice" class=
 "anchor"></a><code><span class="keyword">val</span> slice :
-length_fun:(<span class="type-var">'a</span> <span>-&gt;</span>
-int) <span>-&gt;</span> sub_fun:(<span class="type-var">'a</span>
-<span>-&gt;</span> pos:int <span>-&gt;</span> len:int
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> int <span>-&gt;</span> int <span>-&gt;</span>
-<span class="type-var">'a</span></code></dt>
+<span>length_fun:<span>(<span class="type-var">'a</span>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span>sub_fun:<span>(<span class="type-var">'a</span>
+<span>-&gt;</span> <span>pos:int</span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> <span class=
+"type-var">'a</span>)</span></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> int <span>-&gt;</span> int
+<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 </dl>
 </div>
 </body>

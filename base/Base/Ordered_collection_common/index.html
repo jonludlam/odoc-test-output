@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Ordered_collection_common
 (base.Base.Ordered_collection_common)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -29,10 +28,11 @@ Ordered_collection_common</nav>
 <dl>
 <dt class="spec value" id="val-get_pos_len"><a href=
 "#val-get_pos_len" class="anchor"></a><code><span class=
-"keyword">val</span> get_pos_len : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> unit <span>-&gt;</span>
-total_length:int <span>-&gt;</span> (int * int) <a href=
-"../Or_error/index.html#type-t">Or_error.t</a></code></dt>
+"keyword">val</span> get_pos_len : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span> unit
+<span>-&gt;</span> <span>total_length:int</span> <span>-&gt;</span>
+<span><span>(int * int)</span> <a href=
+"../Or_error/index.html#type-t">Or_error.t</a></span></code></dt>
 <dd>
 <p><code>get_pos_len</code>, <code>get_pos_len_exn</code>, and
 <code>check_pos_len_exn</code> are intended to be used by functions
@@ -58,14 +58,15 @@ specifying a subrange where:</p>
 <dl>
 <dt class="spec value" id="val-get_pos_len_exn"><a href=
 "#val-get_pos_len_exn" class="anchor"></a><code><span class=
-"keyword">val</span> get_pos_len_exn : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> unit <span>-&gt;</span>
-total_length:int <span>-&gt;</span> int * int</code></dt>
+"keyword">val</span> get_pos_len_exn : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span> unit
+<span>-&gt;</span> <span>total_length:int</span> <span>-&gt;</span>
+int * int</code></dt>
 <dt class="spec value" id="val-check_pos_len_exn"><a href=
 "#val-check_pos_len_exn" class="anchor"></a><code><span class=
-"keyword">val</span> check_pos_len_exn : pos:int <span>-&gt;</span>
-len:int <span>-&gt;</span> total_length:int <span>-&gt;</span>
-unit</code></dt>
+"keyword">val</span> check_pos_len_exn : <span>pos:int</span>
+<span>-&gt;</span> <span>len:int</span> <span>-&gt;</span>
+<span>total_length:int</span> <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>check_pos_len_exn ~pos ~len ~total_length</code> raises
 unless <code>pos &gt;= 0 &amp;&amp; len &gt;= 0 &amp;&amp; pos +

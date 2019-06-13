@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Set (core.Core.Interval_intf.S1.Set)</title>
 <link rel="stylesheet" href="../../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../../highlight.pack.js">
-</script>
+<script src="../../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -28,8 +27,8 @@ hljs.initHighlightingOnLoad();
 </header>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -41,61 +40,64 @@ t</code></dt>
 <dl>
 <dt class="spec value" id="val-bin_t"><a href="#val-bin_t" class=
 "anchor"></a><code><span class="keyword">val</span> bin_t :
-<span class="type-var">'a</span> <a href=
-"../../../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <a href=
-"../../../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"../../../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></span> <a href=
+"../../../../../bin_prot/Bin_prot/Type_class/index.html#type-t">Bin_prot.Type_class.t</a></span></code></dt>
 <dt class="spec value" id="val-bin_read_t"><a href=
 "#val-bin_read_t" class="anchor"></a><code><span class=
-"keyword">val</span> bin_read_t : <span class="type-var">'a</span>
-<a href=
-"../../../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <a href=
-"../../../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+"keyword">val</span> bin_read_t : <span><span class=
+"type-var">'a</span> <a href=
+"../../../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></span> <a href=
+"../../../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id="val-__bin_read_t__"><a href=
 "#val-__bin_read_t__" class="anchor"></a><code><span class=
-"keyword">val</span> __bin_read_t__ : <span class=
+"keyword">val</span> __bin_read_t__ : <span><span class=
 "type-var">'a</span> <a href=
-"../../../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a>
-<span>-&gt;</span> (int <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>) <a href=
-"../../../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></code></dt>
+"../../../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span>
+<span>-&gt;</span> <span><span>(int <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span>)</span> <a href=
+"../../../../../bin_prot/Bin_prot/Read/index.html#type-reader">Bin_prot.Read.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_reader_t"><a href=
 "#val-bin_reader_t" class="anchor"></a><code><span class=
-"keyword">val</span> bin_reader_t : <span class=
+"keyword">val</span> bin_reader_t : <span><span class=
 "type-var">'a</span> <a href=
 "../../../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">
-Bin_prot.Type_class.reader</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a> <a href=
+Bin_prot.Type_class.reader</a></span> <span>-&gt;</span>
+<span><span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <a href=
 "../../../../../bin_prot/Bin_prot/Type_class/index.html#type-reader">
-Bin_prot.Type_class.reader</a></code></dt>
+Bin_prot.Type_class.reader</a></span></code></dt>
 <dt class="spec value" id="val-bin_size_t"><a href=
 "#val-bin_size_t" class="anchor"></a><code><span class=
-"keyword">val</span> bin_size_t : <span class="type-var">'a</span>
-<a href=
-"../../../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <a href=
-"../../../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></code></dt>
+"keyword">val</span> bin_size_t : <span><span class=
+"type-var">'a</span> <a href=
+"../../../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></span> <a href=
+"../../../../../bin_prot/Bin_prot/Size/index.html#type-sizer">Bin_prot.Size.sizer</a></span></code></dt>
 <dt class="spec value" id="val-bin_write_t"><a href=
 "#val-bin_write_t" class="anchor"></a><code><span class=
-"keyword">val</span> bin_write_t : <span class="type-var">'a</span>
-<a href=
-"../../../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <a href=
-"../../../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></code></dt>
+"keyword">val</span> bin_write_t : <span><span class=
+"type-var">'a</span> <a href=
+"../../../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></span> <a href=
+"../../../../../bin_prot/Bin_prot/Write/index.html#type-writer">Bin_prot.Write.writer</a></span></code></dt>
 <dt class="spec value" id="val-bin_writer_t"><a href=
 "#val-bin_writer_t" class="anchor"></a><code><span class=
-"keyword">val</span> bin_writer_t : <span class=
+"keyword">val</span> bin_writer_t : <span><span class=
 "type-var">'a</span> <a href=
 "../../../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">
-Bin_prot.Type_class.writer</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a> <a href=
+Bin_prot.Type_class.writer</a></span> <span>-&gt;</span>
+<span><span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <a href=
 "../../../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">
-Bin_prot.Type_class.writer</a></code></dt>
+Bin_prot.Type_class.writer</a></span></code></dt>
 <dt class="spec value" id="val-bin_shape_t"><a href=
 "#val-bin_shape_t" class="anchor"></a><code><span class=
 "keyword">val</span> bin_shape_t : <a href=
@@ -104,19 +106,20 @@ Bin_prot.Type_class.writer</a></code></dt>
 "../../../../../bin_prot/Bin_prot/Shape/index.html#type-t">Bin_prot.Shape.t</a></code></dt>
 <dt class="spec value" id="val-t_of_sexp"><a href="#val-t_of_sexp"
 class="anchor"></a><code><span class="keyword">val</span> t_of_sexp
-: (<a href=
+: <span>(<a href=
 "../../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
 <span>-&gt;</span> <a href=
 "../../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
 class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
-: (<span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+: <span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<a href=
+"../../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
 </details>
@@ -128,14 +131,14 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 <div class="doc">
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 <dt class="spec type" id="type-bound"><a href="#type-bound" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-bound</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+bound</span></code></dt>
 <dt class="spec type" id="type-interval"><a href="#type-interval"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-interval</code></dt>
+class="anchor"></a><code><span class="keyword">type</span> <span>'a
+interval</span></code></dt>
 <dd>
 <p>An interval set is a set of nonempty disjoint intervals.</p>
 </dd>
@@ -143,11 +146,12 @@ interval</code></dt>
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create :
-(<span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> * <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a>)
-list <span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span>(<span><span class="type-var">'a</span> <a href=
+"index.html#type-bound">bound</a></span> * <span><span class=
+"type-var">'a</span> <a href=
+"index.html#type-bound">bound</a></span>)</span> list</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>create</code> creates an interval set containing intervals
 whose lower and upper bounds are given by the pairs passed to the
@@ -157,11 +161,11 @@ function. It is an error if the pairs overlap.</p>
 <dl>
 <dt class="spec value" id="val-create_from_intervals"><a href=
 "#val-create_from_intervals" class="anchor"></a><code><span class=
-"keyword">val</span> create_from_intervals : <span class=
-"type-var">'a</span> <a href=
-"index.html#type-interval">interval</a> list <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"keyword">val</span> create_from_intervals :
+<span><span><span class="type-var">'a</span> <a href=
+"index.html#type-interval">interval</a></span> list</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>create_from_intervals</code> creates an interval set.
 Empty intervals are dropped. It is an error if the nonempty
@@ -171,16 +175,18 @@ intervals are not disjoint.</p>
 <dl>
 <dt class="spec value" id="val-contains"><a href="#val-contains"
 class="anchor"></a><code><span class="keyword">val</span> contains
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-bound">bound</a>
-<span>-&gt;</span> bool</code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-bound">bound</a></span> <span>-&gt;</span>
+bool</code></dt>
 <dt class="spec value" id="val-contains_set"><a href=
 "#val-contains_set" class="anchor"></a><code><span class=
-"keyword">val</span> contains_set : container:<span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> contained:<span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
+"keyword">val</span> contains_set :
+<span>container:<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></span> <span>-&gt;</span>
+<span>contained:<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></span> <span>-&gt;</span>
 bool</code></dt>
 <dd>
 <p><code>contains_set</code> returns true iff for every interval in
@@ -191,10 +197,10 @@ that is its superset.</p>
 <dl>
 <dt class="spec value" id="val-ubound_exn"><a href=
 "#val-ubound_exn" class="anchor"></a><code><span class=
-"keyword">val</span> ubound_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"index.html#type-bound">bound</a></code></dt>
+"keyword">val</span> ubound_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-bound">bound</a></span></code></dt>
 <dd>
 <p>The largest and smallest element of the interval set,
 respectively. Raises Invalid_argument on empty sets.</p>
@@ -203,20 +209,22 @@ respectively. Raises Invalid_argument on empty sets.</p>
 <dl>
 <dt class="spec value" id="val-lbound_exn"><a href=
 "#val-lbound_exn" class="anchor"></a><code><span class=
-"keyword">val</span> lbound_exn : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"index.html#type-bound">bound</a></code></dt>
+"keyword">val</span> lbound_exn : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-bound">bound</a></span></code></dt>
 <dt class="spec value" id="val-ubound"><a href="#val-ubound" class=
 "anchor"></a><code><span class="keyword">val</span> ubound :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> option</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span><span class="type-var">'a</span> <a href=
+"index.html#type-bound">bound</a></span> option</span></code></dt>
 <dt class="spec value" id="val-lbound"><a href="#val-lbound" class=
 "anchor"></a><code><span class="keyword">val</span> lbound :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-bound">bound</a> option</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span><span class="type-var">'a</span> <a href=
+"index.html#type-bound">bound</a></span> option</span></code></dt>
 </dl>
 </div>
 </div>

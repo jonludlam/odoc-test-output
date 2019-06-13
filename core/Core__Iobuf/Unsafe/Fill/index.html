@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Fill (core.Core__Iobuf.Unsafe.Fill)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -38,17 +37,18 @@ the bytes written.</p>
 "keyword">include</span> <a href=
 "../../../Core/Iobuf_intf/index.html#module-type-Accessors_write">Core.Iobuf_intf.Accessors_write</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-('a, 'd, 'w) <a href=
+<span>('a, 'd, 'w) <a href=
 "../../../Core/Iobuf_intf/module-type-Accessors_write/index.html#type-t">
-t</a> = (<a href=
-"../../../Core__/Import/index.html#type-read_write">Core__.Import.read_write</a>,&nbsp;<a href="../../index.html#type-seek">seek</a>)
-<a href="../../index.html#type-t">t</a> <span>-&gt;</span>
+t</a></span> = <span><span>(<a href=
+"../../../Core__/Import/index.html#type-read_write">Core__.Import.read_write</a>,&nbsp;<a href="../../index.html#type-seek">seek</a>)</span>
+<a href="../../index.html#type-t">t</a></span> <span>-&gt;</span>
 <span class="type-var">'a</span> <span>-&gt;</span> unit
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
+<span>'a <a href=
 "../../../Core/Iobuf_intf/module-type-Accessors_write/index.html#type-bin_prot">
-bin_prot</a> := <span class="type-var">'a</span> <a href=
-"../../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></code></span></summary>
+bin_prot</a></span> := <span><span class="type-var">'a</span>
+<a href=
+"../../../../bin_prot/Bin_prot/Type_class/index.html#type-writer">Bin_prot.Type_class.writer</a></span></code></span></summary>
 <div>
 <div class="spec include">
 <div class="doc">
@@ -58,9 +58,10 @@ bin_prot</a> := <span class="type-var">'a</span> <a href=
 "../../../Core/Iobuf_intf/index.html#module-type-Accessors_common">Core.Iobuf_intf.Accessors_common</a></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'd, 'w)
-t</code> <code><span class="keyword">constraint</span> <span class=
-"type-var">'d</span> = [&gt; Core__.Import.read ]</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>('a, 'd,
+'w) t</span></code> <code><span class="keyword">constraint</span>
+<span class="type-var">'d</span> = <span>[&gt; Core__.Import.read
+]</span></code></dt>
 <dd>
 <p><code>('d, 'w) Iobuf.t</code> accessor function manipulating
 <code>'a</code>, either writing it to the iobuf or reading it from
@@ -69,78 +70,86 @@ the iobuf.</p>
 </dl>
 <dl>
 <dt class="spec type" id="type-bin_prot"><a href="#type-bin_prot"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-bin_prot</code></dt>
+class="anchor"></a><code><span class="keyword">type</span> <span>'a
+bin_prot</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-char"><a href="#val-char" class=
 "anchor"></a><code><span class="keyword">val</span> char :
-(char,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class=
-"type-var">'w</span>) <a href="index.html#type-t">t</a></code></dt>
+<span><span>(char,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-int64_t_be"><a href=
 "#val-int64_t_be" class="anchor"></a><code><span class=
-"keyword">val</span> int64_t_be : (<a href=
-"../../../../core_kernel/Core_kernel/Int64/index.html#type-t">Core__.Import.Int64.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> int64_t_be : <span><span>(<a href=
+"../../../../core_kernel/Core_kernel/Int64/index.html#type-t">Core__.Import.Int64.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-int64_t_le"><a href=
 "#val-int64_t_le" class="anchor"></a><code><span class=
-"keyword">val</span> int64_t_le : (<a href=
-"../../../../core_kernel/Core_kernel/Int64/index.html#type-t">Core__.Import.Int64.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> int64_t_le : <span><span>(<a href=
+"../../../../core_kernel/Core_kernel/Int64/index.html#type-t">Core__.Import.Int64.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-head_padded_fixed_string"><a href=
 "#val-head_padded_fixed_string" class=
 "anchor"></a><code><span class="keyword">val</span>
-head_padded_fixed_string : padding:char <span>-&gt;</span> len:int
-<span>-&gt;</span> (string,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+head_padded_fixed_string : <span>padding:char</span>
+<span>-&gt;</span> <span>len:int</span> <span>-&gt;</span>
+<span><span>(string,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-tail_padded_fixed_string"><a href=
 "#val-tail_padded_fixed_string" class=
 "anchor"></a><code><span class="keyword">val</span>
-tail_padded_fixed_string : padding:char <span>-&gt;</span> len:int
-<span>-&gt;</span> (string,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+tail_padded_fixed_string : <span>padding:char</span>
+<span>-&gt;</span> <span>len:int</span> <span>-&gt;</span>
+<span><span>(string,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-string"><a href="#val-string" class=
 "anchor"></a><code><span class="keyword">val</span> string :
-str_pos:int <span>-&gt;</span> len:int <span>-&gt;</span>
-(string,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class=
-"type-var">'w</span>) <a href="index.html#type-t">t</a></code></dt>
+<span>str_pos:int</span> <span>-&gt;</span> <span>len:int</span>
+<span>-&gt;</span> <span><span>(string,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-bytes"><a href="#val-bytes" class=
 "anchor"></a><code><span class="keyword">val</span> bytes :
-str_pos:int <span>-&gt;</span> len:int <span>-&gt;</span> (<a href=
-"../../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span>str_pos:int</span> <span>-&gt;</span> <span>len:int</span>
+<span>-&gt;</span> <span><span>(<a href=
+"../../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-bigstring"><a href="#val-bigstring"
 class="anchor"></a><code><span class="keyword">val</span> bigstring
-: str_pos:int <span>-&gt;</span> len:int <span>-&gt;</span>
-(<a href=
-"../../../../core_kernel/Core_kernel/Bigstring/index.html#type-t">Core__.Import.Bigstring.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+: <span>str_pos:int</span> <span>-&gt;</span> <span>len:int</span>
+<span>-&gt;</span> <span><span>(<a href=
+"../../../../core_kernel/Core_kernel/Bigstring/index.html#type-t">Core__.Import.Bigstring.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-stringo"><a href="#val-stringo"
 class="anchor"></a><code><span class="keyword">val</span> stringo :
-?⁠str_pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span>
-(string,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class=
-"type-var">'w</span>) <a href="index.html#type-t">t</a></code></dt>
+<span>?⁠str_pos:int</span> <span>-&gt;</span>
+<span>?⁠len:int</span> <span>-&gt;</span>
+<span><span>(string,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-byteso"><a href="#val-byteso" class=
 "anchor"></a><code><span class="keyword">val</span> byteso :
-?⁠str_pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span>
-(<a href=
-"../../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span>?⁠str_pos:int</span> <span>-&gt;</span>
+<span>?⁠len:int</span> <span>-&gt;</span> <span><span>(<a href=
+"../../../../core_kernel/Core_kernel/Bytes/index.html#type-t">Core__.Import.Bytes.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-bigstringo"><a href=
 "#val-bigstringo" class="anchor"></a><code><span class=
-"keyword">val</span> bigstringo : ?⁠str_pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> (<a href=
-"../../../../core_kernel/Core_kernel/Bigstring/index.html#type-t">Core__.Import.Bigstring.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> bigstringo : <span>?⁠str_pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span>
+<span><span>(<a href=
+"../../../../core_kernel/Core_kernel/Bigstring/index.html#type-t">Core__.Import.Bigstring.t</a>,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-bin_prot"><a href="#val-bin_prot"
 class="anchor"></a><code><span class="keyword">val</span> bin_prot
-: <span class="type-var">'a</span> <a href=
-"index.html#type-bin_prot">bin_prot</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-bin_prot">bin_prot</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -149,72 +158,86 @@ class="anchor"></a><code><span class="keyword">val</span> bin_prot
 <dl>
 <dt class="spec value" id="val-int8_trunc"><a href=
 "#val-int8_trunc" class="anchor"></a><code><span class=
-"keyword">val</span> int8_trunc : (int,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> int8_trunc :
+<span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-int16_be_trunc"><a href=
 "#val-int16_be_trunc" class="anchor"></a><code><span class=
-"keyword">val</span> int16_be_trunc : (int,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> int16_be_trunc :
+<span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-int16_le_trunc"><a href=
 "#val-int16_le_trunc" class="anchor"></a><code><span class=
-"keyword">val</span> int16_le_trunc : (int,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> int16_le_trunc :
+<span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-int32_be_trunc"><a href=
 "#val-int32_be_trunc" class="anchor"></a><code><span class=
-"keyword">val</span> int32_be_trunc : (int,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> int32_be_trunc :
+<span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-int32_le_trunc"><a href=
 "#val-int32_le_trunc" class="anchor"></a><code><span class=
-"keyword">val</span> int32_le_trunc : (int,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> int32_le_trunc :
+<span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-int64_be"><a href="#val-int64_be"
 class="anchor"></a><code><span class="keyword">val</span> int64_be
-: (int,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class=
-"type-var">'w</span>) <a href="index.html#type-t">t</a></code></dt>
+: <span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-int64_le"><a href="#val-int64_le"
 class="anchor"></a><code><span class="keyword">val</span> int64_le
-: (int,&nbsp;<span class="type-var">'d</span>,&nbsp;<span class=
-"type-var">'w</span>) <a href="index.html#type-t">t</a></code></dt>
+: <span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-uint8_trunc"><a href=
 "#val-uint8_trunc" class="anchor"></a><code><span class=
-"keyword">val</span> uint8_trunc : (int,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> uint8_trunc :
+<span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-uint16_be_trunc"><a href=
 "#val-uint16_be_trunc" class="anchor"></a><code><span class=
-"keyword">val</span> uint16_be_trunc : (int,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> uint16_be_trunc :
+<span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-uint16_le_trunc"><a href=
 "#val-uint16_le_trunc" class="anchor"></a><code><span class=
-"keyword">val</span> uint16_le_trunc : (int,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> uint16_le_trunc :
+<span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-uint32_be_trunc"><a href=
 "#val-uint32_be_trunc" class="anchor"></a><code><span class=
-"keyword">val</span> uint32_be_trunc : (int,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> uint32_be_trunc :
+<span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-uint32_le_trunc"><a href=
 "#val-uint32_le_trunc" class="anchor"></a><code><span class=
-"keyword">val</span> uint32_le_trunc : (int,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> uint32_le_trunc :
+<span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-uint64_be_trunc"><a href=
 "#val-uint64_be_trunc" class="anchor"></a><code><span class=
-"keyword">val</span> uint64_be_trunc : (int,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> uint64_be_trunc :
+<span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-uint64_le_trunc"><a href=
 "#val-uint64_le_trunc" class="anchor"></a><code><span class=
-"keyword">val</span> uint64_le_trunc : (int,&nbsp;<span class=
-"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> uint64_le_trunc :
+<span><span>(int,&nbsp;<span class=
+"type-var">'d</span>,&nbsp;<span class="type-var">'w</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -223,8 +246,9 @@ class="anchor"></a><code><span class="keyword">val</span> int64_le
 <dl>
 <dt class="spec value" id="val-decimal"><a href="#val-decimal"
 class="anchor"></a><code><span class="keyword">val</span> decimal :
-(int,&nbsp;<span class="type-var">_</span>,&nbsp;<span class=
-"type-var">_</span>) <a href="index.html#type-t">t</a></code></dt>
+<span><span>(int,&nbsp;<span class=
+"type-var">_</span>,&nbsp;<span class="type-var">_</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>decimal t int</code> is equivalent to
 <code>Iobuf.Fill.string t (Int.to_string int)</code>, but with

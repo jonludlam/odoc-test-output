@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Float (base.Base.Float)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -279,9 +278,11 @@ ascending or descending order, respectively.</p>
 <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-between"><a href="#val-between"
 class="anchor"></a><code><span class="keyword">val</span> between :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> low:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> high:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span>low:<a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>high:<a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+bool</code></dt>
 <dd>
 <p><code>between t ~low ~high</code> means <code>low &lt;= t &lt;=
 high</code></p>
@@ -290,9 +291,10 @@ high</code></p>
 <dl>
 <dt class="spec value" id="val-clamp_exn"><a href="#val-clamp_exn"
 class="anchor"></a><code><span class="keyword">val</span> clamp_exn
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> min:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> max:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+: <a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span>min:<a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>max:<a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>clamp_exn t ~min ~max</code> returns <code>t'</code>, the
@@ -304,11 +306,12 @@ closest value to <code>t</code> such that <code>between t' ~low:min
 <dl>
 <dt class="spec value" id="val-clamp"><a href="#val-clamp" class=
 "anchor"></a><code><span class="keyword">val</span> clamp :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> min:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> max:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span>min:<a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>max:<a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span><a href=
 "index.html#type-t">t</a> <a href=
-"../Or_error/index.html#type-t">Or_error.t</a></code></dt>
+"../Or_error/index.html#type-t">Or_error.t</a></span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -330,11 +333,11 @@ closest value to <code>t</code> such that <code>between t' ~low:min
 <dl>
 <dt class="spec value" id="val-comparator"><a href=
 "#val-comparator" class="anchor"></a><code><span class=
-"keyword">val</span> comparator : (<a href=
+"keyword">val</span> comparator : <span><span>(<a href=
 "index.html#type-t">t</a>,&nbsp;<a href=
-"index.html#type-comparator_witness">comparator_witness</a>)
+"index.html#type-comparator_witness">comparator_witness</a>)</span>
 <a href=
-"../Comparator/index.html#type-comparator">Comparator.comparator</a></code></dt>
+"../Comparator/index.html#type-comparator">Comparator.comparator</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -358,27 +361,28 @@ t</a> := <a href="index.html#type-t">t</a></code></span></summary>
 <dl>
 <dt class="spec value" id="val-validate_lbound"><a href=
 "#val-validate_lbound" class="anchor"></a><code><span class=
-"keyword">val</span> validate_lbound : min:<a href=
+"keyword">val</span> validate_lbound : <span>min:<span><a href=
 "index.html#type-t">t</a> <a href=
-"../Maybe_bound/index.html#type-t">Maybe_bound.t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
-"../Validate/index.html#type-check">Validate.check</a></code></dt>
+"../Maybe_bound/index.html#type-t">Maybe_bound.t</a></span></span>
+<span>-&gt;</span> <span><a href="index.html#type-t">t</a> <a href=
+"../Validate/index.html#type-check">Validate.check</a></span></code></dt>
 <dt class="spec value" id="val-validate_ubound"><a href=
 "#val-validate_ubound" class="anchor"></a><code><span class=
-"keyword">val</span> validate_ubound : max:<a href=
+"keyword">val</span> validate_ubound : <span>max:<span><a href=
 "index.html#type-t">t</a> <a href=
-"../Maybe_bound/index.html#type-t">Maybe_bound.t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
-"../Validate/index.html#type-check">Validate.check</a></code></dt>
+"../Maybe_bound/index.html#type-t">Maybe_bound.t</a></span></span>
+<span>-&gt;</span> <span><a href="index.html#type-t">t</a> <a href=
+"../Validate/index.html#type-check">Validate.check</a></span></code></dt>
 <dt class="spec value" id="val-validate_bound"><a href=
 "#val-validate_bound" class="anchor"></a><code><span class=
-"keyword">val</span> validate_bound : min:<a href=
+"keyword">val</span> validate_bound : <span>min:<span><a href=
 "index.html#type-t">t</a> <a href=
-"../Maybe_bound/index.html#type-t">Maybe_bound.t</a>
-<span>-&gt;</span> max:<a href="index.html#type-t">t</a> <a href=
-"../Maybe_bound/index.html#type-t">Maybe_bound.t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
-"../Validate/index.html#type-check">Validate.check</a></code></dt>
+"../Maybe_bound/index.html#type-t">Maybe_bound.t</a></span></span>
+<span>-&gt;</span> <span>max:<span><a href=
+"index.html#type-t">t</a> <a href=
+"../Maybe_bound/index.html#type-t">Maybe_bound.t</a></span></span>
+<span>-&gt;</span> <span><a href="index.html#type-t">t</a> <a href=
+"../Validate/index.html#type-check">Validate.check</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -435,24 +439,24 @@ unit</code></dt>
 <dl>
 <dt class="spec value" id="val-validate_positive"><a href=
 "#val-validate_positive" class="anchor"></a><code><span class=
-"keyword">val</span> validate_positive : <a href=
+"keyword">val</span> validate_positive : <span><a href=
 "index.html#type-t">t</a> <a href=
-"../Validate/index.html#type-check">Validate.check</a></code></dt>
+"../Validate/index.html#type-check">Validate.check</a></span></code></dt>
 <dt class="spec value" id="val-validate_non_negative"><a href=
 "#val-validate_non_negative" class="anchor"></a><code><span class=
-"keyword">val</span> validate_non_negative : <a href=
+"keyword">val</span> validate_non_negative : <span><a href=
 "index.html#type-t">t</a> <a href=
-"../Validate/index.html#type-check">Validate.check</a></code></dt>
+"../Validate/index.html#type-check">Validate.check</a></span></code></dt>
 <dt class="spec value" id="val-validate_negative"><a href=
 "#val-validate_negative" class="anchor"></a><code><span class=
-"keyword">val</span> validate_negative : <a href=
+"keyword">val</span> validate_negative : <span><a href=
 "index.html#type-t">t</a> <a href=
-"../Validate/index.html#type-check">Validate.check</a></code></dt>
+"../Validate/index.html#type-check">Validate.check</a></span></code></dt>
 <dt class="spec value" id="val-validate_non_positive"><a href=
 "#val-validate_non_positive" class="anchor"></a><code><span class=
-"keyword">val</span> validate_non_positive : <a href=
+"keyword">val</span> validate_non_positive : <span><a href=
 "index.html#type-t">t</a> <a href=
-"../Validate/index.html#type-check">Validate.check</a></code></dt>
+"../Validate/index.html#type-check">Validate.check</a></span></code></dt>
 <dt class="spec value" id="val-is_positive"><a href=
 "#val-is_positive" class="anchor"></a><code><span class=
 "keyword">val</span> is_positive : <a href=
@@ -485,9 +489,9 @@ in a way consistent with the above functions.</p>
 <dl>
 <dt class="spec value" id="val-validate_ordinary"><a href=
 "#val-validate_ordinary" class="anchor"></a><code><span class=
-"keyword">val</span> validate_ordinary : <a href=
+"keyword">val</span> validate_ordinary : <span><a href=
 "index.html#type-t">t</a> <a href=
-"../Validate/index.html#type-check">Validate.check</a></code></dt>
+"../Validate/index.html#type-check">Validate.check</a></span></code></dt>
 <dd>
 <p><code>validate_ordinary</code> fails if class is
 <code>Nan</code> or <code>Infinite</code>.</p>
@@ -604,7 +608,7 @@ min_positive_normal_value : <a href=
 "#val-to_int64_preserve_order" class=
 "anchor"></a><code><span class="keyword">val</span>
 to_int64_preserve_order : <a href="index.html#type-t">t</a>
-<span>-&gt;</span> int64 option</code></dt>
+<span>-&gt;</span> <span>int64 option</span></code></dt>
 <dd>
 <p>An order-preserving bijection between all floats except for
 nans, and all int64s with absolute value smaller than or equal to
@@ -630,8 +634,8 @@ is too large.</p>
 <dl>
 <dt class="spec value" id="val-one_ulp"><a href="#val-one_ulp"
 class="anchor"></a><code><span class="keyword">val</span> one_ulp :
-[ `Up | `Down ] <span>-&gt;</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+<span>[ `Up <span>| `Down</span> ]</span> <span>-&gt;</span>
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dd>
 <p>The next or previous representable float. ULP stands for "unit
@@ -668,17 +672,17 @@ class="anchor"></a><code><span class="keyword">val</span> to_int64
 : <a href="index.html#type-t">t</a> <span>-&gt;</span>
 int64</code></dt>
 <dt class="spec value" id="val-round"><a href="#val-round" class=
-"anchor"></a><code><span class="keyword">val</span> round : ?⁠dir:[
-`Zero | `Nearest | `Up | `Down ] <span>-&gt;</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+"anchor"></a><code><span class="keyword">val</span> round :
+<span>?⁠dir:<span>[ `Zero <span>| `Nearest</span> <span>|
+`Up</span> <span>| `Down</span> ]</span></span> <span>-&gt;</span>
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>round</code> rounds a float to an integer float.
 <code>iround{,_exn}</code> rounds a float to an int. Both round
 according to a direction <code>dir</code>, with default
 <code>dir</code> being <code>`Nearest</code>.</p>
-<pre>
-| `Down    | rounds toward Float.neg_infinity                             |
+<pre>      | `Down    | rounds toward Float.neg_infinity                             |
       | `Up      | rounds toward Float.infinity                                 |
       | `Nearest | rounds to the nearest int ("round half-integers up")         |
       | `Zero    | rounds toward zero                                           |</pre>
@@ -687,8 +691,7 @@ trying to handle a float outside the range [float min_int, float
 max_int).</p>
 <p>Here are some examples for <code>round</code> for each
 direction:</p>
-<pre>
-| `Down    | [-2.,-1.)   to -2. | [-1.,0.)   to -1. | [0.,1.) to 0., [1.,2.) to 1. |
+<pre>      | `Down    | [-2.,-1.)   to -2. | [-1.,0.)   to -1. | [0.,1.) to 0., [1.,2.) to 1. |
       | `Up      | (-2.,-1.]   to -1. | (-1.,0.]   to -0. | (0.,1.] to 1., (1.,2.] to 2. |
       | `Zero    | (-2.,-1.]   to -1. | (-1.,1.)   to 0.  | [1.,2.) to 1.                |
       | `Nearest | [-1.5,-0.5) to -1. | [-0.5,0.5) to 0.  | [0.5,1.5) to 1.              |</pre>
@@ -716,14 +719,16 @@ an integer.</li>
 <dl>
 <dt class="spec value" id="val-iround"><a href="#val-iround" class=
 "anchor"></a><code><span class="keyword">val</span> iround :
-?⁠dir:[ `Zero | `Nearest | `Up | `Down ] <span>-&gt;</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> int
-option</code></dt>
+<span>?⁠dir:<span>[ `Zero <span>| `Nearest</span> <span>|
+`Up</span> <span>| `Down</span> ]</span></span> <span>-&gt;</span>
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <span>int
+option</span></code></dt>
 <dt class="spec value" id="val-iround_exn"><a href=
 "#val-iround_exn" class="anchor"></a><code><span class=
-"keyword">val</span> iround_exn : ?⁠dir:[ `Zero | `Nearest | `Up |
-`Down ] <span>-&gt;</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> int</code></dt>
+"keyword">val</span> iround_exn : <span>?⁠dir:<span>[ `Zero <span>|
+`Nearest</span> <span>| `Up</span> <span>| `Down</span>
+]</span></span> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-round_towards_zero"><a href=
 "#val-round_towards_zero" class="anchor"></a><code><span class=
 "keyword">val</span> round_towards_zero : <a href=
@@ -760,19 +765,22 @@ round_nearest_half_to_even : <a href="index.html#type-t">t</a>
 <dt class="spec value" id="val-iround_towards_zero"><a href=
 "#val-iround_towards_zero" class="anchor"></a><code><span class=
 "keyword">val</span> iround_towards_zero : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> int option</code></dt>
+"index.html#type-t">t</a> <span>-&gt;</span> <span>int
+option</span></code></dt>
 <dt class="spec value" id="val-iround_down"><a href=
 "#val-iround_down" class="anchor"></a><code><span class=
 "keyword">val</span> iround_down : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> int option</code></dt>
+"index.html#type-t">t</a> <span>-&gt;</span> <span>int
+option</span></code></dt>
 <dt class="spec value" id="val-iround_up"><a href="#val-iround_up"
 class="anchor"></a><code><span class="keyword">val</span> iround_up
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> int
-option</code></dt>
+: <a href="index.html#type-t">t</a> <span>-&gt;</span> <span>int
+option</span></code></dt>
 <dt class="spec value" id="val-iround_nearest"><a href=
 "#val-iround_nearest" class="anchor"></a><code><span class=
 "keyword">val</span> iround_nearest : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> int option</code></dt>
+"index.html#type-t">t</a> <span>-&gt;</span> <span>int
+option</span></code></dt>
 <dt class="spec value" id="val-iround_towards_zero_exn"><a href=
 "#val-iround_towards_zero_exn" class=
 "anchor"></a><code><span class="keyword">val</span>
@@ -825,7 +833,8 @@ appropriate.</p>
 <dt class="spec value" id="val-round_significant"><a href=
 "#val-round_significant" class="anchor"></a><code><span class=
 "keyword">val</span> round_significant : float <span>-&gt;</span>
-significant_digits:int <span>-&gt;</span> float</code></dt>
+<span>significant_digits:int</span> <span>-&gt;</span>
+float</code></dt>
 <dd>
 <p><code>round_significant x ~significant_digits:n</code> rounds to
 the nearest number with <code>n</code> significant digits. More
@@ -877,7 +886,8 @@ its float representation). But it's not guaranteed either--see the
 <dt class="spec value" id="val-round_decimal"><a href=
 "#val-round_decimal" class="anchor"></a><code><span class=
 "keyword">val</span> round_decimal : float <span>-&gt;</span>
-decimal_digits:int <span>-&gt;</span> float</code></dt>
+<span>decimal_digits:int</span> <span>-&gt;</span>
+float</code></dt>
 <dd>
 <p><code>round_decimal x ~decimal_digits:n</code> rounds
 <code>x</code> to the nearest <code>10**(-n)</code>. For positive
@@ -1062,9 +1072,9 @@ can be represented with just 16 (but not 15 or less) of them.</p>
 <dl>
 <dt class="spec value" id="val-to_string_hum"><a href=
 "#val-to_string_hum" class="anchor"></a><code><span class=
-"keyword">val</span> to_string_hum : ?⁠delimiter:char
-<span>-&gt;</span> ?⁠decimals:int <span>-&gt;</span>
-?⁠strip_zero:bool <span>-&gt;</span> <a href=
+"keyword">val</span> to_string_hum : <span>?⁠delimiter:char</span>
+<span>-&gt;</span> <span>?⁠decimals:int</span> <span>-&gt;</span>
+<span>?⁠strip_zero:bool</span> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> string</code></dt>
 <dd>
 <p>Pretty print float, for example <code>to_string_hum ~decimals:3
@@ -1429,11 +1439,12 @@ and <code>0.</code> map to <code>Zero</code>. All NaN values map to
 <dl>
 <dt class="spec value" id="val-create_ieee"><a href=
 "#val-create_ieee" class="anchor"></a><code><span class=
-"keyword">val</span> create_ieee : negative:bool <span>-&gt;</span>
-exponent:int <span>-&gt;</span> mantissa:<a href=
-"../Int63/index.html#type-t">Int63.t</a> <span>-&gt;</span>
-<a href="index.html#type-t">t</a> <a href=
-"../Or_error/index.html#type-t">Or_error.t</a></code></dt>
+"keyword">val</span> create_ieee : <span>negative:bool</span>
+<span>-&gt;</span> <span>exponent:int</span> <span>-&gt;</span>
+<span>mantissa:<a href=
+"../Int63/index.html#type-t">Int63.t</a></span> <span>-&gt;</span>
+<span><a href="index.html#type-t">t</a> <a href=
+"../Or_error/index.html#type-t">Or_error.t</a></span></code></dt>
 <dd>
 <p>These functions construct and destruct 64-bit floating point
 numbers based on their IEEE representation with a sign bit, an
@@ -1449,10 +1460,11 @@ Wikipedia</a> for details of the encoding.</p>
 <dl>
 <dt class="spec value" id="val-create_ieee_exn"><a href=
 "#val-create_ieee_exn" class="anchor"></a><code><span class=
-"keyword">val</span> create_ieee_exn : negative:bool
-<span>-&gt;</span> exponent:int <span>-&gt;</span>
-mantissa:<a href="../Int63/index.html#type-t">Int63.t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> create_ieee_exn : <span>negative:bool</span>
+<span>-&gt;</span> <span>exponent:int</span> <span>-&gt;</span>
+<span>mantissa:<a href=
+"../Int63/index.html#type-t">Int63.t</a></span> <span>-&gt;</span>
+<a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-ieee_negative"><a href=
 "#val-ieee_negative" class="anchor"></a><code><span class=
 "keyword">val</span> ieee_negative : <a href=

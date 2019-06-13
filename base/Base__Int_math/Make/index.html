@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Make (base.Base__Int_math.Make)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -70,15 +69,13 @@ float</code></dt>
 <code>dir</code>, with default <code>dir</code> being
 <code>`Nearest</code>. <code>round</code> will raise if
 <code>to_multiple_of &lt;= 0</code>.</p>
-<pre>
-| `Down    | rounds toward Int.neg_infinity                          |
+<pre>       | `Down    | rounds toward Int.neg_infinity                          |
        | `Up      | rounds toward Int.infinity                              |
        | `Nearest | rounds to the nearest multiple, or `Up in case of a tie |
        | `Zero    | rounds toward zero                                      |</pre>
 <p>Here are some examples for <code>round ~to_multiple_of:10</code>
 for each direction:</p>
-<pre>
-| `Down    | {10 .. 19} --&gt; 10 | { 0 ... 9} --&gt; 0 | {-10 ... -1} --&gt; -10 |
+<pre>       | `Down    | {10 .. 19} --&gt; 10 | { 0 ... 9} --&gt; 0 | {-10 ... -1} --&gt; -10 |
        | `Up      | { 1 .. 10} --&gt; 10 | {-9 ... 0} --&gt; 0 | {-19 .. -10} --&gt; -10 |
        | `Zero    | {10 .. 19} --&gt; 10 | {-9 ... 9} --&gt; 0 | {-19 .. -10} --&gt; -10 |
        | `Nearest | { 5 .. 14} --&gt; 10 | {-5 ... 4} --&gt; 0 | {-15 ... -6} --&gt; -10 |</pre>
@@ -88,33 +85,35 @@ writing performance-critical code you should use these.</p>
 </aside>
 <dl>
 <dt class="spec value" id="val-round"><a href="#val-round" class=
-"anchor"></a><code><span class="keyword">val</span> round : ?⁠dir:[
-`Zero | `Nearest | `Up | `Down ] <span>-&gt;</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span>
-to_multiple_of:<a href="index.html#type-t">t</a> <span>-&gt;</span>
-<a href="index.html#type-t">t</a></code></dt>
+"anchor"></a><code><span class="keyword">val</span> round :
+<span>?⁠dir:<span>[ `Zero <span>| `Nearest</span> <span>|
+`Up</span> <span>| `Down</span> ]</span></span> <span>-&gt;</span>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span>to_multiple_of:<a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-round_towards_zero"><a href=
 "#val-round_towards_zero" class="anchor"></a><code><span class=
 "keyword">val</span> round_towards_zero : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span>
-to_multiple_of:<a href="index.html#type-t">t</a> <span>-&gt;</span>
-<a href="index.html#type-t">t</a></code></dt>
+<span>to_multiple_of:<a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-round_down"><a href=
 "#val-round_down" class="anchor"></a><code><span class=
 "keyword">val</span> round_down : <a href="index.html#type-t">t</a>
-<span>-&gt;</span> to_multiple_of:<a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <span>to_multiple_of:<a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-round_up"><a href="#val-round_up"
 class="anchor"></a><code><span class="keyword">val</span> round_up
 : <a href="index.html#type-t">t</a> <span>-&gt;</span>
-to_multiple_of:<a href="index.html#type-t">t</a> <span>-&gt;</span>
-<a href="index.html#type-t">t</a></code></dt>
+<span>to_multiple_of:<a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dt class="spec value" id="val-round_nearest"><a href=
 "#val-round_nearest" class="anchor"></a><code><span class=
 "keyword">val</span> round_nearest : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span>
-to_multiple_of:<a href="index.html#type-t">t</a> <span>-&gt;</span>
-<a href="index.html#type-t">t</a></code></dt>
+<span>to_multiple_of:<a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 </dl>
 </details>
 </div>

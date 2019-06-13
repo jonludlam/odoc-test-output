@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Core (re.Re__.Core)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -103,9 +102,9 @@ be used to match strings, e.g. with <a href=
 <dl>
 <dt class="spec value" id="val-exec"><a href="#val-exec" class=
 "anchor"></a><code><span class="keyword">val</span> exec :
-?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span> <a href=
-"index.html#type-re">re</a> <span>-&gt;</span> string
-<span>-&gt;</span> <a href=
+<span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href="index.html#type-re">re</a>
+<span>-&gt;</span> string <span>-&gt;</span> <a href=
 "Group/index.html#type-t">Group.t</a></code></dt>
 <dd>
 <p><code>exec re str</code> matches <code>str</code> against the
@@ -135,10 +134,10 @@ if any.</p>
 <dl>
 <dt class="spec value" id="val-exec_opt"><a href="#val-exec_opt"
 class="anchor"></a><code><span class="keyword">val</span> exec_opt
-: ?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span>
-<a href="index.html#type-re">re</a> <span>-&gt;</span> string
-<span>-&gt;</span> <a href="Group/index.html#type-t">Group.t</a>
-option</code></dt>
+: <span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href="index.html#type-re">re</a>
+<span>-&gt;</span> string <span>-&gt;</span> <span><a href=
+"Group/index.html#type-t">Group.t</a> option</span></code></dt>
 <dd>
 <p>Similar to <a href="index.html#val-exec"><code>exec</code></a>,
 but returns an option instead of using an exception.</p>
@@ -147,9 +146,9 @@ but returns an option instead of using an exception.</p>
 <dl>
 <dt class="spec value" id="val-execp"><a href="#val-execp" class=
 "anchor"></a><code><span class="keyword">val</span> execp :
-?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span> <a href=
-"index.html#type-re">re</a> <span>-&gt;</span> string
-<span>-&gt;</span> bool</code></dt>
+<span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href="index.html#type-re">re</a>
+<span>-&gt;</span> string <span>-&gt;</span> bool</code></dt>
 <dd>
 <p>Similar to <a href="index.html#val-exec"><code>exec</code></a>,
 but returns <code>true</code> if the expression matches, and
@@ -159,10 +158,11 @@ but returns <code>true</code> if the expression matches, and
 <dl>
 <dt class="spec value" id="val-exec_partial"><a href=
 "#val-exec_partial" class="anchor"></a><code><span class=
-"keyword">val</span> exec_partial : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> <a href="index.html#type-re">re</a>
-<span>-&gt;</span> string <span>-&gt;</span> [ `Full | `Partial |
-`Mismatch ]</code></dt>
+"keyword">val</span> exec_partial : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span>
+<a href="index.html#type-re">re</a> <span>-&gt;</span> string
+<span>-&gt;</span> <span>[ `Full <span>| `Partial</span> <span>|
+`Mismatch</span> ]</span></code></dt>
 <dd>
 <p>More detailed version of <code>exec_p</code></p>
 </dd>
@@ -215,11 +215,11 @@ class="anchor"></a><code><span class="keyword">module</span>
 ... <span class="keyword">end</span></code></div>
 <dl>
 <dt class="spec value" id="val-all"><a href="#val-all" class=
-"anchor"></a><code><span class="keyword">val</span> all : ?⁠pos:int
-<span>-&gt;</span> ?⁠len:int <span>-&gt;</span> <a href=
-"index.html#type-re">re</a> <span>-&gt;</span> string
-<span>-&gt;</span> <a href="Group/index.html#type-t">Group.t</a>
-list</code></dt>
+"anchor"></a><code><span class="keyword">val</span> all :
+<span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href="index.html#type-re">re</a>
+<span>-&gt;</span> string <span>-&gt;</span> <span><a href=
+"Group/index.html#type-t">Group.t</a> list</span></code></dt>
 <dd>
 <p>Repeatedly calls <a href=
 "index.html#val-exec"><code>exec</code></a> on the given string,
@@ -228,22 +228,24 @@ starting at given position and length.</p>
 </dl>
 <dl>
 <dt class="spec type" id="type-gen"><a href="#type-gen" class=
-"anchor"></a><code><span class="keyword">type</span> 'a gen</code>
-<code>= unit <span>-&gt;</span> <span class="type-var">'a</span>
-option</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+gen</span></code> <code>= unit <span>-&gt;</span>
+<span><span class="type-var">'a</span> option</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-all_gen"><a href="#val-all_gen"
 class="anchor"></a><code><span class="keyword">val</span> all_gen :
-?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span> <a href=
-"index.html#type-re">re</a> <span>-&gt;</span> string
-<span>-&gt;</span> <a href="Group/index.html#type-t">Group.t</a>
-<a href="index.html#type-gen">gen</a></code></dt>
+<span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href="index.html#type-re">re</a>
+<span>-&gt;</span> string <span>-&gt;</span> <span><a href=
+"Group/index.html#type-t">Group.t</a> <a href=
+"index.html#type-gen">gen</a></span></code></dt>
 <dt class="spec value" id="val-matches"><a href="#val-matches"
 class="anchor"></a><code><span class="keyword">val</span> matches :
-?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span> <a href=
-"index.html#type-re">re</a> <span>-&gt;</span> string
-<span>-&gt;</span> string list</code></dt>
+<span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href="index.html#type-re">re</a>
+<span>-&gt;</span> string <span>-&gt;</span> <span>string
+list</span></code></dt>
 <dd>
 <p>Same as <a href="index.html#val-all"><code>all</code></a>, but
 extracts the matched substring rather than returning the whole
@@ -253,15 +255,17 @@ group. This basically iterates over matched strings</p>
 <dl>
 <dt class="spec value" id="val-matches_gen"><a href=
 "#val-matches_gen" class="anchor"></a><code><span class=
-"keyword">val</span> matches_gen : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> <a href="index.html#type-re">re</a>
-<span>-&gt;</span> string <span>-&gt;</span> string <a href=
-"index.html#type-gen">gen</a></code></dt>
+"keyword">val</span> matches_gen : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span>
+<a href="index.html#type-re">re</a> <span>-&gt;</span> string
+<span>-&gt;</span> <span>string <a href=
+"index.html#type-gen">gen</a></span></code></dt>
 <dt class="spec value" id="val-split"><a href="#val-split" class=
 "anchor"></a><code><span class="keyword">val</span> split :
-?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span> <a href=
-"index.html#type-re">re</a> <span>-&gt;</span> string
-<span>-&gt;</span> string list</code></dt>
+<span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href="index.html#type-re">re</a>
+<span>-&gt;</span> string <span>-&gt;</span> <span>string
+list</span></code></dt>
 <dd>
 <p><code>split re s</code> splits <code>s</code> into chunks
 separated by <code>re</code>. It yields the chunks themselves, not
@@ -272,16 +276,18 @@ whitespace-matching re such as <code>"[\t ]+"</code>.</p>
 <dl>
 <dt class="spec value" id="val-split_gen"><a href="#val-split_gen"
 class="anchor"></a><code><span class="keyword">val</span> split_gen
-: ?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span>
-<a href="index.html#type-re">re</a> <span>-&gt;</span> string
-<span>-&gt;</span> string <a href=
-"index.html#type-gen">gen</a></code></dt>
+: <span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href="index.html#type-re">re</a>
+<span>-&gt;</span> string <span>-&gt;</span> <span>string <a href=
+"index.html#type-gen">gen</a></span></code></dt>
 <dt class="spec value" id="val-split_full"><a href=
 "#val-split_full" class="anchor"></a><code><span class=
-"keyword">val</span> split_full : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> <a href="index.html#type-re">re</a>
-<span>-&gt;</span> string <span>-&gt;</span> <a href=
-"index.html#type-split_token">split_token</a> list</code></dt>
+"keyword">val</span> split_full : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span>
+<a href="index.html#type-re">re</a> <span>-&gt;</span> string
+<span>-&gt;</span> <span><a href=
+"index.html#type-split_token">split_token</a>
+list</span></code></dt>
 <dd>
 <p><code>split re s</code> splits <code>s</code> into chunks
 separated by <code>re</code>. It yields the chunks along with the
@@ -292,17 +298,19 @@ whitespace-matching re such as <code>"[\t ]+"</code>.</p>
 <dl>
 <dt class="spec value" id="val-split_full_gen"><a href=
 "#val-split_full_gen" class="anchor"></a><code><span class=
-"keyword">val</span> split_full_gen : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> <a href="index.html#type-re">re</a>
-<span>-&gt;</span> string <span>-&gt;</span> <a href=
+"keyword">val</span> split_full_gen : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span>
+<a href="index.html#type-re">re</a> <span>-&gt;</span> string
+<span>-&gt;</span> <span><a href=
 "index.html#type-split_token">split_token</a> <a href=
-"index.html#type-gen">gen</a></code></dt>
+"index.html#type-gen">gen</a></span></code></dt>
 <dt class="spec value" id="val-replace"><a href="#val-replace"
 class="anchor"></a><code><span class="keyword">val</span> replace :
-?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span>
-?⁠all:bool <span>-&gt;</span> <a href="index.html#type-re">re</a>
-<span>-&gt;</span> f:(<a href="Group/index.html#type-t">Group.t</a>
-<span>-&gt;</span> string) <span>-&gt;</span> string
+<span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <span>?⁠all:bool</span> <span>-&gt;</span>
+<a href="index.html#type-re">re</a> <span>-&gt;</span>
+<span>f:<span>(<a href="Group/index.html#type-t">Group.t</a>
+<span>-&gt;</span> string)</span></span> <span>-&gt;</span> string
 <span>-&gt;</span> string</code></dt>
 <dd>
 <p><code>replace ~all re ~f s</code> iterates on <code>s</code>,
@@ -315,10 +323,12 @@ If <code>all = false</code>, then only the first occurrence of
 <dl>
 <dt class="spec value" id="val-replace_string"><a href=
 "#val-replace_string" class="anchor"></a><code><span class=
-"keyword">val</span> replace_string : ?⁠pos:int <span>-&gt;</span>
-?⁠len:int <span>-&gt;</span> ?⁠all:bool <span>-&gt;</span> <a href=
-"index.html#type-re">re</a> <span>-&gt;</span> by:string
-<span>-&gt;</span> string <span>-&gt;</span> string</code></dt>
+"keyword">val</span> replace_string : <span>?⁠pos:int</span>
+<span>-&gt;</span> <span>?⁠len:int</span> <span>-&gt;</span>
+<span>?⁠all:bool</span> <span>-&gt;</span> <a href=
+"index.html#type-re">re</a> <span>-&gt;</span>
+<span>by:string</span> <span>-&gt;</span> string <span>-&gt;</span>
+string</code></dt>
 <dd>
 <p><code>replace_string ~all re ~by s</code> iterates on
 <code>s</code>, and replaces every occurrence of <code>re</code>
@@ -350,18 +360,18 @@ operations on regular expressions</h3>
 </header>
 <dl>
 <dt class="spec value" id="val-alt"><a href="#val-alt" class=
-"anchor"></a><code><span class="keyword">val</span> alt : <a href=
-"index.html#type-t">t</a> list <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"anchor"></a><code><span class="keyword">val</span> alt :
+<span><a href="index.html#type-t">t</a> list</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p>Alternative</p>
 </dd>
 </dl>
 <dl>
 <dt class="spec value" id="val-seq"><a href="#val-seq" class=
-"anchor"></a><code><span class="keyword">val</span> seq : <a href=
-"index.html#type-t">t</a> list <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"anchor"></a><code><span class="keyword">val</span> seq :
+<span><a href="index.html#type-t">t</a> list</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p>Sequence</p>
 </dd>
@@ -404,7 +414,7 @@ class="anchor"></a><code><span class="keyword">val</span> epsilon :
 <dt class="spec value" id="val-repn"><a href="#val-repn" class=
 "anchor"></a><code><span class="keyword">val</span> repn : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> int <span>-&gt;</span>
-int option <span>-&gt;</span> <a href=
+<span>int option</span> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>repn re i j</code> matches <code>re</code> at least
@@ -656,8 +666,8 @@ regexp was used.</p>
 <dl>
 <dt class="spec value" id="val-inter"><a href="#val-inter" class=
 "anchor"></a><code><span class="keyword">val</span> inter :
-<a href="index.html#type-t">t</a> list <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><a href="index.html#type-t">t</a> list</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p>Intersection of character sets</p>
 </dd>
@@ -675,8 +685,8 @@ regexp was used.</p>
 <dl>
 <dt class="spec value" id="val-compl"><a href="#val-compl" class=
 "anchor"></a><code><span class="keyword">val</span> compl :
-<a href="index.html#type-t">t</a> list <span>-&gt;</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><a href="index.html#type-t">t</a> list</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p>Complement of union</p>
 </dd>
@@ -862,7 +872,7 @@ Deprecated</p>
 <dt class="spec value" id="val-get_all"><a href="#val-get_all"
 class="anchor"></a><code><span class="keyword">val</span> get_all :
 <a href="Group/index.html#type-t">Group.t</a> <span>-&gt;</span>
-string array</code></dt>
+<span>string array</span></code></dt>
 <dd>
 <p>Same as <a href=
 "Group/index.html#val-all"><code>Group.all</code></a>.
@@ -873,8 +883,8 @@ Deprecated</p>
 <dt class="spec value" id="val-get_all_ofs"><a href=
 "#val-get_all_ofs" class="anchor"></a><code><span class=
 "keyword">val</span> get_all_ofs : <a href=
-"Group/index.html#type-t">Group.t</a> <span>-&gt;</span> (int *
-int) array</code></dt>
+"Group/index.html#type-t">Group.t</a> <span>-&gt;</span>
+<span><span>(int * int)</span> array</span></code></dt>
 <dd>
 <p>Same as <a href=
 "Group/index.html#val-all_offset"><code>Group.all_offset</code></a>.

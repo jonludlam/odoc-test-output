@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Cset (re.Re__.Cset)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -34,10 +33,10 @@ Cset</nav>
 <dl>
 <dt class="spec value" id="val-iter"><a href="#val-iter" class=
 "anchor"></a><code><span class="keyword">val</span> iter : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> f:(<a href=
-"index.html#type-c">c</a> <span>-&gt;</span> <a href=
-"index.html#type-c">c</a> <span>-&gt;</span> unit)
-<span>-&gt;</span> unit</code></dt>
+"index.html#type-t">t</a> <span>-&gt;</span>
+<span>f:<span>(<a href="index.html#type-c">c</a> <span>-&gt;</span>
+<a href="index.html#type-c">c</a> <span>-&gt;</span>
+unit)</span></span> <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-union"><a href="#val-union" class=
 "anchor"></a><code><span class="keyword">val</span> union :
 <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
@@ -95,17 +94,18 @@ Stdlib.Format.formatter <span>-&gt;</span> <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-one_char"><a href="#val-one_char"
 class="anchor"></a><code><span class="keyword">val</span> one_char
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-c">c</a> option</code></dt>
+: <a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><a href="index.html#type-c">c</a> option</span></code></dt>
 <dt class="spec value" id="val-fold_right"><a href=
 "#val-fold_right" class="anchor"></a><code><span class=
 "keyword">val</span> fold_right : <a href="index.html#type-t">t</a>
-<span>-&gt;</span> init:<span class="type-var">'acc</span>
-<span>-&gt;</span> f:((<a href="index.html#type-c">c</a> * <a href=
-"index.html#type-c">c</a>) <span>-&gt;</span> <span class=
+<span>-&gt;</span> <span>init:<span class=
+"type-var">'acc</span></span> <span>-&gt;</span>
+<span>f:<span>(<span>(<a href="index.html#type-c">c</a> * <a href=
+"index.html#type-c">c</a>)</span> <span>-&gt;</span> <span class=
 "type-var">'acc</span> <span>-&gt;</span> <span class=
-"type-var">'acc</span>) <span>-&gt;</span> <span class=
-"type-var">'acc</span></code></dt>
+"type-var">'acc</span>)</span></span> <span>-&gt;</span>
+<span class="type-var">'acc</span></code></dt>
 <dt class="spec value" id="val-hash_rec"><a href="#val-hash_rec"
 class="anchor"></a><code><span class="keyword">val</span> hash_rec
 : <a href="index.html#type-t">t</a> <span>-&gt;</span>
@@ -131,11 +131,13 @@ class="anchor"></a><code><span class="keyword">val</span> is_empty
 bool</code></dt>
 <dt class="spec value" id="val-prepend"><a href="#val-prepend"
 class="anchor"></a><code><span class="keyword">val</span> prepend :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> list <span>-&gt;</span> (<a href=
-"index.html#type-t">t</a> * <span class="type-var">'a</span> list)
-list <span>-&gt;</span> (<a href="index.html#type-t">t</a> *
-<span class="type-var">'a</span> list) list</code></dt>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span><span class="type-var">'a</span> list</span>
+<span>-&gt;</span> <span><span>(<a href="index.html#type-t">t</a> *
+<span><span class="type-var">'a</span> list</span>)</span>
+list</span> <span>-&gt;</span> <span><span>(<a href=
+"index.html#type-t">t</a> * <span><span class="type-var">'a</span>
+list</span>)</span> list</span></code></dt>
 <dt class="spec value" id="val-pick"><a href="#val-pick" class=
 "anchor"></a><code><span class="keyword">val</span> pick : <a href=
 "index.html#type-t">t</a> <span>-&gt;</span> <a href=

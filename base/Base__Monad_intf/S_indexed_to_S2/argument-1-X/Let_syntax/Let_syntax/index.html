@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Let_syntax
 (base.Base__Monad_intf.S_indexed_to_S2.1-X.Let_syntax.Let_syntax)</title>
 <link rel="stylesheet" href="../../../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../../../highlight.pack.js">
-</script>
+<script src="../../../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -31,44 +30,45 @@ hljs.initHighlightingOnLoad();
 <dl>
 <dt class="spec value" id="val-return"><a href="#val-return" class=
 "anchor"></a><code><span class="keyword">val</span> return :
-<span class="type-var">'a</span> <span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class=
-"type-var">'i</span>,&nbsp;<span class="type-var">'i</span>)
-<a href="../../index.html#type-t">t</a></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'i</span>,&nbsp;<span class="type-var">'i</span>)</span>
+<a href="../../index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-bind"><a href="#val-bind" class=
 "anchor"></a><code><span class="keyword">val</span> bind :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'i</span>,&nbsp;<span class="type-var">'j</span>)
-<a href="../../index.html#type-t">t</a> <span>-&gt;</span>
-f:(<span class="type-var">'a</span> <span>-&gt;</span>
-(<span class="type-var">'b</span>,&nbsp;<span class=
-"type-var">'j</span>,&nbsp;<span class="type-var">'k</span>)
-<a href="../../index.html#type-t">t</a>) <span>-&gt;</span>
-(<span class="type-var">'b</span>,&nbsp;<span class=
-"type-var">'i</span>,&nbsp;<span class="type-var">'k</span>)
-<a href="../../index.html#type-t">t</a></code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'i</span>,&nbsp;<span class="type-var">'j</span>)</span>
+<a href="../../index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'b</span>,&nbsp;<span class=
+"type-var">'j</span>,&nbsp;<span class="type-var">'k</span>)</span>
+<a href="../../index.html#type-t">t</a></span>)</span></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'b</span>,&nbsp;<span class=
+"type-var">'i</span>,&nbsp;<span class="type-var">'k</span>)</span>
+<a href="../../index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-map"><a href="#val-map" class=
 "anchor"></a><code><span class="keyword">val</span> map :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'i</span>,&nbsp;<span class="type-var">'j</span>)
-<a href="../../index.html#type-t">t</a> <span>-&gt;</span>
-f:(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> (<span class=
-"type-var">'b</span>,&nbsp;<span class=
-"type-var">'i</span>,&nbsp;<span class="type-var">'j</span>)
-<a href="../../index.html#type-t">t</a></code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'i</span>,&nbsp;<span class="type-var">'j</span>)</span>
+<a href="../../index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'b</span>,&nbsp;<span class=
+"type-var">'i</span>,&nbsp;<span class="type-var">'j</span>)</span>
+<a href="../../index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-both"><a href="#val-both" class=
 "anchor"></a><code><span class="keyword">val</span> both :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'i</span>,&nbsp;<span class="type-var">'j</span>)
-<a href="../../index.html#type-t">t</a> <span>-&gt;</span>
-(<span class="type-var">'b</span>,&nbsp;<span class=
-"type-var">'j</span>,&nbsp;<span class="type-var">'k</span>)
-<a href="../../index.html#type-t">t</a> <span>-&gt;</span>
-(<span class="type-var">'a</span> * <span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'i</span>,&nbsp;<span class="type-var">'j</span>)</span>
+<a href="../../index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'b</span>,&nbsp;<span class=
+"type-var">'j</span>,&nbsp;<span class="type-var">'k</span>)</span>
+<a href="../../index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span class=
 "type-var">'b</span>,&nbsp;<span class=
-"type-var">'i</span>,&nbsp;<span class="type-var">'k</span>)
-<a href="../../index.html#type-t">t</a></code></dt>
+"type-var">'i</span>,&nbsp;<span class="type-var">'k</span>)</span>
+<a href="../../index.html#type-t">t</a></span></code></dt>
 </dl>
 <div class="spec module" id="module-Open_on_rhs"><a href=
 "#module-Open_on_rhs" class="anchor"></a><code><span class=

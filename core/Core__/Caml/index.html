@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Caml (core.Core__.Caml)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -165,19 +164,19 @@ string * int * int * int</code></dt>
 <dt class="spec external" id="val-__POS_OF__"><a href=
 "#val-__POS_OF__" class="anchor"></a><code><span class=
 "keyword">val</span> __POS_OF__ : <span class="type-var">'a</span>
-<span>-&gt;</span> (string * int * int * int) * <span class=
-"type-var">'a</span></code></dt>
+<span>-&gt;</span> <span>(string * int * int * int)</span> *
+<span class="type-var">'a</span></code></dt>
 <dt class="spec external" id="val-(|&gt;)"><a href="#val-(|%3E)"
 class="anchor"></a><code><span class="keyword">val</span> (|&gt;) :
-<span class="type-var">'a</span> <span>-&gt;</span> (<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'b</span></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span> <span>-&gt;</span>
+<span class="type-var">'b</span></code></dt>
 <dt class="spec external" id="val-(@@)"><a href="#val-(@@)" class=
 "anchor"></a><code><span class="keyword">val</span> (@@) :
-(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
+<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span> <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'b</span></code></dt>
 <dt class="spec external" id="val-(~-)"><a href="#val-(~-)" class=
 "anchor"></a><code><span class="keyword">val</span> (~-) : int
@@ -455,7 +454,7 @@ bool</code></dt>
 <dt class="spec value" id="val-bool_of_string_opt"><a href=
 "#val-bool_of_string_opt" class="anchor"></a><code><span class=
 "keyword">val</span> bool_of_string_opt : string <span>-&gt;</span>
-bool option</code></dt>
+<span>bool option</span></code></dt>
 <dt class="spec value" id="val-string_of_int"><a href=
 "#val-string_of_int" class="anchor"></a><code><span class=
 "keyword">val</span> string_of_int : int <span>-&gt;</span>
@@ -471,7 +470,7 @@ int</code></dt>
 <dt class="spec value" id="val-int_of_string_opt"><a href=
 "#val-int_of_string_opt" class="anchor"></a><code><span class=
 "keyword">val</span> int_of_string_opt : string <span>-&gt;</span>
-int option</code></dt>
+<span>int option</span></code></dt>
 <dt class="spec value" id="val-string_of_float"><a href=
 "#val-string_of_float" class="anchor"></a><code><span class=
 "keyword">val</span> string_of_float : float <span>-&gt;</span>
@@ -487,26 +486,27 @@ float</code></dt>
 <dt class="spec value" id="val-float_of_string_opt"><a href=
 "#val-float_of_string_opt" class="anchor"></a><code><span class=
 "keyword">val</span> float_of_string_opt : string
-<span>-&gt;</span> float option</code></dt>
+<span>-&gt;</span> <span>float option</span></code></dt>
 </dl>
 <dl>
 <dt class="spec external" id="val-fst"><a href="#val-fst" class=
 "anchor"></a><code><span class="keyword">val</span> fst :
-(<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
+<span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'a</span></code></dt>
 <dt class="spec external" id="val-snd"><a href="#val-snd" class=
 "anchor"></a><code><span class="keyword">val</span> snd :
-(<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
+<span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> <span>-&gt;</span> <span class=
 "type-var">'b</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-(@)"><a href="#val-(@)" class=
 "anchor"></a><code><span class="keyword">val</span> (@) :
-<span class="type-var">'a</span> list <span>-&gt;</span>
-<span class="type-var">'a</span> list <span>-&gt;</span>
-<span class="type-var">'a</span> list</code></dt>
+<span><span class="type-var">'a</span> list</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span>
+list</span> <span>-&gt;</span> <span><span class=
+"type-var">'a</span> list</span></code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-in_channel"><a href=
@@ -590,16 +590,16 @@ class="anchor"></a><code><span class="keyword">val</span> read_int
 : unit <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-read_int_opt"><a href=
 "#val-read_int_opt" class="anchor"></a><code><span class=
-"keyword">val</span> read_int_opt : unit <span>-&gt;</span> int
-option</code></dt>
+"keyword">val</span> read_int_opt : unit <span>-&gt;</span>
+<span>int option</span></code></dt>
 <dt class="spec value" id="val-read_float"><a href=
 "#val-read_float" class="anchor"></a><code><span class=
 "keyword">val</span> read_float : unit <span>-&gt;</span>
 float</code></dt>
 <dt class="spec value" id="val-read_float_opt"><a href=
 "#val-read_float_opt" class="anchor"></a><code><span class=
-"keyword">val</span> read_float_opt : unit <span>-&gt;</span> float
-option</code></dt>
+"keyword">val</span> read_float_opt : unit <span>-&gt;</span>
+<span>float option</span></code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-open_flag"><a href="#type-open_flag"
@@ -668,10 +668,10 @@ class="anchor"></a><code><span class="keyword">val</span> open_out
 <a href="index.html#type-out_channel">out_channel</a></code></dt>
 <dt class="spec value" id="val-open_out_gen"><a href=
 "#val-open_out_gen" class="anchor"></a><code><span class=
-"keyword">val</span> open_out_gen : <a href=
-"index.html#type-open_flag">open_flag</a> list <span>-&gt;</span>
-int <span>-&gt;</span> string <span>-&gt;</span> <a href=
-"index.html#type-out_channel">out_channel</a></code></dt>
+"keyword">val</span> open_out_gen : <span><a href=
+"index.html#type-open_flag">open_flag</a> list</span>
+<span>-&gt;</span> int <span>-&gt;</span> string <span>-&gt;</span>
+<a href="index.html#type-out_channel">out_channel</a></code></dt>
 <dt class="spec value" id="val-flush"><a href="#val-flush" class=
 "anchor"></a><code><span class="keyword">val</span> flush :
 <a href="index.html#type-out_channel">out_channel</a>
@@ -758,10 +758,10 @@ string <span>-&gt;</span> <a href=
 <a href="index.html#type-in_channel">in_channel</a></code></dt>
 <dt class="spec value" id="val-open_in_gen"><a href=
 "#val-open_in_gen" class="anchor"></a><code><span class=
-"keyword">val</span> open_in_gen : <a href=
-"index.html#type-open_flag">open_flag</a> list <span>-&gt;</span>
-int <span>-&gt;</span> string <span>-&gt;</span> <a href=
-"index.html#type-in_channel">in_channel</a></code></dt>
+"keyword">val</span> open_in_gen : <span><a href=
+"index.html#type-open_flag">open_flag</a> list</span>
+<span>-&gt;</span> int <span>-&gt;</span> string <span>-&gt;</span>
+<a href="index.html#type-in_channel">in_channel</a></code></dt>
 <dt class="spec value" id="val-input_char"><a href=
 "#val-input_char" class="anchor"></a><code><span class=
 "keyword">val</span> input_char : <a href=
@@ -837,9 +837,10 @@ unit</code></dt>
 "index.html#module-Pervasives">Pervasives</a>.LargeFile</code></div>
 <dl>
 <dt class="spec type" id="type-ref"><a href="#type-ref" class=
-"anchor"></a><code><span class="keyword">type</span> 'a ref</code>
-<code>= <span class="type-var">'a</span> <a href=
-"index.html#module-Pervasives">Pervasives</a>.ref</code>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+ref</span></code> <code>= <span><span class="type-var">'a</span>
+<a href=
+"index.html#module-Pervasives">Pervasives</a>.ref</span></code>
 <code>=</code> <code>{</code></dt>
 <dd>
 <table class="record">
@@ -854,34 +855,36 @@ unit</code></dt>
 <dl>
 <dt class="spec external" id="val-ref"><a href="#val-ref" class=
 "anchor"></a><code><span class="keyword">val</span> ref :
-<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"index.html#type-ref">ref</a></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span></code></dt>
 <dt class="spec external" id="val-(!)"><a href="#val-(!)" class=
 "anchor"></a><code><span class="keyword">val</span> (!) :
-<span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span> <span>-&gt;</span>
+<span class="type-var">'a</span></code></dt>
 <dt class="spec external" id="val-(:=)"><a href="#val-(:=)" class=
 "anchor"></a><code><span class="keyword">val</span> (:=) :
-<span class="type-var">'a</span> <a href=
-"index.html#type-ref">ref</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> unit</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-ref">ref</a></span> <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec external" id="val-incr"><a href="#val-incr" class=
-"anchor"></a><code><span class="keyword">val</span> incr : int
-<a href="index.html#type-ref">ref</a> <span>-&gt;</span>
-unit</code></dt>
+"anchor"></a><code><span class="keyword">val</span> incr :
+<span>int <a href="index.html#type-ref">ref</a></span>
+<span>-&gt;</span> unit</code></dt>
 <dt class="spec external" id="val-decr"><a href="#val-decr" class=
-"anchor"></a><code><span class="keyword">val</span> decr : int
-<a href="index.html#type-ref">ref</a> <span>-&gt;</span>
-unit</code></dt>
+"anchor"></a><code><span class="keyword">val</span> decr :
+<span>int <a href="index.html#type-ref">ref</a></span>
+<span>-&gt;</span> unit</code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-result"><a href="#type-result"
-class="anchor"></a><code><span class="keyword">type</span> ('a, 'b)
-result</code> <code>= (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#module-Pervasives">Pervasives</a>.result</code>
+class="anchor"></a><code><span class="keyword">type</span>
+<span>('a, 'b) result</span></code> <code>=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#module-Pervasives">Pervasives</a>.result</span></code>
 <code>=</code></dt>
 <dd>
 <table class="variant">
@@ -900,87 +903,91 @@ result</code> <code>= (<span class=
 </table>
 </dd>
 <dt class="spec type" id="type-format6"><a href="#type-format6"
-class="anchor"></a><code><span class="keyword">type</span> ('a, 'b,
-'c, 'd, 'e, 'f) format6</code> <code>= (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+class="anchor"></a><code><span class="keyword">type</span>
+<span>('a, 'b, 'c, 'd, 'e, 'f) format6</span></code> <code>=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-CamlinternalFormatBasics.format6</code></dt>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+CamlinternalFormatBasics.format6</span></code></dt>
 <dt class="spec type" id="type-format4"><a href="#type-format4"
-class="anchor"></a><code><span class="keyword">type</span> ('a, 'b,
-'c, 'd) format4</code> <code>= (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+class="anchor"></a><code><span class="keyword">type</span>
+<span>('a, 'b, 'c, 'd) format4</span></code> <code>=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)
-<a href="index.html#type-format6">format6</a></code></dt>
+"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)</span>
+<a href="index.html#type-format6">format6</a></span></code></dt>
 <dt class="spec type" id="type-format"><a href="#type-format"
-class="anchor"></a><code><span class="keyword">type</span> ('a, 'b,
-'c) format</code> <code>= (<span class=
-"type-var">'a</span>,&nbsp;<span class=
+class="anchor"></a><code><span class="keyword">type</span>
+<span>('a, 'b, 'c) format</span></code> <code>=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-format4">format4</a></code></dt>
+"type-var">'c</span>,&nbsp;<span class="type-var">'c</span>)</span>
+<a href="index.html#type-format4">format4</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-string_of_format"><a href=
 "#val-string_of_format" class="anchor"></a><code><span class=
-"keyword">val</span> string_of_format : (<span class=
+"keyword">val</span> string_of_format : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-string</code></dt>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> string</code></dt>
 </dl>
 <dl>
 <dt class="spec external" id="val-format_of_string"><a href=
 "#val-format_of_string" class="anchor"></a><code><span class=
-"keyword">val</span> format_of_string : (<span class=
+"keyword">val</span> format_of_string : <span><span>(<span class=
 "type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a></code></dt>
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-format6">format6</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-(^^)"><a href="#val-(^^)" class=
 "anchor"></a><code><span class="keyword">val</span> (^^) :
-(<span class="type-var">'a</span>,&nbsp;<span class=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-(<span class="type-var">'f</span>,&nbsp;<span class=
+"type-var">'e</span>,&nbsp;<span class="type-var">'f</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'f</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'e</span>,&nbsp;<span class=
-"type-var">'g</span>,&nbsp;<span class="type-var">'h</span>)
-<a href="index.html#type-format6">format6</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'g</span>,&nbsp;<span class="type-var">'h</span>)</span>
+<a href="index.html#type-format6">format6</a></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class=
 "type-var">'b</span>,&nbsp;<span class=
 "type-var">'c</span>,&nbsp;<span class=
 "type-var">'d</span>,&nbsp;<span class=
-"type-var">'g</span>,&nbsp;<span class="type-var">'h</span>)
-<a href="index.html#type-format6">format6</a></code></dt>
+"type-var">'g</span>,&nbsp;<span class="type-var">'h</span>)</span>
+<a href="index.html#type-format6">format6</a></span></code></dt>
 <dt class="spec value" id="val-exit"><a href="#val-exit" class=
 "anchor"></a><code><span class="keyword">val</span> exit : int
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dt class="spec value" id="val-at_exit"><a href="#val-at_exit"
 class="anchor"></a><code><span class="keyword">val</span> at_exit :
-(unit <span>-&gt;</span> unit) <span>-&gt;</span> unit</code></dt>
+<span>(unit <span>-&gt;</span> unit)</span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec value" id="val-valid_float_lexem"><a href=
 "#val-valid_float_lexem" class="anchor"></a><code><span class=
 "keyword">val</span> valid_float_lexem : string <span>-&gt;</span>

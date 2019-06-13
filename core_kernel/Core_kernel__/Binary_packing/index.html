@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Binary_packing
 (core_kernel.Core_kernel__.Binary_packing)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -105,55 +104,55 @@ class="anchor"></a><code>|</code> <code>`Little_endian</code></td>
 <dl>
 <dt class="spec value" id="val-unpack_signed_8"><a href=
 "#val-unpack_signed_8" class="anchor"></a><code><span class=
-"keyword">val</span> unpack_signed_8 : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> unpack_signed_8 : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-pack_signed_8"><a href=
 "#val-pack_signed_8" class="anchor"></a><code><span class=
-"keyword">val</span> pack_signed_8 : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> pack_signed_8 : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-unpack_unsigned_8"><a href=
 "#val-unpack_unsigned_8" class="anchor"></a><code><span class=
-"keyword">val</span> unpack_unsigned_8 : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> unpack_unsigned_8 : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-pack_unsigned_8"><a href=
 "#val-pack_unsigned_8" class="anchor"></a><code><span class=
-"keyword">val</span> pack_unsigned_8 : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> pack_unsigned_8 : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-unpack_signed_16"><a href=
 "#val-unpack_signed_16" class="anchor"></a><code><span class=
-"keyword">val</span> unpack_signed_16 : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> unpack_signed_16 : <span>byte_order:<a href=
+"index.html#type-endian">endian</a></span> <span>-&gt;</span>
+<span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dd>
 <p>The functions ending with <code>_big_endian</code> or
 <code>_little_endian</code> are faster than the ones with an
 explicit <code>byte_order</code> argument:</p>
-<pre>
-Name | Run time | S. dev. | Warnings
+<pre>                                Name | Run time | S. dev. | Warnings
   ---------------------------------- | -------- | ------- | --------
         pack_signed_16_little_endian |     4 ns |    0 ns |
       unpack_signed_16_little_endian |     5 ns |    0 ns |
@@ -169,11 +168,12 @@ Name | Run time | S. dev. | Warnings
 <dl>
 <dt class="spec value" id="val-pack_signed_16"><a href=
 "#val-pack_signed_16" class="anchor"></a><code><span class=
-"keyword">val</span> pack_signed_16 : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> pack_signed_16 : <span>byte_order:<a href=
+"index.html#type-endian">endian</a></span> <span>-&gt;</span>
+<span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
@@ -181,28 +181,28 @@ Name | Run time | S. dev. | Warnings
 <dt class="spec value" id="val-unpack_unsigned_16_big_endian">
 <a href="#val-unpack_unsigned_16_big_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_unsigned_16_big_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_unsigned_16_big_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-unpack_unsigned_16_little_endian">
 <a href="#val-unpack_unsigned_16_little_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_unsigned_16_little_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_unsigned_16_little_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-pack_unsigned_16_big_endian">
 <a href="#val-pack_unsigned_16_big_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_unsigned_16_big_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_unsigned_16_big_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
@@ -210,10 +210,10 @@ pack_unsigned_16_big_endian : buf:<a href=
 <dt class="spec value" id="val-pack_unsigned_16_little_endian">
 <a href="#val-pack_unsigned_16_little_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_unsigned_16_little_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_unsigned_16_little_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
@@ -221,28 +221,28 @@ pack_unsigned_16_little_endian : buf:<a href=
 <dt class="spec value" id="val-unpack_signed_16_big_endian">
 <a href="#val-unpack_signed_16_big_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_signed_16_big_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_signed_16_big_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-unpack_signed_16_little_endian">
 <a href="#val-unpack_signed_16_little_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_signed_16_little_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_signed_16_little_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-pack_signed_16_big_endian"><a href=
 "#val-pack_signed_16_big_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_signed_16_big_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_signed_16_big_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
@@ -250,70 +250,76 @@ pack_signed_16_big_endian : buf:<a href=
 <dt class="spec value" id="val-pack_signed_16_little_endian">
 <a href="#val-pack_signed_16_little_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_signed_16_little_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_signed_16_little_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-unpack_unsigned_16"><a href=
 "#val-unpack_unsigned_16" class="anchor"></a><code><span class=
-"keyword">val</span> unpack_unsigned_16 : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> unpack_unsigned_16 : <span>byte_order:<a href=
+"index.html#type-endian">endian</a></span> <span>-&gt;</span>
+<span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-pack_unsigned_16"><a href=
 "#val-pack_unsigned_16" class="anchor"></a><code><span class=
-"keyword">val</span> pack_unsigned_16 : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> pack_unsigned_16 : <span>byte_order:<a href=
+"index.html#type-endian">endian</a></span> <span>-&gt;</span>
+<span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-unpack_signed_32"><a href=
 "#val-unpack_signed_32" class="anchor"></a><code><span class=
-"keyword">val</span> unpack_signed_32 : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> unpack_signed_32 : <span>byte_order:<a href=
+"index.html#type-endian">endian</a></span> <span>-&gt;</span>
+<span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int32">Core_kernel__.Import.int32</a></code></dt>
 <dt class="spec value" id="val-unpack_signed_32_int"><a href=
 "#val-unpack_signed_32_int" class="anchor"></a><code><span class=
-"keyword">val</span> unpack_signed_32_int : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> unpack_signed_32_int :
+<span>byte_order:<a href="index.html#type-endian">endian</a></span>
+<span>-&gt;</span> <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-pack_signed_32"><a href=
 "#val-pack_signed_32" class="anchor"></a><code><span class=
-"keyword">val</span> pack_signed_32 : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> pack_signed_32 : <span>byte_order:<a href=
+"index.html#type-endian">endian</a></span> <span>-&gt;</span>
+<span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../../Core_kernel/Int32/index.html#type-t">Core_kernel.Int32.t</a>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-pack_signed_32_int"><a href=
 "#val-pack_signed_32_int" class="anchor"></a><code><span class=
-"keyword">val</span> pack_signed_32_int : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> pack_signed_32_int : <span>byte_order:<a href=
+"index.html#type-endian">endian</a></span> <span>-&gt;</span>
+<span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
@@ -321,29 +327,29 @@ pack_signed_16_little_endian : buf:<a href=
 <dt class="spec value" id="val-unpack_unsigned_32_int_big_endian">
 <a href="#val-unpack_unsigned_32_int_big_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_unsigned_32_int_big_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_unsigned_32_int_big_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id=
 "val-unpack_unsigned_32_int_little_endian"><a href=
 "#val-unpack_unsigned_32_int_little_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_unsigned_32_int_little_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_unsigned_32_int_little_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-pack_unsigned_32_int_big_endian">
 <a href="#val-pack_unsigned_32_int_big_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_unsigned_32_int_big_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_unsigned_32_int_big_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
@@ -351,10 +357,10 @@ pack_unsigned_32_int_big_endian : buf:<a href=
 <dt class="spec value" id="val-pack_unsigned_32_int_little_endian">
 <a href="#val-pack_unsigned_32_int_little_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_unsigned_32_int_little_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_unsigned_32_int_little_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
@@ -362,28 +368,28 @@ pack_unsigned_32_int_little_endian : buf:<a href=
 <dt class="spec value" id="val-unpack_signed_32_int_big_endian">
 <a href="#val-unpack_signed_32_int_big_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_signed_32_int_big_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_signed_32_int_big_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-unpack_signed_32_int_little_endian">
 <a href="#val-unpack_signed_32_int_little_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_signed_32_int_little_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_signed_32_int_little_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-pack_signed_32_int_big_endian">
 <a href="#val-pack_signed_32_int_big_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_signed_32_int_big_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_signed_32_int_big_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
@@ -391,70 +397,76 @@ pack_signed_32_int_big_endian : buf:<a href=
 <dt class="spec value" id="val-pack_signed_32_int_little_endian">
 <a href="#val-pack_signed_32_int_little_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_signed_32_int_little_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_signed_32_int_little_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-unpack_unsigned_32_int"><a href=
 "#val-unpack_unsigned_32_int" class="anchor"></a><code><span class=
-"keyword">val</span> unpack_unsigned_32_int : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> unpack_unsigned_32_int :
+<span>byte_order:<a href="index.html#type-endian">endian</a></span>
+<span>-&gt;</span> <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-pack_unsigned_32_int"><a href=
 "#val-pack_unsigned_32_int" class="anchor"></a><code><span class=
-"keyword">val</span> pack_unsigned_32_int : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> pack_unsigned_32_int :
+<span>byte_order:<a href="index.html#type-endian">endian</a></span>
+<span>-&gt;</span> <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-unpack_signed_64"><a href=
 "#val-unpack_signed_64" class="anchor"></a><code><span class=
-"keyword">val</span> unpack_signed_64 : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> unpack_signed_64 : <span>byte_order:<a href=
+"index.html#type-endian">endian</a></span> <span>-&gt;</span>
+<span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int64">Core_kernel__.Import.int64</a></code></dt>
 <dt class="spec value" id="val-unpack_signed_64_int"><a href=
 "#val-unpack_signed_64_int" class="anchor"></a><code><span class=
-"keyword">val</span> unpack_signed_64_int : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> unpack_signed_64_int :
+<span>byte_order:<a href="index.html#type-endian">endian</a></span>
+<span>-&gt;</span> <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-pack_signed_64"><a href=
 "#val-pack_signed_64" class="anchor"></a><code><span class=
-"keyword">val</span> pack_signed_64 : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> pack_signed_64 : <span>byte_order:<a href=
+"index.html#type-endian">endian</a></span> <span>-&gt;</span>
+<span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../../Core_kernel/Int64/index.html#type-t">Core_kernel.Int64.t</a>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-pack_signed_64_int"><a href=
 "#val-pack_signed_64_int" class="anchor"></a><code><span class=
-"keyword">val</span> pack_signed_64_int : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> pack_signed_64_int : <span>byte_order:<a href=
+"index.html#type-endian">endian</a></span> <span>-&gt;</span>
+<span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
@@ -462,19 +474,19 @@ pack_signed_32_int_little_endian : buf:<a href=
 <dt class="spec value" id="val-unpack_signed_64_int_little_endian">
 <a href="#val-unpack_signed_64_int_little_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_signed_64_int_little_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_signed_64_int_little_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-pack_signed_64_int_little_endian">
 <a href="#val-pack_signed_64_int_little_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_signed_64_int_little_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_signed_64_int_little_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
@@ -482,19 +494,19 @@ pack_signed_64_int_little_endian : buf:<a href=
 <dt class="spec value" id="val-unpack_signed_64_int_big_endian">
 <a href="#val-unpack_signed_64_int_big_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_signed_64_int_big_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_signed_64_int_big_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a></code></dt>
 <dt class="spec value" id="val-pack_signed_64_int_big_endian">
 <a href="#val-pack_signed_64_int_big_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_signed_64_int_big_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_signed_64_int_big_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int">Core_kernel__.Import.int</a>
 <span>-&gt;</span> <a href=
@@ -502,28 +514,28 @@ pack_signed_64_int_big_endian : buf:<a href=
 <dt class="spec value" id="val-unpack_signed_64_big_endian">
 <a href="#val-unpack_signed_64_big_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_signed_64_big_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_signed_64_big_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int64">Core_kernel__.Import.int64</a></code></dt>
 <dt class="spec value" id="val-unpack_signed_64_little_endian">
 <a href="#val-unpack_signed_64_little_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_signed_64_little_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_signed_64_little_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int64">Core_kernel__.Import.int64</a></code></dt>
 <dt class="spec value" id="val-pack_signed_64_big_endian"><a href=
 "#val-pack_signed_64_big_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_signed_64_big_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_signed_64_big_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int64">Core_kernel__.Import.int64</a>
 <span>-&gt;</span> <a href=
@@ -531,21 +543,22 @@ pack_signed_64_big_endian : buf:<a href=
 <dt class="spec value" id="val-pack_signed_64_little_endian">
 <a href="#val-pack_signed_64_little_endian" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_signed_64_little_endian : buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_signed_64_little_endian : <span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-int64">Core_kernel__.Import.int64</a>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-unpack_float"><a href=
 "#val-unpack_float" class="anchor"></a><code><span class=
-"keyword">val</span> unpack_float : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> unpack_float : <span>byte_order:<a href=
+"index.html#type-endian">endian</a></span> <span>-&gt;</span>
+<span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-float">Core_kernel__.Import.float</a></code></dt>
 <dd>
@@ -559,11 +572,12 @@ eight bytes in one order or the other.</p>
 <dl>
 <dt class="spec value" id="val-pack_float"><a href=
 "#val-pack_float" class="anchor"></a><code><span class=
-"keyword">val</span> pack_float : byte_order:<a href=
-"index.html#type-endian">endian</a> <span>-&gt;</span> buf:<a href=
-"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+"keyword">val</span> pack_float : <span>byte_order:<a href=
+"index.html#type-endian">endian</a></span> <span>-&gt;</span>
+<span>buf:<a href=
+"../Import/index.html#type-bytes">Core_kernel__.Import.bytes</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-float">Core_kernel__.Import.float</a>
 <span>-&gt;</span> <a href=
@@ -579,14 +593,14 @@ padding equals the fixed length.</p>
 <dt class="spec value" id="val-unpack_tail_padded_fixed_string">
 <a href="#val-unpack_tail_padded_fixed_string" class=
 "anchor"></a><code><span class="keyword">val</span>
-unpack_tail_padded_fixed_string : ?⁠padding:<a href=
-"../Import/index.html#type-char">Core_kernel__.Import.char</a>
-<span>-&gt;</span> buf:<a href=
-"../../Core_kernel/Bytes/index.html#type-t">Core_kernel.Bytes.t</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
-<span>-&gt;</span> len:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+unpack_tail_padded_fixed_string : <span>?⁠padding:<a href=
+"../Import/index.html#type-char">Core_kernel__.Import.char</a></span>
+<span>-&gt;</span> <span>buf:<a href=
+"../../Core_kernel/Bytes/index.html#type-t">Core_kernel.Bytes.t</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
+<span>-&gt;</span> <span>len:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-unit">Core_kernel__.Import.unit</a>
 <span>-&gt;</span> <a href=
@@ -602,14 +616,14 @@ characters. The default padding is '\x00'.</p>
 <dt class="spec value" id="val-pack_tail_padded_fixed_string">
 <a href="#val-pack_tail_padded_fixed_string" class=
 "anchor"></a><code><span class="keyword">val</span>
-pack_tail_padded_fixed_string : ?⁠padding:<a href=
-"../Import/index.html#type-char">Core_kernel__.Import.char</a>
-<span>-&gt;</span> buf:<a href=
-"../../Core_kernel/Bytes/index.html#type-t">Core_kernel.Bytes.t</a>
-<span>-&gt;</span> pos:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
-<span>-&gt;</span> len:<a href=
-"../Import/index.html#type-int">Core_kernel__.Import.int</a>
+pack_tail_padded_fixed_string : <span>?⁠padding:<a href=
+"../Import/index.html#type-char">Core_kernel__.Import.char</a></span>
+<span>-&gt;</span> <span>buf:<a href=
+"../../Core_kernel/Bytes/index.html#type-t">Core_kernel.Bytes.t</a></span>
+<span>-&gt;</span> <span>pos:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
+<span>-&gt;</span> <span>len:<a href=
+"../Import/index.html#type-int">Core_kernel__.Import.int</a></span>
 <span>-&gt;</span> <a href=
 "../Import/index.html#type-string">Core_kernel__.Import.string</a>
 <span>-&gt;</span> <a href=

@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Line (ppx_expect.Expect_test_matcher.Cst.Line)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -27,8 +26,8 @@ hljs.initHighlightingOnLoad();
 </header>
 <dl>
 <dt class="spec type" id="type-not_blank"><a href="#type-not_blank"
-class="anchor"></a><code><span class="keyword">type</span> 'a
-not_blank</code> <code>=</code> <code>{</code></dt>
+class="anchor"></a><code><span class="keyword">type</span> <span>'a
+not_blank</span></code> <code>=</code> <code>{</code></dt>
 <dd>
 <table class="record">
 <tr id="type-not_blank.trailing_blanks" class="anchored">
@@ -65,23 +64,23 @@ class="anchor"></a><code>trailing_blanks : <a href=
 <dl>
 <dt class="spec value" id="val-sexp_of_not_blank"><a href=
 "#val-sexp_of_not_blank" class="anchor"></a><code><span class=
-"keyword">val</span> sexp_of_not_blank : (<span class=
+"keyword">val</span> sexp_of_not_blank : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-not_blank">not_blank</a> <span>-&gt;</span>
+"../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-not_blank">not_blank</a></span> <span>-&gt;</span>
 <a href=
 "../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 <dt class="spec value" id="val-compare_not_blank"><a href=
 "#val-compare_not_blank" class="anchor"></a><code><span class=
-"keyword">val</span> compare_not_blank : (<span class=
+"keyword">val</span> compare_not_blank : <span>(<span class=
 "type-var">'a</span> <span>-&gt;</span> <span class=
 "type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../../base/Base/index.html#type-int">Base.int</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-not_blank">not_blank</a> <span>-&gt;</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-not_blank">not_blank</a> <span>-&gt;</span>
+"../../../../base/Base/index.html#type-int">Base.int</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-not_blank">not_blank</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-not_blank">not_blank</a></span> <span>-&gt;</span>
 <a href=
 "../../../../base/Base/index.html#type-int">Base.int</a></code></dt>
 </dl>
@@ -91,8 +90,8 @@ class="anchor"></a><code>trailing_blanks : <a href=
 </div>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a t</code>
-<code>=</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code> <code>=</code></dt>
 <dd>
 <table class="variant">
 <tr id="type-t.Blank" class="anchored">
@@ -108,8 +107,8 @@ class="anchor"></a><code>trailing_blanks : <a href=
 <td class="def constructor"><a href="#type-t.Not_blank" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Not_blank</span> <span class="keyword">of</span>
-<span class="type-var">'a</span> <a href=
-"index.html#type-not_blank">not_blank</a></code></td>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-not_blank">not_blank</a></span></code></td>
 </tr>
 </table>
 </dd>
@@ -124,20 +123,21 @@ class="anchor"></a><code>trailing_blanks : <a href=
 <dl>
 <dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
 class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
-: (<span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+: <span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<a href=
+"../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 <dt class="spec value" id="val-compare"><a href="#val-compare"
 class="anchor"></a><code><span class="keyword">val</span> compare :
-(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../../base/Base/index.html#type-int">Base.int</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href=
+<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span> <a href=
+"../../../../base/Base/index.html#type-int">Base.int</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../../../base/Base/index.html#type-int">Base.int</a></code></dt>
 </dl>
 </details>
@@ -147,20 +147,22 @@ class="anchor"></a><code><span class="keyword">val</span> compare :
 <dl>
 <dt class="spec value" id="val-invariant"><a href="#val-invariant"
 class="anchor"></a><code><span class="keyword">val</span> invariant
-: (<span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../../base/Base/index.html#type-unit">Base.unit</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+: <span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<a href=
+"../../../../base/Base/index.html#type-unit">Base.unit</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../../../base/Base/index.html#type-unit">Base.unit</a></code></dt>
 <dt class="spec value" id="val-map"><a href="#val-map" class=
 "anchor"></a><code><span class="keyword">val</span> map :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<a href=
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<a href=
 "../../../../base/Base/index.html#type-string">Base.string</a>
 <span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'b</span>)
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <span class="type-var">'b</span>)</span></span>
+<span>-&gt;</span> <span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>The callback receive the <code>orig</code> and <code>data</code>
 fields</p>
@@ -169,9 +171,10 @@ fields</p>
 <dl>
 <dt class="spec value" id="val-strip"><a href="#val-strip" class=
 "anchor"></a><code><span class="keyword">val</span> strip :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>Delete trailing blanks (everything for blank lines)</p>
 </dd>
@@ -179,8 +182,9 @@ fields</p>
 <dl>
 <dt class="spec value" id="val-data"><a href="#val-data" class=
 "anchor"></a><code><span class="keyword">val</span> data :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> blank:<span class="type-var">'a</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>blank:<span class="type-var">'a</span></span>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 </dl>
 </div>

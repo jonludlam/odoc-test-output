@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Arg (core_kernel.Core_kernel.Arg)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -57,14 +56,14 @@ direct use of this library.</p>
 <tr id="type-spec.Set" class="anchored">
 <td class="def constructor"><a href="#type-spec.Set" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Set</span> <span class="keyword">of</span> bool
-Stdlib.ref</code></td>
+"constructor">Set</span> <span class="keyword">of</span> <span>bool
+Stdlib.ref</span></code></td>
 </tr>
 <tr id="type-spec.Clear" class="anchored">
 <td class="def constructor"><a href="#type-spec.Clear" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Clear</span> <span class="keyword">of</span> bool
-Stdlib.ref</code></td>
+"constructor">Clear</span> <span class="keyword">of</span>
+<span>bool Stdlib.ref</span></code></td>
 </tr>
 <tr id="type-spec.String" class="anchored">
 <td class="def constructor"><a href="#type-spec.String" class=
@@ -76,7 +75,7 @@ Stdlib.ref</code></td>
 <td class="def constructor"><a href="#type-spec.Set_string" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Set_string</span> <span class="keyword">of</span>
-string Stdlib.ref</code></td>
+<span>string Stdlib.ref</span></code></td>
 </tr>
 <tr id="type-spec.Int" class="anchored">
 <td class="def constructor"><a href="#type-spec.Int" class=
@@ -87,8 +86,8 @@ string Stdlib.ref</code></td>
 <tr id="type-spec.Set_int" class="anchored">
 <td class="def constructor"><a href="#type-spec.Set_int" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Set_int</span> <span class="keyword">of</span> int
-Stdlib.ref</code></td>
+"constructor">Set_int</span> <span class="keyword">of</span>
+<span>int Stdlib.ref</span></code></td>
 </tr>
 <tr id="type-spec.Float" class="anchored">
 <td class="def constructor"><a href="#type-spec.Float" class=
@@ -100,19 +99,21 @@ Stdlib.ref</code></td>
 <td class="def constructor"><a href="#type-spec.Set_float" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Set_float</span> <span class="keyword">of</span>
-float Stdlib.ref</code></td>
+<span>float Stdlib.ref</span></code></td>
 </tr>
 <tr id="type-spec.Tuple" class="anchored">
 <td class="def constructor"><a href="#type-spec.Tuple" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Tuple</span> <span class="keyword">of</span> <a href=
-"index.html#type-spec">spec</a> list</code></td>
+"constructor">Tuple</span> <span class="keyword">of</span>
+<span><a href="index.html#type-spec">spec</a>
+list</span></code></td>
 </tr>
 <tr id="type-spec.Symbol" class="anchored">
 <td class="def constructor"><a href="#type-spec.Symbol" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">Symbol</span> <span class="keyword">of</span> string
-list * string <span>-&gt;</span> unit</code></td>
+"constructor">Symbol</span> <span class="keyword">of</span>
+<span>string list</span> * string <span>-&gt;</span>
+unit</code></td>
 </tr>
 <tr id="type-spec.Rest" class="anchored">
 <td class="def constructor"><a href="#type-spec.Rest" class=
@@ -124,7 +125,7 @@ list * string <span>-&gt;</span> unit</code></td>
 <td class="def constructor"><a href="#type-spec.Expand" class=
 "anchor"></a><code>|</code> <code><span class=
 "constructor">Expand</span> <span class="keyword">of</span> string
-<span>-&gt;</span> string array</code></td>
+<span>-&gt;</span> <span>string array</span></code></td>
 </tr>
 </table>
 </dd>
@@ -144,57 +145,64 @@ anon_fun</code> <code>= string <span>-&gt;</span> unit</code></dt>
 <dl>
 <dt class="spec value" id="val-parse"><a href="#val-parse" class=
 "anchor"></a><code><span class="keyword">val</span> parse :
-(<a href="index.html#type-key">key</a> * <a href=
+<span><span>(<a href="index.html#type-key">key</a> * <a href=
 "index.html#type-spec">spec</a> * <a href=
-"index.html#type-doc">doc</a>) list <span>-&gt;</span> <a href=
-"index.html#type-anon_fun">anon_fun</a> <span>-&gt;</span> <a href=
+"index.html#type-doc">doc</a>)</span> list</span>
+<span>-&gt;</span> <a href="index.html#type-anon_fun">anon_fun</a>
+<span>-&gt;</span> <a href=
 "index.html#type-usage_msg">usage_msg</a> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec value" id="val-parse_dynamic"><a href=
 "#val-parse_dynamic" class="anchor"></a><code><span class=
-"keyword">val</span> parse_dynamic : (<a href=
+"keyword">val</span> parse_dynamic : <span><span><span>(<a href=
 "index.html#type-key">key</a> * <a href=
 "index.html#type-spec">spec</a> * <a href=
-"index.html#type-doc">doc</a>) list Stdlib.ref <span>-&gt;</span>
-<a href="index.html#type-anon_fun">anon_fun</a> <span>-&gt;</span>
-<a href="index.html#type-usage_msg">usage_msg</a>
-<span>-&gt;</span> unit</code></dt>
+"index.html#type-doc">doc</a>)</span> list</span> Stdlib.ref</span>
+<span>-&gt;</span> <a href="index.html#type-anon_fun">anon_fun</a>
+<span>-&gt;</span> <a href=
+"index.html#type-usage_msg">usage_msg</a> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec value" id="val-parse_argv"><a href=
 "#val-parse_argv" class="anchor"></a><code><span class=
-"keyword">val</span> parse_argv : ?⁠current:int Stdlib.ref
-<span>-&gt;</span> string array <span>-&gt;</span> (<a href=
+"keyword">val</span> parse_argv : <span>?⁠current:<span>int
+Stdlib.ref</span></span> <span>-&gt;</span> <span>string
+array</span> <span>-&gt;</span> <span><span>(<a href=
 "index.html#type-key">key</a> * <a href=
 "index.html#type-spec">spec</a> * <a href=
-"index.html#type-doc">doc</a>) list <span>-&gt;</span> <a href=
-"index.html#type-anon_fun">anon_fun</a> <span>-&gt;</span> <a href=
+"index.html#type-doc">doc</a>)</span> list</span>
+<span>-&gt;</span> <a href="index.html#type-anon_fun">anon_fun</a>
+<span>-&gt;</span> <a href=
 "index.html#type-usage_msg">usage_msg</a> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec value" id="val-parse_argv_dynamic"><a href=
 "#val-parse_argv_dynamic" class="anchor"></a><code><span class=
-"keyword">val</span> parse_argv_dynamic : ?⁠current:int Stdlib.ref
-<span>-&gt;</span> string array <span>-&gt;</span> (<a href=
+"keyword">val</span> parse_argv_dynamic : <span>?⁠current:<span>int
+Stdlib.ref</span></span> <span>-&gt;</span> <span>string
+array</span> <span>-&gt;</span> <span><span><span>(<a href=
 "index.html#type-key">key</a> * <a href=
 "index.html#type-spec">spec</a> * <a href=
-"index.html#type-doc">doc</a>) list Stdlib.ref <span>-&gt;</span>
-<a href="index.html#type-anon_fun">anon_fun</a> <span>-&gt;</span>
-string <span>-&gt;</span> unit</code></dt>
+"index.html#type-doc">doc</a>)</span> list</span> Stdlib.ref</span>
+<span>-&gt;</span> <a href="index.html#type-anon_fun">anon_fun</a>
+<span>-&gt;</span> string <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-parse_and_expand_argv_dynamic">
 <a href="#val-parse_and_expand_argv_dynamic" class=
 "anchor"></a><code><span class="keyword">val</span>
-parse_and_expand_argv_dynamic : int Stdlib.ref <span>-&gt;</span>
-string array Stdlib.ref <span>-&gt;</span> (<a href=
+parse_and_expand_argv_dynamic : <span>int Stdlib.ref</span>
+<span>-&gt;</span> <span><span>string array</span>
+Stdlib.ref</span> <span>-&gt;</span> <span><span><span>(<a href=
 "index.html#type-key">key</a> * <a href=
 "index.html#type-spec">spec</a> * <a href=
-"index.html#type-doc">doc</a>) list Stdlib.ref <span>-&gt;</span>
-<a href="index.html#type-anon_fun">anon_fun</a> <span>-&gt;</span>
-string <span>-&gt;</span> unit</code></dt>
+"index.html#type-doc">doc</a>)</span> list</span> Stdlib.ref</span>
+<span>-&gt;</span> <a href="index.html#type-anon_fun">anon_fun</a>
+<span>-&gt;</span> string <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-parse_expand"><a href=
 "#val-parse_expand" class="anchor"></a><code><span class=
-"keyword">val</span> parse_expand : (<a href=
+"keyword">val</span> parse_expand : <span><span>(<a href=
 "index.html#type-key">key</a> * <a href=
 "index.html#type-spec">spec</a> * <a href=
-"index.html#type-doc">doc</a>) list <span>-&gt;</span> <a href=
-"index.html#type-anon_fun">anon_fun</a> <span>-&gt;</span> <a href=
+"index.html#type-doc">doc</a>)</span> list</span>
+<span>-&gt;</span> <a href="index.html#type-anon_fun">anon_fun</a>
+<span>-&gt;</span> <a href=
 "index.html#type-usage_msg">usage_msg</a> <span>-&gt;</span>
 unit</code></dt>
 </dl>
@@ -213,45 +221,48 @@ string</code></dt>
 <dl>
 <dt class="spec value" id="val-usage"><a href="#val-usage" class=
 "anchor"></a><code><span class="keyword">val</span> usage :
-(<a href="index.html#type-key">key</a> * <a href=
+<span><span>(<a href="index.html#type-key">key</a> * <a href=
 "index.html#type-spec">spec</a> * <a href=
-"index.html#type-doc">doc</a>) list <span>-&gt;</span> <a href=
+"index.html#type-doc">doc</a>)</span> list</span>
+<span>-&gt;</span> <a href=
 "index.html#type-usage_msg">usage_msg</a> <span>-&gt;</span>
 unit</code></dt>
 <dt class="spec value" id="val-usage_string"><a href=
 "#val-usage_string" class="anchor"></a><code><span class=
-"keyword">val</span> usage_string : (<a href=
+"keyword">val</span> usage_string : <span><span>(<a href=
 "index.html#type-key">key</a> * <a href=
 "index.html#type-spec">spec</a> * <a href=
-"index.html#type-doc">doc</a>) list <span>-&gt;</span> <a href=
+"index.html#type-doc">doc</a>)</span> list</span>
+<span>-&gt;</span> <a href=
 "index.html#type-usage_msg">usage_msg</a> <span>-&gt;</span>
 string</code></dt>
 <dt class="spec value" id="val-align"><a href="#val-align" class=
 "anchor"></a><code><span class="keyword">val</span> align :
-?⁠limit:int <span>-&gt;</span> (<a href=
+<span>?⁠limit:int</span> <span>-&gt;</span> <span><span>(<a href=
 "index.html#type-key">key</a> * <a href=
 "index.html#type-spec">spec</a> * <a href=
-"index.html#type-doc">doc</a>) list <span>-&gt;</span> (<a href=
+"index.html#type-doc">doc</a>)</span> list</span>
+<span>-&gt;</span> <span><span>(<a href=
 "index.html#type-key">key</a> * <a href=
 "index.html#type-spec">spec</a> * <a href=
-"index.html#type-doc">doc</a>) list</code></dt>
+"index.html#type-doc">doc</a>)</span> list</span></code></dt>
 <dt class="spec value" id="val-current"><a href="#val-current"
 class="anchor"></a><code><span class="keyword">val</span> current :
-int Stdlib.ref</code></dt>
+<span>int Stdlib.ref</span></code></dt>
 <dt class="spec value" id="val-read_arg"><a href="#val-read_arg"
 class="anchor"></a><code><span class="keyword">val</span> read_arg
-: string <span>-&gt;</span> string array</code></dt>
+: string <span>-&gt;</span> <span>string array</span></code></dt>
 <dt class="spec value" id="val-read_arg0"><a href="#val-read_arg0"
 class="anchor"></a><code><span class="keyword">val</span> read_arg0
-: string <span>-&gt;</span> string array</code></dt>
+: string <span>-&gt;</span> <span>string array</span></code></dt>
 <dt class="spec value" id="val-write_arg"><a href="#val-write_arg"
 class="anchor"></a><code><span class="keyword">val</span> write_arg
-: string <span>-&gt;</span> string array <span>-&gt;</span>
-unit</code></dt>
+: string <span>-&gt;</span> <span>string array</span>
+<span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-write_arg0"><a href=
 "#val-write_arg0" class="anchor"></a><code><span class=
-"keyword">val</span> write_arg0 : string <span>-&gt;</span> string
-array <span>-&gt;</span> unit</code></dt>
+"keyword">val</span> write_arg0 : string <span>-&gt;</span>
+<span>string array</span> <span>-&gt;</span> unit</code></dt>
 </dl>
 </details>
 </div>
@@ -267,15 +278,16 @@ array <span>-&gt;</span> unit</code></dt>
 <dl>
 <dt class="spec value" id="val-sort_and_align"><a href=
 "#val-sort_and_align" class="anchor"></a><code><span class=
-"keyword">val</span> sort_and_align : (<a href=
+"keyword">val</span> sort_and_align : <span><span>(<a href=
 "index.html#type-key">key</a> * <a href=
 "index.html#type-spec">spec</a> * <a href=
-"index.html#type-doc">doc</a>) <a href=
-"../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a>
-<span>-&gt;</span> (<a href="index.html#type-key">key</a> *
-<a href="index.html#type-spec">spec</a> * <a href=
-"index.html#type-doc">doc</a>) <a href=
-"../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a></code></dt>
+"index.html#type-doc">doc</a>)</span> <a href=
+"../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a></span>
+<span>-&gt;</span> <span><span>(<a href=
+"index.html#type-key">key</a> * <a href=
+"index.html#type-spec">spec</a> * <a href=
+"index.html#type-doc">doc</a>)</span> <a href=
+"../../Core_kernel__/Import/index.html#type-list">Core_kernel__.Import.list</a></span></code></dt>
 <dd>
 <p>Like <code>align</code>, except that the specification list is
 also sorted by key</p>

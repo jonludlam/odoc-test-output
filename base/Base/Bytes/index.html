@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Bytes (base.Base.Bytes)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -87,30 +86,30 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 <dl>
 <dt class="spec value" id="val-blit"><a href="#val-blit" class=
 "anchor"></a><code><span class="keyword">val</span> blit :
-(<a href="index.html#type-t">t</a>,&nbsp;<a href=
-"index.html#type-t">t</a>) <a href=
-"../../Base__/Blit_intf/index.html#type-blit">Base__.Blit_intf.blit</a></code></dt>
+<span><span>(<a href="index.html#type-t">t</a>,&nbsp;<a href=
+"index.html#type-t">t</a>)</span> <a href=
+"../../Base__/Blit_intf/index.html#type-blit">Base__.Blit_intf.blit</a></span></code></dt>
 <dt class="spec value" id="val-blito"><a href="#val-blito" class=
 "anchor"></a><code><span class="keyword">val</span> blito :
-(<a href="index.html#type-t">t</a>,&nbsp;<a href=
-"index.html#type-t">t</a>) <a href=
-"../../Base__/Blit_intf/index.html#type-blito">Base__.Blit_intf.blito</a></code></dt>
+<span><span>(<a href="index.html#type-t">t</a>,&nbsp;<a href=
+"index.html#type-t">t</a>)</span> <a href=
+"../../Base__/Blit_intf/index.html#type-blito">Base__.Blit_intf.blito</a></span></code></dt>
 <dt class="spec value" id="val-unsafe_blit"><a href=
 "#val-unsafe_blit" class="anchor"></a><code><span class=
-"keyword">val</span> unsafe_blit : (<a href=
-"index.html#type-t">t</a>,&nbsp;<a href="index.html#type-t">t</a>)
-<a href=
-"../../Base__/Blit_intf/index.html#type-blit">Base__.Blit_intf.blit</a></code></dt>
+"keyword">val</span> unsafe_blit : <span><span>(<a href=
+"index.html#type-t">t</a>,&nbsp;<a href=
+"index.html#type-t">t</a>)</span> <a href=
+"../../Base__/Blit_intf/index.html#type-blit">Base__.Blit_intf.blit</a></span></code></dt>
 <dt class="spec value" id="val-sub"><a href="#val-sub" class=
-"anchor"></a><code><span class="keyword">val</span> sub : (<a href=
-"index.html#type-t">t</a>,&nbsp;<a href="index.html#type-t">t</a>)
-<a href=
-"../../Base__/Blit_intf/index.html#type-sub">Base__.Blit_intf.sub</a></code></dt>
+"anchor"></a><code><span class="keyword">val</span> sub :
+<span><span>(<a href="index.html#type-t">t</a>,&nbsp;<a href=
+"index.html#type-t">t</a>)</span> <a href=
+"../../Base__/Blit_intf/index.html#type-sub">Base__.Blit_intf.sub</a></span></code></dt>
 <dt class="spec value" id="val-subo"><a href="#val-subo" class=
 "anchor"></a><code><span class="keyword">val</span> subo :
-(<a href="index.html#type-t">t</a>,&nbsp;<a href=
-"index.html#type-t">t</a>) <a href=
-"../../Base__/Blit_intf/index.html#type-subo">Base__.Blit_intf.subo</a></code></dt>
+<span><span>(<a href="index.html#type-t">t</a>,&nbsp;<a href=
+"index.html#type-t">t</a>)</span> <a href=
+"../../Base__/Blit_intf/index.html#type-subo">Base__.Blit_intf.subo</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -230,9 +229,11 @@ ascending or descending order, respectively.</p>
 <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-between"><a href="#val-between"
 class="anchor"></a><code><span class="keyword">val</span> between :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> low:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> high:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> bool</code></dt>
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span>low:<a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>high:<a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+bool</code></dt>
 <dd>
 <p><code>between t ~low ~high</code> means <code>low &lt;= t &lt;=
 high</code></p>
@@ -241,9 +242,10 @@ high</code></p>
 <dl>
 <dt class="spec value" id="val-clamp_exn"><a href="#val-clamp_exn"
 class="anchor"></a><code><span class="keyword">val</span> clamp_exn
-: <a href="index.html#type-t">t</a> <span>-&gt;</span> min:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> max:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+: <a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span>min:<a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>max:<a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>clamp_exn t ~min ~max</code> returns <code>t'</code>, the
@@ -255,11 +257,12 @@ closest value to <code>t</code> such that <code>between t' ~low:min
 <dl>
 <dt class="spec value" id="val-clamp"><a href="#val-clamp" class=
 "anchor"></a><code><span class="keyword">val</span> clamp :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> min:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> max:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+<a href="index.html#type-t">t</a> <span>-&gt;</span>
+<span>min:<a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>max:<a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span><a href=
 "index.html#type-t">t</a> <a href=
-"../Or_error/index.html#type-t">Or_error.t</a></code></dt>
+"../Or_error/index.html#type-t">Or_error.t</a></span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -281,11 +284,11 @@ closest value to <code>t</code> such that <code>between t' ~low:min
 <dl>
 <dt class="spec value" id="val-comparator"><a href=
 "#val-comparator" class="anchor"></a><code><span class=
-"keyword">val</span> comparator : (<a href=
+"keyword">val</span> comparator : <span><span>(<a href=
 "index.html#type-t">t</a>,&nbsp;<a href=
-"index.html#type-comparator_witness">comparator_witness</a>)
+"index.html#type-comparator_witness">comparator_witness</a>)</span>
 <a href=
-"../Comparator/index.html#type-comparator">Comparator.comparator</a></code></dt>
+"../Comparator/index.html#type-comparator">Comparator.comparator</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -309,27 +312,28 @@ t</a> := <a href="index.html#type-t">t</a></code></span></summary>
 <dl>
 <dt class="spec value" id="val-validate_lbound"><a href=
 "#val-validate_lbound" class="anchor"></a><code><span class=
-"keyword">val</span> validate_lbound : min:<a href=
+"keyword">val</span> validate_lbound : <span>min:<span><a href=
 "index.html#type-t">t</a> <a href=
-"../Maybe_bound/index.html#type-t">Maybe_bound.t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
-"../Validate/index.html#type-check">Validate.check</a></code></dt>
+"../Maybe_bound/index.html#type-t">Maybe_bound.t</a></span></span>
+<span>-&gt;</span> <span><a href="index.html#type-t">t</a> <a href=
+"../Validate/index.html#type-check">Validate.check</a></span></code></dt>
 <dt class="spec value" id="val-validate_ubound"><a href=
 "#val-validate_ubound" class="anchor"></a><code><span class=
-"keyword">val</span> validate_ubound : max:<a href=
+"keyword">val</span> validate_ubound : <span>max:<span><a href=
 "index.html#type-t">t</a> <a href=
-"../Maybe_bound/index.html#type-t">Maybe_bound.t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
-"../Validate/index.html#type-check">Validate.check</a></code></dt>
+"../Maybe_bound/index.html#type-t">Maybe_bound.t</a></span></span>
+<span>-&gt;</span> <span><a href="index.html#type-t">t</a> <a href=
+"../Validate/index.html#type-check">Validate.check</a></span></code></dt>
 <dt class="spec value" id="val-validate_bound"><a href=
 "#val-validate_bound" class="anchor"></a><code><span class=
-"keyword">val</span> validate_bound : min:<a href=
+"keyword">val</span> validate_bound : <span>min:<span><a href=
 "index.html#type-t">t</a> <a href=
-"../Maybe_bound/index.html#type-t">Maybe_bound.t</a>
-<span>-&gt;</span> max:<a href="index.html#type-t">t</a> <a href=
-"../Maybe_bound/index.html#type-t">Maybe_bound.t</a>
-<span>-&gt;</span> <a href="index.html#type-t">t</a> <a href=
-"../Validate/index.html#type-check">Validate.check</a></code></dt>
+"../Maybe_bound/index.html#type-t">Maybe_bound.t</a></span></span>
+<span>-&gt;</span> <span>max:<span><a href=
+"index.html#type-t">t</a> <a href=
+"../Maybe_bound/index.html#type-t">Maybe_bound.t</a></span></span>
+<span>-&gt;</span> <span><a href="index.html#type-t">t</a> <a href=
+"../Validate/index.html#type-check">Validate.check</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -445,8 +449,9 @@ contains the same bytes as <code>t</code>.</p>
 <dl>
 <dt class="spec value" id="val-init"><a href="#val-init" class=
 "anchor"></a><code><span class="keyword">val</span> init : int
-<span>-&gt;</span> f:(int <span>-&gt;</span> char)
-<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <span>f:<span>(int <span>-&gt;</span>
+char)</span></span> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>init len ~f</code> returns a newly-allocated byte sequence
 of length <code>len</code> with index <code>i</code> in the
@@ -456,8 +461,8 @@ sequence being initialized with the result of <code>f i</code>.</p>
 <dl>
 <dt class="spec value" id="val-of_char_list"><a href=
 "#val-of_char_list" class="anchor"></a><code><span class=
-"keyword">val</span> of_char_list : char list <span>-&gt;</span>
-<a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> of_char_list : <span>char list</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>of_char_list l</code> returns a newly-alloated byte
 sequence where each byte in the sequence corresponds to the byte in
@@ -510,8 +515,8 @@ unit</code></dt>
 <dl>
 <dt class="spec value" id="val-fill"><a href="#val-fill" class=
 "anchor"></a><code><span class="keyword">val</span> fill : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> pos:int
-<span>-&gt;</span> len:int <span>-&gt;</span> char
+"index.html#type-t">t</a> <span>-&gt;</span> <span>pos:int</span>
+<span>-&gt;</span> <span>len:int</span> <span>-&gt;</span> char
 <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>fill t ~pos ~len c</code> modifies <code>t</code> in
@@ -522,9 +527,9 @@ len</code> with <code>c</code>.</p>
 <dl>
 <dt class="spec value" id="val-tr"><a href="#val-tr" class=
 "anchor"></a><code><span class="keyword">val</span> tr :
-target:char <span>-&gt;</span> replacement:char <span>-&gt;</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-unit</code></dt>
+<span>target:char</span> <span>-&gt;</span>
+<span>replacement:char</span> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>tr ~target ~replacement t</code> modifies <code>t</code>
 in place, replacing every instance of <code>target</code> in
@@ -534,8 +539,8 @@ in place, replacing every instance of <code>target</code> in
 <dl>
 <dt class="spec value" id="val-to_list"><a href="#val-to_list"
 class="anchor"></a><code><span class="keyword">val</span> to_list :
-<a href="index.html#type-t">t</a> <span>-&gt;</span> char
-list</code></dt>
+<a href="index.html#type-t">t</a> <span>-&gt;</span> <span>char
+list</span></code></dt>
 <dd>
 <p><code>to_list t</code> returns the bytes in <code>t</code> as a
 list of chars.</p>
@@ -544,9 +549,9 @@ list of chars.</p>
 <dl>
 <dt class="spec value" id="val-contains"><a href="#val-contains"
 class="anchor"></a><code><span class="keyword">val</span> contains
-: ?⁠pos:int <span>-&gt;</span> ?⁠len:int <span>-&gt;</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> char
-<span>-&gt;</span> bool</code></dt>
+: <span>?⁠pos:int</span> <span>-&gt;</span> <span>?⁠len:int</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a>
+<span>-&gt;</span> char <span>-&gt;</span> bool</code></dt>
 <dd>
 <p><code>contains ?pos ?len t c</code> returns <code>true</code>
 iff <code>c</code> appears in <code>t</code> between
@@ -582,8 +587,9 @@ instead.</p>
 <dt class="spec value" id="val-unsafe_to_string"><a href=
 "#val-unsafe_to_string" class="anchor"></a><code><span class=
 "keyword">val</span> unsafe_to_string :
-no_mutation_while_string_reachable:<a href=
-"index.html#type-t">t</a> <span>-&gt;</span> string</code></dt>
+<span>no_mutation_while_string_reachable:<a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+string</code></dt>
 <dd>
 <p>Unsafely convert a byte sequence into a string.</p>
 <p>To reason about the use of <code>unsafe_to_string</code>, it is

@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Common
 (core_kernel.Core_kernel__Core_bin_prot.Common)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -53,8 +52,8 @@ functions!!!</a></li>
 <dl>
 <dt class="spec type" id="type-pos_ref"><a href="#type-pos_ref"
 class="anchor"></a><code><span class="keyword">type</span>
-pos_ref</code> <code>= <a href="index.html#type-pos">pos</a>
-Stdlib.ref</code></dt>
+pos_ref</code> <code>= <span><a href="index.html#type-pos">pos</a>
+Stdlib.ref</span></code></dt>
 <dd>
 <p>Reference to a position within buffers</p>
 </dd>
@@ -63,8 +62,8 @@ Stdlib.ref</code></dt>
 <dt class="spec type" id="type-buf"><a href="#type-buf" class=
 "anchor"></a><code><span class="keyword">type</span> buf</code>
 <code>=
-(char,&nbsp;Bigarray.int8_unsigned_elt,&nbsp;Bigarray.c_layout)
-Bigarray.Array1.t</code></dt>
+<span><span>(char,&nbsp;Bigarray.int8_unsigned_elt,&nbsp;Bigarray.c_layout)</span>
+Bigarray.Array1.t</span></code></dt>
 <dd>
 <p>Buffers</p>
 </dd>
@@ -160,10 +159,11 @@ of buffer <code>buf</code>.</p>
 <dl>
 <dt class="spec value" id="val-blit_string_buf"><a href=
 "#val-blit_string_buf" class="anchor"></a><code><span class=
-"keyword">val</span> blit_string_buf : ?⁠src_pos:int
-<span>-&gt;</span> string <span>-&gt;</span> ?⁠dst_pos:int
-<span>-&gt;</span> <a href="index.html#type-buf">buf</a>
-<span>-&gt;</span> len:int <span>-&gt;</span> unit</code></dt>
+"keyword">val</span> blit_string_buf : <span>?⁠src_pos:int</span>
+<span>-&gt;</span> string <span>-&gt;</span>
+<span>?⁠dst_pos:int</span> <span>-&gt;</span> <a href=
+"index.html#type-buf">buf</a> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>blit_string_buf ?src_pos src ?dst_pos dst ~len</code>
 blits <code>len</code> bytes of the source string <code>src</code>
@@ -180,10 +180,11 @@ starting at position <code>src_pos</code> to buffer
 <dl>
 <dt class="spec value" id="val-blit_bytes_buf"><a href=
 "#val-blit_bytes_buf" class="anchor"></a><code><span class=
-"keyword">val</span> blit_bytes_buf : ?⁠src_pos:int
-<span>-&gt;</span> bytes <span>-&gt;</span> ?⁠dst_pos:int
-<span>-&gt;</span> <a href="index.html#type-buf">buf</a>
-<span>-&gt;</span> len:int <span>-&gt;</span> unit</code></dt>
+"keyword">val</span> blit_bytes_buf : <span>?⁠src_pos:int</span>
+<span>-&gt;</span> bytes <span>-&gt;</span>
+<span>?⁠dst_pos:int</span> <span>-&gt;</span> <a href=
+"index.html#type-buf">buf</a> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>blit_bytes_buf ?src_pos src ?dst_pos dst ~len</code> blits
 <code>len</code> bytes of the source byte sequence <code>src</code>
@@ -200,10 +201,11 @@ starting at position <code>src_pos</code> to buffer
 <dl>
 <dt class="spec value" id="val-blit_buf_string"><a href=
 "#val-blit_buf_string" class="anchor"></a><code><span class=
-"keyword">val</span> blit_buf_string : ?⁠src_pos:int
+"keyword">val</span> blit_buf_string : <span>?⁠src_pos:int</span>
 <span>-&gt;</span> <a href="index.html#type-buf">buf</a>
-<span>-&gt;</span> ?⁠dst_pos:int <span>-&gt;</span> bytes
-<span>-&gt;</span> len:int <span>-&gt;</span> unit</code></dt>
+<span>-&gt;</span> <span>?⁠dst_pos:int</span> <span>-&gt;</span>
+bytes <span>-&gt;</span> <span>len:int</span> <span>-&gt;</span>
+unit</code></dt>
 <dd>
 <p><code>blit_buf_string ?src_pos src ?dst_pos dst ~len</code>
 blits <code>len</code> bytes of the source buffer <code>src</code>
@@ -220,10 +222,11 @@ starting at position <code>src_pos</code> to string
 <dl>
 <dt class="spec value" id="val-blit_buf_bytes"><a href=
 "#val-blit_buf_bytes" class="anchor"></a><code><span class=
-"keyword">val</span> blit_buf_bytes : ?⁠src_pos:int
+"keyword">val</span> blit_buf_bytes : <span>?⁠src_pos:int</span>
 <span>-&gt;</span> <a href="index.html#type-buf">buf</a>
-<span>-&gt;</span> ?⁠dst_pos:int <span>-&gt;</span> bytes
-<span>-&gt;</span> len:int <span>-&gt;</span> unit</code></dt>
+<span>-&gt;</span> <span>?⁠dst_pos:int</span> <span>-&gt;</span>
+bytes <span>-&gt;</span> <span>len:int</span> <span>-&gt;</span>
+unit</code></dt>
 <dd>
 <p><code>blit_buf_bytes ?src_pos src ?dst_pos dst ~len</code> blits
 <code>len</code> bytes of the source buffer <code>src</code>
@@ -240,10 +243,11 @@ starting at position <code>src_pos</code> to byte sequence
 <dl>
 <dt class="spec value" id="val-blit_buf"><a href="#val-blit_buf"
 class="anchor"></a><code><span class="keyword">val</span> blit_buf
-: ?⁠src_pos:int <span>-&gt;</span> src:<a href=
-"index.html#type-buf">buf</a> <span>-&gt;</span> ?⁠dst_pos:int
-<span>-&gt;</span> dst:<a href="index.html#type-buf">buf</a>
-<span>-&gt;</span> int <span>-&gt;</span> unit</code></dt>
+: <span>?⁠src_pos:int</span> <span>-&gt;</span> <span>src:<a href=
+"index.html#type-buf">buf</a></span> <span>-&gt;</span>
+<span>?⁠dst_pos:int</span> <span>-&gt;</span> <span>dst:<a href=
+"index.html#type-buf">buf</a></span> <span>-&gt;</span> int
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>blit_buf ?src_pos ~src ?dst_pos ~dst len</code> blits
 <code>len</code> bytes of the source buffer <code>src</code>
@@ -381,26 +385,26 @@ data structure.</p>
 <dt class="spec type" id="type-vec32"><a href="#type-vec32" class=
 "anchor"></a><code><span class="keyword">type</span> vec32</code>
 <code>=
-(float,&nbsp;Bigarray.float32_elt,&nbsp;Bigarray.fortran_layout)
-Bigarray.Array1.t</code></dt>
+<span><span>(float,&nbsp;Bigarray.float32_elt,&nbsp;Bigarray.fortran_layout)</span>
+Bigarray.Array1.t</span></code></dt>
 <dt class="spec type" id="type-vec64"><a href="#type-vec64" class=
 "anchor"></a><code><span class="keyword">type</span> vec64</code>
 <code>=
-(float,&nbsp;Bigarray.float64_elt,&nbsp;Bigarray.fortran_layout)
-Bigarray.Array1.t</code></dt>
+<span><span>(float,&nbsp;Bigarray.float64_elt,&nbsp;Bigarray.fortran_layout)</span>
+Bigarray.Array1.t</span></code></dt>
 <dt class="spec type" id="type-vec"><a href="#type-vec" class=
 "anchor"></a><code><span class="keyword">type</span> vec</code>
 <code>= <a href="index.html#type-vec64">vec64</a></code></dt>
 <dt class="spec type" id="type-mat32"><a href="#type-mat32" class=
 "anchor"></a><code><span class="keyword">type</span> mat32</code>
 <code>=
-(float,&nbsp;Bigarray.float32_elt,&nbsp;Bigarray.fortran_layout)
-Bigarray.Array2.t</code></dt>
+<span><span>(float,&nbsp;Bigarray.float32_elt,&nbsp;Bigarray.fortran_layout)</span>
+Bigarray.Array2.t</span></code></dt>
 <dt class="spec type" id="type-mat64"><a href="#type-mat64" class=
 "anchor"></a><code><span class="keyword">type</span> mat64</code>
 <code>=
-(float,&nbsp;Bigarray.float64_elt,&nbsp;Bigarray.fortran_layout)
-Bigarray.Array2.t</code></dt>
+<span><span>(float,&nbsp;Bigarray.float64_elt,&nbsp;Bigarray.fortran_layout)</span>
+Bigarray.Array2.t</span></code></dt>
 <dt class="spec type" id="type-mat"><a href="#type-mat" class=
 "anchor"></a><code><span class="keyword">type</span> mat</code>
 <code>= <a href="index.html#type-mat64">mat64</a></code></dt>
@@ -414,13 +418,13 @@ Bigarray.Array2.t</code></dt>
 <dl>
 <dt class="spec value" id="val-copy_htbl_list"><a href=
 "#val-copy_htbl_list" class="anchor"></a><code><span class=
-"keyword">val</span> copy_htbl_list : (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-Stdlib.Hashtbl.t <span>-&gt;</span> (<span class=
-"type-var">'a</span> * <span class="type-var">'b</span>) list
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-Stdlib.Hashtbl.t</code></dt>
+"keyword">val</span> copy_htbl_list : <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+Stdlib.Hashtbl.t</span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span> * <span class=
+"type-var">'b</span>)</span> list</span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> Stdlib.Hashtbl.t</span></code></dt>
 <dd>
 <p><code>copy_htbl_list htbl lst</code> adds all <code>(key,
 value)</code> pairs in <code>lst</code> to hash table
@@ -437,49 +441,58 @@ functions!!!</h3>
 <dl>
 <dt class="spec external" id="val-unsafe_blit_buf"><a href=
 "#val-unsafe_blit_buf" class="anchor"></a><code><span class=
-"keyword">val</span> unsafe_blit_buf : src_pos:int
-<span>-&gt;</span> src:<a href="index.html#type-buf">buf</a>
-<span>-&gt;</span> dst_pos:int <span>-&gt;</span> dst:<a href=
-"index.html#type-buf">buf</a> <span>-&gt;</span> len:int
-<span>-&gt;</span> unit</code></dt>
+"keyword">val</span> unsafe_blit_buf : <span>src_pos:int</span>
+<span>-&gt;</span> <span>src:<a href=
+"index.html#type-buf">buf</a></span> <span>-&gt;</span>
+<span>dst_pos:int</span> <span>-&gt;</span> <span>dst:<a href=
+"index.html#type-buf">buf</a></span> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> unit</code></dt>
 <dt class="spec external" id="val-unsafe_blit_string_buf"><a href=
 "#val-unsafe_blit_string_buf" class="anchor"></a><code><span class=
-"keyword">val</span> unsafe_blit_string_buf : src_pos:int
-<span>-&gt;</span> string <span>-&gt;</span> dst_pos:int
-<span>-&gt;</span> <a href="index.html#type-buf">buf</a>
-<span>-&gt;</span> len:int <span>-&gt;</span> unit</code></dt>
+"keyword">val</span> unsafe_blit_string_buf :
+<span>src_pos:int</span> <span>-&gt;</span> string
+<span>-&gt;</span> <span>dst_pos:int</span> <span>-&gt;</span>
+<a href="index.html#type-buf">buf</a> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> unit</code></dt>
 <dt class="spec external" id="val-unsafe_blit_bytes_buf"><a href=
 "#val-unsafe_blit_bytes_buf" class="anchor"></a><code><span class=
-"keyword">val</span> unsafe_blit_bytes_buf : src_pos:int
-<span>-&gt;</span> bytes <span>-&gt;</span> dst_pos:int
-<span>-&gt;</span> <a href="index.html#type-buf">buf</a>
-<span>-&gt;</span> len:int <span>-&gt;</span> unit</code></dt>
+"keyword">val</span> unsafe_blit_bytes_buf :
+<span>src_pos:int</span> <span>-&gt;</span> bytes
+<span>-&gt;</span> <span>dst_pos:int</span> <span>-&gt;</span>
+<a href="index.html#type-buf">buf</a> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> unit</code></dt>
 <dt class="spec external" id="val-unsafe_blit_buf_string"><a href=
 "#val-unsafe_blit_buf_string" class="anchor"></a><code><span class=
-"keyword">val</span> unsafe_blit_buf_string : src_pos:int
-<span>-&gt;</span> <a href="index.html#type-buf">buf</a>
-<span>-&gt;</span> dst_pos:int <span>-&gt;</span> bytes
-<span>-&gt;</span> len:int <span>-&gt;</span> unit</code></dt>
+"keyword">val</span> unsafe_blit_buf_string :
+<span>src_pos:int</span> <span>-&gt;</span> <a href=
+"index.html#type-buf">buf</a> <span>-&gt;</span>
+<span>dst_pos:int</span> <span>-&gt;</span> bytes
+<span>-&gt;</span> <span>len:int</span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec external" id="val-unsafe_blit_buf_bytes"><a href=
 "#val-unsafe_blit_buf_bytes" class="anchor"></a><code><span class=
-"keyword">val</span> unsafe_blit_buf_bytes : src_pos:int
-<span>-&gt;</span> <a href="index.html#type-buf">buf</a>
-<span>-&gt;</span> dst_pos:int <span>-&gt;</span> bytes
-<span>-&gt;</span> len:int <span>-&gt;</span> unit</code></dt>
+"keyword">val</span> unsafe_blit_buf_bytes :
+<span>src_pos:int</span> <span>-&gt;</span> <a href=
+"index.html#type-buf">buf</a> <span>-&gt;</span>
+<span>dst_pos:int</span> <span>-&gt;</span> bytes
+<span>-&gt;</span> <span>len:int</span> <span>-&gt;</span>
+unit</code></dt>
 <dt class="spec external" id="val-unsafe_blit_float_array_buf">
 <a href="#val-unsafe_blit_float_array_buf" class=
 "anchor"></a><code><span class="keyword">val</span>
-unsafe_blit_float_array_buf : src_pos:int <span>-&gt;</span> float
-array <span>-&gt;</span> dst_pos:int <span>-&gt;</span> <a href=
-"index.html#type-buf">buf</a> <span>-&gt;</span> len:int
-<span>-&gt;</span> unit</code></dt>
+unsafe_blit_float_array_buf : <span>src_pos:int</span>
+<span>-&gt;</span> <span>float array</span> <span>-&gt;</span>
+<span>dst_pos:int</span> <span>-&gt;</span> <a href=
+"index.html#type-buf">buf</a> <span>-&gt;</span>
+<span>len:int</span> <span>-&gt;</span> unit</code></dt>
 <dt class="spec external" id="val-unsafe_blit_buf_float_array">
 <a href="#val-unsafe_blit_buf_float_array" class=
 "anchor"></a><code><span class="keyword">val</span>
-unsafe_blit_buf_float_array : src_pos:int <span>-&gt;</span>
-<a href="index.html#type-buf">buf</a> <span>-&gt;</span>
-dst_pos:int <span>-&gt;</span> float array <span>-&gt;</span>
-len:int <span>-&gt;</span> unit</code></dt>
+unsafe_blit_buf_float_array : <span>src_pos:int</span>
+<span>-&gt;</span> <a href="index.html#type-buf">buf</a>
+<span>-&gt;</span> <span>dst_pos:int</span> <span>-&gt;</span>
+<span>float array</span> <span>-&gt;</span> <span>len:int</span>
+<span>-&gt;</span> unit</code></dt>
 </dl>
 </section>
 </div>

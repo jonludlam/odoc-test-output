@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Squeue (core.Core__.Squeue)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -29,8 +28,8 @@ Squeue</nav>
 </aside>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -42,10 +41,11 @@ t</code></dt>
 <dl>
 <dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
 class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
-: (<span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
+: <span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<a href=
+"../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../../../sexplib0/Sexplib0/Sexp/index.html#type-t">Ppx_sexp_conv_lib.Sexp.t</a></code></dt>
 </dl>
 </details>
@@ -55,8 +55,8 @@ class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
 <dl>
 <dt class="spec value" id="val-create"><a href="#val-create" class=
 "anchor"></a><code><span class="keyword">val</span> create : int
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>create maxsize</code> returns a synchronized queue bounded
 to have no more than <code>maxsize</code> elements.</p>
@@ -65,9 +65,9 @@ to have no more than <code>maxsize</code> elements.</p>
 <dl>
 <dt class="spec value" id="val-push"><a href="#val-push" class=
 "anchor"></a><code><span class="keyword">val</span> push :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> unit</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Blocks until there's room on the queue, then pushes.</p>
 </dd>
@@ -75,9 +75,10 @@ to have no more than <code>maxsize</code> elements.</p>
 <dl>
 <dt class="spec value" id="val-push_uncond"><a href=
 "#val-push_uncond" class="anchor"></a><code><span class=
-"keyword">val</span> push_uncond : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> unit</code></dt>
+"keyword">val</span> push_uncond : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span class="type-var">'a</span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Does not block, may grow the queue past maxsize.</p>
 </dd>
@@ -85,8 +86,8 @@ to have no more than <code>maxsize</code> elements.</p>
 <dl>
 <dt class="spec value" id="val-push_or_drop"><a href=
 "#val-push_or_drop" class="anchor"></a><code><span class=
-"keyword">val</span> push_or_drop : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> push_or_drop : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> bool</code></dt>
 <dd>
@@ -97,8 +98,8 @@ otherwise drops it. Returns true if the push was successful</p>
 <dl>
 <dt class="spec value" id="val-length"><a href="#val-length" class=
 "anchor"></a><code><span class="keyword">val</span> length :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> int</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> int</code></dt>
 <dd>
 <p>Returns the number of elements in the queue.</p>
 </dd>
@@ -106,8 +107,9 @@ otherwise drops it. Returns true if the push was successful</p>
 <dl>
 <dt class="spec value" id="val-pop"><a href="#val-pop" class=
 "anchor"></a><code><span class="keyword">val</span> pop :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span></code></dt>
 <dd>
 <p>Pops an element off the queue, blocking until something is
 available</p>
@@ -116,9 +118,9 @@ available</p>
 <dl>
 <dt class="spec value" id="val-lpop"><a href="#val-lpop" class=
 "anchor"></a><code><span class="keyword">val</span> lpop :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> *
-int</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> * int</code></dt>
 <dd>
 <p>Returns the element popped and the length of the queue this
 element was popped.</p>
@@ -127,10 +129,10 @@ element was popped.</p>
 <dl>
 <dt class="spec value" id="val-transfer_queue_in"><a href=
 "#val-transfer_queue_in" class="anchor"></a><code><span class=
-"keyword">val</span> transfer_queue_in : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../../core_kernel/Core_kernel/Linked_queue/index.html#type-t">Core__.Import.Linked_queue.t</a>
+"keyword">val</span> transfer_queue_in : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../../../core_kernel/Core_kernel/Linked_queue/index.html#type-t">Core__.Import.Linked_queue.t</a></span>
 <span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Transfers all the elements from an ordinary queue into the
@@ -142,17 +144,17 @@ grow queue past maxsize.</p>
 <dt class="spec value" id="val-transfer_queue_in_uncond"><a href=
 "#val-transfer_queue_in_uncond" class=
 "anchor"></a><code><span class="keyword">val</span>
-transfer_queue_in_uncond : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href=
-"../../../core_kernel/Core_kernel/Linked_queue/index.html#type-t">Core__.Import.Linked_queue.t</a>
+transfer_queue_in_uncond : <span><span class="type-var">'a</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"../../../core_kernel/Core_kernel/Linked_queue/index.html#type-t">Core__.Import.Linked_queue.t</a></span>
 <span>-&gt;</span> unit</code></dt>
 <dt class="spec value" id="val-transfer_queue"><a href=
 "#val-transfer_queue" class="anchor"></a><code><span class=
-"keyword">val</span> transfer_queue : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../../core_kernel/Core_kernel/Linked_queue/index.html#type-t">Core__.Import.Linked_queue.t</a>
+"keyword">val</span> transfer_queue : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../../../core_kernel/Core_kernel/Linked_queue/index.html#type-t">Core__.Import.Linked_queue.t</a></span>
 <span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Transfers all elements from the squeue to an ordinary queue. The
@@ -163,10 +165,10 @@ transferred.</p>
 <dl>
 <dt class="spec value" id="val-transfer_queue_nowait"><a href=
 "#val-transfer_queue_nowait" class="anchor"></a><code><span class=
-"keyword">val</span> transfer_queue_nowait : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../../core_kernel/Core_kernel/Linked_queue/index.html#type-t">Core__.Import.Linked_queue.t</a>
+"keyword">val</span> transfer_queue_nowait : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../../../core_kernel/Core_kernel/Linked_queue/index.html#type-t">Core__.Import.Linked_queue.t</a></span>
 <span>-&gt;</span> unit</code></dt>
 <dd>
 <p>Transfers all elements from the squeue to an ordinary queue. The
@@ -176,8 +178,9 @@ elements remain in order. Does not wait for elements to arrive.</p>
 <dl>
 <dt class="spec value" id="val-clear"><a href="#val-clear" class=
 "anchor"></a><code><span class="keyword">val</span> clear :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> unit</code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+unit</code></dt>
 <dd>
 <p>Clears the queue</p>
 </dd>
@@ -185,8 +188,8 @@ elements remain in order. Does not wait for elements to arrive.</p>
 <dl>
 <dt class="spec value" id="val-wait_not_empty"><a href=
 "#val-wait_not_empty" class="anchor"></a><code><span class=
-"keyword">val</span> wait_not_empty : <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a>
+"keyword">val</span> wait_not_empty : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
 <span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>wait_not_empty sq</code> waits for something to be

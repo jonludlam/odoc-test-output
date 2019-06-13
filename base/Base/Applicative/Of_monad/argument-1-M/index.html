@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>1-M (base.Base.Applicative.Of_monad.1-M)</title>
 <link rel="stylesheet" href="../../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../../highlight.pack.js">
-</script>
+<script src="../../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -28,8 +27,8 @@ hljs.initHighlightingOnLoad();
 </header>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -39,14 +38,15 @@ t</code></dt>
 "keyword">include</span> <a href=
 "../../../../Base__/Monad_intf/index.html#module-type-S_without_syntax">
 Base__.Monad_intf.S_without_syntax</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href=
 "../../../../Base__/Monad_intf/module-type-S_without_syntax/index.html#type-t">
-t</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></span></summary>
+t</a></span> := <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <div>
 <div class="spec include">
@@ -56,24 +56,25 @@ t</code></dt>
 "keyword">include</span> <a href=
 "../../../../Base__/Monad_intf/index.html#module-type-Infix">Base__.Monad_intf.Infix</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
+<span>'a <a href=
 "../../../../Base__/Monad_intf/module-type-Infix/index.html#type-t">
-t</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></span></summary>
+t</a></span> := <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <dl>
 <dt class="spec value" id="val-(&gt;&gt;=)"><a href=
 "#val-(%3E%3E=)" class="anchor"></a><code><span class=
-"keyword">val</span> (&gt;&gt;=) : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a>)
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a></code></dt>
+"keyword">val</span> (&gt;&gt;=) : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span>
+<span>-&gt;</span> <span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span>)</span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>t &gt;&gt;= f</code> returns a computation that sequences
 the computations represented by two monad elements. The resulting
@@ -85,11 +86,12 @@ v</code>.</p>
 <dl>
 <dt class="spec value" id="val-(&gt;&gt;|)"><a href=
 "#val-(%3E%3E|)" class="anchor"></a><code><span class=
-"keyword">val</span> (&gt;&gt;|) : <span class="type-var">'a</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> (<span class=
-"type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a></code></dt>
+"keyword">val</span> (&gt;&gt;|) : <span><span class=
+"type-var">'a</span> <a href="index.html#type-t">t</a></span>
+<span>-&gt;</span> <span>(<span class="type-var">'a</span>
+<span>-&gt;</span> <span class="type-var">'b</span>)</span>
+<span>-&gt;</span> <span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>t &gt;&gt;| f</code> is <code>t &gt;&gt;= (fun a -&gt;
 return (f a))</code>.</p>
@@ -105,18 +107,20 @@ return (f a))</code>.</p>
 "Monad_infix/index.html">Monad_infix</a> : <a href=
 "../../../../Base__/Monad_intf/index.html#module-type-Infix">Base__.Monad_intf.Infix</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
+<span>'a <a href=
 "../../../../Base__/Monad_intf/module-type-Infix/index.html#type-t">
-t</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></div>
+t</a></span> := <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></div>
 <dl>
 <dt class="spec value" id="val-bind"><a href="#val-bind" class=
 "anchor"></a><code><span class="keyword">val</span> bind :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a>) <span>-&gt;</span> <span class=
-"type-var">'b</span> <a href="index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span>)</span></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>bind t ~f</code> = <code>t &gt;&gt;= f</code></p>
 </dd>
@@ -124,8 +128,9 @@ t</a> := <span class="type-var">'a</span> <a href=
 <dl>
 <dt class="spec value" id="val-return"><a href="#val-return" class=
 "anchor"></a><code><span class="keyword">val</span> return :
-<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a></code></dt>
+<span class="type-var">'a</span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>return v</code> returns the (trivial) computation that
 returns v.</p>
@@ -134,11 +139,12 @@ returns v.</p>
 <dl>
 <dt class="spec value" id="val-map"><a href="#val-map" class=
 "anchor"></a><code><span class="keyword">val</span> map :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> f:(<span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'b</span>)
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"index.html#type-t">t</a></code></dt>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span>f:<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'b</span>)</span></span> <span>-&gt;</span>
+<span><span class="type-var">'b</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>map t ~f</code> is t &gt;&gt;| f.</p>
 </dd>
@@ -146,9 +152,11 @@ returns v.</p>
 <dl>
 <dt class="spec value" id="val-join"><a href="#val-join" class=
 "anchor"></a><code><span class="keyword">val</span> join :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <span class=
-"type-var">'a</span> <a href="index.html#type-t">t</a></code></dt>
+<span><span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>join t</code> is <code>t &gt;&gt;= (fun t' -&gt;
 t')</code>.</p>
@@ -157,9 +165,9 @@ t')</code>.</p>
 <dl>
 <dt class="spec value" id="val-ignore_m"><a href="#val-ignore_m"
 class="anchor"></a><code><span class="keyword">val</span> ignore_m
-: <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> unit <a href=
-"index.html#type-t">t</a></code></dt>
+: <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span>unit
+<a href="index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>ignore_m t</code> is <code>map t ~f:(fun _ -&gt;
 ())</code>. <code>ignore_m</code> used to be called
@@ -172,13 +180,15 @@ reasons.</p>
 <dl>
 <dt class="spec value" id="val-all"><a href="#val-all" class=
 "anchor"></a><code><span class="keyword">val</span> all :
-<span class="type-var">'a</span> <a href="index.html#type-t">t</a>
-list <span>-&gt;</span> <span class="type-var">'a</span> list
-<a href="index.html#type-t">t</a></code></dt>
+<span><span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span> list</span> <span>-&gt;</span>
+<span><span><span class="type-var">'a</span> list</span> <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-all_unit"><a href="#val-all_unit"
 class="anchor"></a><code><span class="keyword">val</span> all_unit
-: unit <a href="index.html#type-t">t</a> list <span>-&gt;</span>
-unit <a href="index.html#type-t">t</a></code></dt>
+: <span><span>unit <a href="index.html#type-t">t</a></span>
+list</span> <span>-&gt;</span> <span>unit <a href=
+"index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>Like <code>all</code>, but ensures that every monadic value in
 the list produces a unit value, all of which are discarded rather
@@ -188,9 +198,9 @@ than being collected into a list.</p>
 <dl>
 <dt class="spec value" id="val-all_ignore"><a href=
 "#val-all_ignore" class="anchor"></a><code><span class=
-"keyword">val</span> all_ignore : unit <a href=
-"index.html#type-t">t</a> list <span>-&gt;</span> unit <a href=
-"index.html#type-t">t</a></code></dt>
+"keyword">val</span> all_ignore : <span><span>unit <a href=
+"index.html#type-t">t</a></span> list</span> <span>-&gt;</span>
+<span>unit <a href="index.html#type-t">t</a></span></code></dt>
 </dl>
 </details>
 </div>
@@ -204,14 +214,14 @@ than being collected into a list.</p>
 "keyword">include</span> <a href=
 "../../../../Base__/Monad_intf/index.html#module-type-Syntax">Base__.Monad_intf.Syntax</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href=
+<span>'a <a href=
 "../../../../Base__/Monad_intf/module-type-Syntax/index.html#type-t">
-t</a> := <span class="type-var">'a</span> <a href=
-"index.html#type-t">t</a></code></span></summary>
+t</a></span> := <span><span class="type-var">'a</span> <a href=
+"index.html#type-t">t</a></span></code></span></summary>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> 'a
-t</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>'a
+t</span></code></dt>
 </dl>
 <div class="spec module" id="module-Let_syntax"><a href=
 "#module-Let_syntax" class="anchor"></a><code><span class=

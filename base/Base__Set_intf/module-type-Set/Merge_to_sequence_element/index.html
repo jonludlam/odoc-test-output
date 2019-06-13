@@ -2,15 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Merge_to_sequence_element
 (base.Base__Set_intf.Set.Merge_to_sequence_element)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -35,12 +34,12 @@ t').</p>
 </header>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'b)
-t</code> <code>= (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
+"anchor"></a><code><span class="keyword">type</span> <span>('a, 'b)
+t</span></code> <code>= <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
 <a href=
 "../../../Base/Sequence/Merge_with_duplicates_element/index.html#type-t">
-Base.Sequence.Merge_with_duplicates_element.t</a></code>
+Base.Sequence.Merge_with_duplicates_element.t</a></span></code>
 <code>=</code></dt>
 <dd>
 <table class="variant">
@@ -76,39 +75,42 @@ Base.Sequence.Merge_with_duplicates_element.t</a></code>
 <dl>
 <dt class="spec value" id="val-compare"><a href="#val-compare"
 class="anchor"></a><code><span class="keyword">val</span> compare :
-(<span class="type-var">'a</span> <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> int) <span>-&gt;</span>
-(<span class="type-var">'b</span> <span>-&gt;</span> <span class=
-"type-var">'b</span> <span>-&gt;</span> int) <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span>
-int</code></dt>
+<span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<span class="type-var">'a</span> <span>-&gt;</span> int)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'b</span>
+<span>-&gt;</span> <span class="type-var">'b</span>
+<span>-&gt;</span> int)</span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-t_of_sexp"><a href="#val-t_of_sexp"
 class="anchor"></a><code><span class="keyword">val</span> t_of_sexp
-: (<a href="../../../Base/Sexp/index.html#type-t">Base.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> (<a href=
+: <span>(<a href=
 "../../../Base/Sexp/index.html#type-t">Base.Sexp.t</a>
-<span>-&gt;</span> <span class="type-var">'b</span>)
+<span>-&gt;</span> <span class="type-var">'a</span>)</span>
+<span>-&gt;</span> <span>(<a href=
+"../../../Base/Sexp/index.html#type-t">Base.Sexp.t</a>
+<span>-&gt;</span> <span class="type-var">'b</span>)</span>
 <span>-&gt;</span> <a href=
 "../../../Base/Sexp/index.html#type-t">Base.Sexp.t</a>
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dt class="spec value" id="val-sexp_of_t"><a href="#val-sexp_of_t"
 class="anchor"></a><code><span class="keyword">val</span> sexp_of_t
-: (<span class="type-var">'a</span> <span>-&gt;</span> <a href=
-"../../../Base/Sexp/index.html#type-t">Base.Sexp.t</a>)
-<span>-&gt;</span> (<span class="type-var">'b</span>
+: <span>(<span class="type-var">'a</span> <span>-&gt;</span>
+<a href=
+"../../../Base/Sexp/index.html#type-t">Base.Sexp.t</a>)</span>
+<span>-&gt;</span> <span>(<span class="type-var">'b</span>
 <span>-&gt;</span> <a href=
-"../../../Base/Sexp/index.html#type-t">Base.Sexp.t</a>)
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href="index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"../../../Base/Sexp/index.html#type-t">Base.Sexp.t</a></code></dt>
+"../../../Base/Sexp/index.html#type-t">Base.Sexp.t</a>)</span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="../../../Base/Sexp/index.html#type-t">Base.Sexp.t</a></code></dt>
 </dl>
 </details>
 </div>

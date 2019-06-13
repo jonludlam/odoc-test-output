@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Comparator (base.Base__.Comparator)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -35,9 +34,9 @@ polymorphic compare from those using a monomorphic compare.</p>
 </aside>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> ('a, 'witness)
-t</code> <code>= <span class="keyword">private</span></code>
-<code>{</code></dt>
+"anchor"></a><code><span class="keyword">type</span> <span>('a,
+'witness) t</span></code> <code>= <span class=
+"keyword">private</span></code> <code>{</code></dt>
 <dd>
 <table class="record">
 <tr id="type-t.compare" class="anchored">
@@ -56,9 +55,10 @@ t</code> <code>= <span class="keyword">private</span></code>
 <code>}</code></dd>
 <dt class="spec type" id="type-comparator"><a href=
 "#type-comparator" class="anchor"></a><code><span class=
-"keyword">type</span> ('a, 'b) comparator</code> <code>=
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a></code></dt>
+"keyword">type</span> <span>('a, 'b) comparator</span></code>
+<code>= <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 </dl>
 <div class="spec module-type" id="module-type-S"><a href=
 "#module-type-S" class="anchor"></a><code><span class=
@@ -80,16 +80,17 @@ t</code> <code>= <span class="keyword">private</span></code>
 <dl>
 <dt class="spec value" id="val-make"><a href="#val-make" class=
 "anchor"></a><code><span class="keyword">val</span> make :
-compare:(<span class="type-var">'a</span> <span>-&gt;</span>
-<span class="type-var">'a</span> <span>-&gt;</span> int)
-<span>-&gt;</span> sexp_of_t:(<span class="type-var">'a</span>
+<span>compare:<span>(<span class="type-var">'a</span>
+<span>-&gt;</span> <span class="type-var">'a</span>
+<span>-&gt;</span> int)</span></span> <span>-&gt;</span>
+<span>sexp_of_t:<span>(<span class="type-var">'a</span>
 <span>-&gt;</span> <a href=
-"../../Base/Sexp/index.html#type-t">Base.Sexp.t</a>)
-<span>-&gt;</span> (<span class="keyword">module</span> <a href=
-"module-type-S_fc/index.html">S_fc</a> <span class=
+"../../Base/Sexp/index.html#type-t">Base.Sexp.t</a>)</span></span>
+<span>-&gt;</span> <span>(<span class="keyword">module</span>
+<a href="module-type-S_fc/index.html">S_fc</a> <span class=
 "keyword">with</span> <span class="keyword">type</span> <a href=
 "module-type-S_fc/index.html#type-comparable_t">comparable_t</a> =
-<span class="type-var">'a</span>)</code></dt>
+<span class="type-var">'a</span>)</span></code></dt>
 <dd>
 <p><code>make</code> creates a comparator witness for the given
 comparison. It is intended as a lightweight alternative to the
@@ -101,9 +102,9 @@ Comparator.make ~compare ~sexp_of_t)</code></p>
 class="anchor"></a><code><span class="keyword">module</span>
 <a href="Poly/index.html">Poly</a> : <a href=
 "index.html#module-type-S1">S1</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
-"module-type-S1/index.html#type-t">t</a> = <span class=
-"type-var">'a</span></code></div>
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href="module-type-S1/index.html#type-t">t</a></span> =
+<span class="type-var">'a</span></code></div>
 <div class="spec module" id="module-S_to_S1"><a href=
 "#module-S_to_S1" class="anchor"></a><code><span class=
 "keyword">module</span> <a href="S_to_S1/index.html">S_to_S1</a> :
@@ -111,8 +112,8 @@ class="anchor"></a><code><span class="keyword">module</span>
 "S_to_S1/argument-1-S/index.html">S</a> : <a href=
 "index.html#module-type-S">S</a>) <span>-&gt;</span> <a href=
 "index.html#module-type-S1">S1</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
-"S_to_S1/index.html#type-t">t</a> = <a href=
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href="S_to_S1/index.html#type-t">t</a></span> = <a href=
 "S_to_S1/argument-1-S/index.html#type-t">S.t</a> <span class=
 "keyword">with</span> <span class="keyword">type</span> <a href=
 "S_to_S1/index.html#type-comparator_witness">comparator_witness</a>
@@ -144,9 +145,9 @@ class="anchor"></a><code><span class="keyword">module</span>
 "keyword">sig</span> ... <span class="keyword">end</span>)
 <span>-&gt;</span> <a href="index.html#module-type-S1">S1</a>
 <span class="keyword">with</span> <span class="keyword">type</span>
-'a <a href="Make1/index.html#type-t">t</a> := <span class=
-"type-var">'a</span> <a href=
-"Make1/argument-1-M/index.html#type-t">M.t</a></code></dt>
+<span>'a <a href="Make1/index.html#type-t">t</a></span> :=
+<span><span class="type-var">'a</span> <a href=
+"Make1/argument-1-M/index.html#type-t">M.t</a></span></code></dt>
 <dd>
 <p><code>Make1</code> creates a <code>comparator</code> value and
 its phantom <code>comparator_witness</code> type for a unary type.
@@ -171,10 +172,10 @@ argument.</p>
 "keyword">sig</span> ... <span class="keyword">end</span>)
 <span>-&gt;</span> <a href=
 "index.html#module-type-Derived">Derived</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> 'a <a href=
-"Derived/index.html#type-t">t</a> := <span class=
-"type-var">'a</span> <a href=
-"Derived/argument-1-M/index.html#type-t">M.t</a></code></dt>
+"keyword">with</span> <span class="keyword">type</span> <span>'a
+<a href="Derived/index.html#type-t">t</a></span> :=
+<span><span class="type-var">'a</span> <a href=
+"Derived/argument-1-M/index.html#type-t">M.t</a></span></code></dt>
 <dd>
 <p><code>Derived</code> creates a <code>comparator</code> function
 that constructs a comparator for the type <code>'a t</code> given a
@@ -196,11 +197,11 @@ comparator for the type <code>'a</code>.</p>
 "keyword">sig</span> ... <span class="keyword">end</span>)
 <span>-&gt;</span> <a href=
 "index.html#module-type-Derived2">Derived2</a> <span class=
-"keyword">with</span> <span class="keyword">type</span> ('a, 'b)
-<a href="Derived2/index.html#type-t">t</a> := (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>)
-<a href=
-"Derived2/argument-1-M/index.html#type-t">M.t</a></code></dt>
+"keyword">with</span> <span class="keyword">type</span> <span>('a,
+'b) <a href="Derived2/index.html#type-t">t</a></span> :=
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"Derived2/argument-1-M/index.html#type-t">M.t</a></span></code></dt>
 <dd>
 <p><code>Derived2</code> creates a <code>comparator</code> function
 that constructs a comparator for the type <code>('a, 'b) t</code>

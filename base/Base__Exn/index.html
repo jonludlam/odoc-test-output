@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Base__Exn (base.Base__Exn)</title>
 <link rel="stylesheet" href="../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../highlight.pack.js">
-</script>
+<script src="../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -129,9 +128,11 @@ class="anchor"></a><code><span class="keyword">val</span> reraise :
 <dt class="spec value" id="val-reraisef"><a href="#val-reraisef"
 class="anchor"></a><code><span class="keyword">val</span> reraisef
 : <a href="index.html#type-t">t</a> <span>-&gt;</span>
-(<span class="type-var">'a</span>,&nbsp;unit,&nbsp;string,&nbsp;unit
-<span>-&gt;</span> <span class="type-var">_</span>) Stdlib.format4
-<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
+<span><span>(<span class=
+"type-var">'a</span>,&nbsp;unit,&nbsp;string,&nbsp;unit
+<span>-&gt;</span> <span class="type-var">_</span>)</span>
+Stdlib.format4</span> <span>-&gt;</span> <span class=
+"type-var">'a</span></code></dt>
 <dd>
 <p>Types with <code>format4</code> are hard to read, so here's an
 example.</p>
@@ -162,11 +163,12 @@ string</code></dt>
 <dl>
 <dt class="spec value" id="val-protectx"><a href="#val-protectx"
 class="anchor"></a><code><span class="keyword">val</span> protectx
-: f:(<span class="type-var">'a</span> <span>-&gt;</span>
-<span class="type-var">'b</span>) <span>-&gt;</span> <span class=
-"type-var">'a</span> <span>-&gt;</span> finally:(<span class=
-"type-var">'a</span> <span>-&gt;</span> unit) <span>-&gt;</span>
-<span class="type-var">'b</span></code></dt>
+: <span>f:<span>(<span class="type-var">'a</span>
+<span>-&gt;</span> <span class="type-var">'b</span>)</span></span>
+<span>-&gt;</span> <span class="type-var">'a</span>
+<span>-&gt;</span> <span>finally:<span>(<span class=
+"type-var">'a</span> <span>-&gt;</span> unit)</span></span>
+<span>-&gt;</span> <span class="type-var">'b</span></code></dt>
 <dd>
 <p>Executes <code>f</code> and afterwards executes
 <code>finally</code>, whether <code>f</code> throws an exception or
@@ -176,13 +178,15 @@ not.</p>
 <dl>
 <dt class="spec value" id="val-protect"><a href="#val-protect"
 class="anchor"></a><code><span class="keyword">val</span> protect :
-f:(unit <span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> finally:(unit <span>-&gt;</span> unit)
+<span>f:<span>(unit <span>-&gt;</span> <span class=
+"type-var">'a</span>)</span></span> <span>-&gt;</span>
+<span>finally:<span>(unit <span>-&gt;</span> unit)</span></span>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dt class="spec value" id="val-handle_uncaught"><a href=
 "#val-handle_uncaught" class="anchor"></a><code><span class=
-"keyword">val</span> handle_uncaught : exit:bool <span>-&gt;</span>
-(unit <span>-&gt;</span> unit) <span>-&gt;</span> unit</code></dt>
+"keyword">val</span> handle_uncaught : <span>exit:bool</span>
+<span>-&gt;</span> <span>(unit <span>-&gt;</span> unit)</span>
+<span>-&gt;</span> unit</code></dt>
 <dd>
 <p><code>handle_uncaught ~exit f</code> catches an exception
 escaping <code>f</code> and prints an error message to stderr.
@@ -197,9 +201,9 @@ than this function.</p>
 <dt class="spec value" id="val-handle_uncaught_and_exit"><a href=
 "#val-handle_uncaught_and_exit" class=
 "anchor"></a><code><span class="keyword">val</span>
-handle_uncaught_and_exit : (unit <span>-&gt;</span> <span class=
-"type-var">'a</span>) <span>-&gt;</span> <span class=
-"type-var">'a</span></code></dt>
+handle_uncaught_and_exit : <span>(unit <span>-&gt;</span>
+<span class="type-var">'a</span>)</span> <span>-&gt;</span>
+<span class="type-var">'a</span></code></dt>
 <dd>
 <p><code>handle_uncaught_and_exit f</code> returns <code>f
 ()</code>, unless that raises, in which case it prints the
@@ -210,8 +214,9 @@ exception and exits nonzero.</p>
 <dt class="spec value" id="val-reraise_uncaught"><a href=
 "#val-reraise_uncaught" class="anchor"></a><code><span class=
 "keyword">val</span> reraise_uncaught : string <span>-&gt;</span>
-(unit <span>-&gt;</span> <span class="type-var">'a</span>)
-<span>-&gt;</span> <span class="type-var">'a</span></code></dt>
+<span>(unit <span>-&gt;</span> <span class=
+"type-var">'a</span>)</span> <span>-&gt;</span> <span class=
+"type-var">'a</span></code></dt>
 <dd>
 <p>Traces exceptions passing through. Useful because in practice,
 backtraces still don't seem to work.</p>
@@ -220,14 +225,13 @@ backtraces still don't seem to work.</p>
 "ml">let rogue_function () = if Random.bool () then failwith "foo" else 3
 let traced_function () = Exn.reraise_uncaught "rogue_function" rogue_function
                            traced_function ();;</code></pre>
-<pre>
-: Program died with Reraised("rogue_function", Failure "foo")</pre></dd>
+<pre>: Program died with Reraised("rogue_function", Failure "foo")</pre></dd>
 </dl>
 <dl>
 <dt class="spec value" id="val-does_raise"><a href=
 "#val-does_raise" class="anchor"></a><code><span class=
-"keyword">val</span> does_raise : (unit <span>-&gt;</span>
-<span class="type-var">_</span>) <span>-&gt;</span>
+"keyword">val</span> does_raise : <span>(unit <span>-&gt;</span>
+<span class="type-var">_</span>)</span> <span>-&gt;</span>
 bool</code></dt>
 <dd>
 <p><code>does_raise f</code> returns <code>true</code> iff <code>f

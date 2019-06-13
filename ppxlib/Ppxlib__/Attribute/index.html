@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Attribute (ppxlib.Ppxlib__.Attribute)</title>
 <link rel="stylesheet" href="../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../highlight.pack.js">
-</script>
+<script src="../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -34,8 +33,8 @@ that no mistyped attribute get silently ignored.</p>
 </aside>
 <dl>
 <dt class="spec type" id="type-t"><a href="#type-t" class=
-"anchor"></a><code><span class="keyword">type</span> ('context,
-'payload) t</code></dt>
+"anchor"></a><code><span class="keyword">type</span>
+<span>('context, 'payload) t</span></code></dt>
 <dd>
 <p>Type of declared attribute.</p>
 <p>The <code>'context</code> type parameter describes where the
@@ -52,10 +51,10 @@ packed</code> <code>=</code></dt>
 <tr id="type-packed.T" class="anchored">
 <td class="def constructor"><a href="#type-packed.T" class=
 "anchor"></a><code>|</code> <code><span class=
-"constructor">T</span> : (<span class=
-"type-var">_</span>,&nbsp;<span class="type-var">_</span>) <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> <a href=
-"index.html#type-packed">packed</a></code></td>
+"constructor">T</span> : <span><span>(<span class=
+"type-var">_</span>,&nbsp;<span class="type-var">_</span>)</span>
+<a href="index.html#type-t">t</a></span> <span>-&gt;</span>
+<a href="index.html#type-packed">packed</a></code></td>
 </tr>
 </table>
 </dd>
@@ -70,16 +69,16 @@ packed</code> <code>=</code></dt>
 class="anchor"></a><code><span class="keyword">val</span> declare :
 <a href=
 "../Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"Context/index.html#type-t">Context.t</a> <span>-&gt;</span>
-(<a href=
-"../Import/index.html#type-payload">Ppxlib__.Import.payload</a>,&nbsp;<span class="type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"Context/index.html#type-t">Context.t</a></span> <span>-&gt;</span>
+<span><span>(<a href=
+"../Import/index.html#type-payload">Ppxlib__.Import.payload</a>,&nbsp;<span class="type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)</span>
 <a href=
-"../../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a>
+"../../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a></span>
 <span>-&gt;</span> <span class="type-var">'b</span>
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-t">t</a></code></dt>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'c</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dd>
 <p><code>declare fully_qualified_name context payload_pattern
 k</code> declares an attribute. <code>k</code> is used to build the
@@ -123,18 +122,18 @@ trying to declare the same attribute twice will fail.</p>
 "#val-declare_with_name_loc" class="anchor"></a><code><span class=
 "keyword">val</span> declare_with_name_loc : <a href=
 "../Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"Context/index.html#type-t">Context.t</a> <span>-&gt;</span>
-(<a href=
-"../Import/index.html#type-payload">Ppxlib__.Import.payload</a>,&nbsp;<span class="type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"Context/index.html#type-t">Context.t</a></span> <span>-&gt;</span>
+<span><span>(<a href=
+"../Import/index.html#type-payload">Ppxlib__.Import.payload</a>,&nbsp;<span class="type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)</span>
 <a href=
-"../../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a>
-<span>-&gt;</span> (name_loc:<a href=
-"../../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a>
-<span>-&gt;</span> <span class="type-var">'b</span>)
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'c</span>)
-<a href="index.html#type-t">t</a></code></dt>
+"../../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a></span>
+<span>-&gt;</span> <span>(<span>name_loc:<a href=
+"../../Ppxlib/Location/index.html#type-t">Ppxlib.Location.t</a></span>
+<span>-&gt;</span> <span class="type-var">'b</span>)</span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span class="type-var">'c</span>)</span>
+<a href="index.html#type-t">t</a></span></code></dt>
 <dd>
 <p>Same as <code>declare</code> but the callback receives the
 location of the name of the attribute.</p>
@@ -143,31 +142,34 @@ location of the name of the attribute.</p>
 <dl>
 <dt class="spec value" id="val-name"><a href="#val-name" class=
 "anchor"></a><code><span class="keyword">val</span> name :
-(<span class="type-var">_</span>,&nbsp;<span class=
-"type-var">_</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <a href=
+<span><span>(<span class="type-var">_</span>,&nbsp;<span class=
+"type-var">_</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <a href=
 "../Import/index.html#type-string">Ppxlib__.Import.string</a></code></dt>
 <dt class="spec value" id="val-context"><a href="#val-context"
 class="anchor"></a><code><span class="keyword">val</span> context :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">_</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"Context/index.html#type-t">Context.t</a></code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">_</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span class="type-var">'a</span> <a href=
+"Context/index.html#type-t">Context.t</a></span></code></dt>
 <dt class="spec value" id="val-get"><a href="#val-get" class=
 "anchor"></a><code><span class="keyword">val</span> get :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> <span class="type-var">'b</span> <a href=
-"../Import/index.html#type-option">Ppxlib__.Import.option</a></code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <span><span class=
+"type-var">'b</span> <a href=
+"../Import/index.html#type-option">Ppxlib__.Import.option</a></span></code></dt>
 <dt class="spec value" id="val-consume"><a href="#val-consume"
 class="anchor"></a><code><span class="keyword">val</span> consume :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> <span class="type-var">'a</span>
-<span>-&gt;</span> (<span class="type-var">'a</span> * <span class=
-"type-var">'b</span>) <a href=
-"../Import/index.html#type-option">Ppxlib__.Import.option</a></code></dt>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span> <span class=
+"type-var">'a</span> <span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span> * <span class="type-var">'b</span>)</span>
+<a href=
+"../Import/index.html#type-option">Ppxlib__.Import.option</a></span></code></dt>
 <dd>
 <p><code>consume t x</code> returns the value associated to
 attribute <code>t</code> on <code>x</code> if present as well as
@@ -177,10 +179,11 @@ attribute <code>t</code> on <code>x</code> if present as well as
 <dl>
 <dt class="spec value" id="val-remove_seen"><a href=
 "#val-remove_seen" class="anchor"></a><code><span class=
-"keyword">val</span> remove_seen : <span class="type-var">'a</span>
-<a href="Context/index.html#type-t">Context.t</a>
-<span>-&gt;</span> <a href="index.html#type-packed">packed</a>
-<a href="../Import/index.html#type-list">Ppxlib__.Import.list</a>
+"keyword">val</span> remove_seen : <span><span class=
+"type-var">'a</span> <a href=
+"Context/index.html#type-t">Context.t</a></span> <span>-&gt;</span>
+<span><a href="index.html#type-packed">packed</a> <a href=
+"../Import/index.html#type-list">Ppxlib__.Import.list</a></span>
 <span>-&gt;</span> <span class="type-var">'a</span>
 <span>-&gt;</span> <span class="type-var">'a</span></code></dt>
 <dd>
@@ -268,11 +271,12 @@ use it.</p>
 "anchor"></a><code><span class="keyword">val</span>
 dropped_so_far_structure : <a href=
 "../Import/index.html#type-structure">Ppxlib__.Import.structure</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><span><a href=
 "../Import/index.html#type-string">Ppxlib__.Import.string</a>
-<a href="../../Ppxlib/Loc/index.html#type-t">Ppxlib.Loc.t</a>
 <a href=
-"../Import/index.html#type-list">Ppxlib__.Import.list</a></code></dt>
+"../../Ppxlib/Loc/index.html#type-t">Ppxlib.Loc.t</a></span>
+<a href=
+"../Import/index.html#type-list">Ppxlib__.Import.list</a></span></code></dt>
 <dd>
 <p>Return the list of attributes that have been dropped so far:
 attributes that haven't been marked and are not present in the
@@ -286,11 +290,12 @@ attributes.</p>
 "anchor"></a><code><span class="keyword">val</span>
 dropped_so_far_signature : <a href=
 "../Import/index.html#type-signature">Ppxlib__.Import.signature</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><span><a href=
 "../Import/index.html#type-string">Ppxlib__.Import.string</a>
-<a href="../../Ppxlib/Loc/index.html#type-t">Ppxlib.Loc.t</a>
 <a href=
-"../Import/index.html#type-list">Ppxlib__.Import.list</a></code></dt>
+"../../Ppxlib/Loc/index.html#type-t">Ppxlib.Loc.t</a></span>
+<a href=
+"../Import/index.html#type-list">Ppxlib__.Import.list</a></span></code></dt>
 <dt class="spec value" id="val-reset_checks"><a href=
 "#val-reset_checks" class="anchor"></a><code><span class=
 "keyword">val</span> reset_checks : <a href=
@@ -299,20 +304,21 @@ dropped_so_far_signature : <a href=
 "../Import/index.html#type-unit">Ppxlib__.Import.unit</a></code></dt>
 <dt class="spec value" id="val-pattern"><a href="#val-pattern"
 class="anchor"></a><code><span class="keyword">val</span> pattern :
-(<span class="type-var">'a</span>,&nbsp;<span class=
-"type-var">'b</span>) <a href="index.html#type-t">t</a>
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class=
-"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'b</span>)</span> <a href=
+"index.html#type-t">t</a></span> <span>-&gt;</span>
+<span><span>(<span class="type-var">'a</span>,&nbsp;<span class=
+"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)</span>
 <a href=
-"../../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a>
-<span>-&gt;</span> (<span class=
-"type-var">'a</span>,&nbsp;<span class="type-var">'b</span>
-<a href="../Import/index.html#type-option">Ppxlib__.Import.option</a>
+"../../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a></span>
+<span>-&gt;</span> <span><span>(<span class=
+"type-var">'a</span>,&nbsp;<span><span class="type-var">'b</span>
+<a href=
+"../Import/index.html#type-option">Ppxlib__.Import.option</a></span>
 <span>-&gt;</span> <span class=
-"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)
+"type-var">'c</span>,&nbsp;<span class="type-var">'d</span>)</span>
 <a href=
-"../../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a></code></dt>
+"../../Ppxlib/Ast_pattern/index.html#type-t">Ppxlib.Ast_pattern.t</a></span></code></dt>
 </dl>
 </div>
 </body>

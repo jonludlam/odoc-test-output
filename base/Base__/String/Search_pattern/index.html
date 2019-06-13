@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Search_pattern (base.Base__.String.Search_pattern)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -74,9 +73,10 @@ matches <code>pat</code></p>
 <dl>
 <dt class="spec value" id="val-index"><a href="#val-index" class=
 "anchor"></a><code><span class="keyword">val</span> index :
-?⁠pos:int <span>-&gt;</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> in_:string <span>-&gt;</span> int
-option</code></dt>
+<span>?⁠pos:int</span> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span>
+<span>in_:string</span> <span>-&gt;</span> <span>int
+option</span></code></dt>
 <dd>
 <p><code>pos &lt; 0</code> or <code>pos &gt;= length string</code>
 result in no match (hence <code>index</code> returns
@@ -86,13 +86,15 @@ result in no match (hence <code>index</code> returns
 <dl>
 <dt class="spec value" id="val-index_exn"><a href="#val-index_exn"
 class="anchor"></a><code><span class="keyword">val</span> index_exn
-: ?⁠pos:int <span>-&gt;</span> <a href="index.html#type-t">t</a>
-<span>-&gt;</span> in_:string <span>-&gt;</span> int</code></dt>
+: <span>?⁠pos:int</span> <span>-&gt;</span> <a href=
+"index.html#type-t">t</a> <span>-&gt;</span>
+<span>in_:string</span> <span>-&gt;</span> int</code></dt>
 <dt class="spec value" id="val-index_all"><a href="#val-index_all"
 class="anchor"></a><code><span class="keyword">val</span> index_all
 : <a href="index.html#type-t">t</a> <span>-&gt;</span>
-may_overlap:bool <span>-&gt;</span> in_:string <span>-&gt;</span>
-int list</code></dt>
+<span>may_overlap:bool</span> <span>-&gt;</span>
+<span>in_:string</span> <span>-&gt;</span> <span>int
+list</span></code></dt>
 <dd>
 <p><code>may_overlap</code> determines whether after a successful
 match, <code>index_all</code> should start looking for another one
@@ -112,10 +114,10 @@ to the end of that match and continue from there
 <dl>
 <dt class="spec value" id="val-replace_first"><a href=
 "#val-replace_first" class="anchor"></a><code><span class=
-"keyword">val</span> replace_first : ?⁠pos:int <span>-&gt;</span>
-<a href="index.html#type-t">t</a> <span>-&gt;</span> in_:string
-<span>-&gt;</span> with_:string <span>-&gt;</span>
-string</code></dt>
+"keyword">val</span> replace_first : <span>?⁠pos:int</span>
+<span>-&gt;</span> <a href="index.html#type-t">t</a>
+<span>-&gt;</span> <span>in_:string</span> <span>-&gt;</span>
+<span>with_:string</span> <span>-&gt;</span> string</code></dt>
 <dd>
 <p>Note that the result of <code>replace_all pattern ~in_:text
 ~with_:r</code> may still contain <code>pattern</code>, e.g.,</p>
@@ -126,9 +128,9 @@ string</code></dt>
 <dt class="spec value" id="val-replace_all"><a href=
 "#val-replace_all" class="anchor"></a><code><span class=
 "keyword">val</span> replace_all : <a href=
-"index.html#type-t">t</a> <span>-&gt;</span> in_:string
-<span>-&gt;</span> with_:string <span>-&gt;</span>
-string</code></dt>
+"index.html#type-t">t</a> <span>-&gt;</span>
+<span>in_:string</span> <span>-&gt;</span>
+<span>with_:string</span> <span>-&gt;</span> string</code></dt>
 </dl>
 </div>
 </body>

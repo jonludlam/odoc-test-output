@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Linux version 5.2.0" />
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta charset="utf-8" />
 <title>Rule (ppxlib.Ppxlib.Context_free.Rule)</title>
 <link rel="stylesheet" href="../../../../odoc.css" />
-<meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width,initial-scale=1.0" />
-<script src="../../../../highlight.pack.js">
-</script>
+<script src="../../../../highlight.pack.js"></script>
 <script>
 <![CDATA[
 hljs.initHighlightingOnLoad();
@@ -50,12 +49,12 @@ class="anchor"></a><code><span class="keyword">val</span> extension
 "#val-special_function" class="anchor"></a><code><span class=
 "keyword">val</span> special_function : <a href=
 "../../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
-<span>-&gt;</span> (<a href=
+<span>-&gt;</span> <span>(<a href=
 "../../../Ppxlib__/Import/index.html#type-expression">Ppxlib__.Import.expression</a>
-<span>-&gt;</span> <a href=
+<span>-&gt;</span> <span><a href=
 "../../../Ppxlib__/Import/index.html#type-expression">Ppxlib__.Import.expression</a>
 <a href=
-"../../../Ppxlib__/Import/index.html#type-option">Ppxlib__.Import.option</a>)
+"../../../Ppxlib__/Import/index.html#type-option">Ppxlib__.Import.option</a></span>)</span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>special_function id expand</code> is a rule to rewrite a
@@ -90,13 +89,13 @@ class="anchor"></a><code><span class="keyword">val</span> constant
 : <a href="Constant_kind/index.html#type-t">Constant_kind.t</a>
 <span>-&gt;</span> <a href=
 "../../../Ppxlib__/Import/index.html#type-char">Ppxlib__.Import.char</a>
-<span>-&gt;</span> (<a href=
+<span>-&gt;</span> <span>(<a href=
 "../../Location/index.html#type-t">Location.t</a>
 <span>-&gt;</span> <a href=
 "../../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
 <span>-&gt;</span> <a href=
 "../../../../ocaml-migrate-parsetree/Migrate_parsetree__Ast_407/Parsetree/index.html#type-expression">
-Ppxlib__.Import.Parsetree.expression</a>) <span>-&gt;</span>
+Ppxlib__.Import.Parsetree.expression</a>)</span> <span>-&gt;</span>
 <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p><code>constant kind suffix expander</code> Registers an
@@ -112,25 +111,26 @@ currently only enough to implement deriving.</p>
 <dl>
 <dt class="spec type" id="type-attr_group_inline"><a href=
 "#type-attr_group_inline" class="anchor"></a><code><span class=
-"keyword">type</span> ('a, 'b, 'c) attr_group_inline</code> <code>=
-(<span class="type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>) <a href=
-"../../Attribute/index.html#type-t">Attribute.t</a>
-<span>-&gt;</span> (loc:<a href=
-"../../Location/index.html#type-t">Location.t</a>
-<span>-&gt;</span> path:<a href=
-"../../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
+"keyword">type</span> <span>('a, 'b, 'c)
+attr_group_inline</span></code> <code>= <span><span>(<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)</span>
+<a href="../../Attribute/index.html#type-t">Attribute.t</a></span>
+<span>-&gt;</span> <span>(<span>loc:<a href=
+"../../Location/index.html#type-t">Location.t</a></span>
+<span>-&gt;</span> <span>path:<a href=
+"../../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a></span>
 <span>-&gt;</span> <a href=
 "../../../../ocaml-migrate-parsetree/Migrate_parsetree__Ast_407/Asttypes/index.html#type-rec_flag">
 Ppxlib__.Import.Asttypes.rec_flag</a> <span>-&gt;</span>
-<span class="type-var">'b</span> <a href=
-"../../../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a>
-<span>-&gt;</span> <span class="type-var">'c</span> <a href=
-"../../../Ppxlib__/Import/index.html#type-option">Ppxlib__.Import.option</a>
+<span><span class="type-var">'b</span> <a href=
+"../../../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a></span>
+<span>-&gt;</span> <span><span><span class="type-var">'c</span>
 <a href=
-"../../../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a>)
+"../../../Ppxlib__/Import/index.html#type-option">Ppxlib__.Import.option</a></span>
+<a href=
+"../../../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a></span>
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../../../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a></span>)</span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p>Match the attribute on a group of items, such as a group of
@@ -148,23 +148,23 @@ of type definitions.</p>
 <dl>
 <dt class="spec value" id="val-attr_str_type_decl"><a href=
 "#val-attr_str_type_decl" class="anchor"></a><code><span class=
-"keyword">val</span> attr_str_type_decl : (<a href=
-"../../../Ppxlib__/Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a>,&nbsp;<span class="type-var">_</span>)
+"keyword">val</span> attr_str_type_decl : <span><span>(<a href=
+"../../../Ppxlib__/Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a>,&nbsp;<span class="type-var">_</span>)</span>
 <a href=
-"index.html#type-attr_group_inline">attr_group_inline</a></code></dt>
+"index.html#type-attr_group_inline">attr_group_inline</a></span></code></dt>
 <dt class="spec value" id="val-attr_sig_type_decl"><a href=
 "#val-attr_sig_type_decl" class="anchor"></a><code><span class=
-"keyword">val</span> attr_sig_type_decl : (<a href=
-"../../../Ppxlib__/Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a>,&nbsp;<span class="type-var">_</span>)
+"keyword">val</span> attr_sig_type_decl : <span><span>(<a href=
+"../../../Ppxlib__/Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a>,&nbsp;<span class="type-var">_</span>)</span>
 <a href=
-"index.html#type-attr_group_inline">attr_group_inline</a></code></dt>
+"index.html#type-attr_group_inline">attr_group_inline</a></span></code></dt>
 <dt class="spec value" id="val-attr_str_type_decl_expect"><a href=
 "#val-attr_str_type_decl_expect" class=
 "anchor"></a><code><span class="keyword">val</span>
-attr_str_type_decl_expect : (<a href=
-"../../../Ppxlib__/Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a>,&nbsp;<span class="type-var">_</span>)
+attr_str_type_decl_expect : <span><span>(<a href=
+"../../../Ppxlib__/Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a>,&nbsp;<span class="type-var">_</span>)</span>
 <a href=
-"index.html#type-attr_group_inline">attr_group_inline</a></code></dt>
+"index.html#type-attr_group_inline">attr_group_inline</a></span></code></dt>
 <dd>
 <p>The _expect variants are for producing code that is compared to
 what the user wrote in the source code.</p>
@@ -174,26 +174,26 @@ what the user wrote in the source code.</p>
 <dt class="spec value" id="val-attr_sig_type_decl_expect"><a href=
 "#val-attr_sig_type_decl_expect" class=
 "anchor"></a><code><span class="keyword">val</span>
-attr_sig_type_decl_expect : (<a href=
-"../../../Ppxlib__/Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a>,&nbsp;<span class="type-var">_</span>)
+attr_sig_type_decl_expect : <span><span>(<a href=
+"../../../Ppxlib__/Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_declaration">Ppxlib__.Import.type_declaration</a>,&nbsp;<span class="type-var">_</span>)</span>
 <a href=
-"index.html#type-attr_group_inline">attr_group_inline</a></code></dt>
+"index.html#type-attr_group_inline">attr_group_inline</a></span></code></dt>
 </dl>
 <dl>
 <dt class="spec type" id="type-attr_inline"><a href=
 "#type-attr_inline" class="anchor"></a><code><span class=
-"keyword">type</span> ('a, 'b, 'c) attr_inline</code> <code>=
-(<span class="type-var">'b</span>,&nbsp;<span class=
-"type-var">'c</span>) <a href=
-"../../Attribute/index.html#type-t">Attribute.t</a>
-<span>-&gt;</span> (loc:<a href=
-"../../Location/index.html#type-t">Location.t</a>
-<span>-&gt;</span> path:<a href=
-"../../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a>
+"keyword">type</span> <span>('a, 'b, 'c) attr_inline</span></code>
+<code>= <span><span>(<span class=
+"type-var">'b</span>,&nbsp;<span class="type-var">'c</span>)</span>
+<a href="../../Attribute/index.html#type-t">Attribute.t</a></span>
+<span>-&gt;</span> <span>(<span>loc:<a href=
+"../../Location/index.html#type-t">Location.t</a></span>
+<span>-&gt;</span> <span>path:<a href=
+"../../../Ppxlib__/Import/index.html#type-string">Ppxlib__.Import.string</a></span>
 <span>-&gt;</span> <span class="type-var">'b</span>
 <span>-&gt;</span> <span class="type-var">'c</span>
-<span>-&gt;</span> <span class="type-var">'a</span> <a href=
-"../../../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a>)
+<span>-&gt;</span> <span><span class="type-var">'a</span> <a href=
+"../../../Ppxlib__/Import/index.html#type-list">Ppxlib__.Import.list</a></span>)</span>
 <span>-&gt;</span> <a href="index.html#type-t">t</a></code></dt>
 <dd>
 <p>Same as <code>attr_group_inline</code> but for elements that are
@@ -203,48 +203,56 @@ not part of a group, such as exceptions and type extensions</p>
 <dl>
 <dt class="spec value" id="val-attr_str_type_ext"><a href=
 "#val-attr_str_type_ext" class="anchor"></a><code><span class=
-"keyword">val</span> attr_str_type_ext : (<a href=
-"../../../Ppxlib__/Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_extension">Ppxlib__.Import.type_extension</a>,&nbsp;<span class="type-var">_</span>)
-<a href="index.html#type-attr_inline">attr_inline</a></code></dt>
+"keyword">val</span> attr_str_type_ext : <span><span>(<a href=
+"../../../Ppxlib__/Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_extension">Ppxlib__.Import.type_extension</a>,&nbsp;<span class="type-var">_</span>)</span>
+<a href=
+"index.html#type-attr_inline">attr_inline</a></span></code></dt>
 <dt class="spec value" id="val-attr_sig_type_ext"><a href=
 "#val-attr_sig_type_ext" class="anchor"></a><code><span class=
-"keyword">val</span> attr_sig_type_ext : (<a href=
-"../../../Ppxlib__/Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_extension">Ppxlib__.Import.type_extension</a>,&nbsp;<span class="type-var">_</span>)
-<a href="index.html#type-attr_inline">attr_inline</a></code></dt>
+"keyword">val</span> attr_sig_type_ext : <span><span>(<a href=
+"../../../Ppxlib__/Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_extension">Ppxlib__.Import.type_extension</a>,&nbsp;<span class="type-var">_</span>)</span>
+<a href=
+"index.html#type-attr_inline">attr_inline</a></span></code></dt>
 <dt class="spec value" id="val-attr_str_type_ext_expect"><a href=
 "#val-attr_str_type_ext_expect" class=
 "anchor"></a><code><span class="keyword">val</span>
-attr_str_type_ext_expect : (<a href=
-"../../../Ppxlib__/Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_extension">Ppxlib__.Import.type_extension</a>,&nbsp;<span class="type-var">_</span>)
-<a href="index.html#type-attr_inline">attr_inline</a></code></dt>
+attr_str_type_ext_expect : <span><span>(<a href=
+"../../../Ppxlib__/Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_extension">Ppxlib__.Import.type_extension</a>,&nbsp;<span class="type-var">_</span>)</span>
+<a href=
+"index.html#type-attr_inline">attr_inline</a></span></code></dt>
 <dt class="spec value" id="val-attr_sig_type_ext_expect"><a href=
 "#val-attr_sig_type_ext_expect" class=
 "anchor"></a><code><span class="keyword">val</span>
-attr_sig_type_ext_expect : (<a href=
-"../../../Ppxlib__/Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_extension">Ppxlib__.Import.type_extension</a>,&nbsp;<span class="type-var">_</span>)
-<a href="index.html#type-attr_inline">attr_inline</a></code></dt>
+attr_sig_type_ext_expect : <span><span>(<a href=
+"../../../Ppxlib__/Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-type_extension">Ppxlib__.Import.type_extension</a>,&nbsp;<span class="type-var">_</span>)</span>
+<a href=
+"index.html#type-attr_inline">attr_inline</a></span></code></dt>
 <dt class="spec value" id="val-attr_str_exception"><a href=
 "#val-attr_str_exception" class="anchor"></a><code><span class=
-"keyword">val</span> attr_str_exception : (<a href=
-"../../../Ppxlib__/Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-extension_constructor">Ppxlib__.Import.extension_constructor</a>,&nbsp;<span class="type-var">_</span>)
-<a href="index.html#type-attr_inline">attr_inline</a></code></dt>
+"keyword">val</span> attr_str_exception : <span><span>(<a href=
+"../../../Ppxlib__/Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-extension_constructor">Ppxlib__.Import.extension_constructor</a>,&nbsp;<span class="type-var">_</span>)</span>
+<a href=
+"index.html#type-attr_inline">attr_inline</a></span></code></dt>
 <dt class="spec value" id="val-attr_sig_exception"><a href=
 "#val-attr_sig_exception" class="anchor"></a><code><span class=
-"keyword">val</span> attr_sig_exception : (<a href=
-"../../../Ppxlib__/Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-extension_constructor">Ppxlib__.Import.extension_constructor</a>,&nbsp;<span class="type-var">_</span>)
-<a href="index.html#type-attr_inline">attr_inline</a></code></dt>
+"keyword">val</span> attr_sig_exception : <span><span>(<a href=
+"../../../Ppxlib__/Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-extension_constructor">Ppxlib__.Import.extension_constructor</a>,&nbsp;<span class="type-var">_</span>)</span>
+<a href=
+"index.html#type-attr_inline">attr_inline</a></span></code></dt>
 <dt class="spec value" id="val-attr_str_exception_expect"><a href=
 "#val-attr_str_exception_expect" class=
 "anchor"></a><code><span class="keyword">val</span>
-attr_str_exception_expect : (<a href=
-"../../../Ppxlib__/Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-extension_constructor">Ppxlib__.Import.extension_constructor</a>,&nbsp;<span class="type-var">_</span>)
-<a href="index.html#type-attr_inline">attr_inline</a></code></dt>
+attr_str_exception_expect : <span><span>(<a href=
+"../../../Ppxlib__/Import/index.html#type-structure_item">Ppxlib__.Import.structure_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-extension_constructor">Ppxlib__.Import.extension_constructor</a>,&nbsp;<span class="type-var">_</span>)</span>
+<a href=
+"index.html#type-attr_inline">attr_inline</a></span></code></dt>
 <dt class="spec value" id="val-attr_sig_exception_expect"><a href=
 "#val-attr_sig_exception_expect" class=
 "anchor"></a><code><span class="keyword">val</span>
-attr_sig_exception_expect : (<a href=
-"../../../Ppxlib__/Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-extension_constructor">Ppxlib__.Import.extension_constructor</a>,&nbsp;<span class="type-var">_</span>)
-<a href="index.html#type-attr_inline">attr_inline</a></code></dt>
+attr_sig_exception_expect : <span><span>(<a href=
+"../../../Ppxlib__/Import/index.html#type-signature_item">Ppxlib__.Import.signature_item</a>,&nbsp;<a href="../../../Ppxlib__/Import/index.html#type-extension_constructor">Ppxlib__.Import.extension_constructor</a>,&nbsp;<span class="type-var">_</span>)</span>
+<a href=
+"index.html#type-attr_inline">attr_inline</a></span></code></dt>
 </dl>
 </div>
 </body>
